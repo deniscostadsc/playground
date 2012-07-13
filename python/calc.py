@@ -15,7 +15,7 @@ class CalcTest(unittest.TestCase):
         self.assertEquals(calc('2-2'), 0)
 
     def test_2_times_2_equals_4(self):
-        self.assertEquals(calc('2^2'), 4)
+        self.assertEquals(calc('2*2'), 4)
 
     def test_2_divide_by_2_equals_1(self):
         self.assertEquals(calc('2/2'), 1)
