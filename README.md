@@ -1,4 +1,4 @@
-SandboxAlgorithms
-=================
+Playground
+==========
 
 A place to play
