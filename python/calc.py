@@ -2,6 +2,9 @@ import unittest
 from string import rfind, rsplit
 
 def calc(expression):
+    '''
+    An expression calculator
+    '''
     if '+' in expression:
         a, b = rsplit(expression, '+', 1)
         expression = '%s' % str(calc(a) + calc(b))
