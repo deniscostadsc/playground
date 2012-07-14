@@ -1,16 +1,13 @@
 import unittest
-from string import rfind
-
-def splitter(expression, char):
-    return expression[:expression.rfind(char)], expression[expression.rfind(char) + 1:]
+from string import rfind, rsplit
 
 def calc(expression):
     if '+' in expression:
-        a, b = splitter(expression, '+')
+        a, b = rsplit(expression, '+', 1)
         expression = '%s' % str(calc(a) + calc(b))
 
     if '-' in expression:
-        a, b = splitter(expression, '-')
+        a, b = rsplit(expression, '-', 1)
         expression = '%s' % str(calc(a) - calc(b))
 
     if '*' in expression or '/' in expression:
@@ -18,21 +15,21 @@ def calc(expression):
         slash_index = expression.find('/')
 
         if asterix_index == -1:
-            a, b = splitter(expression, '/')
+            a, b = rsplit(expression, '/', 1)
             expression = '%s' % str(calc(a) / calc(b))
         elif slash_index == -1:
-            a, b = splitter(expression, '*')
+            a, b = rsplit(expression, '*', 1)
             expression = '%s' % str(calc(a) * calc(b))
         else:
             if asterix_index < slash_index:
-                a, b = splitter(expression, '/')
+                a, b = rsplit(expression, '/', 1)
                 expression = '%s' % str(calc(a) / calc(b))
             else:
-                a, b = splitter(expression, '*')
+                a, b = rsplit(expression, '*', 1)
                 expression = '%s' % str(calc(a) * calc(b))
  
     if '^' in expression:
-        a, b = splitter(expression, '^')
+        a, b = rsplit(expression, '^', 1)
         expression = '%s' % str(calc(a) ** calc(b))
 
     return int(expression)
