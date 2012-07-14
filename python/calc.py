@@ -33,6 +33,7 @@ def calc(expression):
 
     return int(expression)
 
+
 class CalcTest(unittest.TestCase):
     def test_simple_calcs(self):
         self.assertEquals(calc('2+2'), 4)
@@ -52,6 +53,9 @@ class CalcTest(unittest.TestCase):
     def test_checking_for_priority(self):
         self.assertEquals(calc('18/2*4'), 36)
         self.assertEquals(calc('18*2/4'), 9)
+        self.assertEquals(calc('18*2^4'), 288)
+        self.assertEquals(calc('18^2*4'), 1296)
+        
 
 if __name__ == '__main__':
     unittest.main()
