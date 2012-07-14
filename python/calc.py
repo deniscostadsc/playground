@@ -61,7 +61,9 @@ class CalcTest(unittest.TestCase):
         self.assertEquals(calc('18*2/4'), 9)
         self.assertEquals(calc('18*2^4'), 288)
         self.assertEquals(calc('18^2*4'), 1296)
-        
+
+    def test_complicated_operations(self):
+        self.assertEquals(calc('2+144/3^2-7+102'), 113)
 
 if __name__ == '__main__':
     unittest.main()
