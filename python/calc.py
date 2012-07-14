@@ -1,12 +1,16 @@
 import unittest
+from string import rfind
+
+def splitter(expression, char):
+    return expression[:expression.rfind(char)], expression[expression.rfind(char) + 1:]
 
 def calc(expression):
     if '+' in expression:
-        a, b = expression.split('+')
+        a, b = splitter(expression, '+')
         expression = '%s' % str(calc(a) + calc(b))
 
     if '-' in expression:
-        a, b = expression.split('-')
+        a, b = splitter(expression, '-')
         expression = '%s' % str(calc(a) - calc(b))
 
     if '*' in expression or '/' in expression:
@@ -14,21 +18,21 @@ def calc(expression):
         slash_index = expression.find('/')
 
         if asterix_index == -1:
-            a, b = expression.split('/')
+            a, b = splitter(expression, '/')
             expression = '%s' % str(calc(a) / calc(b))
         elif slash_index == -1:
-            a, b = expression.split('*')
+            a, b = splitter(expression, '*')
             expression = '%s' % str(calc(a) * calc(b))
         else:
             if asterix_index < slash_index:
-                a, b = expression.split('/')
+                a, b = splitter(expression, '/')
                 expression = '%s' % str(calc(a) / calc(b))
             else:
-                a, b = expression.split('*')
+                a, b = splitter(expression, '*')
                 expression = '%s' % str(calc(a) * calc(b))
  
     if '^' in expression:
-        a, b = expression.split('^')
+        a, b = splitter(expression, '^')
         expression = '%s' % str(calc(a) ** calc(b))
 
     return int(expression)
@@ -49,6 +53,11 @@ class CalcTest(unittest.TestCase):
         self.assertEquals(calc('3^4-3'), 78)
         self.assertEquals(calc('8/4-3'), -1)
         self.assertEquals(calc('2-3*3'), -7)
+        self.assertEquals(calc('2-3-3'), -4)
+        self.assertEquals(calc('2+3+3'), 8)
+        self.assertEquals(calc('2*3*3'), 18)
+        self.assertEquals(calc('12/3/4'), 1)
+
 
     def test_checking_for_priority(self):
         self.assertEquals(calc('18/2*4'), 36)
