@@ -16,7 +16,7 @@ def calc(expression):
     subtract = lambda x, y: x - y
     multiply = lambda x, y: x * y
     divide = lambda x, y: x / y
-    
+
     if '+' in expression:
         expression = _splitter(expression, '+', add)
 
@@ -36,7 +36,7 @@ def calc(expression):
                 expression = _splitter(expression, '/', divide)
             else:
                 expression = _splitter(expression, '*', multiply)
- 
+
     if '^' in expression:
         expression = _splitter(expression, '^', pow)
 
@@ -63,7 +63,6 @@ class CalcTest(unittest.TestCase):
         self.assertEquals(calc('2*3*3'), 18)
         self.assertEquals(calc('12/3/4'), 1)
 
-
     def test_checking_for_priority(self):
         self.assertEquals(calc('18/2*4'), 36)
         self.assertEquals(calc('18*2/4'), 9)
@@ -72,6 +71,7 @@ class CalcTest(unittest.TestCase):
 
     def test_complicated_operations(self):
         self.assertEquals(calc('2+144/3^2-7+102'), 113)
+
 
 if __name__ == '__main__':
     unittest.main()
