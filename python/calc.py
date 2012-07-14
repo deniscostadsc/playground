@@ -1,39 +1,44 @@
 import unittest
 from string import rfind, rsplit
 
+
+def _splitter(expression, char, operation):
+    a, b = rsplit(expression, char, 1)
+    return str(operation(calc(a), calc(b)))
+
+
 def calc(expression):
     '''
     An expression calculator
     '''
+
+    add = lambda x, y: x + y
+    subtract = lambda x, y: x - y
+    multiply = lambda x, y: x * y
+    divide = lambda x, y: x / y
+    
     if '+' in expression:
-        a, b = rsplit(expression, '+', 1)
-        expression = '%s' % str(calc(a) + calc(b))
+        expression = _splitter(expression, '+', add)
 
     if '-' in expression:
-        a, b = rsplit(expression, '-', 1)
-        expression = '%s' % str(calc(a) - calc(b))
+        expression = _splitter(expression, '-', subtract)
 
     if '*' in expression or '/' in expression:
         asterix_index = expression.find('*')
         slash_index = expression.find('/')
 
         if asterix_index == -1:
-            a, b = rsplit(expression, '/', 1)
-            expression = '%s' % str(calc(a) / calc(b))
+            expression = _splitter(expression, '/', divide)
         elif slash_index == -1:
-            a, b = rsplit(expression, '*', 1)
-            expression = '%s' % str(calc(a) * calc(b))
+            expression = _splitter(expression, '*', multiply)
         else:
             if asterix_index < slash_index:
-                a, b = rsplit(expression, '/', 1)
-                expression = '%s' % str(calc(a) / calc(b))
+                expression = _splitter(expression, '/', divide)
             else:
-                a, b = rsplit(expression, '*', 1)
-                expression = '%s' % str(calc(a) * calc(b))
+                expression = _splitter(expression, '*', multiply)
  
     if '^' in expression:
-        a, b = rsplit(expression, '^', 1)
-        expression = '%s' % str(calc(a) ** calc(b))
+        expression = _splitter(expression, '^', pow)
 
     return int(expression)
 
