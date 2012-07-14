@@ -32,6 +32,7 @@ class CalcTest(unittest.TestCase):
         self.assertEquals(calc('3*4-3'), 9)
         self.assertEquals(calc('3^4-3'), 78)
         self.assertEquals(calc('8/4-3'), -1)
+        self.assertEquals(calc('2-3*3'), -7)
 
 if __name__ == '__main__':
     unittest.main()
