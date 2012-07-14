@@ -40,7 +40,9 @@ def calc(expression):
     if '^' in expression:
         expression = _splitter(expression, '^', pow)
 
-    return int(expression)
+    if expression:
+        return int(expression)
+    return 0
 
 
 class CalcTest(unittest.TestCase):
@@ -71,6 +73,7 @@ class CalcTest(unittest.TestCase):
 
     def test_complicated_operations(self):
         self.assertEquals(calc('2+144/3^2-7+102'), 113)
+        self.assertEquals(calc('2+3/144^2-7+102'), 97)
 
 
 if __name__ == '__main__':
