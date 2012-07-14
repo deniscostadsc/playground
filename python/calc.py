@@ -1,5 +1,5 @@
 import unittest
-from string import rfind, rsplit
+from string import rsplit
 
 
 def _splitter(expression, char, operation):
