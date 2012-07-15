@@ -21,6 +21,7 @@ def calc(expression):
     An expression calculator
     '''
 
+    # calculating parentheses first
     inner_parentheses = re.search(r'\([^()]+\)', expression)
     while inner_parentheses:
         expression = expression.replace(inner_parentheses.group(), str(calc(inner_parentheses.group()[1:-1])))
