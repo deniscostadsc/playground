@@ -1,4 +1,5 @@
 import unittest
+import re
 from string import rsplit
 
 
@@ -16,6 +17,11 @@ def calc(expression):
     subtract = lambda x, y: x - y
     multiply = lambda x, y: x * y
     divide = lambda x, y: x / y
+    
+    inner_parentheses = re.search(r'\([^()]+\)', expression)
+
+    if inner_parentheses:
+        expression = expression.replace(inner_parentheses.group(), str(calc(inner_parentheses.group()[1:-1])))
 
     if '+' in expression:
         expression = _splitter(expression, '+', add)
@@ -73,7 +79,11 @@ class CalcTest(unittest.TestCase):
 
     def test_complicated_operations(self):
         self.assertEquals(calc('2+144/3^2-7+102'), 113)
-        self.assertEquals(calc('2+3/144^2-7+102'), 97)
+        self.assertEquals(calc('2+3/144^2-7+102'), 97)  # An error happens without the if in the end of calc function
+
+    def test_simple_operations_with_parentheses(self):
+        self.assertEquals(calc('2+(2-1)'), 3)
+        self.assertEquals(calc('4/(2-1)'), 4)
 
 
 if __name__ == '__main__':
