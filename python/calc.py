@@ -3,8 +3,16 @@ import re
 from string import rsplit
 
 
-def _splitter(expression, char, operation):
+def _splitter(expression, char):
+    operations = {
+        '+': lambda x, y: x + y,
+        '-': lambda x, y: x - y,
+        '*': lambda x, y: x * y,
+        '/': lambda x, y: x / y,
+        '^': pow,
+    }
     a, b = rsplit(expression, char, 1)
+    operation = operations[char]
     return str(operation(calc(a), calc(b)))
 
 
@@ -13,38 +21,33 @@ def calc(expression):
     An expression calculator
     '''
 
-    add = lambda x, y: x + y
-    subtract = lambda x, y: x - y
-    multiply = lambda x, y: x * y
-    divide = lambda x, y: x / y
-
     inner_parentheses = re.search(r'\([^()]+\)', expression)
     while inner_parentheses:
         expression = expression.replace(inner_parentheses.group(), str(calc(inner_parentheses.group()[1:-1])))
         inner_parentheses = re.search(r'\([^()]+\)', expression)
 
     if '+' in expression:
-        expression = _splitter(expression, '+', add)
+        expression = _splitter(expression, '+')
 
     if '-' in expression:
-        expression = _splitter(expression, '-', subtract)
+        expression = _splitter(expression, '-')
 
     if '*' in expression or '/' in expression:
         asterix_index = expression.find('*')
         slash_index = expression.find('/')
 
         if asterix_index == -1:
-            expression = _splitter(expression, '/', divide)
+            expression = _splitter(expression, '/')
         elif slash_index == -1:
-            expression = _splitter(expression, '*', multiply)
+            expression = _splitter(expression, '*')
         else:
             if asterix_index < slash_index:
-                expression = _splitter(expression, '/', divide)
+                expression = _splitter(expression, '/')
             else:
-                expression = _splitter(expression, '*', multiply)
+                expression = _splitter(expression, '*')
 
     if '^' in expression:
-        expression = _splitter(expression, '^', pow)
+        expression = _splitter(expression, '^')
 
     if expression:
         return int(expression)
