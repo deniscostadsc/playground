@@ -17,9 +17,8 @@ def calc(expression):
     subtract = lambda x, y: x - y
     multiply = lambda x, y: x * y
     divide = lambda x, y: x / y
-    
-    inner_parentheses = re.search(r'\([^()]+\)', expression)
 
+    inner_parentheses = re.search(r'\([^()]+\)', expression)
     while inner_parentheses:
         expression = expression.replace(inner_parentheses.group(), str(calc(inner_parentheses.group()[1:-1])))
         inner_parentheses = re.search(r'\([^()]+\)', expression)
