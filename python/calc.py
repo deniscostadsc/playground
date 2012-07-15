@@ -36,8 +36,10 @@ def calc(expression):
         asterix_index = expression.find('*')
         slash_index = expression.find('/')
 
+        # without '*',  divide
         if asterix_index == -1:
             expression = _calc(expression, '/')
+        # without '/', multiply
         elif slash_index == -1:
             expression = _calc(expression, '*')
         else:
