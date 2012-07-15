@@ -20,8 +20,9 @@ def calc(expression):
     
     inner_parentheses = re.search(r'\([^()]+\)', expression)
 
-    if inner_parentheses:
+    while inner_parentheses:
         expression = expression.replace(inner_parentheses.group(), str(calc(inner_parentheses.group()[1:-1])))
+        inner_parentheses = re.search(r'\([^()]+\)', expression)
 
     if '+' in expression:
         expression = _splitter(expression, '+', add)
@@ -84,6 +85,7 @@ class CalcTest(unittest.TestCase):
     def test_simple_operations_with_parentheses(self):
         self.assertEquals(calc('2+(2-1)'), 3)
         self.assertEquals(calc('4/(2-1)'), 4)
+        self.assertEquals(calc('4/(2-1*(9/9))'), 4)
 
 
 if __name__ == '__main__':
