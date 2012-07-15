@@ -82,8 +82,7 @@ class CalcTest(unittest.TestCase):
 
     def test_complicated_operations(self):
         self.assertEquals(calc('2+144/3^2-7+102'), 113)
-        self.assertEquals(calc('2+3/144^2-7+102'), 97)  # An error happens without the if in the end of calc function
-
+        self.assertEquals(calc('2+3/144^2-7+102'), 97)
     def test_simple_operations_with_parentheses(self):
         self.assertEquals(calc('2+(2-1)'), 3)
         self.assertEquals(calc('4/(2-1)'), 4)
