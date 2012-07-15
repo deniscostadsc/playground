@@ -3,7 +3,7 @@ import re
 from string import rsplit
 
 
-def _splitter(expression, char):
+def _calc(expression, char):
     operations = {
         '+': lambda x, y: x + y,
         '-': lambda x, y: x - y,
@@ -27,27 +27,27 @@ def calc(expression):
         inner_parentheses = re.search(r'\([^()]+\)', expression)
 
     if '+' in expression:
-        expression = _splitter(expression, '+')
+        expression = _calc(expression, '+')
 
     if '-' in expression:
-        expression = _splitter(expression, '-')
+        expression = _calc(expression, '-')
 
     if '*' in expression or '/' in expression:
         asterix_index = expression.find('*')
         slash_index = expression.find('/')
 
         if asterix_index == -1:
-            expression = _splitter(expression, '/')
+            expression = _calc(expression, '/')
         elif slash_index == -1:
-            expression = _splitter(expression, '*')
+            expression = _calc(expression, '*')
         else:
             if asterix_index < slash_index:
-                expression = _splitter(expression, '/')
+                expression = _calc(expression, '/')
             else:
-                expression = _splitter(expression, '*')
+                expression = _calc(expression, '*')
 
     if '^' in expression:
-        expression = _splitter(expression, '^')
+        expression = _calc(expression, '^')
 
     if expression:
         return int(expression)
