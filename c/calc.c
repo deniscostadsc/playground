@@ -1,5 +1,15 @@
 #include <stdio.h>
 #include <assert.h>
+#include <string.h>
+
+struct expr {
+    char *a;
+    char *b;
+};
+
+char *splitter(char *expression, int index){
+    return 0;
+}
 
 int calc(char expression[]) {
     if (expression == "2-2")
