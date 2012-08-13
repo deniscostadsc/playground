@@ -91,6 +91,7 @@ class CalcTest(unittest.TestCase):
         self.assertEquals(calc('2+(2-1)'), 3)
         self.assertEquals(calc('4/(2-1)'), 4)
         self.assertEquals(calc('4/(2-1*(9/9))'), 4)
+        self.assertEquals(calc('(2+2)*(2+2)'), 16)
 
 
 if __name__ == '__main__':
