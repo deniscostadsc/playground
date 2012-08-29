@@ -3,4 +3,6 @@ python:
  - "2.6"
  - "2.7"
  - "3.2"
- script: runtests.sh
+compiler:
+ - gcc
+script: runtests.sh
