@@ -1,1 +1,1 @@
-python python/runtests.py
+python -m unittest discover python '*.py'
