@@ -1,9 +1,0 @@
-language: python
-python:
- - "2.7"
-script: ./runtests.sh
-
-language: c
-compiler: gcc
-script: ./runtests.sh
-
