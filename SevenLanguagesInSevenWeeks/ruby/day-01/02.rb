@@ -1,2 +1,2 @@
-puts('Hello, Ruby'.index('Ruby'))
+puts 'Hello, Ruby'.index('Ruby')
 

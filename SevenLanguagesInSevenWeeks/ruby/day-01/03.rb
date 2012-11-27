@@ -1,2 +1,2 @@
-puts('Denis' * 10)
+puts 'Denis' * 10
 
