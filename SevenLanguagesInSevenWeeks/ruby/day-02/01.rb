@@ -5,4 +5,3 @@ File.open('02.rb', 'r') do |f|
         puts line
     end
 end
-

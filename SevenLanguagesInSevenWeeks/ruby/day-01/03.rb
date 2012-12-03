@@ -1,2 +1,1 @@
 puts 'Denis' * 10
-
