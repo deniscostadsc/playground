@@ -2,4 +2,6 @@ h = {'a' => 'abc', 'b' => 'cba'}
 
 a = h.to_a
 
-puts a.to_h
+for i in h.keys # There is a better way?
+    puts h[i]
+end
