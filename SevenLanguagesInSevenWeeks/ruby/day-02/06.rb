@@ -1,13 +1,20 @@
 #!/usr/bin/env ruby
 
+#
+# The Tree class was interesting, but it did not allow you to specify
+# a new tree with a clean user interface. Let the initializer accept a
+# nested structure with hashes and arrays. You should be able to
+# specify a tree like this: {’grandpa’ => { ’dad’ => {’child 1’ => {}, ’child
+# 2’ => {} }, ’uncle’ => {’child 3’ => {}, ’child 4’ => {} } } }.
+#
+
 class Tree
     attr_accessor :children, :node_name
 
     def initialize(tree)
         @node_name = tree.keys[0]
-        children = []
-        tree[@node_name].each {|c| children.push Tree.new({c[0], c[1]})}
-        @children = children
+        @children = []
+        tree[@node_name].each {|key, value| @children.push Tree.new({key, value})}
     end
 
 

@@ -1,9 +1,12 @@
 #!/usr/bin/env ruby
 
+#
+# How would you translate a hash to an array? Can you translate
+# arrays to hashes?
+#
+
 h = {'a' => 'abc', 'b' => 'cba'}
 
 a = h.to_a
 
-for i in h.keys # There is a better way?
-    puts h[i]
-end
+new_h = Hash[*a]

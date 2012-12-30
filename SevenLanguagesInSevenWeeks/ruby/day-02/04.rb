@@ -1,5 +1,10 @@
 #!/usr/bin/env ruby
 
+#
+# You can use Ruby arrays as stacks. What other common data
+# structures do arrays support?
+#
+
 $stack = Array.new
 
 def put_in_stack item
