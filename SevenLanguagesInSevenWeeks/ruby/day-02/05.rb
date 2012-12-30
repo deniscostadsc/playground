@@ -1,31 +1,7 @@
 #!/usr/bin/env ruby
 
-class Tree
-    attr_accessor :children, :node_name
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 
-    def initialize(tree)
-        @node_name = tree.keys[0]
-        children = []
-        tree[@node_name].each {|c| children.push Tree.new({c[0], c[1]})}
-        @children = children
-    end
+a.each {|i| puts i}
 
-
-    def visit_all(&block)
-        visit &block
-        children.each {|c| c.visit_all &block}
-    end
-
-    def visit(&block)
-        block.call self
-    end
-end
-
-tree = {'grandpa' => {'dad' => {'child 1' => {}, 'child 2' => {}}, 'uncle' => {'child 3' => {}, 'child 4' => {}}}}
-ruby_tree = Tree.new(tree)
-
-puts "Visiting a node"
-ruby_tree.visit {|node| puts node.node_name}
-puts
-puts "visiting entire tree"
-ruby_tree.visit_all {|node| puts node.node_name}
+a.each_slice(1) {|x| puts x}
