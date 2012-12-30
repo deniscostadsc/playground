@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 h = {'a' => 'abc', 'b' => 'cba'}
 
 a = h.to_a

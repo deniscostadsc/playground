@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 pattern = ARGV[0]
 file = ARGV[1]
 

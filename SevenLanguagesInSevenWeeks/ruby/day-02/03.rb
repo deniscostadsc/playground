@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 
 $stack = Array.new
 

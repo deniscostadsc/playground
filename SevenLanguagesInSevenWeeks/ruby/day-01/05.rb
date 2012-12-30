@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 number = rand(100)
 
 guess = gets.to_i
