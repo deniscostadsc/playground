@@ -3,11 +3,9 @@ class Tree
 
     def initialize(tree)
         @node_name = tree.keys[0]
-        schildren = []
-        for child in tree[@node_name]
-            schildren.push Tree.new({child[0], child[1]})
-        end
-        @children = schildren
+        children = []
+        tree[@node_name].each {|c| children.push Tree.new({c[0], c[1]})}
+        @children = children
     end
 
 
