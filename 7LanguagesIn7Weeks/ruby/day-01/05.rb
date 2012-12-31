@@ -13,14 +13,13 @@
 
 number = rand(100)
 
-guess = gets.to_i
-
-while guess != number
+begin
+    guess = gets.to_i
     if guess < number
         puts 'Too low'
-    else
+    elsif guess > number
         puts 'Too high'
     end
-    guess = gets.to_i
-end
+end while guess != number
+
 puts 'Nice try'
