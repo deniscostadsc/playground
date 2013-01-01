@@ -1,14 +1,32 @@
 #!/usr/bin/env io
 
-fiboLoop := method(n,
+Fibonacci := Object clone
+
+Fibonacci loop := method(n,
+    a := 1
+    b := 1
     if (n > 2) then ( 
-        a := 1
-        b := 1
-        for (i, 1, n - 2, aux := a + b; a = b; b = aux)
-        writeln(b)
-    ) else (
-        writeln(1)
+        for (i, 1, n - 2,
+            aux := a + b
+            a = b
+            b = aux
+        )
     )
+    b
 )
 
-fiboLoop(6)
+Fibonacci loop2 := method(n,
+    a := 0
+    b := 1
+    aux := 1
+    for (i, 1, n - 1,
+        aux := a + b
+        a = b
+        b = aux
+    )
+    b
+)
+
+
+Fibonacci loop(8) println
+Fibonacci loop2(8) println
