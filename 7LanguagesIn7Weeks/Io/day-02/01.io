@@ -13,5 +13,9 @@ Fibonacci loop := method(n,
     b
 )
 
+Fibonacci recursive := method(n,
+    if (n <= 2, 1, Fibonacci recursive(n - 1) + Fibonacci recursive(n - 2))
+)
 
 Fibonacci loop(8) println
+Fibonacci recursive(8) println
