@@ -18,5 +18,5 @@ for(i, 1, attempts,
 
     distance = measurer(rand, guess)
 
-    if(i == attempts, writeln("Game over! 8("))
+    if(i == attempts, writeln("Game over! The number was " .. rand .. " 8("))
 )
