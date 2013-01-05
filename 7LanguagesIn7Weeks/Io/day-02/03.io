@@ -10,7 +10,10 @@ add := method(args,
     for (i, 1, lineNumber,
         line := list()
 
-        for (j, argsIndex, itemsPerLine + argsIndex - 1,
+        if (itemsPerLine + argsIndex - 1 >= args size, argsLimit := args size - 1, argsLimit := itemsPerLine + argsIndex - 1)
+
+        for (j, argsIndex, argsLimit,
+
             line push(args at(j))
         )
 
