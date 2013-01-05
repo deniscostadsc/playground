@@ -14,11 +14,9 @@ Table dim := method(x, y,
 
     while (self table size < y,
         self table push(list())
-    )
 
-    table foreach(i, item,
-        while (self table at(i) size < x,
-            self table at(i) push(nil)
+        while (self table at(self table size - 1) size < x,
+            self table at(self table size - 1) push(nil)
         )
     )
 )
