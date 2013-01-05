@@ -1,5 +1,10 @@
 #!/usr/bin/env io
 
+//
+// Write a program to add up all of the numbers in a two-dimensional
+// array.
+//
+
 add := method(args,
     itemsPerLine := args size sqrt ceil
     lineNumber := (args size / itemsPerLine) ceil
@@ -13,7 +18,6 @@ add := method(args,
         if (itemsPerLine + argsIndex - 1 >= args size, argsLimit := args size - 1, argsLimit := itemsPerLine + argsIndex - 1)
 
         for (j, argsIndex, argsLimit,
-
             line push(args at(j))
         )
 

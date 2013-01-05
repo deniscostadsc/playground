@@ -1,5 +1,9 @@
 #!/usr/bin/env io
 
+//
+// Run an Io program from a file.
+//
+
 if (0) then (
     writeln("Zero is true")
 ) else (

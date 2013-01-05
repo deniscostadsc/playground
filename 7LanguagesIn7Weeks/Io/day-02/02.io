@@ -1,5 +1,9 @@
 #!/usr/bin/env io
 
+//
+// How would you change / to return 0 if the denominator is zero?
+//
+
 Number divide := Number getSlot("/")
 
 Number / = method(n,
