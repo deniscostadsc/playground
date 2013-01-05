@@ -12,17 +12,15 @@ Table table := list()
 
 Table dim := method(x, y,
 
-    if (self table size < y,
+    while (self table size < y,
         self table push(list())
-        self dim(x, y)
     )
 
-    if (self table at(y) and self table at(y) size < x,
-        self table at(y) push(nil)
-        self dim(x, y)
+    table foreach(i, item,
+        while (self table at(i) size < x,
+            self table at(i) push(nil)
+        )
     )
-
-    if (y >= 0, dim(x, y - 1))
 )
 
 Table set := method(x, y, value,
