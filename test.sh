@@ -12,25 +12,53 @@ clean (){
     find . -name 'out2.txt' -delete
 }
 
+extension_exists (){
+    if [ $(find . -name $1 | wc -l) -gt 0 ]; then
+        return 0
+    fi
+    return 1
+}
+
 clean
 
 exit=0
 
 for project_folder in $(ls -F | grep '\/$'); do
-    if [ $project_folder != "projecteuler/" ]; then
-        cd $project_folder
-        for folder in $(ls -F | grep '\/$'); do
-            cd $folder
+    cd $project_folder
+    for folder in $(ls -F | grep '\/$'); do
+        cd $folder
+
+        # testing c code
+        if extension_exists '*.c'; then
             gcc *.c
-            ./a.out < in.txt > out2.txt
+            if [ $project_folder == "projecteuler/" ]; then
+                ./a.out > out2.txt
+            else
+                ./a.out < in.txt > out2.txt
+            fi
             if [ ! -z "$(diff out2.txt out.txt)" ]; then
-                echo "Error: $project_folder/$folder"
+                echo "C Error: $project_folder$folder"
                 exit=1
             fi
-            cd ..
-        done
+        fi
+
+        # testing python code
+        if extension_exists '*.py'; then
+            if [ $project_folder == "projecteuler/" ]; then
+                python *.py > out2.txt
+            else
+                python *.py < in.txt > out2.txt
+            fi
+
+            if [ ! -z "$(diff out2.txt out.txt)" ]; then
+                echo "Python Error: $project_folder$folder"
+                exit=1
+            fi
+        fi
+
         cd ..
-    fi
+    done
+    cd ..
 done
 
 clean
