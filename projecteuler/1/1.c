@@ -8,10 +8,9 @@ of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is
 
 int main(){
     int i, sum = 0;
-    for (i = 0; i < 1000; ++i){
+    for (i = 0; i < 1000; ++i)
         if (i % 3 == 0 || i % 5 == 0)
             sum += i;
-    }
     printf("%d\n", sum);
     return 0;
 }
