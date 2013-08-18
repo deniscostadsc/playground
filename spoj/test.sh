@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd $(dirname $0)
+
 for folder in $(ls -F |grep '\/$'); do
     cd $folder
     gcc *.c
