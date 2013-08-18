@@ -1,0 +1,6 @@
+language: python
+script:
+    - spoj/tests.sh
+notifications:
+    email:
+        - deniscostadsc@gmail.com
