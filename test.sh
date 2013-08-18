@@ -30,7 +30,7 @@ for project_folder in $(ls -F | grep '\/$'); do
 
         # testing c code
         if extension_exists '*.c'; then
-            gcc *.c
+            gcc *.c -lm
             if [ $project_folder == "projecteuler/" ]; then
                 ./a.out > out2.txt
             else
