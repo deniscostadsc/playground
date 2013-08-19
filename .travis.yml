@@ -1,6 +1,0 @@
-language: python
-script:
-    - ./test.sh
-notifications:
-    email:
-        - deniscostadsc@gmail.com
