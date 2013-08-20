@@ -5,7 +5,7 @@ int capicua(int n){
     int i;
     char s[6];
     sprintf(s, "%d", n);
-    for (i = 0; i < strlen(s); i++)
+    for (i = 0; i < strlen(s) / 2; i++)
         if (s[i] != s[strlen(s) - i - 1])
             return 0;
     return 1;
