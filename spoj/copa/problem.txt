@@ -1,3 +1,5 @@
+http://br.spoj.com/problems/COPA/
+
 Uma Copa do Mundo de futebol de botões está sendo realizada com
 times de todo o mundo. A classificação é baseada no número de
 pontos ganhos pelos times, e a distribuição de pontos é feita
