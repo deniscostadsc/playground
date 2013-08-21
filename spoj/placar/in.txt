@@ -1,0 +1,58 @@
+4
+cardonha 9
+infelizreprovado 3
+marcel 9
+infelizaprovado 3
+4
+cardonha 9
+a 3
+marcel 9
+infelizaprovado 3
+4
+cardonha 9
+i 3
+marcel 9
+znfelizaprovado 3
+4
+cardonha 9
+i 3
+marcel 2
+znfelizaprovado 3
+4
+cardonha 9
+o 3
+marcel 9
+oi 3
+1
+a 9
+3
+azssssssssssssssssd 1
+b 2
+dnnnnnnnnnnnnnnnnnn 2
+5
+A123456789A12345678 7
+A123456789A12345678 7
+A123456789A12345678 7
+A123456789A1234567A 7
+A123456789A12345678 8
+5
+aaabbbcccdddeeefffg 4
+aaabbbcccdddeeefffg 4
+aaabbbcccdddeeefffa 4
+aaabbbcccdddeeefffa 4
+aaabbbcccdddeeefffg 4
+8
+Primeiro 9
+Medio 5
+Segundo 8
+Segundo2 8
+Terceiro 7
+Pequeno 3
+Pequenoa 3
+Pequenob 3
+5
+Primeiro 8
+Segundo2 8
+Terceiro 7
+Pequeno 3
+Pequenoa 3
