@@ -29,7 +29,7 @@ de jogos que terminaram empatados até o momento.
 
 Exemplo de entrada
 
- 
+
 
 3 3
 Brasil 3
@@ -43,7 +43,7 @@ Australia 1
 
 Saída para o exemplo de entrada
 
- 
+
 
 0
 2
