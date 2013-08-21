@@ -2,12 +2,12 @@
 #include <string.h>
 
 int main(){
-    int d[31], e[31], n, p, t, i, s;
+    int d[31], e[31], n, p, t, i;
     char l;
     while(scanf("%d", &n) != EOF){
         memset(d, 0, sizeof(d));
         memset(e, 0, sizeof(e));
-        t = 0;
+
         while(n--){
             scanf("%d %c", &p, &l);
             if (l == 'E')
@@ -15,14 +15,13 @@ int main(){
             else
                 d[p - 30]++;
         }
+
+        t = 0;
         for (i = 0; i <= 30; ++i){
             if (e[i] < d[i])
-                s = e[i];
+                t += e[i];
             else
-                s = d[i];
-
-            if (s != 0)
-                t += s;
+                t += d[i];
         }
         printf("%d\n", t);
     }
