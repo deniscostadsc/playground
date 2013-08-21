@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main (){
+int main(){
     int n, s, t;
     while((t = getchar()) != '0'){
         getchar();

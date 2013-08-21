@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-main (){
+int main(){
     int d[31], e[31], n, p, t, i, s;
     char l;
     while(scanf("%d", &n) != EOF){

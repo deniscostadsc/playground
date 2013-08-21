@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main (){
+int main(){
     int i, n, k, y, maior;
     while (scanf("%d", &i) && i != 0){
         int v[i];
