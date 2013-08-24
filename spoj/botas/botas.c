@@ -17,7 +17,7 @@ int main(){
         }
 
         t = 0;
-        for (i = 0; i <= 30; ++i){
+        for (i = 0; i <= 30; i++){
             if (e[i] < d[i])
                 t += e[i];
             else

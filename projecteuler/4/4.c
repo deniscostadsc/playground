@@ -13,8 +13,8 @@ int capicua(int n){
 
 int main (){
     int i, j, g = 1;
-    for (i = 100; i <= 999; ++i)
-        for (j = 100; j <= 999; ++j)
+    for (i = 100; i <= 999; i++)
+        for (j = 100; j <= 999; j++)
             if (capicua(i * j) && i * j > g)
                 g = i * j;
     printf("%d\n", g);

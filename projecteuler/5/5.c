@@ -5,7 +5,7 @@ int main(){
     int i, check;
     for (n = 1;; n++){
         check = 1;
-        for (i = 1; i <= 20; ++i) {
+        for (i = 1; i <= 20; i++) {
             if (n % i != 0){
                 check = 0;
                 break;

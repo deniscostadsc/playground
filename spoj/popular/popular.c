@@ -7,8 +7,8 @@ int main(){
         int v[i];
         memset(v, 0, sizeof(v));
         maior = v[0];
-        for (k = 0; k < i; ++k){
-            for (y = 0; y < i; ++y){
+        for (k = 0; k < i; k++){
+            for (y = 0; y < i; y++){
                 scanf("%d", &n);
                 v[y] += n;
                 if (v[y] > maior){

@@ -13,7 +13,7 @@ int is_prime (int n){
     if (n % 5 == 0) return 0;
     if (n % 7 == 0) return 0;
 
-    for (i = 11; i < n / 2; ++i){
+    for (i = 11; i < n / 2; i++){
         if (n % i == 0)
             return 0;
     }
@@ -24,7 +24,7 @@ int main(){
     int i;
     long long n = 600851475143;
     long long r;
-    for (i = 2; i < sqrt(n); ++i)
+    for (i = 2; i < sqrt(n); i++)
         if (n % i == 0 && is_prime(i)){
             r = i;
         }
