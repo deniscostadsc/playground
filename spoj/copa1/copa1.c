@@ -2,15 +2,14 @@
 #include <string.h>
 
 int main(){
-    int a, b, i, g[16], j = 8, t = 1, l = 1;
+    int a, b, i, j = 8, t = 1, l = 1;
     char c[] = "ABCDEFGHIJKLMNOP";
-    memset(g, 0, sizeof(g));
 
     while(scanf("%d %d", &a, &b) != EOF){
         if (a > b){
-            for (i = 0; i < t; i++) g[(l - 1) * 2 * t + t + i] = 1;
+            for (i = 0; i < t; i++) c[(l - 1) * 2 * t + t + i] = '0';
         } else {
-            for (i = 0; i < t; i++) g[(l - 1) * 2 * t + i] = 1;
+            for (i = 0; i < t; i++) c[(l - 1) * 2 * t + i] = '0';
         }
         if (l >= j){
             j /= 2;
@@ -21,7 +20,7 @@ int main(){
     }
 
     for (i = 0; i <= 15; i++){
-        if (g[i] == 0){
+        if (c[i] != '0'){
             printf("%c", c[i]);
             break;
         }
