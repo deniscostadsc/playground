@@ -1,0 +1,31 @@
+http://br.spoj.com/problems/PRIMO/
+
+Dado um inteiro N, verifique se N é primo.
+
+Entrada
+
+A entrada é composta por um único caso de teste, composto por
+uma única linha que contém o inteiro N.
+
+Saída
+
+Seu programa deve produzir uma única linha, contendo a palavra
+"sim", se N for primo, e "nao", caso contrário
+(note a ausência de acentuação).
+
+Restrições
+
+|N| < 2^31
+Exemplo
+
+Entrada
+7
+
+Saída
+sim
+
+Entrada
+10
+
+Saída
+nao
