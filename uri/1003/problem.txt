@@ -1,3 +1,5 @@
+http://www.urionlinejudge.com.br/judge/problems/view/1003
+
 Read two variables A and B. Next, calculate the sum between
 them and assign it to the variable SOMA. Write the value of this variable.
 
