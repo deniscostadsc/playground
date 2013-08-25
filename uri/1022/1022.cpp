@@ -31,7 +31,7 @@ int main(){
         den_r = den;
 
         j = 2;
-        while (j <= r){
+        while (j <= r / 2 + 1){
             if (num_r % j == 0 && den_r % j == 0){
                 num_r = num_r / j;
                 den_r = den_r / j;
