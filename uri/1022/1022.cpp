@@ -8,18 +8,23 @@ int main(){
     scanf("%d", &n);
     while(n--){
         scanf("%d %c %d %c %d %c %d", &a, &i, &b, &o, &c, &i, &d);
-        if (o == '+'){
-            num = (b * d) * a / b + (b * d) * c / d;
-            den = b * d;
-        } else if (o == '-'){
-            num = (b * d) * a / b - (b * d) * c / d;
-            den = b * d;
-        } else if (o == '*'){
-            num = a * c;
-            den = b * d;
-        } else {
-            num = a * d;
-            den = b * c;
+        switch (o){
+            case '+':
+                num = (b * d) * a / b + (b * d) * c / d;
+                den = b * d;
+                break;
+            case '-':
+                num = (b * d) * a / b - (b * d) * c / d;
+                den = b * d;
+                break;
+            case '*':
+                num = a * c;
+                den = b * d;
+                break;
+            default:
+                num = a * d;
+                den = b * c;
+                break;
         }
 
         if (std::abs(num) < std::abs(den))
