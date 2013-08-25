@@ -6,11 +6,10 @@ int main(){
 
     scanf("%d", &n);
     printf("%d\n", n);
-    while(t < 7){
+    do {
         printf("%d nota(s) de R$ %d,00\n", n / d[t], d[t]);
         if (n >= d[t])
-            n -= d[t] * (n / d[t]);
-        t++;
-    }
+        n -= d[t] * (n / d[t]);
+    } while(d[t++] != 1);
     return 0;
 }
