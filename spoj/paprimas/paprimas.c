@@ -17,8 +17,7 @@ int is_prime (int n){
     if (n % 7 == 0) return 0;
 
     int i;
-    int k = (int) sqrt(n) * 2;
-    for (i = 11; i < k; i++){
+    for (i = 11; i < sqrt(n) * 2; i++){
         if (n % i == 0)
             return 0;
     }
