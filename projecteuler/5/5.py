@@ -9,4 +9,3 @@ while True:
         print(number)
         break
     number += 1
-
