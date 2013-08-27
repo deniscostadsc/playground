@@ -2,12 +2,7 @@
 
 int main(){
     int p;
-    while(1){
-        scanf("%d", &p);
-        if (p != 2002)
-            printf("Senha Invalida\n");
-        else
-            break;
-    }
+    while((scanf("%d", &p)) && p != 2002)
+        printf("Senha Invalida\n");
     printf("Acesso Permitido\n");
 }
