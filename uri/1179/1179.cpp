@@ -12,13 +12,17 @@ int main(){
         }
 
         if (pi == 5){
-            for (j = 0; j <= 4; j++) printf("par[%d] = %d\n", j, p[j]);
-            for (j = 0; j <= 4; j++) p[j] = NULL;
+            for (j = 0; j <= 4; j++){
+                printf("par[%d] = %d\n", j, p[j]);
+                p[j] = NULL;
+            }
             pi = 0;
         }
         if (ii == 5){
-            for (j = 0; j <= 4; j++) printf("impar[%d] = %d\n", j, i[j]);
-            for (j = 0; j <= 4; j++) i[j] = NULL;
+            for (j = 0; j <= 4; j++){
+                printf("impar[%d] = %d\n", j, i[j]);
+                i[j] = NULL;
+            }
             ii = 0;
         }
     }
