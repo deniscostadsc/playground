@@ -1,0 +1,23 @@
+http://www.urionlinejudge.com.br/judge/problems/view/1118
+
+Write an program to read two scores of a student. Calculate and print
+the semester average. The program must accepts only valid scores
+(a score must fit in the range [0.10]). Each score must be validated
+separately.
+
+The program must print a message "novo calculo (1-sim 2-nao)" that means
+"new calculate (1-yes 2-no)". After, the input will be (1 or 2). 1 means a
+new calculation, 2 means that the execution must be finished.
+Input
+
+The input file contains several positive or negative floating-point values​.
+After the input of 2 valid scores, an integer number X will be read. If
+(2 < X < 1 ) the message "novo calculo (1-sim 2-nao)" must be printed again
+and a new integer number must be read.
+Output
+
+If an invalid score is read, must be printed the message "nota invalida".
+When two valid scores are read, the message "media = " must be printed
+folowwed by the average between these 2 scores.
+
+The output average must be printed with 2 digits after the decimal point.
