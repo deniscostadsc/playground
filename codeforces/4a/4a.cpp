@@ -3,15 +3,9 @@
 using namespace std;
 
 bool two(int number){
-    int i;
-
-    if (number % 2 != 0)
+    if (number % 2 != 0 || number == 2)
         return false;
-    for (i = 2; i < number;  i += 2){
-        if ((number - i) % 2 == 0)
-            return true;
-    }
-    return false;
+    return true;
 }
 
 int main(){
