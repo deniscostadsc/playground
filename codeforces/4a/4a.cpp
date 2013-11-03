@@ -3,9 +3,7 @@
 using namespace std;
 
 bool two(int number){
-    if (number % 2 != 0 || number == 2)
-        return false;
-    return true;
+    return number % 2 == 0 || number != 2;
 }
 
 int main(){
