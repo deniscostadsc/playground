@@ -22,13 +22,13 @@ int main(){
         getline(cin, s);
         for (i = 0; i < s.size(); i++){
             if (l.find_first_of(s.at(i)) != string::npos){
-                    c[l.find_first_of(s.at(i))]++;
-                    if (c[l.find_first_of(s.at(i))] > g) g = c[l.find_first_of(s.at(i))];
+                c[l.find_first_of(s.at(i))]++;
+                if (c[l.find_first_of(s.at(i))] > g) g = c[l.find_first_of(s.at(i))];
             }
 
             if (u.find_first_of(s.at(i)) != string::npos){
-                    c[u.find_first_of(s.at(i))]++;
-                    if (c[u.find_first_of(s.at(i))] > g) g = c[u.find_first_of(s.at(i))];
+                c[u.find_first_of(s.at(i))]++;
+                if (c[u.find_first_of(s.at(i))] > g) g = c[u.find_first_of(s.at(i))];
             }
         }
 

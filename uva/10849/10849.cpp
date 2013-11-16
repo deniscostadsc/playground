@@ -18,7 +18,6 @@ int main(){
                 else cout << "2" << endl;
             } else cout << "no move" << endl;
         }
-
     }
 
     return 0;
