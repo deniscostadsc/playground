@@ -15,7 +15,7 @@ int main (){
     int i, j, g = 1;
     for (i = 100; i <= 999; i++)
         for (j = 100; j <= 999; j++)
-            if (capicua(i * j) && i * j > g)
+            if (i * j > g && capicua(i * j))
                 g = i * j;
     printf("%d\n", g);
     return 0;
