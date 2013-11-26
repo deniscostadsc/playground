@@ -1,10 +1,11 @@
 #include <iostream>
+#include <iomanip>
 #include <vector>
 
 using namespace std;
 
 int main(){
-    unsigned int i, j, g;
+    unsigned int i, g;
     int n;
     string s;
     bool newline = false;
@@ -22,7 +23,7 @@ int main(){
         }
 
         for (i = 0; i < ss.size(); i++){
-            for (j = 0; j < g - ss[i].length(); j++) cout << " ";
+            cout << setw(g);
             cout << ss[i] << endl;
         }
     }
