@@ -4,19 +4,15 @@
  
 using namespace std;
 
-unsigned long long g[64];
-unsigned long long k[64];
- 
-unsigned long long grains(int n){
+unsigned long long grains(unsigned long long n){
     if (n == 1) return 2;
     return 2 * grains(n - 1);
 }
  
 int main(){
     int n;
-    unsigned int x;
+    unsigned long long x;
 
-    memset(g, 0, sizeof(g));
     cin >> n;
     while(n--){
         cin >> x;
