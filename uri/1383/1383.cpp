@@ -24,8 +24,6 @@ int main(){
             line.clear();
             for (j = 0; j < 9; j++){
                 cin >> sudoku[i][j];
-                
-                // checking line
                 if (find(line, sudoku[i][j]) != -1) valid = false;
                 line.push_back(sudoku[i][j]);
             }
