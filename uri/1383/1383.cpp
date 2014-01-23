@@ -29,7 +29,14 @@ int main(){
             }
         }
 
+        square1.clear();
+        square2.clear();
+        square3.clear();
+
         for (i = 0; i < 9; i++){
+
+            if (!valid) break;
+
             column.clear();
             for (j = 0; j < 9; j++){
                 if (find(column, sudoku[j][i]) != -1) valid = false;
