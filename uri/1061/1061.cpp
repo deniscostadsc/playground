@@ -1,25 +1,31 @@
 #include <cstdio>
 
 int main(){
-    char n[3];
     int d, dd, h, hh, m, mm, s, ss;
-    scanf("%s %d", n, &d);
-    scanf("%d : %d : %d", &h, &m, &s);
-    scanf("%s %d", n, &dd);
+    scanf("Dia %d", &d);
+    scanf("%d : %d : %d\n", &h, &m, &s);
+    scanf("Dia %d", &dd);
     scanf("%d : %d : %d", &hh, &mm, &ss);
 
     s = ss - s;
     m = mm - m;
-    if (h < hh) {
-        d = dd - d;
-    } else {
-        d = dd - d - 1;
-        if (d < 0)
-            d = 0;
-    }
     h = hh - h;
+    d = dd - d;
+    if (s < 0)
+    {
+    	s += 60;
+    	m--;
+    }
+    if (m < 0)
+    {
+    	m += 60;
+    	h--;
+    }
     if (h < 0)
-        h = 24 + h;
+    {
+    	h += 24;
+    	d--;
+    }
 
     printf("%d dia(s)\n", d);
     printf("%d hora(s)\n", h);
