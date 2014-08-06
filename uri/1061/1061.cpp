@@ -2,6 +2,7 @@
 
 int main(){
     int d, dd, h, hh, m, mm, s, ss;
+
     scanf("Dia %d", &d);
     scanf("%d : %d : %d\n", &h, &m, &s);
     scanf("Dia %d", &dd);
