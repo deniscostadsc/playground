@@ -62,7 +62,7 @@ int main(){
             insert_node(tree, new_node);
         }
 
-		cout << "Case " << nn << ":" << endl;
+        cout << "Case " << nn << ":" << endl;
         cout << "Pre.:";
         pre_print_node(tree);
         cout << endl << "In..:";
