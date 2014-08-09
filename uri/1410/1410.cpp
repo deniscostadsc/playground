@@ -5,7 +5,7 @@ using namespace std;
 int main(){
     int a, d, i, j, nearest_attack_player, defense_distance, count, temp;
 
-    while (cin >> a >> d && a != 0 && d != 0){
+    while (cin >> a >> d && a && d){
         cin >> nearest_attack_player;
 
         for (i = 1; i < a; i++){
