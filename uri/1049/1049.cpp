@@ -13,14 +13,13 @@ int main(){
             if (c == "carnivoro")
                 printf("aguia\n");
             else
-                printf("pompa\n");
+                printf("pomba\n");
         } else {
             if (c == "onivoro")
                 printf("homem\n");
             else
                 printf("vaca\n");
         }
-
     } else {
         if (b == "inseto"){
             if (c == "hematofago")
