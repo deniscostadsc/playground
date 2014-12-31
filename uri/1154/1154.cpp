@@ -1,11 +1,14 @@
 #include <cstdio>
 
-int main(){
-    float s, n, c = 0;
-    while (scanf("%f", &n) && n > 0){
-        s += n;
-        c += 1.0;
+int main() {
+    float sum = 0.0;
+    int n, count = 0;
+
+    while (scanf("%d", &n) && n >= 0) {
+        sum += n;
+        count += 1;
     }
-    printf("%.2f\n", s / c);
+    printf("%.2f\n", sum / count);
+
     return 0;
 }
