@@ -1,15 +1,20 @@
-#include <iostream>
 #include <cstdio>
+#include <cmath>
 
-int main(){
-    double i, j;
-    for (i = 0.0; i <= 2.0; i += 0.2){
-        for (j = 1.0; j <= 3.0; j += 1.0){
-            if (i == 0.0 || i == 1.0 || i >= 1.9)
-                printf("I=%.0f J=%.0f\n", i, j + i);
-            else
-                printf("I=%.1f J=%.1f\n", i, j + i);
+int main() {
+    int i;
+
+    for (i = 0; i <= 20; i += 2) {
+        if (i == 0 || i == 10 || i == 20) {
+            printf("I=%.0f J=%.0f\n", (float)i / 10, (float)i / 10 + 1);
+            printf("I=%.0f J=%.0f\n", (float)i / 10, (float)i / 10 + 2);
+            printf("I=%.0f J=%.0f\n", (float)i / 10, (float)i / 10 + 3);
+        } else {
+            printf("I=%.1f J=%.1f\n", (float)i / 10, (float)i / 10 + 1);
+            printf("I=%.1f J=%.1f\n", (float)i / 10, (float)i / 10 + 2);
+            printf("I=%.1f J=%.1f\n", (float)i / 10, (float)i / 10 + 3);
         }
     }
+
     return 0;
 }
