@@ -1,3 +1,5 @@
+https://www.urionlinejudge.com.br/judge/en/problems/view/1557
+
 Write a program that read an integer number N (0 ≤ N ≤ 15) that correspont to
 the order of a bidimentional array of integers, and build the array according
 to the above example.
