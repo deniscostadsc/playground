@@ -33,7 +33,6 @@ void postorder_print(node *tree) {
     if (tree->left != NULL) postorder_print(tree->left);
     if (tree->right != NULL) postorder_print(tree->right);
     cout << tree->value;
-    free(tree);
 }
 
 int main() {
