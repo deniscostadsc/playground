@@ -1,0 +1,48 @@
+5 2 2
+a a a a a
+3 2 2
+a aa a
+4 2 2
+a a a a
+4 2 2
+aa aa aa aa
+4 2 2
+a aa a aa
+1 1 4
+aaaa
+1 2 4
+aaaa
+1 1 1
+a
+2 1 1
+a a
+1 3 3
+aaa
+3 3 3
+aaa aaa aaa
+4 3 3
+a aaa aaa aaa
+4 3 3
+aaa a aaa aaa
+4 3 3
+aa aaa a aa
+4 3 3
+aa aaa aa a
+4 3 3
+aa aa aa a
+4 3 3
+a aa a aa
+4 3 3
+aa aa a a
+4 3 3
+aa a a aa
+4 3 3
+a a aa aa
+14 4 20
+Se mana Piedade tem casado com Quincas Borba apenas me daria uma esperanca colateral
+16 3 30
+No dia seguinte entrou a dizer de mim nomes feios e acabou alcunhando me Dom Casmurro
+5 2 2
+a de i de o
+5 2 2
+a e i o u
