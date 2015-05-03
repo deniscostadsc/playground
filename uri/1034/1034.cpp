@@ -19,12 +19,10 @@ int main() {
         }
 
         while (m) {
-            for (ri = a.rbegin(); ri != a.rend();) {
+            for (ri = a.rbegin(); ri != a.rend(); ++ri) {
                 if (m >= *ri){
-                    count++;
-                    m -= *ri;
-                } else {
-                    ++ri;
+                    count += m / *ri;
+                    m -= *ri * (m / *ri);
                 }
             }
         }
