@@ -1,5 +1,7 @@
 *.swp
 *~
 *.py[oc]
+*.o
 *.out
+.vagrant
 out2.txt
