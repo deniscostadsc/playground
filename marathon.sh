@@ -4,13 +4,8 @@ function new-problem {
         return 1
     fi
 
-    if [ -z $2 ]; then
-        echo "You should inform a language."
-        return 1
-    fi
-
     dir=$1
-    language=$2
+    language=${2:-cpp}
 
     if [ -d $dir ]; then
         echo "Already there is a folder called $dir."
@@ -25,9 +20,8 @@ function new-problem {
     touch $dir.$language
 }
 
-function marathon {
 
-    # function to run tests in programming contest folders
+function marathon {
 
     function clean {
             find . -regex '.*\.\(py[co]\|out\)$' -delete
@@ -38,54 +32,47 @@ function marathon {
         test -f out2.txt && echo "$1" && diff out.txt out2.txt && echo ' - OK'
     }
 
-    if [ -f 'in.txt' -a -f 'out.txt' ]; then
-        if [ -f *.c ]; then
+    if [ -f *.c ]; then
+        if [ -f 'in.txt' ]; then
             gcc -Wall *.c -lm && ./a.out < in.txt > out2.txt
-            _test 'C code: '
-            clean
-        fi
-
-        if [ -f *.cpp ]; then
-            g++ -Wall *.cpp -lm && ./a.out < in.txt > out2.txt
-            _test 'C++ code: '
-            clean
-        fi
-
-        if [ -f *.py ]; then
-            python *.py < in.txt > out2.txt
-            _test 'Python code: '
-            clean
-        fi
-
-        if [ -f *.js ]; then
-            nodejs *.js < in.txt > out2.txt
-            _test 'Javascript code: '
-            clean
-        fi
-
-    elif [ -f 'out.txt' ]; then
-        if [ -f *.c ]; then
+        else
             gcc -Wall *.c -lm && ./a.out > out2.txt
-            _test 'C code: '
-            clean
         fi
 
-        if [ -f *.cpp ]; then
+        _test 'C code: '
+        clean
+    fi
+
+    if [ -f *.cpp ]; then
+        if [ -f 'in.txt' ]; then
+            g++ -Wall *.cpp -lm && ./a.out < in.txt > out2.txt
+        else
             g++ -Wall *.cpp -lm && ./a.out > out2.txt
-            _test 'C++ code: '
-            clean
         fi
 
-        if [ -f *.py ]; then
+        _test 'C++ code: '
+        clean
+    fi
+
+    if [ -f *.py ]; then
+        if [ -f 'in.txt' ]; then
+            python *.py < in.txt > out2.txt
+        else
             python *.py > out2.txt
-            _test 'Python code: '
-            clean
         fi
 
-        if [ -f *.js ]; then
+        _test 'Python code: '
+        clean
+    fi
+
+    if [ -f *.js ]; then
+        if [ -f 'in.txt' ]; then
+            nodejs *.js < in.txt > out2.txt
+        else
             nodejs *.js > out2.txt
-            _test 'Javascript code: '
-            clean
         fi
+
+        _test 'Javascript code: '
+        clean
     fi
 }
