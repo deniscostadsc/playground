@@ -1,48 +1,32 @@
 #include <cstdio>
-#include <vector>
 
 using namespace std;
 
 int main() {
-    int i, j, n, circumference, arc,
-        triangle_side, count, triangles;
-    vector<int> arcs;
+    int i, j, k, n, arc, triangles, len;
 
     while (scanf("%d", &n) != EOF) {
-        circumference = 0;
-        triangles = 0;
+        int sum[n];
 
-        while (n--) {
+        for (i = 0; i < n; i++) {
             scanf("%d", &arc);
-            circumference += arc;
-
-            arcs.insert(arcs.end(), arc);
+            sum[i] = i == 0 ? arc : sum[i - 1] + arc;
         }
         
-        for (i = 0; i < (int)arcs.size() / 3 + 1; i++) {
-            triangle_side = arcs[i];
-            count = 0;
-            for (j = 1; j < (int)arcs.size(); j++) {
-                if (i + j >= (int)arcs.size()) {
-                    triangle_side += arcs[(i + j) % (int)arcs.size()];
-                } else {
-                    triangle_side += arcs[i + j];
-                }
+        triangles = 0;
+        len = sum[n]/3;
+        j = k = 0;
 
-                if (triangle_side == circumference / 3) {
-                    count++;
-                    triangle_side = 0;
-                } else if (triangle_side > circumference / 3) {
-                    triangle_side = 0;
-                    break;
-                }
+        for (i = 0; sum[i] + 2 * len <= sum[n - 1]; i++) {
+            while ( sum[j] < sum[i] + len ) j++;
+            while ( sum[k] < sum[i] + 2 * len ) k++;
+
+            if ( sum[j] == sum[i] + len && sum[k] == sum[i] + 2 * len ) {
+                triangles++;
             }
-
-            if (count == 3) triangles++;
         }
 
         printf("%d\n", triangles);
-        arcs.clear();
     }
 
     return 0;
