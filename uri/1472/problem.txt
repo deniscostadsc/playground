@@ -11,11 +11,12 @@ and (b) shows the two triangles which can be built with these points.
 Input
 
 The input contains several test cases and ends with EOF. The first line of a
-test case contains an integer N ( 3 ≤ N ≤ 105), the number of points given. The
-second line contains N integers Xi (1 ≤ Xi ≤ 103) for 1 ≤ i ≤ N, representing
-the lengths of the circular arcs between two consecutive points in the circle:
-for 1 ≤ i ≤ (N − 1), Xi represents the length of the arc between between points
-i and i + 1; XN represents the length of the arc between points N and 1.
+test case contains an integer N ( 3 ≤ N ≤ 10^5), the number of points given.
+The second line contains N integers Xi (1 ≤ Xi ≤ 10^3) for 1 ≤ i ≤ N,
+representing the lengths of the circular arcs between two consecutive points in
+the circle: for 1 ≤ i ≤ (N − 1), Xi represents the length of the arc between
+between points i and i + 1; XN represents the length of the arc between points
+N and 1.
 
 Output
 
