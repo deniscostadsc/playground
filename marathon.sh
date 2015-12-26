@@ -1,5 +1,3 @@
-set -e
-
 function new-problem {
     if [ -z $1 ]; then
         echo "You should inform a problem ID."
