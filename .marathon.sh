@@ -14,22 +14,27 @@ function new-problem {
 
     mkdir $dir && cd $dir && echo "Created $dir."
 
+    touch $dir.$language
     touch in.txt
     touch out.txt
     touch problem.txt
-    touch $dir.$language
+    touch WRONG
 }
 
 
 function marathon {
 
     function clean {
-            find . -regex '.*\.\(py[co]\|out\)$' -delete
-            find . -name 'out2.txt' -delete
+        find . -regex '.*\.\(py[co]\|out\)$' -delete
+        find . -name 'out2.txt' -delete
     }
 
     function _test {
-        test -f out2.txt && echo "$1" && diff out.txt out2.txt && echo ' - OK'
+        test -f out2.txt && \
+            echo "$1" && \
+            diff out.txt out2.txt && \
+            echo ' - OK' && \
+            rm WRONG
     }
 
     if [ -f *.c ]; then
