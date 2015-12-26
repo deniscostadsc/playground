@@ -1,10 +1,21 @@
 #include <iostream>
+#include <map>
 
 using namespace std;
 
+map<int,int> previous_answers;
+
 int fibonacci(int n){
-    if (n < 1) return 1;
-    return fibonacci(n - 1) + fibonacci(n - 2);
+    int answer;
+
+    if (previous_answers[n]) return previous_answers[n];
+
+    if (n <= 1) answer = 1;
+    else answer = fibonacci(n - 1) + fibonacci(n - 2);
+
+    previous_answers[n] = answer;
+
+    return answer;
 }
 
 int main(){
