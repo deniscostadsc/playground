@@ -1,7 +1,7 @@
 def gcd(x, y):
     if y == 0:
         return x
-    return gcd(y, x % y);
+    return gcd(y, x % y)
 
 
 def lcm(x, y):
