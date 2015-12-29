@@ -50,10 +50,10 @@ unsigned long div_count(unsigned long n){
 int main(){
     int t = 1, n = 1;
 
+    primes.push_back(2);
+
     while (true){
         int d = div_count(t);
-
-        primes.push_back(2);
 
         if (d > 500){
             cout << t << endl;
