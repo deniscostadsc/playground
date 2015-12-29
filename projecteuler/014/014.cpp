@@ -38,6 +38,7 @@ int main(){
             if (i < g_number) g_number = i;
         }
     }
+
     cout << g_number << endl;
 
     return 0;
