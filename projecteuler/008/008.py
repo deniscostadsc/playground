@@ -1,5 +1,5 @@
 
-n = '''
+number = '''
 73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843
 85861560789112949495459501737958331952853208805511
@@ -22,12 +22,14 @@ n = '''
 71636269561882670428252483600823257530420752963450
 '''.replace('\n', '')
 
-c = 0
-p = -1
+greatest_product = -1
 
-while c < len(n) - 4:
-    if p < int(n[c]) * int(n[c + 1]) * int(n[c + 2]) * int(n[c + 3]) * int(n[c + 4]):
-        p = int(n[c]) * int(n[c + 1]) * int(n[c + 2]) * int(n[c + 3]) * int(n[c + 4])
-    c += 1
+for index, digit in enumerate(number[:-12]):
+    product = int(digit)
 
-print(p)
+    for i in range(12):
+        product = product * int(number[index + i])
+
+    greatest_product = max(greatest_product, product)
+
+print(greatest_product)
