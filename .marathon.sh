@@ -34,7 +34,7 @@ function marathon {
             echo "$1" && \
             diff out.txt out2.txt && \
             echo ' - OK' && \
-            rm WRONG
+            rm WRONG 2> /dev/null
     }
 
     if [ -f *.c ]; then
