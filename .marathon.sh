@@ -80,4 +80,15 @@ function marathon {
         _test 'Javascript code: '
         clean
     fi
+
+    if [ -f *.go ]; then
+        if [ -f 'in.txt' ]; then
+            go run *.go < in.txt > out2.txt
+        else
+            go run *.go > out2.txt
+        fi
+
+        _test 'Javascript code: '
+        clean
+    fi
 }
