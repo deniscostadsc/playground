@@ -1,5 +1,5 @@
 def msp(f):
-    previous_line = f.readline().strip().split()
+    previous_line = f.readline().split()
     previous_line = [int(i) for i in previous_line]
 
     for line in f.readlines():
