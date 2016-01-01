@@ -88,7 +88,7 @@ function marathon {
             go run *.go > out2.txt
         fi
 
-        _test 'Javascript code: '
+        _test 'Golang code: '
         clean
     fi
 }
