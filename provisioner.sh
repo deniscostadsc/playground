@@ -13,3 +13,5 @@ cp /vagrant/.marathon.sh /home/vagrant/
 
 echo '. /home/vagrant/.marathon.sh' >> /home/vagrant/.bashrc
 echo 'cd /vagrant' >> /home/vagrant/.bashrc
+
+echo 'LC_ALL="en_US.UTF-8"' >> /etc/environment  # to fix locale 8(
