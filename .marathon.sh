@@ -88,6 +88,8 @@ function marathon {
             go run *.go > out2.txt
         fi
 
+        gofmt -w *.go
+
         _test 'Golang code: '
         clean
     fi
