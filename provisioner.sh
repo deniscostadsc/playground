@@ -2,6 +2,7 @@
 
 apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y
 apt-get install -y nodejs g++ git golang
+apt-get autoremove -y && apt-get autoclean -y
 
 wget -q https://raw.githubusercontent.com/deniscostadsc/dotfiles/master/.vimrc
 chown vagrant:vagrant .vimrc
