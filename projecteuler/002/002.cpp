@@ -6,16 +6,12 @@ using namespace std;
 map<int,int> previous_answers;
 
 int fibonacci(int n){
-    int answer;
-
     if (previous_answers[n]) return previous_answers[n];
 
-    if (n <= 1) answer = 1;
-    else answer = fibonacci(n - 1) + fibonacci(n - 2);
+    if (n <= 1) previous_answers[n] = 1;
+    else previous_answers[n] = fibonacci(n - 1) + fibonacci(n - 2);
 
-    previous_answers[n] = answer;
-
-    return answer;
+    return previous_answers[n];
 }
 
 int main(){
