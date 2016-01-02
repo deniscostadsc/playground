@@ -35,6 +35,8 @@ function marathon {
             diff out.txt out2.txt && \
             echo ' - OK' && \
             rm WRONG 2> /dev/null
+
+        clean
     }
 
     if [ -f *.c ]; then
@@ -45,7 +47,6 @@ function marathon {
         fi
 
         _test 'C code: '
-        clean
     fi
 
     if [ -f *.cpp ]; then
@@ -56,7 +57,6 @@ function marathon {
         fi
 
         _test 'C++ code: '
-        clean
     fi
 
     if [ -f *.py ]; then
@@ -67,7 +67,6 @@ function marathon {
         fi
 
         _test 'Python code: '
-        clean
     fi
 
     if [ -f *.js ]; then
@@ -78,7 +77,6 @@ function marathon {
         fi
 
         _test 'Javascript code: '
-        clean
     fi
 
     if [ -f *.go ]; then
@@ -91,6 +89,5 @@ function marathon {
         gofmt -w *.go
 
         _test 'Golang code: '
-        clean
     fi
 }
