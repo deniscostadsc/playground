@@ -67,6 +67,8 @@ function marathon {
         fi
 
         _test 'Python code: '
+
+        pep8 .
     fi
 
     if [ -f *.js ]; then
