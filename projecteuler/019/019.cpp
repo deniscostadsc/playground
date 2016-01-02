@@ -8,7 +8,7 @@ int week_day(int day, int month, int year) {
     year -= month < 3;
     return (year + year / 4 - year / 100 + year / 400 + t[month - 1] + day) % 7;
 }
-    
+
 int main() {
     int y, m, count = 0;
     for (y = 1901; y <= 2000; y++) {
@@ -16,7 +16,7 @@ int main() {
             if (week_day(1, m, y) == 0) count++;
         }
     }
-    
+
     cout << count << endl;
     return 0;
 }
