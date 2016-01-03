@@ -1,41 +1,41 @@
 #!/bin/bash
 
 # update ubuntu and install SO dependencies
-apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y
-apt-get install -y g++ git golang python-pip build-essential libssl-dev curl
-apt-get autoremove -y && apt-get autoclean -y
+sudo add-apt-repository -y ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
+
+sudo apt-get install -y \
+    build-essential \
+    curl \
+    g++ \
+    git \
+    golang \
+    language-pack-en \
+    libssl-dev \
+    nodejs \
+    python-pip
+
+sudo apt-get autoremove -y
+sudo apt-get autoclean -y
+
+sudo locale-gen en
 
 
 # download config files and set the machine up
 wget -q https://raw.githubusercontent.com/deniscostadsc/dotfiles/master/.gitconfig
 wget -q https://raw.githubusercontent.com/deniscostadsc/dotfiles/master/.vimrc
 cp /vagrant/.marathon /home/vagrant/
-chown vagrant:vagrant .vimrc .gitconfig .marathon
 
 echo '. /home/vagrant/.marathon' >> /home/vagrant/.bashrc
 echo 'cd /vagrant' >> /home/vagrant/.bashrc
 
-echo 'LC_ALL="en_US.UTF-8"' >> /etc/environment  # to fix locale 8(
-
 
 # install python dependencies
-pip install --upgrade pip
-pip install pep8 cpplint
+sudo -H pip install --upgrade pip
+sudo -H pip install pep8 cpplint
 
 
 # install nodejs and js dependencies
-echo 'export PATH=$HOME/local/bin:$PATH' >> /home/vagrant/.bashrc
-echo 'export NODE_PATH=$HOME/local/lib/node_modules' >> /home/vagrant/.bashrc
-. /home/vagrant/.bashrc
-
-mkdir -p /home/vagrant/local /home/vagrant/download
-chown -R vagrant:vagrant /home/vagrant/local /home/vagrant/download
-
-cd /home/vagrant/download
-curl -s http://nodejs.org/dist/node-latest.tar.gz | tar xz --strip-components=1
-
-./configure --prefix=/home/vagrant/local
-make install
-
-su -c "vagrant npm install jshint" vagrant
-rm -rf /home/vagrant/download
+sudo npm install -g jshint
