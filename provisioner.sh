@@ -38,4 +38,4 @@ sudo -H pip install pep8 cpplint
 
 
 # install nodejs and js dependencies
-sudo npm install -g jshint
+sudo npm install -g jshint jscs

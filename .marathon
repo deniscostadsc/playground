@@ -120,6 +120,7 @@ function marathon {
 
         _test 'Javascript code: '
         jshint *.js
+        jscs *.js
     fi
 
     if [ -f *.go ]; then
