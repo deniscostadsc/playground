@@ -86,6 +86,7 @@ function marathon {
 
         _test 'C code: '
         cpplint --filter="-legal/copyright,-build/namespaces" *.c
+        echo
     fi
 
     if [ -f *.cpp ]; then
@@ -97,6 +98,7 @@ function marathon {
 
         _test 'C++ code: '
         cpplint --filter="-legal/copyright,-build/namespaces" *.cpp
+        echo
     fi
 
     if [ -f *.py ]; then
@@ -109,6 +111,7 @@ function marathon {
         _test 'Python code: '
 
         pep8 .
+        echo
     fi
 
     if [ -f *.js ]; then
@@ -121,6 +124,7 @@ function marathon {
         _test 'Javascript code: '
         jshint *.js
         jscs *.js
+        echo
     fi
 
     if [ -f *.go ]; then
@@ -132,5 +136,6 @@ function marathon {
 
         _test 'Golang code: '
         gofmt -w *.go
+        echo
     fi
 }
