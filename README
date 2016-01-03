@@ -6,26 +6,40 @@ the programming contest runned by ACM for students around the world. I used to
 attend those competitions at my student age, but I still playing and having
 some fun.
 
+Most of the problem folow the sdtin/stdout programming contest standard. So you
+can run it manually by running something like these commands:
+
+    $ g++ 1003.cpp
+    $ a.out < int.txt > out.txt
+
+
+            Running your code
+
+
 There is a virtual machine ready to run those problems. To lauch it run:
 
-    vagrant up # to lauch the machine
-    vagrant ssh # to ssh to the machine
+    $ vagrant up # to lauch the machine
+    $ vagrant ssh # to ssh to the machine
 
-There is a command to boilerplate the solution. Its syntax is:
+There is a boilerplate command to create the folder structure that this project
+folows. Its syntax is:
 
-    new-problem problem-code [language-extension]
+    $ new-problem problem-code [language-extension]
 
 The problem structure is:
 
     └─┬ PROGRAMMING CONTEST SITE
-      └─┬ COMPETITION (if there is the concept of competition)
-        └── PROBLEM-CODE.{c,cpp,go,js,py}
-        └── in.txt
-        └── out.txt
-        └── problem.txt
+      └─┬ COMPETITION NAME (if there is the concept of competition)
+          └─┬ COMPETITION ROUND NAME (if there is the concept of competition round)
+            └── PROBLEM-CODE.{c,cpp,go,js,py}
+            └── in.txt
+            └── out.txt
+            └── problem.txt
 
-To check if the solutions is correct run the command:
+Following this structure, you will be able to run your code, in all supported
+language with just one command:
 
-    marathon
+    $ marathon
 
-This command already tests Go, Python, C, C++ and NodeJS code.
+This command already tests Go, Python, C, C++ and NodeJS code. It also checks
+lint for all those languages.
