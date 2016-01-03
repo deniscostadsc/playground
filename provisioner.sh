@@ -26,7 +26,7 @@ sudo locale-gen en
 # download config files and set the machine up
 wget -q https://raw.githubusercontent.com/deniscostadsc/dotfiles/master/.gitconfig
 wget -q https://raw.githubusercontent.com/deniscostadsc/dotfiles/master/.vimrc
-cp /vagrant/.marathon /home/vagrant/
+cp /vagrant/marathon.sh /home/vagrant/.marathon
 
 echo '. /home/vagrant/.marathon' >> /home/vagrant/.bashrc
 echo 'cd /vagrant' >> /home/vagrant/.bashrc
