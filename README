@@ -33,6 +33,10 @@ The structure of the problems is:
             └── in.txt
             └── out.txt
             └── problem.txt
+            └── WRONG
+
+- the solution it self - Of course, contains the source code to solve the
+problem.
 
 - problem.txt - Holds the URL to the problem and the problem text. Saving it
 like this, I will be able to read the problem description offline.
@@ -43,8 +47,7 @@ because some sites don't need input files, for example projecteuler.net.
 - out.txt - Contains the output of the problem. For projecteuler problems, that
 you don't submit the code, just the answer, it contains the answer.
 
-- the solution it self - Of course, contains the source code to solve the
-problem.
+- WRONG - It is a flag file that says the answer isn't correct yet.
 
 Following this structure, you will be able to run your code, in all supported
 languages with just one command:
