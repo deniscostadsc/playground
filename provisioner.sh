@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # update ubuntu and install SO dependencies
-sudo add-apt-repository -y ppa:chris-lea/node.js
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
