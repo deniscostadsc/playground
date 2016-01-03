@@ -1,3 +1,31 @@
 A place to play programming.
 
-Solutions of problems of Project Euler, URI, SPOJ and etc.
+In this repository I'll save all my solutions for site as Project Euler, URI,
+SPOJ and etc. Most of those sites have problem that follows the structure of
+the programming contest runned by ACM for students around the world. I used to
+attend those competitions at my student age, but I still playing and having
+some fun.
+
+There is a virtual machine ready to run those problems. To lauch it run:
+
+    vagrant up # to lauch the machine
+    vagrant ssh # to ssh to the machine
+
+There is a command to boilerplate the solution. Its syntax is:
+
+    new-problem problem-code [language-extension]
+
+The problem structure is:
+
+    └─┬ PROGRAMMING CONTEST SITE
+      └─┬ COMPETITION (if there is the concept of competition)
+        └── PROBLEM-CODE.{c,cpp,go,js,py}
+        └── in.txt
+        └── out.txt
+        └── problem.txt
+
+To check if the solutions is correct run the command:
+
+    marathon
+
+This command already tests Go, Python, C, C++ and NodeJS code.
