@@ -47,6 +47,7 @@ function marathon {
         fi
 
         _test 'C code: '
+        cpplint --filter="-legal/copyright,-build/namespaces" *.c
     fi
 
     if [ -f *.cpp ]; then
@@ -57,6 +58,7 @@ function marathon {
         fi
 
         _test 'C++ code: '
+        cpplint --filter="-legal/copyright,-build/namespaces" *.cpp
     fi
 
     if [ -f *.py ]; then
@@ -73,12 +75,13 @@ function marathon {
 
     if [ -f *.js ]; then
         if [ -f 'in.txt' ]; then
-            nodejs *.js < in.txt > out2.txt
+            node *.js < in.txt > out2.txt
         else
-            nodejs *.js > out2.txt
+            node *.js > out2.txt
         fi
 
         _test 'Javascript code: '
+        jshint *.js
     fi
 
     if [ -f *.go ]; then
@@ -88,8 +91,7 @@ function marathon {
             go run *.go > out2.txt
         fi
 
-        gofmt -w *.go
-
         _test 'Golang code: '
+        gofmt -w *.go
     fi
 }
