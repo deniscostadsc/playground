@@ -1,12 +1,12 @@
 #include <cstdio>
 
-int gcd_bi(int x, int y) {
+int gcd(int x, int y) {
     if (y == 0) return x;
-    return gcd_bi(y, x % y);
+    return gcd(y, x % y);
 }
 
-int gcd(int x, int y, int z) {
-    return gcd_bi(x, gcd_bi(y, z));
+int gcd_tri(int x, int y, int z) {
+    return gcd(x, gcd(y, z));
 }
 
 bool is_pythagorean_triple(int x, int y, int z) {
@@ -22,7 +22,7 @@ int main() {
         printf("tripla");
         if (is_pythagorean_triple(x, y, z)) {
             printf(" pitagorica");
-            if (gcd(x, y, z) == 1) {
+            if (gcd_tri(x, y, z) == 1) {
                 printf(" primitiva");
             }
         }
