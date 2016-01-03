@@ -55,4 +55,4 @@ languages with just one command:
     $ marathon
 
 This command already tests Go, Python, C, C++ and NodeJS code. It also checks
-lint for all those languages.
+lint (and fix it for Go) for all those languages.
