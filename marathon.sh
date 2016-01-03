@@ -77,6 +77,8 @@ function marathon {
         clean
     }
 
+    echo
+
     if [ -f *.c ]; then
         if [ -f 'in.txt' ]; then
             gcc -Wall *.c -lm && ./a.out < in.txt > out2.txt
