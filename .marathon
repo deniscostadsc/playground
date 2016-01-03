@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function _can_create_folder {
     not_empty_with_no_folders=1
     correct_level=1
