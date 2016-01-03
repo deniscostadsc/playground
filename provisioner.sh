@@ -7,14 +7,12 @@ apt-get autoremove -y && apt-get autoclean -y
 
 
 # download config files and set the machine up
-wget -q https://raw.githubusercontent.com/deniscostadsc/dotfiles/master/.vimrc
-chown vagrant:vagrant .vimrc
 wget -q https://raw.githubusercontent.com/deniscostadsc/dotfiles/master/.gitconfig
-chown vagrant:vagrant .gitconfig
-cp /vagrant/.marathon.sh /home/vagrant/
-chown vagrant:vagrant .marathon.sh
+wget -q https://raw.githubusercontent.com/deniscostadsc/dotfiles/master/.vimrc
+cp /vagrant/.marathon /home/vagrant/
+chown vagrant:vagrant .vimrc .gitconfig .marathon
 
-echo '. /home/vagrant/.marathon.sh' >> /home/vagrant/.bashrc
+echo '. /home/vagrant/.marathon' >> /home/vagrant/.bashrc
 echo 'cd /vagrant' >> /home/vagrant/.bashrc
 
 echo 'LC_ALL="en_US.UTF-8"' >> /etc/environment  # to fix locale 8(
@@ -39,5 +37,5 @@ curl -s http://nodejs.org/dist/node-latest.tar.gz | tar xz --strip-components=1
 ./configure --prefix=/home/vagrant/local
 make install
 
-sudo -u vagrant npm install jshint
+su -c "vagrant npm install jshint" vagrant
 rm -rf /home/vagrant/download
