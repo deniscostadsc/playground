@@ -1,6 +1,40 @@
+function _can_create_folder {
+    not_empty_with_no_folders=1
+    correct_level=1
+
+    if [ -n "$(ls -F | grep '/')" ]; then
+        cd "$(ls -F | grep '/' | head -1)"
+        if [ -n "$(ls -F | grep '/')" ]; then
+            correct_level=0
+        fi
+        cd - > /dev/null
+    fi
+
+    if [ -z "$(ls -F | grep '/')" -a -n "$(ls -F | grep -v '/')" ]; then
+        not_empty_with_no_folders=0
+    fi
+
+    if [ $correct_level == 0 -o $not_empty_with_no_folders == 0 ]; then
+        echo
+        echo "You probably are trying to create the solution folder in the  wrong place!!!"
+        echo
+        echo "You are now here $PWD"
+        echo
+        return 1
+    fi
+
+    return 0
+}
+
 function new-problem {
+    if ! _can_create_folder; then
+        return 1
+    fi
+
     if [ -z $1 ]; then
+        echo
         echo "You should inform a problem ID."
+        echo
         return 1
     fi
 
@@ -8,7 +42,9 @@ function new-problem {
     language=${2:-cpp}
 
     if [ -d $dir ]; then
+        echo
         echo "Already there is a folder called $dir."
+        echo
         return 1
     fi
 
