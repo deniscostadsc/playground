@@ -28,10 +28,11 @@ The structure of the problems is:
     └─┬ PROGRAMMING CONTEST SITE
       └─┬ COMPETITION NAME (if there is the concept of competition)
         └─┬ COMPETITION ROUND (if there is the concept of competition round)
-          └── PROBLEM-CODE.{c,cpp,go,js,py}
-          └── in.txt
-          └── out.txt
-          └── problem.txt
+          └─┬ PROBLEM-CODE
+            └── PROBLEM-CODE.{c,cpp,go,js,py}
+            └── in.txt
+            └── out.txt
+            └── problem.txt
 
 - problem.txt - Holds the URL to the problem and the problem text. Saving it
 like this, I will be able to read the problem description offline.
