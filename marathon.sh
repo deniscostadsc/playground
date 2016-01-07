@@ -99,7 +99,7 @@ function marathon {
         fi
 
         _test 'C++ code: '
-        cpplint --filter="-legal/copyright,-build/namespaces" *.cpp
+        cpplint --filter="-legal/copyright" *.cpp
         echo
     fi
 
