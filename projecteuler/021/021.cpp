@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdio>
 #include <set>
 
 int sum_divisors(int n) {
