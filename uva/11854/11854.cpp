@@ -3,13 +3,11 @@
 #include <algorithm>
 #include <vector>
 
-using namespace std;
-
-int main(){
+int main() {
     int a, b, c;
-    vector<int> s;
+    std::vector<int> s;
 
-    while (cin >> a >> b >> c && a != 0 && b != 0 && c != 0){
+    while (std::cin >> a >> b >> c && a != 0 && b != 0 && c != 0) {
         s.clear();
 
         s.push_back(a);
@@ -22,8 +20,11 @@ int main(){
         b = s.at(1);
         c = s.at(2);
 
-        if (sqrt(a * a + b * b) == c) cout << "right" << endl;
-        else cout << "wrong" << endl;
+        if (sqrt(a * a + b * b) == c) {
+            std::cout << "right" << std::endl;
+        } else {
+            std::cout << "wrong" << std::endl;
+        }
     }
 
     return 0;
