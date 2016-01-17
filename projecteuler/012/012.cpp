@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-#include <cstring>
 #include <map>
 
 std::vector<unsigned long> primes;
