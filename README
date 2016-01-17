@@ -35,8 +35,8 @@ The structure of the problems is:
             └── problem.txt
             └── WRONG
 
-- the solution it self - Of course, contains the source code to solve the
-problem.
+- PROBLEM-CODE.{c,cpp,go,js,py} - Of course, contains the source code to solve
+the problem.
 
 - problem.txt - Holds the URL to the problem and the problem text. Saving it
 like this, I will be able to read the problem description offline.
