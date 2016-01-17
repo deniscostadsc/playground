@@ -99,7 +99,8 @@ function marathon {
         fi
 
         _test 'C++ code: '
-        cpplint --filter="-legal/copyright" *.cpp
+        # most of runtime/int are about C++11 things, and I can't use C++11
+        cpplint --filter="-legal/copyright,-runtime/int" *.cpp
         echo
     fi
 
