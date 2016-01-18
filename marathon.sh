@@ -113,7 +113,7 @@ function marathon {
 
         _test 'Python code: '
 
-        pep8 .
+        flake8 .
         echo
     fi
 

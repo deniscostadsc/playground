@@ -34,7 +34,7 @@ echo 'cd /vagrant' >> /home/vagrant/.bashrc
 
 # install python dependencies
 sudo -H pip install --upgrade pip
-sudo -H pip install pep8 cpplint
+sudo -H pip install flake8 cpplint
 
 
 # install nodejs and js dependencies
