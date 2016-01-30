@@ -1,37 +1,39 @@
 #include <iostream>
 #include <cstdio>
-
-
-using namespace std;
+#include <string>
 
 int main() {
     int t, j, k, i = 1;
-    string n, lowest, greatest, copy;
+    std::string n, lowest, greatest, copy;
     char c;
 
-    cin >> t;
+    std::cin >> t;
 
     while (i <= t) {
-        cin >> n;
+        std::cin >> n;
         lowest = n;
         greatest = n;
         copy = n;
 
-        for (j = 0; j < n.size(); j++) {
-            for (k = 0; k < n.size(); k++) {
-                if (copy[j] != '0' && copy[k] != '0') {
-                    c = copy[j];
-                    copy[j] = copy[k];
-                    copy[k] = c;
-
-                    if (copy < lowest) lowest = copy;
-                    if (copy > greatest) greatest = copy;
-
-                    copy = n;
+        for (j = 0; (unsigned)j < n.size(); j++) {
+            for (k = 0; (unsigned)k < n.size(); k++) {
+                if ((j == 0 && copy[k] == '0') || (k == 0 && copy[j] == '0')) {
+                    continue;
                 }
+
+                c = copy[j];
+                copy[j] = copy[k];
+                copy[k] = c;
+
+                if (copy < lowest) lowest = copy;
+                if (copy > greatest) greatest = copy;
+
+                copy = n;
             }
         }
-        cout << "Case #" << i << ": " << lowest << " " << greatest << endl;
+
+        std::cout << "Case #" << i << ": ";
+        std::cout << lowest << " " << greatest << std::endl;
 
         i++;
     }
