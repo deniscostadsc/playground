@@ -1,17 +1,18 @@
-#include <cstdio>
-
-using namespace std;
+#include <iostream>
 
 int main() {
     int c, n;
 
-    scanf("%d", &c);
-    
-    while (c--) {
-        scanf("%d", &n);
+    std::cin >> c;
 
-        if (n % 2 == 0) puts("0");
-        else puts("1");
+    while (c--) {
+        std::cin >> n;
+
+        if (n % 2 == 0) {
+            std::cout << 0 << std::endl;
+        } else {
+            std::cout << 1 << std::endl;
+        }
     }
     return 0;
 }
