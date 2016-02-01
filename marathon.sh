@@ -87,7 +87,7 @@ function marathon {
         fi
 
         _test 'C code: '
-        cpplint --filter="-legal/copyright,-build/namespaces" *.c
+        cpplint --filter="-legal/copyright" *.c
         echo
     fi
 
