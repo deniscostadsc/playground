@@ -64,13 +64,13 @@ function marathon {
 
     function clean {
         find . -regex '.*\.\(py[co]\|out\)$' -delete
-        find . -name 'out2.txt' -delete
+        find . -name 'out.temp' -delete
     }
 
     function _test {
-        test -f out2.txt && \
+        test -f out.temp && \
             echo "$1" && \
-            diff out.txt out2.txt && \
+            diff out.txt out.temp && \
             echo ' - OK' && \
             rm WRONG 2> /dev/null
 
@@ -81,9 +81,9 @@ function marathon {
 
     if [ -f *.c ]; then
         if [ -f 'in.txt' ]; then
-            gcc -Wall *.c -lm && ./a.out < in.txt > out2.txt
+            gcc -Wall *.c -lm && ./a.out < in.txt > out.temp
         else
-            gcc -Wall *.c -lm && ./a.out > out2.txt
+            gcc -Wall *.c -lm && ./a.out > out.temp
         fi
 
         _test 'C code: '
@@ -93,9 +93,9 @@ function marathon {
 
     if [ -f *.cpp ]; then
         if [ -f 'in.txt' ]; then
-            g++ -Wall *.cpp -lm && ./a.out < in.txt > out2.txt
+            g++ -Wall *.cpp -lm && ./a.out < in.txt > out.temp
         else
-            g++ -Wall *.cpp -lm && ./a.out > out2.txt
+            g++ -Wall *.cpp -lm && ./a.out > out.temp
         fi
 
         _test 'C++ code: '
@@ -106,9 +106,9 @@ function marathon {
 
     if [ -f *.py ]; then
         if [ -f 'in.txt' ]; then
-            python *.py < in.txt > out2.txt
+            python *.py < in.txt > out.temp
         else
-            python *.py > out2.txt
+            python *.py > out.temp
         fi
 
         _test 'Python code: '
@@ -119,9 +119,9 @@ function marathon {
 
     if [ -f *.js ]; then
         if [ -f 'in.txt' ]; then
-            node *.js < in.txt > out2.txt
+            node *.js < in.txt > out.temp
         else
-            node *.js > out2.txt
+            node *.js > out.temp
         fi
 
         _test 'Javascript code: '
@@ -132,9 +132,9 @@ function marathon {
 
     if [ -f *.go ]; then
         if [ -f 'in.txt' ]; then
-            go run *.go < in.txt > out2.txt
+            go run *.go < in.txt > out.temp
         else
-            go run *.go > out2.txt
+            go run *.go > out.temp
         fi
 
         _test 'Golang code: '
