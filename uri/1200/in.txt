@@ -1,11 +1,81 @@
-I c
-I f
 I a
-I h
-INFIXA
+POSFIXA
 PREFIXA
 POSFIXA
-P z
-P h
-I g
+I z
+P p
+P x
+P o
+I m
+I w
+P f
+P g
+I l
+P w
+P g
 INFIXA
+INFIXA
+INFIXA
+PREFIXA
+PREFIXA
+P k
+P l
+I j
+P n
+I n
+INFIXA
+POSFIXA
+P d
+P o
+P z
+I b
+I x
+P l
+POSFIXA
+P w
+P h
+I t
+I q
+I i
+I k
+P g
+I r
+POSFIXA
+POSFIXA
+I o
+P n
+PREFIXA
+P n
+I d
+I u
+I v
+P k
+I f
+P a
+POSFIXA
+P m
+I g
+P n
+PREFIXA
+P a
+P d
+I e
+I c
+INFIXA
+I s
+PREFIXA
+INFIXA
+P c
+P d
+I h
+P a
+I p
+I y
+P o
+INFIXA
+PREFIXA
+INFIXA
+P c
+P v
+INFIXA
+P b

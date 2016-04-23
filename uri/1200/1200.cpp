@@ -1,9 +1,9 @@
-#include <cstdio>
 #include <cstdlib>
 #include <iostream>
 #include <string>
 
-using namespace std;
+bool first_in_char;
+bool first_pos_char;
 
 struct node {
     char letter;
@@ -12,17 +12,19 @@ struct node {
 };
 
 void insert_node(node *tree, node *new_node) {
-    if (tree == NULL) {
-        puts("nulo");
-        tree = new_node;
-        puts("depois do nulo");
-        printf("+%c+", tree->letter);
-    } else if (new_node->letter > tree->letter) {
-        insert_node(tree->right, new_node);
+    if (tree->letter > new_node->letter) {
+        if (tree->right == NULL) {
+            tree->right = new_node;
+        } else {
+            insert_node(tree->right, new_node);
+        }
     } else {
-        insert_node(tree->left, new_node);
+        if (tree->left == NULL) {
+            tree->left = new_node;
+        } else {
+            insert_node(tree->left, new_node);
+        }
     }
-    puts("saida nulo");
 }
 
 bool exist(node *tree, char letter) {
@@ -36,57 +38,77 @@ bool exist(node *tree, char letter) {
 }
 
 void prefixa(node *tree) {
-    printf("%c ", tree->letter);
-    if (tree->right != NULL) prefixa(tree->right);
-    if (tree->left != NULL) prefixa(tree->left);
+    std::cout << tree->letter;
+
+    if (tree->right != NULL) {
+        std::cout << " ";
+        prefixa(tree->right);
+    }
+
+    if (tree->left != NULL) {
+        std::cout << " ";
+        prefixa(tree->left);
+    }
 }
 
 void infixa(node *tree) {
     if (tree->right != NULL) infixa(tree->right);
-    printf("%c ", tree->letter);
+
+    if (!first_in_char) std::cout << " ";
+    std::cout << tree->letter;
+    first_in_char = false;
+
     if (tree->left != NULL) infixa(tree->left);
 }
 
 void posfixa(node *tree) {
     if (tree->right != NULL) posfixa(tree->right);
     if (tree->left != NULL) posfixa(tree->left);
-    printf("+++%c+++", tree->letter);
+
+    if (!first_pos_char) std::cout << " ";
+    std::cout << tree->letter;
+    first_pos_char = false;
 }
 
 int main() {
     char letter;
-    string command;
+    std::string command;
 
-    node *tree = (node *)malloc(sizeof(node));
-    //node *tree = NULL; //(node *)malloc(sizeof(node));
+    node *tree = new node;
+    tree->letter = '-';
 
-    while (cin >> command) {
+    while (std::cin >> command) {
         if (command == "I") {
-            cin >> letter;
-            cout << endl << endl << "& " << letter << " &" <<endl<<endl;
+            std::cin >> letter;
 
-            node *new_node = (node *)malloc(sizeof(node));
+            if (tree->letter == '-') {
+                tree->letter = letter;
+                continue;
+            }
+
+            node *new_node = new node;
             new_node->letter = letter;
-            new_node->left = NULL;
-            new_node->right = NULL;
 
-            puts("antes da funcao");
             insert_node(tree, new_node);
-            puts("depois da funcao");
-            cout << endl << endl << "&-- " << tree->letter << " --&" <<endl<<endl;
-            if (tree == NULL) puts("fudeu");
-            printf("==== %c ====", tree->letter);
         } else if (command == "P") {
-            cin >> letter;
+            std::cin >> letter;
 
-            if (exist(tree, letter)) printf("%c existe\n", letter);
-            else printf("%c nao existe\n", letter);
+            if (exist(tree, letter)) {
+                std::cout << letter << " existe" << std::endl;
+            } else {
+                std::cout << letter << " nao existe" << std::endl;
+            }
         } else if (command == "PREFIXA") {
             prefixa(tree);
+            std::cout << std::endl;
         } else if (command == "INFIXA") {
+            first_in_char = true;
             infixa(tree);
+            std::cout << std::endl;
         } else {
+            first_pos_char = true;
             posfixa(tree);
+            std::cout << std::endl;
         }
     }
 

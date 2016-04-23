@@ -1,6 +1,55 @@
-a c f h
-c a f h
-a h f c
-z nao existe
-h existe
-a c f g h
+a
+a
+a
+p nao existe
+x nao existe
+o nao existe
+f nao existe
+g nao existe
+w existe
+g nao existe
+a l m w z
+a l m w z
+a l m w z
+a z m l w
+a z m l w
+k nao existe
+l existe
+n nao existe
+a j l m n w z
+j l n w m z a
+d nao existe
+o nao existe
+z existe
+l existe
+b j l n x w m z a
+w existe
+h nao existe
+g nao existe
+i b k j l r q t n x w m z a
+i b k j l r q t n x w m z a
+n existe
+a z m l j b i k w n t q o r x
+n existe
+k existe
+a existe
+f d i b k j l o r q v u t n x w m z a
+m existe
+n existe
+a z m l j b i d f g k w n t q o r u v x
+a existe
+d existe
+a b c d e f g i j k l m n o q r t u v w x z
+a z m l j b i d c f e g k w n t q o r s u v x
+a b c d e f g i j k l m n o q r s t u v w x z
+c existe
+d existe
+a existe
+o existe
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+a z m l j b i d c f e g h k w n t q o p r s u v x y
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+c existe
+v existe
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+b existe
