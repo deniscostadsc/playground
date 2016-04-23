@@ -10,7 +10,6 @@ sudo apt-get install -y \
     build-essential \
     curl \
     g++ \
-    git \
     golang \
     language-pack-en \
     libssl-dev \
@@ -24,8 +23,6 @@ sudo locale-gen en
 
 
 # download config files and set the machine up
-wget -q https://raw.githubusercontent.com/deniscostadsc/dotfiles/master/.gitconfig
-wget -q https://raw.githubusercontent.com/deniscostadsc/dotfiles/master/.vimrc
 cp /vagrant/marathon.sh /home/vagrant/.marathon
 
 echo '. /home/vagrant/.marathon' >> /home/vagrant/.bashrc
