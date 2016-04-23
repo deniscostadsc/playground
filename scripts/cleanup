@@ -1,0 +1,5 @@
+#!/bin/bash
+#vim:set ft=sh
+
+find . -regex '.*\.\(py[co]\|out\)$' -delete
+find . -name 'out.temp' -delete

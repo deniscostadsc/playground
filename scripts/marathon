@@ -1,0 +1,79 @@
+#!/bin/bash
+#vim:set ft=sh
+
+set -e
+
+function check-solution {
+    test -f out.temp
+    echo "$1"
+    diff out.txt out.temp
+    echo ' - OK'
+    rm WRONG 2> /dev/null || :
+
+    cleanup
+}
+
+echo
+
+if [ -f *.c ]; then
+    if [ -f 'in.txt' ]; then
+        gcc -Wall *.c -lm && ./a.out < in.txt > out.temp
+    else
+        gcc -Wall *.c -lm && ./a.out > out.temp
+    fi
+
+    check-solution 'C code: '
+    cpplint --filter="-legal/copyright" *.c
+    echo
+fi
+
+if [ -f *.cpp ]; then
+    if [ -f 'in.txt' ]; then
+        g++ -Wall *.cpp -lm && ./a.out < in.txt > out.temp
+    else
+        g++ -Wall *.cpp -lm && ./a.out > out.temp
+    fi
+
+    check-solution 'C++ code: '
+    # most of runtime/int are about C++11 things, and I can't use C++11
+    cpplint --filter="-legal/copyright,-runtime/int" *.cpp
+    echo
+fi
+
+if [ -f *.py ]; then
+    if [ -f 'in.txt' ]; then
+        python *.py < in.txt > out.temp
+    else
+        python *.py > out.temp
+    fi
+
+    check-solution 'Python code: '
+
+    flake8 .
+    echo
+fi
+
+if [ -f *.js ]; then
+    if [ -f 'in.txt' ]; then
+        node *.js < in.txt > out.temp
+    else
+        node *.js > out.temp
+    fi
+
+    check-solution 'Javascript code: '
+    jshint *.js
+    jscs *.js
+    echo
+fi
+
+if [ -f *.go ]; then
+    if [ -f 'in.txt' ]; then
+        go run *.go < in.txt > out.temp
+    else
+        go run *.go > out.temp
+    fi
+
+    check-solution 'Golang code: '
+    gofmt -w *.go
+    echo
+fi
