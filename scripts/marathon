@@ -23,7 +23,8 @@ if [ -f *.c ]; then
     fi
 
     check-solution 'C code: '
-    cpplint --filter="-legal/copyright" *.c
+    # I'm not sure if cpplint is useful for C code...
+    # cpplint --filter="-legal/copyright" *.c
     echo
 fi
 
