@@ -25,10 +25,11 @@ if [ -f *.c ]; then
     check-solution 'C code: '
     # I'm not sure if cpplint is useful for C code...
     # cpplint --filter="-legal/copyright" *.c
-    echo
 fi
 
 if [ -f *.cpp ]; then
+    ls *.cpp
+
     if [ -f 'in.txt' ]; then
         g++ -Wall *.cpp -lm && ./a.out < in.txt > out.temp
     else
@@ -37,8 +38,7 @@ if [ -f *.cpp ]; then
 
     check-solution 'C++ code: '
     # most of runtime/int are about C++11 things, and I can't use C++11
-    cpplint --quiet --filter="-legal/copyright,-runtime/int" *.cpp > /dev/null
-    echo
+    cpplint --quiet --filter="-legal/copyright,-runtime/int,-runtime/arrays" *.cpp
 fi
 
 if [ -f *.py ]; then
@@ -51,7 +51,6 @@ if [ -f *.py ]; then
     check-solution 'Python code: '
 
     flake8 .
-    echo
 fi
 
 if [ -f *.js ]; then
@@ -64,7 +63,6 @@ if [ -f *.js ]; then
     check-solution 'Javascript code: '
     jshint *.js
     jscs *.js
-    echo
 fi
 
 if [ -f *.go ]; then
@@ -76,5 +74,4 @@ if [ -f *.go ]; then
 
     check-solution 'Golang code: '
     gofmt -w *.go
-    echo
 fi
