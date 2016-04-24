@@ -37,7 +37,7 @@ if [ -f *.cpp ]; then
 
     check-solution 'C++ code: '
     # most of runtime/int are about C++11 things, and I can't use C++11
-    cpplint --filter="-legal/copyright,-runtime/int" *.cpp
+    cpplint --quiet --filter="-legal/copyright,-runtime/int" *.cpp > /dev/null
     echo
 fi
 
