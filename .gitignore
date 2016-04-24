@@ -4,4 +4,4 @@
 *.o
 *.out
 .vagrant
-out2.txt
+out.temp
