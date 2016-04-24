@@ -23,9 +23,7 @@ sudo locale-gen en
 
 
 # download config files and set the machine up
-cp /vagrant/marathon.sh /home/vagrant/.marathon
-
-echo '. /home/vagrant/.marathon' >> /home/vagrant/.bashrc
+echo 'PATH=$PATH:/vagrant/scripts/' >> /home/vagrant/.bashrc
 echo 'cd /vagrant' >> /home/vagrant/.bashrc
 
 
