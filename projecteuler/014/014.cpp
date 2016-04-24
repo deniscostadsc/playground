@@ -27,7 +27,7 @@ int main(){
 
     acks[1].next = 1;
 
-    g_sequence = -1;
+    g_sequence = 0;
 
     for (i = 2; i < 1000000; i++){
         ack(i);
