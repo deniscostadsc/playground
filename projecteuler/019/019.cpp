@@ -1,6 +1,6 @@
 #include <iostream>
 
-using namespace std;
+
 
 int week_day(int day, int month, int year) {
     int t[] = {0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4};
@@ -17,6 +17,6 @@ int main() {
         }
     }
 
-    cout << count << endl;
+    std::cout << count << std::endl;
     return 0;
 }

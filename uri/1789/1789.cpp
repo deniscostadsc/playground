@@ -1,7 +1,5 @@
 #include <cstdio>
 
-using namespace std;
-
 int main() {
     int l, v, fastest;
 
@@ -14,9 +12,14 @@ int main() {
             if (v > fastest) fastest = v;
         }
 
-        if (fastest < 10) puts("1");
-        else if (fastest < 20) puts("2");
-        else puts("3");
+        if (fastest < 10) {
+            puts("1");
+        } else if (fastest < 20) {
+            puts("2");
+        } else {
+            puts("3");
+        }
     }
+
     return 0;
 }

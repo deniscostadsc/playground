@@ -1,9 +1,9 @@
 #include <cstdio>
 
-int main(){
+int main() {
     char s[100];
     double d, t, n = 0.0;
-    while(gets(s)){
+    while (gets(s)) {
         scanf("%lf", &d);
         t += d;
         n += 1.0;

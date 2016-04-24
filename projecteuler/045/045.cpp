@@ -1,7 +1,5 @@
 #include <iostream>
 
-using namespace std;
-
 long triangle(long n) {
     return n * (n + 1) / 2;
 }
@@ -19,7 +17,6 @@ int main() {
     long tn , pn = 0, hn = 0, t = 285 + 1, p = 165, h = 143;
 
     while (!got_pentagonal && !got_hexagonal) {
-
         tn = triangle(t++);
 
         while (pn < tn) pn = pentagonal(p++);
@@ -28,11 +25,14 @@ int main() {
 
         while (got_pentagonal && hn < pn) hn = hexagonal(h++);
 
-        if (hn == pn) got_hexagonal = true;
-        else got_pentagonal = got_hexagonal = false;
+        if (hn == pn) {
+            got_hexagonal = true;
+        } else {
+            got_pentagonal = got_hexagonal = false;
+        }
     }
 
-    cout << tn << endl;
+    std::cout << tn << std::endl;
 
     return 0;
 }

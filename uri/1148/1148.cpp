@@ -2,12 +2,9 @@
 
 #define INFINITY 1 << 25
 
-using namespace std;
-
 int matrix[501][501];
 
 int dijkstra(int source, int destiny, int n) {
-
     int shortest_distance, next_vertex, i, j;
     int distance[n];
     bool correct[n];
@@ -28,7 +25,7 @@ int dijkstra(int source, int destiny, int n) {
             if (distance[j] < shortest_distance && !correct[j]) {
                 shortest_distance = distance[j];
                 next_vertex = j;
-            }   
+            }
         }
 
         if (shortest_distance == INFINITY) break;
@@ -63,7 +60,7 @@ int main() {
                 matrix[x][y] = 0;
             }
         }
-        
+
         scanf("%d", &k);
 
         while (k--) {
@@ -75,6 +72,7 @@ int main() {
                 printf("%d\n", result);
             }
         }
+
         puts("");
     }
 

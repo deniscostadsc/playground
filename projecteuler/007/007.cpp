@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 
-using namespace std;
+
 
 bool is_prime(unsigned long long n) {
     if (n == 2) return true;
@@ -14,14 +14,14 @@ bool is_prime(unsigned long long n) {
     return true;
 }
 
-int main(){
+int main() {
     int c = 0;
     unsigned long long n = 1;
 
-    while(n++) {
+    while (n++) {
         if (is_prime(n)) c++;
         if (c == 10001) {
-            cout << n << endl;
+            std::cout << n << std::endl;
             break;
         }
     }

@@ -2,11 +2,9 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 int main() {
     int i, t, n, index, position, commands[102];
-    string command;
+    std::string command;
 
     scanf("%d", &t);
 
@@ -16,7 +14,8 @@ int main() {
 
         scanf("%d", &n);
         while (i <= n) {
-            cin >> command;
+            std::cin >> command;
+
             if (command == "LEFT") {
                 position--;
                 commands[i] = -1;
@@ -28,8 +27,10 @@ int main() {
                 position += commands[index];
                 commands[i] = commands[index];
             }
+
             i++;
         }
+
         printf("%d\n", position);
     }
 

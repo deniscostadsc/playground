@@ -1,35 +1,39 @@
 #include <iostream>
+#include <vector>
 
-using namespace std;
-
-int main(){
-    int n, r, i, j;
+int main() {
     bool check;
+    int n, r, i, j, _v;
+    std::vector<int> v;
 
-    while(cin >> n >> r){
-        int v[r];
-
-        for (i = 0; i < r; i++){
-            cin >> v[i];
+    while (std::cin >> n >> r) {
+        for (i = 0; i < r; i++) {
+            std::cin >> _v;
+            v.push_back(_v);
         }
 
-        if (n == r){
-            cout << "*" << endl;
+        if (n == r) {
+            std::cout << "*" << std::endl;
             continue;
         }
 
-        for (i = 1; i <= n; i++){
+        for (i = 1; i <= n; i++) {
             check = true;
-            for (j = 0; j < r; j++){
-                if (v[j] == i){
+
+            for (j = 0; j < r; j++) {
+                if (v[j] == i) {
                     check = false;
                     break;
                 }
             }
-            if (check)
-                cout << i << " ";
+
+            if (check) std::cout << i << " ";
         }
-        cout << endl;
+
+        v.clear();
+
+        std::cout << std::endl;
     }
+
     return 0;
 }

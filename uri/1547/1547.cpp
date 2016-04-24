@@ -1,30 +1,29 @@
 #include <iostream>
 #include <cmath>
 
-using namespace std;
-
-int main(){
+int main() {
     int n, qt, s, g, i, lowest_sub, best_guesser;
 
-    cin >> n;
+    std::cin >> n;
 
-    while (n--){
-        cin >> qt >> s;
-        cin >> g;
+    while (n--) {
+        std::cin >> qt >> s;
+        std::cin >> g;
 
-        lowest_sub = abs(g - s);
+        lowest_sub = std::abs(g - s);
         best_guesser = 1;
-
         i = 1;
-        while (i++ < qt){
-            cin >> g;
 
-            if (abs(g - s) < lowest_sub){
-                lowest_sub = abs(g - s);
+        while (i++ < qt) {
+            std::cin >> g;
+
+            if (std::abs(g - s) < lowest_sub) {
+                lowest_sub = std::abs(g - s);
                 best_guesser = i;
             }
         }
-        cout << best_guesser << endl;
+
+        std::cout << best_guesser << std::endl;
     }
 
     return 0;

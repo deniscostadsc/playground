@@ -1,11 +1,11 @@
 #include <cstdio>
 
-int main(){
+int main() {
     int q, n;
     scanf("%d", &q);
-    while(q--){
+    while (q--) {
         scanf("%d", &n);
-        if (n == 0){
+        if (n == 0) {
             printf("NULL\n");
             continue;
         }

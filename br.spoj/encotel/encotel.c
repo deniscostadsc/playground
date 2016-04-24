@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int main(){
+int main() {
     char c;
-    while(scanf("%c", &c) != EOF){
+    while (scanf("%c", &c) != EOF) {
         if (65 <= c && c <= 67)
             printf("%d", 2);
         else if (68 <= c && c <= 70)

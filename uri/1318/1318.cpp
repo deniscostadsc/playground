@@ -1,26 +1,25 @@
 #include <iostream>
-#include <cstring>
+#include <vector>
 
-using namespace std;
-
-int main(){
+int main() {
     int t, p, ticket, c;
+    std::vector<int> tickets;
 
-    while (cin >> t >> p && t != 0 && p != 0){
+    while (std::cin >> t >> p && t != 0 && p != 0) {
         c = 0;
-        int tickets[t + 1];
 
-        memset(tickets, 0, sizeof(tickets));
+        for (int i = 0; i <= t; i++) tickets.push_back(0);
 
-        while (p--){
-            cin >> ticket;
+        while (p--) {
+            std::cin >> ticket;
 
             if (tickets[ticket] == 1) c++;
 
             tickets[ticket]++;
         }
 
-        cout << c << endl;
+        std::cout << c << std::endl;
     }
+
     return 0;
 }

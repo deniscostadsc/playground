@@ -1,24 +1,29 @@
-#include <cstdio>
-#include <iostream>
 #include <algorithm>
+#include <cstdio>
 #include <iomanip>
+#include <iostream>
+#include <string>
 
-using namespace std;
-
-int main(){
+int main() {
     int n, c;
     double p, prices, k, kilos = 0;
-    string s;
+    std::string s;
 
-    cin >> n;
+    std::cin >> n;
+
     c = 0;
-    while (++c <= n){
-        cin >> p;
+
+    while (++c <= n) {
+        std::cin >> p;
         prices += p;
-        getline(cin, s); // it's hack!!!
-        getline(cin, s);
+
+        getline(std::cin, s);  // it's hack!!!
+        getline(std::cin, s);
+
         k = count(s.begin(), s.end(), ' ') + 1;
-        cout << "day " << c << ": " << k << " kg" << endl;
+
+        std::cout << "day " << c << ": " << k << " kg" << std::endl;
+
         kilos += k;
     }
 

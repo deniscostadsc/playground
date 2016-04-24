@@ -1,6 +1,7 @@
 
 previous_results = {}
 
+
 def fibo(number):
     if previous_results.get(number, 0):
         return previous_results.get(number)

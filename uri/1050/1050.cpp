@@ -1,6 +1,6 @@
 #include <cstdio>
 
-int main(){
+int main() {
     int d;
     scanf("%d", &d);
     if (d == 61)

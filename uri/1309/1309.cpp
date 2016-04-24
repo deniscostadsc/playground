@@ -1,30 +1,35 @@
 #include <iostream>
+#include <string>
 
-using namespace std;
-
-int main (){
-    string money;
+int main() {
     int cents;
     int comma;
+    std::string money;
 
-    while (cin >> money){
-        cin >> cents;
+    while (std::cin >> money) {
+        std::cin >> cents;
 
-        cout << "$";
+        std::cout << "$";
 
         comma = money.size() % 3;
-        for (size_t i = 0; i < money.size(); i++){
-            if (comma == 0){
+
+        for (size_t i = 0; i < money.size(); i++) {
+            if (comma == 0) {
                 comma = 3;
-                if (i != 0) cout << ",";
+                if (i != 0) std::cout << ",";
             }
-            cout << money.at(i);
+            std::cout << money.at(i);
             comma--;
         }
 
-        cout << ".";
-        if (cents < 10) cout << "0" << cents << endl;
-        else cout << cents << endl;
+        std::cout << ".";
+
+        if (cents < 10) {
+            std::cout << "0" << cents << std::endl;
+        } else {
+            std::cout << cents << std::endl;
+        }
     }
+
     return 0;
 }

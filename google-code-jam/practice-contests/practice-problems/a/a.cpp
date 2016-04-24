@@ -2,14 +2,14 @@
 #include <cmath>
 #include <string>
 
-using namespace std;
-
-string
-conversor(string alien_number, string source_language, string target_language) {
+std::string
+conversor(std::string alien_number,
+        std::string source_language,
+        std::string target_language) {
     int number_value = 0, current_digit_index, i;
     int source_language_size = source_language.length();
     int target_language_size = target_language.length();
-    string target_number = "";
+    std::string target_number = "";
 
     for (i = 0; i < static_cast<int>(alien_number.length()); i++) {
         current_digit_index =  source_language.find(
@@ -28,15 +28,16 @@ conversor(string alien_number, string source_language, string target_language) {
 
 int main() {
     int n, i;
-    string alien_number, source_language, target_language;
+    std::string alien_number, source_language, target_language;
 
-    cin >> n;
+    std::cin >> n;
 
     for (i = 1; i <= n; i++) {
-        cin >> alien_number >> source_language >> target_language;
-        cout << "Case #" << i << ": ";
-        cout << conversor(alien_number, source_language, target_language);
-        cout << endl;
+        std::cin >> alien_number >> source_language >> target_language;
+        std::cout << "Case #" << i << ": ";
+        std::cout << conversor(alien_number, source_language, target_language);
+        std::cout << std::endl;
     }
+
     return 0;
 }

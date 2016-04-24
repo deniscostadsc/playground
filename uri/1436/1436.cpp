@@ -1,24 +1,25 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
-using namespace std;
-
-int main(){
+int main() {
     int c, n, l, j;
-    vector<int> p;
+    std::vector<int> p;
 
-    cin >> n;
+    std::cin >> n;
     c = 0;
-    while (++c <= n){
+
+    while (++c <= n) {
         p.clear();
-        cin >> l;
-        while (l--){
-            cin >> j;
+        std::cin >> l;
+
+        while (l--) {
+            std::cin >> j;
             p.push_back(j);
         }
+
         sort(p.begin(), p.end());
-        cout << "Case " << c << ": " << p.at(p.size() / 2) << endl;
+        std::cout << "Case " << c << ": " << p.at(p.size() / 2) << std::endl;
     }
 
     return 0;

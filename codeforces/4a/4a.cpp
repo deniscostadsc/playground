@@ -1,20 +1,18 @@
 #include <iostream>
 
-using namespace std;
-
-bool two(int number){
+bool two(int number) {
     return number % 2 == 0 || number != 2;
 }
 
-int main(){
+int main() {
     int n;
 
-    cin >> n;
+    std::cin >> n;
 
     if (two(n))
-        cout << "YES" << endl;
+        std::cout << "YES" << std::endl;
     else
-        cout << "NO" << endl;
+        std::cout << "NO" << std::endl;
 
     return 0;
 }

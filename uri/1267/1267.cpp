@@ -1,36 +1,39 @@
 #include <iostream>
-#include <cstring>
+#include <cstdio>
+#include <vector>
 
-using namespace std;
-
-int main(){
-    int i, j, x, y, n;
+int main() {
+    int i, j, n, d, x;
     bool p;
+    std::vector<int> m;
 
-    while (cin >> x >> y && x != 0 && y != 0){
-        int m[x];
+    while (std::cin >> n >> d && n && d) {
+        for (i = 0; i < n; i++) {
+            std::cin >> x;
+            m.push_back(x);
+        }
 
-        for (int k = 0; k < x; k++) m[k] = 1;
-
-        for (i = 0; i < y; i++){
-            for (j = 0; j < x; j++){
-                cin >> n;
-                if (!m[j] || !n){
-                    m[j] = 0;
-                }
+        for (i = 0; i < d - 1; i++) {
+            for (j = 0; j < n; j++) {
+                std::cin >> x;
+                int& ref = m.at(j);
+                ref = x & m.at(j);
             }
         }
 
         p = false;
-        for (i = 0; i < x; i++){
-            if (m[i]){
-                cout << "yes" << endl;
+
+        for (i = 0; i < n; i++) {
+            if (m.at(i)) {
+                std::cout << "yes" << std::endl;
                 p = true;
                 break;
             }
         }
 
-        if (!p) cout << "no" << endl;
+        if (!p) std::cout << "no" << std::endl;
+
+        m.clear();
     }
 
     return 0;

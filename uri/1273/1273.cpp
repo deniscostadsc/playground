@@ -1,31 +1,36 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
+#include <string>
 #include <vector>
 
-using namespace std;
-
-int main(){
-    unsigned int i, g;
-    int n;
-    string s;
+int main() {
     bool newline = false;
+    int n;
+    unsigned int i, g;
+    std::string s;
+    std::vector<std::string> ss;
 
-    while (cin >> n && n != 0){
-        if (newline) cout << endl;
-        else newline = !newline;
+    while (std::cin >> n && n != 0) {
+        if (newline) {
+            std::cout << std::endl;
+        } else {
+            newline = !newline;
+        }
 
         g = 0;
-        vector<string> ss;
-        while (n--){
-            cin >> s;
+
+        while (n--) {
+            std::cin >> s;
             if (s.length() > g) g = s.length();
             ss.push_back(s);
         }
 
-        for (i = 0; i < ss.size(); i++){
-            cout << setw(g);
-            cout << ss[i] << endl;
+        for (i = 0; i < ss.size(); i++) {
+            std::cout << std::setw(g);
+            std::cout << ss[i] << std::endl;
         }
+
+        ss.clear();
     }
 
     return 0;

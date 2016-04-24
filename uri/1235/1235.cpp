@@ -1,21 +1,23 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
-int main(){
+int main() {
     int n, i, l;
-    string s;
-    cin >> n;
+    std::string s;
+    std::cin >> n;
 
-    getline(cin, s); // It's a hack
+    getline(std::cin, s);  // It's a hack
 
-    while (n--){
-        getline(cin, s);
+    while (n--) {
+        getline(std::cin, s);
+
         l = s.length();
-        for (i = l / 2 - 1; i >= 0; i--) cout << s.at(i);
-        for (i = l - 1; i > l / 2 - 1; i--) cout << s.at(i);
-        cout << endl;
+
+        for (i = l / 2 - 1; i >= 0; i--) std::cout << s.at(i);
+        for (i = l - 1; i > l / 2 - 1; i--) std::cout << s.at(i);
+
+        std::cout << std::endl;
     }
+
     return 0;
 }

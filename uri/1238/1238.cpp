@@ -1,28 +1,33 @@
 #include <iostream>
+#include <string>
 
-using namespace std;
-
-int main(){
+int main() {
     unsigned int i, n, l;
-    string a, b;
+    std::string a, b;
 
-    cin >> n;
-    while (n--){
-        cin >> a >> b;
-        if (a.length() < b.length()) l = a.length();
-        else l = b.length();
+    std::cin >> n;
 
-        for (i = 0; i < l; i++) cout << a.at(i) << b.at(i);
+    while (n--) {
+        std::cin >> a >> b;
 
-        if (a.length() > l){
-            for (i = l; i < a.length(); i++) cout << a.at(i);
+        if (a.length() < b.length()) {
+            l = a.length();
+        } else {
+            l = b.length();
         }
 
-        if (b.length() > l){
-            for (i = l; i < b.length(); i++) cout << b.at(i);
+        for (i = 0; i < l; i++) std::cout << a.at(i) << b.at(i);
+
+        if (a.length() > l) {
+            for (i = l; i < a.length(); i++) std::cout << a.at(i);
         }
 
-        cout << endl;
+        if (b.length() > l) {
+            for (i = l; i < b.length(); i++) std::cout << b.at(i);
+        }
+
+        std::cout << std::endl;
     }
+
     return 0;
 }

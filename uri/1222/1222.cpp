@@ -1,17 +1,17 @@
 #include <iostream>
+#include <string>
 
-using namespace std;
-
-int main(){
+int main() {
     unsigned int n, l, c, lines, characters;
-    string word;
+    std::string word;
 
-    while (cin >> n >> l >> c){
+    while (std::cin >> n >> l >> c) {
         lines = 0;
         characters = 0;
-        while (n--){
-            cin >> word;
-            if (characters + word.length() < c){
+
+        while (n--) {
+            std::cin >> word;
+            if (characters + word.length() < c) {
                 characters += word.length() + 1;
                 // if (n == 1) lines++;
             } else {
@@ -19,9 +19,13 @@ int main(){
                 lines++;
             }
         }
-        // cout << lines << " + + "<<endl;
-        if (lines % l != 0) cout << lines / l + 1 << endl;
-        else cout << lines / l << endl;
+
+        // std::cout << lines << " + + "< std::endl;
+        if (lines % l != 0) {
+            std::cout << lines / l + 1 << std::endl;
+        } else {
+            std::cout << lines / l << std::endl;
+        }
     }
     return 0;
 }

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int capicua(int n){
+int capicua(int n) {
     int i;
     char s[6];
     sprintf(s, "%d", n);
@@ -11,7 +11,7 @@ int capicua(int n){
     return 1;
 }
 
-int main (){
+int main () {
     int i, j, g = 1;
     for (i = 100; i <= 999; i++)
         for (j = 100; j <= 999; j++)

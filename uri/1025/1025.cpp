@@ -2,18 +2,16 @@
 #include <vector>
 #include <algorithm>
 
-using namespace std;
-
-int bi_search(vector<int> v, int n){
+int bi_search(std::vector<int> v, int n) {
     int begin = 0;
     int end = v.size() - 1;
     int middle = end / 2;
 
-    while (begin < end){
-        if (v.at(middle) < n){
+    while (begin < end) {
+        if (v.at(middle) < n) {
             begin = middle + 1;
             middle = (end + begin) / 2;
-        } else if (v.at(middle) > n || (middle > 0 && v.at(middle - 1) == n)){
+        } else if (v.at(middle) > n || (middle > 0 && v.at(middle - 1) == n)) {
             end = middle - 1;
             middle = (end + begin) / 2;
         } else {
@@ -25,28 +23,31 @@ int bi_search(vector<int> v, int n){
     return -1;
 }
 
-int main(){
+int main() {
     int n, q, marble, query, position, c = 0;
-    vector<int> marbles;
+    std::vector<int> marbles;
 
-    while (cin >> n >> q && n != 0 && q != 0){
+    while (std::cin >> n >> q && n && q) {
         marbles.clear();
 
-        while (n--){
-            cin >> marble;
+        while (n--) {
+            std::cin >> marble;
             marbles.push_back(marble);
         }
 
         sort(marbles.begin(), marbles.end());
 
-        cout << "CASE# " << ++c << ":" << endl;
+        std::cout << "CASE# " << ++c << ":" << std::endl;
 
-        while (q--){
-            cin >> query;
+        while (q--) {
+            std::cin >> query;
             position = bi_search(marbles, query);
-            if (position == -1) cout << query << " not found" << endl;
-            else cout << query << " found at " << position << endl; 
-        }   
+            if (position == -1) {
+                std::cout << query << " not found" << std::endl;
+            } else {
+                std::cout << query << " found at " << position << std::endl;
+            }
+        }
     }
     return 0;
 }

@@ -1,18 +1,17 @@
-#include <iostream>
 #include <cstdio>
 #include <cstring>
+#include <iostream>
+#include <string>
 
-using namespace std;
-
-int pointer, word_index;
 char store[30000];
-string word;
+int pointer, word_index;
+std::string word;
 
 
-void brainfuck(string program) {
-    unsigned int i;
+void brainfuck(std::string program) {
     int j, brackets_level;
-    string inner_code;
+    unsigned int i;
+    std::string inner_code;
 
     for (i = 0; i < program.size(); i++) {
         switch (program[i]) {
@@ -20,9 +19,9 @@ void brainfuck(string program) {
             case '<': pointer--; break;
             case '+': store[pointer]++; break;
             case '-': store[pointer]--; break;
-            case '.': cout << store[pointer]; break;
+            case '.': std::cout << store[pointer]; break;
             case ',':
-                if (word_index >= (int)word.size()) {
+                if (word_index >= static_cast<int>(word.size())) {
                     store[pointer] = 0;
                 } else {
                     store[pointer] = word[word_index];
@@ -32,23 +31,27 @@ void brainfuck(string program) {
             case '[':
                 brackets_level = 1;
                 inner_code = "";
-                
+
                 i++;
-                while (1){
-                    if (program[i] == '[') brackets_level++;
-                    else if (program[i] == ']') brackets_level--;
-                    
-                    if(brackets_level == 0) break;
+
+                while (1) {
+                    if (program[i] == '[') {
+                        brackets_level++;
+                    } else if (program[i] == ']') {
+                        brackets_level--;
+                    }
+
+                    if (brackets_level == 0) break;
                     inner_code += program[i];
-                    
+
                     i++;
                 }
-                
+
                 while (store[pointer] != 0) brainfuck(inner_code);
-                
+
                 break;
             case '#':
-                for (j = 0; j < 10; j++) cout << store[j];
+                for (j = 0; j < 10; j++) std::cout << store[j];
                 break;
         }
     }
@@ -57,22 +60,23 @@ void brainfuck(string program) {
 
 int main() {
     int n, nn;
-    string program;
-    cin >> n;
+    std::string program;
+    std::cin >> n;
 
     nn = 1;
+
     while (nn <= n) {
         pointer = 0;
         word_index = 0;
         memset(store, 0, sizeof(store));
-        
-        cin >> word;
-        cin >> program;
 
-        cout << "Instancia " << nn++ << endl;
+        std::cin >> word;
+        std::cin >> program;
+
+        std::cout << "Instancia " << nn++ << std::endl;
         brainfuck(program);
-        cout << endl << endl;
-
+        std::cout << std::endl << std::endl;
     }
+
     return 0;
 }

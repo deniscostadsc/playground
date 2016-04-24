@@ -1,20 +1,25 @@
 #include <iostream>
 
-using namespace std;
+int main() {
+    int n, i, j;
 
-int main (){
-    int n;
-
-    while (cin >> n){
-        for (int i = 0; i < n; i++){
-            for (int j = 0; j < n; j++){
-                if (i == j && i + j == n - 1) cout << "2";
-                else if (i == j) cout << "1";
-                else if (i + j == n - 1) cout << "2";
-                else cout << "3";
+    while (std::cin >> n) {
+        for (i = 0; i < n; i++) {
+            for (j = 0; j < n; j++) {
+                if (i == j && i + j == n - 1) {
+                    std::cout << "2";
+                } else if (i == j) {
+                    std::cout << "1";
+                } else if (i + j == n - 1) {
+                    std::cout << "2";
+                } else {
+                    std::cout << "3";
+                }
             }
-            cout << endl;
+
+            std::cout << std::endl;
         }
     }
+
     return 0;
 }

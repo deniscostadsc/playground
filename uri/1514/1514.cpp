@@ -1,12 +1,10 @@
 #include <iostream>
 #include <cstring>
 
-using namespace std;
-
 int main() {
     int n, m, i, j, r1, r2, r3, r4;
 
-    while (cin >> n >> m && n && m) {
+    while (std::cin >> n >> m && n && m) {
         int current, solved_by_each[n], solutions_per_problem[m];
 
         r1 = 1; r2 = 1; r3 = 1; r4 = 1;
@@ -16,7 +14,7 @@ int main() {
 
         for (i = 0; i < n; i++) {
             for (j = 0; j < m; j++) {
-                cin >> current;
+                std::cin >> current;
                 solved_by_each[i] += current;
                 solutions_per_problem[j] += current;
             }
@@ -32,7 +30,7 @@ int main() {
             if (solutions_per_problem[j] == n) r3 = 0;
         }
 
-        cout << r1 + r2 + r3 + r4 << endl;
+        std::cout << r1 + r2 + r3 + r4 << std::endl;
     }
 
     return 0;

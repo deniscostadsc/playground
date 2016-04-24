@@ -1,32 +1,36 @@
 #include <iostream>
+#include <string>
 
-using namespace std;
-
-int main(){
+int main() {
     int n, i, la;
-    string a, b;
+    std::string a, b;
     bool e;
 
-    cin >> n;
-    while (n--){
-        cin >> a >> b;
+    std::cin >> n;
+    while (n--) {
+        std::cin >> a >> b;
 
         e = true;
 
-        if (b.length() > a.length()){
+        if (b.length() > a.length()) {
             e = false;
         } else {
             la = a.length() - 1;
-            for (i = b.length() - 1; i >= 0; i--){
-                if (b.at(i) != a.at(la)){
+
+            for (i = b.length() - 1; i >= 0; i--) {
+                if (b.at(i) != a.at(la)) {
                     e = false;
                     break;
                 }
                 la--;
             }
         }
-        if (e) cout << "encaixa" << endl;
-        else cout << "nao encaixa" << endl;
+        if (e) {
+            std::cout << "encaixa" << std::endl;
+        } else {
+            std::cout << "nao encaixa" << std::endl;
+        }
     }
+
     return 0;
 }

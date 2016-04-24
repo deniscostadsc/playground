@@ -1,29 +1,28 @@
 #include <iostream>
+#include <string>
 
-using namespace std;
-
-int main(){
-    string s;
+int main() {
     int n;
     unsigned int i;
     bool first;
+    std::string s;
 
-    cin >> n;
-    getline(cin, s);  // it's a hack
-    while (n--){
-        getline(cin, s);
+    std::cin >> n;
+    getline(std::cin, s);  // it's a hack
+
+    while (n--) {
+        getline(std::cin, s);
         first = false;
-        for (i = 0; i < s.length(); i++){
-            if (s.at(i) == ' ' && first){
-                first = !first;
-            }
 
-            if (s.at(i) != ' ' && !first){
+        for (i = 0; i < s.length(); i++) {
+            if (s.at(i) == ' ' && first) first = !first;
+
+            if (s.at(i) != ' ' && !first) {
                 first = !first;
-                cout << s.at(i);
+                std::cout << s.at(i);
             }
         }
-        cout << endl;   
+        std::cout << std::endl;
     }
 
     return 0;

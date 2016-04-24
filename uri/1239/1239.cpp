@@ -1,31 +1,37 @@
 #include <iostream>
 #include <cstdio>
 
-using namespace std;
-
 bool i = false;
 bool b = false;
 
-void bloggo(char c){
-    if (c == '_'){
-        if (!i) cout << "<i>";
-        else cout << "</i>";
+void bloggo(char c) {
+    if (c == '_') {
+        if (!i) {
+            std::cout << "<i>";
+        } else {
+            std::cout << "</i>";
+        }
 
         i = !i;
-    } else if (c == '*'){
-        if (!b) cout << "<b>";
-        else cout << "</b>";
+    } else if (c == '*') {
+        if (!b) {
+            std::cout << "<b>";
+        } else {
+            std::cout << "</b>";
+        }
 
         b = !b;
     } else {
-        cout << c;
+        std::cout << c;
     }
 }
 
-int main(){
+int main() {
     char c;
-    while((c = getchar()) != EOF){
+
+    while ((c = getchar()) != EOF) {
         bloggo(c);
     }
+
     return 0;
 }

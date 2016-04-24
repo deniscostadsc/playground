@@ -1,51 +1,52 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <sstream>
-#include <iterator>
 #include <algorithm>
-
-using namespace std;
+#include <iostream>
+#include <iterator>
+#include <sstream>
+#include <string>
+#include <vector>
 
 struct Pair {
-    string first;
+    std::string first;
     unsigned int second;
 };
 
-bool compare(Pair i, Pair j){
+bool compare(Pair i, Pair j) {
     if (i.first.length() == j.first.length())
         return i.second < j.second;
     return i.first.length() > j.first.length();
 }
 
-int main(){
+int main() {
     int n;
-    string s;
+    std::string s;
 
-    cin >> n;
-    getline(cin, s);  // it's a hack!!!
-    while (n--){
+    std::cin >> n;
+    getline(std::cin, s);  // it's a hack!!!
 
-        /* I get the line
+    while (n--) {
+        /* get the line
            create a iterator
-           run a "split" by space character  */
-        getline(cin, s);
-        istringstream is(s);
-        vector<string> raw_strings(istream_iterator<string>{is}, istream_iterator<string>{});
+           run a "split" by space */
+        getline(std::cin, s);
+        std::istringstream is(s);
+        std::vector<std::string> raw_strings(
+            std::istream_iterator<std::string> {is},
+            std::istream_iterator<std::string> {});
 
-        vector<Pair> strings;
+        std::vector<Pair> strings;
 
-        for (unsigned int i = 0; i < raw_strings.size(); i++){
+        for (unsigned int i = 0; i < raw_strings.size(); i++) {
             strings.push_back({raw_strings.at(i), i});
         }
 
         sort(strings.begin(), strings.end(), compare);
 
-        for (unsigned int i = 0; i < strings.size(); i++){
-            cout << strings.at(i).first;
-            if (i < strings.size() - 1) cout << " ";
+        for (unsigned int i = 0; i < strings.size(); i++) {
+            std::cout << strings.at(i).first;
+            if (i < strings.size() - 1) std::cout << " ";
         }
-        cout << endl;
+
+        std::cout << std::endl;
     }
 
     return 0;

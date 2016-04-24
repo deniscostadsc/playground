@@ -1,19 +1,18 @@
 #include <iostream>
 #include <set>
+#include <string>
 
-using namespace std;
+std::set<std::string> matches;
 
-set<string> matches;
-
-int brute_force(string sequence) {
+int brute_force(std::string sequence) {
     int i;
 
     if (sequence.size() == 0) return 0;
 
     matches.insert(matches.begin(), sequence);
-    
-    for (i = 0; i < (int) sequence.size(); i++) {
-        string ggg (sequence.begin(), sequence.end());
+
+    for (i = 0; i < static_cast<int>(sequence.size()); i++) {
+        std::string ggg(sequence.begin(), sequence.end());
         ggg.erase(ggg.begin() + i);
         brute_force(ggg);
     }
@@ -22,17 +21,17 @@ int brute_force(string sequence) {
 }
 
 int main() {
-    string sequence;
+    std::string sequence;
 
-    while (cin >> sequence) {
+    while (std::cin >> sequence) {
         brute_force(sequence);
 
-        for (set<string>::iterator it = matches.begin();
+        for (std::set<std::string>::iterator it = matches.begin();
              it != matches.end(); it++) {
-            cout << *it << endl;
+            std::cout << *it << std::endl;
         }
 
-        cout << endl;
+        std::cout << std::endl;
 
         matches.clear();
     }

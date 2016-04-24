@@ -1,13 +1,13 @@
 #include <cstdio>
 
-int main(){
+int main() {
     int t, h = 0, m = 0, s = 0;
     scanf("%d", &t);
-    if (t >= 60 * 60){
+    if (t >= 60 * 60) {
         h = t / (60 * 60);
         t %= (60 * 60);
     }
-    if (t >= 60){
+    if (t >= 60) {
         m = t / 60;
         t %= 60;
     }

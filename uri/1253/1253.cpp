@@ -1,20 +1,24 @@
 #include <iostream>
+#include <string>
 
-using namespace std;
-
-int main(){
+int main() {
     unsigned int i;
     int n, c;
-    string a = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    string s;
+    std::string a = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    std::string s;
 
-    cin >> n;
-    while (n--){
-        cin >> s;
-        cin >> c;
+    std::cin >> n;
 
-        for (i = 0; i <= s.length() - 1; i++) s.at(i) = a.at(a.find_last_of(s.at(i)) - c);
-        cout << s << endl;
+    while (n--) {
+        std::cin >> s;
+        std::cin >> c;
+
+        for (i = 0; i <= s.length() - 1; i++) {
+            s.at(i) = a.at(a.find_last_of(s.at(i)) - c);
+        }
+
+        std::cout << s << std::endl;
     }
+
     return 0;
 }

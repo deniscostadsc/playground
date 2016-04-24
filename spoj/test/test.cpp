@@ -1,13 +1,13 @@
 #include <iostream>
+#include <string>
 
-using namespace std;
+int main() {
+    std::string n;
 
-int main(){
-    string n;
-    while (cin >> n){
-        if (n == "42")
-            break;
-        cout << n << endl;
+    while (std::cin >> n) {
+        if (n == "42") break;
+        std::cout << n << std::endl;
     }
+
     return 0;
 }

@@ -15,8 +15,11 @@ int main() {
         }
     }
 
-    if (o == 'S') printf("%.1f\n", s);
-    else printf("%.1f\n", s / 12);
+    if (o == 'S') {
+        printf("%.1f\n", s);
+    } else {
+        printf("%.1f\n", s / 12);
+    }
 
     return 0;
 }

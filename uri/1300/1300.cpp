@@ -1,14 +1,14 @@
 #include <iostream>
 
-using namespace std;
-
-int main(){
+int main() {
     int n;
 
-    while (cin >> n){
-        if (n % 6 == 0) cout << "Y" << endl;
-        else cout << "N" << endl;
-
+    while (std::cin >> n) {
+        if (n % 6 == 0) {
+            std::cout << "Y" << std::endl;
+        } else {
+            std::cout << "N" << std::endl;
+        }
     }
 
     return 0;

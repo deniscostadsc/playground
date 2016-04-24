@@ -1,39 +1,45 @@
 #include <iostream>
 #include <vector>
 
-using namespace std;
-
-int main(){
+int main() {
     int n, s, ss, c, h;
     unsigned i;
     char b;
-    vector<char> bs;
-    vector<int> hs;
+    bool is_standup_shot, is_jump_shot;
+    std::vector<char> bs;
+    std::vector<int> hs;
 
-    cin >> n;
-    while (n--){
-        cin >> s;
+    std::cin >> n;
+
+    while (n--) {
+        std::cin >> s;
         ss = s;
 
-        while (ss--){
-            cin >> h;
+        while (ss--) {
+            std::cin >> h;
             hs.push_back(h);
         }
 
-        while (s--){
-            cin >> b;
+        while (s--) {
+            std::cin >> b;
             bs.push_back(b);
         }
 
         c = 0;
-        for (i = 0; i < hs.size(); i++){
-            if (((hs.at(i) == 1 || hs.at(i) == 2) && bs.at(i) == 'S') || (hs.at(i) > 2 && bs.at(i) == 'J')) c++;
+        for (i = 0; i < hs.size(); i++) {
+            is_standup_shot = (
+                hs.at(i) == 1 || hs.at(i) == 2) && bs.at(i) == 'S';
+            is_jump_shot = hs.at(i) > 2 && bs.at(i) == 'J';
+            if (is_standup_shot || is_jump_shot) {
+                c++;
+            }
         }
 
-        cout << c << endl;
+        std::cout << c << std::endl;
 
         hs.clear();
         bs.clear();
     }
+
     return 0;
 }

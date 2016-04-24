@@ -1,35 +1,34 @@
 #include <iostream>
+#include <string>
 
-using namespace std;
-
-int main(){
-    string line;
+int main() {
+    std::string line;
     int proc, read, clocks;
 
-    while (getline(cin, line)){
+    while (getline(std::cin, line)) {
         clocks = 0;
         read = 0;
-        cin >> proc;
+        std::cin >> proc;
 
-        for (size_t i = 0; i < line.length(); ++i){
-            if (line.at(i) == 'W'){
+        for (size_t i = 0; i < line.length(); ++i) {
+            if (line.at(i) == 'W') {
                 clocks++;
             } else {
                 read++;
             }
 
-            if (line.at(i) == 'W' || i == line.length() - 1){
-                if (read){
+            if (line.at(i) == 'W' || i == line.length() - 1) {
+                if (read) {
                     clocks += read / proc;
                     if (read % proc != 0) clocks++;
-                    read = 0;    
+                    read = 0;
                 }
             }
         }
 
-        cout << clocks << endl;
+        std::cout << clocks << std::endl;
 
-        getline(cin, line); // it's a hack
+        getline(std::cin, line);  // it's a hack
     }
     return 0;
 }

@@ -1,13 +1,13 @@
 #include <cstdio>
 
-int main(){
+int main() {
     int i, j, x, z, s;
      while (scanf("%d %d", &i, &j) && i > 0 && j > 0) {
         s = 0;
-        if (j < i){
+        if (j < i) {
             x = i; i = j; j = x;
         }
-        for (z = i; z <= j; z++){
+        for (z = i; z <= j; z++) {
             printf("%d ", z);
             s += z;
         }

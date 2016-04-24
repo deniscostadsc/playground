@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-int main(){
+int main() {
     int n, s, t;
-    while((t = getchar()) != '0'){
+    while ((t = getchar()) != '0') {
         getchar();
         s = 0;
-        while((n = getchar()) != '\n'){
-            if (n != t){
+        while ((n = getchar()) != '\n') {
+            if (n != t) {
                 s += n - '0';
                 if (s != 0)
                     printf("%c", n);

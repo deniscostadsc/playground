@@ -28,6 +28,7 @@ base_numbers = {
     90: 'ninety'
 }
 
+
 def number_in_words(number):
     if number == 1000:
         return 'one thousand'
@@ -41,9 +42,10 @@ def number_in_words(number):
             if number:
                 written_number.append('and')
 
-        for basic_number, basic_name in sorted(base_numbers.items(), reverse=True):
+        sorted_basic_numbers = sorted(base_numbers.items(), reverse=True)
+        for basic_number, basic_name in sorted_basic_numbers:
             if basic_number <= number:
-                written_number.append(basic_name) 
+                written_number.append(basic_name)
                 number %= basic_number
     return ' '.join(written_number)
 

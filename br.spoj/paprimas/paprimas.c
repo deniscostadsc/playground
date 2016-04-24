@@ -2,7 +2,7 @@
 #include <string.h>
 #include <math.h>
 
-int is_prime(int n){
+int is_prime(int n) {
     int i;
 
     // 1 não é primo,
@@ -10,27 +10,27 @@ int is_prime(int n){
     if (n == 2 || n == 1) return 1;
     if (n % 2 == 0 || n < 1) return 0;
 
-    for (i = 3; i <= sqrt(n); i += 2){
+    for (i = 3; i <= sqrt(n); i += 2) {
         if (n % i == 0) return 0;
     }
     return 1;
 }
 
-int main(){
+int main() {
     int i, j, s;
     char p[21];
     char l[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    while (scanf("%s", p) != EOF){
+    while (scanf("%s", p) != EOF) {
         s = 0;
-        for (i = 0; i < strlen(p); i++){
-            for (j = 0; j <= 51; j++){
-                if (p[i] == l[j]){
+        for (i = 0; i < strlen(p); i++) {
+            for (j = 0; j <= 51; j++) {
+                if (p[i] == l[j]) {
                     s += j + 1;
                     break;
                 }
             }
         }
-        if (is_prime(s)){
+        if (is_prime(s)) {
             printf("It is a prime word.\n");
         } else {
             printf("It is not a prime word.\n");

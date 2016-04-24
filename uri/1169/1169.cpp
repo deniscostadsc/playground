@@ -1,25 +1,24 @@
 #include <iostream>
 #include <cstring>
-#include <map>
- 
-using namespace std;
 
-unsigned long long grains(unsigned long long n){
+unsigned long long grains(unsigned long long n) {
     if (n == 1) return 2;
     return 2 * grains(n - 1);
 }
- 
-int main(){
+
+int main() {
     int n;
     unsigned long long x;
 
-    cin >> n;
-    while(n--){
-        cin >> x;
-        if (x == 64)
-            cout << "1537228672809129 kg" << endl;
-        else
-            cout << grains(x) / 12 / 1000 << " kg" << endl;
+    std::cin >> n;
+    while (n--) {
+        std::cin >> x;
+
+        if (x == 64) {
+            std::cout << "1537228672809129 kg" << std::endl;
+        } else {
+            std::cout << grains(x) / 12 / 1000 << " kg" << std::endl;
+        }
     }
     return 0;
 }

@@ -1,11 +1,11 @@
 #include <iostream>
 
-using namespace std;
 
-int main(){
+
+int main() {
     int n, i;
-    cin >> n;
+    std::cin >> n;
     for (i = 1; i <= 10; i++)
-        cout << i << " x " << n << " = " << i * n << endl;
+        std::cout << i << " x " << n << " = " << i * n << std::endl;
     return 0;
 }

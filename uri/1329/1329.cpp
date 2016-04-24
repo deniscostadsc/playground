@@ -1,24 +1,26 @@
 #include <iostream>
 
-using namespace std;
-
-int main(){
+int main() {
     int n, c, m, j;
 
-    while (cin >> n){
+    while (std::cin >> n) {
         m = 0;
         j = 0;
 
         if (n == 0) break;
 
-        while (n--){
-            cin >> c;
+        while (n--) {
+            std::cin >> c;
 
-            if (c == 0) m++;
-            else j++;
+            if (c == 0) {
+                m++;
+            } else {
+                j++;
+            }
         }
 
-        cout << "Mary won " << m << " times and John won " << j << " times" << endl;
+        std::cout << "Mary won " << m << " times and John won " << j;
+        std::cout << " times" << std::endl;
     }
 
     return 0;

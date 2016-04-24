@@ -32,27 +32,27 @@ for i, line in enumerate(matrix):
             greatest = max(
                 greatest,
                 matrix[i][j] * matrix[i][j + 1] *
-                    matrix[i][j + 2] * matrix[i][j + 3])
+                matrix[i][j + 2] * matrix[i][j + 3])
 
         if i < len(matrix) - 3:
             greatest = max(
                 greatest,
                 matrix[i][j] * matrix[i + 1][j] *
-                    matrix[i + 2][j] * matrix[i + 3][j]
+                matrix[i + 2][j] * matrix[i + 3][j]
             )
 
         if i < len(matrix) - 3 and j < len(line) - 3:
             greatest = max(
                 greatest,
                 matrix[i][j] * matrix[i + 1][j + 1] *
-                    matrix[i + 2][j + 2] * matrix[i + 3][j + 3]
+                matrix[i + 2][j + 2] * matrix[i + 3][j + 3]
             )
 
         if i > 3 and j < len(line) - 3:
             greatest = max(
                 greatest,
                 matrix[i][j] * matrix[i - 1][j + 1] *
-                    matrix[i - 2][j + 2] * matrix[i - 3][j + 3]
+                matrix[i - 2][j + 2] * matrix[i - 3][j + 3]
             )
 
 print greatest

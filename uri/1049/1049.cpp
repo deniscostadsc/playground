@@ -1,37 +1,42 @@
 #include <cstdio>
 #include <iostream>
+#include <string>
 
-using namespace std;
-
-int main(){
+int main() {
     std::string a, b, c;
-    cin >> a;
-    cin >> b;
-    cin >> c;
-    if (a == "vertebrado"){
-        if (b == "ave"){
+
+    std::cin >> a;
+    std::cin >> b;
+    std::cin >> c;
+
+    if (a == "vertebrado") {
+        if (b == "ave") {
             if (c == "carnivoro")
                 printf("aguia\n");
             else
                 printf("pomba\n");
         } else {
-            if (c == "onivoro")
+            if (c == "onivoro") {
                 printf("homem\n");
-            else
+            } else {
                 printf("vaca\n");
+            }
         }
     } else {
-        if (b == "inseto"){
-            if (c == "hematofago")
+        if (b == "inseto") {
+            if (c == "hematofago") {
                 printf("pulga\n");
-            else
+            } else {
                 printf("lagarta\n");
+            }
         } else {
-            if (c == "hematofago")
+            if (c == "hematofago") {
                 printf("sanguessuga\n");
-            else
+            } else {
                 printf("minhoca\n");
+            }
         }
     }
+
     return 0;
 }

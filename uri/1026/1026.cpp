@@ -1,13 +1,9 @@
 #include <iostream>
 
-using namespace std;
-
-int main(){
+int main() {
     unsigned int a, b;
 
-    while (cin >> a >> b){
-        cout << (a ^ b) << endl;
-    }
+    while (std::cin >> a >> b) std::cout << (a ^ b) << std::endl;
 
     return 0;
 }

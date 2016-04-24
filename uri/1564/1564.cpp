@@ -1,13 +1,14 @@
 #include <iostream>
 
-using namespace std;
-
-int main (){
+int main() {
     int people;
 
-    while (cin >> people){
-        if (people) cout << "vai ter duas!" << endl;
-        else cout << "vai ter copa!" << endl;
+    while (std::cin >> people) {
+        if (people) {
+            std::cout << "vai ter duas!" << std::endl;
+        } else {
+            std::cout << "vai ter copa!" << std::endl;
+        }
     }
 
     return 0;

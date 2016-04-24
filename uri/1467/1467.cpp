@@ -1,18 +1,19 @@
 #include <iostream>
 
-using namespace std;
-
-int main(){
+int main() {
     int a, b, c;
-    while (cin >> a >> b >> c){
-        if (a == b && b == c)
-            cout << "*" << endl;
-        else if (b == c)
-            cout << "A" << endl;
-        else if (a == c)
-            cout << "B" << endl;
-        else
-            cout << "C" << endl;
+
+    while (std::cin >> a >> b >> c) {
+        if (a == b && b == c) {
+            std::cout << "*" << std::endl;
+        } else if (b == c) {
+            std::cout << "A" << std::endl;
+        } else if (a == c) {
+            std::cout << "B" << std::endl;
+        } else {
+            std::cout << "C" << std::endl;
+        }
     }
+
     return 0;
 }

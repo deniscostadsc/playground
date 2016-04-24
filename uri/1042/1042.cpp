@@ -1,19 +1,19 @@
 #include <cstdio>
 
-int main(){
+int main() {
     int a, b, c, g, m, s, x;
 
     scanf("%d %d %d", &a, &b, &c);
 
     g = a; m = b; s = c;
 
-    if (g < m){
+    if (g < m) {
         x = g; g = m; m = x;
     }
-    if (m < s){
+    if (m < s) {
         x = m; m = s; s = x;
     }
-    if (g < m){
+    if (g < m) {
         x = g; g = m; m = x;
     }
 

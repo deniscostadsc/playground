@@ -1,16 +1,15 @@
 #include <iostream>
 
-using namespace std;
-
-int main(){
+int main() {
     int n, i, sum;
 
-    while (cin >> n && n != 0){
+    while (std::cin >> n && n != 0) {
         sum = 0;
-        for (i = 1; i <= n; i++){
-            sum += i * i;
-        }
-        cout << sum << endl;
+
+        for (i = 1; i <= n; i++) sum += i * i;
+
+        std::cout << sum << std::endl;
     }
+
     return 0;
 }

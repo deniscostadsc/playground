@@ -1,12 +1,12 @@
 #include <cstdio>
 
-int main(){
+int main() {
     char o;
     int i, j;
     float s, n;
     scanf("%c", &o);
-    for (i = 0; i <= 11; i++){
-        for (j = 0; j <= 11; j++){
+    for (i = 0; i <= 11; i++) {
+        for (j = 0; j <= 11; j++) {
             scanf("%f", &n);
             if (j < i)
                 s += n;

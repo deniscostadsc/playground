@@ -1,10 +1,10 @@
 #include <iostream>
 
-using namespace std;
 
-int gcd(int a, int b){
+
+int gcd(int a, int b) {
     int x;
-    while (b > 0){
+    while (b > 0) {
         x = b;
         b = a % b;
         a = x;
@@ -12,14 +12,14 @@ int gcd(int a, int b){
     return a;
 }
 
-int main(){
+int main() {
     int n, a, b;
 
-    cin >> n;
+    std::cin >> n;
 
-    while (n--){
-        cin >> a >> b;
-        cout << gcd(a, b) << endl;
+    while (n--) {
+        std::cin >> a >> b;
+        std::cout << gcd(a, b) << std::endl;
     }
 
     return 0;

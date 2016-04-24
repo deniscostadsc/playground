@@ -1,20 +1,21 @@
 #include <iostream>
 #include <map>
 
-using namespace std;
-
 struct Pair {
-    unsigned long next;
+    long next;
     unsigned long length;
 };
 
-map<unsigned long, Pair> acks;
+std::map<unsigned long, Pair> acks;
 
-long long ack(long long n){
+long ack(long n) {
     if (acks[n].next != 0) return acks[n].next;
 
-    if (n % 2 == 0) acks[n].next = n / 2;
-    else acks[n].next = 3 * n + 1;
+    if (n % 2 == 0) {
+        acks[n].next = n / 2;
+    } else {
+        acks[n].next = 3 * n + 1;
+    }
 
     ack(acks[n].next);
 
@@ -22,24 +23,25 @@ long long ack(long long n){
     return acks[n].next;
 }
 
-int main(){
-    long long i, g_number, g_sequence;
+int main() {
+    long i, g_number;
+    unsigned long g_sequence;
 
     acks[1].next = 1;
 
     g_sequence = 0;
 
-    for (i = 2; i < 1000000; i++){
+    for (i = 2; i < 1000000; i++) {
         ack(i);
-        if (acks[i].length > g_sequence){
+        if (acks[i].length > g_sequence) {
             g_sequence = acks[i].length;
             g_number = i;
-        } else if (acks[i].length == g_sequence){
+        } else if (acks[i].length == g_sequence) {
             if (i < g_number) g_number = i;
         }
     }
 
-    cout << g_number << endl;
+    std::cout << g_number << std::endl;
 
     return 0;
 }

@@ -2,11 +2,9 @@
 #include <cstdio>
 #include <map>
 
-using namespace std;
-
-int main(){
+int main() {
     char c;
-    map<char, char> keyboard;
+    std::map<char, char> keyboard;
 
     keyboard['1'] = '`';
     keyboard['2'] = '1';
@@ -19,7 +17,7 @@ int main(){
     keyboard['9'] = '8';
     keyboard['0'] = '9';
     keyboard['-'] = '0';
-    keyboard['='] = '-';    
+    keyboard['='] = '-';
 
     keyboard['W'] = 'Q';
     keyboard['E'] = 'W';
@@ -55,9 +53,12 @@ int main(){
     keyboard['.'] = ',';
     keyboard['/'] = '.';
 
-    while((c = getchar()) != EOF){
-        if (keyboard.find(c) != keyboard.end()) cout << keyboard[c];
-        else cout << c;
+    while ((c = getchar()) != EOF) {
+        if (keyboard.find(c) != keyboard.end()) {
+            std::cout << keyboard[c];
+        } else {
+            std::cout << c;
+        }
     }
 
     return 0;

@@ -1,11 +1,9 @@
 #include <cstdio>
 #include <string>
 
-using namespace std;
-
 int graph[26][26];
 int discovered[26];
-string alphabet = "abcdefghijklmnopqrstuvwxyz";
+std::string alphabet = "abcdefghijklmnopqrstuvwxyz";
 
 void dfs(int vertex, int v, int cc) {
     int i;
@@ -21,7 +19,7 @@ void dfs(int vertex, int v, int cc) {
 
 int count_connected_components(int v) {
     int i, index = 0, cc = 0;
-    
+
     while (true) {
         cc++;
         dfs(index, v, cc);
@@ -59,8 +57,8 @@ int main() {
         while (e--) {
             scanf("%c %c ", &from, &to);
 
-            i = (int)alphabet.find_first_of(from);
-            j = (int)alphabet.find_first_of(to);
+            i = static_cast<int>(alphabet.find_first_of(from));
+            j = static_cast<int>(alphabet.find_first_of(to));
             graph[i][j] = 1;
             graph[j][i] = 1;
         }

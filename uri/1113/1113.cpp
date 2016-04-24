@@ -1,11 +1,15 @@
 #include <cstdio>
 
-int main(){
+int main() {
     int a, b;
-    while(scanf("%d %d", &a, &b) && a != b)
-        if (a < b)
+
+    while (scanf("%d %d", &a, &b) && a != b) {
+        if (a < b) {
             printf("Crescente\n");
-        else
+        } else {
             printf("Decrescente\n");
+        }
+    }
+
     return 0;
 }

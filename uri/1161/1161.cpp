@@ -3,7 +3,7 @@
 
 long long int rfat[21];
 
-long long int fat(long long int n){
+long long int fat(long long int n) {
     if (rfat[n] != 0)
         return rfat[n];
     if (n <= 1)
@@ -13,10 +13,10 @@ long long int fat(long long int n){
     return rfat[n];
 }
 
-int main(){
+int main() {
     long long int x, y;
     memset(rfat, 0, sizeof(rfat));
-    while(scanf("%lld %lld", &x, &y) != EOF)
+    while (scanf("%lld %lld", &x, &y) != EOF)
         printf("%lld\n", fat(x) + fat(y));
     return 0;
 }

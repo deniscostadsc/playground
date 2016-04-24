@@ -1,31 +1,31 @@
 #include <iostream>
- 
-using namespace std;
+#include <vector>
 
-struct Bank{
+struct Bank {
     int owe_to;
     int owe_value;
     int reserve;
 };
- 
-int main(){
+
+int main() {
     int r, b, n, i, d, c, v;
     bool liquidated;
- 
-    while (cin >> b >> n && b != 0 && n != 0){
-        Bank banks[b + 1];
-        liquidated = true;
- 
-        for (i = 1; i <= b; i++){
-            cin >> r;
+    std::vector<Bank> banks;
+
+    while (std::cin >> b >> n && b && n) {
+        //Bank banks[b + 1];
+
+        for (i = 1; i <= b; i++) {
+            std::cin >> r;
 
             Bank bank;
             bank.reserve = r;
-            banks[i] = bank;
+            banks.push_back(bank);
+            // banks[i] = bank;
         }
 
-        while (n--){
-            cin >> d >> c >> v;
+        while (n--) {
+            std::cin >> d >> c >> v;
 
             banks[d].owe_to = c;
             banks[d].owe_value = v;
@@ -35,15 +35,19 @@ int main(){
             banks[d].owe_value -= v;
         }
 
-        for (i = 1; i <= b; i++){
+        liquidated = true;
+        for (i = 1; i <= b; i++) {
             if (banks[i].reserve < 0) {
+                std::cout << "N" << std::endl;
                 liquidated = false;
                 break;
             }
         }
 
-        if (liquidated) cout << "S" << endl;
-        else cout << "N" << endl;
+        if (liquidated) std::cout << "S" << std::endl;
+
+        banks.clear();
     }
+
     return 0;
 }

@@ -1,20 +1,21 @@
 #include <iostream>
 
-using namespace std;
-
-int main(){
+int main() {
     int n, a, b, ac, bc;
-    while (cin >> n && n != 0){
+
+    while (std::cin >> n && n != 0) {
         ac = 0;
         bc = 0;
-        while (n--){
-            cin >> a >> b;
-            if (a > b)
-                ac++;
-            if (b > a)
-                bc++;
+
+        while (n--) {
+            std::cin >> a >> b;
+
+            if (a > b) ac++;
+            if (b > a) bc++;
         }
-        cout << ac << " " << bc << endl;
+
+        std::cout << ac << " " << bc << std::endl;
     }
+
     return 0;
 }

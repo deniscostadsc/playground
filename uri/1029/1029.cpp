@@ -3,7 +3,7 @@
 long int f[39];
 long int r[39];
 
-long int fib(long int n){
+long int fib(long int n) {
     if (f[n] != -1)
         return f[n];
     if (n <= 1) {
@@ -16,7 +16,7 @@ long int fib(long int n){
     return f[n];
 }
 
-int main(){
+int main() {
     int i, j;
     long int n;
     for (j = 0; j <= 39; j++) {
@@ -29,7 +29,7 @@ int main(){
     r[2] = 2;
 
     scanf("%d", &i);
-    while(i--){
+    while (i--) {
         scanf("%ld", &n);
         printf("fib(%ld) = %ld calls = %ld\n", n, r[n], fib(n));
     }

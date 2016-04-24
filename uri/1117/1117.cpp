@@ -1,11 +1,11 @@
 #include <cstdio>
 
-int main(){
+int main() {
     float n, s = 0.0;
     int c = 0;
-    while(c < 2){
+    while (c < 2) {
         scanf("%f", &n);
-        if (n >= 0.0 && n <= 10.0){
+        if (n >= 0.0 && n <= 10.0) {
             c++;
             s += n;
         } else {

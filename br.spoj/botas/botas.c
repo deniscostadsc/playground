@@ -1,29 +1,33 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(){
+int main() {
     int d[31], e[31], n, p, t, i;
     char l;
-    while(scanf("%d", &n) != EOF){
+
+    while (scanf("%d", &n) != EOF) {
         memset(d, 0, sizeof(d));
         memset(e, 0, sizeof(e));
 
-        while(n--){
+        while (n--) {
             scanf("%d %c", &p, &l);
-            if (l == 'E')
+            if (l == 'E') {
                 e[p - 30]++;
-            else
+            } else {
                 d[p - 30]++;
+            }
         }
 
         t = 0;
-        for (i = 0; i <= 30; i++){
-            if (e[i] < d[i])
+        for (i = 0; i <= 30; i++) {
+            if (e[i] < d[i]) {
                 t += e[i];
-            else
+            } else {
                 t += d[i];
+            }
         }
         printf("%d\n", t);
     }
+
     return 0;
 }

@@ -1,5 +1,6 @@
 from math import sqrt
 
+
 def is_prime(n):
     for i in xrange(3, n / 2 + 1):
         if n % i == 0:

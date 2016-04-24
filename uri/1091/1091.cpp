@@ -1,20 +1,27 @@
 #include <iostream>
 
-using namespace std;
-
-int main(){
+int main() {
     int n, x, y, xc, yc;
 
-    while (cin >> n && n != 0){
-        cin >> x >> y;
-        while (n--){
-            cin >> xc >> yc;
-            if (xc > x && yc > y) cout << "NE" << endl;
-            else if (xc < x && yc > y) cout << "NO" << endl;
-            else if (xc < x && yc < y) cout << "SO" << endl;
-            else if (xc > x && yc < y) cout << "SE" << endl;
-            else cout << "divisa" << endl;
+    while (std::cin >> n && n != 0) {
+        std::cin >> x >> y;
+
+        while (n--) {
+            std::cin >> xc >> yc;
+
+            if (xc > x && yc > y) {
+                std::cout << "NE" << std::endl;
+            } else if (xc < x && yc > y) {
+                std::cout << "NO" << std::endl;
+            } else if (xc < x && yc < y) {
+                std::cout << "SO" << std::endl;
+            } else if (xc > x && yc < y) {
+                std::cout << "SE" << std::endl;
+            } else {
+                std::cout << "divisa" << std::endl;
+            }
         }
     }
+
     return 0;
 }

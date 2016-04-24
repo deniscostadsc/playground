@@ -1,17 +1,15 @@
 #include <iostream>
 #include <cmath>
 
-using namespace std;
-
-int main(){
+int main() {
     int a, b, c;
 
-    while (cin >> a && a){
-        cin >> b >> c;
+    while (std::cin >> a && a) {
+        std::cin >> b >> c;
 
         double minimun_land_size = (100 * a * b) / c;
 
-        cout << floor(sqrt(minimun_land_size)) << endl;
+        std::cout << floor(sqrt(minimun_land_size)) << std::endl;
     }
 
     return 0;

@@ -1,13 +1,13 @@
 #include <cstdio>
 
-int main(){
+int main() {
     int t, a = 0, m = 0, d = 0;
     scanf("%d", &t);
-    if (t >= 365){
+    if (t >= 365) {
         a = t / 365;
         t %= 365;
     }
-    if (t >= 30){
+    if (t >= 30) {
         m = t / 30;
         t %= 30;
     }

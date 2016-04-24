@@ -1,12 +1,15 @@
 #include <cstdio>
 
-int main(){
+int main() {
     double s = 1.0, x = 2.0;
     int i;
-    for (i = 3; i <= 39; i += 2){
-        s += (double) i / x;
+
+    for (i = 3; i <= 39; i += 2) {
+        s += static_cast<double>(i / x);
         x *= 2;
     }
+
     printf("%.2lf\n", s);
+
     return 0;
 }

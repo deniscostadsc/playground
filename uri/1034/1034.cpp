@@ -3,14 +3,11 @@
 #include <set>
 #include <vector>
 
-using namespace std;
+std::vector<int> solutions;
 
-vector<int> solutions;
-
-int change(int m, set<int>::iterator it_a_begin,
-           set<int>::iterator it_a_end, int n) {
-
-    cout << *it_a_begin << endl;
+int change(int m, std::set<int>::iterator it_a_begin,
+           std::set<int>::iterator it_a_end, int n) {
+    std::cout << *it_a_begin << std::endl;
 
     if (m < 0 || it_a_begin == it_a_end) return 0;
     if (m == 0) {
@@ -26,21 +23,22 @@ int change(int m, set<int>::iterator it_a_begin,
 
 int main() {
     int t, n, m, z;
-    set<int> a;
-    
-    cin >> t;
+    std::set<int> a;
+
+    std::cin >> t;
 
     while (t--) {
-        cin >> n >> m;
+        std::cin >> n >> m;
 
         while (n--) {
-            cin >> z;
+            std::cin >> z;
             a.insert(z);
         }
 
         change(m, a.begin(), a.end(), 0);
 
-        cout << *min_element(solutions.begin(), solutions.end()) << endl;
+        std::cout << *min_element(solutions.begin(), solutions.end());
+        std::cout << std::endl;
 
         a.clear();
         solutions.clear();
@@ -48,5 +46,3 @@ int main() {
 
     return 0;
 }
-
-//for (set<int>::iterator it = a.begin(); it != a.end(); it++) { cout << *it << endl; }

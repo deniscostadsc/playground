@@ -1,14 +1,11 @@
-#include <cstdio>
 #include <algorithm>
+#include <cstdio>
 #include <vector>
-
-using namespace std;
 
 int main() {
     int n, m, p, count;
-    vector<int> queue;
-
-    vector<int>::iterator it, it_copy;
+    std::vector<int> queue;
+    std::vector<int>::iterator it, it_copy;
 
     scanf("%d", &n);
 
@@ -22,12 +19,13 @@ int main() {
             queue.insert(queue.begin(), p);
         }
 
-        vector<int> queue_copy(queue);
+        std::vector<int> queue_copy(queue);
         sort(queue_copy.begin(), queue_copy.end());
 
         it_copy = queue_copy.begin();
         for (it = queue.begin(); it != queue.end(); ++it) {
             if (*it == *it_copy) count++;
+
             ++it_copy;
         }
 

@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-int main(){
+int main() {
     int t, j, n, s;
     char x[10];
-    while(scanf("%d %d", &t, &j) && t != 0){
+    while (scanf("%d %d", &t, &j) && t != 0) {
         s = 0;
-        while (t--){
+        while (t--) {
             scanf("%s %d", x, &n);
             s += n;
         }

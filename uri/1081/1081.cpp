@@ -2,8 +2,6 @@
 #include <string>
 #include <iostream>
 
-using namespace std;
-
 int graph[20][20];
 bool discovered[20];
 
@@ -17,11 +15,11 @@ bool dfs(int vertex, int v, int spaces) {
         if (graph[vertex][i] == 1) {
             has_path = true;
             if (!discovered[i]) {
-                cout << string(spaces, ' ');
+                std::cout << std::string(spaces, ' ');
                 printf("%d-%d pathR(G,%d)\n", vertex, i, i);
                 dfs(i, v, spaces + 2);
             } else {
-                cout << string(spaces, ' ');
+                std::cout << std::string(spaces, ' ');
                 printf("%d-%d\n", vertex, i);
             }
         }
@@ -69,7 +67,7 @@ int main() {
 
             graph[from][to] = 1;
         }
-        
+
         printf("Caso %d:\n", ncase);
         dfs_runner(v);
     }

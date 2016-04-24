@@ -1,14 +1,14 @@
 #include <cstdio>
 #include <cmath>
 
-int main(){
+int main() {
     int n, a, b, c, d, r, num, den, num_r, den_r, j;
     char o, i;
 
     scanf("%d", &n);
-    while(n--){
+    while (n--) {
         scanf("%d %c %d %c %d %c %d", &a, &i, &b, &o, &c, &i, &d);
-        switch (o){
+        switch (o) {
             case '+':
                 num = (b * d) * a / b + (b * d) * c / d;
                 den = b * d;
@@ -36,8 +36,8 @@ int main(){
         den_r = den;
 
         j = 2;
-        while (j <= r / 2 + 1){
-            if (num_r % j == 0 && den_r % j == 0){
+        while (j <= r / 2 + 1) {
+            if (num_r % j == 0 && den_r % j == 0) {
                 num_r = num_r / j;
                 den_r = den_r / j;
             } else {
