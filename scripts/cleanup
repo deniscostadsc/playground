@@ -1,5 +1,4 @@
 #!/bin/bash
 #vim:set ft=sh
 
-find . -regex '.*\.\(py[co]\|temp\)$' -delete
-find . -name 'out.temp' -delete
+find . -regex '.*\.\(out\|py[co]\|temp\)' -delete
