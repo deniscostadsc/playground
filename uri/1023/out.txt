@@ -52,7 +52,7 @@ Consumo medio: 4.67 m3.
 
 Cidade# 14:
 14-2 18-4 9-6 9-8
-Consumo medio: 4.52 m3.
+Consumo medio: 4.51 m3.
 
 Cidade# 15:
 1-2 5-3 9-4 9-7 9-9
