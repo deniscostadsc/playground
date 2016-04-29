@@ -13,30 +13,27 @@ int main() {
     std::vector<Bank> banks;
 
     while (std::cin >> b >> n && b && n) {
-        //Bank banks[b + 1];
-
-        for (i = 1; i <= b; i++) {
+        for (i = 0; i < b; i++) {
             std::cin >> r;
 
             Bank bank;
             bank.reserve = r;
             banks.push_back(bank);
-            // banks[i] = bank;
         }
 
         while (n--) {
             std::cin >> d >> c >> v;
 
-            banks[d].owe_to = c;
-            banks[d].owe_value = v;
+            banks[d - 1].owe_to = c;
+            banks[d - 1].owe_value = v;
 
-            banks[c].reserve += v;
-            banks[d].reserve -= v;
-            banks[d].owe_value -= v;
+            banks[c - 1].reserve += v;
+            banks[d - 1].reserve -= v;
+            banks[d - 1].owe_value -= v;
         }
 
         liquidated = true;
-        for (i = 1; i <= b; i++) {
+        for (i = 0; i < b; i++) {
             if (banks[i].reserve < 0) {
                 std::cout << "N" << std::endl;
                 liquidated = false;
