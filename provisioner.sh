@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # update ubuntu and install SO dependencies
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
@@ -15,6 +14,8 @@ sudo apt-get install -y \
     libssl-dev \
     nodejs \
     python-pip
+
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
 sudo apt-get autoremove -y
 sudo apt-get autoclean -y
