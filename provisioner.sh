@@ -13,9 +13,8 @@ sudo apt-get install -y \
     language-pack-en \
     libssl-dev \
     nodejs \
+    npm \
     python-pip
-
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
 sudo apt-get autoremove -y
 sudo apt-get autoclean -y
@@ -24,8 +23,9 @@ sudo locale-gen en
 
 
 # download config files and set the machine up
-echo 'PATH=$PATH:/vagrant/scripts/' >> /home/vagrant/.bashrc
-echo 'cd /vagrant' >> /home/vagrant/.bashrc
+echo 'PATH=$PATH:/vagrant/scripts/' >> ~/.bashrc
+echo 'cd /vagrant' >> ~/.bashrc
+echo "PS1='\[\033[01;35m\]\w\[\033[00m\]\n\$ '" >> ~/.bashrc
 
 
 # install python dependencies
