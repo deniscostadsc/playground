@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 'use strict';
 
 var s = 0;
