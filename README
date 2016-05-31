@@ -1,27 +1,21 @@
 Playground - A place to play programming.
 
-
-In this repository I'll save all my solutions for site as Project Euler, URI,
-SPOJ and etc. Most of those sites have problem that follows the structure of
+In this repository I'll save all my solutions for sites as Project Euler, URI,
+SPOJ and etc. Most of these sites have problem that follows the structure of
 the programming contest runned by ACM for students around the world. I used to
-attend those competitions at my student age, but I still playing and having
+attend these competitions at my student age, but I still playing and having
 some fun.
 
 Most of the problem folow the sdtin/stdout programming contest standard. So you
 can run it manually by running something like these commands:
 
     $ g++ 1003.cpp
-    $ a.out < int.txt > out.txt
+    $ a.out < input.txt > output.txt
 
 There is a virtual machine ready to run those problems. To lauch it run:
 
     $ vagrant up # to lauch the machine
     $ vagrant ssh # to ssh to the machine
-
-There is a boilerplate command to create the folder structure that this project
-folows. Its syntax is:
-
-    $ new-problem problem-code [language-extension]
 
 The structure of the problems is:
 
@@ -49,10 +43,14 @@ you don't submit the code, just the answer, it contains the answer.
 
 - WRONG - It is a flag file that says the answer isn't correct yet.
 
-Following this structure, you will be able to run your code, in all supported
-languages with just one command:
+In the virtual machine you have a few available commands to help yout to manage
+, run, create and test problems. These are:
 
-    $ marathon
+    new-problem - create a new problem folder
+    marathon - check is the answer is correct
+    cleanup - clean up temporary files
+    run-all - run all problems recursively
+    check-unsolved - searc for all folders with WRONG file recursively
 
-This command already tests Go, Python, C, C++ and NodeJS code. It also checks
-lint (and fix it for Go) for all those languages.
+This project already supports C, C++, Go, NodeJs and Python code. It also
+checks lint (and fix it for Go) for all those languages.
