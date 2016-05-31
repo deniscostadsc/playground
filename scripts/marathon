@@ -75,3 +75,13 @@ if [ -f *.go ]; then
     check-solution 'Golang code: '
     gofmt -w *.go
 fi
+
+if [ -f *.cl ]; then
+    if [ -f 'in.txt' ]; then
+        clips *.cl < in.txt > out.temp
+    else
+        clisp *.cl > out.temp
+    fi
+
+    check-solution 'Common-lisp code: '
+fi
