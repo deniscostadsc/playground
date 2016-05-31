@@ -28,6 +28,7 @@ int main() {
     unsigned long g_sequence;
 
     acks[1].next = 1;
+    acks[1].length = 1;
 
     g_sequence = 0;
 
