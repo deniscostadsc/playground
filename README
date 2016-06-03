@@ -50,7 +50,7 @@ In the virtual machine you have a few available commands to help yout to manage
     marathon - check is the answer is correct
     cleanup - clean up temporary files
     run-all - run all problems recursively
-    check-unsolved - searc for all folders with WRONG file recursively
+    check-unsolved - searc for all folders with WRONG file on it recursively
 
 This project already supports C, C++, Go, NodeJs and Python code. It also
 checks lint (and fix it for Go) for all those languages.
