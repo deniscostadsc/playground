@@ -2,32 +2,16 @@
 #include <cstdio>
 
 int **create_grid(int r, int c, int m, int **missing) {
-    /*
-
-    x.x.x.x.x
-     x...x.x
-    x.x.x.x.x
-
-    will become...
-
-    [[1, 1, 1, 1, 1],
-     [1, 0, 1, 1, -1],
-     [1, 1, 1, 1, 1]]
-
-    */
-
     int i, j;
     int **grid = new int*[r];
 
     for (i = 0; i < r; i++) {
-        grid[i] = new int[c];
-
-        for (j = 0; j < c; j++) {
-            grid[i][j] = 1;
-        }
-
-        if (r % 2 == 1) {
-            grid[i][r - 1] = -1;
+        if (i % 2 == 1) {
+            grid[i] = new int[c - 1];
+            for (j = 0; j < c - 1; j++) grid[i][j] = 1;
+        } else {
+            grid[i] = new int[c];
+            for (j = 0; j < c; j++) grid[i][j] = 1;
         }
     }
 
@@ -35,63 +19,65 @@ int **create_grid(int r, int c, int m, int **missing) {
         grid[missing[i][0]][missing[i][1]] = 0;
     }
 
+    /*
+     * to print matrix as it is in final */
+
+    /*
+    for (i = 0; i < r; i++) {
+        if (i % 2 == 1) {
+            std::cout << " ";
+            for (j = 0; j < c - 1; j++) {
+                std::cout << grid[i][j] << " ";
+            }
+        } else {
+            for (j = 0; j < c; j++) {
+                std::cout << grid[i][j] << " ";
+            }
+        }
+        std::cout << std::endl;
+    }
+    */
+
+    std::cout << std::endl << std::endl;
+
     return grid;
 }
 
-void where_to_drop(int k, int r, int c, int **grid) {
-    int i, j;
-    double probability[c];
-
-    for (i = 0; i < c; i++) {
-        probability[i] = 1.0;
+void calculate_probability(int i, int j ,int r, int c, int k, int **grid, double probability) {
+    if (i == r - 1 && j == k) {
+        std::cout << probability << std::endl;
     }
-
-    if (grid[r - 1][k] == 1 && grid[r - 1][k - 1] == 1) {
-        probability[k] *= 0.5;
-        probability[k - 1] *= 0.5;
-    } else if (grid[r - 1][k] == 1) {
-        probability[k] *= 1.0;
-    } else if (grid[r - 1][k - 1] == 1) {
-        probability[k - 1] *= 1.0;
-    } else {
-        puts("xxx");
+    if (i == r - 1){
         return void();
     }
 
-    for (i = r - 1 ; i > 0; i--) {
-        for (j = 0; j > c; j--) {
-            if (i % 2 == 0) {
-                if (grid[i - 1][k] == 1 && grid[i - 1][k - 1] == 1) {
-                    probability[k] *= 0.5;
-                    probability[k - 1] *= 0.5;
-                } else if (grid[i - 1][k] == 1) {
-                    probability[k] *= 1.0;
-                } else if (grid[i - 1][k - 1] == 1) {
-                    probability[k - 1] *= 1.0;
-                } else {
-                    puts("xxx");
-                    return void();
-                }
-            } else {
-                if (grid[i - 1][k] == 1 && grid[i - 1][k + 1] == 1) {
-                    probability[k] *= 0.5;
-                    probability[k + 1] *= 0.5;
-                } else if (grid[i - 1][k] == 1) {
-                    probability[k] *= 1.0;
-                } else if (grid[i - 1][k + 1] == 1) {
-                    probability[k + 1] *= 1.0;
-                } else {
-                    puts("xxx");
-                    return void();
-                }
-            }
+    if (i % 2 == 0) {
+        if (grid[i + 1][j - 1] && grid[i + 1][j]) {
+            calculate_probability(i + 1, j - 1, r, c, k, grid, probability * 0.5);
+            calculate_probability(i + 1, j, r, c, k, grid, probability * 0.5);
+        } else if (grid[i + 1][j - 1]) {
+            calculate_probability(i + 1, j - 1, r, c, k, grid, probability);
+        } else {
+            calculate_probability(i + 1, j, r, c, k, grid, probability);
+        }
+    } else {
+        if (grid[i + 1][j] && grid[i + 1][j + 1]) {
+            calculate_probability(i + 1, j, r, c, k, grid, probability * 0.5);
+            calculate_probability(i + 1, j + 1, r, c, k, grid, probability * 0.5);
+        } else if (grid[i + 1][j]) {
+            calculate_probability(i + 1, j, r, c, k, grid, probability);
+        } else {
+            calculate_probability(i + 1, j + 1, r, c, k, grid, probability);
         }
     }
+}
 
-    for (i = r - 1 ; i > 0; i--) {
-        std::cout << probability[i] << " ";
+void where_to_drop(int r, int c, int k, int **grid) {
+    int j;
+
+    for (j = 0; j < c; j++) {
+        calculate_probability(0, j, r, c, k, grid, 1.0);
     }
-    std::cout << std::endl;
 }
 
 int main() {
@@ -114,7 +100,9 @@ int main() {
         }
 
         grid = create_grid(r, c, m, missing);
-        where_to_drop(k, r, c, grid);
+        where_to_drop(r, c, k, grid);
+
+        std::cout << std::endl << std::endl;
     }
 
     return 0;
