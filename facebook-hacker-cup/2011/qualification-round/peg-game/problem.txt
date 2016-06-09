@@ -23,11 +23,11 @@ the missing pegs are (1,1), (2,1) and (3,2). In this example, the best place to
 drop the ball is on the far left, in column 0, which gives a 50% chance that it
 will end in the goal.
 
-x.x.x.x.x
- x...x.x
-x...x.x.x
- x.x...x
-x.x.x.x.x
+x x x x x
+ x . x x
+x . x x x
+ x x . x
+x x x x x
  G
 
 'x' indicates a peg, '.' indicates empty space.
