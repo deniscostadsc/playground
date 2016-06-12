@@ -25,7 +25,7 @@ sudo locale-gen en
 
 # set the machine up
 echo 'export LC_ALL="en_US.UTF-8"' >> ~/.bashrc
-echo 'PATH=$PATH:/vagrant/scripts/' >> ~/.bashrc
+echo 'PATH=$PATH:/vagrant/.bin/' >> ~/.bashrc
 echo 'cd /vagrant' >> ~/.bashrc
 echo "PS1='\[\033[31m\]playground \[\033[01;35m\]\w\[\033[00m\]\n\$ '" >> ~/.bashrc
 
