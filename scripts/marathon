@@ -54,10 +54,11 @@ if [ -f *.py ]; then
 fi
 
 if [ -f *.js ]; then
+    NODE=$(command -v node || command -v nodejs)
     if [ -f 'in.txt' ]; then
-        node *.js < in.txt > out.temp
+        $NODE *.js < in.txt > out.temp
     else
-        node *.js > out.temp
+        $NODE *.js > out.temp
     fi
 
     check-solution 'Javascript code: '

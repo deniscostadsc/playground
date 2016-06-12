@@ -29,8 +29,6 @@ echo 'PATH=$PATH:/vagrant/scripts/' >> ~/.bashrc
 echo 'cd /vagrant' >> ~/.bashrc
 echo "PS1='\[\033[31m\]playground \[\033[01;35m\]\w\[\033[00m\]\n\$ '" >> ~/.bashrc
 
-sudo ln -s $(which nodejs) /usr/bin/node
-
 
 # install python dependencies
 sudo -H pip install --upgrade pip
