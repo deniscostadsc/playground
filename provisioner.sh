@@ -32,7 +32,7 @@ echo "PS1='\[\033[31m\]playground \[\033[01;35m\]\w\[\033[00m\]\n\$ '" >> ~/.bas
 
 # install python dependencies
 sudo -H pip install --upgrade pip
-sudo -H pip install flake8 cpplint
+sudo -H pip install flake8 cpplint # cpplint is a c++ dependency /o\
 
 
 # install nodejs and js dependencies
