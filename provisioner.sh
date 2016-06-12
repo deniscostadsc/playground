@@ -33,6 +33,7 @@ export LC_ALL="en_US.UTF-8"
 PATH=$PATH:/vagrant/.bin/
 cd /vagrant
 PS1='\[\033[31m\]playground \[\033[01;35m\]\w\[\033[00m\]\n\$ '
+sudo ln -s $(which nodejs) /usr/bin/node
 
 EOTHINGS
 ) >> ~/.bashrc
