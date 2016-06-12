@@ -8,13 +8,15 @@ sudo apt-get dist-upgrade -y
 sudo apt-get install -y \
     build-essential \
     clisp \
-    curl \
     g++ \
+    gcc \
     golang \
     language-pack-en \
+    libffi-dev \
     libssl-dev \
     nodejs \
     npm \
+    python-dev \
     python-pip
 
 sudo apt-get autoremove -y
@@ -24,15 +26,21 @@ sudo locale-gen en
 
 
 # set the machine up
-echo 'export LC_ALL="en_US.UTF-8"' >> ~/.bashrc
-echo 'PATH=$PATH:/vagrant/.bin/' >> ~/.bashrc
-echo 'cd /vagrant' >> ~/.bashrc
-echo "PS1='\[\033[31m\]playground \[\033[01;35m\]\w\[\033[00m\]\n\$ '" >> ~/.bashrc
+(
+cat <<'EOTHINGS'
+
+export LC_ALL="en_US.UTF-8"
+PATH=$PATH:/vagrant/.bin/
+cd /vagrant
+PS1='\[\033[31m\]playground \[\033[01;35m\]\w\[\033[00m\]\n\$ '
+
+EOTHINGS
+) >> ~/.bashrc
 
 
 # install python dependencies
 sudo -H pip install --upgrade pip
-sudo -H pip install flake8 cpplint # cpplint is a c++ dependency /o\
+sudo -H pip install flake8 cpplint ndg-httpsclient --upgrade
 
 
 # install nodejs and js dependencies
