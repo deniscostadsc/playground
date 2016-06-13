@@ -28,8 +28,6 @@ if [ -f *.c ]; then
 fi
 
 if [ -f *.cpp ]; then
-    ls *.cpp
-
     if [ -f 'in.txt' ]; then
         g++ -Wall *.cpp -lm && ./a.out < in.txt > out.temp
     else
