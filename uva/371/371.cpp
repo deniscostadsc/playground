@@ -24,7 +24,7 @@ long ack(long n) {
 }
 
 int main() {
-    long l, h, i, g_number;
+    long l, h, i, g_number, x;
     unsigned long g_sequence;
 
     acks[1].next = 1;
@@ -32,9 +32,20 @@ int main() {
 
 
     while (std::cin >> l >> h && l && h) {
+        if (h < l) {
+            x = l;
+            l = h;
+            h = x;
+        }
+
         g_sequence = 0;
 
-        for (i = l; i < h; i++) {
+        if (l == 1) {
+            g_sequence = 3;
+            g_number = 1;
+        }
+
+        for (i = l; i <= h; i++) {
             ack(i);
             if (acks[i].length > g_sequence) {
                 g_sequence = acks[i].length;
