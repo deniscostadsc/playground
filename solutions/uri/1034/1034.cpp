@@ -1,29 +1,34 @@
 #include <algorithm>
 #include <iostream>
+#include <map>
 #include <set>
-#include <vector>
 
-std::vector<int> solutions;
+std::set<int> blocks;
+std::map<int, int> memo;
 
-int change(int m, std::set<int>::iterator it_a_begin,
-           std::set<int>::iterator it_a_end, int n) {
-    std::cout << *it_a_begin << std::endl;
+int minimum_blocks(int m) {
+    if (memo[m]) return memo[m];
 
-    if (m < 0 || it_a_begin == it_a_end) return 0;
-    if (m == 0) {
-        solutions.push_back(n);
-        return 1;
+    std::set<int>::iterator it;
+
+    for (it = blocks.begin(); it != blocks.end(); it++) {
+        if (*it == m) {
+            memo[m] = 1;
+            return memo[m];
+        }
     }
 
-    int r1 = change(m - *it_a_begin, it_a_begin, it_a_end, ++n);
-    int r2 = change(m, ++it_a_begin, it_a_end, --n);
-
-    return r1 + r2;
+    int min_solution = m;
+    for (it = blocks.begin(); it != blocks.end(); it++) {
+        if (*it > m) break;
+        min_solution = 1 + std::min(min_solution, minimum_blocks(m - *it));
+    }
+    memo[m] = min_solution;
+    return memo[m];
 }
 
 int main() {
-    int t, n, m, z;
-    std::set<int> a;
+    int t, n, m, block;
 
     std::cin >> t;
 
@@ -31,17 +36,14 @@ int main() {
         std::cin >> n >> m;
 
         while (n--) {
-            std::cin >> z;
-            a.insert(z);
+            std::cin >> block;
+            blocks.insert(block);
         }
 
-        change(m, a.begin(), a.end(), 0);
+        std::cout << minimum_blocks(m) << std::endl;
 
-        std::cout << *min_element(solutions.begin(), solutions.end());
-        std::cout << std::endl;
-
-        a.clear();
-        solutions.clear();
+        blocks.clear();
+        memo.clear();
     }
 
     return 0;
