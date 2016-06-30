@@ -40,8 +40,7 @@ EOTHINGS
 
 
 # install python dependencies
-sudo -H pip install --upgrade pip
-sudo -H pip install flake8 cpplint ndg-httpsclient --upgrade
+sudo -H pip install pip flake8 cpplint ndg-httpsclient --upgrade
 
 
 # install nodejs and js dependencies
