@@ -21,9 +21,9 @@ int minimum_blocks(int m) {
     int min_solution = m;
     for (it = blocks.begin(); it != blocks.end(); it++) {
         if (*it > m) break;
-        min_solution = 1 + std::min(min_solution, minimum_blocks(m - *it));
+        min_solution = std::min(min_solution, minimum_blocks(m - *it));
     }
-    memo[m] = min_solution;
+    memo[m] = 1 + min_solution;
     return memo[m];
 }
 
