@@ -1,12 +1,16 @@
 #!/bin/bash
 
 TESTCASES=300
+MINIMUM_N=5
+MINIMUM_M=5
+RANGE_N=10
+RANGE_M=100000
 
 echo $TESTCASES
 
 for i in $(seq $TESTCASES); do
-    n=$(($RANDOM % 24 + 2))
-    m=$(($RANDOM % 100000 + 10))
+    n=$(($RANDOM % $RANGE_N + $MINIMUM_N))
+    m=$(($RANDOM % $RANGE_M + $MINIMUM_M))
 
     echo "$n $m"
 
@@ -14,7 +18,11 @@ for i in $(seq $TESTCASES); do
     a=0
     for j in $(seq $(($n - 1))); do
         a=$(($a + $(($RANDOM % 9 + 1))))
-        echo -n "$a "
+        if [ $j == $(($n - 1)) ]; then
+            echo -n "$a"
+        else
+            echo -n "$a "
+        fi
     done
     echo
 done

@@ -1,10 +1,11 @@
 #include <algorithm>
+#include <cstring>
 #include <iostream>
 #include <map>
 #include <set>
 
 std::set<int> blocks;
-std::map<int, int> memo;
+int memo[1000001];
 
 int minimum_blocks(int m) {
     if (memo[m]) return memo[m];
@@ -34,6 +35,7 @@ int main() {
 
     while (t--) {
         std::cin >> n >> m;
+        memset(memo, 0, sizeof(memo));
 
         while (n--) {
             std::cin >> block;
@@ -43,7 +45,6 @@ int main() {
         std::cout << minimum_blocks(m) << std::endl;
 
         blocks.clear();
-        memo.clear();
     }
 
     return 0;
