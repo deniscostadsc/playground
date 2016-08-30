@@ -4,20 +4,19 @@
 
 std::set<std::string> matches;
 
-int brute_force(std::string sequence) {
+void brute_force(std::string sequence) {
     int i;
 
-    if (sequence.size() == 0) return 0;
+    if (sequence.size()) {
+        matches.insert(sequence);
 
-    matches.insert(matches.begin(), sequence);
-
-    for (i = 0; i < static_cast<int>(sequence.size()); i++) {
-        std::string ggg(sequence.begin(), sequence.end());
-        ggg.erase(ggg.begin() + i);
-        brute_force(ggg);
+        for (i = 0; i < static_cast<int>(sequence.size()); i++) {
+            if (matches.count(sequence.substr(0, i) + sequence.substr(i + 1))) {
+                continue;
+            }
+            brute_force(sequence.substr(0, i) + sequence.substr(i + 1));
+        }
     }
-
-    return 1;
 }
 
 int main() {
