@@ -3,13 +3,15 @@
 #include <algorithm>
 #include <vector>
 
-struct vertex {
+struct arc {
     int node_a;
     int node_b;
-    int weight;
+    int meters;
 };
 
-std::vector<vertex> graph;
+std::vector<arc> graph;
+
+bool comparator(arc a, arc b) {return a.meters < b.meters;}
 
 struct disjointset_node {
     // Simple disjointset without rank logic. Just to check cycles.
@@ -29,11 +31,9 @@ disjointset_node *findset(disjointset_node *n) {
 
     if (parent == n) return n;
 
-    n->parent = findset(n->parent); // path compression
+    n->parent = findset(n->parent);  // path compression
     return n->parent;
 }
-
-bool comparator(vertex a, vertex b) {return a.weight < b.weight;}
 
 bool unionset(int data_a, int data_b) {
     disjointset_node node_a = disjointset[data_a];
@@ -58,20 +58,20 @@ int main() {
             makeset(x);
             makeset(y);
 
-            vertex v;
+            arc v;
             v.node_a = x;
             v.node_b = y;
-            v.weight = z;
+            v.meters = z;
 
             graph.push_back(v);
         }
 
         std::sort(graph.begin(), graph.end(), comparator);
         count = 0;
-        std::vector<vertex>::iterator it;
+        std::vector<arc>::iterator it;
 
         for (it = graph.begin(); it != graph.end(); it++) {
-            if (!unionset((*it).node_a, (*it).node_b)) count += (*it).weight;
+            if (!unionset((*it).node_a, (*it).node_b)) count += (*it).meters;
         }
 
         std::cout << count << std::endl;
