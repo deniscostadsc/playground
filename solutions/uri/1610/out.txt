@@ -2,3 +2,5 @@ NAO
 SIM
 SIM
 SIM
+NAO
+NAO
