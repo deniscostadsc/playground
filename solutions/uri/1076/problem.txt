@@ -17,7 +17,7 @@ because the amount of movement should be the same.
 See the examples below, In the maze(4 x 4), Peter want to begin in the node 0,
 draw all lines and return to node 0. For this, the minimum of possible moves is
 30. In the maze B (3 x 3), Pedro begin in the node 1, draw all lines and return
-to node 1. In this case, he needs 10 movements to make this drawing. 
+to node 1. In this case, he needs 10 movements to make this drawing.
 
 Entrada
 
