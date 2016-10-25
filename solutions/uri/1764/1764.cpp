@@ -14,26 +14,25 @@ struct disjoint_node {
     disjoint_node *parent;
 };
 
-std::vector<arc> graph;
-std::map<int, disjoint_node> disjoint_set;
+std::vector<arc> arcs;
+std::map<int, int> disjoint_set;
 
 void makeset(int node) {
-    disjoint_set[node].node = node;
-    disjoint_set[node].parent = &disjoint_set[node];
+    disjoint_set[node] = node;
 }
 
-disjoint_node *findset(disjoint_node *dn) {
-    if (dn->parent == dn) return dn;
-    dn->parent = findset(dn->parent);  // path compression
-    return dn->parent;
+int findset(int node) {
+    if (disjoint_set[node] == node) return node;
+    disjoint_set[node] = findset(disjoint_set[node]);  // path compression
+    return disjoint_set[node];
 }
 
 bool unionset(int x, int y) {
-    disjoint_node *parent_x = findset(&disjoint_set[x]);
-    disjoint_node *parent_y = findset(&disjoint_set[y]);
+    int parent_x = findset(disjoint_set[x]);
+    int parent_y = findset(disjoint_set[y]);
 
-    if (parent_x->node == parent_y->node) return false;
-    parent_x->parent = parent_y;
+    if (parent_x == parent_y) return false;
+    disjoint_set[parent_x] = parent_y;
     return true;
 }
 
@@ -55,14 +54,14 @@ int main() {
             a.y = y;
             a.weight = z;
 
-            graph.push_back(a);
+            arcs.push_back(a);
         }
 
-        std::sort(graph.begin(), graph.end(), comparator);
+        std::sort(arcs.begin(), arcs.end(), comparator);
         count = 0;
         std::vector<arc>::iterator it;
 
-        for (it = graph.begin(); it != graph.end(); it++) {
+        for (it = arcs.begin(); it != arcs.end(); it++) {
             if (unionset((*it).x, (*it).y)) {
                 count += (*it).weight;
             }
@@ -71,7 +70,7 @@ int main() {
         std::cout << count << std::endl;
 
         disjoint_set.clear();
-        graph.clear();
+        arcs.clear();
     }
 
     return 0;
