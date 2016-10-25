@@ -56,5 +56,6 @@ mkdir $dir && cd $dir && echo "Created $dir."
 touch $dir.$language
 touch in.txt
 touch out.txt
+touch tags
 touch problem.txt
 touch WRONG
