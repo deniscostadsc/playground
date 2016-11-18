@@ -14,7 +14,6 @@ std::vector<arc> graph;
 bool comparator(arc a, arc b) {return a.meters < b.meters;}
 
 struct disjointset_node {
-    // Simple disjointset without rank logic. Just to check cycles.
     int data;
     disjointset_node *parent;
 };
@@ -27,11 +26,9 @@ void makeset(int data) {
 }
 
 disjointset_node *findset(disjointset_node *n) {
-    disjointset_node *parent = n->parent;
-
-    if (parent == n) return n;
-
-    n->parent = findset(n->parent);  // path compression
+    if (n->parent != n) {
+        n->parent = findset(n->parent);
+    }
     return n->parent;
 }
 
