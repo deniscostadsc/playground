@@ -22,8 +22,9 @@ void makeset(int node) {
 }
 
 int findset(int node) {
-    if (disjoint_set[node] == node) return node;
-    disjoint_set[node] = findset(disjoint_set[node]);  // path compression
+    if (disjoint_set[node] != node) {
+        disjoint_set[node] = findset(disjoint_set[node]);
+    }
     return disjoint_set[node];
 }
 
