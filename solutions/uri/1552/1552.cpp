@@ -16,21 +16,20 @@ struct arc {
     double distance;
 };
 
-std::vector<person> people;
-std::vector<arc> arcs;
+std::vector<arc*> arcs;
 
+bool comparator(arc *a1, arc *a2) { return a1->distance < a2->distance; }
 
-bool comparator(arc a1, arc a2) { return a1.distance < a2.distance; }
-
-std::map<person *, person *> disjoint_set;
+std::map<person*, person*> disjoint_set;
 
 void make_set(person *p) {
     disjoint_set[p] = p;
 }
 
 person *findset(person *p) {
-    if (disjoint_set[p] == p) return p;
-    disjoint_set[p] = findset(disjoint_set[p]);
+    if (disjoint_set[p] != p) {
+        disjoint_set[p] = findset(disjoint_set[p]);
+    }
     return disjoint_set[p];
 }
 
@@ -38,16 +37,18 @@ bool unionset(person *p1, person *p2) {
     person *parent_p1 = findset(p1);
     person *parent_p2 = findset(p2);
 
-    if (parent_p1->x == parent_p2->x && parent_p1->y == parent_p2->y) return false;
+    if (parent_p1->x == parent_p2->x && parent_p1->y == parent_p2->y) {
+        return false;
+    }
 
     disjoint_set[p1] = parent_p2;
     return true;
 }
 
 int main() {
-    int c, n, i, j, count;
+    int c, n, i;
     double x, y, total_web;
-    std::vector<arc>::iterator it;
+    std::vector<arc*>::iterator it;
     std::map<person*, person*>::iterator it_p1, it_p2;
 
     std::cin >> c;
@@ -65,16 +66,25 @@ int main() {
             make_set(p);
         }
 
-        for (it_p1 = disjoint_set.begin(); it_p1 != disjoint_set.end(); it_p1++) {
-            for (it_p2 = disjoint_set.begin(); it_p2 != disjoint_set.end(); it_p2++) {
-                if (it_p1->first->x == it_p2->first->x && it_p1->first->y == it_p2->first->y) continue;
+        for (it_p1 = disjoint_set.begin();
+            it_p1 != disjoint_set.end(); it_p1++) {
+
+            for (it_p2 = disjoint_set.begin();
+                it_p2 != disjoint_set.end(); it_p2++) {
+
+                if (it_p1->first->x == it_p2->first->x &&
+                    it_p1->first->y == it_p2->first->y) {
+                    continue;
+                }
 
                 arc *a = new arc;
                 a->p1 = it_p1->first;
                 a->p2 = it_p2->first;
-                a->distance = sqrt(pow(it_p1->first->x - it_p2->first->x, 2) +
-                                  pow(it_p1->first->y - it_p2->first->y, 2));
-                arcs.push_back(*a);
+                a->distance = sqrt(
+                    pow(it_p1->first->x - it_p2->first->x, 2) +
+                    pow(it_p1->first->y - it_p2->first->y, 2));
+
+                arcs.push_back(a);
             }
         }
 
@@ -83,8 +93,8 @@ int main() {
         total_web = 0.0;
 
         for (it = arcs.begin(); it != arcs.end(); it++) {
-            if (unionset(it->p1, it->p2)) {
-                total_web += it->distance;
+            if (unionset((*it)->p1, (*it)->p2)) {
+                total_web += (*it)->distance;
             }
         }
 
