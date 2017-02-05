@@ -1,3 +1,0 @@
-The problem, as far as I understand happens on the unionset function. When it
-tries to check the parents, it unions more than expected. I tried to debug, but
-I could find the cause of that problem.
