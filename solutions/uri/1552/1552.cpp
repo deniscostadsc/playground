@@ -77,9 +77,10 @@ int main() {
         }
 
         for (it_p1 = people.begin(); it_p1 != people.end(); it_p1++) {
-            for (it_p2 = people.begin(); it_p2 != people.end(); it_p2++) {
-                if (*it_p1 == *it_p2) continue;
+            it_p2 = std::find(people.begin(), people.end(), *it_p1);
+            it_p2++;
 
+            for (; it_p2 != people.end(); it_p2++) {
                 arc *a = new arc;
                 a->p1 = *it_p1;
                 a->p2 = *it_p2;
