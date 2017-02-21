@@ -21,7 +21,8 @@ int minimum_blocks(int m, int n) {
 
     for (i = 0; i < n; i++) {
         if (blocks[i] > m) break;
-        min_solution = std::min(min_solution, minimum_blocks(m - blocks[i], n));
+        min_solution = std::min(
+            min_solution, minimum_blocks(m - blocks[i], n));
     }
 
     memo[m] = 1 + min_solution;
@@ -35,7 +36,8 @@ int main() {
 
     while (t--) {
         std::cin >> n >> m;
-        memset(blocks, 0, sizeof(int) * n);
+
+        memset(blocks, 0, sizeof(blocks));
         memset(memo, 0, sizeof(memo));
 
         for (i = 0; i < n; i++) std::cin >> blocks[i];
