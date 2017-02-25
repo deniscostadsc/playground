@@ -35,7 +35,6 @@ int main() {
 
         for (i = 0; i < n; i++) std::cin >> blocks[i];
 
-        std::sort(blocks, blocks + n);
         std::cout << minimum_blocks(m, n) << std::endl;
     }
 
