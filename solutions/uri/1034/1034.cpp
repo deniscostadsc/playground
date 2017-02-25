@@ -2,35 +2,31 @@
 #include <cstring>
 #include <iostream>
 
+#define INFINITY 1000001
+
 int blocks[26];
-int memo[1000001];
 
-int minimum_blocks(int m, int n) {
-    if (memo[m]) return memo[m];
+int minimum_blocks(long long m, int n) {
+    int j;
+    long long result[m + 1], i;
 
-    int i;
+    result[0] = 0;
+    for (i = 1; i <= m; i++) {
+        result[i] = INFINITY;
+    }
 
-    for (i = 0; i < n; i++) {
-        if (blocks[i] == m) {
-            memo[m] = 1;
-            return memo[m];
+    for (j = 0; j < n; j++) {
+        for (i = blocks[j]; i <= m; i++) {
+            result[i] = std::min(result[i], result[i - blocks[j]] + 1);
         }
     }
 
-    int min_solution = m;
-
-    for (i = 0; i < n; i++) {
-        if (blocks[i] > m) break;
-        min_solution = std::min(
-            min_solution, minimum_blocks(m - blocks[i], n));
-    }
-
-    memo[m] = 1 + min_solution;
-    return memo[m];
+    return result[m];
 }
 
 int main() {
-    int i, t, n, m;
+    int i, t, n;
+    long long m;
 
     std::cin >> t;
 
@@ -38,7 +34,6 @@ int main() {
         std::cin >> n >> m;
 
         memset(blocks, 0, sizeof(blocks));
-        memset(memo, 0, sizeof(memo));
 
         for (i = 0; i < n; i++) std::cin >> blocks[i];
 
