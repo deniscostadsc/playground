@@ -7,8 +7,7 @@
 int blocks[26];
 
 int minimum_blocks(int m, int n) {
-    int j;
-    int result[m + 1], i;
+    int i, j, result[m + 1];
 
     result[0] = 0;
     for (i = 1; i <= m; i++) {
@@ -25,8 +24,7 @@ int minimum_blocks(int m, int n) {
 }
 
 int main() {
-    int i, t, n;
-    int m;
+    int i, t, n, m;
 
     std::cin >> t;
 
