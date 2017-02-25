@@ -1,17 +1,29 @@
 #include <iostream>
+#include <cstdio>
 
 int main() {
     int a, b, c;
     bool is_happy;
 
     while (std::cin >> a >> b >> c) {
-        is_happy = false;
+        if (a > b && b <= c) {
+            is_happy = true;
+        } else if (a < b && b < c && (b - a) <= (c - b)) {
+            is_happy = true;
+        } else if (a > b && b > c && (a - b) > (b - c)) {
+            is_happy = true;
+        } else if (a == b && b < c) {
+            is_happy = true;
+        } else {
+            is_happy = false;
+        }
 
-        if (a > b && b >= c) is_happy = true;
-        if (a < b && b <= c) is_happy = true;
-        if (a > b && b < c) is_happy = true;
-        if (true) puts(":)");
-        else puts(":(");
+        if (is_happy) {
+            puts(":)");
+        } else {
+            puts(":(");
+        }
     }
+
     return 0;
 }
