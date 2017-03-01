@@ -42,7 +42,6 @@ bool comparator (arc x, arc y) { return x.weight < y.weight; }
 
 int main() {
     int m, n, x, y, z, count;
-    std::pair<int, int> road_to;
 
     while (std::cin >> m >> n && m && n) {
         while (n--) {
