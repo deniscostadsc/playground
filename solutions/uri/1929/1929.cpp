@@ -11,18 +11,14 @@ int main() {
     int a, b, c, d;
     bool result;
 
-    while (std::cin >> a >> b >> c >> d) {
-        std::cout << can_form_triangle(a, b, c) << std::endl;
-        std::cout << can_form_triangle(a, b, d) << std::endl;
-        std::cout << can_form_triangle(a, b, c) << std::endl;
-        std::cout << can_form_triangle(a, b, c) << std::endl;
-
-        result = can_form_triangle(a, b, c);
-        result &= can_form_triangle(a, b, d);
-        result &= can_form_triangle(a, c, d);
-        result &= can_form_triangle(b, c, d);
+    while(std::cin >> a >> b >> c >> d) {
+        result = can_form_triangle(b, c, d);
+        result |= can_form_triangle(a, c, d);
+        result |= can_form_triangle(a, b, d);
+        result |= can_form_triangle(a, b, c);
 
         std::cout << ((result) ? ("S") : ("N")) << std::endl;
     }
+
     return 0;
 }
