@@ -1,7 +1,8 @@
-*.swp
-*~
-*.py[oc]
+*.log
 *.o
 *.out
+*.py[oc]
+*.swp
+*~
 .vagrant
 out.temp
