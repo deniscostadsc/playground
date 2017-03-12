@@ -11,7 +11,7 @@ int main() {
     int a, b, c, d;
     bool result;
 
-    while(std::cin >> a >> b >> c >> d) {
+    while (std::cin >> a >> b >> c >> d) {
         result = can_form_triangle(b, c, d);
         result |= can_form_triangle(a, c, d);
         result |= can_form_triangle(a, b, d);
