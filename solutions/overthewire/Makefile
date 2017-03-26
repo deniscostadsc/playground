@@ -1,7 +1,12 @@
 .DEFAULT: encrypt
 
 encrypt:
-	tar -c *.txt | gpg -co overthewire.gpg --recipient deniscostadsc@gmail.com
+	tar -c *.txt | gpg \
+		-co overthewire.gpg \
+		--cipher-algo AES256 \
+		--force-mdc \
+		--armor \
+		--sign
 	rm *.txt
 
 decrypt:
