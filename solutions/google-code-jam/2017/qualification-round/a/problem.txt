@@ -49,9 +49,11 @@ Limits
 1 ≤ T ≤ 100.
 Every character in S is either + or -.
 2 ≤ K ≤ length of S.
+
 Small dataset
 
 2 ≤ length of S ≤ 10.
+
 Large dataset
 
 2 ≤ length of S ≤ 1000.
