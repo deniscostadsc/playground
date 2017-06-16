@@ -4,5 +4,6 @@
 *.py[oc]
 *.swp
 *~
+.DS_Store
 .vagrant
 out.temp
