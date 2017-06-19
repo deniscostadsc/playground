@@ -1,0 +1,49 @@
+#vim:set ft=sh
+function check_tags_file {
+    if [ ! -f tags ]; then
+        echo "There is no tags file!"
+        return 1
+    fi
+
+    if [ ! -s tags ]; then
+        echo "Tags file is empty!"
+        return 1
+    fi
+    return 0
+}
+
+function check_solution {
+    if [ -f out.temp ]; then
+        diff out.txt out.temp || return 1 && return 0
+    fi
+    return 1
+}
+
+function check_lint {
+    exit_status=0
+
+    if [ -f *.cpp ]; then
+        # most of runtime/int are about C++11 things, and I can't use C++11
+        cpplint --quiet --filter="-legal/copyright,-runtime/int,-runtime/arrays" *.cpp
+        exit_status=$(($exit_status + $?))
+    fi
+
+    if [ -f *.py ]; then
+        flake8 .
+        exit_status=$(($exit_status + $?))
+    fi
+
+    if [ -f *.js ]; then
+        jshint *.js
+        exit_status=$(($exit_status + $?))
+        jscs *.js
+        exit_status=$(($exit_status + $?))
+    fi
+
+    if [ -f *.go ]; then
+        gofmt -w *.go
+        exit_status=$(($exit_status + $?))
+    fi
+
+    return $exit_status
+}

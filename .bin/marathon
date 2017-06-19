@@ -1,96 +1,27 @@
 #!/bin/bash
 #vim:set ft=sh
 
-set -e
+. _checkers
+. _runners
 
-if [ ! -f tags ]; then
-    echo "There is no tags file!"
-    exit 1
-fi
+check_tags_file && check_lint || exit 1
 
-if [ ! -s tags ]; then
-    echo "Tags file is empty!"
-    exit 1
-fi
+run_c_code && (check_solution &&
+    echo "C code works" || echo -e "\nC code failed")
 
-function check-solution {
-    test -f out.temp
-    echo "$1"
-    diff out.txt out.temp
-    echo ' - OK'
-    rm WRONG 2> /dev/null || :
+run_cpp_code && (check_solution &&
+    echo "C++ code works" || echo -e "\nC++ code failed")
 
-    cleanup
-}
+run_py_code && (check_solution &&
+        echo "Python code works" || echo -e "\nC++ code failed")
 
-echo
+run_js_code && (check_solution &&
+        echo "Javascript code works" || echo -e "\nC++ code failed")
 
-if [ -f *.c ]; then
-    if [ -f 'in.txt' ]; then
-        gcc -Wall *.c -lm && ./a.out < in.txt > out.temp
-    else
-        gcc -Wall *.c -lm && ./a.out > out.temp
-    fi
+run_go_code && (check_solution &&
+    echo "Golang code works" || echo -e "\nC++ code failed")
 
-    check-solution 'C code: '
-    # I'm not sure if cpplint is useful for C code...
-    # cpplint --filter="-legal/copyright" *.c
-fi
+run_cl_code && (check_solution &&
+    echo "Common Lisp code works" || echo -e "\nC++ code failed")
 
-if [ -f *.cpp ]; then
-    if [ -f 'in.txt' ]; then
-        g++ -Wall *.cpp -lm && ./a.out < in.txt > out.temp
-    else
-        g++ -Wall *.cpp -lm && ./a.out > out.temp
-    fi
-
-    check-solution 'C++ code: '
-    # most of runtime/int are about C++11 things, and I can't use C++11
-    cpplint --quiet --filter="-legal/copyright,-runtime/int,-runtime/arrays" *.cpp
-fi
-
-if [ -f *.py ]; then
-    if [ -f 'in.txt' ]; then
-        python *.py < in.txt > out.temp
-    else
-        python *.py > out.temp
-    fi
-
-    check-solution 'Python code: '
-
-    flake8 .
-fi
-
-if [ -f *.js ]; then
-    NODE=$(command -v node || command -v nodejs)
-    if [ -f 'in.txt' ]; then
-        $NODE *.js < in.txt > out.temp
-    else
-        $NODE *.js > out.temp
-    fi
-
-    check-solution 'Javascript code: '
-    jshint *.js
-    jscs *.js
-fi
-
-if [ -f *.go ]; then
-    if [ -f 'in.txt' ]; then
-        go run *.go < in.txt > out.temp
-    else
-        go run *.go > out.temp
-    fi
-
-    check-solution 'Golang code: '
-    gofmt -w *.go
-fi
-
-if [ -f *.cl ]; then
-    if [ -f 'in.txt' ]; then
-        clips *.cl < in.txt > out.temp
-    else
-        clisp *.cl > out.temp
-    fi
-
-    check-solution 'Common-lisp code: '
-fi
+cleanup

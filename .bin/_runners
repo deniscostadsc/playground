@@ -1,0 +1,75 @@
+#vim:set ft=sh
+
+function run_c_code {
+    if [ -f *.c ]; then
+        if [ -f 'in.txt' ]; then
+            gcc -Wall *.c -lm && ./a.out < in.txt > out.temp
+        else
+            gcc -Wall *.c -lm && ./a.out > out.temp
+        fi
+        return 0
+    fi
+    return 1
+}
+
+function run_cpp_code {
+    if [ -f *.cpp ]; then
+        if [ -f 'in.txt' ]; then
+            g++ -Wall *.cpp -lm && ./a.out < in.txt > out.temp
+        else
+            g++ -Wall *.cpp -lm && ./a.out > out.temp
+        fi
+        return 0
+    fi
+    return 1
+}
+
+function run_py_code {
+    if [ -f *.py ]; then
+        if [ -f 'in.txt' ]; then
+            python *.py < in.txt > out.temp
+        else
+            python *.py > out.temp
+        fi
+        return 0
+    fi
+    return 1
+}
+
+function run_js_code {
+    if [ -f *.js ]; then
+        NODE=$(command -v node || command -v nodejs)
+        if [ -f 'in.txt' ]; then
+            $NODE *.js < in.txt > out.temp
+        else
+            $NODE *.js > out.temp
+        fi
+        return 0
+    fi
+    return 1
+}
+
+function run_go_code {
+    if [ -f *.go ]; then
+        if [ -f 'in.txt' ]; then
+            go run *.go < in.txt > out.temp
+        else
+            go run *.go > out.temp
+        fi
+        return 0
+    fi
+    return 1
+}
+
+
+function run_cl_code {
+    if [ -f *.cl ]; then
+        if [ -f 'in.txt' ]; then
+            clips *.cl < in.txt > out.temp
+        else
+            clisp *.cl > out.temp
+        fi
+        return 0
+    fi
+    return 1
+}
