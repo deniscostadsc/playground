@@ -1,0 +1,17 @@
+language: python
+
+python:
+    - "3.4"
+    - "3.6"
+
+install:
+    - apt install -y gcc g++
+    - pip install flake8 cpplint
+
+script:
+    - flake8
+    - cpplint
+    - ./run-all.sh
+
+notifications:
+    email: false
