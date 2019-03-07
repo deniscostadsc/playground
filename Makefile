@@ -6,3 +6,6 @@ test:
 lint:
 	flake8
 	cpplint --recursive --filter="-legal/copyright" .
+
+wrong:
+	@(find . -name 'WRONG')
