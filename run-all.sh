@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-if [[ "${1:-1}" == '-fail-fast' ]]; then
+if [[ "${1:-1}" == '-fail-on-warnings' ]]; then
     warning_flags='-Werror'
 else
     warning_flags='-Wall'
