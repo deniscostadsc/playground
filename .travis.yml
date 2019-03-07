@@ -10,7 +10,8 @@ install:
 
 script:
     - flake8
-    - cpplint $(find . -regextype egrep -regex '(.+\.c$|.+\.cpp)$')
+    - cpplint --filter="-legal/copyright" \
+        $(find . -regextype egrep -regex '(.+\.c$|.+\.cpp)$')
     - ./run-all.sh
 
 notifications:
