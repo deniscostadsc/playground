@@ -1,8 +1,8 @@
-.DEFAULT: build
+.DEFAULT: test
 
-clean:
-	docker rm -f $(docker ps -a -q);
-	docker rmi -f $(docker images -q)
+test:
+	./run-all.sh
 
-build:
-	docker build -t playground .
+lint:
+	flake8
+	cpplint --recursive --filter="-legal/copyright" .

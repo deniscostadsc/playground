@@ -9,10 +9,8 @@ install:
     - pip install flake8 cpplint
 
 script:
-    - flake8
-    - cpplint --filter="-legal/copyright" \
-        $(find . -regextype egrep -regex '(.+\.c$|.+\.cpp)$')
-    - ./run-all.sh
+    - make lint
+    - make test
 
 notifications:
     email: false
