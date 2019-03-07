@@ -1,16 +1,21 @@
+#!/usr/bin/env python3
+
 from math import sqrt
 
+LIMIT = 600851475143
 
-def is_prime(n):
-    for i in xrange(3, n / 2 + 1):
-        if n % i == 0:
+
+def is_prime(num):
+    if num % 2 == 0:
+        return False
+    for current in range(3, int(sqrt(num)) + 1):
+        if num % current == 0:
             return False
     return True
 
-n = 600851475143
 
-for i in xrange(1, int(sqrt(n))):
-    if n % i == 0 and is_prime(i):
+for i in range(1, int(sqrt(LIMIT))):
+    if LIMIT % i == 0 and is_prime(i):
         prime = i
 
 print(prime)

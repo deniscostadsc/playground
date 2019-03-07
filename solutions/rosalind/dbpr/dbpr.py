@@ -12,4 +12,4 @@ for line in protein_description.split('\n'):
     if line.startswith('GO'):
         bio_process = line.split(';')[2]
         if bio_process.startswith(' P:'):
-            print bio_process[3:]
+            print(bio_process[3:])

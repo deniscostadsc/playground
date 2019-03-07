@@ -6,4 +6,4 @@ s = 0
 for digit in str(f):
     s += int(digit)
 
-print s
+print(s)

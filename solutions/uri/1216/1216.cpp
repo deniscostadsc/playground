@@ -3,7 +3,7 @@
 int main() {
     char s[100];
     double d, t, n = 0.0;
-    while (gets(s)) {
+    while (fgets(s, 100, stdin)) {
         scanf("%lf", &d);
         t += d;
         n += 1.0;

@@ -13,7 +13,7 @@ int main() {
         c = 0;
         i = 0;
 
-        gets(e);
+        fgets(e, 1000, stdin);
 
         for (d = 0; d < static_cast<int>(strlen(e)); d++) {
             if (e[d] == '<') {

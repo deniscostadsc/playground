@@ -22,7 +22,7 @@ matrix = '''
 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48
 '''
 
-matrix = [map(int, i.split(' ')) for i in matrix.split('\n') if i]
+matrix = [list(map(int, i.split(' '))) for i in matrix.split('\n') if i]
 
 greatest = -1
 
@@ -55,4 +55,4 @@ for i, line in enumerate(matrix):
                 matrix[i - 2][j + 2] * matrix[i - 3][j + 3]
             )
 
-print greatest
+print(greatest)

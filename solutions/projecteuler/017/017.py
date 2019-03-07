@@ -36,9 +36,9 @@ def number_in_words(number):
     written_number = []
     while number:
         if number >= 100:
-            written_number.append(base_numbers[number / 100])
+            written_number.append(base_numbers[number // 100])
             written_number.append('hundred')
-            number -= number / 100 * 100
+            number -= number // 100 * 100
             if number:
                 written_number.append('and')
 
@@ -49,6 +49,6 @@ def number_in_words(number):
                 number %= basic_number
     return ' '.join(written_number)
 
-written_numbers_until_1000 = [number_in_words(i) for i in xrange(1001)]
+written_numbers_until_1000 = [number_in_words(i) for i in range(1001)]
 
 print(len(''.join(written_numbers_until_1000).replace(' ', '')))

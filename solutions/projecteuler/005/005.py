@@ -16,4 +16,4 @@ def lcm_many(numbers):
     return result
 
 
-print(lcm_many(xrange(1, 21)))
+print(int(lcm_many(range(1, 21))))

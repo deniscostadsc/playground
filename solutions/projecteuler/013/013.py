@@ -105,4 +105,4 @@ numbers = '''
 total = sum(int(number) for number in numbers if number)
 
 
-print str(total)[:10]
+print(str(total)[:10])
