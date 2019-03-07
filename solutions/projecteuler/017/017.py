@@ -49,6 +49,7 @@ def number_in_words(number):
                 number %= basic_number
     return ' '.join(written_number)
 
+
 written_numbers_until_1000 = [number_in_words(i) for i in range(1001)]
 
 print(len(''.join(written_numbers_until_1000).replace(' ', '')))
