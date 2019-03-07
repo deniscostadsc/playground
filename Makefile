@@ -5,7 +5,7 @@ test:
 
 lint:
 	flake8
-	cpplint --quiet --recursive --filter="-legal/copyright" .
+	cpplint --quiet --recursive --filter="-legal/copyright" . || :
 
 wrong:
 	@(find . -name 'WRONG')
