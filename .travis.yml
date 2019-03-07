@@ -10,7 +10,7 @@ install:
 
 script:
     - flake8
-    - cpplint
+    - cpplint $(find . -regextype egrep -regex '(.+\.c$|.+\.cpp)$')
     - ./run-all.sh
 
 notifications:
