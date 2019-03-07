@@ -5,7 +5,7 @@ python:
     - "3.6"
 
 install:
-    - sudo apt install -y gcc g++ shellcheck
+    - sudo apt install -y gcc g++
     - pip install flake8 cpplint
 
 script:
