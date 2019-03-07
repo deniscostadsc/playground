@@ -5,10 +5,9 @@
 
 char store[30000];
 int pointer, word_index;
-std::string word;
 
 
-void brainfuck(std::string program) {
+void brainfuck(std::string program, std::string word) {
     int j, brackets_level;
     unsigned int i;
     std::string inner_code;
@@ -47,7 +46,7 @@ void brainfuck(std::string program) {
                     i++;
                 }
 
-                while (store[pointer] != 0) brainfuck(inner_code);
+                while (store[pointer] != 0) brainfuck(inner_code, word);
 
                 break;
             case '#':
@@ -60,6 +59,7 @@ void brainfuck(std::string program) {
 
 int main() {
     int n, nn;
+    std::string word;
     std::string program;
     std::cin >> n;
 
@@ -74,7 +74,7 @@ int main() {
         std::cin >> program;
 
         std::cout << "Instancia " << nn++ << std::endl;
-        brainfuck(program);
+        brainfuck(program, word);
         std::cout << std::endl << std::endl;
     }
 
