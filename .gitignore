@@ -6,4 +6,4 @@
 *~
 .DS_Store
 .vagrant
-out.temp
+result.txt
