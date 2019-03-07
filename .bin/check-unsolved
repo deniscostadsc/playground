@@ -1,4 +1,0 @@
-#!/bin/bash
-#vim:set ft=sh
-
-find . -name 'WRONG' | xargs ls -lt
