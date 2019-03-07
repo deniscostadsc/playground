@@ -11,7 +11,7 @@ fi
 function run_cpp {
     g++ $warning_flags ./*.cpp -lm
 
-    if test -f in.txt; then
+    if [[ -f in.txt ]]; then
         ./a.out < in.txt > result.txt
     else
         ./a.out > result.txt
@@ -23,7 +23,7 @@ function run_cpp {
 function run_c {
     gcc $warning_flags ./*.c -lm
 
-    if test -f in.txt; then
+    if [[ -f in.txt ]]; then
         ./a.out < in.txt > result.txt
     else
         ./a.out > result.txt
@@ -33,7 +33,7 @@ function run_c {
 }
 
 function run_python {
-    if test -f in.txt; then
+    if [[ -f in.txt ]]; then
         python ./*.py< in.txt > result.txt
     else
         python ./*.py > result.txt
@@ -41,17 +41,17 @@ function run_python {
 }
 
 function run_and_check {
-    if [ "$(find . -name '*.cpp' | wc -l)" -eq 1 ]; then
+    if [[ "$(find . -name '*.cpp' | wc -l)" -eq 1 ]]; then
         run_cpp
         diff out.txt result.txt
     fi
 
-    if [ "$(find . -name '*.c' | wc -l)" -eq 1 ]; then
+    if [[ "$(find . -name '*.c' | wc -l)" -eq 1 ]]; then
         run_c
         diff out.txt result.txt
     fi
 
-    if [ "$(find . -name '*.py' | wc -l)" -eq 1 ]; then
+    if [[ "$(find . -name '*.py' | wc -l)" -eq 1 ]]; then
         run_python
         diff out.txt result.txt
     fi
@@ -66,7 +66,7 @@ function run_all {
         folder="$(dirname "$file")"
         cd "$folder" || exit 1
         echo "$folder"
-        if [ ! -f 'WRONG' ]; then
+        if [[ ! -f 'WRONG' ]]; then
             run_and_check
         fi
         cd - > /dev/null || exit 1
