@@ -9,7 +9,7 @@ else
 fi
 
 function run_cpp {
-    g++ $warning_flags --std=c++11 ./*.cpp -lm
+    g++ $warning_flags --std=c++11 -O2 ./*.cpp -lm
 
     if [[ -f in.txt ]]; then
         ./a.out < in.txt > result.txt
