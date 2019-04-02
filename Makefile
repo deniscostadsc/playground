@@ -1,4 +1,4 @@
-.DEFAULT: test
+.PHONY: test lint wrong
 
 test:
 	./run-all.sh
