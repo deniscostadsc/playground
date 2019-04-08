@@ -34,7 +34,7 @@ function run_c {
 
 function run_python {
     if [[ -f in.txt ]]; then
-        python ./*.py< in.txt > result.txt
+        python ./*.py < in.txt > result.txt
     else
         python ./*.py > result.txt
     fi
