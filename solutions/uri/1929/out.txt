@@ -7,4 +7,5 @@ S
 N
 S
 S
-WRONG
+S
+N

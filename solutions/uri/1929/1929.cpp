@@ -1,6 +1,7 @@
 #include <iostream>
 
 bool can_form_triangle(int a, int b, int c) {
+    if (a == 0 || b == 0 || c == 0) return false;
     if (a > b + c) return false;
     if (b > a + c) return false;
     if (c > a + b) return false;
