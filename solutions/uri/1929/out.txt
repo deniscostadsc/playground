@@ -7,6 +7,9 @@ S
 N
 S
 S
-S
 N
+N
+N
+S
+S
 N
