@@ -5,20 +5,14 @@ python:
     - "3.6"
 
 services:
-    - docker
+    - postgres
 
 install:
     - sudo apt install -y gcc g++
     - pip install flake8 cpplint
 
 before_script:
-    - docker pull postgres:9.4.19
-    - docker run -d
-        -e POSTGRES_DB=uri
-        -e POSTGRES_USER=uri
-        -e POSTGRES_PASSWROD=12345678
-        -p 5432:5432
-        postgres:9.4.19
+    - psql -c 'create database uri;' -U postgres
 
 script:
     - make lint
