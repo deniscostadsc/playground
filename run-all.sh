@@ -40,6 +40,14 @@ function run_python {
     fi
 }
 
+function run_sql {
+    export PGPASSWORD=12345678
+    export PGDATABASE=uri
+    psql -h localhost -U uri < schema.sql > /dev/null
+    psql -h localhost -U uri < [0-9]*.sql > result.txt
+    psql -h localhost -U uri < drop-table.sql > /dev/null
+}
+
 function run_and_check {
     if [[ "$(find . -name '*.cpp' | wc -l)" -eq 1 ]]; then
         run_cpp
@@ -53,6 +61,11 @@ function run_and_check {
 
     if [[ "$(find . -name '*.py' | wc -l)" -eq 1 ]]; then
         run_python
+        diff out.txt result.txt
+    fi
+
+    if [[ "$(find . -name '*.sql' | wc -l)" -gt 0 ]]; then
+        run_sql
         diff out.txt result.txt
     fi
 
