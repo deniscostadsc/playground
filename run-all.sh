@@ -56,7 +56,9 @@ function run_and_check {
         diff out.txt result.txt
     fi
 
-    rm result.txt
+    if [[ -f result.txt ]]; then
+        rm result.txt
+    fi
 }
 
 function run_all {
