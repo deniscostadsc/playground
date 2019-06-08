@@ -43,9 +43,9 @@ function run_python {
 function run_sql {
     export PGPASSWORD=12345678
     export PGDATABASE=uri
-    psql -h localhost -U uri < schema.sql > /dev/null
-    psql -h localhost -U uri < [0-9]*.sql > result.txt
-    psql -h localhost -U uri < drop-table.sql > /dev/null
+    psql -h localhost -U postgres < schema.sql > /dev/null
+    psql -h localhost -U postgres < [0-9]*.sql > result.txt
+    psql -h localhost -U postgres < drop-table.sql > /dev/null
 }
 
 function run_and_check {

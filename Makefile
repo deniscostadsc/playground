@@ -14,7 +14,7 @@ wrong:
 run-db:
 	docker run -d \
 		-e POSTGRES_DB=uri \
-		-e POSTGRES_USER=uri \
+		-e POSTGRES_USER=postgres \
 		-e POSTGRES_PASSWROD=12345678 \
 		-p 5432:5432 \
 		postgres:9.4.19
