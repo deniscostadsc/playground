@@ -1,0 +1,6 @@
+           name            |          street          
+---------------------------+--------------------------
+ Pedro Augusto da Rocha    | Rua Pedro Carlos Hoffman
+ Marcos Antônio dos Santos | Av Farrapos
+(2 rows)
+
