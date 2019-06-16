@@ -15,7 +15,7 @@ calls, when this number is represented in base b.
 Input
 
 Input consists of several test cases. For each test there will be two integers
-n (0 ≤ n < (263 - 1)) and b (1 < b ≤ 10000). Input is terminated by a test case
+n (0 ≤ n < (2^63 - 1)) and b (1 < b ≤ 10000). Input is terminated by a test case
 where n=0 and b=0, you must not process this test case.
 
 Output
