@@ -1,0 +1,1932 @@
+number,name,category,solved,level
+1001,Extremely Basic,Beginner,219174,5
+1002,Area of a Circle,Beginner,154267,5
+1003,Simple Sum,Beginner,154251,2
+1004,Simple Product,Beginner,147075,1
+1005,Average 1,Beginner,126758,4
+1006,Average 2,Beginner,119457,2
+1007,Difference,Beginner,126180,2
+1008,Salary,Beginner,117143,4
+1009,Salary with Bonus,Beginner,104338,3
+1010,Simple Calculate,Beginner,99257,3
+1011,Sphere,Beginner,92462,3
+1012,Area,Beginner,88681,3
+1013,The Greatest,Beginner,84963,3
+1014,Consumption,Beginner,87384,3
+1015,Distance Between Two Points,Beginner,86116,2
+1016,Distance,Beginner,77731,1
+1017,Fuel Spent,Beginner,79710,1
+1018,Banknotes,Beginner,73338,5
+1019,Time Conversion,Beginner,76068,1
+1020,Age in Days,Beginner,76233,2
+1021,Banknotes and Coins,Beginner,46436,7
+1022,TDA Rational,Data Structures and Libraries,5948,4
+1024,Encryption,Strings,12801,6
+1025,Where is the Marble?,Data Structures and Libraries,6305,5
+1026,To Carry or not to Carry,Ad-Hoc,10316,5
+1027,Critical Wave,Paradigms,463,8
+1028,Collectable Cards,Mathematics,9530,3
+1029,Fibonacci How Many Calls?,Paradigms,8856,3
+1030,Flavious Josephus Legend,Ad-Hoc,6023,4
+1031,Power Crisis,Ad-Hoc,2417,4
+1032,Joseph’s Cousin,Ad-Hoc,1690,5
+1033,How Many Calls?,Paradigms,640,6
+1034,Ice Statues Festival,Paradigms,2690,7
+1035,Selection Test 1,Beginner,73824,3
+1036,Bhaskara's Formula,Beginner,63394,4
+1037,Interval,Beginner,62674,5
+1038,Snack,Beginner,71627,2
+1039,Fire Flowers,Computational Geometry,4524,5
+1040,Average 3,Beginner,48344,6
+1041,Coordinates of a Point,Beginner,58016,4
+1042,Simple Sort,Beginner,55420,3
+1043,Triangle,Beginner,48183,3
+1044,Multiples,Beginner,57743,4
+1045,Triangle Types,Beginner,38395,6
+1046,Game Time,Beginner,44412,3
+1047,Game Time with Minutes,Beginner,32930,7
+1048,Salary Increase,Beginner,44455,2
+1049,Animal,Beginner,34932,3
+1050,DDD,Beginner,50961,3
+1051,Taxes,Beginner,34633,3
+1052,Month,Beginner,46007,1
+1053,Continuous Drawing,Graph,40,10
+1054,Dynamic Frog,Paradigms,493,7
+1055,Elegant Permuted Sum,Paradigms,495,9
+1056,Factors and Multiples,Graph,415,8
+1057,Going Together,Graph,257,8
+1058,Independent Attacking Zones,Paradigms,90,9
+1059,Even Numbers,Beginner,57817,1
+1060,Positive Numbers,Beginner,48506,2
+1061,Event Time,Beginner,20983,5
+1062,Rails,Data Structures and Libraries,3637,4
+1063,Rails Again... Tracing Movements,Data Structures and Libraries,1894,4
+1064,Positives and Average,Beginner,43958,2
+1065,Even Between five Numbers,Beginner,41100,2
+1066,Even Odd Positive and Negative,Beginner,42608,2
+1067,Odd Numbers,Beginner,44613,1
+1068,Parenthesis Balance I,Data Structures and Libraries,8683,5
+1069,Diamonds and Sand,Data Structures and Libraries,8672,3
+1070,Six Odd Numbers,Beginner,40411,1
+1071,Sum of Consecutive Odd Numbers I,Beginner,36259,2
+1072,Interval 2,Beginner,37446,1
+1073,Even Square,Beginner,40113,1
+1074,Even or Odd,Beginner,38734,2
+1075,Remaining 2,Beginner,36496,2
+1076,Design Labirints,Graph,2384,2
+1077,Infix to Posfix,Data Structures and Libraries,1861,5
+1078,Multiplication Table,Beginner,46163,2
+1079,Weighted Averages,Beginner,33017,2
+1080,Highest and Position,Beginner,37371,3
+1081,DFSr - Depth Hierarchy,Graph,1740,5
+1082,Connected Components,Graph,2450,4
+1083,LEXSIM - Sintatic and Lexical Avaliator,Data Structures and Libraries,380,7
+1084,Erasing and Winning,Paradigms,2024,6
+1085,Babel,Graph,561,7
+1086,The Club Ballroom,Ad-Hoc,861,8
+1087,Queen,Ad-Hoc,10292,4
+1088,Bubbles and Buckets,Data Structures and Libraries,2609,7
+1089,Musical Loop,Ad-Hoc,4493,3
+1090,Set,Ad-Hoc,90,10
+1091,Division of Nlogonia,Ad-Hoc,5492,1
+1092,Longest Increasing Sub-sequence,Ad-Hoc,140,10
+1093,Vampires,Mathematics,1214,4
+1094,Experiments,Beginner,27754,2
+1095,Sequence IJ 1,Beginner,32837,1
+1096,Sequence IJ 2,Beginner,28728,1
+1097,Sequence IJ 3,Beginner,26297,1
+1098,Sequence IJ 4,Beginner,19965,4
+1099,Sum of Consecutive Odd Numbers II,Beginner,27579,1
+1100,Knight Moves,Graph,1554,4
+1101,Sequence of Numbers and Sum,Beginner,27683,4
+1102,Deadly Atack,Computational Geometry,60,10
+1103,Alarm Clock,Ad-Hoc,9825,3
+1104,Exchanging Cards,Ad-Hoc,3013,4
+1105,Sub-prime,Ad-Hoc,2751,3
+1106,Dragster,Paradigms,125,6
+1107,Laser Sculpture,Ad-Hoc,1887,3
+1108,Towers for Mobile Telephony,Computational Geometry,88,9
+1109,Cheating on the Contest,Ad-Hoc,51,10
+1110,Throwing Cards Away,Data Structures and Libraries,7640,3
+1111,Desrugenstein,Graph,407,7
+1112,Schweisen,Data Structures and Libraries,438,8
+1113,Ascending and Descending,Beginner,30154,1
+1114,Fixed Password,Beginner,35717,2
+1115,Quadrant,Beginner,27406,1
+1116,Dividing X by Y,Beginner,26136,1
+1117,Score Validation,Beginner,26359,1
+1118,Several Scores with Validation,Beginner,18885,4
+1119,The Dole Queue,Data Structures and Libraries,1143,4
+1120,Contract Revision,Strings,6242,5
+1121,Sticker Collector Robot,Ad-Hoc,1593,4
+1122,Account Book,Ad-Hoc,344,7
+1123,Route Change,Graph,845,3
+1124,Elevator,Computational Geometry,1809,7
+1125,Formula 1,Ad-Hoc,1023,3
+1126,Star War,Computational Geometry,72,9
+1127,Musical Plagiarism,Ad-Hoc,537,8
+1128,Come and Go,Graph,1666,5
+1129,Optical Reader,Ad-Hoc,5095,3
+1130,Tic-tac-toe,Ad-Hoc,120,10
+1131,Grenais,Beginner,19314,2
+1132,Multiples of 13,Beginner,26706,2
+1133,Rest of a Division,Beginner,24469,2
+1134,Type of Fuel,Beginner,26257,1
+1135,Ants Colony,Graph,826,9
+1136,Bingo!,Ad-Hoc,1902,3
+1137,Cocircular Points,Computational Geometry,292,8
+1138,Digits Count,Ad-Hoc,733,8
+1139,Electric Needs,Ad-Hoc,35,8
+1140,Flowers Flourish from France,Ad-Hoc,3946,2
+1141,Growing Strings,Strings,357,9
+1142,PUM,Beginner,28041,1
+1143,Squared and Cubic,Beginner,25034,1
+1144,Logical Sequence,Beginner,20674,1
+1145,Logical Sequence 2,Beginner,20696,5
+1146,Growing Sequences,Beginner,22195,3
+1147,Knight Scape,Ad-Hoc,780,6
+1148,Countries at War,Graph,2731,7
+1149,Summing Consecutive Integers,Beginner,17107,1
+1150,Exceeding Z,Beginner,15914,2
+1151,Easy Fibonacci,Beginner,27273,3
+1152,Dark Roads,Graph,3012,3
+1153,Simple Factorial,Beginner,29167,1
+1154,Ages,Beginner,25049,2
+1155,S Sequence,Beginner,18905,2
+1156,S Sequence II,Beginner,16970,3
+1157,Divisors I,Beginner,23318,1
+1158,Sum of Consecutive Odd Numbers III,Beginner,18260,1
+1159,Sum of Consecutive Even Numbers,Beginner,18513,1
+1160,Population Increase,Beginner,16356,4
+1161,Factorial Sum,Mathematics,12648,6
+1162,Train Swapping,Data Structures and Libraries,3569,3
+1163,Angry Ducks,Mathematics,841,5
+1164,Perfect Number,Beginner,22562,1
+1165,Prime Number,Beginner,23997,2
+1166,Hanoi Tower Troubles Again!,Paradigms,614,2
+1167,Summer Camp,Data Structures and Libraries,1248,5
+1168,LED,Strings,20206,2
+1169,Grains in a Chess Board,Mathematics,5237,3
+1170,Blobs,Mathematics,8799,3
+1171,Number Frequence,Ad-Hoc,8576,2
+1172,Array Replacement I,Beginner,39223,2
+1173,Array fill I,Beginner,35790,1
+1174,Array Selection I,Beginner,30783,3
+1175,Array change I,Beginner,31931,1
+1176,Fibonacci Array,Beginner,23611,4
+1177,Array Fill II,Beginner,26908,1
+1178,Array Fill III,Beginner,24802,4
+1179,Array Fill IV,Beginner,19162,2
+1180,Lowest Number and Position,Beginner,30627,2
+1181,Line in Array,Beginner,25397,4
+1182,Column in Array,Beginner,22834,3
+1183,Above the Main Diagonal,Beginner,21297,4
+1184,Below the Main Diagonal,Beginner,16651,2
+1185,Above the Secundary Diagonal,Beginner,15548,3
+1186,Below the Secundary Diagonal,Beginner,15571,1
+1187,Top Area,Beginner,15900,4
+1188,Inferior Area,Beginner,13127,1
+1189,Left Area,Beginner,12836,2
+1190,Right Area,Beginner,13442,2
+1191,Tree Recovery,Graph,1543,3
+1192,Paula's Mathematic Game,Ad-Hoc,5798,1
+1193,Base Conversion,Mathematics,2727,4
+1194,Pre In and Post,Graph,1153,3
+1195,Binary Search Tree,Graph,2811,6
+1196,WERTYU,Ad-Hoc,2699,5
+1197,Back to High School Physics,Mathematics,6939,2
+1198,Hashmat the Brave Warrior,Mathematics,7021,5
+1199,Simple Base Conversion,Mathematics,3185,4
+1200,BST Operations I,Graph,1250,5
+1201,BST Operations II,Graph,826,7
+1202,White Nights Festival,Mathematics,728,6
+1203,St. Petersburg Bridges,Paradigms,779,7
+1204,Myachowski Russian Football,Computational Geometry,96,9
+1205,Siege of Leningrad,Graph,510,7
+1206,Challenge of St. Petersburg,Ad-Hoc,229,10
+1207,The Benefits of Vodka,Graph,106,9
+1208,St. Petersburg Dynasties,Graph,134,7
+1209,St. Petersburg Parties,Ad-Hoc,548,7
+1210,Optimal Production of Great Vodka,Paradigms,411,6
+1211,Economic Phonebook,Data Structures and Libraries,2312,5
+1212,Primary Arithmetic,Mathematics,3355,7
+1213,Ones,Mathematics,1721,5
+1214,Above Average,Mathematics,4935,4
+1215,Andy's First Dictionary,Data Structures and Libraries,1548,7
+1216,Getline One,Ad-Hoc,5091,3
+1217,Getline Two - Fruits,Ad-Hoc,2932,3
+1218,Getline Three -  Shoes,Ad-Hoc,1936,5
+1219,Colourful Flowers,Mathematics,1563,5
+1220,The Trip,Mathematics,807,7
+1221,Fast Prime Number,Mathematics,7445,6
+1222,Short Story Competition,Strings,2187,4
+1223,Toboggan of Marbles,Computational Geometry,404,8
+1224,Cards,Paradigms,719,9
+1225,Perfect Choir,Ad-Hoc,1015,4
+1226,Space Elevator,Paradigms,289,8
+1227,Midnight Cowboy,Graph,253,7
+1228,Start Grid,Ad-Hoc,1910,3
+1229,Combating Cancer,Paradigms,295,7
+1230,Integral,Mathematics,50,10
+1231,Words,Paradigms,118,6
+1232,Rubik Cycle,Mathematics,199,5
+1233,Star,Mathematics,744,7
+1234,Dancing Sentence,Strings,7551,4
+1235,Inside Out,Strings,5517,3
+1236,Compressing Null and White,Data Structures and Libraries,490,7
+1237,Compare Substring,Strings,2986,5
+1238,Combiner,Strings,8842,1
+1239,Bloggo Shortcuts,Strings,3054,3
+1240,Fit or Dont Fit I,Mathematics,5772,2
+1241,Fit or Dont Fit II,Strings,6441,2
+1242,Alien Ribonucleic Acid,Data Structures and Libraries,837,4
+1243,How Easy,Strings,1166,6
+1244,Sort by Length,Data Structures and Libraries,3693,4
+1245,Lost Boots,Ad-Hoc,4480,4
+1246,Parking Lot,Ad-Hoc,1014,5
+1247,Coast Guard,Mathematics,2871,4
+1248,Diet Plan,Strings,1793,4
+1249,Rot13,Strings,4181,2
+1250,KiloMan,Ad-Hoc,2491,1
+1251,Tell me the Frequencies!,Data Structures and Libraries,2025,6
+1252,Sort! Sort!! And Sort!!!,Data Structures and Libraries,1786,5
+1253,Caesar Cipher,Strings,9957,1
+1254,Tag Replacement,Strings,925,4
+1255,Letter Frequency,Strings,3874,3
+1256,Hash Tables,Data Structures and Libraries,3047,5
+1257,Array Hash,Strings,3745,1
+1258,T-Shirts,Data Structures and Libraries,2325,5
+1259,Even and Odd,Data Structures and Libraries,6802,3
+1260,Hardwood Species,Data Structures and Libraries,1859,5
+1261,Hay Points,Data Structures and Libraries,1621,2
+1262,Multiple Reading,Strings,1977,2
+1263,Alliteration,Strings,2608,2
+1264,An Easy Problem!,Mathematics,363,7
+1265,Computer DJ,Paradigms,152,8
+1266,Tornado!,Ad-Hoc,1259,7
+1267,Pascal Library,Ad-Hoc,2400,4
+1268,Mission Impossible,Computational Geometry,29,8
+1269,ICPC Strikes Again,Paradigms,56,9
+1270,Optical Fiber,Graph,104,8
+1271,Where Are My Genes,Ad-Hoc,702,4
+1272,Hidden Message,Strings,5262,3
+1273,Justifier,Strings,3383,7
+1274,P-Networks,Data Structures and Libraries,139,5
+1275,Light Up,Graph,31,8
+1276,Letter Range,Strings,1090,3
+1277,Short Attendance,Strings,2095,4
+1278,Justifier II,Strings,1368,5
+1279,Leap Year or Not Leap Year and …,Mathematics,1487,8
+1280,Friends,Mathematics,108,10
+1281,Going to the Market,Data Structures and Libraries,4254,1
+1282,Arranging Heaps,Paradigms,188,8
+1283,Boxes and Stones,Paradigms,35,5
+1284,Cellphone Typing,Strings,495,6
+1285,Different Digits,Ad-Hoc,2689,3
+1286,Motoboy,Paradigms,2452,4
+1287,Friendly Int Parser,Strings,1208,8
+1288,Destruction Cannon,Paradigms,1728,5
+1289,What is the Probability?,Mathematics,313,6
+1290,Very Special Boxes,Ad-Hoc,204,8
+1291,Is This Integration?,Computational Geometry,534,4
+1292,Trouble with a Pentagon,Computational Geometry,1096,3
+1293,Romeo &amp; Juliet!,Computational Geometry,75,6
+1294,The Largest and Smallest Box,Computational Geometry,388,5
+1295,The Closest Pair Problem,Computational Geometry,1123,8
+1296,Medians,Computational Geometry,436,4
+1297,Environment Protection,Mathematics,168,9
+1298,Fix the Maze,Graph,97,5
+1299,Game of Tiles,Paradigms,51,8
+1300,Hours and Minutes,Ad-Hoc,2281,2
+1301,Interval Product,Data Structures and Libraries,1145,6
+1302,Joining Couples,Graph,174,7
+1303,Spurs Rocks,Data Structures and Libraries,1026,8
+1304,Average Speed,Mathematics,757,6
+1305,Cut Off Rounder,Strings,1438,3
+1306,Numbering Roads,Mathematics,1238,3
+1307,All You Need Is Love,Mathematics,1388,5
+1308,Etruscan Warriors Never Play Chess,Mathematics,1440,4
+1309,Monetary Formatting,Mathematics,1764,3
+1310,Profit,Paradigms,2629,2
+1311,Army Buddies,Ad-Hoc,433,6
+1312,Ball Stacking,Paradigms,422,6
+1313,Diccionario Portuñol,Strings,132,8
+1314,Hedge Mazes,Graph,286,9
+1315,Not too Convex Hull,Computational Geometry,58,9
+1316,Duty Free Shop,Mathematics,70,8
+1317,I Hate SPAM But Some People Love It,Graph,212,6
+1318,Fake Tickets,Ad-Hoc,3485,4
+1319,Hyperactive Girl,Paradigms,117,9
+1320,Ingenious Metro,Ad-Hoc,48,5
+1321,Jollo,Ad-Hoc,489,4
+1322,Kids' Wishes,Graph,191,7
+1323,Feynman,Mathematics,4399,1
+1324,Higgs Boson,Mathematics,26,9
+1325,Bubble Maps,Paradigms,95,4
+1326,Chemistry,Data Structures and Libraries,22,7
+1327,Drop Out,Ad-Hoc,221,7
+1328,Go Easy,Graph,46,7
+1329,Head or Tail,Ad-Hoc,8973,2
+1330,Uncle Tom’s Inherited Land,Graph,254,8
+1331,Blocks,Ad-Hoc,99,9
+1332,One-Two-Three,Strings,8234,2
+1333,Candy’s Candy,Ad-Hoc,30,6
+1334,Electrical Pollution,Graph,47,9
+1335,File Retrieval,Strings,75,10
+1336,Garden Fence,Computational Geometry,47,8
+1337,King’s Poker,Ad-Hoc,462,4
+1338,It-Miha,Mathematics,108,8
+1339,Grandpa's Rubik,Ad-Hoc,69,6
+1340,I Can Guess the Data Structure!,Data Structures and Libraries,2284,4
+1341,Kids in a Grid,Strings,210,8
+1342,Dice,Ad-Hoc,592,5
+1343,Runner Pawns,Ad-Hoc,63,6
+1344,Telecommunication Partners,Graph,96,7
+1345,Secure Region,Computational Geometry,26,9
+1346,Child Play,Mathematics,23,10
+1347,Kryptonite Mine,Mathematics,26,10
+1348,X-Mart,Graph,116,7
+1349,Noise Effect,Ad-Hoc,134,5
+1350,This Sentence is False,Paradigms,49,5
+1351,Supermarket,Ad-Hoc,209,8
+1352,Square Lottery,Mathematics,46,8
+1353,Super Poker,Mathematics,12,9
+1354,Bigger Square Please,Paradigms,13,9
+1355,Compressor,Strings,2,10
+1356,Jupiter Attacks!,Data Structures and Libraries,149,7
+1357,In Braille,Ad-Hoc,585,4
+1358,Cutting Edge,Computational Geometry,29,10
+1359,Land Division Tax,Ad-Hoc,47,9
+1360,Magic Trick,Ad-Hoc,92,5
+1361,Building Designing,Ad-Hoc,366,4
+1362,My T-Shirt Suits Me,Graph,650,7
+1363,Car Plates Competition,Ad-Hoc,112,8
+1364,Emoticons :-),Strings,491,7
+1365,Finding Seats,Paradigms,190,7
+1366,Sticks Game,Ad-Hoc,1433,2
+1367,Help!,Strings,1848,4
+1368,Colorful Cubes,Ad-Hoc,157,8
+1369,Memory Manager,Ad-Hoc,14,9
+1370,Regatta of Scientists,Computational Geometry,56,8
+1371,Close the Doors!,Mathematics,1511,4
+1372,Candy,Paradigms,404,4
+1373,DNA Subsequences,Strings,331,6
+1374,Electricity,Ad-Hoc,161,5
+1375,Pole Position,Ad-Hoc,986,5
+1376,Brothers,Mathematics,131,7
+1377,File Recover,Strings,99,8
+1378,Isosceles Triangles,Ad-Hoc,246,8
+1379,Mean Median Problem,Ad-Hoc,2096,1
+1380,Bacilli Population Growth,Mathematics,265,9
+1381,Diophantine Equations,Mathematics,318,8
+1382,Elementary my Dear Watson!,Data Structures and Libraries,603,7
+1383,Sudoku,Ad-Hoc,2956,6
+1384,Lazy Jumping Frog,Graph,136,7
+1385,Report Recovery,Strings,23,10
+1386,Ambiguous Codes,Strings,28,10
+1387,Og,Ad-Hoc,6975,1
+1388,Where Are The Bubbles?,Data Structures and Libraries,185,10
+1389,Traveling Shoemaker Problem,Graph,60,9
+1390,Bases,Mathematics,34,9
+1391,Almost Shortest Path,Graph,244,5
+1392,Electric Bill,Mathematics,173,5
+1393,Hexagonal Tiles,Mathematics,1771,1
+1394,Hooligan,Graph,220,9
+1395,Numbers and Operations,Paradigms,15,9
+1396,There's an Exam from Cris Today!,Paradigms,171,7
+1397,Game of The Greatest,Ad-Hoc,5814,1
+1398,Ocean Deep! Make it Shallow!!,Mathematics,608,7
+1399,Array Transformer,Mathematics,268,7
+1400,Counting Game,Mathematics,469,4
+1401,Generating Fast Sorted Permutation,Data Structures and Libraries,1012,4
+1402,Will Indiana Jones Get There?,Graph,65,8
+1403,Grandpa is Famous,Ad-Hoc,811,5
+1404,MegaCheckers,Ad-Hoc,164,7
+1405,The Halting Problem,Data Structures and Libraries,106,10
+1406,Jukebox,Strings,23,10
+1407,Weekend Lottery,Ad-Hoc,461,4
+1408,Mario,Paradigms,267,6
+1409,Zak Galou,Graph,244,9
+1410,He is Offside!,Ad-Hoc,2001,3
+1411,Shrinking Polygons,Computational Geometry,61,9
+1412,Code Lock,Paradigms,86,8
+1413,Hurry Up!,Graph,68,10
+1414,World Cup,Ad-Hoc,1256,4
+1415,Galou is Back!,Graph,74,8
+1416,ICPC Scoreboard,Paradigms,62,9
+1417,Justice League,Graph,52,6
+1418,Another Crisis,Ad-Hoc,102,3
+1419,Bakugan,Ad-Hoc,991,4
+1420,Counting Seconds,Ad-Hoc,91,8
+1421,Tic-Tac-Toe?,Ad-Hoc,93,9
+1422,Bacteria,Mathematics,103,9
+1423,Adventure of Super Mario,Graph,102,7
+1424,Easy Problem from Rujia Liu?,Data Structures and Libraries,1380,7
+1425,Gift?!,Data Structures and Libraries,477,6
+1426,Add Bricks in The Wall,Ad-Hoc,1441,2
+1427,The Scrooge Co Problem,Graph,114,9
+1428,Searching for Nessy,Ad-Hoc,1139,1
+1429,Factorial Again!,Mathematics,2470,2
+1430,Jingle Composing,Data Structures and Libraries,2190,1
+1431,Klingon Levels,Ad-Hoc,122,8
+1432,Triple-Free Binary Strings,Paradigms,50,6
+1433,The Splitting Club,Mathematics,69,10
+1434,Roman Patrollers,Mathematics,32,6
+1435,Square Matrix I,Beginner,11668,4
+1436,Brick Game,Mathematics,3533,1
+1437,Turn Left!,Ad-Hoc,4607,2
+1438,Unloading Boxes,Ad-Hoc,315,6
+1439,Bora Bora,Data Structures and Libraries,145,8
+1440,Dinner Hall,Ad-Hoc,159,7
+1441,Hailstone Sequences,Ad-Hoc,2051,3
+1442,Street Deviation,Graph,219,7
+1443,Traffic Jam,Ad-Hoc,63,6
+1444,Drakes' Racing,Mathematics,732,3
+1445,Who's Going To The Party?,Ad-Hoc,301,6
+1446,Venn Diagram?,Computational Geometry,20,10
+1447,Back to the Future,Graph,127,8
+1448,Chinese Whispers,Strings,1271,8
+1449,The Fantastic Jaspion,Data Structures and Libraries,794,4
+1450,Ramesses' Games,Mathematics,65,9
+1451,Broken Keyboard,Data Structures and Libraries,1421,6
+1452,Gloud Computing,Data Structures and Libraries,441,2
+1453,Crossword With No Words,Ad-Hoc,13,10
+1454,The Country of Bicycles,Graph,404,7
+1455,ICPC Finals,Computational Geometry,136,10
+1456,Brainfuck,Strings,415,8
+1457,Oracle of Alexandria,Mathematics,2016,3
+1458,SMS Championship,Strings,225,8
+1459,Focus,Ad-Hoc,784,7
+1460,Grapevine,Ad-Hoc,154,9
+1461,Optimal Symmetric Paths,Graph,35,8
+1462,Popularity in the Facebook,Graph,278,10
+1463,Binary Expression Tree,Graph,146,7
+1464,Onion Layers,Computational Geometry,535,8
+1465,Complex Difficult and Complicated,Mathematics,140,5
+1466,Level Order Tree Traversal,Graph,1166,6
+1467,Zero or One,Ad-Hoc,7613,1
+1468,Balloon,Computational Geometry,121,10
+1469,Boss,Graph,1042,7
+1470,Folding Machine,Ad-Hoc,265,4
+1471,Dangerous Dive,Ad-Hoc,3330,4
+1472,Triangles,Ad-Hoc,1277,6
+1473,Lines of Containers,Paradigms,296,7
+1474,Buses,Paradigms,355,7
+1475,Patches,Paradigms,353,5
+1476,Trucks,Graph,465,9
+1477,Man Elephant and Mouse,Data Structures and Libraries,670,7
+1478,Square Matrix II,Beginner,8662,4
+1479,Help your Commander,Graph,140,8
+1480,The Famous Mine Sweeper,Ad-Hoc,110,10
+1481,Zing Zhu’s Oyster Farm,Mathematics,40,10
+1482,Long Night of Museums,Graph,217,9
+1483,Animal Game,Ad-Hoc,441,5
+1484,Type &amp; Add,Mathematics,45,7
+1485,Turkish Roulette,Paradigms,234,7
+1486,Biochemical Digital Circuit,Ad-Hoc,763,5
+1487,Six Flags,Paradigms,1047,4
+1488,Magic Numbers?,Mathematics,149,8
+1489,Software Engineering,Graph,29,10
+1490,Attacking Rooks,Graph,604,9
+1491,Blogger Language,Strings,44,10
+1492,Counting Ones,Mathematics,740,3
+1493,Disjoint Water Supply,Paradigms,185,7
+1494,Eleven,Paradigms,123,9
+1495,Football,Ad-Hoc,1520,5
+1496,Go up the &quot;Ultras&quot;,Ad-Hoc,132,8
+1497,Hide and Seek,Computational Geometry,69,9
+1498,Inverting Huffman,Graph,49,10
+1499,Join Two Kingdoms,Graph,187,9
+1500,Horrible Queries,Data Structures and Libraries,882,9
+1501,How Many Zeros and How Many Digits?,Mathematics,193,9
+1502,Corridor Crossing,Graph,31,10
+1503,Largest Common Palindrome Must You Find,Strings,96,10
+1504,Curo Railroad,Computational Geometry,7,10
+1505,Curo Factories,Mathematics,47,9
+1506,Rabito and Bones,Graph,18,10
+1507,Subsequences,Data Structures and Libraries,1640,5
+1508,Laser Beam,Ad-Hoc,20,10
+1509,Counting Ambiguities,Paradigms,53,10
+1510,The Sightseeing Tour,Paradigms,14,10
+1511,GCD Grid,Data Structures and Libraries,97,10
+1512,Tiles,Mathematics,899,5
+1513,Horse,Paradigms,235,7
+1514,Contest,Ad-Hoc,3072,4
+1515,Hello Galaxy,Ad-Hoc,1686,1
+1516,Image,Strings,1320,4
+1517,Apples,Paradigms,575,7
+1518,Turtles,Ad-Hoc,88,10
+1519,Abbreviations,Strings,518,7
+1520,Screws and Nuts,Data Structures and Libraries,1645,6
+1521,The Guilty,Ad-Hoc,682,4
+1522,Stack Game,Paradigms,523,7
+1523,Linear Parking Lot,Data Structures and Libraries,1456,7
+1524,Cafeteria Queue,Paradigms,636,3
+1525,Gruntz,Graph,182,8
+1526,Transporting Snacks,Mathematics,14,10
+1527,Guilds,Data Structures and Libraries,839,7
+1528,Entangled Ropes,Ad-Hoc,6,10
+1529,Max the Mad,Graph,197,8
+1530,How Many Substrings?,Strings,204,9
+1531,Fibonacci Again!,Mathematics,321,9
+1532,Throwing Balls,Ad-Hoc,634,5
+1533,Detective Watson,Ad-Hoc,3688,3
+1534,Array 123,Beginner,9597,2
+1535,Couple-Bachelor-Spinster Numbers,Data Structures and Libraries,93,10
+1536,Libertadores,Ad-Hoc,2664,3
+1537,Bank Line,Mathematics,493,5
+1538,Alien Sequence,Data Structures and Libraries,291,4
+1539,Telecom Company,Graph,552,7
+1540,Energy Planning,Ad-Hoc,846,5
+1541,Building Houses,Beginner,6723,2
+1542,Reading Books,Ad-Hoc,3239,4
+1543,Board With Prizes,Paradigms,192,8
+1544,The Last Non-zero Digit,Mathematics,356,8
+1545,Cards II,Paradigms,207,9
+1546,Feedback,Ad-Hoc,4269,1
+1547,Guess What,Ad-Hoc,2890,1
+1548,Canteen Queue,Data Structures and Libraries,5505,1
+1549,Splitting the Coke,Computational Geometry,560,4
+1550,Inversion,Graph,1311,6
+1551,Complete Sentence,Strings,3282,3
+1552,Rescue in Free Fall,Graph,1067,5
+1553,Frequent Asked Questions,Ad-Hoc,2061,2
+1554,N.1 Continuous,Mathematics,905,3
+1555,Functions,Mathematics,7247,1
+1556,Removing Letters,Strings,897,6
+1557,Square Matrix III,Beginner,6960,5
+1558,Sum of Two Squares,Ad-Hoc,2410,5
+1559,2048,Ad-Hoc,958,5
+1560,Triangle Energy,Computational Geometry,403,7
+1561,Binary Watch,Ad-Hoc,642,3
+1562,Choosing the Pairs,Graph,50,10
+1563,The Big Problem,Mathematics,95,10
+1564,Brazil World Cup,Beginner,12514,2
+1565,Connect the Points,Paradigms,34,10
+1566,Height,Data Structures and Libraries,3055,6
+1567,(2/3/4)-D Sqr/Rects/Cubes/Boxes?,Mathematics,144,5
+1568,{sum+=i++} to Reach N,Mathematics,314,10
+1569,Snakes and Ladders,Ad-Hoc,281,9
+1570,A Day in Math-Land,Mathematics,139,10
+1571,A Square &amp; Equilateral Triangles,Computational Geometry,154,6
+1572,The Unreal Tournament,Mathematics,40,10
+1573,Chocolate Factory,Ad-Hoc,1330,1
+1574,Robot Instructions,Ad-Hoc,2552,4
+1575,Chasing After Don Giovanni,Ad-Hoc,12,10
+1576,The Skyline Problem,Ad-Hoc,81,9
+1577,Constructible Regular Polygons,Mathematics,220,6
+1578,Matrix of Squares,Ad-Hoc,1503,7
+1579,Transport of Solar Panels,Paradigms,348,4
+1580,Quid Est Veritas? Est Vir Qui Adest!,Mathematics,577,5
+1581,International Chat,Strings,3106,2
+1582,The Pythagorean Theorem,Mathematics,2146,3
+1583,Contamination,Ad-Hoc,798,6
+1584,Espertofone,Graph,114,8
+1585,Making Kites,Ad-Hoc,3545,1
+1586,Tug of War,Strings,834,6
+1587,BIT Park,Data Structures and Libraries,119,10
+1588,Help the Federation,Ad-Hoc,739,5
+1589,Bob Conduit,Beginner,11257,1
+1590,Cuarenta and Two,Paradigms,420,6
+1591,Grandma's Day,Ad-Hoc,570,4
+1592,Elias and Golias,Graph,182,9
+1593,Binary Function,Ad-Hoc,805,3
+1594,Greedy,Data Structures and Libraries,179,6
+1595,Humm.. Run or Walk.. That's the Question,Paradigms,628,5
+1596,Yusuf II's Tournament,Paradigms,1,10
+1597,Unmasking the Sultan's Employee,Paradigms,22,9
+1598,The Real Value of Mats,Paradigms,17,10
+1599,Peaks of Atlas,Paradigms,334,7
+1600,The Cat of The Caretaker of The Warehouse,Paradigms,70,9
+1601,Partition of The Herd,Paradigms,38,10
+1602,Hyperprimes,Paradigms,499,6
+1603,Qanat Canals,Paradigms,10,10
+1604,Pair-voting in The Board of Gueliz,Paradigms,46,7
+1605,Building Your Own Cafila,Paradigms,18,2
+1606,The Hints of Ali Baba,Paradigms,265,3
+1607,Advancing Letters,Strings,3579,2
+1608,Maria's Cakes,Paradigms,753,2
+1609,Counting Sheep,Ad-Hoc,2297,3
+1610,Dudu Service Maker,Graph,2489,7
+1611,Crowded Elevator,Paradigms,581,5
+1612,Little Ant,Ad-Hoc,1583,2
+1613,Goemon is in Trouble,Computational Geometry,96,9
+1614,Help the Tourist,Paradigms,133,7
+1615,Insatisfaction on Elections,Ad-Hoc,730,3
+1616,Prom,Paradigms,240,5
+1617,Safety Path,Graph,76,7
+1618,Colision,Ad-Hoc,1831,4
+1619,Date Difference,Ad-Hoc,298,5
+1620,Delaunay Triangulation,Mathematics,1194,4
+1621,Labyrinth,Graph,338,6
+1622,Lamps,Ad-Hoc,240,5
+1623,The Language,Mathematics,220,8
+1624,Promotion,Mathematics,314,6
+1625,Robocopy,Mathematics,2,10
+1626,The Incredible Chapecoense Pizza Contest,Mathematics,76,10
+1627,Last Hit,Ad-Hoc,377,4
+1628,ChessGuess,Graph,18,10
+1629,UnzipFACE,Strings,255,3
+1630,Stakes,Mathematics,595,2
+1631,Bobby's Amazing Cake,Computational Geometry,253,4
+1632,Variations,Strings,1443,2
+1633,SBC,Data Structures and Libraries,213,6
+1634,Another Lottery,Mathematics,170,4
+1635,Ballot Evaluation,Mathematics,137,8
+1636,Cyclic Antimonotonic Permutations,Paradigms,146,5
+1637,Elias Gamma Coding,Paradigms,26,2
+1638,Food Portion Size,Ad-Hoc,28,9
+1639,Generate Random Numbers,Ad-Hoc,396,3
+1640,Hotel Booking,Data Structures and Libraries,138,9
+1641,Alfredo's Pizza Restaurant,Mathematics,447,3
+1642,Broken Keyboard,Paradigms,222,7
+1643,Convert Kilometers to Miles,Paradigms,341,2
+1644,Decode the Strings,Mathematics,63,8
+1645,El Dorado,Paradigms,359,7
+1646,Forest,Computational Geometry,37,10
+1647,A Game with Marbles,Mathematics,483,3
+1648,Help Bob,Paradigms,47,9
+1649,Annoying Painting Tool,Paradigms,154,4
+1650,Black and White Painting,Mathematics,336,3
+1651,Cylinder,Computational Geometry,82,8
+1652,Deli Deli,Ad-Hoc,515,2
+1653,Expressions,Graph,45,3
+1654,Grocery Store,Paradigms,198,6
+1655,106 Miles To Chicago,Graph,579,5
+1656,Halloween Treats,Mathematics,119,9
+1657,Automatic Correction of Misspellings,Ad-Hoc,77,9
+1658,Dihedral Groups,Mathematics,26,6
+1659,Economic Phone Calls,Paradigms,12,7
+1660,Flavius Josephus Reloaded,Mathematics,122,6
+1661,Wine Trading in Gergovia,Paradigms,1192,2
+1662,Homogeneous Squares,Mathematics,35,7
+1663,Ambiguous Permutations,Ad-Hoc,444,2
+1664,Bullshit Bingo,Strings,216,7
+1665,Decorate the Wall,Computational Geometry,16,7
+1666,Any Fool Can Do It,Paradigms,50,7
+1667,HTML,Strings,381,8
+1668,Help The Problem Setter,Graph,10,7
+1669,All Discs Considered,Graph,258,9
+1670,Boolean Logic,Ad-Hoc,33,3
+1671,Code,Graph,81,7
+1672,In Danger,Paradigms,299,6
+1673,Run Length Encoding,Data Structures and Libraries,324,7
+1674,Fractran,Mathematics,11,5
+1675,Binary Search Heap Construction,Graph,27,10
+1676,Assistance Required,Ad-Hoc,384,5
+1677,The Bottom of a Graph,Graph,151,9
+1678,Fixed Partition Contest Management,Ad-Hoc,6,10
+1679,Drink on Ice,Computational Geometry,35,4
+1680,Edge,Ad-Hoc,147,4
+1681,Fold,Paradigms,9,2
+1682,Genetic Code,Paradigms,660,5
+1683,Largest Rectangle in a Histogram,Data Structures and Libraries,306,7
+1684,Candy Marathon,Ad-Hoc,123,6
+1685,Daniel's Square,Paradigms,86,9
+1686,Palindromic Sequence,Strings,13,10
+1687,Unlock the Smartphone,Paradigms,111,9
+1688,Intergalactic Nim,Mathematics,39,7
+1689,Radars,Paradigms,400,7
+1690,Subset Sum,Paradigms,246,7
+1691,Super Circumference,Ad-Hoc,8,9
+1692,Curo Attack,Graph,32,10
+1693,Just Another Physics Problem,Computational Geometry,122,9
+1694,Lottery,Mathematics,202,7
+1695,Ordering Trees,Graph,56,9
+1696,Playing With Operators,Data Structures and Libraries,82,10
+1697,Jaida and Multiply Game,Mathematics,376,9
+1698,Brazilian Metro,Graph,13,10
+1699,Very Boring Game,Ad-Hoc,250,8
+1700,Antennas,Paradigms,197,9
+1701,Fibos's Sequence,Data Structures and Libraries,89,9
+1702,Graph Coloring,Graph,95,6
+1703,Jumping Stones,Mathematics,39,9
+1704,Arranging Tasks,Data Structures and Libraries,697,8
+1705,Binary Lover,Mathematics,129,10
+1706,Magical Candy Bridges,Graph,173,6
+1707,Numbers Game,Paradigms,106,8
+1708,Lap,Ad-Hoc,2277,2
+1709,Shuffled Deck,Data Structures and Libraries,1159,2
+1710,Confederation,Ad-Hoc,355,6
+1711,Miss Worm,Graph,193,6
+1712,Ecology,Ad-Hoc,109,10
+1713,Teletransport,Graph,312,6
+1714,Letters,Ad-Hoc,229,8
+1715,Handball,Ad-Hoc,1842,2
+1716,RSA,Ad-Hoc,406,8
+1717,Cut,Ad-Hoc,66,8
+1718,Grandpa Pepe's Pizza,Ad-Hoc,314,8
+1719,Simple Computers,Ad-Hoc,150,8
+1720,Mondriaan's Dream,Paradigms,54,6
+1721,Equidistance,Computational Geometry,31,9
+1722,How many Fibs?,Mathematics,308,7
+1723,Phylogenetic Trees Inherited,Graph,9,10
+1724,Hike on a Graph,Graph,37,6
+1725,Quadtree II,Data Structures and Libraries,17,9
+1726,Friends,Strings,193,6
+1727,Euro Cup 2000,Paradigms,109,6
+1728,Hard to Believe But True!,Ad-Hoc,957,3
+1729,Average is not Fast Enough!,Mathematics,220,6
+1730,Global Roaming,Computational Geometry,28,6
+1731,Advanced Fruits,Ad-Hoc,70,5
+1732,Bee Maja,Ad-Hoc,285,3
+1733,Vladimir the Vampire,Graph,32,9
+1734,Bound Found,Mathematics,15,10
+1735,Code the Tree,Mathematics,54,7
+1736,Decode the Tree,Mathematics,21,8
+1737,Etaoin Shrdlu,Strings,364,4
+1738,Fiber Network,Graph,500,4
+1739,Threebonacci Sequence,Ad-Hoc,572,4
+1740,Is it Ordered?,Data Structures and Libraries,55,10
+1741,Reversed John’s Notation,Ad-Hoc,389,9
+1742,Getting in Trouble,Graph,29,10
+1743,Automated Checking Machine,Ad-Hoc,3953,1
+1744,Black and White Stones,Paradigms,236,7
+1745,Counting Substhreengs,Mathematics,258,5
+1746,Dividing the Names,Data Structures and Libraries,40,8
+1747,Even Distribution,Graph,169,10
+1748,Fence The Vegetables,Computational Geometry,28,8
+1749,Galaxy Collision,Graph,175,9
+1750,Help Cupid,Ad-Hoc,296,6
+1751,Intrepid Climber,Graph,276,8
+1752,Journey Through The Kingdom,Graph,68,10
+1753,Knights Of The Round Table,Ad-Hoc,26,9
+1754,The Time Room,Mathematics,294,5
+1755,The Change,Ad-Hoc,419,6
+1756,Genetic Algorithm,Mathematics,42,3
+1757,Barrel Travel,Graph,195,6
+1758,Bonus Grade Points,Ad-Hoc,524,4
+1759,Ho Ho Ho,Beginner,14034,3
+1760,Koch Snowflake,Mathematics,941,1
+1761,Christmas Decorations,Mathematics,993,2
+1762,Sleds of Santa Claus,Data Structures and Libraries,161,8
+1763,Santa's Translator,Data Structures and Libraries,1813,4
+1764,Itinerary of Santa Claus,Graph,1341,3
+1765,Christmas Trapeziums,Ad-Hoc,983,3
+1766,The Dark Elf,Data Structures and Libraries,1395,4
+1767,Santa Claus Bag,Paradigms,1023,6
+1768,Christmas Tree,Strings,1643,5
+1769,SSN 1,Ad-Hoc,1640,4
+1770,Shuffle,Ad-Hoc,355,2
+1771,Random Bingo Cards,Ad-Hoc,127,5
+1772,Bit Shuffling,Ad-Hoc,363,7
+1773,Locked in the Castle,Graph,167,8
+1774,Routers,Graph,1240,2
+1775,Andre and the Mentos,Paradigms,229,5
+1776,Prom,Mathematics,200,8
+1777,Walk of Fame,Paradigms,232,8
+1778,Graph Defense,Graph,121,9
+1779,Estimating the Mean,Ad-Hoc,808,4
+1780,Robots Formation,Ad-Hoc,46,9
+1781,Guga and the String,Strings,532,8
+1782,Honorable Gift,Graph,66,9
+1783,Oh no a Black Hole!,Computational Geometry,248,3
+1784,Birds vs Crows,Paradigms,64,9
+1785,Kaprekar,Mathematics,555,4
+1786,SSN 2,Ad-Hoc,1044,4
+1787,URI,Ad-Hoc,983,6
+1788,Playing with Numbers,Paradigms,120,9
+1789,The Race of Slugs,Beginner,8545,3
+1790,Detecting Bridges,Graph,828,7
+1791,Discovering an Matrix,Ad-Hoc,36,10
+1792,Programmed Attack,Graph,162,8
+1793,Escalator,Ad-Hoc,902,1
+1794,Laundry,Ad-Hoc,2923,1
+1795,Trinomial Triangle,Mathematics,2571,3
+1796,Brazilian Economy,Ad-Hoc,3411,2
+1797,Blasted and Curious,Computational Geometry,159,9
+1798,Pipe Cutting,Paradigms,778,5
+1799,The Rat in a Maze,Graph,631,3
+1800,Where Are My Keys,Ad-Hoc,1074,3
+1801,Playing with Numbers,Mathematics,166,8
+1802,Books Catalog,Ad-Hoc,781,2
+1803,Matring,Strings,850,3
+1804,Mathematicians Needed in Mars,Data Structures and Libraries,801,6
+1805,Natural Sum,Mathematics,4228,4
+1806,Agent 004,Graph,170,7
+1807,Trinomial Triangle the Revenge,Mathematics,841,4
+1808,The Return of The King,Ad-Hoc,1054,4
+1809,Secret Agents,Ad-Hoc,30,7
+1810,Beverly Hills Century City,Paradigms,36,9
+1811,The Oscar Goes To...,Ad-Hoc,113,8
+1812,A Cluster to Avoid Floods,Mathematics,0,3
+1813,Anachronic?,Graph,72,9
+1814,DNA Storage?,Ad-Hoc,64,7
+1815,Drunk People?,Mathematics,113,8
+1816,Prague Vikings?,Ad-Hoc,343,2
+1817,Tsing Ling Archaeologists,Ad-Hoc,21,9
+1818,Convention Center,Computational Geometry,0,8
+1819,Estimating Production,Mathematics,1,10
+1820,Sing Pil University Groups,Ad-Hoc,23,9
+1821,Chinese Miai,Graph,53,9
+1822,Constructions of China,Paradigms,28,5
+1823,The Last But One Emperor,Graph,5,10
+1824,Tse Tse Frogs,Ad-Hoc,60,9
+1825,Anting,Computational Geometry,14,6
+1826,Is The Language Infinite?,Graph,30,10
+1827,Square Array IV,Beginner,4551,3
+1828,Bazinga!,Beginner,7010,2
+1829,Biggest Number Game,Mathematics,451,6
+1830,Boxes of Chocolates,Mathematics,100,9
+1831,Hard Day At Work,Mathematics,95,8
+1832,EBCDIC,Ad-Hoc,291,4
+1833,Christmas Decoration,Paradigms,109,8
+1834,Vogons!,Computational Geometry,256,6
+1835,Campaign's Promise,Graph,841,4
+1836,Pokémon!,Ad-Hoc,997,2
+1837,Preface,Beginner,4497,6
+1838,The Philosopher's Stone,Paradigms,231,8
+1839,The Chamber of Secrets,Mathematics,199,6
+1840,The Prisoner of Azkaban,Ad-Hoc,110,8
+1841,The Goblet of Fire,Mathematics,78,10
+1842,The Order of the Phoenix,Strings,105,8
+1843,The Half-Blood Prince,Paradigms,61,9
+1844,The Deathly Hallows,Computational Geometry,94,9
+1845,Efilogue,Ad-Hoc,702,8
+1846,Number to Name,Strings,240,7
+1847,Welcome to the Winter!,Beginner,6717,4
+1848,Counting Crow,Beginner,5386,3
+1849,Dracarys!,Ad-Hoc,567,5
+1850,No One's Labyrinth,Graph,159,7
+1851,How To Train Your Dragon,Data Structures and Libraries,242,8
+1852,Stark Direwolves,Paradigms,60,6
+1853,Daenerys' Game of Trust,Strings,67,10
+1854,Winter in Winterfell,Data Structures and Libraries,102,9
+1855,Maester's Map,Graph,1735,4
+1856,Arya's Death List,Data Structures and Libraries,107,10
+1857,Prelude of a Red Wedding,Computational Geometry,32,10
+1858,Theon's Answer,Beginner,6168,1
+1859,Frozen Archaeology,Strings,21,10
+1860,Cersei's Walk of Shame,Paradigms,167,6
+1861,Hall of Murderers,Data Structures and Libraries,1144,5
+1862,Houses of Westeros,Graph,424,6
+1863,Ramsay's Counter-attack,Data Structures and Libraries,49,10
+1864,Our Days Are Never Coming Back,Beginner,6435,1
+1865,Mjölnir,Beginner,7973,1
+1866,Bill,Beginner,8754,1
+1867,The Greater One-digit Number,Ad-Hoc,1300,4
+1868,Square Spiral,Strings,728,3
+1869,Base 32,Mathematics,1092,5
+1870,Fans and Balloons,Ad-Hoc,349,2
+1871,Zero means Zero,Strings,3744,2
+1872,Palindrome Double,Mathematics,23,10
+1873,Rock-paper-scissors-lizard-Spock,Strings,2822,1
+1874,Pushing Blocks,Data Structures and Libraries,396,4
+1875,Tribol,Computational Geometry,1301,3
+1876,Rabiola,Ad-Hoc,304,2
+1877,Sansa's Snow Castle,Ad-Hoc,318,2
+1878,Contests in Sequence,Paradigms,369,3
+1879,Bridge,Ad-Hoc,17,6
+1880,Renzo and the Palindromic Decoration,Ad-Hoc,262,4
+1881,Robotics Competition,Ad-Hoc,56,10
+1882,Random Walks in Thailand,Ad-Hoc,1,10
+1883,Escape From Ayutthaya,Graph,218,7
+1884,Fighting the Rajasi,Ad-Hoc,74,10
+1885,Thai Lotery,Ad-Hoc,32,7
+1886,Protecting the Temples,Ad-Hoc,116,6
+1887,The Kunming-Singapore Railway,Ad-Hoc,33,9
+1888,The chedis of Kamphaeng Phet,Ad-Hoc,23,9
+1889,Training With the Larvae of Phuket,Ad-Hoc,105,8
+1890,Putting Plates on the Tuk-tuks,Ad-Hoc,664,1
+1891,Removing Coins in the Kem Kradan,Ad-Hoc,161,6
+1892,Freshman Beats Veteran?,Paradigms,178,9
+1893,Moon Phases,Ad-Hoc,2050,3
+1894,Phylogeny,Graph,21,10
+1895,Game of Limit,Ad-Hoc,818,3
+1896,It's Time to Duel!,Ad-Hoc,434,6
+1897,Smart Game,Data Structures and Libraries,709,8
+1898,Kickback Sum,Strings,614,8
+1899,Hit the Target!,Ad-Hoc,270,8
+1900,Null Sequences,Paradigms,216,7
+1901,Butterflies,Ad-Hoc,1172,2
+1902,Association for Consistent Marriages,Graph,242,6
+1903,Food Chain,Graph,177,10
+1904,Odds and Evens 2.0,Mathematics,133,9
+1905,Cops and Robbers,Paradigms,1564,5
+1906,Collatz Passwords,Ad-Hoc,64,9
+1907,Colouring Game Scenarios,Graph,894,4
+1908,Multicampus UFFS,Graph,196,8
+1909,Help Kiko,Mathematics,402,8
+1910,Help Clotilde,Graph,731,8
+1911,Help Girafales,Data Structures and Libraries,1063,3
+1912,Help Seu Madruga,Paradigms,1359,7
+1913,Help Mr. Barriga,Paradigms,133,8
+1914,Whose Turn Is It?,Beginner,5827,2
+1915,Help Chaves,Graph,122,9
+1916,Jaiminho’s Bank Hours,Ad-Hoc,97,5
+1917,Help Chapolin Colorado!,Ad-Hoc,92,8
+1918,Trip to Acapulco,Ad-Hoc,24,10
+1919,Help Nhonho,Ad-Hoc,122,3
+1920,Fountain of Desires,Ad-Hoc,204,6
+1921,Guilherme and His Kites,Beginner,4747,3
+1922,Diego and Hammer Game,Paradigms,59,7
+1923,Rerisson and The Barbecue,Graph,545,6
+1924,Vitória and Her Indecision,Beginner,6499,1
+1925,Ordan and The Girls,Graph,128,10
+1926,Marianne and The Twin Cousins,Mathematics,501,8
+1927,Tapioca and The Chocolate Rain,Paradigms,322,9
+1928,Memory Game,Graph,436,7
+1929,Triangle,Beginner,5808,3
+1930,Electrical Outlet,Beginner,9301,1
+1931,Even Obsession,Graph,1176,7
+1932,Stock Market,Ad-Hoc,774,6
+1933,Tri-du,Beginner,7750,1
+1934,Puzzle,Ad-Hoc,272,6
+1935,Spiral,Ad-Hoc,340,8
+1936,Factorial,Ad-Hoc,1386,2
+1937,Curious Guardians,Ad-Hoc,83,10
+1938,Rectangle Park,Computational Geometry,307,6
+1939,Ominobox,Ad-Hoc,19,10
+1940,Strategy Game,Ad-Hoc,1392,3
+1941,Palindrome,Strings,363,6
+1942,Lottery,Ad-Hoc,108,9
+1943,Top N,Ad-Hoc,3087,1
+1944,FACE 2015 FREE GIFT,Data Structures and Libraries,954,2
+1945,Simulator,Ad-Hoc,365,3
+1946,Pyramid of Fortune,Mathematics,164,5
+1947,Cab Driver Route,Ad-Hoc,80,9
+1948,Compiler,Graph,13,9
+1949,Shift Register,Mathematics,18,10
+1950,Spöhndriger,Graph,0,4
+1951,Circuit Validator,Graph,49,5
+1952,Knight in 3D Chess,Graph,128,8
+1953,Robert and Rampant Room,Ad-Hoc,887,1
+1954,Possible Evolutionary Paths,Graph,67,10
+1955,See World,Graph,544,5
+1956,Acacias,Graph,305,6
+1957,Converting to Hexadecimal,Beginner,5817,1
+1958,Scientific Notation,Beginner,3059,4
+1959,Regular Simple Polygons,Beginner,5846,2
+1960,Roman Numerals for Page Numbers,Beginner,3741,3
+1961,Jumping Frog,Beginner,5773,2
+1962,A Long Long Time Ago,Beginner,4878,1
+1963,The Motion Picture,Beginner,6471,1
+1964,The Wrath of Khan,Ad-Hoc,81,9
+1965,The Search for Spock,Ad-Hoc,37,10
+1966,The Voyage Home,Ad-Hoc,123,8
+1967,The Final Frontier,Mathematics,52,8
+1968,The Undiscovered Country,Mathematics,48,10
+1969,Generations,Mathematics,36,10
+1970,First Contact,Paradigms,189,7
+1971,Insurrection,Computational Geometry,60,10
+1972,Nemesis,Graph,356,6
+1973,Star Trek,Beginner,2946,5
+1974,Into Darkness,Graph,10,10
+1975,Pearls,Ad-Hoc,161,7
+1976,Matrices,Paradigms,62,10
+1977,I Can't be Late,Graph,160,8
+1978,Cameras,Paradigms,41,9
+1979,Separate Rooms,Graph,369,6
+1980,Shuffling,Ad-Hoc,1687,5
+1981,Shuffling Again,Ad-Hoc,190,9
+1982,New Computers,Computational Geometry,329,6
+1983,The Chosen,Beginner,5302,2
+1984,The Pronalância Puzzle,Beginner,5288,4
+1985,MacPRONALTS,Beginner,5534,1
+1986,The Martian,Ad-Hoc,246,2
+1987,Divisibility by 3,Ad-Hoc,1308,2
+1988,Tourists Circuits,Graph,7,10
+1989,Doing Nothing,Mathematics,294,3
+1990,Equilibrium,Mathematics,78,9
+1991,Factory of Bridges,Computational Geometry,22,10
+1992,Gaining Time,Mathematics,2,2
+1993,He is Lazy,Graph,117,8
+1994,Imperialism,Graph,104,8
+1995,Game Set and Match,Mathematics,0,10
+1996,A Canvas Building,Paradigms,8,9
+1997,Black and White,Ad-Hoc,207,2
+1998,Awari 2.0,Ad-Hoc,272,5
+1999,Ball of Reconciliation,Mathematics,178,4
+2000,Adeildo of Odonto,Strings,110,10
+2001,Bile,Mathematics,54,10
+2002,Rogerio's House,Graph,77,9
+2003,Sunday Morning,Beginner,3905,2
+2004,Enisvaldo's Hunger,Ad-Hoc,329,5
+2005,Upset Fracil,Ad-Hoc,136,9
+2006,Identifying Tea,Beginner,7651,1
+2007,Fence the Vegetables Fail,Mathematics,97,9
+2008,Exposing Corruption,Ad-Hoc,222,7
+2009,Just a Bit Sorted,Ad-Hoc,20,4
+2010,Keep it Energized,Ad-Hoc,97,7
+2011,Galactic Taxes,Ad-Hoc,184,9
+2012,Height Map,Ad-Hoc,76,9
+2013,At Most Twice,Ad-Hoc,204,6
+2014,Blood Groups,Ad-Hoc,74,6
+2015,Cake Cut,Ad-Hoc,84,7
+2016,D as in Daedalus,Ad-Hoc,295,4
+2017,Six Strings,Strings,277,3
+2018,Christmas Olympics,Data Structures and Libraries,338,4
+2019,Cici Cini and Cino,Ad-Hoc,17,9
+2020,Elves and Their Codes,Data Structures and Libraries,111,8
+2021,Christmas Lights,Ad-Hoc,252,8
+2022,Christmas Gifts,Data Structures and Libraries,343,4
+2023,The Last Good Kid,Strings,1331,4
+2024,Piling Gifts,Paradigms,102,8
+2025,Joulupukki,Strings,574,3
+2026,Christmas Tree,Paradigms,604,3
+2027,Noel Bet,Paradigms,494,4
+2028,Sequence of Sequence,Beginner,3313,4
+2029,Honey Reservoir,Beginner,3208,1
+2030,Pit Stop,Ad-Hoc,100,8
+2031,Rock Paper Airstrike,Beginner,3773,2
+2032,Game of Eight,Graph,252,9
+2033,Interest on Loan,Mathematics,233,7
+2034,Cantor,Mathematics,24,6
+2035,Designing T-Shirts,Strings,81,8
+2036,Domino Effect,Paradigms,82,10
+2037,Fixture,Ad-Hoc,67,9
+2038,Generating Alien DNA,Graph,9,10
+2039,Programmers Should Learn Theory of Computation,Graph,11,6
+2040,The Champion,Ad-Hoc,155,7
+2041,Gödelito's Sequence,Ad-Hoc,315,5
+2042,Fofão of Persia,Paradigms,61,9
+2043,High Mountains,Computational Geometry,27,10
+2044,In Debt,Mathematics,293,3
+2045,Defending Alamo,Computational Geometry,39,10
+2046,Delivers Steak,Graph,265,9
+2047,Fly By Night,Data Structures and Libraries,23,8
+2048,Houston We've Got a Problem!,Graph,50,7
+2049,Numbers of Ahmoc,Strings,634,5
+2050,Ramsey's Saloon,Paradigms,36,7
+2051,Karnaugh Maps I,Ad-Hoc,45,8
+2052,Karnaugh Maps II,Paradigms,2,5
+2053,ET Phone Home,Paradigms,4,6
+2054,Last Year at Marienbad,Ad-Hoc,26,9
+2055,Lisp is Better than Java C and C++,Strings,7,9
+2056,The Cube,Graph,26,9
+2057,Time Zone,Beginner,6747,1
+2058,Triangles and Regular Polygons,Ad-Hoc,1737,1
+2059,Odd Even or Cheating,Beginner,5445,2
+2060,Bino's Challenge,Beginner,7433,1
+2061,Closing Tabs,Beginner,3992,1
+2062,OBI URI,Strings,2699,3
+2063,Hunting Digletts,Mathematics,331,6
+2064,Prant and the Indecision,Data Structures and Libraries,138,9
+2065,Supermarket Line,Data Structures and Libraries,709,3
+2066,melborP A,Mathematics,165,3
+2067,The Square Game,Data Structures and Libraries,214,6
+2068,Setting up a Date,Mathematics,97,5
+2069,Inês Venezuela's Square Table,Mathematics,99,8
+2070,Counting MadSequences,Ad-Hoc,61,9
+2071,Pharaoh's Bank,Data Structures and Libraries,73,8
+2072,Anubis's Cannons,Paradigms,41,9
+2073,Cairo's Market,Graph,91,6
+2074,Varied Dishes From the Beautiful Nefertiti,Data Structures and Libraries,16,7
+2075,Zé Coquinho,Data Structures and Libraries,21,7
+2076,Great Allocation of Commodities,Mathematics,34,8
+2077,Los buses de Cartagena,Data Structures and Libraries,19,7
+2078,Green Peace! World Hypocrisy!,Ad-Hoc,16,5
+2079,War Product,Graph,36,7
+2080,Röntgen Sequences,Paradigms,60,10
+2081,Dreams Believe Them!,Graph,95,10
+2082,Time Travel,Graph,47,9
+2083,On The Side Of The Road,Computational Geometry,42,10
+2084,Elections,Mathematics,505,4
+2085,Little Red-Cap,Graph,54,8
+2086,Bike Land,Graph,109,5
+2087,Good And Bad Sets,Strings,516,7
+2088,Dengue,Graph,254,5
+2089,Cafeteria,Paradigms,246,8
+2090,I Went to Market And Bought...,Ad-Hoc,149,6
+2091,Lonely Number,Data Structures and Libraries,705,6
+2092,Watching the Game,Data Structures and Libraries,38,9
+2093,Escaping from Escaping,Strings,104,9
+2094,Flowers of Babylon,Computational Geometry,27,10
+2095,War,Paradigms,574,5
+2096,Horace and His Primes,Mathematics,69,7
+2097,Name to Number,Strings,106,8
+2098,Treasure Island,Graph,17,5
+2099,Game of Stones,Paradigms,60,5
+2100,Xing Tzen Zu’s Movie Theater,Mathematics,141,5
+2101,Day Combinations,Mathematics,73,4
+2102,Counting in Chinese,Ad-Hoc,189,3
+2103,Harbin is Too Much Money!,Graph,128,7
+2104,Lasers,Computational Geometry,28,8
+2105,Monopoly,Paradigms,1,9
+2106,Assembling,Paradigms,185,7
+2107,The Ekaterinburg Pyramids,Mathematics,21,3
+2108,Counting Characters,Strings,1036,4
+2109,Spies's Duel,Paradigms,4,10
+2110,Sun Bath in The Garden,Data Structures and Libraries,23,10
+2111,Understanding Sorobov,Data Structures and Libraries,99,4
+2112,Scheduling Classrooms,Graph,7,7
+2113,Sverdlovsk's Incident,Paradigms,0,10
+2114,Poker,Mathematics,5,9
+2115,Production in Ekaterinburg,Paradigms,546,6
+2116,Students Game,Ad-Hoc,553,2
+2117,Help Me Master,Graph,62,10
+2118,What Headquarter?,Graph,53,10
+2119,Goão and Stairs,Paradigms,30,10
+2120,Tutors,Data Structures and Libraries,55,10
+2121,Tourism in Yekaterinburg,Graph,1,9
+2122,Voting at Yekaterinburg,Data Structures and Libraries,32,9
+2123,The Law Goes on Horseback!,Ad-Hoc,153,7
+2124,Mrs. Montagny Menu!,Paradigms,68,6
+2125,Totems Builders,Ad-Hoc,25,10
+2126,Searching Subsequences,Beginner,1678,3
+2127,Vine System,Graph,198,7
+2128,Demonstration of Honesty!,Graph,31,10
+2129,Factorial,Mathematics,325,8
+2130,Worldwide Finals in 2008,Graph,104,8
+2131,Mrs. Montagny's Table,Graph,327,7
+2132,Not One More Canadian Game!,Strings,187,6
+2133,Dinostratus Numbers,Mathematics,54,9
+2134,Who Will Fail?,Ad-Hoc,436,6
+2135,Retrieval,Mathematics,151,4
+2136,Friends of Habay,Data Structures and Libraries,1056,2
+2137,The Library of Mr. Severino,Strings,2923,1
+2138,Most Frequent Digit,Ad-Hoc,593,2
+2139,Pedrinho's Christmas,Beginner,2283,3
+2140,Two Bills,Beginner,3123,1
+2141,P4 Simplified,Ad-Hoc,16,7
+2142,Stop the Pigeon!,Ad-Hoc,59,9
+2143,The Return of Radar,Beginner,1874,2
+2144,Bodybuilder,Ad-Hoc,760,2
+2145,The Love Life of the Numbers,Mathematics,83,8
+2146,Password,Beginner,4860,1
+2147,Galopeira,Beginner,3958,2
+2148,Dice Seat,Mathematics,116,6
+2149,The Uncle Phill Bonati's Sequence,Mathematics,955,3
+2150,Alien Vowels,Strings,770,4
+2151,Rulk's Punch,Ad-Hoc,306,4
+2152,Pepe I Already Took the Candle!,Beginner,3612,2
+2153,Sanduicheiche,Strings,349,4
+2154,Polynomial Derivative,Mathematics,288,3
+2155,The Lizard's Icosahedrons,Graph,41,9
+2156,The Adventures of Pak-man,Ad-Hoc,153,5
+2157,Mirror Sequence,Strings,2089,3
+2158,Helping Uncle Cláudio,Computational Geometry,360,5
+2159,Approximate Number of Primes,Beginner,2251,2
+2160,Name at Form,Beginner,4345,3
+2161,Square Root of 10,Beginner,2413,1
+2162,Peaks and Valleys,Beginner,3020,4
+2163,The Force Awakens,Beginner,2813,4
+2164,Fast Fibonacci,Beginner,3552,2
+2165,Twitting,Beginner,5497,2
+2166,Square Root of 2,Beginner,2410,1
+2167,Engine Failure,Beginner,3565,1
+2168,Twilight at Portland,Beginner,1816,1
+2169,Help Leonardo!,Paradigms,79,8
+2170,Taxes of Project,Mathematics,818,6
+2171,Sharing with Fink,Ad-Hoc,160,2
+2172,Event,Beginner,3131,1
+2173,Slush Fund,Graph,213,5
+2174,Pomekon Collection,Strings,2367,3
+2175,What is the Fastest?,Ad-Hoc,1291,2
+2176,Parity,Beginner,3184,1
+2177,Rio 2016,Mathematics,277,9
+2178,Blue Lagoon,Ad-Hoc,215,7
+2179,Batuke,Ad-Hoc,188,3
+2180,Travel to Mars in Primo Speed,Mathematics,607,2
+2181,URI - Uireb Rhom uin Iavas,Paradigms,70,9
+2182,Luciano and the Bike,Graph,138,9
+2183,Final Battle,Paradigms,66,10
+2184,Pomekons,Graph,105,9
+2185,Playing with Pomekons,Data Structures and Libraries,114,7
+2186,Bino Prant and Indecision,Data Structures and Libraries,42,10
+2187,Bits Exchanged,Ad-Hoc,739,3
+2188,Capuchin Monkey,Ad-Hoc,200,6
+2189,Kermesse,Ad-Hoc,886,2
+2190,Optical Network,Graph,139,10
+2191,Goal Difference,Ad-Hoc,243,6
+2192,To Add or to Multiply,Ad-Hoc,2,5
+2193,Affine Mess,Ad-Hoc,1,1
+2194,Ancient Messages,Ad-Hoc,19,3
+2195,Chips Challenge,Ad-Hoc,3,2
+2196,Coffee Central,Ad-Hoc,10,1
+2197,Machine Works,Ad-Hoc,4,1
+2199,Mining Your Own Business,Ad-Hoc,11,7
+2200,Mummy Madness,Ad-Hoc,7,9
+2201,Pyramids,Ad-Hoc,4,8
+2202,Trash Removal,Ad-Hoc,27,8
+2203,Crowstorm,Beginner,1212,4
+2204,Stop The Bomb!,Mathematics,182,5
+2205,Asteroid Rangers,Ad-Hoc,4,1
+2207,Bus Tour,Ad-Hoc,6,6
+2208,Fibonacci Words,Ad-Hoc,24,5
+2209,Infiltration,Ad-Hoc,0,10
+2210,Keys,Ad-Hoc,1,4
+2211,Minimum Cost Flow,Ad-Hoc,4,1
+2212,Room Service,Ad-Hoc,1,1
+2213,A Safe Bet,Ad-Hoc,6,7
+2214,Shortest Flight Path,Ad-Hoc,3,1
+2215,Stacking Plates,Ad-Hoc,5,1
+2216,Takeover Wars,Ad-Hoc,16,10
+2217,Nove,Ad-Hoc,729,2
+2218,The Fearful Evil-Son,Mathematics,440,1
+2219,Passing By The PokeStops,Ad-Hoc,123,7
+2220,Helping Gust-Avô,Paradigms,168,8
+2221,Pomekons Battle,Beginner,2998,2
+2222,Playing with Sets,Beginner,1099,8
+2223,Pomekon Catalog,Data Structures and Libraries,102,9
+2224,Pomekon Tournament,Paradigms,110,4
+2225,Penalization,Graph,87,10
+2226,Balloon Factory,Paradigms,45,10
+2227,Airport,Ad-Hoc,566,6
+2228,Treasure Hunt,Ad-Hoc,200,8
+2229,Folding,Ad-Hoc,211,3
+2230,Toll,Ad-Hoc,226,7
+2231,Lunar Temperature,Ad-Hoc,295,6
+2232,Pascal's Triangle,Mathematics,1430,1
+2233,Colorful Labels,Ad-Hoc,367,3
+2234,Hot Dogs,Beginner,6176,1
+2235,Walking in Time,Beginner,4992,1
+2236,Hot Potato,Paradigms,174,10
+2237,Containers,Ad-Hoc,403,6
+2238,Dividers,Mathematics,1044,8
+2239,Hex Statistics,Data Structures and Libraries,106,8
+2240,Merging Trees,Data Structures and Libraries,194,7
+2241,Go--,Data Structures and Libraries,447,5
+2242,Huaauhahhuahau,Strings,3606,2
+2243,Isosceles,Paradigms,759,5
+2244,Olympic Games,Ad-Hoc,77,10
+2245,Shrinking Polygons Kit,Computational Geometry,47,10
+2246,Tiles,Ad-Hoc,551,3
+2247,Grandma Vitória's Piggy Banks,Ad-Hoc,577,3
+2248,Internship,Ad-Hoc,535,6
+2249,Erdos Number,Ad-Hoc,91,6
+2250,Tetris,Ad-Hoc,282,6
+2251,Towers of Hanoi,Ad-Hoc,566,4
+2252,Discovering Password,Ad-Hoc,419,6
+2253,Passwords Validator,Strings,2490,4
+2254,Japanese Daisy Game,Ad-Hoc,85,6
+2255,Self-Assembly,Ad-Hoc,6,1
+2257,Surely You Congest,Ad-Hoc,9,8
+2258,Factors,Ad-Hoc,5,10
+2259,Harvard,Ad-Hoc,0,10
+2260,Low Power,Ad-Hoc,13,8
+2261,Map Tiles,Ad-Hoc,3,1
+2262,Matryoshka,Ad-Hoc,2,10
+2263,Pirate Chest,Ad-Hoc,4,7
+2265,Up a Tree,Ad-Hoc,3,1
+2266,Baggage,Ad-Hoc,0,10
+2268,Crane Balancing,Ad-Hoc,5,1
+2270,Maze Reduction,Ad-Hoc,3,1
+2272,Metal Processing Plant,Ad-Hoc,8,4
+2275,Skiing,Ad-Hoc,4,1
+2276,Surveillance,Ad-Hoc,5,3
+2278,Amalgamated Artichokes,Ad-Hoc,4,10
+2279,Asteroids,Ad-Hoc,0,10
+2280,Catering,Ad-Hoc,5,2
+2281,Cutting Cheese,Ad-Hoc,6,8
+2282,Evolution in Parallel,Ad-Hoc,0,10
+2283,Keyboarding,Ad-Hoc,0,10
+2284,Pipe Stream,Ad-Hoc,3,1
+2285,Palíndrome,Ad-Hoc,191,6
+2286,Par ou Ímpar,Ad-Hoc,930,3
+2287,Proteja sua Senha,Ad-Hoc,224,6
+2288,TV da Vovó,Ad-Hoc,166,7
+2289,Hamming Distance,Ad-Hoc,262,7
+2290,Apaixornados Numbers,Data Structures and Libraries,268,9
+2291,Divine Numbers,Mathematics,120,8
+2292,LED Panel,Strings,708,5
+2293,Campo de Minhocas,Ad-Hoc,1074,2
+2294,Duende Perdido,Ad-Hoc,173,4
+2295,Frota de Táxi,Ad-Hoc,854,1
+2296,Trilhas,Ad-Hoc,323,4
+2297,Bafo,Ad-Hoc,850,4
+2298,Mini-Poker,Ad-Hoc,105,6
+2299,Pedido de Desculpas,Ad-Hoc,223,6
+2300,Transmissão de Energia,Graph,398,5
+2301,Vivo ou Morto,Ad-Hoc,329,4
+2302,Conversa não tão Secreta,Ad-Hoc,99,10
+2303,Margaridas,Ad-Hoc,196,3
+2304,Banco Imobiliário,Ad-Hoc,335,2
+2305,Colheita de Caju,Ad-Hoc,145,8
+2306,Escada Perfeita,Ad-Hoc,152,4
+2307,Jogo de Cartas,Ad-Hoc,64,10
+2308,Museu,Ad-Hoc,41,10
+2309,Truco,Ad-Hoc,306,5
+2310,Volleyball,Beginner,3880,3
+2311,Diving,Beginner,2598,2
+2312,Medal Table,Ad-Hoc,1234,2
+2313,Which Triangle,Beginner,3425,3
+2314,Indenter,Strings,71,8
+2315,Easy Difference Between Dates,Ad-Hoc,410,2
+2316,Autorama,Ad-Hoc,103,7
+2317,Lobo Mau,Ad-Hoc,119,6
+2318,Quadrado Mágico,Ad-Hoc,165,8
+2319,Penalidade Mínima,Ad-Hoc,48,9
+2320,Subsequência,Ad-Hoc,16,6
+2321,Detectando Colisões,Ad-Hoc,365,6
+2322,Peça Perdida,Ad-Hoc,748,3
+2323,Móbile,Ad-Hoc,96,5
+2324,Pastas,Ad-Hoc,96,5
+2325,Repositórios,Ad-Hoc,144,6
+2326,Sacoleiro,Ad-Hoc,37,7
+2327,Quadrados,Ad-Hoc,415,5
+2328,Chocolate,Ad-Hoc,427,1
+2329,Pão a Metro,Ad-Hoc,288,6
+2330,Telemarketing,Ad-Hoc,98,3
+2331,Uiquipédia,Ad-Hoc,58,6
+2332,Jogo do Labirinto,Ad-Hoc,58,7
+2333,Pizza,Ad-Hoc,145,6
+2334,Little Ducks,Beginner,3157,2
+2335,Arquibaldo's Challenge,Mathematics,78,9
+2336,ABC,Strings,293,5
+2337,Pro Ability,Mathematics,161,4
+2338,Morse,Beginner,875,6
+2339,Aviões de Papel,Ad-Hoc,1272,1
+2340,Feira de Bactérias,Ad-Hoc,175,4
+2341,Número de Envelopes,Ad-Hoc,545,5
+2342,Overflow,Ad-Hoc,645,1
+2343,Caçadores de Mitos,Ad-Hoc,662,5
+2344,Notas da Prova,Ad-Hoc,1823,1
+2345,Assigning Teams,Ad-Hoc,712,3
+2346,Back to the Future,Ad-Hoc,132,8
+2347,Counting Self-Rotating Subsets,Ad-Hoc,93,7
+2348,Dating On-Line,Ad-Hoc,247,3
+2349,Farm Robot,Ad-Hoc,344,2
+2350,Game of Matchings,Ad-Hoc,198,10
+2351,Hotel Rewards,Ad-Hoc,182,8
+2352,Internet Trouble,Ad-Hoc,0,10
+2353,Just in Time,Ad-Hoc,278,5
+2354,Kill the Werewolf,Ad-Hoc,187,8
+2355,Brazil and Germany,Ad-Hoc,597,4
+2356,Bacteria I,Strings,1713,4
+2357,Violence in Syldavia,Graph,199,8
+2358,Bacteria II,Strings,40,10
+2359,Allocating Ambulances,Graph,158,9
+2360,Centrals of Supervision,Paradigms,25,10
+2361,Input and Output,Paradigms,226,7
+2362,Alien Invasion,Computational Geometry,0,10
+2363,Playing with Transformations,Paradigms,9,7
+2364,Henrique,Paradigms,2,3
+2365,Brazilian Soccer' Big Bet,Ad-Hoc,78,5
+2366,Maratona,Ad-Hoc,290,5
+2367,Competição de Chocolate,Ad-Hoc,43,7
+2368,Simulador,Ad-Hoc,20,10
+2369,Conta de Água,Ad-Hoc,1222,1
+2370,Times,Ad-Hoc,194,3
+2371,Naval Battle,Ad-Hoc,146,8
+2372,Meeting,Ad-Hoc,143,2
+2373,Garçom,Ad-Hoc,1195,1
+2374,Pneu,Ad-Hoc,2419,1
+2375,Sedex,Ad-Hoc,1671,1
+2376,Copa do Mundo,Ad-Hoc,349,2
+2377,Pedágio,Ad-Hoc,1958,1
+2378,Elevator,Ad-Hoc,767,1
+2379,Dança Indígena,Ad-Hoc,24,4
+2380,Fusões,Ad-Hoc,246,5
+2381,Lista de Chamada,Ad-Hoc,982,1
+2382,Sedex Marciano,Ad-Hoc,411,3
+2383,Altas Aventuras,Ad-Hoc,18,6
+2384,Tradutor Alienígena,Ad-Hoc,51,5
+2385,Multiplicação de Matrizes,Ad-Hoc,91,6
+2386,Telescópio,Ad-Hoc,372,1
+2387,Dentista,Ad-Hoc,216,5
+2388,Tacógrafo,Ad-Hoc,393,1
+2389,Floresta,Ad-Hoc,84,6
+2390,Escada Rolante,Ad-Hoc,293,3
+2391,Progressões Aritméticas,Ad-Hoc,107,3
+2392,Pulo do Sapo,Ad-Hoc,374,3
+2392,Pulo do Sapo,Ad-Hoc,374,3
+2393,O Mar não está para Peixe,Ad-Hoc,163,2
+2394,Corrida 1,Ad-Hoc,192,2
+2395,Transporte de Contêineres,Ad-Hoc,653,1
+2396,Corrida,Ad-Hoc,464,1
+2397,Triângulos,Ad-Hoc,645,4
+2398,Caça ao Tesouro,Ad-Hoc,73,2
+2399,Campo Minado,Ad-Hoc,716,3
+2400,Balé,Ad-Hoc,209,6
+2401,Calculadora,Ad-Hoc,247,7
+2402,Selos,Ad-Hoc,302,6
+2403,Escalonamento Ótimo,Ad-Hoc,109,5
+2404,Reduzindo Detalhes em um Mapa,Graph,411,3
+2405,Colorindo,Ad-Hoc,147,2
+2406,Expressões,Ad-Hoc,395,5
+2407,Quadrado Mágico,Ad-Hoc,192,7
+2408,Vice-Campeão,Ad-Hoc,1156,1
+2409,Colchão,Ad-Hoc,433,5
+2410,Frequencia na Aula,Ad-Hoc,759,2
+2411,O Tabuleiro Esburacado,Ad-Hoc,181,2
+2412,Tarzan,Ad-Hoc,196,8
+2413,Busca na Internet,Ad-Hoc,2082,1
+2414,Desafio do Maior Número,Ad-Hoc,1261,1
+2415,Consecutivos,Ad-Hoc,544,2
+2416,Corrida,Ad-Hoc,1626,1
+2417,Campeonato,Ad-Hoc,425,1
+2418,Carnaval,Ad-Hoc,658,2
+2419,Costa,Graph,557,4
+2420,Guerra por Território,Ad-Hoc,568,1
+2421,Álbum de Fotos,Ad-Hoc,199,6
+2422,Soma das Casas,Ad-Hoc,295,6
+2423,Receita de Bolo,Ad-Hoc,585,1
+2424,Tira-teima,Ad-Hoc,1084,2
+2425,Banco,Ad-Hoc,125,5
+2426,Bomba,Ad-Hoc,52,2
+2427,Chocolate,Ad-Hoc,513,2
+2428,Capital,Ad-Hoc,143,3
+2429,Rodovia,Graph,214,6
+2430,Catálogo de Músicas,Ad-Hoc,34,2
+2431,Lençol,Ad-Hoc,110,6
+2432,Tiro ao Alvo,Ad-Hoc,310,7
+2433,Vende-se,Ad-Hoc,112,5
+2434,Saldo do Vovô,Ad-Hoc,927,1
+2435,Corrida,Ad-Hoc,814,3
+2436,Robô,Ad-Hoc,192,2
+2437,Distância de Manhattan,Ad-Hoc,1237,4
+2438,Quadradinho de 8,Ad-Hoc,323,5
+2439,Cachecol da Vovó Vitória,Ad-Hoc,53,3
+2440,Famílias de Troia,Graph,515,5
+2441,Janela,Ad-Hoc,121,5
+2442,Plantação,Ad-Hoc,50,7
+2443,Soma de Frações,Ad-Hoc,442,3
+2444,Volume da TV,Ad-Hoc,894,1
+2445,Polígono,Ad-Hoc,96,3
+2446,Troco,Paradigms,655,7
+2447,Torneio,Ad-Hoc,20,7
+2448,Postman,Ad-Hoc,463,4
+2449,Door Lock,Ad-Hoc,314,3
+2450,Matrix Ladder,Ad-Hoc,297,4
+2451,PacMan,Ad-Hoc,493,2
+2452,Semente,Ad-Hoc,228,6
+2453,Língua do P,Ad-Hoc,876,4
+2454,Flíper,Ad-Hoc,3673,1
+2455,Gangorra,Ad-Hoc,1945,1
+2456,Cards,Ad-Hoc,1046,1
+2457,Letras,Ad-Hoc,766,2
+2458,Setas,Ad-Hoc,169,4
+2459,Copa do Mundo,Ad-Hoc,150,1
+2460,Fila,Ad-Hoc,623,6
+2461,Bluff,Ad-Hoc,104,8
+2462,Flight,Ad-Hoc,125,9
+2463,Corredor,Ad-Hoc,282,3
+2464,Decifra,Ad-Hoc,520,2
+2465,Passa Bolinha,Ad-Hoc,202,1
+2466,Sinuca,Ad-Hoc,293,2
+2467,Frequency,Ad-Hoc,44,10
+2468,Map,Ad-Hoc,92,6
+2469,Grades,Ad-Hoc,683,4
+2470,Jogo da Memória,Ad-Hoc,107,5
+2471,Quadrado,Ad-Hoc,215,2
+2472,Tapetes,Ad-Hoc,390,1
+2473,Loteria,Ad-Hoc,1320,1
+2474,Mocking the System,Mathematics,86,9
+2475,Manufacture of Presents,Paradigms,71,10
+2476,Noel's Deliveries,Graph,102,10
+2477,Distribution Network,Graph,7,10
+2478,Hit the Gift,Ad-Hoc,347,4
+2479,Sorting Santa's List of Children,Ad-Hoc,1459,1
+2480,Red Lights,Paradigms,29,9
+2481,It's a Trap Bino,Paradigms,92,9
+2482,Noel's Labels,Data Structures and Libraries,722,2
+2483,Merry Christmaaas!,Beginner,5630,1
+2484,Abracadabra,Strings,1768,5
+2485,Bicho da Goiaba,Graph,300,4
+2486,C Mais ou Menos?,Beginner,1754,3
+2487,Do Lado Escuro do Código,Ad-Hoc,39,8
+2488,É Na Batida do Cavalo!,Data Structures and Libraries,59,4
+2489,Flecha no Coelho,Mathematics,193,3
+2490,Garoto Ixpertinho,Graph,113,6
+2491,Habay e Robfilho – Os Fujões,Paradigms,11,10
+2492,Ilhas Isoladas,Data Structures and Libraries,157,4
+2493,Jogo do Operador,Beginner,592,6
+2494,Pens,Mathematics,97,8
+2495,Where is my Pen?,Data Structures and Libraries,304,7
+2496,The Only Chance,Data Structures and Libraries,465,2
+2497,Counting Cycles,Mathematics,698,1
+2498,Help Vânia,Paradigms,342,5
+2499,Internal Triangle,Mathematics,70,7
+2500,William Xorando,Ad-Hoc,54,8
+2501,Allowed Factors,Paradigms,40,10
+2502,Deciphering the Encrypted Card,Beginner,690,6
+2503,Regularity Race,Data Structures and Libraries,37,9
+2504,Biorythm,Ad-Hoc,7,6
+2505,Autopotential,Mathematics,164,6
+2506,Medical Clinic Queue,Data Structures and Libraries,80,9
+2507,Hamming Code,Ad-Hoc,3,10
+2508,Fortune Teller,Ad-Hoc,318,3
+2509,Latex Editor,Strings,11,5
+2510,Batmain,Beginner,2127,2
+2511,WWW,Ad-Hoc,181,8
+2512,Reverse Game,Ad-Hoc,19,9
+2513,Xoringan,Ad-Hoc,33,10
+2514,Lunar Alignment,Mathematics,315,1
+2515,Cracker,Ad-Hoc,187,6
+2516,Running,Mathematics,511,2
+2517,PoGro Challenge,Computational Geometry,43,5
+2518,FNDI's Staircase,Computational Geometry,550,3
+2519,Winning Strategy,Data Structures and Libraries,58,7
+2520,The Last Analógimôn,Beginner,1096,4
+2521,Ask the Geographer,Computational Geometry,55,3
+2522,FNDI's Network,Graph,162,7
+2523,Will's Message,Beginner,2040,2
+2524,Strawberry Candies,Paradigms,126,7
+2525,Traveling Cacher,Computational Geometry,49,10
+2526,Menu,Data Structures and Libraries,80,7
+2527,Cheddar,Paradigms,103,9
+2528,Forbidden City,Graph,167,5
+2529,Flea Circus,Graph,47,9
+2530,Cheating,Ad-Hoc,169,5
+2531,Shopping in FdI,Data Structures and Libraries,345,7
+2532,Demogorgon,Paradigms,274,6
+2533,Internship,Beginner,1065,2
+2534,General Exam,Beginner,2045,2
+2535,Adoption Fair,Strings,144,7
+2536,FHBZMIPS,Ad-Hoc,32,7
+2537,GigaDrive,Data Structures and Libraries,83,6
+2538,Gym,Data Structures and Libraries,113,7
+2539,High Five,Ad-Hoc,140,8
+2540,Leader's Impeachment,Beginner,1454,2
+2541,Ingrest,Computational Geometry,63,6
+2542,Iu-Di-Oh!,Beginner,1020,4
+2543,UFPR Gaming,Beginner,1058,2
+2544,Kage Bunshin no Jutsu,Beginner,1617,3
+2545,Manyfile,Graph,157,7
+2546,Allowance,Data Structures and Libraries,140,8
+2547,Roller Coaster,Beginner,1420,2
+2548,3D Virtual Museum,Ad-Hoc,360,3
+2549,Usernames,Strings,200,8
+2550,New Campus,Graph,193,7
+2551,New Record,Beginner,730,3
+2552,CheeseBreadSweeper,Beginner,1438,3
+2553,Tour in FdI,Paradigms,177,8
+2554,Pizza Before BH,Beginner,703,3
+2555,University Quiz,Paradigms,30,7
+2556,CEI's Reopening,Ad-Hoc,118,1
+2557,R+L=J,Strings,559,3
+2558,Vacuum Cleaner Robot,Graph,36,9
+2559,Friday The 13th,Data Structures and Libraries,44,10
+2560,Aquatic Surf,Data Structures and Libraries,264,8
+2561,Treasure,Computational Geometry,54,7
+2562,Analógimôn Types,Graph,381,6
+2563,Transfer to the Professor,Paradigms,133,6
+2564,Swap It or Not?,Ad-Hoc,84,5
+2565,Test Tubes,Ad-Hoc,88,4
+2566,Trip to BH,Graph,156,6
+2567,Virus,Ad-Hoc,590,3
+2568,Actions,Ad-Hoc,319,2
+2569,The 7 x 1 Witch,Ad-Hoc,545,3
+2570,Californication,Ad-Hoc,147,9
+2571,Donor,Ad-Hoc,72,9
+2572,Line-up,Ad-Hoc,141,10
+2573,Treasure Hunt,Ad-Hoc,44,10
+2574,Capybara Lagoon,Ad-Hoc,48,8
+2575,Christmas Tree,Ad-Hoc,87,9
+2576,Reversing Arrows,Ad-Hoc,154,6
+2577,Box Game,Ad-Hoc,18,10
+2578,Ontarama Meraini,Ad-Hoc,41,9
+2579,Nagol,Ad-Hoc,286,6
+2580,Master Pokémon Ho,Ad-Hoc,6,9
+2581,I am Toorg!,Beginner,2408,1
+2582,System of a Download,Beginner,2227,2
+2583,Chirrin Chirrion,Strings,206,3
+2584,Pentagon,Mathematics,302,4
+2585,Incomplete Dominoes,Graph,44,6
+2586,Cubenacci,Ad-Hoc,33,5
+2587,Jetiqui,Strings,356,3
+2588,Game of Palindromes,Strings,398,2
+2589,The Biggest Prime Gap,Mathematics,194,9
+2590,Seven,Ad-Hoc,946,8
+2591,HameKameKa,Strings,574,2
+2592,VaiNaSort,Ad-Hoc,408,1
+2593,Eachians I,Data Structures and Libraries,533,7
+2594,Eachians II,Data Structures and Libraries,564,5
+2595,Cash Roial,Ad-Hoc,117,6
+2596,Xenlonguinho,Mathematics,522,1
+2597,Xenlongão,Mathematics,148,6
+2598,Placing Radars,Mathematics,833,1
+2599,Counting Radars,Paradigms,159,8
+2600,Tustin and His New Die,Ad-Hoc,546,5
+2601,Tustin and His Old Die,Ad-Hoc,84,6
+2602,Basic Select,SQL,6689,2
+2603,Customer Address,SQL,5683,2
+2604,Under 10 or Greater Than 100,SQL,5031,1
+2605,Executive Representatives,SQL,3686,3
+2606,Categories,SQL,3359,4
+2607,Providers' City in Alphabetical Order,SQL,3517,1
+2608,Higher and Lower Price,SQL,3274,1
+2609,Products by Categories,SQL,2469,6
+2610,Average Value of Products,SQL,2457,3
+2611,Action Movies,SQL,2581,3
+2612,The Actors Silva,SQL,2079,5
+2613,Cheap Movies,SQL,2231,2
+2614,September Rentals,SQL,1778,4
+2615,Expanding the Business,SQL,2131,1
+2616,No Rental,SQL,1698,4
+2617,Provider Ajax SA,SQL,1851,2
+2618,Imported Products,SQL,1771,2
+2619,Super Luxury,SQL,1645,2
+2620,Orders in First Half,SQL,1483,3
+2621,Amounts Between 10 and 20,SQL,1628,2
+2622,Legal Person,SQL,1702,1
+2623,Categories with Various Products,SQL,1333,6
+2624,Number of Cities per Customers,SQL,1737,2
+2625,CPF Validation,SQL,1049,4
+2626,JB6 Team,Beginner,406,5
+2627,Automaton Team,Ad-Hoc,60,10
+2628,Treasure Hunt,Ad-Hoc,35,10
+2629,Rodoido,Ad-Hoc,50,3
+2630,Greyscale,Beginner,1004,4
+2631,Making Pairs,Beginner,140,9
+2632,Magic and Sword,Beginner,100,7
+2633,Barbecue at Yuri’s,Beginner,851,3
+2634,On Behalf of The Science,Beginner,11,9
+2635,Web Browser,Beginner,171,4
+2636,3-RSA,Beginner,254,7
+2637,Batera’s House,Beginner,4,10
+2639,Get a Clue!,Beginner,7,5
+2640,Mission Improbable,Beginner,9,9
+2641,Money for Nothing,Ad-Hoc,6,10
+2643,Posterize,Beginner,9,5
+2644,Replicate Replicate Rfplicbte,Ad-Hoc,4,1
+2645,Scenery,Ad-Hoc,0,10
+2646,Secret Chamber at Mount Rushmore,Beginner,125,6
+2648,Tarot Sham Boast,Beginner,6,7
+2650,Building Walls,Ad-Hoc,481,5
+2651,Upset Link,Strings,1365,4
+2652,How Many Trees?,Graph,38,9
+2653,Dijkstra,Beginner,1061,3
+2654,Godofor,Ad-Hoc,292,5
+2655,Dangerous Trail,Data Structures and Libraries,160,9
+2656,Rhombus,Data Structures and Libraries,37,10
+2657,Sensate,Graph,88,10
+2658,Acordes Intergaláticos,Data Structures and Libraries,288,8
+2659,Brincadeira,Ad-Hoc,120,8
+2661,Despojados,Mathematics,600,6
+2662,Escala Musical,Ad-Hoc,393,4
+2663,Fase,Beginner,1529,5
+2664,Ginástica,Paradigms,667,4
+2665,Hipercampo,Computational Geometry,221,6
+2666,Imposto Real,Graph,380,3
+2667,Jogo de Boca,Mathematics,969,2
+2668,K-ésimo,Mathematics,92,8
+2669,Laboratório de Biotecnologia,Strings,154,10
+2670,Máquina de Café,Beginner,3225,3
+2671,Decoding the Text,Data Structures and Libraries,36,9
+2672,Network Mask,Ad-Hoc,42,7
+2673,Serial and Parallel Resistors,Ad-Hoc,35,8
+2674,Super Primes: Engage!,Beginner,1190,6
+2675,Steal Pack,Ad-Hoc,134,6
+2676,City in the Center,Graph,95,7
+2677,Even or Odd,Paradigms,194,8
+2678,Voice Dialing,Strings,331,6
+2679,Even Successor,Ad-Hoc,1929,1
+2680,Payroll,Mathematics,254,8
+2681,Monkeys at Hanoi Tower,Mathematics,102,7
+2682,Fault Detector,Ad-Hoc,816,5
+2683,Design Space,Graph,220,4
+2684,Help Professor Webscript!!,Beginner,24,10
+2685,The Change,Beginner,633,5
+2686,The Change Continues!!,Beginner,157,5
+2687,Bacterial Domination,Beginner,76,4
+2688,Choosing a Place,Graph,9,10
+2689,Game of the Miao,Beginner,55,3
+2690,New Password RA,Beginner,511,5
+2691,The Mathematician,Strings,625,3
+2692,Zoeiro Keyboard,Strings,787,4
+2693,Van,Ad-Hoc,645,4
+2694,Problem with the Calculator,Strings,1048,1
+2695,Arranging Tiles,Beginner,31,10
+2697,Complete Naebbirac’s Sequence,Strings,181,7
+2698,Daunting Device,Beginner,77,8
+2699,Enigma,Beginner,143,5
+2700,Fundraising,Beginner,96,9
+2701,Gates of Uncertainty,Beginner,44,8
+2702,Hard Choice,Beginner,1962,1
+2703,Imperial Roads,Beginner,173,9
+2704,Jumping Frog,Beginner,72,8
+2705,Keep It Covered,Beginner,40,5
+2706,Linearville,Beginner,20,8
+2708,Tourists in the Huacachina Park,Beginner,590,2
+2709,The Coins of Robbie,Beginner,119,9
+2710,Game of Array,Beginner,39,10
+2711,Unlocking a Cell Phone,Mathematics,84,10
+2712,Vehicular Restriction,Beginner,751,4
+2713,The Wizard is Relentless,Paradigms,52,6
+2714,My Temporary Password,Strings,488,2
+2715,Splitting Assignments I,Beginner,212,8
+2716,Splitting Assignments II,Paradigms,322,8
+2717,Elf Time,Beginner,2734,2
+2718,Christmas Lights,Beginner,461,5
+2719,How Many Trips Will Noel Make?,Ad-Hoc,425,4
+2720,Large Presents,Beginner,291,9
+2721,Indecision of Reindeers,Beginner,1200,1
+2722,Evergreen Trick,Strings,601,4
+2723,Balancing Gifts,Paradigms,155,6
+2724,Help Patatatitu,Beginner,168,5
+2725,Christmas Village,Graph,108,5
+2726,Full Sleigh,Mathematics,28,9
+2727,Secret Code,Beginner,579,3
+2728,Grace Hopper Grandma of Cobol,Strings,626,5
+2729,Shopping List,Data Structures and Libraries,573,5
+2730,Paired Pairs,Ad-Hoc,158,6
+2731,Trip Programming,Graph,87,4
+2732,Alice's Kingdom,Graph,147,5
+2733,The Reader's Locker,Ad-Hoc,103,4
+2734,Trading Presents,Data Structures and Libraries,266,9
+2735,Nina's Gift,Mathematics,46,7
+2736,Avalon Numbers,Ad-Hoc,26,7
+2737,Lawyers,SQL,806,7
+2738,Contest,SQL,827,5
+2739,Payday,SQL,790,4
+2740,League,SQL,698,4
+2741,Students Grades,SQL,870,3
+2742,Richards Multiverse,SQL,692,5
+2743,Number of Characters,SQL,789,2
+2744,Passwords,SQL,761,1
+2745,Taxes,SQL,730,2
+2746,Viruses,SQL,817,1
+2747,Output 1,Beginner,2442,3
+2748,Output 2,Beginner,1914,1
+2749,Output 3,Beginner,1550,3
+2750,Output 4,Beginner,1136,5
+2751,Output 5,Beginner,862,5
+2752,Output 6,Beginner,1066,1
+2753,Output 7,Beginner,1379,1
+2754,Output 8,Beginner,926,2
+2755,Output 9,Beginner,1011,7
+2756,Output 10,Beginner,1609,1
+2757,Input and Output of Integers,Beginner,780,5
+2758,Floating Number Input and Output,Beginner,619,7
+2759,Input and Output Character,Beginner,963,1
+2760,String Input and Output,Beginner,818,4
+2761,Input and Output of Various Types,Beginner,346,8
+2762,Input and Output 6,Beginner,991,3
+2763,CPF Input and Output,Beginner,1791,1
+2764,Date Input and Output,Beginner,1516,1
+2765,Coming Input and Output,Beginner,1255,3
+2766,Input and Output Reading and Skipping Names,Beginner,1203,2
+2767,Party,Mathematics,130,9
+2768,Dabriel's Graph,Graph,119,9
+2769,Assembly Line,Beginner,131,5
+2770,Board Size,Beginner,405,6
+2771,Average,Ad-Hoc,127,6
+2772,Plantation,Beginner,44,10
+2773,Shortest Path,Computational Geometry,79,5
+2774,Sensor Accuracy,Beginner,219,4
+2775,Preparing Production,Beginner,134,5
+2776,Promotions,Beginner,84,9
+2777,Dabriel's Subsets,Mathematics,46,5
+2778,Dabriel's Matrix,Paradigms,41,10
+2779,Album of the Cup,Beginner,548,2
+2780,Robot Basketball,Beginner,1692,1
+2781,Compensation Camera,Beginner,111,5
+2782,Stepladder,Beginner,290,3
+2783,Cup Stickers,Beginner,726,3
+2784,Islands,Beginner,167,5
+2785,Pyramid,Beginner,147,5
+2786,School Floor,Beginner,1196,1
+2787,Chess,Beginner,1968,1
+2788,Class,Ad-Hoc,17,10
+2789,Water Crisis,Ad-Hoc,51,8
+2790,Dices,Ad-Hoc,136,3
+2791,Bean,Beginner,1405,1
+2792,Golnaldinho,Ad-Hoc,212,8
+2793,HM,Ad-Hoc,62,4
+2794,Lighter Mounts,Ad-Hoc,240,2
+2795,Palindrome,Ad-Hoc,57,6
+2796,Houseplant,Ad-Hoc,257,4
+2797,Applying Tests,Ad-Hoc,82,5
+2798,Lero-Lero of Mineira,Ad-Hoc,46,10
+2799,Northern Choir,Paradigms,5,5
+2800,Playing with Queries,Data Structures and Libraries,108,9
+2801,Affine Cipher,Mathematics,22,8
+2802,Dividing Circles,Beginner,286,7
+2803,States from the North,Ad-Hoc,468,2
+2804,Railways,Beginner,29,8
+2805,Binarizing the Matrix,Data Structures and Libraries,10,1
+2806,Typical Ingredients,Ad-Hoc,21,10
+2807,Iccanobif,Beginner,742,2
+2808,Knights Again,Beginner,488,1
+2809,K-th Path,Graph,30,9
+2810,Dengue 2.0,Graph,19,9
+2811,Sibi-Xor,Paradigms,23,9
+2812,Laércio,Beginner,257,4
+2813,Avoiding Rain,Beginner,249,5
+2814,Loud Music,Ad-Hoc,72,1
+2816,Dabriel's Palindrome,Graph,36,9
+2817,Darlan's Gas Station,Mathematics,60,8
+2818,Funny Game,Paradigms,33,9
+2819,Letters To Santa,Mathematics,18,5
+2820,Bruna's Digits,Mathematics,31,8
+2821,Cards Distribution,Data Structures and Libraries,9,4
+2822,My First Little Graph,Mathematics,29,10
+2823,Eearliest Deadline First,Beginner,73,6
+2824,Pudim,Strings,141,8
+2825,L as in Atreus!?,Strings,56,8
+2826,Lexical,Beginner,522,2
+2827,Tokens Frequency,Beginner,94,7
+2828,Anagrams,Beginner,105,9
+2829,Uppercase Why?,Beginner,168,7
+2830,Copa,Ad-Hoc,188,4
+2831,Pesos,Ad-Hoc,160,2
+2832,Cápsulas,Ad-Hoc,168,5
+2833,Campeonato,Ad-Hoc,136,3
+2834,Fuga,Ad-Hoc,50,2
+2835,Elevador,Ad-Hoc,167,4
+2836,Wifi,Ad-Hoc,25,7
+2837,Sequência,Ad-Hoc,63,7
+2838,The Infinity Gems,Graph,26,6
+2839,The Rangel Stockings,Mathematics,365,4
+2840,Balloon++,Computational Geometry,602,1
+2841,Dabriel and Your Party,Beginner,33,8
+2842,Dabriel and Your Strings,Paradigms,58,5
+2843,Fast Writing the Competition,Ad-Hoc,57,8
+2844,Fast Writing the Duel,Ad-Hoc,155,2
+2845,Party at the North Pole,Beginner,237,2
+2846,Fibonot,Beginner,475,3
+2847,Paper Scissors I Love You!,Ad-Hoc,179,4
+2848,Rangel and the Array Game I,Data Structures and Libraries,39,4
+2849,Rangel and the Array Game II,Data Structures and Libraries,60,10
+2850,Polyglot Parrot,Beginner,908,3
+2851,Rangel's Challenge,Ad-Hoc,103,9
+2852,Messaging,Beginner,136,5
+2853,Bibika's Inventions,Ad-Hoc,83,7
+2854,Family Tree,Graph,197,2
+2855,Lucky Numbers,Beginner,217,9
+2856,Cheese Bread Trip,Paradigms,90,6
+2857,SpeedWagon Flow,Data Structures and Libraries,115,7
+2858,Infinite Board,Ad-Hoc,61,9
+2859,Digit Root,Mathematics,82,9
+2860,Peace in Spar-Ta,Data Structures and Libraries,19,8
+2861,The Output,Beginner,901,1
+2862,Insect!,Beginner,1289,1
+2863,Umil Bolt,Beginner,1034,3
+2864,How Tall is It?,Mathematics,203,4
+2865,Binary Palindrome,Ad-Hoc,38,5
+2866,Cryptotext,Strings,588,2
+2867,Digits,Beginner,896,5
+2868,Wrrrong!,Ad-Hoc,350,4
+2868,Wrrrong!,Ad-Hoc,350,4
+2869,Talking about Divisor ...,Beginner,139,10
+2870,Map Game,Graph,9,4
+2871,Coffee Harvest,Ad-Hoc,244,2
+2872,TCP/IP Protocol,Data Structures and Libraries,109,7
+2873,Pyramid,Mathematics,104,4
+2874,Binary Phrase,Ad-Hoc,194,2
+2875,Tunnel Game,Ad-Hoc,31,1
+2876,Aventurando-se no Slackline,Ad-Hoc,16,8
+2877,Bolinhas de Gude,Paradigms,82,9
+2878,Cortador de Pizza,Mathematics,298,9
+2879,Desvendando Monty Hall,Beginner,1011,1
+2880,Enigma,Strings,536,4
+2881,Festival,Paradigms,173,9
+2882,Gasolina,Paradigms,69,7
+2883,Hipótese Policial,Graph,12,8
+2884,Interruptores,Ad-Hoc,267,5
+2885,Juntando Capitais,Graph,18,3
+2886,Kepler,Mathematics,22,10
+2887,Linhas de Metrô,Graph,118,8
+2888,Modificando SAT,Paradigms,13,6
+2889,Tasco Is Always Runner-up!,Data Structures and Libraries,56,8
+2890,Coloring Tetrahedrons,Mathematics,34,1
+2891,A Problem With A Happy Ending,Computational Geometry,25,5
+2892,Training On The Velodrome,Mathematics,33,9
+2893,Fibonac^{k}i,Data Structures and Libraries,54,3
+2894,Virus,Graph,16,7
+2895,Balance Scales,Paradigms,34,7
+2896,Enjoy the Offer,Beginner,897,2
+2897,Command History,Ad-Hoc,29,8
+2898,Olympiads,Ad-Hoc,2,1
+2899,Series of Tubes,Ad-Hoc,9,6
+2900,Game of Rods,Ad-Hoc,56,8
+2901,Martian Volleyball,Ad-Hoc,3,6
+2902,Rouba Monte,Ad-Hoc,24,2
+2903,A Symmetrical Pizza,Ad-Hoc,381,6
+2904,Building a Field,Ad-Hoc,275,7
+2905,Cheap Trips,Ad-Hoc,165,6
+2906,Database of Clients,Ad-Hoc,312,2
+2907,Escape Polygon!,Ad-Hoc,49,7
+2908,Fantastic Beasts,Ad-Hoc,51,10
+2909,Gathering Red-Black Fruits,Ad-Hoc,14,10
+2910,Highway Decommission,Ad-Hoc,222,9
+2911,Ink Colors,Ad-Hoc,66,7
+2912,Jeopardized Election,Ad-Hoc,5,10
+2913,KryptoLocker Ate my Homework,Ad-Hoc,41,10
+2914,Looking for the Risk Factor,Ad-Hoc,183,8
+2915,Mount Marathon,Ad-Hoc,306,2
+2916,The Note,Data Structures and Libraries,199,9
+2917,String,Paradigms,38,6
+2918,Smart Digits,Paradigms,26,9
+2919,Best Order,Paradigms,71,9
+2920,Small Number,Paradigms,40,7
+2921,Alien Charts,Paradigms,40,6
+2922,Classrooms,Ad-Hoc,125,6
+2923,Birinho,Ad-Hoc,108,3
+2924,BigInt,Ad-Hoc,218,3
+2925,IccanobiF Sequence,Ad-Hoc,82,5
+2926,So This is Christmas!,Ad-Hoc,377,1
+2927,Unforeseen at Christmas,Ad-Hoc,195,2
+2928,Crossing Lakes,Ad-Hoc,121,1
+2929,Smallest on the Stack,Data Structures and Libraries,175,9
+2930,Final Thesis of Christmas Depression,Beginner,381,5
+2931,Suspicious Gifts,Ad-Hoc,70,5
+2932,Santa's Reindeers,Paradigms,36,9
+2933,Earth Sled Tour,Graph,31,7
+2934,Noel and His Reindeer,Paradigms,34,8
+2935,DNA of Elf,Ad-Hoc,14,6
+2936,How Much Cassava?,Ad-Hoc,94,5
+2937,Snake Norato,Ad-Hoc,0,5
+2938,Jaçanã,Ad-Hoc,42,5
+2939,Couples,Ad-Hoc,43,5
+2940,Broken Time Machine,Ad-Hoc,4,5
+2941,Optical Fiber,Ad-Hoc,16,5
+2942,Bits Mixing,Ad-Hoc,9,5
+2943,Smider Pan,Ad-Hoc,24,5
+2944,Emergency in Manaus,Ad-Hoc,14,5
+2945,Monitor,Ad-Hoc,16,5
+2946,Dabriel and the Divisibility,Ad-Hoc,44,5
+2947,Correct Answers,Ad-Hoc,47,5
+2948,Açaí Planting,Ad-Hoc,20,5
