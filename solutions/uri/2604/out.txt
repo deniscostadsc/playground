@@ -1,7 +1,7 @@
- id 
-----
-  2
-  3
-  5
+ id |     name     
+----+--------------
+  2 | Dining table
+  3 | Towel holder
+  5 | Chair
 (3 rows)
 
