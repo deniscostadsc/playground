@@ -1,0 +1,10 @@
+      city      
+----------------
+ Belo Horizonte
+ Curitiba
+ Porto Alegre
+ Rio de Janeiro
+ Salvador
+ São Paulo
+(6 rows)
+
