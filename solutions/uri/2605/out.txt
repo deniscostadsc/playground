@@ -1,0 +1,6 @@
+     name      |      name      
+---------------+----------------
+ Computer desk | Guilerme Staff
+ Chair         | Caroline Silva
+(2 rows)
+
