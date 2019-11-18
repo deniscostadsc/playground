@@ -1,0 +1,7 @@
+ id |        name        
+----+--------------------
+  2 | Table for painting
+  3 | Notebook desk
+  5 | Chair
+(3 rows)
+
