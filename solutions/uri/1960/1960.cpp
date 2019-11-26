@@ -2,13 +2,11 @@
 #include <iostream>
 #include <map>
 #include <string>
-#include <vector>
 
 int main() {
-    int integer, number_of_digits, multiplier, current_digit;
+    int integer, multiplier, current_digit;
     std::map<int, std::string> int_roman_base;
     std::string roman;
-    std::vector<int> splitted_integer;
 
     int_roman_base[0] = "";
     int_roman_base[1] = "I";
