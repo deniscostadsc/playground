@@ -1,21 +1,26 @@
 #include <iostream>
+#include <string>
 
 int main() {
     long int m, n, sum, divisor;
+    std::string str_sum;
 
     while (std::cin >> m >> n && m && n) {
         sum = m + n;
 
-        while (sum) {
-            divisor = 1;
-            while (divisor <= sum) {
-                divisor *= 10;
-            }
-            divisor /= 10;
+        str_sum = std::to_string(sum);
 
-            std::cout << sum / divisor;
-            sum -= (sum / divisor) * divisor;
+        size_t index = 0;
+        while (true) {
+            index = str_sum.find("0", index);
+
+            if (index == std::string::npos) {
+                break;
+            }
+
+            str_sum.replace(index, 1, "");
         }
-        std::cout << std::endl;
+
+        std::cout << str_sum << std::endl;
     }
 }
