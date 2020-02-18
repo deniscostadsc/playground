@@ -1,0 +1,5 @@
+Invalido
+Valido-Isoceles
+Retangulo: N
+Valido-Escaleno
+Retangulo: S
