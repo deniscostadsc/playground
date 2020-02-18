@@ -17,6 +17,8 @@ function get_output {
     input="$3"
     form_token="$4"
 
+    response_html=$(mktemp)
+
     curl -s "https://www.udebug.com/$site/$problem" \
         -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0' \
         -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' \
@@ -36,11 +38,13 @@ function get_output {
         --data 'output_data=' \
         --data 'user_output=' \
         --data "form_build_id=$form_token" \
-        --data 'form_id=udebug_custom_problem_view_input_output_form' > udebug-temp.html
+        --data 'form_id=udebug_custom_problem_view_input_output_form' > "$response_html"
 
-    hxextract textarea udebug-temp.html 2> /dev/null |\
+    hxextract textarea "$response_html" 2> /dev/null |\
         hxselect 'textarea#edit-output-data' |\
         sed 's/<[^>]*>//g'
+
+    rm "$response_html"
 }
 
 function check_file {
@@ -107,5 +111,3 @@ else
         get_output "${site:-URI}" "$problem_id" "$line" "$form_token"
     done < "$input_file"
 fi
-
-rm udebug-temp.html
