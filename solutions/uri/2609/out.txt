@@ -1,0 +1,8 @@
+  name   |  sum  
+---------+-------
+ luxury  |   350
+ modern  | 13000
+ wood    |   850
+ vintage |  1000
+(4 rows)
+
