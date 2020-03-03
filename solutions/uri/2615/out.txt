@@ -1,0 +1,9 @@
+     city      
+---------------
+ Uberlândia
+ Canoas
+ Ponta Grossa
+ Várzea Grande
+ Salvador
+(5 rows)
+
