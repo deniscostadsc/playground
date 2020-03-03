@@ -1,0 +1,5 @@
+ id |    name    
+----+------------
+  3 | White Duck
+(1 row)
+
