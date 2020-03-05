@@ -13,8 +13,19 @@ function run_cpp {
 
     if [[ -f in.txt ]]; then
         ./a.out < in.txt > result.txt
+        diff out.txt result.txt
+    elif [ -f in-01.txt ]; then
+        for input_file in in-??.txt; do
+            output_suffix="$(echo "$input_file" | grep -o '[0-9]\{2\}')"
+            if [ -f "out-${output_suffix}.txt" ]; then
+                echo "input ${output_suffix}"
+                ./a.out < "$input_file" > result.txt
+                diff "out-${output_suffix}.txt" result.txt
+            fi
+        done
     else
         ./a.out > result.txt
+        diff out.txt result.txt
     fi
 
     rm a.out
@@ -51,7 +62,6 @@ function run_sql {
 function run_and_check {
     if [[ "$(find . -name '*.cpp' | wc -l)" -eq 1 ]]; then
         run_cpp
-        diff out.txt result.txt
     fi
 
     if [[ "$(find . -name '*.c' | wc -l)" -eq 1 ]]; then

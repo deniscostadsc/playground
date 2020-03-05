@@ -61,13 +61,15 @@ function help () {
     echo
     echo "  -s | --site <programming contest site>"
     echo "  -p | --problem <problem code>"
-    echo "  -i | --input <input file>"
+    echo "  -i | --input-file <input file>"
+    echo "  -m | --multiple-input-files"
     echo "  -l | --split-lines"
     echo "  -h | --help"
     echo
 }
 
 split_lines=0
+single_input_file=0
 while [ $# -gt 0 ]; do
     case $1 in
         -h|--help)
@@ -84,13 +86,20 @@ while [ $# -gt 0 ]; do
             site="$1"
             shift
         ;;
-        -i|--input)
+        -i|--input-file)
             shift
+            single_input_file=1
             input_file="$1"
             shift
         ;;
+        -m|--multiple-input-files)
+            multiple_input_files=1
+            shift
+        ;;
         -l|--split-lines)
+            shift
             split_lines=1
+            split_lines_count="$1"
             shift
         ;;
         *)
@@ -100,14 +109,37 @@ while [ $# -gt 0 ]; do
     esac
 done
 
-check_file "$input_file"
+site="${site:-URI}"
 
-if [ $split_lines -eq 0 ]; then
-    form_token="$(get_form_token "${site:-URI}" "$problem_id")"
-    get_output "${site:-URI}" "$problem_id" "$(cat "$input_file")" "$form_token"
-else
-    while read -r line; do
-        form_token="$(get_form_token "${site:-URI}" "$problem_id")"
-        get_output "${site:-URI}" "$problem_id" "$line" "$form_token"
-    done < "$input_file"
+if [ "$single_input_file" -eq 1 ] && [ "$multiple_input_files" -eq 1 ]; then
+    echo "You can not use -i and -m at the same time! To have more info, run:"
+    echo ""
+    echo "$(basename "$0") --help"
+    exit 1
+fi
+
+if [ "$single_input_file" -eq 1 ]; then
+    check_file "$input_file"
+
+    if [ "$split_lines" -eq 0 ]; then
+        form_token="$(get_form_token "$site" "$problem_id")"
+        get_output "$site" "$problem_id" "$(cat "$input_file")" "$form_token"
+    else
+        while read -r line; do
+            for _ in $(seq 1 $((split_lines_count - 1))); do
+                read -r next_line
+                line="$(echo -e "${line}\n${next_line}")"
+            done
+            form_token="$(get_form_token "$site" "$problem_id")"
+            get_output "$site" "$problem_id" "$line" "$form_token"
+        done < "$input_file"
+    fi
+fi
+
+if [ "$multiple_input_files" -eq 1 ]; then
+    for input_file in in-??.txt; do
+        output_suffix="$(echo "$input_file" | grep -o '[0-9]\{2\}')"
+        form_token="$(get_form_token "$site" "$problem_id")"
+        get_output "$site" "$problem_id" "$(cat "$input_file")" "$form_token" > "out-${output_suffix}.txt"
+    done
 fi
