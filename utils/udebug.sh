@@ -70,6 +70,7 @@ function help () {
 
 split_lines=0
 single_input_file=0
+multiple_input_files=0
 while [ $# -gt 0 ]; do
     case $1 in
         -h|--help)
