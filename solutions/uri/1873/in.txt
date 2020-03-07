@@ -1,0 +1,26 @@
+25
+lagarto lagarto
+lagarto papel
+lagarto pedra
+lagarto spock
+lagarto tesoura
+papel lagarto
+papel papel
+papel pedra
+papel spock
+papel tesoura
+pedra lagarto
+pedra papel
+pedra pedra
+pedra spock
+pedra tesoura
+spock lagarto
+spock papel
+spock pedra
+spock spock
+spock tesoura
+tesoura lagarto
+tesoura papel
+tesoura pedra
+tesoura spock
+tesoura tesoura
