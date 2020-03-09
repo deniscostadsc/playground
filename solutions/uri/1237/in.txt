@@ -1,0 +1,36 @@
+abcdef
+cdofhij
+TWO
+FOUR
+abracadabra
+open
+Hey This java is hot
+Java is a new paradigm
+twoequalnames
+twoequalnames
+Find the longest common substring
+The substring can be any part of the String
+If there is no common substring, return 0
+The search is case sensitive
+The input contains several test cases
+Each test case is composed by two lines
+that contains a string each
+Both input Strings will contain between
+a
+aaa
+aaa
+a
+a
+a
+asss
+saaa
+ssssssssssssa
+a
+ss
+hhhhhhhhhhhhhhhhhhhhhhss
+abc
+cjjjjjjab
+a a a a a
+b b a a b
+fodacy o bulsonaro
+fodacy o burrosolsonaro
