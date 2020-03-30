@@ -8,5 +8,4 @@ for number in range(2, 999999):
     if result == number:
         NUMBERS.append(result)
 
-print(NUMBERS)
 print(sum(NUMBERS))
