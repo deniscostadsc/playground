@@ -4,7 +4,7 @@
 int capicua(int n) {
     int i;
     char s[6];
-    sprintf(s, "%d", n);
+    snprintf(s, sizeof(6), "%d", n);
     for (i = 0; i < strlen(s) / 2; i++)
         if (s[i] != s[strlen(s) - i - 1])
             return 0;

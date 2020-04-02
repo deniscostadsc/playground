@@ -18,11 +18,12 @@ int main() {
         operations_count = 0;
         std::cin >> a >> b;
 
-        for (i = 0; i < (int)a.length(); i++) {
+        for (i = 0; i < static_cast<int>(a.length()); i++) {
             if (letter_index[a[i]] <= letter_index[b[i]]) {
                 operations_count += letter_index[b[i]] - letter_index[a[i]];
             } else {
-                operations_count += 26 - letter_index[a[i]] + letter_index[b[i]];
+                operations_count +=
+                    26 - letter_index[a[i]] + letter_index[b[i]];
             }
         }
 

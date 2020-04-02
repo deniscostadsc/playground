@@ -3,7 +3,6 @@
 
 int graph[26][26];
 int discovered[26];
-std::string alphabet = "abcdefghijklmnopqrstuvwxyz";
 
 void dfs(int vertex, int v, int cc) {
     int i;
@@ -41,6 +40,7 @@ int count_connected_components(int v) {
 int main() {
     int i, j, n, v, e, cc, tcase = 0;
     char from, to;
+    std::string alphabet = "abcdefghijklmnopqrstuvwxyz";
 
     scanf("%d", &n);
 

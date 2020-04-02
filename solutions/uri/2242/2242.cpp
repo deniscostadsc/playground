@@ -13,14 +13,17 @@ int main() {
         laugh_vowels = "";
         is_funniest = true;
 
-        for (int i = 0; i < (int)laugh.size(); i++){
+        for (int i = 0; i < static_cast<int>(laugh.size()); i++) {
             if (is_vowel(laugh[i])) {
                 laugh_vowels += laugh[i];
             }
         }
 
-        for (int i = 0; i < (int)laugh_vowels.size() / 2; i++){
-            if (laugh_vowels[i] != laugh_vowels[(int)laugh_vowels.size() - 1 - i]) {
+        for (int i = 0; i < static_cast<int>(laugh_vowels.size()) / 2; i++) {
+            if (
+                    laugh_vowels[i] !=
+                    laugh_vowels[
+                        static_cast<int>(laugh_vowels.size()) - 1 - i]) {
                 is_funniest = false;
             }
         }

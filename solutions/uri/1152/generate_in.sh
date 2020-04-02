@@ -2,18 +2,18 @@
 
 TEST_CASES=5
 
-for i in $(seq $TEST_CASES); do
-    m=$(($RANDOM % 2000 + 100))
-    n=$(($RANDOM % 2000 + $m))
+for _ in $(seq $TEST_CASES); do
+    m=$((RANDOM % 2000 + 100))
+    n=$((RANDOM % 2000 + m))
 
     echo $m $n
-    for j in $(seq 0 $(($m - 2))); do
-        echo $j $(($j + 1)) $((RANDOM % 30 + 10))
+    for j in $(seq 0 $((m - 2))); do
+        echo "$j" $((j + 1)) $((RANDOM % 30 + 10))
     done
 
-    for j in $(seq $(($n - $m + 1))); do
-        a=$(($RANDOM % m))
-        b=$(($RANDOM % m))
+    for j in $(seq $((n - m + 1))); do
+        a=$((RANDOM % m))
+        b=$((RANDOM % m))
         if [ $a == $b ]; then
             a=0
             b=1

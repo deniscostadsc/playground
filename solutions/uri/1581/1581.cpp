@@ -22,7 +22,7 @@ int main() {
             }
         }
 
-        std::cout << ( all_languages_equal ? language : "ingles") << std::endl;
+        std::cout << (all_languages_equal ? language : "ingles") << std::endl;
     }
 
     return 0;

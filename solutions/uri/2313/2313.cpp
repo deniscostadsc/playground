@@ -21,10 +21,10 @@ std::string triangle_type(int a, int b, int c) {
 
 bool is_rectangle_triangle(int a, int b, int c) {
     int hypotenuse = std::max(std::max(a, b), c);
-	int cathetus1 = std::min(a, b);
-	int cathetus2 = std::min(b, c);
+    int cathetus1 = std::min(a, b);
+    int cathetus2 = std::min(b, c);
 
-	return hypotenuse == sqrt(pow(cathetus1, 2) + pow(cathetus2, 2));
+    return hypotenuse == sqrt(pow(cathetus1, 2) + pow(cathetus2, 2));
 }
 
 int main() {
@@ -38,7 +38,9 @@ int main() {
             std::cout << "Invalido" << std::endl;
         } else {
             std::cout << "Valido-" << triangle_type(a, b, c) << std::endl;
-            std::cout << "Retangulo: " << (is_rectangle_triangle(a, b, c) ? "S" : "N") << std::endl;
+            std::cout << "Retangulo: " <<
+                (is_rectangle_triangle(a, b, c) ? "S" : "N") <<
+                std::endl;
         }
     }
 

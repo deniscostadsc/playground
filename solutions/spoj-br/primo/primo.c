@@ -16,8 +16,11 @@ int main() {
     long n;
 
     scanf("%ld", &n);
-    if (is_prime(n)) printf("sim");
-    else printf("nao");
-    
+    if (is_prime(n)) {
+        printf("sim");
+    } else {
+        printf("nao");
+    }
+
     return 0;
 }

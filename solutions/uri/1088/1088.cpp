@@ -61,12 +61,10 @@ int main() {
     std::vector<std::string>::iterator it;
 
     while (std::getline(std::cin, line)) {
-
         std::istringstream iss(line);
         std::vector<std::string> numbers(
                 std::istream_iterator<std::string>{iss},
-                std::istream_iterator<std::string>()
-        );
+                std::istream_iterator<std::string>());
 
         for (it = numbers.begin(); it != numbers.end(); it++) {
             std::cout << *it << " ";

@@ -7,7 +7,6 @@ long long *fold(
         long long *new_tape,
         int new_tape_size,
         int folding_index) {
-
     int i, j, shift = 1;
 
     if (folding_index >= tape_size) {
@@ -42,7 +41,6 @@ bool check_folding(
         int input_tape_size,
         long long *output_tape,
         int output_tape_size) {
-
     bool all_equals = true;
     bool result;
 
@@ -53,7 +51,6 @@ bool check_folding(
         if (all_equals) {
             return true;
         }
-
     }
 
     if (input_tape_size < output_tape_size) {
@@ -64,7 +61,6 @@ bool check_folding(
             int folding_index = 1;
             folding_index < input_tape_size;
             folding_index++) {
-
         int new_tape_size = std::max(
                 input_tape_size - folding_index,
                 input_tape_size - (input_tape_size - folding_index));
@@ -113,8 +109,7 @@ int main() {
             (
                 check_folding(input_tape, n, output_tape, m) ?
                 'S' :
-                'N'
-            ) <<
+                'N') <<
             std::endl;
     }
 

@@ -1,7 +1,6 @@
 #include <iostream>
 
 bool is_password_valid(std::string password) {
-
     if (!(password.size() >= 6 && password.size() <= 32)) {
         return false;
     }
@@ -53,8 +52,7 @@ int main() {
             (
                 is_password_valid(password) ?
                 "Senha valida." :
-                "Senha invalida."
-            ) <<
+                "Senha invalida.") <<
             std::endl;
     }
 

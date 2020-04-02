@@ -43,18 +43,21 @@ int **create_grid(int r, int c, int m, int **missing) {
     return grid;
 }
 
-void calculate_probability(int i, int j ,int r, int c, int k, int **grid, double probability) {
+void calculate_probability(
+        int i, int j, int r, int c, int k, int **grid, double probability) {
     if (i == r - 1 && j == k) {
         std::cout << probability << std::endl;
     }
-    if (i == r - 1){
+    if (i == r - 1) {
         return void();
     }
 
     if (i % 2 == 0) {
         if (grid[i + 1][j - 1] && grid[i + 1][j]) {
-            calculate_probability(i + 1, j - 1, r, c, k, grid, probability * 0.5);
-            calculate_probability(i + 1, j, r, c, k, grid, probability * 0.5);
+            calculate_probability(
+                    i + 1, j - 1, r, c, k, grid, probability * 0.5);
+            calculate_probability(
+                    i + 1, j, r, c, k, grid, probability * 0.5);
         } else if (grid[i + 1][j - 1]) {
             calculate_probability(i + 1, j - 1, r, c, k, grid, probability);
         } else {
@@ -63,7 +66,8 @@ void calculate_probability(int i, int j ,int r, int c, int k, int **grid, double
     } else {
         if (grid[i + 1][j] && grid[i + 1][j + 1]) {
             calculate_probability(i + 1, j, r, c, k, grid, probability * 0.5);
-            calculate_probability(i + 1, j + 1, r, c, k, grid, probability * 0.5);
+            calculate_probability(
+                    i + 1, j + 1, r, c, k, grid, probability * 0.5);
         } else if (grid[i + 1][j]) {
             calculate_probability(i + 1, j, r, c, k, grid, probability);
         } else {

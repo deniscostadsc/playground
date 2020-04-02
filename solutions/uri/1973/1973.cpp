@@ -1,5 +1,4 @@
 #include <cstdio>
-//#include <iostream>
 #include <set>
 
 int main() {
@@ -9,7 +8,6 @@ int main() {
     int total_zeros;
     bool done;
 
-    //std::cin >> n;
     scanf("%lld", &n);
     total_sheeps = 0;
     attacked_stars = 0;
@@ -17,7 +15,6 @@ int main() {
     done = false;
 
     for (int i = 0; i < n; i++) {
-        //std::cin >> x;
         scanf("%lld", &x);
         total_sheeps += x;
 
@@ -43,7 +40,6 @@ int main() {
         }
     }
 
-    //std::cout << attacked_stars << " " << total_sheeps << std::endl;
     printf("%d %lld\n", attacked_stars, total_sheeps);
 
     return 0;

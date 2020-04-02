@@ -3,7 +3,7 @@
 int main() {
     int q, v, not_ok_count, survey_count;
 
-    while(std::cin >> q) {
+    while (std::cin >> q) {
         not_ok_count = 0;
         survey_count = 0;
 

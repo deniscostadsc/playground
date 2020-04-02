@@ -65,9 +65,9 @@ std::string get_exponent(std::string number) {
         if (number[sign_shift] == '0') {
             sign = "-";
             first_non_zero = 666;
-            for (int i = 0; i < (int)non_zero_digits.size(); i++) {
+            for (int i = 0; i < static_cast<int>(non_zero_digits.size()); i++) {
                 non_zero = number.find(non_zero_digits[i]);
-                if ((int)non_zero < first_non_zero) {
+                if (static_cast<int>(non_zero) < first_non_zero) {
                     first_non_zero = non_zero;
                 }
             }

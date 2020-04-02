@@ -10,7 +10,7 @@ int main() {
 
     while (t--) {
         std::cin >> n >> m;
-        std::getline(std::cin, a); // hack to go to line bellow
+        std::getline(std::cin, a);  // hack to go to line bellow
         std::getline(std::cin, a);
         std::getline(std::cin, b);
 

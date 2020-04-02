@@ -11,7 +11,7 @@ int main() {
         std::cin >> word;
         std::cout <<
             std::fixed << std::setprecision(2) <<
-            (float)word.size() / 100 << std::endl;
+            static_cast<float>(word.size()) / 100 << std::endl;
     }
 
     return 0;

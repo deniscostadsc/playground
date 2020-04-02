@@ -13,12 +13,9 @@ int main() {
         cookies = 0.0;
 
         while (cookies < x) {
-            if (c / cookies_per_second) {
-                ;
-            }
-
-            if (c / cookies_per_second < seconds + x / (cookies_per_second + f) && cookies >= c) {
-
+            if (
+                    c / cookies_per_second < seconds + x /
+                    (cookies_per_second + f) && cookies >= c) {
                 seconds = c / cookies_per_second;
 
                 total_seconds += seconds;

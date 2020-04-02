@@ -5,7 +5,7 @@ NUMBER_OF_COMMANDS=80
 
 function print_insertion_command {
     local alphabet_size=${#alphabet[@]}
-    local letter_index=$(($RANDOM % $alphabet_size))
+    local letter_index=$((RANDOM % alphabet_size))
     local letter=${alphabet[letter_index]}
     alphabet=(${alphabet[@]/$letter})
 
@@ -14,14 +14,14 @@ function print_insertion_command {
 
 function print_search_command {
     local alphabet=($(echo {a..z}))
-    local letter_index=$(($RANDOM % 26))
+    local letter_index=$((RANDOM % 26))
     local letter=${alphabet[letter_index]}
 
     echo "P $letter"
 }
 
 function print_some_traversal_command {
-    n=$(($RANDOM % 3))
+    n=$((RANDOM % 3))
     if [ $n == 0 ]; then
         echo "PREFIXA"
     elif [ $n == 1 ]; then
@@ -33,10 +33,10 @@ function print_some_traversal_command {
 
 echo "I a"
 
-for i in $(seq $NUMBER_OF_COMMANDS); do
-    n=$(($RANDOM % 3))
+for _ in $(seq $NUMBER_OF_COMMANDS); do
+    n=$((RANDOM % 3))
 
-    if [ $n == 0 -a ${#alphabet[@]} != 0 ]; then
+    if [ $n == 0 ] && [ ${#alphabet[@]} != 0 ]; then
         print_insertion_command
     elif [ $n == 1 ]; then
         print_search_command

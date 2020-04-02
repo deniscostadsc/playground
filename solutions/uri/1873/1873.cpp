@@ -7,12 +7,22 @@ std::string rock_paper_scissors_lizard_spock_judge(
         return "empate";
     }
     if (
-            (rajeshs_hand == "tesoura" && (sheldons_hand == "papel" || sheldons_hand == "lagarto")) ||
-            (rajeshs_hand == "papel" && (sheldons_hand == "pedra" || sheldons_hand == "spock")) ||
-            (rajeshs_hand == "pedra" && (sheldons_hand == "lagarto" || sheldons_hand == "tesoura")) ||
-            (rajeshs_hand == "lagarto" && (sheldons_hand == "spock" || sheldons_hand == "papel")) ||
-            (rajeshs_hand == "spock" && (sheldons_hand == "tesoura" || sheldons_hand == "pedra"))
-       ){
+            (
+                rajeshs_hand == "tesoura" &&
+                (sheldons_hand == "papel" || sheldons_hand == "lagarto")) ||
+            (
+                rajeshs_hand == "papel" &&
+                (sheldons_hand == "pedra" || sheldons_hand == "spock")) ||
+            (
+                rajeshs_hand == "pedra" &&
+                (sheldons_hand == "lagarto" || sheldons_hand == "tesoura")) ||
+            (
+                rajeshs_hand == "lagarto" &&
+                (sheldons_hand == "spock" || sheldons_hand == "papel")) ||
+            (
+                rajeshs_hand == "spock" &&
+                (sheldons_hand == "tesoura" || sheldons_hand == "pedra"))
+       ) {
         return "rajesh";
     }
     return "sheldon";
