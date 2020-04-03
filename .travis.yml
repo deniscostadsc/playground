@@ -14,7 +14,7 @@ before_script:
 
 script:
     - make lint
-    - make test
+    - make run
 
 notifications:
     email: false
