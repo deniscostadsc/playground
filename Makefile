@@ -33,7 +33,7 @@ shell-lint-build:
 
 shell-lint: shell-lint-build
 	docker run -v $(shell pwd):/code shell-lint \
-		shellcheck **/*.sh
+		find . -name '*.sh' | xargs shellcheck
 
 lint: python-lint shell-lint cpp-lint
 
