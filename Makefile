@@ -13,7 +13,7 @@ all: \
 .PHONY: all
 
 cpp-lint-build:
-	docker build -f .docker/cpp-lint.Dockerfile -t cpp-lint .
+	docker build -q -f .docker/cpp-lint.Dockerfile -t cpp-lint .
 
 cpp-lint: cpp-lint-build
 	docker run -v $(shell pwd):/code cpp-lint \
@@ -23,17 +23,17 @@ cpp-lint: cpp-lint-build
 			--filter="-legal/copyright,-runtime/int,-runtime/arrays" .
 
 python-build:
-	docker build -f .docker/python.Dockerfile -t python .
+	docker build -q -f .docker/python.Dockerfile -t python .
 
 python-lint: python-build
 	docker run -v $(shell pwd):/code python flake8
 
 shell-lint-build:
-	docker build -f .docker/shell-lint.Dockerfile -t shell-lint .
+	docker build -q -f .docker/shell-lint.Dockerfile -t shell-lint .
 
 shell-lint: shell-lint-build
 	docker run -v $(shell pwd):/code shell-lint \
-		shellcheck -x $(shell find . -name '*.sh')
+		shellcheck **/*.sh
 
 lint: python-lint shell-lint cpp-lint
 
