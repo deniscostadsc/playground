@@ -12,9 +12,6 @@ all: \
 
 .PHONY: all
 
-cpp-lint-build:
-	docker build -q -f .docker/cpp-lint.Dockerfile -t cpp-lint .
-
 cpp-lint: cpp-lint-build
 	docker run -v $(shell pwd):/code cpp-lint \
 		cpplint \
@@ -22,20 +19,24 @@ cpp-lint: cpp-lint-build
 			--recursive \
 			--filter="-legal/copyright,-runtime/int,-runtime/arrays" .
 
+cpp-lint-build:
+	docker build -q -f .docker/cpp-lint.Dockerfile -t cpp-lint .
+
+lint: python-lint shell-lint cpp-lint
+
 python-build:
 	docker build -q -f .docker/python.Dockerfile -t python .
 
 python-lint: python-build
 	docker run -v $(shell pwd):/code python flake8
 
-shell-lint-build:
-	docker build -q -f .docker/shell-lint.Dockerfile -t shell-lint .
-
 shell-lint: shell-lint-build
 	docker run -v $(shell pwd):/code shell-lint \
 		find . -name '*.sh' | xargs shellcheck
 
-lint: python-lint shell-lint cpp-lint
+shell-lint-build:
+	docker build -q -f .docker/shell-lint.Dockerfile -t shell-lint .
+
 
 
 
