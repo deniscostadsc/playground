@@ -8,7 +8,6 @@ services:
 
 install:
     - sudo apt install -y gcc g++
-    - pip install flake8 cpplint
 
 before_script:
     - psql -c 'create database uri;' -U postgres
