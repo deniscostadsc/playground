@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# shellcheck disable=SC2207
 alphabet=($(echo {b..z}))
 NUMBER_OF_COMMANDS=80
 
@@ -7,15 +8,17 @@ function print_insertion_command {
     local alphabet_size=${#alphabet[@]}
     local letter_index=$((RANDOM % alphabet_size))
     local letter=${alphabet[letter_index]}
+    # shellcheck disable=SC2207
     alphabet=(${alphabet[@]/$letter})
 
     echo "I $letter"
 }
 
 function print_search_command {
-    local alphabet=($(echo {a..z}))
+    # shellcheck disable=SC2207
+    local inner_alphabet=($(echo {a..z}))
     local letter_index=$((RANDOM % 26))
-    local letter=${alphabet[letter_index]}
+    local letter=${inner_alphabet[letter_index]}
 
     echo "P $letter"
 }
