@@ -1,4 +1,4 @@
-#Playground - A place to play programming.
+# Playground - A place to play programming.
 
 [
 ![Build Status](https://travis-ci.org/deniscostadsc/playground.svg?branch=master)
