@@ -6,10 +6,12 @@ struct Pair {
     unsigned long length;
 };
 
-std::map<unsigned long, Pair> acks;
+std::map< unsigned long, Pair > acks;
 
-long ack(long n) {
-    if (acks[n].next != 0) return acks[n].next;
+long
+    ack(long n) {
+    if (acks[n].next != 0)
+        return acks[n].next;
 
     if (n % 2 == 0) {
         acks[n].next = n / 2;
@@ -23,7 +25,8 @@ long ack(long n) {
     return acks[n].next;
 }
 
-int main() {
+int
+    main() {
     long i, g_number;
     unsigned long g_sequence;
 
@@ -38,7 +41,8 @@ int main() {
             g_sequence = acks[i].length;
             g_number = i;
         } else if (acks[i].length == g_sequence) {
-            if (i < g_number) g_number = i;
+            if (i < g_number)
+                g_number = i;
         }
     }
 

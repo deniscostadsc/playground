@@ -1,6 +1,7 @@
 #include <cstdio>
 
-int main() {
+int
+    main() {
     int d, dd, h, hh, m, mm, s, ss;
 
     scanf("Dia %d", &d);

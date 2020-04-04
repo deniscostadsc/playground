@@ -1,10 +1,12 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     int n, i, j, k, m, p, q, nl, np;
 
     while (std::cin >> n) {
-        if (n == 0) break;
+        if (n == 0)
+            break;
 
         k = n % 2;
         m = n / 2;
@@ -17,23 +19,26 @@ int main() {
             p = 0;
 
             for (j = 0; j < n; j++) {
-                if (j ==  0) {
+                if (j == 0) {
                     std::cout << " ";
                 } else {
                     std::cout << "  ";
                 }
 
                 if (p == 0 && np != nl) {
-                    if (np < 10) std::cout << " ";
+                    if (np < 10)
+                        std::cout << " ";
                     std::cout << np;
                     np++;
                 } else if (np == nl && p < q) {
-                    if (nl < 10) std::cout << " ";
+                    if (nl < 10)
+                        std::cout << " ";
                     std::cout << nl;
                     p++;
                 } else {
                     np--;
-                    if (np < 10) std::cout << " ";
+                    if (np < 10)
+                        std::cout << " ";
                     std::cout << np;
                 }
             }

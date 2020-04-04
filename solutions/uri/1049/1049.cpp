@@ -2,7 +2,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     std::string a, b, c;
 
     std::cin >> a;

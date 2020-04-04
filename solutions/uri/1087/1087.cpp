@@ -1,7 +1,8 @@
-#include <cstdio>
 #include <cmath>
+#include <cstdio>
 
-int main() {
+int
+    main() {
     int x1, y1, x2, y2, d_x, d_y;
 
     while (scanf("%d %d %d %d", &x1, &y1, &x2, &y2) && x1 && y1 && x2 && y2) {

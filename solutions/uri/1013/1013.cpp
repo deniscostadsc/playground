@@ -1,7 +1,8 @@
-#include <cstdio>
 #include <cmath>
+#include <cstdio>
 
-int main() {
+int
+    main() {
     int a, b, c, m;
     scanf("%d %d %d", &a, &b, &c);
     m = (a + b + std::abs(a - b)) / 2;

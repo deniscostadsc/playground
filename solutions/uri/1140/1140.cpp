@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     bool is_tautogram;
     int letter, index;
     std::string lower = "abcdefghijklmnopqrstuvwxyz";
@@ -28,7 +29,8 @@ int main() {
                 index = upper.find_first_of(word.at(found));
             }
 
-            if (letter != index) is_tautogram = false;
+            if (letter != index)
+                is_tautogram = false;
         }
 
         if (is_tautogram) {

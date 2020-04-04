@@ -1,7 +1,8 @@
-#include <iostream>
 #include <cstdio>
+#include <iostream>
 
-int main() {
+int
+    main() {
     int n, i, j = 0;
     std::cin >> n;
     for (i = 0; i < 1000; i++) {

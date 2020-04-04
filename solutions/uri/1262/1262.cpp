@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     std::string line;
     int proc, read, clocks;
 
@@ -20,7 +21,8 @@ int main() {
             if (line.at(i) == 'W' || i == line.length() - 1) {
                 if (read) {
                     clocks += read / proc;
-                    if (read % proc != 0) clocks++;
+                    if (read % proc != 0)
+                        clocks++;
                     read = 0;
                 }
             }

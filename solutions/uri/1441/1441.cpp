@@ -1,9 +1,10 @@
 #include <iostream>
 #include <vector>
 
-std::vector<int> sequence;
+std::vector< int > sequence;
 
-void ackermann(int h) {
+void
+    ackermann(int h) {
     sequence.push_back(h);
     if (h != 1) {
         if (h % 2 == 0) {
@@ -14,7 +15,8 @@ void ackermann(int h) {
     }
 }
 
-int main() {
+int
+    main() {
     int h, i, greatest;
 
     while (std::cin >> h && h) {
@@ -22,7 +24,8 @@ int main() {
         greatest = 0;
 
         for (i = 0; i < sequence.size(); i++) {
-            if (greatest < sequence.at(i)) greatest = sequence.at(i);
+            if (greatest < sequence.at(i))
+                greatest = sequence.at(i);
         }
 
         std::cout << greatest << std::endl;

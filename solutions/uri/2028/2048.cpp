@@ -1,10 +1,12 @@
 #include <iostream>
 
-int sum_all_numbers_until(int n) {
+int
+    sum_all_numbers_until(int n) {
     return (n * (n + 1)) / 2 + 1;
 }
 
-int main() {
+int
+    main() {
     int n, x = 0, numbers;
 
     while (std::cin >> n) {

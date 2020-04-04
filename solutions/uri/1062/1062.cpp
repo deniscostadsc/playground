@@ -1,13 +1,14 @@
 #include <iostream>
-#include <stack>
 #include <queue>
+#include <stack>
 #include <vector>
 
-std::queue<int> trains;
-std::stack<int> station;
-std::vector<int> required_order;
+std::queue< int > trains;
+std::stack< int > station;
+std::vector< int > required_order;
 
-int next_train(int n) {
+int
+    next_train(int n) {
     int train;
 
     if (!station.empty() && n == station.top()) {
@@ -30,7 +31,8 @@ int next_train(int n) {
     return 1001;
 }
 
-int main() {
+int
+    main() {
     int n, t, i;
     bool valid;
 
@@ -56,8 +58,10 @@ int main() {
             std::cout << (valid ? "Yes" : "No") << std::endl;
 
             required_order.clear();
-            while (!trains.empty()) trains.pop();
-            while (!station.empty()) station.pop();
+            while (!trains.empty())
+                trains.pop();
+            while (!station.empty())
+                station.pop();
         }
 
         std::cout << std::endl;

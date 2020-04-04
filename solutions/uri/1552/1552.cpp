@@ -1,6 +1,6 @@
 #include <algorithm>
-#include <iomanip>
 #include <cmath>
+#include <iomanip>
 #include <iostream>
 #include <map>
 #include <vector>
@@ -12,7 +12,7 @@ struct person {
     int rank;
 };
 
-std::vector<person*> people;
+std::vector< person * > people;
 
 struct arc {
     person *p1;
@@ -20,28 +20,35 @@ struct arc {
     double distance;
 };
 
-std::vector<arc*> arcs;
+std::vector< arc * > arcs;
 
-bool comparator(arc *a1, arc *a2) { return a1->distance < a2->distance; }
+bool
+    comparator(arc *a1, arc *a2) {
+    return a1->distance < a2->distance;
+}
 
-void make_set(person *p) {
+void
+    make_set(person *p) {
     p->parent = p;
     p->rank = 1;
     people.push_back(p);
 }
 
-person *findset(person *p) {
+person *
+    findset(person *p) {
     if (p->parent != p) {
         p->parent = findset(p->parent);
     }
     return p->parent;
 }
 
-bool unionset(person *p1, person *p2) {
+bool
+    unionset(person *p1, person *p2) {
     person *root_p1 = findset(p1);
     person *root_p2 = findset(p2);
 
-    if (root_p1 == root_p2) return false;
+    if (root_p1 == root_p2)
+        return false;
 
     if (root_p1->rank < root_p2->rank) {
         root_p1->parent = root_p2;
@@ -54,11 +61,12 @@ bool unionset(person *p1, person *p2) {
     return true;
 }
 
-int main() {
+int
+    main() {
     int c, n, i, arcs_mst;
     double x, y, total_web;
-    std::vector<arc*>::iterator it;
-    std::vector<person*>::iterator it_p1, it_p2;
+    std::vector< arc * >::iterator it;
+    std::vector< person * >::iterator it_p1, it_p2;
 
     std::cin >> c;
 
@@ -85,8 +93,8 @@ int main() {
                 a->p1 = *it_p1;
                 a->p2 = *it_p2;
                 a->distance = sqrt(
-                    pow((*it_p1)->x - (*it_p2)->x, 2) +
-                    pow((*it_p1)->y - (*it_p2)->y, 2));
+                    pow((*it_p1)->x - (*it_p2)->x, 2)
+                    + pow((*it_p1)->y - (*it_p2)->y, 2));
 
                 arcs.push_back(a);
             }
@@ -101,7 +109,8 @@ int main() {
                 total_web += (*it)->distance;
                 arcs_mst++;
 
-                if (arcs_mst == n - 1) break;
+                if (arcs_mst == n - 1)
+                    break;
             }
         }
 

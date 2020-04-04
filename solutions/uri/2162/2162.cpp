@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     int n, h, previous_h, direction;
     bool has_pattern;
 

@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     int n;
     std::string quote = "LIFE IS NOT A PROBLEM TO BE SOLVED";
 

@@ -1,8 +1,9 @@
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     int t, i, count, limit;
     unsigned int j;
     bool minus_found;
@@ -36,7 +37,7 @@ int main() {
             }
         } while (minus_found);
 
-        std::cout << "Case #" << i << ": " << count <<std::endl;
+        std::cout << "Case #" << i << ": " << count << std::endl;
     }
 
     return 0;

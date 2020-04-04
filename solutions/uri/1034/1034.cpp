@@ -6,7 +6,8 @@
 
 int blocks[26];
 
-int minimum_blocks(int m, int n) {
+int
+    minimum_blocks(int m, int n) {
     int i, j, result[m + 1];
 
     result[0] = 0;
@@ -23,7 +24,8 @@ int minimum_blocks(int m, int n) {
     return result[m];
 }
 
-int main() {
+int
+    main() {
     int i, t, n, m;
 
     std::cin >> t;
@@ -33,7 +35,8 @@ int main() {
 
         memset(blocks, 0, sizeof(blocks));
 
-        for (i = 0; i < n; i++) std::cin >> blocks[i];
+        for (i = 0; i < n; i++)
+            std::cin >> blocks[i];
 
         std::cout << minimum_blocks(m, n) << std::endl;
     }

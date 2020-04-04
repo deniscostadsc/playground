@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     int q;
     unsigned int i, n;
     std::string c;
@@ -18,8 +19,10 @@ int main() {
                 q--;
             }
 
-            if (q == 4) q = 0;
-            if (q == -1) q = 3;
+            if (q == 4)
+                q = 0;
+            if (q == -1)
+                q = 3;
         }
 
         std::cout << d.at(q) << std::endl;

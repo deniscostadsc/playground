@@ -1,20 +1,22 @@
 #include <iostream>
 #include <string>
 
-int rock_paper_scissors_lizard_spock(std::string sheldons, std::string rajs) {
-    if (sheldons == rajs) return 0;
-    if ((sheldons == "tesoura" && (rajs == "papel" || rajs == "lagarto")) ||
-        (sheldons == "papel" && (rajs == "pedra" || rajs == "Spock")) ||
-        (sheldons == "pedra" && (rajs == "lagarto" || rajs == "tesoura")) ||
-        (sheldons == "lagarto" && (rajs == "Spock" || rajs == "papel")) ||
-        (sheldons == "Spock" && (rajs == "tesoura" || rajs == "pedra"))) {
+int
+    rock_paper_scissors_lizard_spock(std::string sheldons, std::string rajs) {
+    if (sheldons == rajs)
+        return 0;
+    if ((sheldons == "tesoura" && (rajs == "papel" || rajs == "lagarto"))
+        || (sheldons == "papel" && (rajs == "pedra" || rajs == "Spock"))
+        || (sheldons == "pedra" && (rajs == "lagarto" || rajs == "tesoura"))
+        || (sheldons == "lagarto" && (rajs == "Spock" || rajs == "papel"))
+        || (sheldons == "Spock" && (rajs == "tesoura" || rajs == "pedra"))) {
         return 1;
     }
     return -1;
 }
 
-
-int main() {
+int
+    main() {
     int t, i, result;
     std::string sheldons, rajs;
 

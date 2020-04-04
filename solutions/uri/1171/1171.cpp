@@ -1,9 +1,9 @@
-#include <iostream>
-#include <cstring>
 #include <cstdio>
+#include <cstring>
+#include <iostream>
 
-
-int main() {
+int
+    main() {
     int n[2001], x, i, j, c = 1;
 
     memset(n, 0, sizeof(n));
@@ -13,7 +13,8 @@ int main() {
     while (j--) {
         std::cin >> x;
         n[x]++;
-        if (x > c) c = x;
+        if (x > c)
+            c = x;
     }
 
     for (i = 1; i <= c; i++) {

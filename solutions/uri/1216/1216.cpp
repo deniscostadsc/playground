@@ -1,6 +1,7 @@
 #include <cstdio>
 
-int main() {
+int
+    main() {
     char s[100];
     double d, t, n = 0.0;
     while (fgets(s, 100, stdin)) {

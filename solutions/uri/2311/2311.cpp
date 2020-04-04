@@ -1,7 +1,8 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
-int main() {
+int
+    main() {
     int n, i;
     double difficulty, max_score, min_score, current_score, total_score;
     std::string name;
@@ -24,9 +25,8 @@ int main() {
         }
 
         std::cout << std::fixed << std::setprecision(2);
-        std::cout <<
-            (total_score - max_score - min_score) * difficulty <<
-            std::endl;
+        std::cout << (total_score - max_score - min_score) * difficulty
+                  << std::endl;
     }
 
     return 0;

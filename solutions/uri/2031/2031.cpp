@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     int n;
     std::string player1_sign, player2_sign;
 
@@ -17,8 +18,8 @@ int main() {
         } else if (player1_sign == "pedra" && player2_sign == "pedra") {
             std::cout << "Sem ganhador" << std::endl;
         } else if (
-                player1_sign == "ataque" ||
-                (player1_sign == "pedra" && player2_sign == "papel")) {
+            player1_sign == "ataque"
+            || (player1_sign == "pedra" && player2_sign == "papel")) {
             std::cout << "Jogador 1 venceu" << std::endl;
         } else {
             std::cout << "Jogador 2 venceu" << std::endl;

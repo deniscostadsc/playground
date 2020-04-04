@@ -1,13 +1,15 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     int n, c, m, j;
 
     while (std::cin >> n) {
         m = 0;
         j = 0;
 
-        if (n == 0) break;
+        if (n == 0)
+            break;
 
         while (n--) {
             std::cin >> c;

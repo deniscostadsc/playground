@@ -1,10 +1,12 @@
 #include <iostream>
 
-bool is_vowel(char c) {
+bool
+    is_vowel(char c) {
     return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
 }
 
-int main() {
+int
+    main() {
     std::string laugh;
     std::string laugh_vowels;
     bool is_funniest;
@@ -13,17 +15,16 @@ int main() {
         laugh_vowels = "";
         is_funniest = true;
 
-        for (int i = 0; i < static_cast<int>(laugh.size()); i++) {
+        for (int i = 0; i < static_cast< int >(laugh.size()); i++) {
             if (is_vowel(laugh[i])) {
                 laugh_vowels += laugh[i];
             }
         }
 
-        for (int i = 0; i < static_cast<int>(laugh_vowels.size()) / 2; i++) {
-            if (
-                    laugh_vowels[i] !=
-                    laugh_vowels[
-                        static_cast<int>(laugh_vowels.size()) - 1 - i]) {
+        for (int i = 0; i < static_cast< int >(laugh_vowels.size()) / 2; i++) {
+            if (laugh_vowels[i]
+                != laugh_vowels
+                       [static_cast< int >(laugh_vowels.size()) - 1 - i]) {
                 is_funniest = false;
             }
         }

@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     unsigned int i;
     int n, c;
     std::string a = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ";

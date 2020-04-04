@@ -1,17 +1,20 @@
 #include <iostream>
 #include <vector>
 
-int find(std::vector<int> v, int n) {
+int
+    find(std::vector< int > v, int n) {
     for (int i = 0; i < v.size(); i++) {
-        if (n == v.at(i)) return i;
+        if (n == v.at(i))
+            return i;
     }
     return -1;
 }
 
-int main() {
+int
+    main() {
     int i, j, n, p, overtakes;
-    std::vector<int> start;
-    std::vector<int> finish;
+    std::vector< int > start;
+    std::vector< int > finish;
 
     while (std::cin >> n) {
         start.clear();
@@ -30,7 +33,8 @@ int main() {
 
         for (i = 0; i < n; i++) {
             for (j = 0; j < find(start, finish[i]); j++) {
-                if (find(finish, start.at(j)) > i) overtakes++;
+                if (find(finish, start.at(j)) > i)
+                    overtakes++;
             }
         }
         std::cout << overtakes << std::endl;

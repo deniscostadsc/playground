@@ -1,10 +1,11 @@
-#include <iostream>
 #include <cstdio>
+#include <iostream>
 
 bool i = false;
 bool b = false;
 
-void bloggo(char c) {
+void
+    bloggo(char c) {
     if (c == '_') {
         if (!i) {
             std::cout << "<i>";
@@ -26,7 +27,8 @@ void bloggo(char c) {
     }
 }
 
-int main() {
+int
+    main() {
     char c;
 
     while ((c = getchar()) != EOF) {

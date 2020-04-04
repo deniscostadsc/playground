@@ -1,6 +1,7 @@
 #include <cstdio>
 
-int main() {
+int
+    main() {
     int n, i, f, x, j, s;
 
     scanf("%d", &n);
@@ -18,9 +19,11 @@ int main() {
 
         i++;
 
-        if (i % 2 == 0) i++;
+        if (i % 2 == 0)
+            i++;
 
-        for (j = i; j < f; j += 2) s += j;
+        for (j = i; j < f; j += 2)
+            s += j;
 
         printf("%d\n", s);
     }

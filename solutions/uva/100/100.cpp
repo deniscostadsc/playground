@@ -6,10 +6,12 @@ struct Pair {
     long length;
 };
 
-std::map<long, Pair> acks;
+std::map< long, Pair > acks;
 
-long ack(long n) {
-    if (acks[n].next != 0) return acks[n].next;
+long
+    ack(long n) {
+    if (acks[n].next != 0)
+        return acks[n].next;
 
     if (n % 2 == 0) {
         acks[n].next = n / 2;
@@ -23,13 +25,13 @@ long ack(long n) {
     return acks[n].next;
 }
 
-int main() {
+int
+    main() {
     long l, h, low, high;
     long g_sequence;
 
     acks[1].next = 1;
     acks[1].length = 1;
-
 
     while (std::cin >> l >> h && l && h) {
         low = l;
@@ -53,4 +55,3 @@ int main() {
 
     return 0;
 }
-

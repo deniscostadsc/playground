@@ -2,13 +2,14 @@
 #include <string>
 #include <vector>
 
-int main() {
+int
+    main() {
     bool c;
     int i, n, q;
     double a, p;
     std::string attendances;
     std::string name;
-    std::vector<std::string> names;
+    std::vector< std::string > names;
 
     std::cin >> n;
 
@@ -37,7 +38,8 @@ int main() {
             }
 
             if (a / (a + p) > 0.25) {
-                if (c) std::cout << " ";
+                if (c)
+                    std::cout << " ";
                 std::cout << names[i];
                 c = true;
             }

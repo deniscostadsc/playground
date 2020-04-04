@@ -1,12 +1,20 @@
 #include <cstdio>
 #include <cstring>
 
-int main() {
-    char m[12][10] = {
-        "January", "February", "March", "April",
-        "May", "June", "July", "August",
-        "September", "October", "November", "December"
-    };
+int
+    main() {
+    char m[12][10] = {"January",
+                      "February",
+                      "March",
+                      "April",
+                      "May",
+                      "June",
+                      "July",
+                      "August",
+                      "September",
+                      "October",
+                      "November",
+                      "December"};
     int n;
 
     scanf("%d", &n);

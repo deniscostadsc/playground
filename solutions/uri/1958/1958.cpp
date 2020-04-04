@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-std::string get_significand(std::string number) {
+std::string
+    get_significand(std::string number) {
     int digits_count = 0;
     std::size_t found;
     std::string digits = "0123456789";
@@ -46,7 +47,8 @@ std::string get_significand(std::string number) {
     return significand;
 }
 
-std::string get_exponent(std::string number) {
+std::string
+    get_exponent(std::string number) {
     int sign_shift = 0;
     bool has_leading_zeros;
     std::size_t dot, non_zero, first_non_zero;
@@ -65,9 +67,10 @@ std::string get_exponent(std::string number) {
         if (number[sign_shift] == '0') {
             sign = "-";
             first_non_zero = 666;
-            for (int i = 0; i < static_cast<int>(non_zero_digits.size()); i++) {
+            for (int i = 0; i < static_cast< int >(non_zero_digits.size());
+                 i++) {
                 non_zero = number.find(non_zero_digits[i]);
-                if (static_cast<int>(non_zero) < first_non_zero) {
+                if (static_cast< int >(non_zero) < first_non_zero) {
                     first_non_zero = non_zero;
                 }
             }
@@ -88,7 +91,8 @@ std::string get_exponent(std::string number) {
     return sign + exponent;
 }
 
-int main() {
+int
+    main() {
     std::string number;
     std::string significand;
     std::string exponent;
@@ -98,13 +102,8 @@ int main() {
         exponent = get_exponent(number);
 
         std::cout << (number[0] == '-' ? '-' : '+');
-        std::cout <<
-            significand[0] <<
-            "." <<
-            significand.substr(1) <<
-            "E" <<
-            exponent <<
-            std::endl;
+        std::cout << significand[0] << "." << significand.substr(1) << "E"
+                  << exponent << std::endl;
     }
 
     return 0;

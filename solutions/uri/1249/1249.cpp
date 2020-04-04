@@ -1,13 +1,12 @@
+#include <cstdio>
 #include <iostream>
 #include <string>
-#include <cstdio>
-
-
 
 char l[] = "abcdefghijklmnopqrstuvwxyzabcdefghijklm";
 char u[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-char rot13(char c) {
+char
+    rot13(char c) {
     int i;
 
     for (i = 0; i <= 25; i++) {
@@ -23,7 +22,8 @@ char rot13(char c) {
     return c;
 }
 
-int main() {
+int
+    main() {
     char c;
     while ((c = getchar()) != EOF) {
         std::cout << rot13(c);

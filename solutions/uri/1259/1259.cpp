@@ -1,10 +1,13 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
-bool compare(int i, int j) {
-    if (i % 2 == 0 && j % 2 == 1) return true;
-    if (i % 2 == 1 && j % 2 == 0) return false;
+bool
+    compare(int i, int j) {
+    if (i % 2 == 0 && j % 2 == 1)
+        return true;
+    if (i % 2 == 1 && j % 2 == 0)
+        return false;
     if (i % 2 == 0) {
         return i < j;
     } else {
@@ -12,10 +15,11 @@ bool compare(int i, int j) {
     }
 }
 
-int main() {
+int
+    main() {
     int n, c;
     unsigned int i;
-    std::vector<int> v;
+    std::vector< int > v;
 
     std::cin >> c;
     while (c--) {

@@ -1,7 +1,8 @@
-#include <iostream>
 #include <cstring>
+#include <iostream>
 
-int main() {
+int
+    main() {
     int n, m;
     int bills[] = {2, 5, 10, 20, 50, 100};
     int possible_changes[201];

@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     int n;
     std::string word;
 
@@ -14,13 +15,9 @@ int main() {
             std::cin >> word;
 
             if (word.size() == 3) {
-                if (
-                        word[0] == 'O' &&
-                        word[1] == 'B') {
+                if (word[0] == 'O' && word[1] == 'B') {
                     std::cout << "OBI";
-                } else if (
-                        word[0] == 'U' &&
-                        word[1] == 'R') {
+                } else if (word[0] == 'U' && word[1] == 'R') {
                     std::cout << "URI";
                 } else {
                     std::cout << word;

@@ -11,7 +11,8 @@ struct node {
     node *right;
 };
 
-void insert_node(node *tree, node *new_node) {
+void
+    insert_node(node *tree, node *new_node) {
     if (tree->letter > new_node->letter) {
         if (tree->right == NULL) {
             tree->right = new_node;
@@ -27,17 +28,22 @@ void insert_node(node *tree, node *new_node) {
     }
 }
 
-bool exist(node *tree, char letter) {
+bool
+    exist(node *tree, char letter) {
     bool result = false;
 
-    if (tree->letter == letter) return true;
-    if (tree->right != NULL) result = exist(tree->right, letter);
-    if (tree->left != NULL) result = result || exist(tree->left, letter);
+    if (tree->letter == letter)
+        return true;
+    if (tree->right != NULL)
+        result = exist(tree->right, letter);
+    if (tree->left != NULL)
+        result = result || exist(tree->left, letter);
 
     return result;
 }
 
-void prefixa(node *tree) {
+void
+    prefixa(node *tree) {
     std::cout << tree->letter;
 
     if (tree->right != NULL) {
@@ -51,26 +57,35 @@ void prefixa(node *tree) {
     }
 }
 
-void infixa(node *tree) {
-    if (tree->right != NULL) infixa(tree->right);
+void
+    infixa(node *tree) {
+    if (tree->right != NULL)
+        infixa(tree->right);
 
-    if (!first_in_char) std::cout << " ";
+    if (!first_in_char)
+        std::cout << " ";
     std::cout << tree->letter;
     first_in_char = false;
 
-    if (tree->left != NULL) infixa(tree->left);
+    if (tree->left != NULL)
+        infixa(tree->left);
 }
 
-void posfixa(node *tree) {
-    if (tree->right != NULL) posfixa(tree->right);
-    if (tree->left != NULL) posfixa(tree->left);
+void
+    posfixa(node *tree) {
+    if (tree->right != NULL)
+        posfixa(tree->right);
+    if (tree->left != NULL)
+        posfixa(tree->left);
 
-    if (!first_pos_char) std::cout << " ";
+    if (!first_pos_char)
+        std::cout << " ";
     std::cout << tree->letter;
     first_pos_char = false;
 }
 
-int main() {
+int
+    main() {
     char letter;
     std::string command;
 

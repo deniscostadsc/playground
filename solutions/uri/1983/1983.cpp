@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     int n;
     long m, bigest_m;
     float grade, bigest_grade;

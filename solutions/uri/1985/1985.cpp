@@ -2,8 +2,9 @@
 #include <iostream>
 #include <map>
 
-int main() {
-    std::map<int, float> menu;
+int
+    main() {
+    std::map< int, float > menu;
     menu[1001] = 1.5;
     menu[1002] = 2.5;
     menu[1003] = 3.5;
@@ -20,11 +21,7 @@ int main() {
         sum += menu[id] * q;
     }
 
-    std::cout <<
-        std::setprecision(2) <<
-        std::fixed <<
-        sum <<
-        std::endl;
+    std::cout << std::setprecision(2) << std::fixed << sum << std::endl;
 
     return 0;
 }

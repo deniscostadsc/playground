@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     int n, i, la;
     std::string a, b;
     bool e;

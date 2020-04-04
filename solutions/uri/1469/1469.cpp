@@ -4,7 +4,8 @@ struct person {
     int age;
 };
 
-int main() {
+int
+    main() {
     int n, m, i, age, x, y;
 
     std::cin >> n >> m >> i;

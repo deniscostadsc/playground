@@ -1,10 +1,12 @@
 #include <iostream>
 #include <map>
 
-std::map<int, int> previous_answers;
+std::map< int, int > previous_answers;
 
-int fibonacci(int n) {
-    if (previous_answers[n]) return previous_answers[n];
+int
+    fibonacci(int n) {
+    if (previous_answers[n])
+        return previous_answers[n];
 
     if (n <= 1) {
         previous_answers[n] = 1;
@@ -15,15 +17,18 @@ int fibonacci(int n) {
     return previous_answers[n];
 }
 
-int main() {
+int
+    main() {
     int n, i = 0, s = 0;
 
     while (true) {
         n = fibonacci(i);
 
-        if (n >= 4000000) break;
+        if (n >= 4000000)
+            break;
 
-        if (n % 2 == 0) s += n;
+        if (n % 2 == 0)
+            s += n;
 
         i++;
     }

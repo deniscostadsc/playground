@@ -2,15 +2,16 @@
 #include <set>
 #include <string>
 
-std::set<std::string> matches;
+std::set< std::string > matches;
 
-void brute_force(std::string sequence) {
+void
+    brute_force(std::string sequence) {
     int i;
 
     if (sequence.size()) {
         matches.insert(sequence);
 
-        for (i = 0; i < static_cast<int>(sequence.size()); i++) {
+        for (i = 0; i < static_cast< int >(sequence.size()); i++) {
             if (matches.count(sequence.substr(0, i) + sequence.substr(i + 1))) {
                 continue;
             }
@@ -19,14 +20,16 @@ void brute_force(std::string sequence) {
     }
 }
 
-int main() {
+int
+    main() {
     std::string sequence;
 
     while (std::cin >> sequence) {
         brute_force(sequence);
 
-        for (std::set<std::string>::iterator it = matches.begin();
-             it != matches.end(); it++) {
+        for (std::set< std::string >::iterator it = matches.begin();
+             it != matches.end();
+             it++) {
             std::cout << *it << std::endl;
         }
 

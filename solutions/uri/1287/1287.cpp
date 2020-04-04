@@ -1,13 +1,12 @@
-#include <iostream>
 #include <cstdio>
+#include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     char c;
     long long s = 0;
-    bool got_any_number = false,
-        got_invalid_char = false,
-        got_overflow = false;
+    bool got_any_number = false, got_invalid_char = false, got_overflow = false;
     std::string valid_chars = "0123456789lOo";
     std::string ignored_chars = ", ";
 
@@ -28,8 +27,10 @@ int main() {
         }
 
         if (valid_chars.find(c) != std::string::npos) {
-            if (c == 'o' || c == 'O') c = '0';
-            if (c == 'l') c = '1';
+            if (c == 'o' || c == 'O')
+                c = '0';
+            if (c == 'l')
+                c = '1';
 
             s = (s * 10) + c - '0';
             if (s > 2147483647) {
@@ -37,9 +38,9 @@ int main() {
                 s = 0;
             }
             got_any_number = true;
-         } else if (ignored_chars.find(c) == std::string::npos) {
-             got_invalid_char = true;
-         }
+        } else if (ignored_chars.find(c) == std::string::npos) {
+            got_invalid_char = true;
+        }
     }
     return 0;
 }

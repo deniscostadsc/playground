@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     int n, s, d, l, g;
 
     std::cin >> n;

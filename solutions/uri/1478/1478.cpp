@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     int n, i, j, p, np;
     bool c;
 
@@ -13,8 +14,10 @@ int main() {
 
             for (j = 0; j < n; j++) {
                 if (j == 0) {
-                    if (np < 10) std::cout << "  ";
-                    else if (np < 100) std::cout << " ";
+                    if (np < 10)
+                        std::cout << "  ";
+                    else if (np < 100)
+                        std::cout << " ";
                 } else {
                     if (np < 10) {
                         std::cout << "   ";
@@ -27,7 +30,8 @@ int main() {
 
                 std::cout << np;
 
-                if (np == 1) c = true;
+                if (np == 1)
+                    c = true;
 
                 if (c) {
                     np++;

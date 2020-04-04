@@ -1,20 +1,22 @@
 #include <iostream>
 
-
-
-int rafael(int x, int y) {
+int
+    rafael(int x, int y) {
     return ((3 * x) * (3 * x)) + (y * y);
 }
 
-int beto(int x, int y) {
+int
+    beto(int x, int y) {
     return 2 * (x * x) + ((5 * y) * (5 * y));
 }
 
-int carlos(int x, int y) {
+int
+    carlos(int x, int y) {
     return -100 * x + (y * y * y);
 }
 
-int main() {
+int
+    main() {
     int n, x, y;
 
     std::cin >> n;

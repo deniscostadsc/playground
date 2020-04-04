@@ -1,7 +1,8 @@
-#include <iostream>
 #include <cstdio>
+#include <iostream>
 
-int main() {
+int
+    main() {
     int n = -1;
     float i;
 

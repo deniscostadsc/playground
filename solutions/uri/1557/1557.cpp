@@ -2,7 +2,8 @@
 #include <iostream>
 #include <sstream>
 
-int main() {
+int
+    main() {
     int i, j, k, n, initial, current, max_number, length_max_number,
         length_current, num_spaces;
 
@@ -20,7 +21,8 @@ int main() {
 
             for (j = 0; j < n; j++) {
                 num_spaces = length_max_number;
-                if (j < 1) num_spaces--;
+                if (j < 1)
+                    num_spaces--;
 
                 std::stringstream out;
                 out << current;
@@ -29,7 +31,8 @@ int main() {
                 num_spaces -= length_current;
                 num_spaces++;
 
-                for (k = 0; k < num_spaces; k++) std::cout << " ";
+                for (k = 0; k < num_spaces; k++)
+                    std::cout << " ";
 
                 std::cout << current;
                 current *= 2;

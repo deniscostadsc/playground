@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     int q, v, not_ok_count, survey_count;
 
     while (std::cin >> q) {
@@ -15,8 +16,8 @@ int main() {
             survey_count++;
         }
 
-        if ((not_ok_count < survey_count / 2 && survey_count % 2 == 0) ||
-            (not_ok_count < survey_count / 2 + 1 && survey_count % 2 == 1)) {
+        if ((not_ok_count < survey_count / 2 && survey_count % 2 == 0)
+            || (not_ok_count < survey_count / 2 + 1 && survey_count % 2 == 1)) {
             std::cout << "Y";
         } else {
             std::cout << "N";

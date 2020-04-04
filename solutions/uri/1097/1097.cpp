@@ -1,6 +1,7 @@
 #include <cstdio>
 
-int main() {
+int
+    main() {
     int i = 1, j = 7;
 
     while (i <= 9) {

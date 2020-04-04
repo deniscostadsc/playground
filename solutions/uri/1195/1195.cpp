@@ -1,5 +1,5 @@
-#include <iostream>
 #include <cstdlib>
+#include <iostream>
 
 struct node {
     int value;
@@ -7,7 +7,8 @@ struct node {
     node *right_node;
 };
 
-void insert_node(node *tree, node *new_node) {
+void
+    insert_node(node *tree, node *new_node) {
     if (new_node->value > tree->value) {
         if (tree->right_node == NULL) {
             tree->right_node = new_node;
@@ -23,25 +24,35 @@ void insert_node(node *tree, node *new_node) {
     }
 }
 
-void pre_print_node(node *tree) {
+void
+    pre_print_node(node *tree) {
     std::cout << " " << tree->value;
-    if (tree->left_node != NULL) pre_print_node(tree->left_node);
-    if (tree->right_node != NULL) pre_print_node(tree->right_node);
+    if (tree->left_node != NULL)
+        pre_print_node(tree->left_node);
+    if (tree->right_node != NULL)
+        pre_print_node(tree->right_node);
 }
 
-void in_print_node(node *tree) {
-    if (tree->left_node != NULL) in_print_node(tree->left_node);
+void
+    in_print_node(node *tree) {
+    if (tree->left_node != NULL)
+        in_print_node(tree->left_node);
     std::cout << " " << tree->value;
-    if (tree->right_node != NULL) in_print_node(tree->right_node);
+    if (tree->right_node != NULL)
+        in_print_node(tree->right_node);
 }
 
-void post_print_node(node *tree) {
-    if (tree->left_node != NULL) post_print_node(tree->left_node);
-    if (tree->right_node != NULL) post_print_node(tree->right_node);
+void
+    post_print_node(node *tree) {
+    if (tree->left_node != NULL)
+        post_print_node(tree->left_node);
+    if (tree->right_node != NULL)
+        post_print_node(tree->right_node);
     std::cout << " " << tree->value;
 }
 
-int main() {
+int
+    main() {
     int c, n, i, value, nn = 0;
 
     std::cin >> n;

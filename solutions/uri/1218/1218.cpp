@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     int m, f, c = 0;
     std::string s, l, cs, g;
 
@@ -12,7 +13,8 @@ int main() {
         getline(std::cin, l);  // it's a hack
         getline(std::cin, l);
 
-        if (c) std::cout << std::endl;
+        if (c)
+            std::cout << std::endl;
 
         for (size_t i = 0; i < l.length(); i += 5) {
             if (s.at(0) == l.at(i) && s.at(1) == l.at(i + 1)) {

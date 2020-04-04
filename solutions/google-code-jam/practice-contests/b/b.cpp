@@ -1,10 +1,11 @@
+#include <cstring>
 #include <iostream>
 #include <string>
-#include <cstring>
 
 int positions[4];
 
-void count_positions(std::string entrance2exit, std::string exit2entrance) {
+void
+    count_positions(std::string entrance2exit, std::string exit2entrance) {
     // 0 down
     // 1 right
     // 2 up
@@ -12,7 +13,8 @@ void count_positions(std::string entrance2exit, std::string exit2entrance) {
     int direction = 0;
 }
 
-int main() {
+int
+    main() {
     int t;
     std::string entrance2exit, exit2entrance;
 

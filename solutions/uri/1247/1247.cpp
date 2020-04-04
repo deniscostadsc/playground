@@ -1,7 +1,8 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 
-int main() {
+int
+    main() {
     double a, b, c, d;
 
     while (std::cin >> a >> b >> c) {

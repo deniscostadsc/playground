@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     int cents;
     int comma;
     std::string money;
@@ -16,7 +17,8 @@ int main() {
         for (size_t i = 0; i < money.size(); i++) {
             if (comma == 0) {
                 comma = 3;
-                if (i != 0) std::cout << ",";
+                if (i != 0)
+                    std::cout << ",";
             }
             std::cout << money.at(i);
             comma--;

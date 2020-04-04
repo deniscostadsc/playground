@@ -3,7 +3,8 @@
 #include <string>
 #include <vector>
 
-int main() {
+int
+    main() {
     int n;
     std::string foods, breakfast, lunch, dinner;
     bool cheater;
@@ -22,10 +23,10 @@ int main() {
             if (foods.find_first_of(breakfast.at(i)) == std::string::npos) {
                 cheater = true;
             } else {
-                if (dinner.find_first_of(
-                        breakfast.at(i)) != std::string::npos) {
+                if (dinner.find_first_of(breakfast.at(i))
+                    != std::string::npos) {
                     dinner.erase(
-                        dinner.begin()+dinner.find_first_of(breakfast.at(i)));
+                        dinner.begin() + dinner.find_first_of(breakfast.at(i)));
                 }
             }
         }
@@ -36,7 +37,7 @@ int main() {
             } else {
                 if (dinner.find_first_of(lunch.at(i)) != std::string::npos) {
                     dinner.erase(
-                        dinner.begin()+dinner.find_first_of(lunch.at(i)));
+                        dinner.begin() + dinner.find_first_of(lunch.at(i)));
                 }
             }
         }

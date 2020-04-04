@@ -1,7 +1,8 @@
 #include <iostream>
 #include <set>
 
-int sum_divisors(int n) {
+int
+    sum_divisors(int n) {
     int sum = 1, i;
 
     for (i = 2; i <= n / 2; i++) {
@@ -13,15 +14,16 @@ int sum_divisors(int n) {
     return sum;
 }
 
-bool is_amicable(int n) {
+bool
+    is_amicable(int n) {
     return n == sum_divisors(sum_divisors(n));
 }
 
-
-int main() {
+int
+    main() {
     int i, sum = 0;
-    std::set<int> amicables;
-    std::set<int>::iterator it;
+    std::set< int > amicables;
+    std::set< int >::iterator it;
 
     for (i = 1; i < 10000; i++) {
         if (is_amicable(i) && i != sum_divisors(i)) {

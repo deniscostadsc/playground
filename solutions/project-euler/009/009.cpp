@@ -1,23 +1,27 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 
 int s = 1000;
 int s2 = s / 2;
 int limit = sqrt(s2) - 1;
 
-int gcd(int x, int y) {
-    if (y == 0) return x;
+int
+    gcd(int x, int y) {
+    if (y == 0)
+        return x;
     return gcd(y, x % y);
 }
 
-int main() {
+int
+    main() {
     int m, n, sm, k, d, a, b, c;
 
     for (m = 2; m <= limit; m++) {
         if (s2 % m == 0) {
             sm = s2 / m;
 
-            while (sm % 2 == 0) sm /= 2;
+            while (sm % 2 == 0)
+                sm /= 2;
 
             k = m % 2 == 1 ? m + 2 : m + 1;
 

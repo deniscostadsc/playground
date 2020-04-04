@@ -4,7 +4,8 @@
 int graph[26][26];
 int discovered[26];
 
-void dfs(int vertex, int v, int cc) {
+void
+    dfs(int vertex, int v, int cc) {
     int i;
 
     discovered[vertex] = cc;
@@ -16,7 +17,8 @@ void dfs(int vertex, int v, int cc) {
     }
 }
 
-int count_connected_components(int v) {
+int
+    count_connected_components(int v) {
     int i, index = 0, cc = 0;
 
     while (true) {
@@ -31,13 +33,15 @@ int count_connected_components(int v) {
             }
         }
 
-        if (index == -1) break;
+        if (index == -1)
+            break;
     }
 
     return cc;
 }
 
-int main() {
+int
+    main() {
     int i, j, n, v, e, cc, tcase = 0;
     char from, to;
     std::string alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -57,12 +61,11 @@ int main() {
         while (e--) {
             scanf("%c %c ", &from, &to);
 
-            i = static_cast<int>(alphabet.find_first_of(from));
-            j = static_cast<int>(alphabet.find_first_of(to));
+            i = static_cast< int >(alphabet.find_first_of(from));
+            j = static_cast< int >(alphabet.find_first_of(to));
             graph[i][j] = 1;
             graph[j][i] = 1;
         }
-
 
         cc = count_connected_components(v);
         printf("Case #%d:\n", tcase);

@@ -1,6 +1,7 @@
 #include <cstdio>
 
-int main() {
+int
+    main() {
     int i = 1, j = 60;
     while (j != 0) {
         printf("I=%d J=%d\n", i, j);

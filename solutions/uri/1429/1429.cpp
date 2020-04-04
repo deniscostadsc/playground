@@ -3,8 +3,10 @@
 
 int rfat[10];
 
-int fat(int n) {
-    if (rfat[n] != 0) return rfat[n];
+int
+    fat(int n) {
+    if (rfat[n] != 0)
+        return rfat[n];
 
     if (n <= 1) {
         rfat[n] = 1;
@@ -15,7 +17,8 @@ int fat(int n) {
     return rfat[n];
 }
 
-int main() {
+int
+    main() {
     char n[6];
     int i, t, s;
 

@@ -3,7 +3,8 @@
 #include <sstream>
 #include <vector>
 
-void merge(std::vector<std::string> arr, int l, int m, int r) {
+void
+    merge(std::vector< std::string > arr, int l, int m, int r) {
     int l_arr_size = m - l + 1;
     int r_arr_size = r - m;
 
@@ -20,7 +21,6 @@ void merge(std::vector<std::string> arr, int l, int m, int r) {
     int l_arr_index = 0;
     int r_arr_index = 0;
     int arr_index = l;
-
 
     while (l_arr_index < l_arr_size && r_arr_index < l_arr_size) {
         if (l_arr[l_arr_index] <= r_arr[r_arr_index]) {
@@ -46,7 +46,8 @@ void merge(std::vector<std::string> arr, int l, int m, int r) {
     }
 }
 
-void merge_sort(std::vector<std::string> arr, int l, int r) {
+void
+    merge_sort(std::vector< std::string > arr, int l, int r) {
     if (l < r) {
         int m = l + (r - l) / 2;
 
@@ -56,15 +57,16 @@ void merge_sort(std::vector<std::string> arr, int l, int r) {
     }
 }
 
-int main() {
+int
+    main() {
     std::string line;
-    std::vector<std::string>::iterator it;
+    std::vector< std::string >::iterator it;
 
     while (std::getline(std::cin, line)) {
         std::istringstream iss(line);
-        std::vector<std::string> numbers(
-                std::istream_iterator<std::string>{iss},
-                std::istream_iterator<std::string>());
+        std::vector< std::string > numbers(
+            std::istream_iterator< std::string > {iss},
+            std::istream_iterator< std::string >());
 
         for (it = numbers.begin(); it != numbers.end(); it++) {
             std::cout << *it << " ";

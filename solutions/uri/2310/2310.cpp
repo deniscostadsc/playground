@@ -1,12 +1,11 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
-int main() {
+int
+    main() {
     int n;
-    double s, b, a,
-        service_attempt, service_successful,
-        block_attempt, block_successful,
-        attack_attempt, attack_successful;
+    double s, b, a, service_attempt, service_successful, block_attempt,
+        block_successful, attack_attempt, attack_successful;
     std::string name;
 
     service_attempt = 0;
@@ -33,27 +32,14 @@ int main() {
         attack_successful += a;
     }
 
-    std::cout <<
-        std::fixed <<
-        std::setprecision(2) <<
-        "Pontos de Saque: " <<
-        (service_successful / service_attempt) * 100 <<
-        " %." <<
-        std::endl;
-    std::cout <<
-        std::fixed <<
-        std::setprecision(2) <<
-        "Pontos de Bloqueio: " <<
-        (block_successful / block_attempt) * 100 <<
-        " %." <<
-        std::endl;
-    std::cout <<
-        std::fixed <<
-        std::setprecision(2) <<
-        "Pontos de Ataque: " <<
-        (attack_successful / attack_attempt) * 100 <<
-        " %." <<
-        std::endl;
+    std::cout << std::fixed << std::setprecision(2) << "Pontos de Saque: "
+              << (service_successful / service_attempt) * 100 << " %."
+              << std::endl;
+    std::cout << std::fixed << std::setprecision(2) << "Pontos de Bloqueio: "
+              << (block_successful / block_attempt) * 100 << " %." << std::endl;
+    std::cout << std::fixed << std::setprecision(2) << "Pontos de Ataque: "
+              << (attack_successful / attack_attempt) * 100 << " %."
+              << std::endl;
 
     return 0;
 }

@@ -1,12 +1,13 @@
-#include <iostream>
-#include <vector>
-#include <numeric>
 #include <cstdio>
+#include <iostream>
+#include <numeric>
+#include <vector>
 
-int main() {
+int
+    main() {
     int n, l;
     double c, g, avg;
-    std::vector<double> gs;
+    std::vector< double > gs;
 
     std::cin >> n;
     while (n--) {
@@ -23,7 +24,8 @@ int main() {
         avg += accumulate(gs.begin(), gs.end(), 0) / gs.size();
 
         for (int i = 0; i < l; ++i) {
-            if (gs.at(i) > avg) c++;
+            if (gs.at(i) > avg)
+                c++;
         }
 
         printf("%.3f%\n", c / gs.size() * 100);

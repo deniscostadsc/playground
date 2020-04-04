@@ -2,11 +2,13 @@
 #include <iomanip>
 #include <iostream>
 
-double fib(double n) {
+double
+    fib(double n) {
     return (pow((1 + sqrt(5)) / 2, n) - pow((1 - sqrt(5)) / 2, n)) / sqrt(5.0);
 }
 
-int main() {
+int
+    main() {
     double n;
 
     while (std::cin >> n) {

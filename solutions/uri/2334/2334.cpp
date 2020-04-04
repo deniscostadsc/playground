@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     unsigned long long p;
 
     while (std::cin >> p && p != -1) {

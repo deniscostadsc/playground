@@ -3,12 +3,13 @@
 #include <string>
 #include <vector>
 
-int main() {
+int
+    main() {
     bool newline = false;
     int n;
     unsigned int i, g;
     std::string s;
-    std::vector<std::string> ss;
+    std::vector< std::string > ss;
 
     while (std::cin >> n && n != 0) {
         if (newline) {
@@ -21,7 +22,8 @@ int main() {
 
         while (n--) {
             std::cin >> s;
-            if (s.length() > g) g = s.length();
+            if (s.length() > g)
+                g = s.length();
             ss.push_back(s);
         }
 

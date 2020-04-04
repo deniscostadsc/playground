@@ -1,15 +1,16 @@
-#include <iostream>
-#include <iomanip>
-#include <map>
 #include <cmath>
+#include <iomanip>
+#include <iostream>
+#include <map>
 
-std::map<int, int> r;
+std::map< int, int > r;
 
-int main() {
+int
+    main() {
     int n, nn = 0, x, y, s, c;
     double xs, ys;
     bool first = true;
-    std::map<int, int>::iterator iter;
+    std::map< int, int >::iterator iter;
 
     while (std::cin >> n && n != 0) {
         if (!first) {
@@ -42,7 +43,8 @@ int main() {
 
         for (iter = r.begin(); iter != r.end(); iter++) {
             std::cout << iter->second << "-" << iter->first;
-            if (c < s - 1) std::cout << " ";
+            if (c < s - 1)
+                std::cout << " ";
             c++;
         }
 

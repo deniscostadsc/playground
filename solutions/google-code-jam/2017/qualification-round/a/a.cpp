@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     int t, flipper_capacity;
     std::string pancakes;
 

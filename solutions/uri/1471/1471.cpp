@@ -1,10 +1,11 @@
 #include <iostream>
 #include <vector>
 
-int main() {
+int
+    main() {
     bool check;
     int n, r, i, j, _v;
-    std::vector<int> v;
+    std::vector< int > v;
 
     while (std::cin >> n >> r) {
         for (i = 0; i < r; i++) {
@@ -27,7 +28,8 @@ int main() {
                 }
             }
 
-            if (check) std::cout << i << " ";
+            if (check)
+                std::cout << i << " ";
         }
 
         v.clear();

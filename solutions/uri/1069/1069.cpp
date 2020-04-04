@@ -1,8 +1,9 @@
-#include <iostream>
-#include <cstring>
 #include <cstdio>
+#include <cstring>
+#include <iostream>
 
-int main() {
+int
+    main() {
     char e[1001];
     int d, n, c, i;
 
@@ -15,7 +16,7 @@ int main() {
 
         fgets(e, 1000, stdin);
 
-        for (d = 0; d < static_cast<int>(strlen(e)); d++) {
+        for (d = 0; d < static_cast< int >(strlen(e)); d++) {
             if (e[d] == '<') {
                 i++;
             } else if (e[d] == '>' && i - 1 >= 0) {

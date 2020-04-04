@@ -1,11 +1,12 @@
 #include <iostream>
 #include <vector>
 
-int main() {
+int
+    main() {
     int i, j, k, n, arc, triangles, len;
 
     while (std::cin >> n) {
-        std::vector<int> sum;
+        std::vector< int > sum;
 
         for (i = 0; i < n; i++) {
             std::cin >> arc;
@@ -13,14 +14,16 @@ int main() {
         }
 
         triangles = 0;
-        len = sum[n - 1]/3;
+        len = sum[n - 1] / 3;
         j = k = 0;
 
         for (i = 0; sum[i] + 2 * len <= sum[n - 1]; i++) {
-            while ( sum[j] < sum[i] + len ) j++;
-            while ( sum[k] < sum[i] + 2 * len ) k++;
+            while (sum[j] < sum[i] + len)
+                j++;
+            while (sum[k] < sum[i] + 2 * len)
+                k++;
 
-            if ( sum[j] == sum[i] + len && sum[k] == sum[i] + 2 * len ) {
+            if (sum[j] == sum[i] + len && sum[k] == sum[i] + 2 * len) {
                 triangles++;
             }
         }

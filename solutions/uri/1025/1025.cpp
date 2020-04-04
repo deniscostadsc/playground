@@ -1,8 +1,9 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
-int bi_search(std::vector<int> v, int n) {
+int
+    bi_search(std::vector< int > v, int n) {
     int begin = 0;
     int end = v.size() - 1;
     int middle = end / 2;
@@ -19,13 +20,15 @@ int bi_search(std::vector<int> v, int n) {
         }
     }
 
-    if (v.at(middle) == n) return middle + 1;
+    if (v.at(middle) == n)
+        return middle + 1;
     return -1;
 }
 
-int main() {
+int
+    main() {
     int n, q, marble, query, position, c = 0;
-    std::vector<int> marbles;
+    std::vector< int > marbles;
 
     while (std::cin >> n >> q && n && q) {
         marbles.clear();

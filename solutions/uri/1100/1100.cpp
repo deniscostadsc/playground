@@ -4,12 +4,13 @@
 #include <string>
 #include <vector>
 
-std::map<std::string,  std::vector<std::string> > graph;
-std::map<std::string, bool> visited;
-std::map<std::string, int> distances;
-std::queue<std::string> q;
+std::map< std::string, std::vector< std::string > > graph;
+std::map< std::string, bool > visited;
+std::map< std::string, int > distances;
+std::queue< std::string > q;
 
-void create_chess_graph() {
+void
+    create_chess_graph() {
     int i, j;
     std::string letters = "-abcdefgh";
     std::string numbers = "-12345678";
@@ -63,7 +64,8 @@ void create_chess_graph() {
     }
 }
 
-void unvisit() {
+void
+    unvisit() {
     int i, j;
     std::string letters = "-abcdefgh";
     std::string numbers = "-12345678";
@@ -79,8 +81,9 @@ void unvisit() {
     }
 }
 
-int bfs(std::string start, std::string goal) {
-    std::vector<std::string>::iterator it;
+int
+    bfs(std::string start, std::string goal) {
+    std::vector< std::string >::iterator it;
 
     unvisit();
 
@@ -104,7 +107,8 @@ int bfs(std::string start, std::string goal) {
     return distances[goal];
 }
 
-int main() {
+int
+    main() {
     std::string from, to;
 
     create_chess_graph();

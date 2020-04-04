@@ -1,11 +1,12 @@
-#include <iostream>
-#include <cmath>
 #include <algorithm>
+#include <cmath>
+#include <iostream>
 #include <vector>
 
-int main() {
+int
+    main() {
     int a, b, c;
-    std::vector<int> s;
+    std::vector< int > s;
 
     while (std::cin >> a >> b >> c && a != 0 && b != 0 && c != 0) {
         s.clear();

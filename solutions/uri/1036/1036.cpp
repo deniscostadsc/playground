@@ -1,7 +1,8 @@
-#include <cstdio>
 #include <cmath>
+#include <cstdio>
 
-int main() {
+int
+    main() {
     double a, b, c, delta;
 
     scanf("%lf %lf %lf", &a, &b, &c);

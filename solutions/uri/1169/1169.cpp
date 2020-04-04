@@ -1,12 +1,15 @@
-#include <iostream>
 #include <cstring>
+#include <iostream>
 
-unsigned long long grains(unsigned long long n) {
-    if (n == 1) return 2;
+unsigned long long
+    grains(unsigned long long n) {
+    if (n == 1)
+        return 2;
     return 2 * grains(n - 1);
 }
 
-int main() {
+int
+    main() {
     int n;
     unsigned long long x;
 

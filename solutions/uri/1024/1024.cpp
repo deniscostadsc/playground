@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     int n;
     std::string s;
 
@@ -16,8 +17,8 @@ int main() {
         unsigned int l = r.length();
 
         for (unsigned int i = 0; i < s.length(); ++i) {
-            if ((r.at(i) >= 65 && r.at(i) <= 90) ||
-                    (r.at(i) >= 97 && r.at(i) <= 122)) {
+            if ((r.at(i) >= 65 && r.at(i) <= 90)
+                || (r.at(i) >= 97 && r.at(i) <= 122)) {
                 r.at(i) = r.at(i) + 3;
             }
             if (i >= l / 2) {

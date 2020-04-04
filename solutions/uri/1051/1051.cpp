@@ -1,6 +1,7 @@
 #include <cstdio>
 
-int main() {
+int
+    main() {
     float s;
 
     scanf("%f", &s);
@@ -12,8 +13,8 @@ int main() {
     } else if (s <= 4500.0) {
         printf("R$ %.2f\n", 1000.0 * 0.08 + (s - 3000.0) * 0.18);
     } else {
-        printf("R$ %.2f\n",
-            1000.0 * 0.08 + 1500.0 * 0.18 + (s - 4500.0) * 0.28);
+        printf(
+            "R$ %.2f\n", 1000.0 * 0.08 + 1500.0 * 0.18 + (s - 4500.0) * 0.28);
     }
 
     return 0;

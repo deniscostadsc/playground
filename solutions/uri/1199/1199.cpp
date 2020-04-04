@@ -1,14 +1,16 @@
-#include <iostream>
-#include <cstdlib>
-#include <string>
 #include <algorithm>
+#include <cstdlib>
+#include <iostream>
+#include <string>
 
-std::string dec2hex(unsigned int n) {
+std::string
+    dec2hex(unsigned int n) {
     std::string chars = "0123456789ABCDEF";
 
     unsigned int i = n % 16;
 
-    if (n / 16 > 0) return dec2hex(n / 16) + chars.at(i);
+    if (n / 16 > 0)
+        return dec2hex(n / 16) + chars.at(i);
 
     /* Workaround to concat char and string */
     std::string result = "";
@@ -16,7 +18,8 @@ std::string dec2hex(unsigned int n) {
     return result;
 }
 
-unsigned int hex2dec(std::string h) {
+unsigned int
+    hex2dec(std::string h) {
     unsigned int dec = 0, base = 1;
     int index = h.length();
     std::string chars = "0123456789abcdef";
@@ -29,7 +32,8 @@ unsigned int hex2dec(std::string h) {
     return dec;
 }
 
-int main() {
+int
+    main() {
     std::string n;
 
     while (std::cin >> n && n != "-1") {

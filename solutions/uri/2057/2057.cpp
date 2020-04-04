@@ -1,6 +1,7 @@
-#include  <iostream>
+#include <iostream>
 
-int main() {
+int
+    main() {
     int s, t, f, result;
 
     std::cin >> s >> t >> f;

@@ -1,13 +1,15 @@
 #include <cstdio>
 
-int main() {
+int
+    main() {
     int n, q = 0, g = -1, i = -1;
 
     while (++q && q <= 100) {
         scanf("%d", &n);
 
         if (n > g) {
-            g = n; i = q;
+            g = n;
+            i = q;
         }
     }
 

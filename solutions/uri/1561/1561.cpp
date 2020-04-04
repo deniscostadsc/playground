@@ -1,16 +1,20 @@
 #include <iostream>
 #include <string>
 
-std::string dec2bin(int n) {
-    if (n == 0) return "0";
-    if (n == 1) return "1";
+std::string
+    dec2bin(int n) {
+    if (n == 0)
+        return "0";
+    if (n == 1)
+        return "1";
 
     if (n % 2 == 0)
         return dec2bin(n / 2) + "0";
     return dec2bin(n / 2) + "1";
 }
 
-int main() {
+int
+    main() {
     int i, h, m, h_binary_length, m_binary_length;
     char c;
     std::string h_binary, m_binary;
@@ -47,7 +51,8 @@ int main() {
             } else {
                 std::cout << " ";
             }
-            if (i != 0) std::cout << "         ";
+            if (i != 0)
+                std::cout << "         ";
         }
 
         std::cout << "  |   |" << std::endl;
@@ -69,7 +74,8 @@ int main() {
             } else {
                 std::cout << " ";
             }
-            if (i != 0) std::cout << "     ";
+            if (i != 0)
+                std::cout << "     ";
         }
 
         std::cout << "  |   |" << std::endl;

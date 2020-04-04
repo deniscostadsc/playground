@@ -1,10 +1,10 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     int n, t, year;
 
     std::cin >> n;
-
 
     while (n--) {
         std::cin >> t;
@@ -14,10 +14,8 @@ int main() {
             year--;
         }
 
-        std::cout <<
-            std::abs(year) <<
-            (year < 0 ? " A.C." : " D.C.") <<
-            std::endl;
+        std::cout << std::abs(year) << (year < 0 ? " A.C." : " D.C.")
+                  << std::endl;
     }
 
     return 0;

@@ -1,6 +1,7 @@
 #include <cstdio>
 
-int main() {
+int
+    main() {
     char o;
     int i, j, l = 11;
     double s = 0, n;

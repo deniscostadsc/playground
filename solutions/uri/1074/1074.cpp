@@ -1,6 +1,7 @@
 #include <cstdio>
 
-int main() {
+int
+    main() {
     int q, n;
     scanf("%d", &q);
     while (q--) {

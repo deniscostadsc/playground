@@ -1,6 +1,7 @@
 #include <cstdio>
 
-int main() {
+int
+    main() {
     int d[] = {100, 50, 20, 10, 5, 2, 1};
     int n, t = 0;
 

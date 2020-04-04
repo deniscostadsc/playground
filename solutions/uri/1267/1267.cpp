@@ -1,11 +1,12 @@
-#include <iostream>
 #include <cstdio>
+#include <iostream>
 #include <vector>
 
-int main() {
+int
+    main() {
     int i, j, n, d, x;
     bool p;
-    std::vector<int> m;
+    std::vector< int > m;
 
     while (std::cin >> n >> d && n && d) {
         for (i = 0; i < n; i++) {
@@ -16,7 +17,7 @@ int main() {
         for (i = 0; i < d - 1; i++) {
             for (j = 0; j < n; j++) {
                 std::cin >> x;
-                int& ref = m.at(j);
+                int &ref = m.at(j);
                 ref = x & m.at(j);
             }
         }
@@ -31,7 +32,8 @@ int main() {
             }
         }
 
-        if (!p) std::cout << "no" << std::endl;
+        if (!p)
+            std::cout << "no" << std::endl;
 
         m.clear();
     }

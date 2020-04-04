@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     int p, j1, j2, r, a, winner;
 
     while (std::cin >> p >> j1 >> j2 >> r >> a) {

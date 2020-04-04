@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     int c;
 
     std::string s;
@@ -16,7 +17,8 @@ int main() {
                 c++;
             }
 
-            if (c < 0) break;
+            if (c < 0)
+                break;
         }
 
         if (c == 0) {

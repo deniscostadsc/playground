@@ -1,7 +1,8 @@
 #include <algorithm>
 #include <iostream>
 
-long long *fold(
+long long *
+    fold(
         long long *tape,
         int tape_size,
         long long *new_tape,
@@ -36,7 +37,8 @@ long long *fold(
     return new_tape;
 }
 
-bool check_folding(
+bool
+    check_folding(
         long long *input_tape,
         int input_tape_size,
         long long *output_tape,
@@ -57,27 +59,22 @@ bool check_folding(
         return false;
     }
 
-    for (
-            int folding_index = 1;
-            folding_index < input_tape_size;
-            folding_index++) {
+    for (int folding_index = 1; folding_index < input_tape_size;
+         folding_index++) {
         int new_tape_size = std::max(
-                input_tape_size - folding_index,
-                input_tape_size - (input_tape_size - folding_index));
+            input_tape_size - folding_index,
+            input_tape_size - (input_tape_size - folding_index));
         long long new_tape[new_tape_size];
 
         fold(
-                input_tape,
-                input_tape_size,
-                new_tape,
-                new_tape_size,
-                folding_index);
+            input_tape,
+            input_tape_size,
+            new_tape,
+            new_tape_size,
+            folding_index);
 
         result = check_folding(
-                new_tape,
-                new_tape_size,
-                output_tape,
-                output_tape_size);
+            new_tape, new_tape_size, output_tape, output_tape_size);
 
         if (result) {
             return true;
@@ -87,7 +84,8 @@ bool check_folding(
     return false;
 }
 
-int main() {
+int
+    main() {
     int n, m;
     int i, j;
 
@@ -105,12 +103,8 @@ int main() {
             std::cin >> output_tape[j];
         }
 
-        std::cout <<
-            (
-                check_folding(input_tape, n, output_tape, m) ?
-                'S' :
-                'N') <<
-            std::endl;
+        std::cout << (check_folding(input_tape, n, output_tape, m) ? 'S' : 'N')
+                  << std::endl;
     }
 
     return 0;

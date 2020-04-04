@@ -1,6 +1,7 @@
 #include <cstdio>
 
-int main() {
+int
+    main() {
     float n, s = 0.0;
     int c = 0;
     while (c < 2) {

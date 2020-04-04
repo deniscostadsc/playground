@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     unsigned int c, characters;
     int n, l, lines;
     std::string word;

@@ -10,13 +10,15 @@ struct Pair {
     unsigned int second;
 };
 
-bool compare(Pair i, Pair j) {
+bool
+    compare(Pair i, Pair j) {
     if (i.first.length() == j.first.length())
         return i.second < j.second;
     return i.first.length() > j.first.length();
 }
 
-int main() {
+int
+    main() {
     int n;
     std::string s;
 
@@ -29,11 +31,11 @@ int main() {
            run a "split" by space */
         getline(std::cin, s);
         std::istringstream is(s);
-        std::vector<std::string> raw_strings(
-            std::istream_iterator<std::string> {is},
-            std::istream_iterator<std::string> {});
+        std::vector< std::string > raw_strings(
+            std::istream_iterator< std::string > {is},
+            std::istream_iterator< std::string > {});
 
-        std::vector<Pair> strings;
+        std::vector< Pair > strings;
 
         for (unsigned int i = 0; i < raw_strings.size(); i++) {
             strings.push_back({raw_strings.at(i), i});
@@ -43,7 +45,8 @@ int main() {
 
         for (unsigned int i = 0; i < strings.size(); i++) {
             std::cout << strings.at(i).first;
-            if (i < strings.size() - 1) std::cout << " ";
+            if (i < strings.size() - 1)
+                std::cout << " ";
         }
 
         std::cout << std::endl;

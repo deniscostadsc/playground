@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     for (int i = 0; i < 39; i++) {
         std::cout << "-";
     }

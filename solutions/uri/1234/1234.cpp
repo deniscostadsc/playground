@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     unsigned int i;
     std::string l = "abcdefghijklmnopqrstuvwxyz";
     std::string u = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

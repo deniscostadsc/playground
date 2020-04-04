@@ -2,7 +2,8 @@
 
 #define null -99999
 
-int main() {
+int
+    main() {
     int n, nn, c, p, pa, s, sa, si, sf;
 
     while (std::cin >> n && n != 0) {
@@ -24,19 +25,24 @@ int main() {
                 }
 
                 if (sa != null) {
-                    if (sa != 0 && s != sa) c++;
+                    if (sa != 0 && s != sa)
+                        c++;
                 }
                 sa = s;
             }
 
             pa = p;
 
-            if (si == null && s != 0) si = s;
-            if (nn == 0) sf = s;
+            if (si == null && s != 0)
+                si = s;
+            if (nn == 0)
+                sf = s;
         }
 
-        if (si != sf) c++;
-        else if (si == sf && si != 0) c += 2;
+        if (si != sf)
+            c++;
+        else if (si == sf && si != 0)
+            c += 2;
 
         std::cout << c << std::endl;
     }

@@ -1,8 +1,9 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 #include <string>
 
-std::string dec2hex(long dec) {
+std::string
+    dec2hex(long dec) {
     std::string hex_digits = "0123456789ABCDEF";
     int hex_digits_length = hex_digits.length();
     std::string hex = "";
@@ -15,7 +16,8 @@ std::string dec2hex(long dec) {
     return hex;
 }
 
-int main() {
+int
+    main() {
     long v;
 
     while (std::cin >> v) {

@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     int n, m, i, j;
     bool has_peak, has_any_peak;
 
@@ -45,7 +46,8 @@ int main() {
             }
         }
 
-        if (!has_any_peak) std::cout << -1 << std::endl;
+        if (!has_any_peak)
+            std::cout << -1 << std::endl;
 
         std::cout << std::endl;
     }

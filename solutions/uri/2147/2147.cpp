@@ -1,7 +1,8 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
-int main() {
+int
+    main() {
     int t;
     std::string word;
 
@@ -9,9 +10,8 @@ int main() {
 
     while (t--) {
         std::cin >> word;
-        std::cout <<
-            std::fixed << std::setprecision(2) <<
-            static_cast<float>(word.size()) / 100 << std::endl;
+        std::cout << std::fixed << std::setprecision(2)
+                  << static_cast< float >(word.size()) / 100 << std::endl;
     }
 
     return 0;

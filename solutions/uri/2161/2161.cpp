@@ -1,8 +1,9 @@
+#include <cmath>
 #include <iomanip>
 #include <iostream>
-#include <cmath>
 
-int main() {
+int
+    main() {
     double n;
     double result = 6.0;
 

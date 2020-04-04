@@ -1,7 +1,8 @@
-#include <iostream>
 #include <cstdio>
+#include <iostream>
 
-int main() {
+int
+    main() {
     int r, c;
     float n, s;
 
@@ -25,7 +26,7 @@ int main() {
             printf("novo calculo (1-sim 2-nao)\n");
             std::cin >> r;
         } while (r != 1 && r != 2);
-    } while (r != 2 );
+    } while (r != 2);
 
     return 0;
 }

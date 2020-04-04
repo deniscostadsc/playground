@@ -1,7 +1,8 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 
-int count_squares(long x) {
+int
+    count_squares(long x) {
     int count = 0, i, j;
 
     for (i = 0; i <= sqrt(x); i++) {
@@ -15,7 +16,8 @@ int count_squares(long x) {
     return count;
 }
 
-int main() {
+int
+    main() {
     long x;
     int n, i;
 

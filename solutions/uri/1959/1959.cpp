@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     unsigned long n, l;
 
     while (std::cin >> n >> l) {

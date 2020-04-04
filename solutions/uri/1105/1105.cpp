@@ -7,10 +7,11 @@ struct Bank {
     int reserve;
 };
 
-int main() {
+int
+    main() {
     int r, b, n, i, d, c, v;
     bool liquidated;
-    std::vector<Bank> banks;
+    std::vector< Bank > banks;
 
     while (std::cin >> b >> n && b && n) {
         for (i = 0; i < b; i++) {
@@ -41,7 +42,8 @@ int main() {
             }
         }
 
-        if (liquidated) std::cout << "S" << std::endl;
+        if (liquidated)
+            std::cout << "S" << std::endl;
 
         banks.clear();
     }

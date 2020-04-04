@@ -1,6 +1,7 @@
 #include <cstdio>
 
-int main() {
+int
+    main() {
     int i, n, s = 0;
     scanf("%d", &i);
     while (i--) {

@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     int n, m, i, j, x, y;
 
     while (std::cin >> n >> m) {
@@ -17,17 +18,12 @@ int main() {
 
         for (i = 1; i < n - 1; i++) {
             for (j = 1; j < m - 1; j++) {
-                if (
-                        terrain[i][j] == 42 &&
+                if (terrain[i][j] == 42 &&
 
-                        terrain[i - 1][j - 1] == 7 &&
-                        terrain[i - 1][j] == 7 &&
-                        terrain[i - 1][j + 1] == 7 &&
-                        terrain[i][j + 1] == 7 &&
-                        terrain[i + 1][j + 1] == 7 &&
-                        terrain[i + 1][j] == 7 &&
-                        terrain[i + 1][j - 1] == 7 &&
-                        terrain[i][j -  1] == 7) {
+                    terrain[i - 1][j - 1] == 7 && terrain[i - 1][j] == 7
+                    && terrain[i - 1][j + 1] == 7 && terrain[i][j + 1] == 7
+                    && terrain[i + 1][j + 1] == 7 && terrain[i + 1][j] == 7
+                    && terrain[i + 1][j - 1] == 7 && terrain[i][j - 1] == 7) {
                     x = i + 1;
                     y = j + 1;
                     break;

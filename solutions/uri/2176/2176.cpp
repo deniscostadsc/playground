@@ -1,14 +1,13 @@
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 
-int main() {
+int
+    main() {
     std::string s;
 
     while (std::cin >> s) {
-        std::cout <<
-            s <<
-            (count(s.begin(), s.end(), '1') % 2 == 0 ? 0 : 1) <<
-            std::endl;
+        std::cout << s << (count(s.begin(), s.end(), '1') % 2 == 0 ? 0 : 1)
+                  << std::endl;
     }
     return 0;
 }

@@ -6,21 +6,31 @@
 char store[30000];
 int pointer, word_index;
 
-
-void brainfuck(std::string program, std::string word) {
+void
+    brainfuck(std::string program, std::string word) {
     int j, brackets_level;
     unsigned int i;
     std::string inner_code;
 
     for (i = 0; i < program.size(); i++) {
         switch (program[i]) {
-            case '>': pointer++; break;
-            case '<': pointer--; break;
-            case '+': store[pointer]++; break;
-            case '-': store[pointer]--; break;
-            case '.': std::cout << store[pointer]; break;
+            case '>':
+                pointer++;
+                break;
+            case '<':
+                pointer--;
+                break;
+            case '+':
+                store[pointer]++;
+                break;
+            case '-':
+                store[pointer]--;
+                break;
+            case '.':
+                std::cout << store[pointer];
+                break;
             case ',':
-                if (word_index >= static_cast<int>(word.size())) {
+                if (word_index >= static_cast< int >(word.size())) {
                     store[pointer] = 0;
                 } else {
                     store[pointer] = word[word_index];
@@ -40,24 +50,27 @@ void brainfuck(std::string program, std::string word) {
                         brackets_level--;
                     }
 
-                    if (brackets_level == 0) break;
+                    if (brackets_level == 0)
+                        break;
                     inner_code += program[i];
 
                     i++;
                 }
 
-                while (store[pointer] != 0) brainfuck(inner_code, word);
+                while (store[pointer] != 0)
+                    brainfuck(inner_code, word);
 
                 break;
             case '#':
-                for (j = 0; j < 10; j++) std::cout << store[j];
+                for (j = 0; j < 10; j++)
+                    std::cout << store[j];
                 break;
         }
     }
 }
 
-
-int main() {
+int
+    main() {
     int n, nn;
     std::string word;
     std::string program;

@@ -1,14 +1,16 @@
-#include <iostream>
 #include <cstring>
+#include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     int c, temp, index, result[12];
     unsigned int i, size_a, size_b;
     std::string a, b;
 
     while (std::cin >> a >> b) {
-        if (a == "0" && b == "0") break;
+        if (a == "0" && b == "0")
+            break;
 
         memset(result, 0, sizeof(result));
         size_a = a.size();
@@ -20,8 +22,10 @@ int main() {
 
         for (i = 0; i < k; i++) {
             temp = 0;
-            if (size_a >= 1) temp += (a.at(--size_a) - '0');
-            if (size_b >= 1) temp += (b.at(--size_b) - '0');
+            if (size_a >= 1)
+                temp += (a.at(--size_a) - '0');
+            if (size_b >= 1)
+                temp += (b.at(--size_b) - '0');
 
             if (result[index] + temp > 9) {
                 result[index - 1] = 1;

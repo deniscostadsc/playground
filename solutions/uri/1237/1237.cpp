@@ -1,8 +1,9 @@
-#include <iostream>
-#include <cstring>
 #include <algorithm>
+#include <cstring>
+#include <iostream>
 
-int main() {
+int
+    main() {
     int lcs;
     std::string a, b;
 
@@ -12,10 +13,10 @@ int main() {
 
         memset(lcs_table, 0, sizeof(lcs_table));
 
-        for (int i = 1; i <= static_cast<int>(a.size()); i++) {
-            for (int j = 1; j <= static_cast<int>(b.size()); j++) {
+        for (int i = 1; i <= static_cast< int >(a.size()); i++) {
+            for (int j = 1; j <= static_cast< int >(b.size()); j++) {
                 if (a[i - 1] == b[j - 1]) {
-                    lcs_table[i][j] =  1 + lcs_table[i - 1][j - 1];
+                    lcs_table[i][j] = 1 + lcs_table[i - 1][j - 1];
                     lcs = std::max(lcs_table[i][j], lcs);
                 }
             }

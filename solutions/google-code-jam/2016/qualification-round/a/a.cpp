@@ -1,9 +1,10 @@
 #include <iostream>
 #include <set>
 
-int main() {
+int
+    main() {
     int t, n, next, digits, i;
-    std::set<int> all_digits;
+    std::set< int > all_digits;
 
     std::cin >> t;
 

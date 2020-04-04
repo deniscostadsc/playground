@@ -7,12 +7,13 @@
 int visited[10001];
 int scc_count;  // scc = strongly connected components
 
-std::map<int, std::vector<int> > graph;
-std::map<int, std::vector<int> > transposed_graph;
-std::stack<int> traverse_order;
+std::map< int, std::vector< int > > graph;
+std::map< int, std::vector< int > > transposed_graph;
+std::stack< int > traverse_order;
 
-void order_filler_dfs(int i) {
-    std::vector<int>::iterator it;
+void
+    order_filler_dfs(int i) {
+    std::vector< int >::iterator it;
 
     visited[i] = 1;
 
@@ -25,13 +26,14 @@ void order_filler_dfs(int i) {
     traverse_order.push(i);
 }
 
-void scc_counter_dfs(int i) {
-    std::vector<int>::iterator it;
+void
+    scc_counter_dfs(int i) {
+    std::vector< int >::iterator it;
 
     visited[i] = 1;
 
-    for (it = transposed_graph[i].begin();
-        it != transposed_graph[i].end(); it++) {
+    for (it = transposed_graph[i].begin(); it != transposed_graph[i].end();
+         it++) {
         if (!visited[*it]) {
             scc_count++;
             scc_counter_dfs(*it);
@@ -39,10 +41,10 @@ void scc_counter_dfs(int i) {
     }
 }
 
-
-int main() {
+int
+    main() {
     int t, n, m, a, b;
-    std::map<int, std::vector<int> >::iterator it;
+    std::map< int, std::vector< int > >::iterator it;
 
     std::cin >> t;
 
@@ -57,7 +59,8 @@ int main() {
 
         memset(visited, 0, sizeof(visited));
         for (it = graph.begin(); it != graph.end(); it++) {
-            if (!visited[it->first]) order_filler_dfs(it->first);
+            if (!visited[it->first])
+                order_filler_dfs(it->first);
         }
 
         memset(visited, 0, sizeof(visited));

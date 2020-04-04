@@ -1,7 +1,8 @@
-#include <iostream>
 #include <cstring>
+#include <iostream>
 
-int main() {
+int
+    main() {
     int n, m, c, k, item;
     bool not_first = false;
 

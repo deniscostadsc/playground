@@ -1,10 +1,11 @@
-#include <iostream>
 #include <cstdio>
+#include <iostream>
 #include <map>
 
-int main() {
+int
+    main() {
     char c;
-    std::map<char, char> keyboard;
+    std::map< char, char > keyboard;
 
     keyboard['1'] = '`';
     keyboard['2'] = '1';

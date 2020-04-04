@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     int test_cases, h, m, o;
 
     std::cin >> test_cases;

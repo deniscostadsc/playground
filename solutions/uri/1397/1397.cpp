@@ -1,6 +1,7 @@
 #include <iostream>
 
-int main() {
+int
+    main() {
     int n, a, b, ac, bc;
 
     while (std::cin >> n && n != 0) {
@@ -10,8 +11,10 @@ int main() {
         while (n--) {
             std::cin >> a >> b;
 
-            if (a > b) ac++;
-            if (b > a) bc++;
+            if (a > b)
+                ac++;
+            if (b > a)
+                bc++;
         }
 
         std::cout << ac << " " << bc << std::endl;

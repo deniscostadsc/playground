@@ -1,7 +1,8 @@
-#include <cstdio>
 #include <cmath>
+#include <cstdio>
 
-int main() {
+int
+    main() {
     int x, n, s;
     scanf("%d", &x);
     while (x--) {

@@ -1,16 +1,18 @@
 #include <cmath>
 #include <iostream>
-#include <utility>
 #include <map>
 #include <queue>
+#include <utility>
 
-int reverse(int number) {
+int
+    reverse(int number) {
     int reversed = 0;
     int digits_count = 0;
 
-    if (number < 10) return number;
+    if (number < 10)
+        return number;
 
-    while (static_cast<int>(number / std::pow(10, digits_count)) > 0) {
+    while (static_cast< int >(number / std::pow(10, digits_count)) > 0) {
         digits_count++;
     }
 
@@ -21,11 +23,12 @@ int reverse(int number) {
     return reversed;
 }
 
-void bfs(int number, int goal) {
+void
+    bfs(int number, int goal) {
     int reversed;
-    std::pair<int, int> current;
-    std::queue<std::pair<int, int> > q;
-    std::map<int, bool> visited;
+    std::pair< int, int > current;
+    std::queue< std::pair< int, int > > q;
+    std::map< int, bool > visited;
 
     q.push(std::make_pair(number, 0));
     visited[number] = true;
@@ -43,7 +46,7 @@ void bfs(int number, int goal) {
             q.push(std::make_pair(current.first + 1, current.second + 1));
         }
 
-         reversed = reverse(current.first);
+        reversed = reverse(current.first);
 
         if (!visited[reversed]) {
             visited[reversed] = true;
@@ -52,7 +55,8 @@ void bfs(int number, int goal) {
     }
 }
 
-int main() {
+int
+    main() {
     int t, a, b;
 
     std::cin >> t;

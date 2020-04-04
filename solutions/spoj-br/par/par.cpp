@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     int n, i = 1, a, b;
     std::string first_player, second_player;
 
@@ -9,7 +10,8 @@ int main() {
         std::cin >> first_player;
         std::cin >> second_player;
 
-        if (i > 1) std::cout << std::endl;
+        if (i > 1)
+            std::cout << std::endl;
         std::cout << "Teste " << i++ << std::endl;
 
         while (n--) {

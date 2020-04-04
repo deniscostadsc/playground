@@ -1,12 +1,13 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
-int main() {
+int
+    main() {
     int n;
     std::string code;
-    std::vector<std::string> codes;
-    std::vector<std::string>::iterator it;
+    std::vector< std::string > codes;
+    std::vector< std::string >::iterator it;
 
     while (std::cin >> n) {
         while (n--) {

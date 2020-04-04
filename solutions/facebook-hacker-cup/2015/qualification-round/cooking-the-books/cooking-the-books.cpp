@@ -1,8 +1,9 @@
-#include <iostream>
 #include <cstdio>
+#include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     int t, j, k, i = 1;
     std::string n, lowest, greatest, copy;
     char c;
@@ -25,8 +26,10 @@ int main() {
                 copy[j] = copy[k];
                 copy[k] = c;
 
-                if (copy < lowest) lowest = copy;
-                if (copy > greatest) greatest = copy;
+                if (copy < lowest)
+                    lowest = copy;
+                if (copy > greatest)
+                    greatest = copy;
 
                 copy = n;
             }

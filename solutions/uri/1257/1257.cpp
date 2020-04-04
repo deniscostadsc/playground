@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     int n, l, current, sum;
     unsigned int i;
     std::string word, alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

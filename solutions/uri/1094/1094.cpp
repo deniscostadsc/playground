@@ -1,6 +1,7 @@
 #include <cstdio>
 
-int main() {
+int
+    main() {
     char t;
     int n, c = 0, r = 0, s = 0, soma = 0, e;
 
@@ -22,12 +23,15 @@ int main() {
     printf("Total de coelhos: %d\n", c);
     printf("Total de ratos: %d\n", r);
     printf("Total de sapos: %d\n", s);
-    printf("Percentual de coelhos: %.2f %\n",
-        static_cast<float>(c * 100.0 / soma));
-    printf("Percentual de ratos: %.2f %\n",
-        static_cast<float>(r * 100.0 / soma));
-    printf("Percentual de sapos: %.2f %\n",
-        static_cast<float>(s * 100.0 / soma));
+    printf(
+        "Percentual de coelhos: %.2f %\n",
+        static_cast< float >(c * 100.0 / soma));
+    printf(
+        "Percentual de ratos: %.2f %\n",
+        static_cast< float >(r * 100.0 / soma));
+    printf(
+        "Percentual de sapos: %.2f %\n",
+        static_cast< float >(s * 100.0 / soma));
 
     return 0;
 }

@@ -1,6 +1,7 @@
 #include <cstdio>
 
-int main() {
+int
+    main() {
     float n;
     int c = 0;
     while (scanf("%f", &n) != EOF)

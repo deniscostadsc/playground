@@ -1,8 +1,7 @@
 #include <iostream>
 
-
-
-int gcd(int a, int b) {
+int
+    gcd(int a, int b) {
     int x;
     while (b > 0) {
         x = b;
@@ -12,7 +11,8 @@ int gcd(int a, int b) {
     return a;
 }
 
-int main() {
+int
+    main() {
     int n, a, b;
 
     std::cin >> n;

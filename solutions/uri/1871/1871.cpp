@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int
+    main() {
     long int m, n, sum, divisor;
     std::string str_sum;
 
