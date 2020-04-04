@@ -11,7 +11,7 @@ resolutions.
 
 The following command are available:
 
-```
+```shell
 make run  # run and test all past solutions
 make run PROBLEM=path/to/the/problem  # run and test a specific solution
 make lint  # check lint for all solutions
