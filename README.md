@@ -18,4 +18,4 @@ make lint  # check lint for all solutions
 make format  # format all code
 ```
 
-For the above commands work, you will need to install Docker.
+Commands above require **Docker** to work.
