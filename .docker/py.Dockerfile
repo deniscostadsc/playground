@@ -6,4 +6,8 @@ RUN mkdir /code
 WORKDIR /code
 
 CMD cd $PROBLEM && \
-    python *.py < in.txt > result-python.txt
+    if [ -f in.txt ]; then \
+        python *.py < in.txt > result-python.txt; \
+    else \
+        python *.py > result-python.txt; \
+    fi
