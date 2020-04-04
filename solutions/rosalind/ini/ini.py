@@ -1,6 +1,6 @@
 import sys
 
-text = ''.join(sys.stdin.readlines())
+text = "".join(sys.stdin.readlines())
 
 d = {}
 for i in text:
@@ -9,4 +9,4 @@ for i in text:
     else:
         d[i] = 1
 
-print(d['A'], d['C'], d['G'], d['T'])
+print(d["A"], d["C"], d["G"], d["T"])

@@ -7,10 +7,11 @@ def msp(f):
 
         for index, number in enumerate(line):
             previous_line[index] = (
-                max(previous_line[index], previous_line[index + 1]) + number)
+                max(previous_line[index], previous_line[index + 1]) + number
+            )
 
     return previous_line[0]
 
 
-with open('triangle.txt', 'r') as f:
+with open("triangle.txt", "r") as f:
     print(msp(f))

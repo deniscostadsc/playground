@@ -1,4 +1,3 @@
-
 previous_results = {}
 
 
