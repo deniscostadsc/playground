@@ -2,9 +2,12 @@
 	cpp-build \
 	cpp-lint \
 	cpp-lint-build \
+	format-code \
 	lint \
 	python-build \
+	python-format-code \
 	python-lint \
+	python-lint-build \
 	run \
 	shell-lint \
 	shell-lint-build \
@@ -32,13 +35,24 @@ cpp-lint: cpp-lint-build
 cpp-lint-build:
 	@docker build -q -f .docker/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
 
+format: python-format-code
+
 lint: python-lint shell-lint cpp-lint
 
 python-build:
 	@docker build -q -f .docker/$(PYTHON).Dockerfile -t $(PYTHON) .
 
-python-lint: python-build
-	@docker run -v $(shell pwd):/code $(PYTHON) flake8
+python-format-code: python-lint-build
+	@docker run -v $(shell pwd):/code $(PYTHON)-lint black .
+	@docker run -v $(shell pwd):/code $(PYTHON)-lint isort -rc .
+
+python-lint: python-lint-build
+	@docker run -v $(shell pwd):/code $(PYTHON)-lint black --check .
+	@docker run -v $(shell pwd):/code $(PYTHON)-lint flake8
+	@docker run -v $(shell pwd):/code $(PYTHON)-lint isort -rc -c .
+
+python-lint-build:
+	@docker build -q -f .docker/$(PYTHON)-lint.Dockerfile -t $(PYTHON)-lint .
 
 run: cpp-build python-build sql-build
 ifndef PROBLEM
