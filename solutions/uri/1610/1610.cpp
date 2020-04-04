@@ -11,8 +11,7 @@ std::map< int, std::vector< int > > graph;
 std::map< int, std::vector< int > > transposed_graph;
 std::stack< int > traverse_order;
 
-void
-    order_filler_dfs(int i) {
+void order_filler_dfs(int i) {
     std::vector< int >::iterator it;
 
     visited[i] = 1;
@@ -26,8 +25,7 @@ void
     traverse_order.push(i);
 }
 
-void
-    scc_counter_dfs(int i) {
+void scc_counter_dfs(int i) {
     std::vector< int >::iterator it;
 
     visited[i] = 1;
@@ -41,8 +39,7 @@ void
     }
 }
 
-int
-    main() {
+int main() {
     int t, n, m, a, b;
     std::map< int, std::vector< int > >::iterator it;
 

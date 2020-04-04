@@ -1,7 +1,6 @@
 #include <iostream>
 
-int
-    main() {
+int main() {
     int n, k;
     std::string language, previous_language;
     bool all_languages_equal;

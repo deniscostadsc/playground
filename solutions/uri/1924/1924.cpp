@@ -1,7 +1,6 @@
 #include <iostream>
 
-int
-    main() {
+int main() {
     std::cout << "Ciencia da Computacao" << std::endl;
 
     return 0;

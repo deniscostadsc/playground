@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     float s;
 
     scanf("%f", &s);

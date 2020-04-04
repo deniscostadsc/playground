@@ -1,7 +1,6 @@
 #include <iostream>
 
-int
-    main() {
+int main() {
     int i, n, o[5], c, r;
     char l[] = "ABCDE";
 

@@ -1,8 +1,7 @@
 #include <cstring>
 #include <iostream>
 
-int
-    main() {
+int main() {
     int n, m, i, j, r1, r2, r3, r4;
 
     while (std::cin >> n >> m && n && m) {

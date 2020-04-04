@@ -1,8 +1,7 @@
 #include <cstdio>
 #include <iostream>
 
-int
-    main() {
+int main() {
     float a, b, c;
 
     std::cin >> a;

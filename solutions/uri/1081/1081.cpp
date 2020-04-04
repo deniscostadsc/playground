@@ -5,8 +5,7 @@
 int graph[20][20];
 bool discovered[20];
 
-bool
-    dfs(int vertex, int v, int spaces) {
+bool dfs(int vertex, int v, int spaces) {
     int i;
     bool has_path = false;
 
@@ -29,8 +28,7 @@ bool
     return has_path;
 }
 
-void
-    dfs_runner(int v) {
+void dfs_runner(int v) {
     int i, index = 0;
 
     while (true) {
@@ -51,8 +49,7 @@ void
     }
 }
 
-int
-    main() {
+int main() {
     int i, j, n, v, e, from, to, ncase = 0;
 
     scanf("%d", &n);

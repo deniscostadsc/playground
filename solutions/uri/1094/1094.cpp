@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     char t;
     int n, c = 0, r = 0, s = 0, soma = 0, e;
 

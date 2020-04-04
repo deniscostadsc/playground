@@ -1,8 +1,7 @@
 #include <cstdio>
 #include <iostream>
 
-int
-    main() {
+int main() {
     int c, n, m, im = 0, i = 0;
 
     std::cin >> c;

@@ -2,8 +2,7 @@
 #include <iostream>
 #include <vector>
 
-int
-    main() {
+int main() {
     int n;
     std::string code;
     std::vector< std::string > codes;

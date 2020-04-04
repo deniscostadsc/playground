@@ -6,8 +6,7 @@
 char store[30000];
 int pointer, word_index;
 
-void
-    brainfuck(std::string program, std::string word) {
+void brainfuck(std::string program, std::string word) {
     int j, brackets_level;
     unsigned int i;
     std::string inner_code;
@@ -69,8 +68,7 @@ void
     }
 }
 
-int
-    main() {
+int main() {
     int n, nn;
     std::string word;
     std::string program;

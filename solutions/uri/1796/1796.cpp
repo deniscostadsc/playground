@@ -1,7 +1,6 @@
 #include <iostream>
 
-int
-    main() {
+int main() {
     int q, v, not_ok_count, survey_count;
 
     while (std::cin >> q) {

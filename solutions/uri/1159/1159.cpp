@@ -1,8 +1,7 @@
 #include <cstdio>
 #include <iostream>
 
-int
-    main() {
+int main() {
     int x, s;
 
     while (scanf("%d", &x) && x != 0) {

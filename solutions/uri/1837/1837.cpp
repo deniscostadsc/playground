@@ -1,8 +1,7 @@
 #include <cmath>
 #include <iostream>
 
-int
-    main() {
+int main() {
     int a, b, r, q;
     bool q_is_zero, negative, positive;
 

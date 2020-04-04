@@ -1,7 +1,6 @@
 #include <iostream>
 
-int
-    main() {
+int main() {
     int p, n, current_pipe, previous_pipe;
     bool game_over;
 

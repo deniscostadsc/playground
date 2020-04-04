@@ -4,18 +4,15 @@
 int gp, gc, gf;
 std::vector< std::vector< int > > foods;
 
-bool
-    still_valid(int p, int c, int f) {
+bool still_valid(int p, int c, int f) {
     return p <= gp && c <= gc && f <= gf;
 }
 
-bool
-    is_ok(int p, int c, int f) {
+bool is_ok(int p, int c, int f) {
     return p == gp && c == gc && f == gf;
 }
 
-bool
-    backtrack(int p, int c, int f, std::vector< int > used_food) {
+bool backtrack(int p, int c, int f, std::vector< int > used_food) {
     bool ok = false;
     int next;
 
@@ -45,14 +42,12 @@ bool
     return ok;
 }
 
-bool
-    can_eat_something() {
+bool can_eat_something() {
     std::vector< int > e;
     return backtrack(0, 0, 0, e);
 }
 
-int
-    main() {
+int main() {
     int t, n, p, c, f, i = 1;
 
     scanf("%d", &t);

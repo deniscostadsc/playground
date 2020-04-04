@@ -2,8 +2,7 @@
 
 #define null -99999
 
-int
-    main() {
+int main() {
     int n, nn, c, p, pa, s, sa, si, sf;
 
     while (std::cin >> n && n != 0) {

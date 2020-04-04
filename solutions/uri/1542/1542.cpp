@@ -1,8 +1,7 @@
 #include <cmath>
 #include <iostream>
 
-int
-    main() {
+int main() {
     int q, d, p, answer;
 
     while (std::cin >> q && q) {

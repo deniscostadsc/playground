@@ -5,8 +5,7 @@
 
 std::vector< unsigned long > primes;
 
-bool
-    is_prime(unsigned long n) {
+bool is_prime(unsigned long n) {
     if (n == 2)
         return true;
     if (n % 2 == 0 || n < 2)
@@ -19,15 +18,13 @@ bool
     return true;
 }
 
-void
-    next_prime(unsigned long n) {
+void next_prime(unsigned long n) {
     while (!is_prime(++n)) {
     }
     primes.push_back(n);
 }
 
-unsigned long
-    div_count(unsigned long n) {
+unsigned long div_count(unsigned long n) {
     unsigned long count = 1;
     unsigned long i = 0;
     std::map< unsigned long, int > c;
@@ -54,8 +51,7 @@ unsigned long
     return count;
 }
 
-int
-    main() {
+int main() {
     int t = 1, n = 1;
 
     primes.push_back(2);

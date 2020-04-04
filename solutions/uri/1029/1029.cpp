@@ -3,8 +3,7 @@
 long int f[39];
 long int r[39];
 
-long int
-    fib(long int n) {
+long int fib(long int n) {
     if (f[n] != -1)
         return f[n];
 
@@ -19,8 +18,7 @@ long int
     return f[n];
 }
 
-int
-    main() {
+int main() {
     int i, j;
     long int n;
 

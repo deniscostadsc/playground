@@ -1,22 +1,18 @@
 #include <iostream>
 
-long
-    triangle(long n) {
+long triangle(long n) {
     return n * (n + 1) / 2;
 }
 
-long
-    pentagonal(long n) {
+long pentagonal(long n) {
     return n * (3 * n - 1) / 2;
 }
 
-long
-    hexagonal(long n) {
+long hexagonal(long n) {
     return n * (2 * n - 1);
 }
 
-int
-    main() {
+int main() {
     bool got_pentagonal = false, got_hexagonal = false;
     long tn, pn = 0, hn = 0, t = 285 + 1, p = 165, h = 143;
 

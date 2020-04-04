@@ -1,8 +1,7 @@
 #include <cstdio>
 #include <iostream>
 
-int **
-    create_grid(int r, int c, int m, int **missing) {
+int **create_grid(int r, int c, int m, int **missing) {
     int i, j;
     int **grid = new int *[r];
 
@@ -46,15 +45,8 @@ int **
     return grid;
 }
 
-void
-    calculate_probability(
-        int i,
-        int j,
-        int r,
-        int c,
-        int k,
-        int **grid,
-        double probability) {
+void calculate_probability(
+    int i, int j, int r, int c, int k, int **grid, double probability) {
     if (i == r - 1 && j == k) {
         std::cout << probability << std::endl;
     }
@@ -85,8 +77,7 @@ void
     }
 }
 
-void
-    where_to_drop(int r, int c, int k, int **grid) {
+void where_to_drop(int r, int c, int k, int **grid) {
     int j;
 
     for (j = 0; j < c; j++) {
@@ -94,8 +85,7 @@ void
     }
 }
 
-int
-    main() {
+int main() {
     int n, r, c, k, m, ri, ci, i, j;
     int **grid;
 

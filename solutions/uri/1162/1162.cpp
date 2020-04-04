@@ -1,7 +1,6 @@
 #include <iostream>
 
-int
-    main() {
+int main() {
     int i, j, x, n, l, swap;
     bool swapped;
 

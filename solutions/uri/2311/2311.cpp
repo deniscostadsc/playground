@@ -1,8 +1,7 @@
 #include <iomanip>
 #include <iostream>
 
-int
-    main() {
+int main() {
     int n, i;
     double difficulty, max_score, min_score, current_score, total_score;
     std::string name;

@@ -13,8 +13,7 @@ std::map< int, std::vector< int > > graph;
 std::map< int, std::vector< int > > scc;
 std::stack< int > s;
 
-void
-    dfs_tarjan(int v) {
+void dfs_tarjan(int v) {
     std::vector< int >::iterator v_it;
     indexes[v] = lowlink[v] = current_index++;
     s.push(v);
@@ -41,8 +40,7 @@ void
     }
 }
 
-void
-    tarjan() {
+void tarjan() {
     std::map< int, std::vector< int > >::iterator m_it;
 
     for (m_it = graph.begin(); m_it != graph.end(); m_it++) {
@@ -52,8 +50,7 @@ void
     }
 }
 
-int
-    main() {
+int main() {
     int n, m, v, w, p;
     std::map< int, std::vector< int > >::iterator m_it;
     std::vector< int >::iterator v_it;

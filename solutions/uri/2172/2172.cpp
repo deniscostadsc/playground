@@ -1,7 +1,6 @@
 #include <iostream>
 
-int
-    main() {
+int main() {
     unsigned long long x, m;
 
     while (std::cin >> x >> m && x && m) {

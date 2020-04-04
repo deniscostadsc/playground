@@ -1,7 +1,6 @@
 #include <iostream>
 
-bool
-    can_form_triangle(int a, int b, int c) {
+bool can_form_triangle(int a, int b, int c) {
     if (a >= b + c)
         return false;
     if (b >= a + c)
@@ -11,8 +10,7 @@ bool
     return true;
 }
 
-int
-    main() {
+int main() {
     int a, b, c, d;
     bool result;
 

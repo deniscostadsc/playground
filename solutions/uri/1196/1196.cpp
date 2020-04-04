@@ -2,8 +2,7 @@
 #include <iostream>
 #include <map>
 
-int
-    main() {
+int main() {
     char c;
     std::map< char, char > keyboard;
 

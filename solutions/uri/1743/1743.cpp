@@ -1,7 +1,6 @@
 #include <iostream>
 
-int
-    main() {
+int main() {
     int i, plug, result = 1, conector[5];
 
     for (i = 0; i <= 4; i++)

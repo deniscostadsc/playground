@@ -1,8 +1,7 @@
 #include <iostream>
 #include <string>
 
-int
-    main() {
+int main() {
     unsigned int i, n, l;
     std::string a, b;
 

@@ -1,8 +1,7 @@
 #include <iostream>
 #include <vector>
 
-int
-    main() {
+int main() {
     int t, p, ticket, c;
     std::vector< int > tickets;
 

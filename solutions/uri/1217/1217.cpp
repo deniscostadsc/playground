@@ -4,8 +4,7 @@
 #include <iostream>
 #include <string>
 
-int
-    main() {
+int main() {
     int n, c;
     double p, prices, k, kilos = 0;
     std::string s;

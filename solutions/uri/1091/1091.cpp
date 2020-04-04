@@ -1,7 +1,6 @@
 #include <iostream>
 
-int
-    main() {
+int main() {
     int n, x, y, xc, yc;
 
     while (std::cin >> n && n != 0) {

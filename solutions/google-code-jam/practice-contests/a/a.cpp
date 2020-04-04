@@ -2,11 +2,10 @@
 #include <iostream>
 #include <string>
 
-std::string
-    conversor(
-        std::string alien_number,
-        std::string source_language,
-        std::string target_language) {
+std::string conversor(
+    std::string alien_number,
+    std::string source_language,
+    std::string target_language) {
     int number_value = 0, current_digit_index, i;
     int source_language_size = source_language.length();
     int target_language_size = target_language.length();
@@ -27,8 +26,7 @@ std::string
     return target_number;
 }
 
-int
-    main() {
+int main() {
     int n, i;
     std::string alien_number, source_language, target_language;
 

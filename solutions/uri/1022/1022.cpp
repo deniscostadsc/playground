@@ -1,8 +1,7 @@
 #include <cmath>
 #include <cstdio>
 
-int
-    main() {
+int main() {
     int n, a, b, c, d, r, num, den, num_r, den_r, j;
     char o, i;
 

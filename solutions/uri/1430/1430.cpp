@@ -3,8 +3,7 @@
 #include <map>
 #include <string>
 
-int
-    main() {
+int main() {
     int i, count, acum;
     std::string jingle;
 

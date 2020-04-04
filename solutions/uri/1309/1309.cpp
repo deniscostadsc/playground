@@ -1,8 +1,7 @@
 #include <iostream>
 #include <string>
 
-int
-    main() {
+int main() {
     int cents;
     int comma;
     std::string money;

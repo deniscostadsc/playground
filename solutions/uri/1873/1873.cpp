@@ -1,9 +1,7 @@
 #include <iostream>
 
-std::string
-    rock_paper_scissors_lizard_spock_judge(
-        std::string rajeshs_hand,
-        std::string sheldons_hand) {
+std::string rock_paper_scissors_lizard_spock_judge(
+    std::string rajeshs_hand, std::string sheldons_hand) {
     if (sheldons_hand == rajeshs_hand) {
         return "empate";
     }
@@ -22,8 +20,7 @@ std::string
     return "sheldon";
 }
 
-int
-    main() {
+int main() {
     int c;
     std::string sheldons_hand, rajeshs_hand;
 

@@ -2,8 +2,7 @@
 #include <iostream>
 #include <map>
 
-int
-    main() {
+int main() {
     int n, completeness;
     std::string phrase, alphabet = "abcdefghijklmnopqrstuvwxyz";
     std::map< char, int > letter_count;

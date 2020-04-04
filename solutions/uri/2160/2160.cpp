@@ -1,8 +1,7 @@
 #include <iostream>
 #include <string>
 
-int
-    main() {
+int main() {
     std::string name;
 
     while (std::getline(std::cin, name)) {

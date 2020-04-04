@@ -1,8 +1,7 @@
 #include <cstdio>
 #include <cstring>
 
-int
-    main() {
+int main() {
     int n;
     char s[6];
 

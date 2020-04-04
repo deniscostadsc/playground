@@ -3,8 +3,7 @@
 #include <string>
 #include <vector>
 
-int
-    main() {
+int main() {
     unsigned int n, i;
     int g;
     std::string s;

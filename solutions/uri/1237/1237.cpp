@@ -2,8 +2,7 @@
 #include <cstring>
 #include <iostream>
 
-int
-    main() {
+int main() {
     int lcs;
     std::string a, b;
 

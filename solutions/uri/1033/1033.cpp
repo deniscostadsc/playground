@@ -5,8 +5,7 @@
 unsigned long long memo_fib[263];
 unsigned long long memo_calls[263];
 
-long long
-    fib(long long n) {
+long long fib(long long n) {
     if (n == 0 || memo_calls[n]) {
         return memo_fib[n];
     }
@@ -17,8 +16,7 @@ long long
     return memo_fib[n];
 }
 
-int
-    main() {
+int main() {
     unsigned long long n;
     int b;
 

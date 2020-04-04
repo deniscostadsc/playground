@@ -1,8 +1,7 @@
 #include <algorithm>
 #include <iostream>
 
-int
-    main() {
+int main() {
     int a1, a2, a3;
 
     while (std::cin >> a1 >> a2 >> a3) {

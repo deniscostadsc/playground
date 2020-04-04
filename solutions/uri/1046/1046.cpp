@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     int hi, hf, hr;
 
     scanf("%d %d", &hi, &hf);

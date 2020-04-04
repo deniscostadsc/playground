@@ -1,8 +1,7 @@
 #include <iomanip>
 #include <iostream>
 
-int
-    main() {
+int main() {
     int t;
     std::string word;
 

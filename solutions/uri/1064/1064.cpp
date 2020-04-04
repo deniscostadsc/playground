@@ -1,8 +1,7 @@
 #include <cmath>
 #include <cstdio>
 
-int
-    main() {
+int main() {
     float n, s = 0;
     int c = 0;
 

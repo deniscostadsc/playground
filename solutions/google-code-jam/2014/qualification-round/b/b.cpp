@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     int n, case_n = 0;
     double c, f, x, total_seconds, seconds, cookies, cookies_per_second;
 

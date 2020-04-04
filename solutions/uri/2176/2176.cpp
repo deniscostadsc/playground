@@ -1,8 +1,7 @@
 #include <algorithm>
 #include <iostream>
 
-int
-    main() {
+int main() {
     std::string s;
 
     while (std::cin >> s) {

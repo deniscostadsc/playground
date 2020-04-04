@@ -1,8 +1,7 @@
 #include <iostream>
 #include <string>
 
-int
-    main() {
+int main() {
     int n, i = 1, a, b;
     std::string first_player, second_player;
 

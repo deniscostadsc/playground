@@ -2,8 +2,7 @@
 #include <iostream>
 #include <string>
 
-int
-    main() {
+int main() {
     int t, j, k, i = 1;
     std::string n, lowest, greatest, copy;
     char c;

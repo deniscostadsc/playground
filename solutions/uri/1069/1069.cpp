@@ -2,8 +2,7 @@
 #include <cstring>
 #include <iostream>
 
-int
-    main() {
+int main() {
     char e[1001];
     int d, n, c, i;
 

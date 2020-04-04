@@ -1,8 +1,7 @@
 #include <cmath>
 #include <cstdio>
 
-int
-    main() {
+int main() {
     float h, s;
     scanf("%f", &h);
     scanf("%f", &s);

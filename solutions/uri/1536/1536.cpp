@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     int n, team_1_1, team_2_1, team_1_2, team_2_2;
 
     scanf("%d", &n);

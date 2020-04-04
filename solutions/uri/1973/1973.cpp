@@ -1,8 +1,7 @@
 #include <cstdio>
 #include <set>
 
-int
-    main() {
+int main() {
     long long n, x;
     long long total_sheeps;
     int attacked_stars;

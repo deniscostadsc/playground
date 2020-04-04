@@ -2,8 +2,7 @@
 #include <iomanip>
 #include <iostream>
 
-int
-    main() {
+int main() {
     double v, d;
 
     std::cout << std::fixed << std::setprecision(2);

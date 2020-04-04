@@ -4,8 +4,7 @@
 int graph[26][26];
 int discovered[26];
 
-void
-    dfs(int vertex, int v, int cc) {
+void dfs(int vertex, int v, int cc) {
     int i;
 
     discovered[vertex] = cc;
@@ -17,8 +16,7 @@ void
     }
 }
 
-int
-    count_connected_components(int v) {
+int count_connected_components(int v) {
     int i, index = 0, cc = 0;
 
     while (true) {
@@ -40,8 +38,7 @@ int
     return cc;
 }
 
-int
-    main() {
+int main() {
     int i, j, n, v, e, cc, tcase = 0;
     char from, to;
     std::string alphabet = "abcdefghijklmnopqrstuvwxyz";

@@ -1,8 +1,7 @@
 #include <iostream>
 #include <string>
 
-int
-    main() {
+int main() {
     int m, f, c = 0;
     std::string s, l, cs, g;
 

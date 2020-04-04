@@ -3,8 +3,7 @@
 #include <map>
 #include <string>
 
-int
-    main() {
+int main() {
     double price, result;
     int n, p, q, quantity;
     std::map< std::string, double > prices;

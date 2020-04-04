@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     float sum = 0.0;
     int n, count = 0;
 

@@ -2,8 +2,7 @@
 #include <iostream>
 #include <string>
 
-int
-    main() {
+int main() {
     int i, t, n, index, position, commands[102];
     std::string command;
 

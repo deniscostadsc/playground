@@ -3,8 +3,7 @@
 #include <numeric>
 #include <vector>
 
-int
-    main() {
+int main() {
     int n, l;
     double c, g, avg;
     std::vector< double > gs;

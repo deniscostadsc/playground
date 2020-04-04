@@ -1,19 +1,16 @@
 #include <cstdio>
 
-int
-    gcd(int x, int y) {
+int gcd(int x, int y) {
     if (y == 0)
         return x;
     return gcd(y, x % y);
 }
 
-int
-    gcd_tri(int x, int y, int z) {
+int gcd_tri(int x, int y, int z) {
     return gcd(x, gcd(y, z));
 }
 
-bool
-    is_pythagorean_triple(int x, int y, int z) {
+bool is_pythagorean_triple(int x, int y, int z) {
     if (x > y && x > z)
         return x * x == (y * y) + (z * z);
     else if (y > z)
@@ -21,8 +18,7 @@ bool
     return z * z == (x * x) + (y * y);
 }
 
-int
-    main() {
+int main() {
     int x, y, z;
 
     while (scanf("%d %d %d", &x, &y, &z) != EOF) {

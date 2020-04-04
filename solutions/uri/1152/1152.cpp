@@ -11,8 +11,7 @@ struct arc {
 
 std::vector< arc > graph;
 
-bool
-    comparator(arc a, arc b) {
+bool comparator(arc a, arc b) {
     return a.meters < b.meters;
 }
 
@@ -23,22 +22,19 @@ struct disjointset_node {
 
 std::map< int, disjointset_node > disjointset;
 
-void
-    makeset(int data) {
+void makeset(int data) {
     disjointset[data].data = data;
     disjointset[data].parent = &disjointset[data];
 }
 
-disjointset_node *
-    findset(disjointset_node *n) {
+disjointset_node *findset(disjointset_node *n) {
     if (n->parent != n) {
         n->parent = findset(n->parent);
     }
     return n->parent;
 }
 
-bool
-    unionset(int data_a, int data_b) {
+bool unionset(int data_a, int data_b) {
     disjointset_node node_a = disjointset[data_a];
 
     disjointset_node node_b = disjointset[data_b];
@@ -53,8 +49,7 @@ bool
     return true;
 }
 
-int
-    main() {
+int main() {
     int m, n, x, y, z, i, count;
 
     while (std::cin >> m >> n && m && n) {

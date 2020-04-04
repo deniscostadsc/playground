@@ -1,8 +1,7 @@
 #include <iostream>
 #include <string>
 
-std::string
-    get_significand(std::string number) {
+std::string get_significand(std::string number) {
     int digits_count = 0;
     std::size_t found;
     std::string digits = "0123456789";
@@ -47,8 +46,7 @@ std::string
     return significand;
 }
 
-std::string
-    get_exponent(std::string number) {
+std::string get_exponent(std::string number) {
     int sign_shift = 0;
     bool has_leading_zeros;
     std::size_t dot, non_zero, first_non_zero;
@@ -91,8 +89,7 @@ std::string
     return sign + exponent;
 }
 
-int
-    main() {
+int main() {
     std::string number;
     std::string significand;
     std::string exponent;

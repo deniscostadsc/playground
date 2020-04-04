@@ -1,8 +1,7 @@
 #include <cmath>
 #include <iostream>
 
-bool
-    is_prime(unsigned long long n) {
+bool is_prime(unsigned long long n) {
     if (n == 2)
         return true;
     if (n % 2 == 0 || n < 2)
@@ -16,8 +15,7 @@ bool
     return true;
 }
 
-int
-    main() {
+int main() {
     int c = 0;
     unsigned long long n = 1;
 

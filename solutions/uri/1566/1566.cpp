@@ -2,8 +2,7 @@
 #include <cstdio>
 #include <vector>
 
-int
-    main() {
+int main() {
     int nc, n, h;
     std::vector< int > heights;
     std::vector< int >::iterator it;

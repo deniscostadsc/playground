@@ -1,7 +1,6 @@
 #include <iostream>
 
-int
-    main() {
+int main() {
     int n;
     std::string player1_sign, player2_sign;
 

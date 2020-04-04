@@ -1,8 +1,7 @@
 #include <cmath>
 #include <iostream>
 
-int
-    main() {
+int main() {
     int n, qt, s, g, i, lowest_sub, best_guesser;
 
     std::cin >> n;

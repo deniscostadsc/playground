@@ -1,8 +1,7 @@
 #include <cmath>
 #include <cstdio>
 
-int
-    main() {
+int main() {
     int a, b;
     float c, s = 0.0;
     while (scanf("%d %d %f", &a, &b, &c) != EOF) {

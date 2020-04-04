@@ -3,8 +3,7 @@
 #include <sstream>
 #include <vector>
 
-void
-    merge(std::vector< std::string > arr, int l, int m, int r) {
+void merge(std::vector< std::string > arr, int l, int m, int r) {
     int l_arr_size = m - l + 1;
     int r_arr_size = r - m;
 
@@ -46,8 +45,7 @@ void
     }
 }
 
-void
-    merge_sort(std::vector< std::string > arr, int l, int r) {
+void merge_sort(std::vector< std::string > arr, int l, int r) {
     if (l < r) {
         int m = l + (r - l) / 2;
 
@@ -57,8 +55,7 @@ void
     }
 }
 
-int
-    main() {
+int main() {
     std::string line;
     std::vector< std::string >::iterator it;
 

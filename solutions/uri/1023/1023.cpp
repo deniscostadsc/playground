@@ -5,8 +5,7 @@
 
 std::map< int, int > r;
 
-int
-    main() {
+int main() {
     int n, nn = 0, x, y, s, c;
     double xs, ys;
     bool first = true;

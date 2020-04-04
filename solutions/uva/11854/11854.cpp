@@ -3,8 +3,7 @@
 #include <iostream>
 #include <vector>
 
-int
-    main() {
+int main() {
     int a, b, c;
     std::vector< int > s;
 

@@ -3,8 +3,7 @@
 int graph[49][49];
 bool discovered[49];
 
-int
-    dfs(int vertex, int v) {
+int dfs(int vertex, int v) {
     int i, count = 0;
 
     discovered[vertex] = true;
@@ -18,8 +17,7 @@ int
     return count;
 }
 
-int
-    main() {
+int main() {
     int t, n, v, a, i, j, from, to;
 
     scanf("%d", &t);

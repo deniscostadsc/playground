@@ -1,7 +1,6 @@
 #include <iostream>
 
-int
-    main() {
+int main() {
     int a, d, i, j, nearest_attack_player, defense_distance, count, temp;
 
     while (std::cin >> a >> d && a && d) {

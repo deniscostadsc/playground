@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     int n, c = 0, i = 5;
 
     while (i--) {

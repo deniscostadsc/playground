@@ -1,7 +1,6 @@
 #include <iostream>
 
-int
-    main() {
+int main() {
     int n, t, i, index, lowest = 21;
 
     std::cin >> n;

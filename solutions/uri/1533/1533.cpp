@@ -1,7 +1,6 @@
 #include <iostream>
 
-int
-    main() {
+int main() {
     int qty, current_index, first_index, second_index, number, first_suspicous,
         second_suspicous;
 

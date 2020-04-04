@@ -2,8 +2,7 @@
 #include <cmath>
 #include <iostream>
 
-bool
-    can_form_triangle(int a, int b, int c) {
+bool can_form_triangle(int a, int b, int c) {
     if (a >= b + c)
         return false;
     if (b >= a + c)
@@ -13,8 +12,7 @@ bool
     return true;
 }
 
-std::string
-    triangle_type(int a, int b, int c) {
+std::string triangle_type(int a, int b, int c) {
     if (a == b && b == c) {
         return "Equilatero";
     } else if (a == b || b == c || a == c) {
@@ -24,8 +22,7 @@ std::string
     }
 }
 
-bool
-    is_rectangle_triangle(int a, int b, int c) {
+bool is_rectangle_triangle(int a, int b, int c) {
     int hypotenuse = std::max(std::max(a, b), c);
     int cathetus1 = std::min(a, b);
     int cathetus2 = std::min(b, c);
@@ -33,8 +30,7 @@ bool
     return hypotenuse == sqrt(pow(cathetus1, 2) + pow(cathetus2, 2));
 }
 
-int
-    main() {
+int main() {
     int a, b, c;
     bool is_valid_triangle;
 

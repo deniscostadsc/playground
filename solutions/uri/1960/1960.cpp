@@ -3,8 +3,7 @@
 #include <map>
 #include <string>
 
-int
-    main() {
+int main() {
     int integer, multiplier, current_digit;
     std::map< int, std::string > int_roman_base;
     std::string roman;

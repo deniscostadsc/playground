@@ -1,7 +1,6 @@
 #include <iostream>
 
-int
-    main() {
+int main() {
     long long int x, y, a;
     std::cin >> x;
     std::cin >> y;

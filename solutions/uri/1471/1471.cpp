@@ -1,8 +1,7 @@
 #include <iostream>
 #include <vector>
 
-int
-    main() {
+int main() {
     bool check;
     int n, r, i, j, _v;
     std::vector< int > v;

@@ -2,8 +2,7 @@
 #include <string>
 #include <vector>
 
-int
-    main() {
+int main() {
     bool c;
     int i, n, q;
     double a, p;

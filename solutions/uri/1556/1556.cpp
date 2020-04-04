@@ -4,8 +4,7 @@
 
 std::set< std::string > matches;
 
-void
-    brute_force(std::string sequence) {
+void brute_force(std::string sequence) {
     int i;
 
     if (sequence.size()) {
@@ -20,8 +19,7 @@ void
     }
 }
 
-int
-    main() {
+int main() {
     std::string sequence;
 
     while (std::cin >> sequence) {

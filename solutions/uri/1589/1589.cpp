@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     int n, r1, r2;
 
     scanf("%d", &n);

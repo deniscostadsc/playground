@@ -1,8 +1,7 @@
 #include <iostream>
 #include <vector>
 
-int
-    main() {
+int main() {
     int n, s, ss, c, h;
     unsigned i;
     char b;

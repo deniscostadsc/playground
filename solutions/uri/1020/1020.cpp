@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     int t, a = 0, m = 0, d = 0;
     scanf("%d", &t);
     if (t >= 365) {

@@ -1,7 +1,6 @@
 #include <iostream>
 
-int
-    main() {
+int main() {
     int i, x, y, s = 0;
 
     std::cin >> x;

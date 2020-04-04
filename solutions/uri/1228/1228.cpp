@@ -1,8 +1,7 @@
 #include <iostream>
 #include <vector>
 
-int
-    find(std::vector< int > v, int n) {
+int find(std::vector< int > v, int n) {
     for (int i = 0; i < v.size(); i++) {
         if (n == v.at(i))
             return i;
@@ -10,8 +9,7 @@ int
     return -1;
 }
 
-int
-    main() {
+int main() {
     int i, j, n, p, overtakes;
     std::vector< int > start;
     std::vector< int > finish;

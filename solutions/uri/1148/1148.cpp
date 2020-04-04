@@ -4,8 +4,7 @@
 
 int matrix[501][501];
 
-int
-    dijkstra(int source, int destiny, int n) {
+int dijkstra(int source, int destiny, int n) {
     int shortest_distance, next_vertex, i, j;
     int distance[n];
     bool correct[n];
@@ -45,8 +44,7 @@ int
     return distance[destiny];
 }
 
-int
-    main() {
+int main() {
     int n, e, x, y, h, k, o, d, i, j, result;
 
     while (scanf("%d %d", &n, &e) && n) {

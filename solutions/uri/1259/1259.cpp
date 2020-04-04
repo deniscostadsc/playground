@@ -2,8 +2,7 @@
 #include <iostream>
 #include <vector>
 
-bool
-    compare(int i, int j) {
+bool compare(int i, int j) {
     if (i % 2 == 0 && j % 2 == 1)
         return true;
     if (i % 2 == 1 && j % 2 == 0)
@@ -15,8 +14,7 @@ bool
     }
 }
 
-int
-    main() {
+int main() {
     int n, c;
     unsigned int i;
     std::vector< int > v;

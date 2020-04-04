@@ -1,7 +1,6 @@
 #include <iostream>
 
-bool
-    is_password_valid(std::string password) {
+bool is_password_valid(std::string password) {
     if (!(password.size() >= 6 && password.size() <= 32)) {
         return false;
     }
@@ -42,13 +41,12 @@ bool
     return has_uppercase && has_lowercase;
 }
 
-int
-    main() {
+int main() {
     std::string password;
 
     while (std::getline(std::cin, password)) {
-        std::cout << (is_password_valid(password) ? "Senha valida." :
-                                                    "Senha invalida.")
+        std::cout << (is_password_valid(password) ? "Senha valida."
+                                                  : "Senha invalida.")
                   << std::endl;
     }
 

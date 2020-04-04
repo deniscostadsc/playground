@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     char o;
     int i, j, c;
     float s = 0.0, n;

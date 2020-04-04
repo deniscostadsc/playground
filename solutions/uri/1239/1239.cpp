@@ -4,8 +4,7 @@
 bool i = false;
 bool b = false;
 
-void
-    bloggo(char c) {
+void bloggo(char c) {
     if (c == '_') {
         if (!i) {
             std::cout << "<i>";
@@ -27,8 +26,7 @@ void
     }
 }
 
-int
-    main() {
+int main() {
     char c;
 
     while ((c = getchar()) != EOF) {

@@ -1,7 +1,6 @@
 #include <iostream>
 
-unsigned long long
-    decrease_n(unsigned long long n) {
+unsigned long long decrease_n(unsigned long long n) {
     unsigned long long subtraction_term = 0;
 
     if (n % 100 == 10) {
@@ -20,8 +19,7 @@ unsigned long long
     return n - 1;
 }
 
-bool
-    is_tidy(unsigned long long n) {
+bool is_tidy(unsigned long long n) {
     if (n <= 9)
         return true;
 
@@ -42,8 +40,7 @@ bool
     return true;
 }
 
-int
-    main() {
+int main() {
     int t, i;
     unsigned long long n;
 

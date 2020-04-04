@@ -1,8 +1,7 @@
 #include <cstdio>
 #include <iostream>
 
-int
-    main() {
+int main() {
     int x, i, a[20];
     for (i = 0; i <= 19; i++)
         scanf("%d", &a[i]);

@@ -2,8 +2,7 @@
 #include <iomanip>
 #include <iostream>
 
-int
-    main() {
+int main() {
     double n;
     double result = 6.0;
 

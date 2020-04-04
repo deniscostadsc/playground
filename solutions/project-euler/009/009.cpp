@@ -5,15 +5,13 @@ int s = 1000;
 int s2 = s / 2;
 int limit = sqrt(s2) - 1;
 
-int
-    gcd(int x, int y) {
+int gcd(int x, int y) {
     if (y == 0)
         return x;
     return gcd(y, x % y);
 }
 
-int
-    main() {
+int main() {
     int m, n, sm, k, d, a, b, c;
 
     for (m = 2; m <= limit; m++) {

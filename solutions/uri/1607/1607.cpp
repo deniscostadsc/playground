@@ -1,8 +1,7 @@
 #include <iostream>
 #include <map>
 
-int
-    main() {
+int main() {
     int t, operations_count, i;
     std::string a, b;
     std::map< char, int > letter_index;

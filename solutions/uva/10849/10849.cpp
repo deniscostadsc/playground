@@ -1,8 +1,7 @@
 #include <cmath>
 #include <iostream>
 
-int
-    main() {
+int main() {
     int n, t, q, x1, y1, x2, y2;
 
     std::cin >> n;

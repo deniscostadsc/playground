@@ -3,8 +3,7 @@
 #include <string>
 #include <vector>
 
-bool
-    comparator(std::string first, std::string second) {
+bool comparator(std::string first, std::string second) {
     int i, length;
 
     length = first.length();
@@ -20,8 +19,7 @@ bool
     return first.length() > second.length();
 }
 
-int
-    main() {
+int main() {
     int n, m, c = 0;
     std::string word;
     std::vector< std::string > words;

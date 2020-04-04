@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     int n, i;
 
     for (n = 0; n <= 9; n++) {

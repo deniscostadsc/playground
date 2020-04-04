@@ -1,8 +1,7 @@
 #include <iostream>
 #include <string>
 
-void
-    postorder_print_from_preorder_inorder(std::string pre, std::string in) {
+void postorder_print_from_preorder_inorder(std::string pre, std::string in) {
     int in_root_index = in.find(pre[0]);
 
     if (in.substr(0, in_root_index).length() > 0) {
@@ -17,8 +16,7 @@ void
     std::cout << pre[0];
 }
 
-int
-    main() {
+int main() {
     std::string pre, in;
 
     while (std::cin >> pre >> in) {

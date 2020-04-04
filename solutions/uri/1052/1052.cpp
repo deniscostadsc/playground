@@ -1,8 +1,7 @@
 #include <cstdio>
 #include <cstring>
 
-int
-    main() {
+int main() {
     char m[12][10] = {"January",
                       "February",
                       "March",

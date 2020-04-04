@@ -2,8 +2,7 @@
 #include <iostream>
 #include <string>
 
-int
-    main() {
+int main() {
     int c;
     unsigned int i;
     bool begin, match;

@@ -1,8 +1,7 @@
 #include <iostream>
 #include <string>
 
-int
-    main() {
+int main() {
     bool is_tautogram;
     int letter, index;
     std::string lower = "abcdefghijklmnopqrstuvwxyz";

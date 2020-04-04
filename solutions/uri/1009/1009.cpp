@@ -1,8 +1,7 @@
 #include <cmath>
 #include <cstdio>
 
-int
-    main() {
+int main() {
     char a[300];
     float b, c;
     scanf("%s", a);

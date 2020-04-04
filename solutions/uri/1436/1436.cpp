@@ -2,8 +2,7 @@
 #include <iostream>
 #include <vector>
 
-int
-    main() {
+int main() {
     int c, n, l, j;
     std::vector< int > p;
 

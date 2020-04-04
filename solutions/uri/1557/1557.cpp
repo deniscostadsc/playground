@@ -2,8 +2,7 @@
 #include <iostream>
 #include <sstream>
 
-int
-    main() {
+int main() {
     int i, j, k, n, initial, current, max_number, length_max_number,
         length_current, num_spaces;
 

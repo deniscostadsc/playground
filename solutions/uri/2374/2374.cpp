@@ -1,7 +1,6 @@
 #include <iostream>
 
-int
-    main() {
+int main() {
     int n, m;
 
     while (std::cin >> n >> m) {

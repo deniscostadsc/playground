@@ -1,8 +1,7 @@
 #include <iomanip>
 #include <iostream>
 
-int
-    main() {
+int main() {
     int n;
     double s, b, a, service_attempt, service_successful, block_attempt,
         block_successful, attack_attempt, attack_successful;

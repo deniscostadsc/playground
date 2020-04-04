@@ -1,8 +1,7 @@
 #include <iostream>
 #include <vector>
 
-int
-    main() {
+int main() {
     int i, j, k, n, arc, triangles, len;
 
     while (std::cin >> n) {

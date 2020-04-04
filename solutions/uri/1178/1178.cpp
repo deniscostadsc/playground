@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     double n;
     int i;
     scanf("%lf", &n);

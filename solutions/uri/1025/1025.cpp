@@ -2,8 +2,7 @@
 #include <iostream>
 #include <vector>
 
-int
-    bi_search(std::vector< int > v, int n) {
+int bi_search(std::vector< int > v, int n) {
     int begin = 0;
     int end = v.size() - 1;
     int middle = end / 2;
@@ -25,8 +24,7 @@ int
     return -1;
 }
 
-int
-    main() {
+int main() {
     int n, q, marble, query, position, c = 0;
     std::vector< int > marbles;
 

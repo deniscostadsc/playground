@@ -3,8 +3,7 @@
 #include <string>
 #include <vector>
 
-int
-    main() {
+int main() {
     bool newline = false;
     int n;
     unsigned int i, g;

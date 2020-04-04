@@ -4,8 +4,7 @@
 #include <queue>
 #include <utility>
 
-int
-    reverse(int number) {
+int reverse(int number) {
     int reversed = 0;
     int digits_count = 0;
 
@@ -23,8 +22,7 @@ int
     return reversed;
 }
 
-void
-    bfs(int number, int goal) {
+void bfs(int number, int goal) {
     int reversed;
     std::pair< int, int > current;
     std::queue< std::pair< int, int > > q;
@@ -55,8 +53,7 @@ void
     }
 }
 
-int
-    main() {
+int main() {
     int t, a, b;
 
     std::cin >> t;

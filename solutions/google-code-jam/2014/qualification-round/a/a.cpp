@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     int cases, nrow, t, c, card, n = 0;
     int first_row[4], second_row[4];
 

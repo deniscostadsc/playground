@@ -22,28 +22,24 @@ struct arc {
 
 std::vector< arc * > arcs;
 
-bool
-    comparator(arc *a1, arc *a2) {
+bool comparator(arc *a1, arc *a2) {
     return a1->distance < a2->distance;
 }
 
-void
-    make_set(person *p) {
+void make_set(person *p) {
     p->parent = p;
     p->rank = 1;
     people.push_back(p);
 }
 
-person *
-    findset(person *p) {
+person *findset(person *p) {
     if (p->parent != p) {
         p->parent = findset(p->parent);
     }
     return p->parent;
 }
 
-bool
-    unionset(person *p1, person *p2) {
+bool unionset(person *p1, person *p2) {
     person *root_p1 = findset(p1);
     person *root_p2 = findset(p2);
 
@@ -61,8 +57,7 @@ bool
     return true;
 }
 
-int
-    main() {
+int main() {
     int c, n, i, arcs_mst;
     double x, y, total_web;
     std::vector< arc * >::iterator it;

@@ -3,8 +3,7 @@
 #include <string>
 #include <vector>
 
-int
-    main() {
+int main() {
     int n;
     std::string foods, breakfast, lunch, dinner;
     bool cheater;

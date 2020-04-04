@@ -2,8 +2,7 @@
 
 #define pi 3.14159
 
-int
-    main() {
+int main() {
     float a, b, c;
     scanf("%f %f %f", &a, &b, &c);
     printf("TRIANGULO: %.3f\n", a * c / 2);

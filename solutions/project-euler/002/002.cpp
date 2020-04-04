@@ -3,8 +3,7 @@
 
 std::map< int, int > previous_answers;
 
-int
-    fibonacci(int n) {
+int fibonacci(int n) {
     if (previous_answers[n])
         return previous_answers[n];
 
@@ -17,8 +16,7 @@ int
     return previous_answers[n];
 }
 
-int
-    main() {
+int main() {
     int n, i = 0, s = 0;
 
     while (true) {

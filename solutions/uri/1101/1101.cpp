@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     int i, j, x, z, s;
     while (scanf("%d %d", &i, &j) && i > 0 && j > 0) {
         s = 0;

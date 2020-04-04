@@ -3,8 +3,7 @@
 #include <iostream>
 #include <string>
 
-std::string
-    dec2hex(unsigned int n) {
+std::string dec2hex(unsigned int n) {
     std::string chars = "0123456789ABCDEF";
 
     unsigned int i = n % 16;
@@ -18,8 +17,7 @@ std::string
     return result;
 }
 
-unsigned int
-    hex2dec(std::string h) {
+unsigned int hex2dec(std::string h) {
     unsigned int dec = 0, base = 1;
     int index = h.length();
     std::string chars = "0123456789abcdef";
@@ -32,8 +30,7 @@ unsigned int
     return dec;
 }
 
-int
-    main() {
+int main() {
     std::string n;
 
     while (std::cin >> n && n != "-1") {

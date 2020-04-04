@@ -1,8 +1,7 @@
 #include <iomanip>
 #include <iostream>
 
-int
-    main() {
+int main() {
     double price1, price2;
 
     while (std::cin >> price1 >> price2) {

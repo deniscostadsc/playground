@@ -5,8 +5,7 @@
 // The lazy guy uses bash...
 // cat names.txt | tr ',' '\n' | sed 's/"//g' | sort > in.txt
 
-int
-    main() {
+int main() {
     int index = 1, name_sum, total_score = 0;
     unsigned int i;
     std::string name;

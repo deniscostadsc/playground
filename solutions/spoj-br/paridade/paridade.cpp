@@ -4,8 +4,7 @@
 
 int c;
 
-std::string
-    dec2bin(int n) {
+std::string dec2bin(int n) {
     if (n == 0)
         return "0";
     if (n == 1) {
@@ -21,8 +20,7 @@ std::string
     }
 }
 
-int
-    main() {
+int main() {
     std::string b;
     int n;
     while (scanf("%d", &n) && n != 0) {

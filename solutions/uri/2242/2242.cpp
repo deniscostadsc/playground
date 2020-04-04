@@ -1,12 +1,10 @@
 #include <iostream>
 
-bool
-    is_vowel(char c) {
+bool is_vowel(char c) {
     return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
 }
 
-int
-    main() {
+int main() {
     std::string laugh;
     std::string laugh_vowels;
     bool is_funniest;

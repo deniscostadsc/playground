@@ -1,8 +1,7 @@
 #include <iostream>
 #include <vector>
 
-int
-    find(std::vector< int > v, int n) {
+int find(std::vector< int > v, int n) {
     for (int i = 0; i < v.size(); i++) {
         if (n == v.at(i))
             return i;
@@ -10,8 +9,7 @@ int
     return -1;
 }
 
-int
-    main() {
+int main() {
     bool valid;
     int i, j, n, nn = 1;
     int sudoku[9][9];

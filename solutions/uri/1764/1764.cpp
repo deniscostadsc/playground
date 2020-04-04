@@ -17,21 +17,18 @@ struct disjoint_node {
 std::vector< arc > arcs;
 std::map< int, int > disjoint_set;
 
-void
-    makeset(int node) {
+void makeset(int node) {
     disjoint_set[node] = node;
 }
 
-int
-    findset(int node) {
+int findset(int node) {
     if (disjoint_set[node] != node) {
         disjoint_set[node] = findset(disjoint_set[node]);
     }
     return disjoint_set[node];
 }
 
-bool
-    unionset(int x, int y) {
+bool unionset(int x, int y) {
     int parent_x = findset(disjoint_set[x]);
     int parent_y = findset(disjoint_set[y]);
 
@@ -41,13 +38,11 @@ bool
     return true;
 }
 
-bool
-    comparator(arc x, arc y) {
+bool comparator(arc x, arc y) {
     return x.weight < y.weight;
 }
 
-int
-    main() {
+int main() {
     int m, n, x, y, z, count;
 
     while (std::cin >> m >> n && m && n) {

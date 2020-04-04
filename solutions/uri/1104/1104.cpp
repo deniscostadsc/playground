@@ -2,8 +2,7 @@
 #include <cstdio>
 #include <set>
 
-int
-    main() {
+int main() {
     int a, b, aux;
 
     while (scanf("%d %d", &a, &b) && a && b) {

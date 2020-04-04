@@ -7,8 +7,7 @@ struct Bank {
     int reserve;
 };
 
-int
-    main() {
+int main() {
     int r, b, n, i, d, c, v;
     bool liquidated;
     std::vector< Bank > banks;

@@ -1,7 +1,6 @@
 #include <iostream>
 
-int
-    main() {
+int main() {
     int n, i, j, board[4][4];
     bool left, right, up, down, none;
 

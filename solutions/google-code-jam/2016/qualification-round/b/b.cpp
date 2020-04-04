@@ -2,8 +2,7 @@
 #include <iostream>
 #include <string>
 
-int
-    main() {
+int main() {
     int t, i, count, limit;
     unsigned int j;
     bool minus_found;

@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     int j, n, p[5], i[5], pi = 0, ii = 0;
     while (scanf("%d", &n) != EOF) {
         if (n % 2 == 0) {

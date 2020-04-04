@@ -2,8 +2,7 @@
 #include <iostream>
 #include <string>
 
-int
-    main() {
+int main() {
     char c;
     long long s = 0;
     bool got_any_number = false, got_invalid_char = false, got_overflow = false;

@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     double s = 1.0, x = 2.0;
     int i;
 

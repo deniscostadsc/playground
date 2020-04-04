@@ -3,8 +3,7 @@
 #include <iostream>
 #include <string>
 
-std::string
-    dec2bin(unsigned int n) {
+std::string dec2bin(unsigned int n) {
     if (n == 0)
         return "0";
     if (n == 1)
@@ -15,8 +14,7 @@ std::string
     return dec2bin(n / 2) + "1";
 }
 
-unsigned int
-    bin2dec(std::string b) {
+unsigned int bin2dec(std::string b) {
     unsigned int dec = 0, base = 1;
     int index = b.length();
 
@@ -29,8 +27,7 @@ unsigned int
     return dec;
 }
 
-std::string
-    dec2hex(unsigned int n) {
+std::string dec2hex(unsigned int n) {
     std::string chars = "0123456789abcdef";
 
     unsigned int i = n % 16;
@@ -44,8 +41,7 @@ std::string
     return result;
 }
 
-unsigned int
-    hex2dec(std::string h) {
+unsigned int hex2dec(std::string h) {
     unsigned int dec = 0, base = 1;
     int index = h.length();
     std::string chars = "0123456789abcdef";
@@ -58,8 +54,7 @@ unsigned int
     return dec;
 }
 
-int
-    main() {
+int main() {
     int n, nn;
     std::string number, base;
 

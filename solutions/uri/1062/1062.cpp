@@ -7,8 +7,7 @@ std::queue< int > trains;
 std::stack< int > station;
 std::vector< int > required_order;
 
-int
-    next_train(int n) {
+int next_train(int n) {
     int train;
 
     if (!station.empty() && n == station.top()) {
@@ -31,8 +30,7 @@ int
     return 1001;
 }
 
-int
-    main() {
+int main() {
     int n, t, i;
     bool valid;
 

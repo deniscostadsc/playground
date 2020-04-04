@@ -2,8 +2,7 @@
 #include <iostream>
 #include <map>
 
-int
-    main() {
+int main() {
     std::map< int, float > menu;
     menu[1001] = 1.5;
     menu[1002] = 2.5;

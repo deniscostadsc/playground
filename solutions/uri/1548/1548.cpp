@@ -2,8 +2,7 @@
 #include <cstdio>
 #include <vector>
 
-int
-    main() {
+int main() {
     int n, m, p, count;
     std::vector< int > queue;
     std::vector< int >::iterator it, it_copy;

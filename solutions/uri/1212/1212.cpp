@@ -2,8 +2,7 @@
 #include <iostream>
 #include <string>
 
-int
-    main() {
+int main() {
     int c, temp, index, result[12];
     unsigned int i, size_a, size_b;
     std::string a, b;

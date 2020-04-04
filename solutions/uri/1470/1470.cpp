@@ -1,13 +1,12 @@
 #include <algorithm>
 #include <iostream>
 
-long long *
-    fold(
-        long long *tape,
-        int tape_size,
-        long long *new_tape,
-        int new_tape_size,
-        int folding_index) {
+long long *fold(
+    long long *tape,
+    int tape_size,
+    long long *new_tape,
+    int new_tape_size,
+    int folding_index) {
     int i, j, shift = 1;
 
     if (folding_index >= tape_size) {
@@ -37,12 +36,11 @@ long long *
     return new_tape;
 }
 
-bool
-    check_folding(
-        long long *input_tape,
-        int input_tape_size,
-        long long *output_tape,
-        int output_tape_size) {
+bool check_folding(
+    long long *input_tape,
+    int input_tape_size,
+    long long *output_tape,
+    int output_tape_size) {
     bool all_equals = true;
     bool result;
 
@@ -84,8 +82,7 @@ bool
     return false;
 }
 
-int
-    main() {
+int main() {
     int n, m;
     int i, j;
 

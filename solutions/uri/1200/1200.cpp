@@ -11,8 +11,7 @@ struct node {
     node *right;
 };
 
-void
-    insert_node(node *tree, node *new_node) {
+void insert_node(node *tree, node *new_node) {
     if (tree->letter > new_node->letter) {
         if (tree->right == NULL) {
             tree->right = new_node;
@@ -28,8 +27,7 @@ void
     }
 }
 
-bool
-    exist(node *tree, char letter) {
+bool exist(node *tree, char letter) {
     bool result = false;
 
     if (tree->letter == letter)
@@ -42,8 +40,7 @@ bool
     return result;
 }
 
-void
-    prefixa(node *tree) {
+void prefixa(node *tree) {
     std::cout << tree->letter;
 
     if (tree->right != NULL) {
@@ -57,8 +54,7 @@ void
     }
 }
 
-void
-    infixa(node *tree) {
+void infixa(node *tree) {
     if (tree->right != NULL)
         infixa(tree->right);
 
@@ -71,8 +67,7 @@ void
         infixa(tree->left);
 }
 
-void
-    posfixa(node *tree) {
+void posfixa(node *tree) {
     if (tree->right != NULL)
         posfixa(tree->right);
     if (tree->left != NULL)
@@ -84,8 +79,7 @@ void
     first_pos_char = false;
 }
 
-int
-    main() {
+int main() {
     char letter;
     std::string command;
 

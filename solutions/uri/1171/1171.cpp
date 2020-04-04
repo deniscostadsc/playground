@@ -2,8 +2,7 @@
 #include <cstring>
 #include <iostream>
 
-int
-    main() {
+int main() {
     int n[2001], x, i, j, c = 1;
 
     memset(n, 0, sizeof(n));

@@ -2,8 +2,7 @@
 #include <iostream>
 #include <vector>
 
-int
-    main() {
+int main() {
     unsigned int i, n;
 
     while (std::cin >> n && n != 0) {

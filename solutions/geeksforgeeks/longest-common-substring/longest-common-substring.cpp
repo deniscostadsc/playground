@@ -2,8 +2,7 @@
 #include <cstring>
 #include <iostream>
 
-int
-    main() {
+int main() {
     int t, n, m, lcs;
     std::string a, b;
 

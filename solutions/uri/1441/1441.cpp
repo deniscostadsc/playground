@@ -3,8 +3,7 @@
 
 std::vector< int > sequence;
 
-void
-    ackermann(int h) {
+void ackermann(int h) {
     sequence.push_back(h);
     if (h != 1) {
         if (h % 2 == 0) {
@@ -15,8 +14,7 @@ void
     }
 }
 
-int
-    main() {
+int main() {
     int h, i, greatest;
 
     while (std::cin >> h && h) {

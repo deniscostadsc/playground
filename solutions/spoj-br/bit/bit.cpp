@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     int n, c = 0, b[] = {50, 10, 5, 1};
     while (scanf("%d", &n) && n != 0) {
         printf("Teste %d\n", ++c);

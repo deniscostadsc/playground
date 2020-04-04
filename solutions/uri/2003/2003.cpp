@@ -1,8 +1,7 @@
 #include <cstdio>
 #include <iostream>
 
-int
-    main() {
+int main() {
     int hour, minute, late;
 
     while (scanf("%d:%d", &hour, &minute) != EOF) {

@@ -1,8 +1,7 @@
 #include <iomanip>
 #include <iostream>
 
-int
-    main() {
+int main() {
     float h, p;
 
     while (std::cin >> h >> p) {

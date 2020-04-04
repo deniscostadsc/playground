@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     int n, q = 0, g = -1, i = -1;
 
     while (++q && q <= 100) {

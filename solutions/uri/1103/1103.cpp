@@ -1,7 +1,6 @@
 #include <cstdio>
 
-int
-    main() {
+int main() {
     int hi, hf, mi, mf, m;
 
     while (1) {

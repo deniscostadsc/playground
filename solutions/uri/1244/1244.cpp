@@ -10,15 +10,13 @@ struct Pair {
     unsigned int second;
 };
 
-bool
-    compare(Pair i, Pair j) {
+bool compare(Pair i, Pair j) {
     if (i.first.length() == j.first.length())
         return i.second < j.second;
     return i.first.length() > j.first.length();
 }
 
-int
-    main() {
+int main() {
     int n;
     std::string s;
 

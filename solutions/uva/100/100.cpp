@@ -8,8 +8,7 @@ struct Pair {
 
 std::map< long, Pair > acks;
 
-long
-    ack(long n) {
+long ack(long n) {
     if (acks[n].next != 0)
         return acks[n].next;
 
@@ -25,8 +24,7 @@ long
     return acks[n].next;
 }
 
-int
-    main() {
+int main() {
     long l, h, low, high;
     long g_sequence;
 

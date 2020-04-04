@@ -1,8 +1,7 @@
 #include <iostream>
 #include <string>
 
-int
-    main() {
+int main() {
     int qt;
     long first_number, second_number;
     bool is_even, first_won;
