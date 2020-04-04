@@ -1,5 +1,6 @@
 .PHONY: \
 	cpp-build \
+	cpp-format-code \
 	cpp-lint \
 	cpp-lint-build \
 	format-code \
@@ -25,6 +26,10 @@ FOLDERS := $(shell find . -name 'problem.txt' | sed 's/problem.txt//g')
 cpp-build:
 	@docker build -q -f .docker/$(CPP).Dockerfile -t $(CPP) .
 
+cpp-format-code: cpp-lint-build
+	@docker run -v $(shell pwd):/code $(CPP)-lint \
+		clang-format-7 --style=file -i $$(find . -name '*.cpp')
+
 cpp-lint: cpp-lint-build
 	@docker run -v $(shell pwd):/code $(CPP)-lint \
 		cpplint \
@@ -35,9 +40,9 @@ cpp-lint: cpp-lint-build
 cpp-lint-build:
 	@docker build -q -f .docker/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
 
-format: python-format-code
+format: cpp-format-code python-format-code
 
-lint: python-lint shell-lint cpp-lint
+lint: cpp-lint python-lint shell-lint
 
 python-build:
 	@docker build -q -f .docker/$(PYTHON).Dockerfile -t $(PYTHON) .
