@@ -21,7 +21,7 @@ SQL = sql
 LANGUAGES = \
 	$(CPP) \
 	$(PYTHON)
-FOLDERS := $(shell find . -name 'problem.txt' | sed 's/problem.txt//g')
+FOLDERS := $(shell find . -name 'problem.txt' | sed 's/problem.txt//g' | sort)
 
 __cpp-build:
 	@docker build -q -f .docker/$(CPP).Dockerfile -t $(CPP) .
@@ -78,7 +78,7 @@ ifndef PROBLEM
 			[ $$(find $${folder} -name "*.$${language}" | wc -l) -eq 0 ] && continue; \
 			docker run -v $(shell pwd):/code -e PROBLEM=$$folder $$language; \
 		done; \
-		utils/diff.sh $$folder; \
+		utils/diff.sh $${folder}; \
 	done
 	@rm -rf $${folder)result*.txt
 else ifndef
