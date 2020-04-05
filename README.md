@@ -12,6 +12,7 @@ resolutions.
 The following command are available:
 
 ```shell
+make clean  # remove files created by run task
 make format-code  # format all code
 make lint  # check lint for all solutions
 make run  # run and test all past solutions (ignore solution with WRONG file)
