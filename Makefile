@@ -21,7 +21,7 @@ SQL = sql
 LANGUAGES = \
 	$(CPP) \
 	$(PYTHON)
-FOLDERS := $(shell find . -name 'problem.txt' | sed 's/problem.txt//g' | sort)
+FOLDERS := $(shell find . -name 'problem.txt' | sed 's/problem.txt//g')
 
 __cpp-build:
 	@docker build -q -f .docker/$(CPP).Dockerfile -t $(CPP) .
@@ -40,6 +40,10 @@ __cpp-lint: __cpp-lint-build
 __cpp-lint-build:
 	@docker build -q -f .docker/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
 
+format: __cpp-format-code __python-format-code
+
+lint: __cpp-lint __python-lint __shell-lint
+
 __python-build:
 	@docker build -q -f .docker/$(PYTHON).Dockerfile -t $(PYTHON) .
 
@@ -55,20 +59,6 @@ __python-lint: __python-lint-build
 __python-lint-build:
 	@docker build -q -f .docker/$(PYTHON)-lint.Dockerfile -t $(PYTHON)-lint .
 
-__shell-lint: __shell-lint-build
-	@docker run -v $(shell pwd):/code shell-lint \
-		find . -name '*.sh' | xargs shellcheck
-
-__shell-lint-build:
-	@docker build -q -f .docker/shell-lint.Dockerfile -t shell-lint .
-
-__sql-build:
-	@docker build -q -f .docker/$(SQL).Dockerfile -t $(SQL) .
-
-lint: __cpp-lint __python-lint __shell-lint
-
-format-code: __cpp-format-code __python-format-code
-
 run: __cpp-build __python-build __sql-build
 ifndef PROBLEM
 	@for folder in $(FOLDERS); do \
@@ -78,20 +68,16 @@ ifndef PROBLEM
 			[ $$(find $${folder} -name "*.$${language}" | wc -l) -eq 0 ] && continue; \
 			docker run -v $(shell pwd):/code -e PROBLEM=$$folder $$language; \
 		done; \
-		utils/diff.sh $${folder}; \
+		utils/diff.sh $$folder; \
 	done
-	@rm -rf $${folder)result*.txt
+	@rm -rf result*.txt 2> /dev/null || true
 else ifndef
 	@for language in $(LANGUAGES); do \
-		[ $$(find $(PROBLEM) -name "*.$${language}" | wc -l) -eq 0 ] && continue; \
 		docker run -v $(shell pwd):/code -e PROBLEM=$(PROBLEM) $$language; \
 	done
-	@utils/diff.sh $(PROBLEM)
-	@rm -rf $(PROBLEM)result*.txt
+	utils/diff.sh $(PROBLEM)
+	@rm -rf result*.txt 2> /dev/null || true
 endif
-
-wrong:
-	@(find . -name 'WRONG')
 
 
 
@@ -103,3 +89,16 @@ run-db:
 		-e POSTGRES_PASSWROD=12345678 \
 		-p 5432:5432 \
 		postgres:9.4.19
+
+__shell-lint: __shell-lint-build
+	docker run -v $(shell pwd):/code shell-lint \
+		find . -name '*.sh' | xargs shellcheck
+
+__shell-lint-build:
+	@docker build -q -f .docker/shell-lint.Dockerfile -t shell-lint .
+
+__sql-build:
+	@docker build -q -f .docker/$(SQL).Dockerfile -t $(SQL) .
+
+wrong:
+	@(find . -name 'WRONG')
