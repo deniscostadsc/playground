@@ -1,18 +1,18 @@
 .PHONY: \
-	cpp-build \
-	cpp-format-code \
-	cpp-lint \
-	cpp-lint-build \
+	__cpp-build \
+	__cpp-format-code \
+	__cpp-lint \
+	__cpp-lint-build \
+	__python-build \
+	__python-format-code \
+	__python-lint \
+	__python-lint-build \
+	__shell-lint \
+	__shell-lint-build \
+	__sql-build \
 	format-code \
 	lint \
-	python-build \
-	python-format-code \
-	python-lint \
-	python-lint-build \
 	run \
-	shell-lint \
-	shell-lint-build \
-	sql-build \
 	wrong
 
 CPP = cpp
@@ -23,43 +23,53 @@ LANGUAGES = \
 	$(PYTHON)
 FOLDERS := $(shell find . -name 'problem.txt' | sed 's/problem.txt//g')
 
-cpp-build:
+__cpp-build:
 	@docker build -q -f .docker/$(CPP).Dockerfile -t $(CPP) .
 
-cpp-format-code: cpp-lint-build
+__cpp-format-code: __cpp-lint-build
 	@docker run -v $(shell pwd):/code $(CPP)-lint \
 		clang-format-7 --style=file -i $$(find . -name '*.cpp')
 
-cpp-lint: cpp-lint-build
+__cpp-lint: __cpp-lint-build
 	@docker run -v $(shell pwd):/code $(CPP)-lint \
 		cpplint \
 			--quiet \
 			--recursive \
 			--filter="-legal/copyright,-runtime/int,-runtime/arrays" .
 
-cpp-lint-build:
+__cpp-lint-build:
 	@docker build -q -f .docker/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
 
-format: cpp-format-code python-format-code
-
-lint: cpp-lint python-lint shell-lint
-
-python-build:
+__python-build:
 	@docker build -q -f .docker/$(PYTHON).Dockerfile -t $(PYTHON) .
 
-python-format-code: python-lint-build
+__python-format-code: __python-lint-build
 	@docker run -v $(shell pwd):/code $(PYTHON)-lint black .
 	@docker run -v $(shell pwd):/code $(PYTHON)-lint isort -rc .
 
-python-lint: python-lint-build
+__python-lint: __python-lint-build
 	@docker run -v $(shell pwd):/code $(PYTHON)-lint black --check .
 	@docker run -v $(shell pwd):/code $(PYTHON)-lint flake8
 	@docker run -v $(shell pwd):/code $(PYTHON)-lint isort -rc -c .
 
-python-lint-build:
+__python-lint-build:
 	@docker build -q -f .docker/$(PYTHON)-lint.Dockerfile -t $(PYTHON)-lint .
 
-run: cpp-build python-build sql-build
+__shell-lint: __shell-lint-build
+	@docker run -v $(shell pwd):/code shell-lint \
+		find . -name '*.sh' | xargs shellcheck
+
+__shell-lint-build:
+	@docker build -q -f .docker/shell-lint.Dockerfile -t shell-lint .
+
+__sql-build:
+	@docker build -q -f .docker/$(SQL).Dockerfile -t $(SQL) .
+
+lint: __cpp-lint __python-lint __shell-lint
+
+format-code: __cpp-format-code __python-format-code
+
+run: __cpp-build __python-build __sql-build
 ifndef PROBLEM
 	@for folder in $(FOLDERS); do \
 		[ -f $${folder}WRONG ] && continue; \
@@ -70,14 +80,18 @@ ifndef PROBLEM
 		done; \
 		utils/diff.sh $$folder; \
 	done
-	@rm -rf result*.txt 2> /dev/null || true
+	@rm -rf $${folder)result*.txt
 else ifndef
 	@for language in $(LANGUAGES); do \
+		[ $$(find $(PROBLEM) -name "*.$${language}" | wc -l) -eq 0 ] && continue; \
 		docker run -v $(shell pwd):/code -e PROBLEM=$(PROBLEM) $$language; \
 	done
-	utils/diff.sh $(PROBLEM)
-	@rm -rf result*.txt 2> /dev/null || true
+	@utils/diff.sh $(PROBLEM)
+	@rm -rf $(PROBLEM)result*.txt
 endif
+
+wrong:
+	@(find . -name 'WRONG')
 
 
 
@@ -89,16 +103,3 @@ run-db:
 		-e POSTGRES_PASSWROD=12345678 \
 		-p 5432:5432 \
 		postgres:9.4.19
-
-shell-lint: shell-lint-build
-	docker run -v $(shell pwd):/code shell-lint \
-		find . -name '*.sh' | xargs shellcheck
-
-shell-lint-build:
-	@docker build -q -f .docker/shell-lint.Dockerfile -t shell-lint .
-
-sql-build:
-	@docker build -q -f .docker/$(SQL).Dockerfile -t $(SQL) .
-
-wrong:
-	@(find . -name 'WRONG')
