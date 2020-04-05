@@ -10,6 +10,7 @@
 	__shell-lint \
 	__shell-lint-build \
 	__sql-build \
+	clean \
 	format-code \
 	lint \
 	run \
@@ -29,12 +30,14 @@ __cpp-build:
 	@docker build -q -f .docker/$(CPP).Dockerfile -t $(CPP) .
 
 __cpp-format-code: __cpp-lint-build
-	@docker run -v $(shell pwd):/code $(CPP)-lint \
-		clang-format-7 \
-			--style=file \
-			-i \
-			$$(find . -name '*.cpp') \
-			$$(find . -name '*.c')
+	@docker run \
+		-v $(shell pwd):/code \
+		-u $$(stat -c "%u:%g" $(shell pwd)) $(CPP)-lint \
+			clang-format-7 \
+				--style=file \
+				-i \
+				$$(find . -name '*.cpp') \
+				$$(find . -name '*.c')
 
 __cpp-lint: __cpp-lint-build
 	@docker run -v $(shell pwd):/code $(CPP)-lint \
@@ -57,8 +60,12 @@ __py-build:
 	@docker build -q -f .docker/$(PY).Dockerfile -t $(PY) .
 
 __py-format-code: __py-lint-build
-	@docker run -v $(shell pwd):/code $(PY)-lint black .
-	@docker run -v $(shell pwd):/code $(PY)-lint isort -rc .
+	docker run \
+		-v $(shell pwd):/code \
+		-u $$(stat -c "%u:%g" $(shell pwd)) $(PY)-lint black .
+	docker run \
+		-v $(shell pwd):/code \
+		-u $$(stat -c "%u:%g" $(shell pwd)) $(PY)-lint isort -rc .
 
 __py-lint: __py-lint-build
 	@docker run -v $(shell pwd):/code $(PY)-lint black --check .
@@ -77,6 +84,10 @@ __shell-lint-build:
 
 __sql-build:
 	@docker build -q -f .docker/$(SQL).Dockerfile -t $(SQL) .
+
+clean:
+	find . -name 'result*.txt' -delete
+	find . -name 'a.out' -delete
 
 format-code: __cpp-format-code __py-format-code
 
