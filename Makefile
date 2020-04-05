@@ -56,7 +56,7 @@ __python-lint-build:
 	@docker build -q -f .docker/$(PYTHON)-lint.Dockerfile -t $(PYTHON)-lint .
 
 __shell-lint: __shell-lint-build
-	docker run -v $(shell pwd):/code shell-lint \
+	@docker run -v $(shell pwd):/code shell-lint \
 		find . -name '*.sh' | xargs shellcheck
 
 __shell-lint-build:
