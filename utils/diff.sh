@@ -8,8 +8,8 @@ if [ -f result-cpp.txt ]; then
     diff result-cpp.txt out.txt || exit_status=1
 fi
 
-if [ -f result-python.txt ]; then
-    diff result-python.txt out.txt || exit_status=1
+if [ -f result-py.txt ]; then
+    diff result-py.txt out.txt || exit_status=1
 fi
 
 if [ -f result-sql.txt ]; then
