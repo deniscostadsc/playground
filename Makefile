@@ -51,7 +51,7 @@ __cpp-lint-build:
 	@docker build -q -f .docker/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
 
 __js-build:
-	docker build -q -f .docker/$(JS).Dockerfile -t $(JS) .
+	@docker build -q -f .docker/$(JS).Dockerfile -t $(JS) .
 
 __py-build:
 	@docker build -q -f .docker/$(PY).Dockerfile -t $(PY) .
