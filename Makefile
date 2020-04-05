@@ -21,8 +21,8 @@ PY = py
 SQL = sql
 LANGUAGES = \
 	$(CPP) \
-	$(PY) \
-	$(JS)
+	$(JS) \
+	$(PY)
 FOLDERS := $(shell find . -name 'problem.txt' | sed 's/problem.txt//g')
 
 __cpp-build:
