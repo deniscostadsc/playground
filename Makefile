@@ -40,10 +40,6 @@ __cpp-lint: __cpp-lint-build
 __cpp-lint-build:
 	@docker build -q -f .docker/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
 
-format: __cpp-format-code __python-format-code
-
-lint: __cpp-lint __python-lint __shell-lint
-
 __python-build:
 	@docker build -q -f .docker/$(PYTHON).Dockerfile -t $(PYTHON) .
 
@@ -58,6 +54,20 @@ __python-lint: __python-lint-build
 
 __python-lint-build:
 	@docker build -q -f .docker/$(PYTHON)-lint.Dockerfile -t $(PYTHON)-lint .
+
+__shell-lint: __shell-lint-build
+	docker run -v $(shell pwd):/code shell-lint \
+		find . -name '*.sh' | xargs shellcheck
+
+__shell-lint-build:
+	@docker build -q -f .docker/shell-lint.Dockerfile -t shell-lint .
+
+__sql-build:
+	@docker build -q -f .docker/$(SQL).Dockerfile -t $(SQL) .
+
+format-code: __cpp-format-code __python-format-code
+
+lint: __cpp-lint __python-lint __shell-lint
 
 run: __cpp-build __python-build __sql-build
 ifndef PROBLEM
@@ -79,6 +89,9 @@ else ifndef
 	@rm -rf result*.txt 2> /dev/null || true
 endif
 
+wrong:
+	@(find . -name 'WRONG')
+
 
 
 
@@ -89,16 +102,3 @@ run-db:
 		-e POSTGRES_PASSWROD=12345678 \
 		-p 5432:5432 \
 		postgres:9.4.19
-
-__shell-lint: __shell-lint-build
-	docker run -v $(shell pwd):/code shell-lint \
-		find . -name '*.sh' | xargs shellcheck
-
-__shell-lint-build:
-	@docker build -q -f .docker/shell-lint.Dockerfile -t shell-lint .
-
-__sql-build:
-	@docker build -q -f .docker/$(SQL).Dockerfile -t $(SQL) .
-
-wrong:
-	@(find . -name 'WRONG')
