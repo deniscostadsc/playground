@@ -28,7 +28,11 @@ __cpp-build:
 
 __cpp-format-code: __cpp-lint-build
 	@docker run -v $(shell pwd):/code $(CPP)-lint \
-		clang-format-7 --style=file -i $$(find . -name '*.cpp')
+		clang-format-7 \
+			--style=file \
+			-i \
+			$$(find . -name '*.cpp') \
+			$$(find . -name '*.c')
 
 __cpp-lint: __cpp-lint-build
 	@docker run -v $(shell pwd):/code $(CPP)-lint \
@@ -36,6 +40,10 @@ __cpp-lint: __cpp-lint-build
 			--quiet \
 			--recursive \
 			--filter="-legal/copyright,-runtime/int,-runtime/arrays" .
+	@docker run -v $(shell pwd):/code $(CPP)-lint \
+		scripts/run-clang-format.py \
+			--clang-format-executable=clang-format-7 \
+			-r .
 
 __cpp-lint-build:
 	@docker build -q -f .docker/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
