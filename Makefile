@@ -3,10 +3,10 @@
 	__cpp-format-code \
 	__cpp-lint \
 	__cpp-lint-build \
-	__python-build \
-	__python-format-code \
-	__python-lint \
-	__python-lint-build \
+	__py-build \
+	__py-format-code \
+	__py-lint \
+	__py-lint-build \
 	__shell-lint \
 	__shell-lint-build \
 	__sql-build \
@@ -17,12 +17,12 @@
 
 CPP = cpp
 JS = js
-PYTHON = py
+PY = py
 SQL = sql
 LANGUAGES = \
 	$(CPP) \
+	$(PY) \
 	$(JS)
-	$(PYTHON)
 FOLDERS := $(shell find . -name 'problem.txt' | sed 's/problem.txt//g')
 
 __cpp-build:
@@ -50,23 +50,23 @@ __cpp-lint: __cpp-lint-build
 __cpp-lint-build:
 	@docker build -q -f .docker/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
 
-__python-build:
-	@docker build -q -f .docker/$(PYTHON).Dockerfile -t $(PYTHON) .
-
 __js-build:
 	docker build -q -f .docker/$(JS).Dockerfile -t $(JS) .
 
-__python-format-code: __python-lint-build
-	@docker run -v $(shell pwd):/code $(PYTHON)-lint black .
-	@docker run -v $(shell pwd):/code $(PYTHON)-lint isort -rc .
+__py-build:
+	@docker build -q -f .docker/$(PY).Dockerfile -t $(PY) .
 
-__python-lint: __python-lint-build
-	@docker run -v $(shell pwd):/code $(PYTHON)-lint black --check .
-	@docker run -v $(shell pwd):/code $(PYTHON)-lint flake8
-	@docker run -v $(shell pwd):/code $(PYTHON)-lint isort -rc -c .
+__py-format-code: __py-lint-build
+	@docker run -v $(shell pwd):/code $(PY)-lint black .
+	@docker run -v $(shell pwd):/code $(PY)-lint isort -rc .
 
-__python-lint-build:
-	@docker build -q -f .docker/$(PYTHON)-lint.Dockerfile -t $(PYTHON)-lint .
+__py-lint: __py-lint-build
+	@docker run -v $(shell pwd):/code $(PY)-lint black --check .
+	@docker run -v $(shell pwd):/code $(PY)-lint flake8
+	@docker run -v $(shell pwd):/code $(PY)-lint isort -rc -c .
+
+__py-lint-build:
+	@docker build -q -f .docker/$(PY)-lint.Dockerfile -t $(PY)-lint .
 
 __shell-lint: __shell-lint-build
 	@docker run -v $(shell pwd):/code shell-lint \
@@ -78,11 +78,11 @@ __shell-lint-build:
 __sql-build:
 	@docker build -q -f .docker/$(SQL).Dockerfile -t $(SQL) .
 
-format-code: __cpp-format-code __python-format-code
+format-code: __cpp-format-code __py-format-code
 
-lint: __cpp-lint __python-lint __shell-lint
+lint: __cpp-lint __py-lint __shell-lint
 
-run: __cpp-build __js-build __python-build __sql-build
+run: __cpp-build __js-build __py-build __sql-build
 ifndef PROBLEM
 	@for folder in $(FOLDERS); do \
 		[ -f $${folder}WRONG ] && continue; \
