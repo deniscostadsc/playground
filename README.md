@@ -14,7 +14,7 @@ The following command are available:
 ```shell
 make format-code  # format all code
 make lint  # check lint for all solutions
-make run  # run and test all past solutions
+make run  # run and test all past solutions (ignore solution with WRONG file)
 make run PROBLEM=path/to/the/problem  # run and test a specific solution
 make wrong  # show all solutions that are not complete yet
 ```
