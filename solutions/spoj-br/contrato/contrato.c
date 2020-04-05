@@ -9,11 +9,15 @@ int main() {
         while ((n = getchar()) != '\n') {
             if (n != t) {
                 s += n - '0';  // converts char to int and then sum to s
-                if (s != 0) printf("%c", n);
+                if (s != 0) {
+                    printf("%c", n);
+                }
             }
         }
 
-        if (s == 0) printf("%d", 0);
+        if (s == 0) {
+            printf("%d", 0);
+        }
         printf("\n");
     }
     return 0;

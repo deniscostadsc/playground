@@ -4,7 +4,9 @@
 int r[1000000];
 
 int f91(int n) {
-    if (r[n] != 0) return r[n];
+    if (r[n] != 0) {
+        return r[n];
+    }
     if (n >= 101) {
         r[n] = n - 10;
     } else {

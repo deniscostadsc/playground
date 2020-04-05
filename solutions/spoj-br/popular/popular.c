@@ -14,7 +14,9 @@ int main() {
             for (y = 0; y < i; y++) {
                 scanf("%d", &n);
                 v[y] += n;
-                if (v[y] > maior) maior = v[y];
+                if (v[y] > maior) {
+                    maior = v[y];
+                }
             }
         }
 

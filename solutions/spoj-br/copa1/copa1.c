@@ -6,9 +6,13 @@ int main() {
 
     while (scanf("%d %d", &a, &b) != EOF) {
         if (a > b) {
-            for (i = 0; i < t; i++) c[(l - 1) * 2 * t + t + i] = '0';
+            for (i = 0; i < t; i++) {
+                c[(l - 1) * 2 * t + t + i] = '0';
+            }
         } else {
-            for (i = 0; i < t; i++) c[(l - 1) * 2 * t + i] = '0';
+            for (i = 0; i < t; i++) {
+                c[(l - 1) * 2 * t + i] = '0';
+            }
         }
         if (l >= j) {
             j /= 2;
