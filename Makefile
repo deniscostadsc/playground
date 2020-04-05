@@ -80,13 +80,13 @@ ifndef PROBLEM
 		done; \
 		utils/diff.sh $$folder; \
 	done
-	@rm -rf result*.txt 2> /dev/null || true
+	@rm -rf $${folder}result*.txt
 else ifndef
 	@for language in $(LANGUAGES); do \
 		docker run -v $(shell pwd):/code -e PROBLEM=$(PROBLEM) $$language; \
 	done
 	utils/diff.sh $(PROBLEM)
-	@rm -rf result*.txt 2> /dev/null || true
+	@rm -rf $(PROBLEM)result*.txt
 endif
 
 wrong:
