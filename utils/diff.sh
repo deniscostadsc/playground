@@ -12,6 +12,10 @@ if [ -f result-py.txt ]; then
     diff result-py.txt out.txt || exit_status=1
 fi
 
+if [ -f result-js.txt ]; then
+    diff result-js.txt out.txt || exit_status=1
+fi
+
 if [ -f result-sql.txt ]; then
     diff result-sql.txt out.txt || exit_status=1
 fi

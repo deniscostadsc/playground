@@ -16,10 +16,12 @@
 	wrong
 
 CPP = cpp
+JS = js
 PYTHON = py
 SQL = sql
 LANGUAGES = \
 	$(CPP) \
+	$(JS)
 	$(PYTHON)
 FOLDERS := $(shell find . -name 'problem.txt' | sed 's/problem.txt//g')
 
@@ -51,6 +53,9 @@ __cpp-lint-build:
 __python-build:
 	@docker build -q -f .docker/$(PYTHON).Dockerfile -t $(PYTHON) .
 
+__js-build:
+	docker build -q -f .docker/$(JS).Dockerfile -t $(JS) .
+
 __python-format-code: __python-lint-build
 	@docker run -v $(shell pwd):/code $(PYTHON)-lint black .
 	@docker run -v $(shell pwd):/code $(PYTHON)-lint isort -rc .
@@ -77,7 +82,7 @@ format-code: __cpp-format-code __python-format-code
 
 lint: __cpp-lint __python-lint __shell-lint
 
-run: __cpp-build __python-build __sql-build
+run: __cpp-build __js-build __python-build __sql-build
 ifndef PROBLEM
 	@for folder in $(FOLDERS); do \
 		[ -f $${folder}WRONG ] && continue; \
