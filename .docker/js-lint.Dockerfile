@@ -1,4 +1,4 @@
-FROM node:8.4.0
+FROM node:8.10.0
 
 RUN npm install standard@14.3.3 --global
 

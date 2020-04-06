@@ -3,6 +3,10 @@
 	__cpp-format-code \
 	__cpp-lint \
 	__cpp-lint-build \
+	__js-build \
+	__js-build-lint \
+	__js-format-code \
+	__js-lint \
 	__py-build \
 	__py-format-code \
 	__py-lint \
@@ -56,6 +60,15 @@ __cpp-lint-build:
 __js-build:
 	@docker build -q -f .docker/$(JS).Dockerfile -t $(JS) .
 
+__js-build-lint:
+	@docker build -q -f .docker/$(JS)-lint.Dockerfile -t $(JS)-lint .
+
+__js-format-code: __js-build-lint
+	@docker run -v $(shell pwd):/code $(JS)-lint standard --fix
+
+__js-lint: __js-build-lint
+	@docker run -v $(shell pwd):/code $(JS)-lint standard
+
 __py-build:
 	@docker build -q -f .docker/$(PY).Dockerfile -t $(PY) .
 
@@ -89,9 +102,9 @@ clean:
 	find . -name 'result*.txt' -delete
 	find . -name 'a.out' -delete
 
-format-code: __cpp-format-code __py-format-code
+format-code: __cpp-format-code __js-format-code __py-format-code
 
-lint: __cpp-lint __py-lint __shell-lint
+lint: __cpp-lint __js-lint __py-lint __shell-lint
 
 run: __cpp-build __js-build __py-build __sql-build
 ifndef PROBLEM
