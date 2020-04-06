@@ -106,12 +106,11 @@ ifndef PROBLEM
 	done
 	@rm -rf $${folder}result*.txt
 else ifndef
-	@for language in $(LANGUAGES); do \
-		[ $$(find $${folder} -name "*.$${language}" | wc -l) -eq 0 ] && continue; \
+	for language in $(LANGUAGES); do \
+		[ $$(find $(PROBLEM) -name "*.$${language}" | wc -l) -eq 0 ] && continue; \
 		docker run -v $(shell pwd):/code -e PROBLEM=$(PROBLEM) $$language; \
 	done
 	utils/diff.sh $(PROBLEM)
-	@rm -rf $(PROBLEM)result*.txt
 endif
 
 wrong:
