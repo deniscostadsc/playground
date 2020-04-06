@@ -1,4 +1,5 @@
 .PHONY: \
+	__c-build \
 	__cpp-build \
 	__cpp-format-code \
 	__cpp-lint \
@@ -20,15 +21,20 @@
 	run \
 	wrong
 
+C = c
 CPP = cpp
 JS = js
 PY = py
 SQL = sql
 LANGUAGES = \
+	$(C) \
 	$(CPP) \
 	$(JS) \
 	$(PY)
 FOLDERS := $(shell find . -name 'problem.txt' | sed 's/problem.txt//g')
+
+__c-build:
+	@docker build -q -f .docker/$(C).Dockerfile -t $(C) .
 
 __cpp-build:
 	@docker build -q -f .docker/$(CPP).Dockerfile -t $(CPP) .
@@ -106,7 +112,7 @@ format-code: __cpp-format-code __js-format-code __py-format-code
 
 lint: __cpp-lint __js-lint __py-lint __shell-lint
 
-run: __cpp-build __js-build __py-build __sql-build
+run: __c-build __cpp-build __js-build __py-build __sql-build
 ifndef PROBLEM
 	@for folder in $(FOLDERS); do \
 		[ -f $${folder}WRONG ] && continue; \
