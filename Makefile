@@ -4,6 +4,7 @@
 	__cpp-format-code \
 	__cpp-lint \
 	__cpp-lint-build \
+	__cs-build \
 	__js-build \
 	__js-build-lint \
 	__js-format-code \
@@ -23,12 +24,14 @@
 
 C = c
 CPP = cpp
+CS = cs
 JS = js
 PY = py
 SQL = sql
 LANGUAGES = \
 	$(C) \
 	$(CPP) \
+	$(CS) \
 	$(JS) \
 	$(PY)
 FOLDERS := $(shell find . -name 'problem.txt' | sed 's/problem.txt//g')
@@ -62,6 +65,9 @@ __cpp-lint: __cpp-lint-build
 
 __cpp-lint-build:
 	@docker build -q -f .docker/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
+
+__cs-build:
+	@docker build -q -f .docker/$(CS).Dockerfile -t $(CS) .
 
 __js-build:
 	@docker build -q -f .docker/$(JS).Dockerfile -t $(JS) .
@@ -112,7 +118,7 @@ format-code: __cpp-format-code __js-format-code __py-format-code
 
 lint: __cpp-lint __js-lint __py-lint __shell-lint
 
-run: __c-build __cpp-build __js-build __py-build __sql-build
+run: __c-build __cpp-build __cs-build __js-build __py-build __sql-build
 ifndef PROBLEM
 	@for folder in $(FOLDERS); do \
 		[ -f $${folder}WRONG ] && continue; \

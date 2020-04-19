@@ -1,6 +1,7 @@
 *.log
 *.o
 *.out
+*.exe
 *.py[oc]
 *.swp
 *~
