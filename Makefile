@@ -127,7 +127,7 @@ ifndef PROBLEM
 			[ $$(find $${folder} -name "*.$${language}" | wc -l) -eq 0 ] && continue; \
 			docker run -v $(shell pwd):/code -e PROBLEM=$$folder $$language; \
 		done; \
-		utils/diff.sh $$folder; \
+		scripts/diff.sh $$folder; \
 	done
 	@rm -rf $${folder}result*.txt
 else ifndef
@@ -135,7 +135,7 @@ else ifndef
 		[ $$(find $(PROBLEM) -name "*.$${language}" | wc -l) -eq 0 ] && continue; \
 		docker run -v $(shell pwd):/code -e PROBLEM=$(PROBLEM) $$language; \
 	done
-	utils/diff.sh $(PROBLEM)
+	scripts/diff.sh $(PROBLEM)
 endif
 
 wrong:
