@@ -4,7 +4,15 @@ cd "$1" || exit 1
 
 exit_status=0
 
+if [ -f result-c.txt ]; then
+    diff result-cpp.txt out.txt || exit_status=1
+fi
+
 if [ -f result-cpp.txt ]; then
+    diff result-cpp.txt out.txt || exit_status=1
+fi
+
+if [ -f result-cs.txt ]; then
     diff result-cpp.txt out.txt || exit_status=1
 fi
 
