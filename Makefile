@@ -34,18 +34,20 @@ LANGUAGES = \
 	$(CS) \
 	$(JS) \
 	$(PY)
+
 FOLDERS := $(shell find . -name 'problem.txt' | sed 's/problem.txt//g')
 
+DOCKER_RUN = @docker run -v $(shell pwd):/code -u "$$(id -u):$$(id -g)"
+DOCKER_BUILD = @docker build -q -f
+
 __c-build:
-	@docker build -q -f .docker/$(C).Dockerfile -t $(C) .
+	$(DOCKER_BUILD) .docker/$(C).Dockerfile -t $(C) .
 
 __cpp-build:
-	@docker build -q -f .docker/$(CPP).Dockerfile -t $(CPP) .
+	$(DOCKER_BUILD) .docker/$(CPP).Dockerfile -t $(CPP) .
 
 __cpp-format-code: __cpp-lint-build
-	@docker run \
-		-v $(shell pwd):/code \
-		-u $$(stat -c "%u:%g" $(shell pwd)) $(CPP)-lint \
+	$(DOCKER_RUN) $(CPP)-lint \
 			clang-format-7 \
 				--style=file \
 				-i \
@@ -53,62 +55,58 @@ __cpp-format-code: __cpp-lint-build
 				$$(find . -name '*.c')
 
 __cpp-lint: __cpp-lint-build
-	@docker run -v $(shell pwd):/code $(CPP)-lint \
+	$(DOCKER_RUN) $(CPP)-lint \
 		cpplint \
 			--quiet \
 			--recursive \
 			--filter="-legal/copyright,-runtime/int,-runtime/arrays" .
-	@docker run -v $(shell pwd):/code $(CPP)-lint \
+	$(DOCKER_RUN) $(CPP)-lint \
 		scripts/run-clang-format.py \
 			--clang-format-executable=clang-format-7 \
 			-r .
 
 __cpp-lint-build:
-	@docker build -q -f .docker/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
+	$(DOCKER_BUILD) .docker/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
 
 __cs-build:
-	@docker build -q -f .docker/$(CS).Dockerfile -t $(CS) .
+	$(DOCKER_BUILD) .docker/$(CS).Dockerfile -t $(CS) .
 
 __js-build:
-	@docker build -q -f .docker/$(JS).Dockerfile -t $(JS) .
+	$(DOCKER_BUILD) .docker/$(JS).Dockerfile -t $(JS) .
 
 __js-build-lint:
-	@docker build -q -f .docker/$(JS)-lint.Dockerfile -t $(JS)-lint .
+	$(DOCKER_BUILD) .docker/$(JS)-lint.Dockerfile -t $(JS)-lint .
 
 __js-format-code: __js-build-lint
-	@docker run -v $(shell pwd):/code $(JS)-lint standard --fix
+	$(DOCKER_RUN) $(JS)-lint standard --fix
 
 __js-lint: __js-build-lint
-	@docker run -v $(shell pwd):/code $(JS)-lint standard
+	$(DOCKER_RUN) $(JS)-lint standard
 
 __py-build:
-	@docker build -q -f .docker/$(PY).Dockerfile -t $(PY) .
+	$(DOCKER_BUILD) .docker/$(PY).Dockerfile -t $(PY) .
 
 __py-format-code: __py-lint-build
-	@docker run \
-		-v $(shell pwd):/code \
-		-u $$(stat -c "%u:%g" $(shell pwd)) $(PY)-lint black .
-	@docker run \
-		-v $(shell pwd):/code \
-		-u $$(stat -c "%u:%g" $(shell pwd)) $(PY)-lint isort -rc .
+	$(DOCKER_RUN) $(PY)-lint black .
+	$(DOCKER_RUN) $(PY)-lint isort -rc .
 
 __py-lint: __py-lint-build
-	@docker run -v $(shell pwd):/code $(PY)-lint black --check .
-	@docker run -v $(shell pwd):/code $(PY)-lint flake8
-	@docker run -v $(shell pwd):/code $(PY)-lint isort -rc -c .
+	$(DOCKER_RUN) $(PY)-lint black --check .
+	$(DOCKER_RUN) $(PY)-lint flake8
+	$(DOCKER_RUN) $(PY)-lint isort -rc -c .
 
 __py-lint-build:
-	@docker build -q -f .docker/$(PY)-lint.Dockerfile -t $(PY)-lint .
+	$(DOCKER_BUILD) .docker/$(PY)-lint.Dockerfile -t $(PY)-lint .
 
 __shell-lint: __shell-lint-build
-	@docker run -v $(shell pwd):/code shell-lint \
+	$(DOCKER_RUN) shell-lint \
 		find . -name '*.sh' | xargs shellcheck
 
 __shell-lint-build:
-	@docker build -q -f .docker/shell-lint.Dockerfile -t shell-lint .
+	$(DOCKER_BUILD) .docker/shell-lint.Dockerfile -t shell-lint .
 
 __sql-build:
-	@docker build -q -f .docker/$(SQL).Dockerfile -t $(SQL) .
+	$(DOCKER_BUILD) .docker/$(SQL).Dockerfile -t $(SQL) .
 
 clean:
 	@find . -name 'result*.txt' -delete
@@ -125,7 +123,7 @@ ifndef PROBLEM
 		echo $$folder; \
 		for language in $(LANGUAGES); do \
 			[ $$(find $${folder} -name "*.$${language}" | wc -l) -eq 0 ] && continue; \
-			docker run -v $(shell pwd):/code -e PROBLEM=$$folder $$language; \
+			$(DOCKER_RUN) -e PROBLEM=$$folder $$language; \
 		done; \
 		scripts/diff.sh $$folder; \
 	done
@@ -133,7 +131,7 @@ ifndef PROBLEM
 else ifndef
 	for language in $(LANGUAGES); do \
 		[ $$(find $(PROBLEM) -name "*.$${language}" | wc -l) -eq 0 ] && continue; \
-		docker run -v $(shell pwd):/code -e PROBLEM=$(PROBLEM) $$language; \
+		$(DOCKER_RUN) -e PROBLEM=$(PROBLEM) $$language; \
 	done
 	scripts/diff.sh $(PROBLEM)
 endif
