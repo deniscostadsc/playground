@@ -88,12 +88,12 @@ __py-build:
 
 __py-format-code: __py-lint-build
 	$(DOCKER_RUN) $(PY)-lint black .
-	$(DOCKER_RUN) $(PY)-lint isort -rc .
+	$(DOCKER_RUN) $(PY)-lint isort .
 
 __py-lint: __py-lint-build
 	$(DOCKER_RUN) $(PY)-lint black --check .
 	$(DOCKER_RUN) $(PY)-lint flake8
-	$(DOCKER_RUN) $(PY)-lint isort -rc -c .
+	$(DOCKER_RUN) $(PY)-lint isort -c .
 
 __py-lint-build:
 	$(DOCKER_BUILD) .docker/$(PY)-lint.Dockerfile -t $(PY)-lint .
