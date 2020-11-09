@@ -10,6 +10,7 @@ A diff output is produced and a sensible exit code is returned.
 
 from __future__ import print_function, unicode_literals
 
+from functools import partial
 import argparse
 import codecs
 import difflib
@@ -22,7 +23,6 @@ import signal
 import subprocess
 import sys
 import traceback
-from functools import partial
 
 try:
     from subprocess import DEVNULL  # py3k
@@ -224,7 +224,7 @@ def print_diff(diff_lines, use_color):
     if use_color:
         diff_lines = colorize(diff_lines)
     if sys.version_info[0] < 3:
-        sys.stdout.writelines((l.encode("utf-8") for l in diff_lines))
+        sys.stdout.writelines((line.encode("utf-8") for line in diff_lines))
     else:
         sys.stdout.writelines(diff_lines)
 
