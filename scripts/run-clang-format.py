@@ -10,7 +10,6 @@ A diff output is produced and a sensible exit code is returned.
 
 from __future__ import print_function, unicode_literals
 
-from functools import partial
 import argparse
 import codecs
 import difflib
@@ -23,6 +22,7 @@ import signal
 import subprocess
 import sys
 import traceback
+from functools import partial
 
 try:
     from subprocess import DEVNULL  # py3k
