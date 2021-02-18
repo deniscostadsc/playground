@@ -84,7 +84,7 @@ while [ $# -gt 0 ]; do
         ;;
         -s|--site)
             shift
-            site="$1"
+            site="${1:-URI}"
             shift
         ;;
         -i|--input-file)
@@ -109,8 +109,6 @@ while [ $# -gt 0 ]; do
         ;;
     esac
 done
-
-site="${site:-URI}"
 
 if [ "$single_input_file" -eq 1 ] && [ "$multiple_input_files" -eq 1 ]; then
     echo "You can not use -i and -m at the same time! To have more info, run:"
