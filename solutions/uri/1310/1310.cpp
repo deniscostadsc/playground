@@ -1,5 +1,5 @@
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 
 int main() {
     int n, per_day_cost, revenue, largest, largest_start;
@@ -13,7 +13,7 @@ int main() {
         for (int i = 0; i < n; i++) {
             std::cin >> revenue;
 
-            largest_start +=  revenue - per_day_cost;
+            largest_start += revenue - per_day_cost;
 
             if (largest < largest_start) {
                 largest = largest_start;
@@ -24,7 +24,7 @@ int main() {
             }
         }
 
-        std::cout << (largest >= 0? largest: 0) << std::endl;
+        std::cout << (largest >= 0 ? largest : 0) << std::endl;
     }
 
     return 0;
