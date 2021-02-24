@@ -16,7 +16,7 @@ make clean  # remove files created by run task
 make format-code  # format all code
 make lint  # check lint for all solutions
 make run  # run and test all past solutions (ignore solution with WRONG file)
-make run PROBLEM=path/to/the/problem  # run and test a specific solution
+make run FOLDER=sub/path/to/run  # run and test a specific sub-folder
 make wrong  # show all solutions that are not complete yet
 ```
 

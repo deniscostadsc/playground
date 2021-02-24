@@ -35,10 +35,14 @@ LANGUAGES = \
 	$(JS) \
 	$(PY)
 
-FOLDERS := $(shell find . -name 'problem.txt' | sed 's/problem.txt//g')
+ifdef FOLDER
+FOLDERS := $(shell find $(FOLDER) -name 'problem.txt' | sed 's/problem.txt//g' | sort)
+else
+FOLDERS := $(shell find . -name 'problem.txt' | sed 's/problem.txt//g' | sort)
+endif
 
-DOCKER_RUN = @docker run -v $(shell pwd):/code -u "$$(id -u):$$(id -g)"
-DOCKER_BUILD = @docker build -q -f
+DOCKER_RUN := @docker run -v $(shell pwd):/code -u "$$(id -u):$$(id -g)"
+DOCKER_BUILD := @docker build -q -f
 
 __c-build:
 	$(DOCKER_BUILD) .docker/$(C).Dockerfile -t $(C) .
@@ -118,24 +122,7 @@ format-code: __cpp-format-code __js-format-code __py-format-code
 lint: __cpp-lint __py-lint __shell-lint
 
 run: __c-build __cpp-build __cs-build __js-build __py-build __sql-build
-ifndef PROBLEM
-	@for folder in $(FOLDERS); do \
-		[ -f $${folder}WRONG ] && continue; \
-		echo $$folder; \
-		for language in $(LANGUAGES); do \
-			[ $$(find $${folder} -name "*.$${language}" | wc -l) -eq 0 ] && continue; \
-			$(DOCKER_RUN) -e PROBLEM=$$folder $$language; \
-		done; \
-		scripts/diff.sh $$folder; \
-	done
-	@rm -rf $${folder}result*.txt
-else ifndef
-	for language in $(LANGUAGES); do \
-		[ $$(find $(PROBLEM) -name "*.$${language}" | wc -l) -eq 0 ] && continue; \
-		$(DOCKER_RUN) -e PROBLEM=$(PROBLEM) $$language; \
-	done
-	scripts/diff.sh $(PROBLEM)
-endif
+	./scripts/run-problems.sh "$(FOLDERS)" "$(LANGUAGES)" "$(DOCKER_RUN)"
 
 wrong:
 	@(find . -name 'WRONG')
