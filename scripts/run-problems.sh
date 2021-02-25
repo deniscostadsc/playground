@@ -19,5 +19,5 @@ for folder in $FOLDERS; do
         $DOCKER_RUN_PREFIX -e PROBLEM="$folder" "$language"
     done
 
-    scripts/diff.sh "$folder"
+    scripts/diff.sh "$folder" "$LANGUAGES"
 done
