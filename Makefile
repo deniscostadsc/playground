@@ -126,14 +126,3 @@ run: __c-build __cpp-build __cs-build __js-build __py-build __sql-build
 
 wrong:
 	@(find . -name 'WRONG')
-
-
-
-
-run-db:
-	docker run -d \
-		-e POSTGRES_DB=uri \
-		-e POSTGRES_USER=postgres \
-		-e POSTGRES_PASSWROD=12345678 \
-		-p 5432:5432 \
-		postgres:9.4.19
