@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  database-client:
+    build:
+      context: ../
+      dockerfile: .docker/sql.Dockerfile
+    environment:
+      PROBLEM: $PROBLEM
+    volumes:
+      - ..:/code
+    depends_on:
+      - database-server
+  database-server:
+    image: postgres:9.4.19
+    environment:
+      POSTGRES_DB: uri
+      POSTGRES_USER: uri

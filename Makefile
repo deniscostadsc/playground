@@ -15,7 +15,6 @@
 	__py-lint-build \
 	__shell-lint \
 	__shell-lint-build \
-	__sql-build \
 	clean \
 	format-code \
 	lint \
@@ -27,7 +26,6 @@ CPP = cpp
 CS = cs
 JS = js
 PY = py
-SQL = sql
 LANGUAGES = \
 	$(C) \
 	$(CPP) \
@@ -109,9 +107,6 @@ __shell-lint: __shell-lint-build
 __shell-lint-build:
 	@$(DOCKER_BUILD) .docker/shell-lint.Dockerfile -t shell-lint .
 
-__sql-build:
-	@$(DOCKER_BUILD) .docker/$(SQL).Dockerfile -t $(SQL) .
-
 clean:
 	@find . -name 'result*.txt' -delete
 	@find . -name 'a.out' -delete
@@ -121,7 +116,7 @@ format-code: __cpp-format-code __js-format-code __py-format-code
 
 lint: __cpp-lint __py-lint __shell-lint
 
-run: __c-build __cpp-build __cs-build __js-build __py-build __sql-build
+run: __c-build __cpp-build __cs-build __js-build __py-build
 	@./scripts/run-problems.sh "$(FOLDERS)" "$(LANGUAGES)" "$(DOCKER_RUN)"
 
 wrong:
