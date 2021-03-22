@@ -20,14 +20,16 @@ for folder in $FOLDERS; do
     done
 
     if [ "$(find "$folder" -name "*.sql" | wc -l)" -ge 1 ]; then
-        PROBLEM="$folder" docker-compose \
-            -f .docker/sql-docker-compose.yml \
-            --log-level ERROR \
-            up \
-            --build \
-            --quiet-pull \
-            --abort-on-container-exit \
-            --exit-code-from database-client > /dev/null
+        PROBLEM="$folder" \
+        USER="$(id -u):$(id -g)" \
+            docker-compose \
+                -f .docker/sql-docker-compose.yml \
+                --log-level ERROR \
+                up \
+                --build \
+                --quiet-pull \
+                --abort-on-container-exit \
+                --exit-code-from database-client > /dev/null
     fi
 
     scripts/diff.sh "$folder" "$LANGUAGES"

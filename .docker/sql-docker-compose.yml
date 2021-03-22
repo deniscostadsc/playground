@@ -11,6 +11,7 @@ services:
       - ..:/code
     depends_on:
       - database-server
+    user: $USER
   database-server:
     image: postgres:9.4.19
     environment:
