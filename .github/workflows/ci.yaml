@@ -14,6 +14,6 @@ jobs:
       - name: run lint
         run: |
           make lint
-      - name: run tests
+      - name: run solutions
         run: |
-          make test
+          make run
