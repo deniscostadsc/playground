@@ -1,8 +1,6 @@
 # Playground - A place to play programming.
 
-[
-![Build Status](https://travis-ci.org/deniscostadsc/playground.svg?branch=master)
-](https://travis-ci.org/deniscostadsc/playground)
+[![CI](https://github.com/deniscostadsc/playground/actions/workflows/ci.yaml/badge.svg)](https://github.com/deniscostadsc/playground/actions/workflows/ci.yaml)
 
 In this repository I'll see my solutions for programmin/security challange
 sites as Project Euler, URI, SPOJ, OverTheWire and etc. Most of those
