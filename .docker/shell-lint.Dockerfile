@@ -1,6 +1,6 @@
-FROM ubuntu:18.04
+FROM alpine:latest
 
-RUN apt update && apt install shellcheck
+RUN apk -U upgrade && apk add shellcheck
 
 RUN mkdir /code
 WORKDIR /code
