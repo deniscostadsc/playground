@@ -1,6 +1,6 @@
 FROM node:lts-alpine
 
-RUN npm install -g --unsafe-perm standard
+RUN npm install -g standard
 
 RUN mkdir /code
 WORKDIR /code
