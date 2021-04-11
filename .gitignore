@@ -1,10 +1,11 @@
+*.exe
 *.log
 *.o
 *.out
-*.exe
 *.py[oc]
 *.swp
 *~
 .DS_Store
 .vagrant
+.vscode
 result*.txt
