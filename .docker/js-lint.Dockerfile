@@ -1,6 +1,8 @@
-FROM node:8.10.0
+FROM node:lts-alpine
 
-RUN npm install standard@14.3.3 --unsafe-perm=true --global
+RUN npm install -g --unsafe-perm standard
 
 RUN mkdir /code
 WORKDIR /code
+RUN mkdir /.cache
+RUN chmod 777 /.cache
