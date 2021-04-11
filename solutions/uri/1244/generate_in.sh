@@ -12,7 +12,7 @@ for (( i = 0; i < tests; i++ )); do
         for (( k = 0; k < $((RANDOM % 50 + 1)); k++ )); do
             echo -n "${alphabet[$((RANDOM % 52))]}"
         done
-        if [ $j -ne $n ]; then
+        if [ "$j" -ne $n ]; then
             echo -n " "
         fi
     done

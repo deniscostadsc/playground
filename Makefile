@@ -101,8 +101,7 @@ __py-lint-build:
 	@$(DOCKER_BUILD) .docker/$(PY)-lint.Dockerfile -t $(PY)-lint .
 
 __shell-lint: __shell-lint-build
-	@$(DOCKER_RUN) shell-lint \
-		find . -name '*.sh' | xargs shellcheck
+	@$(DOCKER_RUN) shell-lint shellcheck $$(find . -name '*.sh')
 
 __shell-lint-build:
 	@$(DOCKER_BUILD) .docker/shell-lint.Dockerfile -t shell-lint .
