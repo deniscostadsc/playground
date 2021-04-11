@@ -68,7 +68,7 @@ std::string get_exponent(std::string number) {
             for (int i = 0; i < static_cast< int >(non_zero_digits.size());
                  i++) {
                 non_zero = number.find(non_zero_digits[i]);
-                if (static_cast< int >(non_zero) < first_non_zero) {
+                if (non_zero < first_non_zero) {
                     first_non_zero = non_zero;
                 }
             }

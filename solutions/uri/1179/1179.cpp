@@ -1,40 +1,43 @@
 #include <cstdio>
 
 int main() {
-    int j, n, p[5], i[5], pi = 0, ii = 0;
+    int j, n, even_numbers[5], odd_numbers[5], even_index = 0, odd_index = 0;
+    int check_even[5], check_odd[5];
     while (scanf("%d", &n) != EOF) {
         if (n % 2 == 0) {
-            p[pi] = n;
-            pi++;
+            even_numbers[even_index] = n;
+            check_even[even_index] = 1;
+            even_index++;
         } else {
-            i[ii] = n;
-            ii++;
+            odd_numbers[odd_index] = n;
+            check_odd[odd_index] = 1;
+            odd_index++;
         }
 
-        if (pi == 5) {
+        if (even_index == 5) {
             for (j = 0; j <= 4; j++) {
-                printf("par[%d] = %d\n", j, p[j]);
-                p[j] = NULL;
+                printf("par[%d] = %d\n", j, even_numbers[j]);
+                check_even[j] = 0;
             }
-            pi = 0;
+            even_index = 0;
         }
-        if (ii == 5) {
+        if (odd_index == 5) {
             for (j = 0; j <= 4; j++) {
-                printf("impar[%d] = %d\n", j, i[j]);
-                i[j] = NULL;
+                printf("impar[%d] = %d\n", j, odd_numbers[j]);
+                check_odd[j] = 0;
             }
-            ii = 0;
+            odd_index = 0;
         }
     }
     for (j = 0; j <= 4; j++) {
-        if (i[j] == NULL)
+        if (check_odd[j] == 0)
             break;
-        printf("impar[%d] = %d\n", j, i[j]);
+        printf("impar[%d] = %d\n", j, odd_numbers[j]);
     }
     for (j = 0; j <= 4; j++) {
-        if (p[j] == NULL)
+        if (check_even[j] == 0)
             break;
-        printf("par[%d] = %d\n", j, p[j]);
+        printf("par[%d] = %d\n", j, even_numbers[j]);
     }
     return 0;
 }

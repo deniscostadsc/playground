@@ -1,5 +1,6 @@
 #include <cstdio>
 #include <cstring>
+#include <string>
 
 int main() {
     char m[12][10] = {"January",
@@ -17,7 +18,7 @@ int main() {
     int n;
 
     scanf("%d", &n);
-    for (int i = 0; i < strlen(m[n - 1]); i++) {
+    for (std::string::size_type i = 0; i < strlen(m[n - 1]); i++) {
         printf("%c", m[n - 1][i]);
     }
     printf("\n");

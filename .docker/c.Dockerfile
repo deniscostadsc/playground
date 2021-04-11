@@ -5,7 +5,7 @@ WORKDIR /code
 
 CMD cd $PROBLEM && \
     if [ "$(find . -name '*.c' | wc -l)" -eq 1 ]; then \
-        gcc -std=c99 -O2 -lm *.c; \
+        gcc -Werror -std=c99 -O2 -lm *.c || exit 1; \
         if [ -f in.txt ]; then \
             ./a.out < in.txt > result-c.txt; \
         else \

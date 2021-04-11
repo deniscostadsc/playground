@@ -2,7 +2,7 @@
 #include <vector>
 
 int find(std::vector< int > v, int n) {
-    for (int i = 0; i < v.size(); i++) {
+    for (std::string::size_type i = 0; i < v.size(); i++) {
         if (n == v.at(i))
             return i;
     }

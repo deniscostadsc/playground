@@ -1,8 +1,7 @@
 #include <algorithm>
 #include <cstring>
 #include <iostream>
-
-#define INFINITY 1000001
+#include <cmath>
 
 int blocks[26];
 

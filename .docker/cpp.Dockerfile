@@ -5,7 +5,7 @@ WORKDIR /code
 
 CMD cd $PROBLEM && \
     if [ "$(find . -name '*.cpp' | wc -l)" -eq 1 ]; then \
-        g++ -std=c++11 -O2 -lm *.cpp; \
+        g++ -Werror -std=c++11 -O2 -lm *.cpp || exit 1; \
         if [ -f in.txt ]; then \
             ./a.out < in.txt > result-cpp.txt; \
         else \

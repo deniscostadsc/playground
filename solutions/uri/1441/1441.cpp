@@ -15,13 +15,13 @@ void ackermann(int h) {
 }
 
 int main() {
-    int h, i, greatest;
+    int h, greatest;
 
     while (std::cin >> h && h) {
         ackermann(h);
         greatest = 0;
 
-        for (i = 0; i < sequence.size(); i++) {
+        for (std::string::size_type i = 0; i < sequence.size(); i++) {
             if (greatest < sequence.at(i))
                 greatest = sequence.at(i);
         }
