@@ -26,6 +26,8 @@ CPP = cpp
 CS = cs
 JS = js
 PY = py
+
+# don't add SQL to the LANGUAGE var
 LANGUAGES = \
 	$(C) \
 	$(CPP) \
