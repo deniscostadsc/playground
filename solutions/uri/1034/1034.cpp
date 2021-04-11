@@ -1,7 +1,7 @@
 #include <algorithm>
+#include <cmath>
 #include <cstring>
 #include <iostream>
-#include <cmath>
 
 int blocks[26];
 
