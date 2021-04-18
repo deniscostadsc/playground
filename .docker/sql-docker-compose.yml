@@ -17,3 +17,5 @@ services:
     environment:
       POSTGRES_DB: uri
       POSTGRES_USER: uri
+    volumes:
+        - /tmp/db:/var/lib/postgresql/data
