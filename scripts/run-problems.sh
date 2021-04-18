@@ -30,7 +30,7 @@ for folder in $FOLDERS; do
                 --build \
                 --quiet-pull \
                 --abort-on-container-exit \
-                --exit-code-from database-client > /dev/null
+                --exit-code-from database-client
     fi
 
     scripts/diff.sh "$folder" "$LANGUAGES"
