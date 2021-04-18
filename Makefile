@@ -109,7 +109,7 @@ __shell-lint-build:
 	@$(DOCKER_BUILD) .docker/shell-lint.Dockerfile -t shell-lint .
 
 clean:
-	@find . -name 'result*.txt' -delete
+	@find . -name 'result-*.txt' -delete
 	@find . -name 'a.out' -delete
 	@find . -name 'a.exe' -delete
 
