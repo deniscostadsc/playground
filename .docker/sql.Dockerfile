@@ -3,6 +3,8 @@ FROM postgres:9.4.19
 RUN mkdir /code
 WORKDIR /code
 
+RUN echo "debug"
+
 CMD pwd && ls && cd $PROBLEM && \
     if [ "$(find . -name '*.sql' | wc -l)" -eq 3 ]; then \
         psql -h database-server -d uri -U uri < schema.sql && \
