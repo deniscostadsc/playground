@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -euo pipefail
+set -vx
 
 FOLDERS=$1
 LANGUAGES=$2
