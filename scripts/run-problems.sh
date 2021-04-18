@@ -1,7 +1,6 @@
 #!/bin/bash
 
 set -euo pipefail
-set -vx
 
 FOLDERS=$1
 LANGUAGES=$2
@@ -30,7 +29,7 @@ for folder in $FOLDERS; do
                 --build \
                 --quiet-pull \
                 --abort-on-container-exit \
-                --exit-code-from database-client
+                --exit-code-from database-client > /dev/null
     fi
 
     scripts/diff.sh "$folder" "$LANGUAGES"

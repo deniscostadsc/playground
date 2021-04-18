@@ -9,7 +9,8 @@ RUN cd /bin && \
     wget https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh && \
     chmod +x wait-for-it.sh
 
-CMD /bin/wait-for-it.sh database-server:5432 && cd $PROBLEM && \
+CMD /bin/wait-for-it.sh database-server:5432 && \
+    cd $PROBLEM && \
     if [ "$(find . -name '*.sql' | wc -l)" -eq 3 ]; then \
         psql -h database-server -d uri -U uri < schema.sql && \
         psql -h database-server -d uri -U uri < $(eval "echo ????.sql") > result-sql.txt && \

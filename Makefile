@@ -118,7 +118,7 @@ format-code: __cpp-format-code __js-format-code __py-format-code
 lint: __cpp-lint __js-lint __py-lint __shell-lint
 
 run: __c-build __cpp-build __cs-build __js-build __py-build
-	./scripts/run-problems.sh "$(FOLDERS)" "$(LANGUAGES)" "$(DOCKER_RUN)"
+	@./scripts/run-problems.sh "$(FOLDERS)" "$(LANGUAGES)" "$(DOCKER_RUN)"
 
 wrong:
 	@(find . -name 'WRONG')

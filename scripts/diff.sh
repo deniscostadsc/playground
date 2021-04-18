@@ -1,7 +1,6 @@
 #!/bin/bash
 
 set -euo pipefail
-set -vx
 
 PROBLEM_FOLDER=$1
 LANGUAGES="$2 sql"
