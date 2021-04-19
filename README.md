@@ -2,10 +2,9 @@
 
 [![CI](https://github.com/deniscostadsc/playground/actions/workflows/ci.yaml/badge.svg)](https://github.com/deniscostadsc/playground/actions/workflows/ci.yaml)
 
-In this repository I'll see my solutions for programmin/security challange
-sites as Project Euler, URI, SPOJ, OverTheWire and etc. Most of those
-programming contest sites, use the same format for problems and its
-resolutions.
+In this repository you'll see my solutions for programmin/security challange
+sites like Project Euler, URI, SPOJ, OverTheWire and etc. Most of those
+programming contest sites, use the same problem format for.
 
 The following command are available:
 
