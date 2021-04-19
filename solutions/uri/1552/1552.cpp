@@ -43,8 +43,9 @@ bool unionset(person *p1, person *p2) {
     person *root_p1 = findset(p1);
     person *root_p2 = findset(p2);
 
-    if (root_p1 == root_p2)
+    if (root_p1 == root_p2) {
         return false;
+    }
 
     if (root_p1->rank < root_p2->rank) {
         root_p1->parent = root_p2;
@@ -104,8 +105,9 @@ int main() {
                 total_web += (*it)->distance;
                 arcs_mst++;
 
-                if (arcs_mst == n - 1)
+                if (arcs_mst == n - 1) {
                     break;
+                }
             }
         }
 

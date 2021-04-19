@@ -9,8 +9,9 @@ int main() {
         while (l--) {
             scanf("%d", &v);
 
-            if (v > fastest)
+            if (v > fastest) {
                 fastest = v;
+            }
         }
 
         if (fastest < 10) {

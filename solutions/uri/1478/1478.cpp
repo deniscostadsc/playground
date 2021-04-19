@@ -13,10 +13,11 @@ int main() {
 
             for (j = 0; j < n; j++) {
                 if (j == 0) {
-                    if (np < 10)
+                    if (np < 10) {
                         std::cout << "  ";
-                    else if (np < 100)
+                    } else if (np < 100) {
                         std::cout << " ";
+                    }
                 } else {
                     if (np < 10) {
                         std::cout << "   ";
@@ -29,8 +30,9 @@ int main() {
 
                 std::cout << np;
 
-                if (np == 1)
+                if (np == 1) {
                     c = true;
+                }
 
                 if (c) {
                     np++;

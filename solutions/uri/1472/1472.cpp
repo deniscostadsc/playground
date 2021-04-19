@@ -17,10 +17,12 @@ int main() {
         j = k = 0;
 
         for (i = 0; sum[i] + 2 * len <= sum[n - 1]; i++) {
-            while (sum[j] < sum[i] + len)
+            while (sum[j] < sum[i] + len) {
                 j++;
-            while (sum[k] < sum[i] + 2 * len)
+            }
+            while (sum[k] < sum[i] + 2 * len) {
                 k++;
+            }
 
             if (sum[j] == sum[i] + len && sum[k] == sum[i] + 2 * len) {
                 triangles++;

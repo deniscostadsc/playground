@@ -6,10 +6,11 @@ int main() {
     std::cin >> c;
     while (c--) {
         std::cin >> n;
-        if (n > 9 && n < 21)
+        if (n > 9 && n < 21) {
             i++;
-        else
+        } else {
             o++;
+        }
     }
 
     std::cout << i << " in" << std::endl;

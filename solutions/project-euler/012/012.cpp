@@ -6,14 +6,17 @@
 std::vector< unsigned long > primes;
 
 bool is_prime(unsigned long n) {
-    if (n == 2)
+    if (n == 2) {
         return true;
-    if (n % 2 == 0 || n < 2)
+    }
+    if (n % 2 == 0 || n < 2) {
         return false;
+    }
 
     for (unsigned long i = 3; i <= sqrt(n); i += 2) {
-        if (n % i == 0)
+        if (n % i == 0) {
             return false;
+        }
     }
     return true;
 }
@@ -30,16 +33,18 @@ unsigned long div_count(unsigned long n) {
     std::map< unsigned long, int > c;
     std::map< unsigned long, int >::iterator iter;
 
-    if (is_prime(n))
+    if (is_prime(n)) {
         return 2;
+    }
 
     while (n > 1) {
         if (n % primes.at(i) == 0) {
             n /= primes.at(i);
             c[primes.at(i)]++;
         } else {
-            if (primes.size() == i + 1)
+            if (primes.size() == i + 1) {
                 next_prime(primes.at(i));
+            }
             i++;
         }
     }

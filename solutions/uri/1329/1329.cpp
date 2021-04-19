@@ -7,8 +7,9 @@ int main() {
         m = 0;
         j = 0;
 
-        if (n == 0)
+        if (n == 0) {
             break;
+        }
 
         while (n--) {
             std::cin >> c;

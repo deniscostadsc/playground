@@ -7,8 +7,9 @@ int main() {
         scanf("%d %d", &i, &g);
         n++;
 
-        if (i == g)
+        if (i == g) {
             e++;
+        }
 
         if (i > g) {
             iv++;

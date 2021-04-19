@@ -41,8 +41,9 @@ int main() {
             }
         }
 
-        if (liquidated)
+        if (liquidated) {
             std::cout << "S" << std::endl;
+        }
 
         banks.clear();
     }

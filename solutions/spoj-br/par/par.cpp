@@ -9,8 +9,9 @@ int main() {
         std::cin >> first_player;
         std::cin >> second_player;
 
-        if (i > 1)
+        if (i > 1) {
             std::cout << std::endl;
+        }
         std::cout << "Teste " << i++ << std::endl;
 
         while (n--) {

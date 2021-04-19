@@ -66,8 +66,9 @@ int main() {
             std::cin >> v >> w >> p;
 
             graph[v].push_back(w);
-            if (p == 2)
+            if (p == 2) {
                 graph[w].push_back(v);
+            }
         }
 
         tarjan();

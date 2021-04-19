@@ -16,8 +16,9 @@ int main() {
         for (size_t i = 0; i < money.size(); i++) {
             if (comma == 0) {
                 comma = 3;
-                if (i != 0)
+                if (i != 0) {
                     std::cout << ",";
+                }
             }
             std::cout << money.at(i);
             comma--;

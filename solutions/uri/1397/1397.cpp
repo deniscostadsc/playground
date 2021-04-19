@@ -10,10 +10,12 @@ int main() {
         while (n--) {
             std::cin >> a >> b;
 
-            if (a > b)
+            if (a > b) {
                 ac++;
-            if (b > a)
+            }
+            if (b > a) {
                 bc++;
+            }
         }
 
         std::cout << ac << " " << bc << std::endl;

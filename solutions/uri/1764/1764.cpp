@@ -32,8 +32,9 @@ bool unionset(int x, int y) {
     int parent_x = findset(disjoint_set[x]);
     int parent_y = findset(disjoint_set[y]);
 
-    if (parent_x == parent_y)
+    if (parent_x == parent_y) {
         return false;
+    }
     disjoint_set[parent_x] = parent_y;
     return true;
 }

@@ -28,8 +28,9 @@ int main() {
                 index = upper.find_first_of(word.at(found));
             }
 
-            if (letter != index)
+            if (letter != index) {
                 is_tautogram = false;
+            }
         }
 
         if (is_tautogram) {

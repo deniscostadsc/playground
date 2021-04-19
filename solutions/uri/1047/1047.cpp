@@ -6,8 +6,9 @@ int main() {
     scanf("%d %d %d %d", &hi, &mi, &hf, &mf);
 
     hr = hf - hi;
-    if (hf - hi < 0)
+    if (hf - hi < 0) {
         hr = 24 + hf - hi;
+    }
 
     mr = mf - mi;
     if (mf - mi < 0) {

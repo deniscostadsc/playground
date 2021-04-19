@@ -56,8 +56,9 @@ int main() {
 
         memset(visited, 0, sizeof(visited));
         for (it = graph.begin(); it != graph.end(); it++) {
-            if (!visited[it->first])
+            if (!visited[it->first]) {
                 order_filler_dfs(it->first);
+            }
         }
 
         memset(visited, 0, sizeof(visited));

@@ -12,10 +12,11 @@ int main() {
                 s += i;
             }
         }
-        if (s == n)
+        if (s == n) {
             printf("%d eh perfeito\n", n);
-        else
+        } else {
             printf("%d nao eh perfeito\n", n);
+        }
     }
     return 0;
 }

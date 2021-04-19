@@ -4,13 +4,16 @@
 #include <string>
 
 std::string dec2bin(unsigned int n) {
-    if (n == 0)
+    if (n == 0) {
         return "0";
-    if (n == 1)
+    }
+    if (n == 1) {
         return "1";
+    }
 
-    if (n % 2 == 0)
+    if (n % 2 == 0) {
         return dec2bin(n / 2) + "0";
+    }
     return dec2bin(n / 2) + "1";
 }
 
@@ -19,8 +22,9 @@ unsigned int bin2dec(std::string b) {
     int index = b.length();
 
     while (index--) {
-        if (b.at(index) == '1')
+        if (b.at(index) == '1') {
             dec += base;
+        }
         base *= 2;
     }
 
@@ -32,8 +36,9 @@ std::string dec2hex(unsigned int n) {
 
     unsigned int i = n % 16;
 
-    if (n / 16 > 0)
+    if (n / 16 > 0) {
         return dec2hex(n / 16) + chars.at(i);
+    }
 
     /* Workaround to concat char and string */
     std::string result = "";

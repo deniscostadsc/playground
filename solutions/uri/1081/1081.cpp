@@ -32,8 +32,9 @@ void dfs_runner(int v) {
     int i, index = 0;
 
     while (true) {
-        if (dfs(index, v, 2))
+        if (dfs(index, v, 2)) {
             puts("");
+        }
 
         index = -1;
 
@@ -44,8 +45,9 @@ void dfs_runner(int v) {
             }
         }
 
-        if (index == -1)
+        if (index == -1) {
             break;
+        }
     }
 }
 

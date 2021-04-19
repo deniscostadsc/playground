@@ -6,8 +6,9 @@ int main() {
     while (std::cin >> n && n != 0) {
         sum = 0;
 
-        for (i = 1; i <= n; i++)
+        for (i = 1; i <= n; i++) {
             sum += i * i;
+        }
 
         std::cout << sum << std::endl;
     }

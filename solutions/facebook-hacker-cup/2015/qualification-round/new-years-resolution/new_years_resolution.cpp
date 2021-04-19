@@ -16,10 +16,12 @@ bool backtrack(int p, int c, int f, std::vector< int > used_food) {
     bool ok = false;
     int next;
 
-    if (!still_valid(p, c, f))
+    if (!still_valid(p, c, f)) {
         return false;
-    if (is_ok(p, c, f))
+    }
+    if (is_ok(p, c, f)) {
         return true;
+    }
 
     if (static_cast< int >(used_food.size()) == 0) {
         next = 0;

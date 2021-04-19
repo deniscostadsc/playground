@@ -3,10 +3,12 @@
 #include <vector>
 
 bool compare(int i, int j) {
-    if (i % 2 == 0 && j % 2 == 1)
+    if (i % 2 == 0 && j % 2 == 1) {
         return true;
-    if (i % 2 == 1 && j % 2 == 0)
+    }
+    if (i % 2 == 1 && j % 2 == 0) {
         return false;
+    }
     if (i % 2 == 0) {
         return i < j;
     } else {

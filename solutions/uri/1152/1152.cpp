@@ -42,8 +42,9 @@ bool unionset(int data_a, int data_b) {
     disjointset_node *parent_a = findset(&node_a);
     disjointset_node *parent_b = findset(&node_b);
 
-    if (parent_a->data == parent_b->data)
+    if (parent_a->data == parent_b->data) {
         return false;
+    }
 
     parent_a->parent = parent_b;
     return true;
@@ -71,8 +72,9 @@ int main() {
         std::vector< arc >::iterator it;
 
         for (it = graph.begin(); it != graph.end(); it++) {
-            if (!unionset((*it).node_a, (*it).node_b))
+            if (!unionset((*it).node_a, (*it).node_b)) {
                 count += (*it).meters;
+            }
         }
 
         std::cout << count << std::endl;

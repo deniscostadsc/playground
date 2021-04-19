@@ -12,8 +12,9 @@ int main() {
         getline(std::cin, l);  // it's a hack
         getline(std::cin, l);
 
-        if (c)
+        if (c) {
             std::cout << std::endl;
+        }
 
         for (size_t i = 0; i < l.length(); i += 5) {
             if (s.at(0) == l.at(i) && s.at(1) == l.at(i + 1)) {

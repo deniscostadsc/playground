@@ -35,8 +35,9 @@ int main() {
         }
 
         for (i = 0; i < 26; ++i) {
-            if (c[i] == g)
+            if (c[i] == g) {
                 std::cout << l.at(i);
+            }
         }
         std::cout << std::endl;
     }

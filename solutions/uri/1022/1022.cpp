@@ -27,10 +27,11 @@ int main() {
                 break;
         }
 
-        if (std::abs(num) < std::abs(den))
+        if (std::abs(num) < std::abs(den)) {
             r = std::abs(num);
-        else
+        } else {
             r = std::abs(den);
+        }
 
         num_r = num;
         den_r = den;

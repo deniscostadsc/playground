@@ -4,19 +4,22 @@
 long long int rfat[21];
 
 long long int fat(long long int n) {
-    if (rfat[n] != 0)
+    if (rfat[n] != 0) {
         return rfat[n];
-    if (n <= 1)
+    }
+    if (n <= 1) {
         rfat[n] = 1;
-    else
+    } else {
         rfat[n] = n * fat(n - 1);
+    }
     return rfat[n];
 }
 
 int main() {
     long long int x, y;
     memset(rfat, 0, sizeof(rfat));
-    while (scanf("%lld %lld", &x, &y) != EOF)
+    while (scanf("%lld %lld", &x, &y) != EOF) {
         printf("%lld\n", fat(x) + fat(y));
+    }
     return 0;
 }

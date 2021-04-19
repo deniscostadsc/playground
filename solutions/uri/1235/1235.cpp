@@ -13,10 +13,12 @@ int main() {
 
         l = s.length();
 
-        for (i = l / 2 - 1; i >= 0; i--)
+        for (i = l / 2 - 1; i >= 0; i--) {
             std::cout << s.at(i);
-        for (i = l - 1; i > l / 2 - 1; i--)
+        }
+        for (i = l - 1; i > l / 2 - 1; i--) {
             std::cout << s.at(i);
+        }
 
         std::cout << std::endl;
     }

@@ -27,8 +27,9 @@ int main() {
                 }
             }
 
-            if (check)
+            if (check) {
                 std::cout << i << " ";
+            }
         }
 
         v.clear();

@@ -18,10 +18,12 @@ int main() {
                 q--;
             }
 
-            if (q == 4)
+            if (q == 4) {
                 q = 0;
-            if (q == -1)
+            }
+            if (q == -1) {
                 q = 3;
+            }
         }
 
         std::cout << d.at(q) << std::endl;

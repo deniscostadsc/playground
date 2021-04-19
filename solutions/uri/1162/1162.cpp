@@ -12,8 +12,9 @@ int main() {
 
         int train[l];
 
-        for (i = 0; i < l; i++)
+        for (i = 0; i < l; i++) {
             std::cin >> train[i];
+        }
 
         for (i = l - 1; i >= 0; i--) {
             swapped = false;
@@ -28,8 +29,9 @@ int main() {
                 }
             }
 
-            if (!swapped)
+            if (!swapped) {
                 break;
+            }
         }
 
         std::cout << "Optimal train swapping takes ";

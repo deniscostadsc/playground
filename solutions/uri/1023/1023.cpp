@@ -42,8 +42,9 @@ int main() {
 
         for (iter = r.begin(); iter != r.end(); iter++) {
             std::cout << iter->second << "-" << iter->first;
-            if (c < s - 1)
+            if (c < s - 1) {
                 std::cout << " ";
+            }
             c++;
         }
 

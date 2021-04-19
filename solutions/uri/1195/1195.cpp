@@ -25,25 +25,31 @@ void insert_node(node *tree, node *new_node) {
 
 void pre_print_node(node *tree) {
     std::cout << " " << tree->value;
-    if (tree->left_node != NULL)
+    if (tree->left_node != NULL) {
         pre_print_node(tree->left_node);
-    if (tree->right_node != NULL)
+    }
+    if (tree->right_node != NULL) {
         pre_print_node(tree->right_node);
+    }
 }
 
 void in_print_node(node *tree) {
-    if (tree->left_node != NULL)
+    if (tree->left_node != NULL) {
         in_print_node(tree->left_node);
+    }
     std::cout << " " << tree->value;
-    if (tree->right_node != NULL)
+    if (tree->right_node != NULL) {
         in_print_node(tree->right_node);
+    }
 }
 
 void post_print_node(node *tree) {
-    if (tree->left_node != NULL)
+    if (tree->left_node != NULL) {
         post_print_node(tree->left_node);
-    if (tree->right_node != NULL)
+    }
+    if (tree->right_node != NULL) {
         post_print_node(tree->right_node);
+    }
     std::cout << " " << tree->value;
 }
 

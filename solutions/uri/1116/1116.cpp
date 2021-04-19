@@ -6,10 +6,11 @@ int main() {
     scanf("%d", &n);
     while (n--) {
         scanf("%f %f", &x, &y);
-        if (y == 0.0)
+        if (y == 0.0) {
             printf("divisao impossivel\n");
-        else
+        } else {
             printf("%.1f\n", x / y);
+        }
     }
     return 0;
 }

@@ -2,8 +2,9 @@
 #include <iostream>
 
 unsigned long long grains(unsigned long long n) {
-    if (n == 1)
+    if (n == 1) {
         return 2;
+    }
     return 2 * grains(n - 1);
 }
 

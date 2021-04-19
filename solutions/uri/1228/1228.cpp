@@ -3,8 +3,9 @@
 
 int find(std::vector< int > v, int n) {
     for (std::string::size_type i = 0; i < v.size(); i++) {
-        if (n == v.at(i))
+        if (n == v.at(i)) {
             return i;
+        }
     }
     return -1;
 }
@@ -31,8 +32,9 @@ int main() {
 
         for (i = 0; i < n; i++) {
             for (j = 0; j < find(start, finish[i]); j++) {
-                if (find(finish, start.at(j)) > i)
+                if (find(finish, start.at(j)) > i) {
                     overtakes++;
+                }
             }
         }
         std::cout << overtakes << std::endl;

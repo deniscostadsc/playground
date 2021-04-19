@@ -25,10 +25,12 @@ int main() {
                 copy[j] = copy[k];
                 copy[k] = c;
 
-                if (copy < lowest)
+                if (copy < lowest) {
                     lowest = copy;
-                if (copy > greatest)
+                }
+                if (copy > greatest) {
                     greatest = copy;
+                }
 
                 copy = n;
             }

@@ -8,14 +8,16 @@ int main() {
     for (i = 0; i <= 4; i++) {
         for (j = 0; j <= 11; j++) {
             scanf("%lf", &n);
-            if (j >= l && j <= 11 - l)
+            if (j >= l && j <= 11 - l) {
                 s += n;
+            }
         }
         l++;
     }
-    if (o == 'S')
+    if (o == 'S') {
         printf("%.1f\n", s);
-    else
+    } else {
         printf("%.1f\n", s / 30);
+    }
     return 0;
 }

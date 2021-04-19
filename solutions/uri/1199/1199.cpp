@@ -8,8 +8,9 @@ std::string dec2hex(unsigned int n) {
 
     unsigned int i = n % 16;
 
-    if (n / 16 > 0)
+    if (n / 16 > 0) {
         return dec2hex(n / 16) + chars.at(i);
+    }
 
     /* Workaround to concat char and string */
     std::string result = "";

@@ -30,12 +30,15 @@ void insert_node(node *tree, node *new_node) {
 bool exist(node *tree, char letter) {
     bool result = false;
 
-    if (tree->letter == letter)
+    if (tree->letter == letter) {
         return true;
-    if (tree->right != NULL)
+    }
+    if (tree->right != NULL) {
         result = exist(tree->right, letter);
-    if (tree->left != NULL)
+    }
+    if (tree->left != NULL) {
         result = result || exist(tree->left, letter);
+    }
 
     return result;
 }
@@ -55,26 +58,32 @@ void prefixa(node *tree) {
 }
 
 void infixa(node *tree) {
-    if (tree->right != NULL)
+    if (tree->right != NULL) {
         infixa(tree->right);
+    }
 
-    if (!first_in_char)
+    if (!first_in_char) {
         std::cout << " ";
+    }
     std::cout << tree->letter;
     first_in_char = false;
 
-    if (tree->left != NULL)
+    if (tree->left != NULL) {
         infixa(tree->left);
+    }
 }
 
 void posfixa(node *tree) {
-    if (tree->right != NULL)
+    if (tree->right != NULL) {
         posfixa(tree->right);
-    if (tree->left != NULL)
+    }
+    if (tree->left != NULL) {
         posfixa(tree->left);
+    }
 
-    if (!first_pos_char)
+    if (!first_pos_char) {
         std::cout << " ";
+    }
     std::cout << tree->letter;
     first_pos_char = false;
 }

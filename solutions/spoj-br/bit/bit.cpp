@@ -7,8 +7,9 @@ int main() {
         for (int i = 0; i <= 3; i++) {
             printf("%d", n / b[i]);
             n %= b[i];
-            if (i < 3)
+            if (i < 3) {
                 printf(" ");
+            }
         }
         printf("\n\n");
     }

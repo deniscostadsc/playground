@@ -49,20 +49,23 @@ void brainfuck(std::string program, std::string word) {
                         brackets_level--;
                     }
 
-                    if (brackets_level == 0)
+                    if (brackets_level == 0) {
                         break;
+                    }
                     inner_code += program[i];
 
                     i++;
                 }
 
-                while (store[pointer] != 0)
+                while (store[pointer] != 0) {
                     brainfuck(inner_code, word);
+                }
 
                 break;
             case '#':
-                for (j = 0; j < 10; j++)
+                for (j = 0; j < 10; j++) {
                     std::cout << store[j];
+                }
                 break;
         }
     }

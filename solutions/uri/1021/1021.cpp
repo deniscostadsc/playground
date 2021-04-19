@@ -19,8 +19,9 @@ int main() {
             c++;
         }
 
-        if (d[t] == 1.0)
+        if (d[t] == 1.0) {
             printf("MOEDAS:\n");
+        }
 
         if (d[t] >= 2.0) {
             printf("%d nota(s) de R$ %.2f\n", c, d[t]);

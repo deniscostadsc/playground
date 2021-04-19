@@ -23,8 +23,9 @@ int main() {
 
             cards_b.insert(aux);
 
-            while (*it_a < aux && it_a != cards_a.end())
+            while (*it_a < aux && it_a != cards_a.end()) {
                 ++it_a;
+            }
 
             if (it_a == cards_a.end() || *it_a != aux) {
                 cards_b_not_in_a.insert(aux);
@@ -34,8 +35,9 @@ int main() {
         std::set< int >::iterator it_b = cards_b.begin();
 
         for (it_a = cards_a.begin(); it_a != cards_a.end(); ++it_a) {
-            while (*it_b < *it_a && it_b != cards_b.end())
+            while (*it_b < *it_a && it_b != cards_b.end()) {
                 ++it_b;
+            }
 
             if (it_b == cards_b.end() || *it_b != *it_a) {
                 cards_a_not_in_b.insert(*it_a);

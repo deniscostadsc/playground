@@ -20,8 +20,9 @@ unsigned long long decrease_n(unsigned long long n) {
 }
 
 bool is_tidy(unsigned long long n) {
-    if (n <= 9)
+    if (n <= 9) {
         return true;
+    }
 
     int current, previous;
 

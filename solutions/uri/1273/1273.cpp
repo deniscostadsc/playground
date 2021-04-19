@@ -21,8 +21,9 @@ int main() {
 
         while (n--) {
             std::cin >> s;
-            if (s.length() > g)
+            if (s.length() > g) {
                 g = s.length();
+            }
             ss.push_back(s);
         }
 

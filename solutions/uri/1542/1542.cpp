@@ -10,8 +10,9 @@ int main() {
         answer = trunc(static_cast< double >((q * d) / -(q - p) * p));
 
         std::cout << answer << " pagina";
-        if (answer > 1)
+        if (answer > 1) {
             std::cout << "s";
+        }
         std::cout << std::endl;
     }
 

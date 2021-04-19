@@ -12,8 +12,9 @@ int main() {
     while (j--) {
         std::cin >> x;
         n[x]++;
-        if (x > c)
+        if (x > c) {
             c = x;
+        }
     }
 
     for (i = 1; i <= c; i++) {

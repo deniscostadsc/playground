@@ -24,8 +24,9 @@ int main() {
 
         it_copy = queue_copy.begin();
         for (it = queue.begin(); it != queue.end(); ++it) {
-            if (*it == *it_copy)
+            if (*it == *it_copy) {
                 count++;
+            }
 
             ++it_copy;
         }

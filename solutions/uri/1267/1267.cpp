@@ -31,8 +31,9 @@ int main() {
             }
         }
 
-        if (!p)
+        if (!p) {
             std::cout << "no" << std::endl;
+        }
 
         m.clear();
     }

@@ -4,8 +4,9 @@
 std::map< int, int > previous_answers;
 
 int fibonacci(int n) {
-    if (previous_answers[n])
+    if (previous_answers[n]) {
         return previous_answers[n];
+    }
 
     if (n <= 1) {
         previous_answers[n] = 1;
@@ -22,11 +23,13 @@ int main() {
     while (true) {
         n = fibonacci(i);
 
-        if (n >= 4000000)
+        if (n >= 4000000) {
             break;
+        }
 
-        if (n % 2 == 0)
+        if (n % 2 == 0) {
             s += n;
+        }
 
         i++;
     }

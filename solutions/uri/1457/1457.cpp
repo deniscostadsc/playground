@@ -7,8 +7,9 @@ unsigned int n, k;
 unsigned long long oracle(unsigned int f) {
     int answer = n - (f * k);
 
-    if (answer >= 1)
+    if (answer >= 1) {
         return answer * oracle(f + 1);
+    }
     return 1;
 }
 

@@ -6,8 +6,9 @@ int main() {
     while (i--) {
         scanf("%d", &n);
 
-        if (n % 2 == 0)
+        if (n % 2 == 0) {
             c++;
+        }
     }
 
     printf("%d valores pares\n", c);

@@ -7,8 +7,9 @@ bool comparator(std::string first, std::string second) {
     int i, length;
 
     length = first.length();
-    if (second.length() < first.length())
+    if (second.length() < first.length()) {
         length = second.length();
+    }
 
     for (i = 0; i < length; i++) {
         if (first.at(i) != second.at(i)) {

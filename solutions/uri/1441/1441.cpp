@@ -22,8 +22,9 @@ int main() {
         greatest = 0;
 
         for (std::string::size_type i = 0; i < sequence.size(); i++) {
-            if (greatest < sequence.at(i))
+            if (greatest < sequence.at(i)) {
                 greatest = sequence.at(i);
+            }
         }
 
         std::cout << greatest << std::endl;

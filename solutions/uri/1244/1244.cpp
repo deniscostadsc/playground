@@ -11,8 +11,9 @@ struct Pair {
 };
 
 bool compare(Pair i, Pair j) {
-    if (i.first.length() == j.first.length())
+    if (i.first.length() == j.first.length()) {
         return i.second < j.second;
+    }
     return i.first.length() > j.first.length();
 }
 
@@ -43,8 +44,9 @@ int main() {
 
         for (unsigned int i = 0; i < strings.size(); i++) {
             std::cout << strings.at(i).first;
-            if (i < strings.size() - 1)
+            if (i < strings.size() - 1) {
                 std::cout << " ";
+            }
         }
 
         std::cout << std::endl;

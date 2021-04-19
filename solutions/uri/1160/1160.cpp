@@ -19,8 +19,9 @@ int main() {
                 break;
             }
         }
-        if (c <= 100)
+        if (c <= 100) {
             printf("%d anos.\n", c);
+        }
     }
     return 0;
 }

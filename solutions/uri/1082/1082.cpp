@@ -31,8 +31,9 @@ int count_connected_components(int v) {
             }
         }
 
-        if (index == -1)
+        if (index == -1) {
             break;
+        }
     }
 
     return cc;

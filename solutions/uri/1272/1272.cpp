@@ -15,8 +15,9 @@ int main() {
         first = false;
 
         for (i = 0; i < s.length(); i++) {
-            if (s.at(i) == ' ' && first)
+            if (s.at(i) == ' ' && first) {
                 first = !first;
+            }
 
             if (s.at(i) != ' ' && !first) {
                 first = !first;

@@ -32,8 +32,9 @@ int main() {
 
         memset(blocks, 0, sizeof(blocks));
 
-        for (i = 0; i < n; i++)
+        for (i = 0; i < n; i++) {
             std::cin >> blocks[i];
+        }
 
         std::cout << minimum_blocks(m, n) << std::endl;
     }

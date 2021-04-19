@@ -22,8 +22,9 @@ int main() {
 
         for (i = 0; i < static_cast< int >(jingle.size()); i++) {
             if (jingle[i] == '/') {
-                if (acum == 64)
+                if (acum == 64) {
                     count++;
+                }
                 acum = 0;
             } else {
                 acum += duration[jingle[i]];

@@ -18,11 +18,13 @@ int main() {
 
         i++;
 
-        if (i % 2 == 0)
+        if (i % 2 == 0) {
             i++;
+        }
 
-        for (j = i; j < f; j += 2)
+        for (j = i; j < f; j += 2) {
             s += j;
+        }
 
         printf("%d\n", s);
     }

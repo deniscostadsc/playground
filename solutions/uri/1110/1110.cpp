@@ -9,8 +9,9 @@ int main() {
         std::vector< int > l;
         std::vector< int > r;
 
-        for (i = 1; i <= n; i++)
+        for (i = 1; i <= n; i++) {
             l.push_back(i);
+        }
 
         reverse(l.begin(), l.end());
 
@@ -23,17 +24,20 @@ int main() {
 
         std::cout << "Discarded cards:";
         for (i = 0; i < r.size(); i++) {
-            if (i == 0)
+            if (i == 0) {
                 std::cout << " ";
+            }
             std::cout << r.at(i);
-            if (i != r.size() - 1)
+            if (i != r.size() - 1) {
                 std::cout << ", ";
+            }
         }
         std::cout << std::endl;
 
         std::cout << "Remaining card: ";
-        for (i = 0; i < l.size(); i++)
+        for (i = 0; i < l.size(); i++) {
             std::cout << l.at(i);
+        }
         std::cout << std::endl;
     }
 

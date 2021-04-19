@@ -9,10 +9,11 @@ int main() {
 
     std::cin >> n;
 
-    if (two(n))
+    if (two(n)) {
         std::cout << "YES" << std::endl;
-    else
+    } else {
         std::cout << "NO" << std::endl;
+    }
 
     return 0;
 }

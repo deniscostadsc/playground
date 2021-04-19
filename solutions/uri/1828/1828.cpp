@@ -2,8 +2,9 @@
 #include <string>
 
 int rock_paper_scissors_lizard_spock(std::string sheldons, std::string rajs) {
-    if (sheldons == rajs)
+    if (sheldons == rajs) {
         return 0;
+    }
     if ((sheldons == "tesoura" && (rajs == "papel" || rajs == "lagarto"))
         || (sheldons == "papel" && (rajs == "pedra" || rajs == "Spock"))
         || (sheldons == "pedra" && (rajs == "lagarto" || rajs == "tesoura"))

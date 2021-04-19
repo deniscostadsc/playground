@@ -8,16 +8,18 @@ int main() {
 
         for (i = 1; i < a; i++) {
             std::cin >> temp;
-            if (temp < nearest_attack_player)
+            if (temp < nearest_attack_player) {
                 nearest_attack_player = temp;
+            }
         }
 
         count = 0;
 
         for (j = 0; j < d; j++) {
             std::cin >> defense_distance;
-            if (defense_distance <= nearest_attack_player)
+            if (defense_distance <= nearest_attack_player) {
                 count++;
+            }
         }
 
         if (count >= 2) {

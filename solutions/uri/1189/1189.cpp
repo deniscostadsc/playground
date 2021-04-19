@@ -8,17 +8,20 @@ int main() {
     for (i = 0; i <= 11; i++) {
         for (j = 0; j <= 11; j++) {
             scanf("%lf", &n);
-            if (j < l)
+            if (j < l) {
                 s += n;
+            }
         }
-        if (i < 5)
+        if (i < 5) {
             l++;
-        else if (i >= 6)
+        } else if (i >= 6) {
             l--;
+        }
     }
-    if (o == 'S')
+    if (o == 'S') {
         printf("%.1f\n", s);
-    else
+    } else {
         printf("%.1f\n", s / 30);
+    }
     return 0;
 }

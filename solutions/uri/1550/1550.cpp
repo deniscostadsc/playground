@@ -8,8 +8,9 @@ int reverse(int number) {
     int reversed = 0;
     int digits_count = 0;
 
-    if (number < 10)
+    if (number < 10) {
         return number;
+    }
 
     while (static_cast< int >(number / std::pow(10, digits_count)) > 0) {
         digits_count++;

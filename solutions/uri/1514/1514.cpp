@@ -24,17 +24,21 @@ int main() {
         }
 
         for (i = 0; i < n; i++) {
-            if (solved_by_each[i] == m)
+            if (solved_by_each[i] == m) {
                 r1 = 0;
-            if (solved_by_each[i] == 0)
+            }
+            if (solved_by_each[i] == 0) {
                 r4 = 0;
+            }
         }
 
         for (j = 0; j < m; j++) {
-            if (solutions_per_problem[j] == 0)
+            if (solutions_per_problem[j] == 0) {
                 r2 = 0;
-            if (solutions_per_problem[j] == n)
+            }
+            if (solutions_per_problem[j] == n) {
                 r3 = 0;
+            }
         }
 
         std::cout << r1 + r2 + r3 + r4 << std::endl;

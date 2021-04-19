@@ -11,10 +11,11 @@ int main() {
 
     if (a == "vertebrado") {
         if (b == "ave") {
-            if (c == "carnivoro")
+            if (c == "carnivoro") {
                 printf("aguia\n");
-            else
+            } else {
                 printf("pomba\n");
+            }
         } else {
             if (c == "onivoro") {
                 printf("homem\n");

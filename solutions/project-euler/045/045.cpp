@@ -19,14 +19,17 @@ int main() {
     while (!got_pentagonal && !got_hexagonal) {
         tn = triangle(t++);
 
-        while (pn < tn)
+        while (pn < tn) {
             pn = pentagonal(p++);
+        }
 
-        if (pn == tn)
+        if (pn == tn) {
             got_pentagonal = true;
+        }
 
-        while (got_pentagonal && hn < pn)
+        while (got_pentagonal && hn < pn) {
             hn = hexagonal(h++);
+        }
 
         if (hn == pn) {
             got_hexagonal = true;

@@ -56,10 +56,12 @@ int main() {
             std::cout << (valid ? "Yes" : "No") << std::endl;
 
             required_order.clear();
-            while (!trains.empty())
+            while (!trains.empty()) {
                 trains.pop();
-            while (!station.empty())
+            }
+            while (!station.empty()) {
                 station.pop();
+            }
         }
 
         std::cout << std::endl;

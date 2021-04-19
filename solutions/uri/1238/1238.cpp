@@ -16,17 +16,20 @@ int main() {
             l = b.length();
         }
 
-        for (i = 0; i < l; i++)
+        for (i = 0; i < l; i++) {
             std::cout << a.at(i) << b.at(i);
+        }
 
         if (a.length() > l) {
-            for (i = l; i < a.length(); i++)
+            for (i = l; i < a.length(); i++) {
                 std::cout << a.at(i);
+            }
         }
 
         if (b.length() > l) {
-            for (i = l; i < b.length(); i++)
+            for (i = l; i < b.length(); i++) {
                 std::cout << b.at(i);
+            }
         }
 
         std::cout << std::endl;

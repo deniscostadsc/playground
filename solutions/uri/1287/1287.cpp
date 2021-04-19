@@ -26,10 +26,12 @@ int main() {
         }
 
         if (valid_chars.find(c) != std::string::npos) {
-            if (c == 'o' || c == 'O')
+            if (c == 'o' || c == 'O') {
                 c = '0';
-            if (c == 'l')
+            }
+            if (c == 'l') {
                 c = '1';
+            }
 
             s = (s * 10) + c - '0';
             if (s > 2147483647) {

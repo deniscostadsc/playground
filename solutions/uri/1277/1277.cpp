@@ -37,8 +37,9 @@ int main() {
             }
 
             if (a / (a + p) > 0.25) {
-                if (c)
+                if (c) {
                     std::cout << " ";
+                }
                 std::cout << names[i];
                 c = true;
             }

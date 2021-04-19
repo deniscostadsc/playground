@@ -8,12 +8,14 @@ int **create_grid(int r, int c, int m, int **missing) {
     for (i = 0; i < r; i++) {
         if (i % 2 == 1) {
             grid[i] = new int[c - 1];
-            for (j = 0; j < c - 1; j++)
+            for (j = 0; j < c - 1; j++) {
                 grid[i][j] = 1;
+            }
         } else {
             grid[i] = new int[c];
-            for (j = 0; j < c; j++)
+            for (j = 0; j < c; j++) {
                 grid[i][j] = 1;
+            }
         }
     }
 

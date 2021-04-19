@@ -23,8 +23,9 @@ int main() {
         avg += accumulate(gs.begin(), gs.end(), 0) / gs.size();
 
         for (int i = 0; i < l; ++i) {
-            if (gs.at(i) > avg)
+            if (gs.at(i) > avg) {
                 c++;
+            }
         }
 
         printf("%.3f%\n", c / gs.size() * 100);

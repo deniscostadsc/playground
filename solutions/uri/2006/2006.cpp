@@ -7,8 +7,9 @@ int main() {
 
     for (i = 0; i <= 4; i++) {
         std::cin >> x;
-        if (x == t)
+        if (x == t) {
             c++;
+        }
     }
 
     std::cout << c << std::endl;

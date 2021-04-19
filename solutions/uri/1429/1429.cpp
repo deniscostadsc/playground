@@ -4,8 +4,9 @@
 int rfat[10];
 
 int fat(int n) {
-    if (rfat[n] != 0)
+    if (rfat[n] != 0) {
         return rfat[n];
+    }
 
     if (n <= 1) {
         rfat[n] = 1;

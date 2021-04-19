@@ -16,8 +16,9 @@ int main() {
                 c++;
             }
 
-            if (c < 0)
+            if (c < 0) {
                 break;
+            }
         }
 
         if (c == 0) {

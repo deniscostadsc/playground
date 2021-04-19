@@ -24,24 +24,28 @@ int main() {
                 }
 
                 if (sa != null) {
-                    if (sa != 0 && s != sa)
+                    if (sa != 0 && s != sa) {
                         c++;
+                    }
                 }
                 sa = s;
             }
 
             pa = p;
 
-            if (si == null && s != 0)
+            if (si == null && s != 0) {
                 si = s;
-            if (nn == 0)
+            }
+            if (nn == 0) {
                 sf = s;
+            }
         }
 
-        if (si != sf)
+        if (si != sf) {
             c++;
-        else if (si == sf && si != 0)
+        } else if (si == sf && si != 0) {
             c += 2;
+        }
 
         std::cout << c << std::endl;
     }

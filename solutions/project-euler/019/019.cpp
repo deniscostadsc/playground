@@ -11,8 +11,9 @@ int main() {
     int y, m, count = 0;
     for (y = 1901; y <= 2000; y++) {
         for (m = 1; m <= 12; m++) {
-            if (week_day(1, m, y) == 0)
+            if (week_day(1, m, y) == 0) {
                 count++;
+            }
         }
     }
 

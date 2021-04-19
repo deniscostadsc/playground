@@ -10,15 +10,17 @@ int main() {
             continue;
         }
 
-        if (n % 2 == 0)
+        if (n % 2 == 0) {
             printf("EVEN ");
-        else
+        } else {
             printf("ODD ");
+        }
 
-        if (n < 0)
+        if (n < 0) {
             printf("NEGATIVE\n");
-        else
+        } else {
             printf("POSITIVE\n");
+        }
     }
 
     return 0;

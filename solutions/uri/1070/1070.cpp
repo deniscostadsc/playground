@@ -5,10 +5,12 @@ int main() {
 
     std::cin >> n;
 
-    if (n % 2 == 0)
+    if (n % 2 == 0) {
         n++;
-    for (int i = 0; i <= 5; i++, n += 2)
+    }
+    for (int i = 0; i <= 5; i++, n += 2) {
         std::cout << n << std::endl;
+    }
 
     return 0;
 }

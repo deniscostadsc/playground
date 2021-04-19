@@ -9,8 +9,9 @@ struct Pair {
 std::map< long, Pair > acks;
 
 long ack(long n) {
-    if (acks[n].next != 0)
+    if (acks[n].next != 0) {
         return acks[n].next;
+    }
 
     if (n % 2 == 0) {
         acks[n].next = n / 2;

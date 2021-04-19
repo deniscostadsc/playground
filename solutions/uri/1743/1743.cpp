@@ -3,8 +3,9 @@
 int main() {
     int i, plug, result = 1, conector[5];
 
-    for (i = 0; i <= 4; i++)
+    for (i = 0; i <= 4; i++) {
         std::cin >> conector[i];
+    }
 
     for (i = 0; i <= 4; i++) {
         std::cin >> plug;

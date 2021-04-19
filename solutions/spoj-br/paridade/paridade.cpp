@@ -5,8 +5,9 @@
 int c;
 
 std::string dec2bin(int n) {
-    if (n == 0)
+    if (n == 0) {
         return "0";
+    }
     if (n == 1) {
         c++;
         return "1";

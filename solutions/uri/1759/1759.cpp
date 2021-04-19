@@ -6,8 +6,9 @@ int main() {
     std::cin >> n;
     for (i = 0; i < n; i++) {
         std::cout << "Ho";
-        if (i < n - 1)
+        if (i < n - 1) {
             std::cout << " ";
+        }
     }
     std::cout << "!" << std::endl;
 

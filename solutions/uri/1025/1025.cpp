@@ -19,8 +19,9 @@ int bi_search(std::vector< int > v, int n) {
         }
     }
 
-    if (v.at(middle) == n)
+    if (v.at(middle) == n) {
         return middle + 1;
+    }
     return -1;
 }
 

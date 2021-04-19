@@ -19,8 +19,9 @@ int dijkstra(int source, int destiny, int n) {
     for (i = 1; i <= n; i++) {
         shortest_distance = INFINITY;
 
-        if (correct[destiny])
+        if (correct[destiny]) {
             break;
+        }
 
         for (j = 1; j <= n; j++) {
             if (distance[j] < shortest_distance && !correct[j]) {
@@ -29,8 +30,9 @@ int dijkstra(int source, int destiny, int n) {
             }
         }
 
-        if (shortest_distance == INFINITY)
+        if (shortest_distance == INFINITY) {
             break;
+        }
 
         correct[next_vertex] = true;
 

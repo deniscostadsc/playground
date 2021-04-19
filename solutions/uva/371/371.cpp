@@ -9,8 +9,9 @@ struct Pair {
 std::map< unsigned long, Pair > acks;
 
 long ack(long n) {
-    if (acks[n].next != 0)
+    if (acks[n].next != 0) {
         return acks[n].next;
+    }
 
     if (n % 2 == 0) {
         acks[n].next = n / 2;
@@ -51,8 +52,9 @@ int main() {
                 g_sequence = acks[i].length;
                 g_number = i;
             } else if (acks[i].length == g_sequence) {
-                if (i < g_number)
+                if (i < g_number) {
                     g_number = i;
+                }
             }
         }
 

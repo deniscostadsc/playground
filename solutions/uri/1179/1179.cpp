@@ -30,13 +30,15 @@ int main() {
         }
     }
     for (j = 0; j <= 4; j++) {
-        if (check_odd[j] == 0)
+        if (check_odd[j] == 0) {
             break;
+        }
         printf("impar[%d] = %d\n", j, odd_numbers[j]);
     }
     for (j = 0; j <= 4; j++) {
-        if (check_even[j] == 0)
+        if (check_even[j] == 0) {
             break;
+        }
         printf("par[%d] = %d\n", j, even_numbers[j]);
     }
     return 0;

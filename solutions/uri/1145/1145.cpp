@@ -6,12 +6,14 @@ int main() {
     i = 1;
     while (i <= y) {
         for (j = 0; j < x; j++) {
-            if (i > y)
+            if (i > y) {
                 break;
-            if (j == 0)
+            }
+            if (j == 0) {
                 printf("%d", i++);
-            else
+            } else {
                 printf(" %d", i++);
+            }
         }
         printf("\n");
     }

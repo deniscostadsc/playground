@@ -20,8 +20,9 @@ int main() {
 
             for (j = 0; j < n; j++) {
                 num_spaces = length_max_number;
-                if (j < 1)
+                if (j < 1) {
                     num_spaces--;
+                }
 
                 std::stringstream out;
                 out << current;
@@ -30,8 +31,9 @@ int main() {
                 num_spaces -= length_current;
                 num_spaces++;
 
-                for (k = 0; k < num_spaces; k++)
+                for (k = 0; k < num_spaces; k++) {
                     std::cout << " ";
+                }
 
                 std::cout << current;
                 current *= 2;
