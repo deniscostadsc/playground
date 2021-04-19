@@ -1,0 +1,5 @@
+   name    |  name   
+-----------+---------
+ Red Chair | Ajax SA
+(1 row)
+
