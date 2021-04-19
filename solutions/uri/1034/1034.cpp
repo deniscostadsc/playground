@@ -1,5 +1,5 @@
 #include <algorithm>
-#include <cmath>
+#include <limits>
 #include <cstring>
 #include <iostream>
 
@@ -10,7 +10,7 @@ int minimum_blocks(int m, int n) {
 
     result[0] = 0;
     for (i = 1; i <= m; i++) {
-        result[i] = INFINITY;
+        result[i] = std::numeric_limits<int>::max();
     }
 
     for (j = 0; j < n; j++) {
