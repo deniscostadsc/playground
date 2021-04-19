@@ -1,4 +1,5 @@
 #include <cstdio>
+#include <cstring>
 
 long int f[39];
 long int r[39];
@@ -22,10 +23,8 @@ int main() {
     int i, j;
     long int n;
 
-    for (j = 0; j <= 39; j++) {
-        f[j] = -1;
-        r[j] = -1;
-    }
+    memset(f, -1, sizeof(f));
+    memset(r, -1, sizeof(r));
 
     scanf("%d", &i);
     while (i--) {
