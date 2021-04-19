@@ -27,7 +27,6 @@ int main() {
     memset(r, 0, sizeof(r));
     f[1] = 1;
 
-
     scanf("%d", &i);
     while (i--) {
         scanf("%ld", &n);
