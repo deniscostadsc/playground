@@ -1,7 +1,7 @@
 #include <algorithm>
-#include <limits>
 #include <cstring>
 #include <iostream>
+#include <limits>
 
 int blocks[26];
 
@@ -10,7 +10,7 @@ int minimum_blocks(int m, int n) {
 
     result[0] = 0;
     for (i = 1; i <= m; i++) {
-        result[i] = std::numeric_limits<int>::max();
+        result[i] = std::numeric_limits< int >::max();
     }
 
     for (j = 0; j < n; j++) {
