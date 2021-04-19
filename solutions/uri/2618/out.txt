@@ -1,0 +1,5 @@
+ name |   name    |   name   
+------+-----------+----------
+ TV   | Sansul SA | Imported
+(1 row)
+
