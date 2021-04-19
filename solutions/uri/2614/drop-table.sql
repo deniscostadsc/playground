@@ -1,2 +1,1 @@
-DROP TABLE customers;
-DROP TABLE rentals;
+DROP TABLE rentals, customers;
