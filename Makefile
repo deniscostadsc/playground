@@ -1,18 +1,14 @@
 .PHONY: \
-	__c-build \
-	__cpp-build \
 	__cpp-format-code \
 	__cpp-lint \
 	__cpp-lint-build \
-	__cs-build \
-	__js-build \
 	__js-build-lint \
 	__js-format-code \
 	__js-lint \
-	__py-build \
 	__py-format-code \
 	__py-lint \
 	__py-lint-build \
+	__run_build \
 	__shell-lint \
 	__shell-lint-build \
 	clean \
@@ -44,12 +40,6 @@ endif
 DOCKER_RUN := docker run -v $(shell pwd):/code -u "$$(id -u):$$(id -g)"
 DOCKER_BUILD := docker build -q -f
 
-__c-build:
-	@$(DOCKER_BUILD) .docker/$(C).Dockerfile -t $(C) .
-
-__cpp-build:
-	@$(DOCKER_BUILD) .docker/$(CPP).Dockerfile -t $(CPP) .
-
 __cpp-format-code: __cpp-lint-build
 	@$(DOCKER_RUN) $(CPP)-lint \
 			clang-format-7 \
@@ -72,12 +62,6 @@ __cpp-lint: __cpp-lint-build
 __cpp-lint-build:
 	@$(DOCKER_BUILD) .docker/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
 
-__cs-build:
-	@$(DOCKER_BUILD) .docker/$(CS).Dockerfile -t $(CS) .
-
-__js-build:
-	@$(DOCKER_BUILD) .docker/$(JS).Dockerfile -t $(JS) .
-
 __js-build-lint:
 	@$(DOCKER_BUILD) .docker/$(JS)-lint.Dockerfile -t $(JS)-lint .
 
@@ -86,9 +70,6 @@ __js-format-code: __js-build-lint
 
 __js-lint: __js-build-lint
 	@$(DOCKER_RUN) $(JS)-lint standard
-
-__py-build:
-	@$(DOCKER_BUILD) .docker/$(PY).Dockerfile -t $(PY) .
 
 __py-format-code: __py-lint-build
 	@$(DOCKER_RUN) $(PY)-lint black .
@@ -101,6 +82,11 @@ __py-lint: __py-lint-build
 
 __py-lint-build:
 	@$(DOCKER_BUILD) .docker/$(PY)-lint.Dockerfile -t $(PY)-lint .
+
+__run-build:
+	@for language in $(LANGUAGES); do \
+		$(DOCKER_BUILD) .docker/$$language.Dockerfile -t $$language .; \
+	done
 
 __shell-lint: __shell-lint-build
 	@$(DOCKER_RUN) shell-lint shellcheck $$(find . -name '*.sh')
@@ -117,7 +103,7 @@ format-code: __cpp-format-code __js-format-code __py-format-code
 
 lint: __cpp-lint __js-lint __py-lint __shell-lint
 
-run: __c-build __cpp-build __cs-build __js-build __py-build
+run: __run-build
 	@./scripts/run-problems.sh "$(FOLDERS)" "$(LANGUAGES)" "$(DOCKER_RUN)"
 
 wrong:
