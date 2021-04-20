@@ -100,6 +100,7 @@ clean:
 	@find . -name 'result-*.txt' -delete
 	@find . -name 'a.out' -delete
 	@find . -name 'a.exe' -delete
+	@find . -type d -name "\?" -exec rm -rf {} +
 
 format-code: __cpp-format-code __js-format-code __py-format-code
 
