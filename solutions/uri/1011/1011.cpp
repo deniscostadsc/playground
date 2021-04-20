@@ -1,5 +1,5 @@
-#include <cstdio>
 #include <cmath>
+#include <cstdio>
 
 #define pi 3.14159
 
