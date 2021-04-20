@@ -12,7 +12,7 @@ end_of_line = lf
 [{*.go,Makefile}]
 indent_style = tab
 
-[*.js,*.yml,*.yaml]
+[*.clj,*.js,*.yml,*.yaml]
 indent_size = 2
 
 [out.txt]
