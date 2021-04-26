@@ -1,0 +1,5 @@
+   name    |   name    |  price  
+-----------+-----------+---------
+ Red Chair | Sansul SA | 2150.00
+(1 row)
+
