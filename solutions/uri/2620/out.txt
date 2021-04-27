@@ -1,0 +1,8 @@
+                  name                   | id 
+-----------------------------------------+----
+ Augusto Fernando Carlos Eduardo Cardoso |  1
+ Cecília Olivia Rodrigues                |  2
+ Sabrina Heloisa Gabriela Barros         |  3
+ Joaquim Diego Lorenzo Araújo            |  5
+(4 rows)
+
