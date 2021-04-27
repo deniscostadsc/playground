@@ -1,0 +1,5 @@
+Falta(m) 146 pomekon(s).
+Falta(m) 150 pomekon(s).
+Falta(m) 145 pomekon(s).
+Falta(m) 149 pomekon(s).
+Falta(m) -525 pomekon(s).
