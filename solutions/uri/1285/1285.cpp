@@ -1,18 +1,17 @@
 #include <iostream>
 #include <map>
-#include <cassert>
 
 bool has_repeated(int n) {
     int cur;
     std::map< int, bool > previous;
 
-    while(n) {
+    while (n) {
         cur = n % 10;
         if (previous[cur]) {
             return true;
         }
         previous[cur] = true;
-        n = (int)(n / 10);
+        n = static_cast< int >(n / 10);
     }
 
     return false;
