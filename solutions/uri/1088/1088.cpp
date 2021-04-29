@@ -1,81 +1,65 @@
 #include <iostream>
-#include <iterator>
-#include <sstream>
-#include <vector>
 
-void merge(std::vector< std::string > arr, int l, int m, int r) {
-    int l_arr_size = m - l + 1;
-    int r_arr_size = r - m;
+int merge(int numbers[], int temp[], int left, int middle, int right) {
+    int left_index = left, right_index = middle, temp_index = left,
+        swaps_count = 0;
 
-    std::string l_arr[l_arr_size];
-    std::string r_arr[r_arr_size];
-
-    for (int i = 0; i < l_arr_size; i++) {
-        l_arr[i] = arr[l + i];
-    }
-    for (int j = 0; j < r_arr_size; j++) {
-        r_arr[j] = arr[m + j];
-    }
-
-    int l_arr_index = 0;
-    int r_arr_index = 0;
-    int arr_index = l;
-
-    while (l_arr_index < l_arr_size && r_arr_index < l_arr_size) {
-        if (l_arr[l_arr_index] <= r_arr[r_arr_index]) {
-            arr[arr_index] = l_arr[l_arr_index];
-            l_arr_index++;
+    while (left_index <= middle - 1 && right_index <= right) {
+        if (numbers[left_index] <= numbers[right_index]) {
+            temp[temp_index++] = numbers[left_index++];
         } else {
-            arr[arr_index] = r_arr[r_arr_index];
-            r_arr_index++;
+            temp[temp_index++] = numbers[right_index++];
+            swaps_count += middle - left_index;
         }
-        arr_index++;
     }
 
-    while (l_arr_index < l_arr_size) {
-        arr[arr_index] = l_arr[l_arr_index];
-        l_arr_index++;
-        arr_index++;
+    while (left_index <= middle - 1) {
+        temp[temp_index++] = numbers[left_index++];
     }
 
-    while (r_arr_index < r_arr_size) {
-        arr[arr_index] = r_arr[r_arr_index];
-        r_arr_index++;
-        arr_index++;
+    while (right_index <= right) {
+        temp[temp_index++] = numbers[right_index++];
     }
+
+    for (int i = left; i <= right; i++) {
+        numbers[i] = temp[i];
+    }
+
+    return swaps_count;
 }
 
-void merge_sort(std::vector< std::string > arr, int l, int r) {
-    if (l < r) {
-        int m = l + (r - l) / 2;
+int merge_sort(int numbers[], int temp[], int left, int right) {
+    int middle, swaps_count;
 
-        merge_sort(arr, l, m);
-        merge_sort(arr, m + 1, l);
-        merge(arr, l, m, r);
+    if (left < right) {
+        middle = left + (right - left) / 2;
+
+        swaps_count = merge_sort(numbers, temp, left, middle);
+        swaps_count += merge_sort(numbers, temp, middle + 1, right);
+        swaps_count += merge(numbers, temp, left, middle + 1, right);
     }
+
+    return swaps_count;
+}
+
+int count_swaps(int numbers[], int n) {
+    int temp[n];
+    return merge_sort(numbers, temp, 0, n - 1);
 }
 
 int main() {
-    std::string line;
-    std::vector< std::string >::iterator it;
+    int n, cur;
 
-    while (std::getline(std::cin, line)) {
-        std::istringstream iss(line);
-        std::vector< std::string > numbers(
-            std::istream_iterator< std::string > {iss},
-            std::istream_iterator< std::string >());
+    while (std::cin >> n && n) {
+        int numbers[n];
 
-        for (it = numbers.begin(); it != numbers.end(); it++) {
-            std::cout << *it << " ";
+        for (int i = 0; i < n; i++) {
+            std::cin >> cur;
+            numbers[i] = cur;
         }
-        std::cout << std::endl;
 
-        merge_sort(numbers, 0, numbers.size());
-
-        for (it = numbers.begin(); it != numbers.end(); it++) {
-            std::cout << *it << " ";
-        }
-        std::cout << std::endl;
+        std::cout << (count_swaps(numbers, n) % 2 == 0 ? "Carlos" : "Marcelo")
+                  << std::endl;
     }
 
     return 0;
