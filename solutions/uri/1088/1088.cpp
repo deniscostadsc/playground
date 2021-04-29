@@ -44,6 +44,7 @@ int merge_sort(int numbers[], int temp[], int left, int right) {
 
 int count_swaps(int numbers[], int n) {
     int temp[n];
+
     return merge_sort(numbers, temp, 0, n - 1);
 }
 
