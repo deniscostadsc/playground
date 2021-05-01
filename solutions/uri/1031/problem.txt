@@ -12,7 +12,7 @@ power would be turned off to the regions in the order: 1,6,11,16,5,12,2,9,17,
 10,4,15,14,3,8,13,7.
 
 The problem is that it is clearly fairest to turn off the region of Wellington
-by last(after all, that is where the Electricity headquarters are), so for a
+by last (after all, that is where the Electricity headquarters are), so for a
 given N, the `random' number m needs to be carefully chosen so that region 13
 is the last region selected.
 
