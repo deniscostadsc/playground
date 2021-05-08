@@ -10,3 +10,4 @@
 .vscode
 result*.txt
 ?/
+.calva/
