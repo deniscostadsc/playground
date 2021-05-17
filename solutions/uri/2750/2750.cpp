@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main () {
+int main() {
     std::cout << "---------------------------------------" << std::endl;
     std::cout << "|  decimal  |  octal  |  Hexadecimal  |" << std::endl;
     std::cout << "---------------------------------------" << std::endl;
