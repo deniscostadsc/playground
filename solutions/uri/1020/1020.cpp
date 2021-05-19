@@ -3,7 +3,7 @@
 int main() {
     int t, a = 0, m = 0, d = 0;
 
-    while(scanf("%d", &t) != EOF) {
+    while (scanf("%d", &t) != EOF) {
         if (t >= 365) {
             a = t / 365;
             t %= 365;

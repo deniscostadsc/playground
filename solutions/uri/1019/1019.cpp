@@ -3,7 +3,7 @@
 int main() {
     int t, h = 0, m = 0;
 
-    while(scanf("%d", &t) != EOF) {
+    while (scanf("%d", &t) != EOF) {
         if (t >= 60 * 60) {
             h = t / (60 * 60);
             t %= (60 * 60);

@@ -1,6 +1,5 @@
 import sys
 
-
 for t in sys.stdin:
     t = int(t)
     a = 0
