@@ -6,8 +6,9 @@
 *.swp
 *~
 .DS_Store
+.calva/
 .vagrant
 .vscode
-result*.txt
 ?/
-.calva/
+Main.class
+result*.txt

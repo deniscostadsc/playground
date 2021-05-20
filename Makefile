@@ -21,6 +21,7 @@ C = c
 CLJ = clj
 CPP = cpp
 CS = cs
+JAVA = java
 JS = js
 PY = py
 
@@ -30,6 +31,7 @@ LANGUAGES = \
 	$(CLJ) \
 	$(CPP) \
 	$(CS) \
+	$(JAVA) \
 	$(JS) \
 	$(PY)
 
@@ -99,6 +101,7 @@ __shell-lint-build:
 clean:
 	@find . -name 'result-*.txt' -delete
 	@find . -name 'a.out' -delete
+	@find . -name 'Main.class' -delete
 	@find . -name 'a.exe' -delete
 	@find . -type d -name "\?" -exec rm -rf {} +
 
