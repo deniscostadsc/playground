@@ -2,6 +2,7 @@
 	__cpp-format-code \
 	__cpp-lint \
 	__cpp-lint-build \
+	__go_lint \
 	__js-build-lint \
 	__js-format-code \
 	__js-lint \
@@ -72,6 +73,15 @@ __cpp-lint: __cpp-lint-build
 __cpp-lint-build:
 	@$(DOCKER_BUILD) .docker/lint/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
 
+__go-lint-build:
+	@$(DOCKER_BUILD) .docker/$(GO).Dockerfile -t $(GO) .
+
+__go-lint: __go-lint-build
+	@$(DOCKER_RUN) $(GO) [ "$$(gofmt -l . | wc -l)" -eq 0 ]
+
+__go-format-code: __go-lint-build
+	@$(DOCKER_RUN) $(GO) gofmt -w .
+
 __js-build-lint:
 	@$(DOCKER_BUILD) .docker/lint/$(JS)-lint.Dockerfile -t $(JS)-lint .
 
@@ -113,9 +123,9 @@ clean:
 	@find . -name 'result-*.txt' -delete
 	@find . -type d -name "\?" -exec rm -rf {} +
 
-format-code: __cpp-format-code __js-format-code __py-format-code
+format-code: __cpp-format-code __go-format-code __js-format-code __py-format-code
 
-lint: __cpp-lint __js-lint __py-lint __shell-lint
+lint: __cpp-lint __go-lint __js-lint __py-lint __shell-lint
 
 run: __run-build
 	@./scripts/run-problems.sh "$(FOLDERS)" "$(LANGUAGES)" "$(DOCKER_RUN)"
