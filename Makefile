@@ -70,10 +70,10 @@ __cpp-lint: __cpp-lint-build
 			-r .
 
 __cpp-lint-build:
-	@$(DOCKER_BUILD) .docker/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
+	@$(DOCKER_BUILD) .docker/lint/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
 
 __js-build-lint:
-	@$(DOCKER_BUILD) .docker/$(JS)-lint.Dockerfile -t $(JS)-lint .
+	@$(DOCKER_BUILD) .docker/lint/$(JS)-lint.Dockerfile -t $(JS)-lint .
 
 __js-format-code: __js-build-lint
 	@$(DOCKER_RUN) $(JS)-lint standard --fix
@@ -91,7 +91,7 @@ __py-lint: __py-lint-build
 	@$(DOCKER_RUN) $(PY)-lint isort -c .
 
 __py-lint-build:
-	@$(DOCKER_BUILD) .docker/$(PY)-lint.Dockerfile -t $(PY)-lint .
+	@$(DOCKER_BUILD) .docker/lint/$(PY)-lint.Dockerfile -t $(PY)-lint .
 
 __run-build:
 	@for language in $(LANGUAGES); do \
@@ -102,7 +102,7 @@ __shell-lint: __shell-lint-build
 	@$(DOCKER_RUN) shell-lint shellcheck $$(find . -name '*.sh')
 
 __shell-lint-build:
-	@$(DOCKER_BUILD) .docker/shell-lint.Dockerfile -t shell-lint .
+	@$(DOCKER_BUILD) .docker/lint/shell-lint.Dockerfile -t shell-lint .
 
 clean:
 	@find . -name 'Main.class' -delete
