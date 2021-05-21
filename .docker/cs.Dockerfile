@@ -11,4 +11,5 @@ CMD cd $PROBLEM && \
         else \
             mono a.exe > result-cs.txt; \
         fi; \
+        rm -rf a.exe; \
     fi

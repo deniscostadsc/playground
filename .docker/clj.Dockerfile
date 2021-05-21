@@ -11,4 +11,5 @@ CMD cd $PROBLEM && \
         else \
             clojure -M *.clj > result-clj.txt; \
         fi; \
+        rm -rf ?; \
     fi

@@ -11,4 +11,5 @@ CMD cd $PROBLEM && \
         else \
             ./a.out > result-c.txt; \
         fi; \
+        rm -rf a.out; \
     fi

@@ -11,4 +11,5 @@ CMD cd $PROBLEM && \
         else \
             ./hs.out > result-hs.txt; \
         fi; \
+        rm -rf *.o *.hi hs.out; \
     fi

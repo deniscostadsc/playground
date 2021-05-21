@@ -12,5 +12,5 @@ CMD cd $PROBLEM && \
         else \
             java Main > result-java.txt; \
         fi; \
-        rm Main.java; \
+        rm -rf Main.java Main.class; \
     fi

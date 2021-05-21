@@ -11,4 +11,5 @@ CMD cd $PROBLEM && \
         else \
             ./a.out > result-cpp.txt; \
         fi; \
+        rm -rf a.out; \
     fi
