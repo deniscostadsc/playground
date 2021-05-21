@@ -32,6 +32,7 @@ PAS = pas
 PHP = php
 PY = py
 RB = rb
+RS = rs
 
 # don't add SQL to the LANGUAGE var
 LANGUAGES = \
@@ -48,7 +49,8 @@ LANGUAGES = \
 	$(PAS) \
 	$(PHP) \
 	$(PY) \
-	$(RB)
+	$(RB) \
+	$(RS)
 
 ifdef FOLDER
 FOLDERS := $(shell find $(FOLDER) -name 'problem.txt' | sed 's/problem.txt//g' | sort)
