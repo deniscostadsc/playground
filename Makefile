@@ -31,6 +31,7 @@ LUA = lua
 PAS = pas
 PHP = php
 PY = py
+R = r
 RB = rb
 RS = rs
 SCALA = scala
@@ -50,6 +51,7 @@ LANGUAGES = \
 	$(PAS) \
 	$(PHP) \
 	$(PY) \
+	$(R) \
 	$(RB) \
 	$(RS) \
 	$(SCALA)
