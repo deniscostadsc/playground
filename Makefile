@@ -33,6 +33,7 @@ PHP = php
 PY = py
 RB = rb
 RS = rs
+SCALA = scala
 
 # don't add SQL to the LANGUAGE var
 LANGUAGES = \
@@ -50,7 +51,8 @@ LANGUAGES = \
 	$(PHP) \
 	$(PY) \
 	$(RB) \
-	$(RS)
+	$(RS) \
+	$(SCALA)
 
 ifdef FOLDER
 FOLDERS := $(shell find $(FOLDER) -name 'problem.txt' | sed 's/problem.txt//g' | sort)
