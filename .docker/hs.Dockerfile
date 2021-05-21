@@ -1,0 +1,14 @@
+FROM haskell:latest
+
+RUN mkdir /code
+WORKDIR /code
+
+CMD cd $PROBLEM && \
+    if [ "$(find . -name '*.hs' | wc -l)" -eq 1 ]; then \
+        ghc -o hs.out *.hs; \
+        if [ -f in.txt ]; then \
+            ./hs.out < in.txt > result-hs.txt; \
+        else \
+            ./hs.out > result-hs.txt; \
+        fi; \
+    fi

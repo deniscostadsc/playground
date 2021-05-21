@@ -23,6 +23,7 @@ CPP = cpp
 CS = cs
 DART = dart
 GO = go
+HS = hs
 JAVA = java
 JS = js
 PY = py
@@ -35,6 +36,7 @@ LANGUAGES = \
 	$(CS) \
 	$(DART) \
 	$(GO) \
+	$(HS) \
 	$(JAVA) \
 	$(JS) \
 	$(PY)
@@ -103,10 +105,11 @@ __shell-lint-build:
 	@$(DOCKER_BUILD) .docker/shell-lint.Dockerfile -t shell-lint .
 
 clean:
-	@find . -name 'result-*.txt' -delete
-	@find . -name 'a.out' -delete
 	@find . -name 'Main.class' -delete
 	@find . -name 'a.exe' -delete
+	@find . -name '*.out' -delete
+	@find . -name '*.hi' -delete
+	@find . -name 'result-*.txt' -delete
 	@find . -type d -name "\?" -exec rm -rf {} +
 
 format-code: __cpp-format-code __js-format-code __py-format-code
