@@ -29,6 +29,7 @@ JAVA = java
 JS = js
 LUA = lua
 PY = py
+RB = rb
 
 # don't add SQL to the LANGUAGE var
 LANGUAGES = \
@@ -42,7 +43,8 @@ LANGUAGES = \
 	$(JAVA) \
 	$(JS) \
 	$(LUA) \
-	$(PY)
+	$(PY) \
+	$(RB)
 
 ifdef FOLDER
 FOLDERS := $(shell find $(FOLDER) -name 'problem.txt' | sed 's/problem.txt//g' | sort)
