@@ -29,6 +29,7 @@ JAVA = java
 JS = js
 LUA = lua
 PAS = pas
+PHP = php
 PY = py
 RB = rb
 
@@ -45,6 +46,7 @@ LANGUAGES = \
 	$(JS) \
 	$(LUA) \
 	$(PAS) \
+	$(PHP) \
 	$(PY) \
 	$(RB)
 
