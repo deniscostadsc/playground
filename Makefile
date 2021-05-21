@@ -27,6 +27,7 @@ GO = go
 HS = hs
 JAVA = java
 JS = js
+LUA = lua
 PY = py
 
 # don't add SQL to the LANGUAGE var
@@ -40,6 +41,7 @@ LANGUAGES = \
 	$(HS) \
 	$(JAVA) \
 	$(JS) \
+	$(LUA) \
 	$(PY)
 
 ifdef FOLDER
