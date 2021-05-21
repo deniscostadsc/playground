@@ -21,6 +21,7 @@ C = c
 CLJ = clj
 CPP = cpp
 CS = cs
+GO = go
 JAVA = java
 JS = js
 PY = py
@@ -31,6 +32,7 @@ LANGUAGES = \
 	$(CLJ) \
 	$(CPP) \
 	$(CS) \
+	$(GO) \
 	$(JAVA) \
 	$(JS) \
 	$(PY)
