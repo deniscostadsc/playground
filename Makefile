@@ -21,6 +21,7 @@ C = c
 CLJ = clj
 CPP = cpp
 CS = cs
+DART = dart
 GO = go
 JAVA = java
 JS = js
@@ -32,6 +33,7 @@ LANGUAGES = \
 	$(CLJ) \
 	$(CPP) \
 	$(CS) \
+	$(DART) \
 	$(GO) \
 	$(JAVA) \
 	$(JS) \
