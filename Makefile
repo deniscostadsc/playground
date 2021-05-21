@@ -109,6 +109,7 @@ clean:
 	@find . -name 'a.exe' -delete
 	@find . -name '*.out' -delete
 	@find . -name '*.hi' -delete
+	@find . -name '*.o' -delete
 	@find . -name 'result-*.txt' -delete
 	@find . -type d -name "\?" -exec rm -rf {} +
 
