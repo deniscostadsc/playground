@@ -27,6 +27,7 @@ GO = go
 HS = hs
 JAVA = java
 JS = js
+KT = kt
 LUA = lua
 PAS = pas
 PHP = php
@@ -47,6 +48,7 @@ LANGUAGES = \
 	$(HS) \
 	$(JAVA) \
 	$(JS) \
+	$(KT) \
 	$(LUA) \
 	$(PAS) \
 	$(PHP) \
@@ -129,12 +131,13 @@ __shell-lint-build:
 	@$(DOCKER_BUILD) .docker/lint/shell-lint.Dockerfile -t shell-lint .
 
 clean:
-	@find . -name 'Main.class' -delete
-	@find . -name 'a.exe' -delete
-	@find . -name '*.out' -delete
+	@find . -name '*.class' -delete
 	@find . -name '*.hi' -delete
 	@find . -name '*.o' -delete
+	@find . -name '*.out' -delete
+	@find . -name 'a.exe' -delete
 	@find . -name 'result-*.txt' -delete
+	@find . -type d -name "META-INF" -exec rm -rf {} +
 	@find . -type d -name "\?" -exec rm -rf {} +
 
 format-code: __cpp-format-code __go-format-code __js-format-code __py-format-code
