@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-ENV lua_verision  5.4.0
+ENV LUA_VERSION  5.4.0
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 		curl \
@@ -16,11 +16,11 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 		git \
     --no-install-recommends && rm -r /var/lib/apt/lists/*
 
-RUN wget http://www.lua.org/ftp/lua-${lua_verision}.tar.gz && \
-    tar xf lua-${lua_verision}.tar.gz && \
-    cd lua-${lua_verision} && \
+RUN wget http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz && \
+    tar xf lua-${LUA_VERSION}.tar.gz && \
+    cd lua-${LUA_VERSION} && \
     make linux && \
-    ln -s /lua-${lua_verision}/src/lua /usr/bin/lua
+    ln -s /lua-${LUA_VERSION}/src/lua /usr/bin/lua
 
 RUN apt-get remove --purge -y \
     wget \

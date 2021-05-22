@@ -6,8 +6,10 @@ RUN mkdir /code
 WORKDIR /code
 
 CMD cd $PROBLEM && \
-    if [ -f in.txt ]; then \
-        node *.js < in.txt > result-js.txt; \
-    else \
-        node *.js > result-js.txt; \
+    if [ "$(ls *.js | wc -l)" -eq 1 ]; then \
+        if [ -f in.txt ]; then \
+            node *.js < in.txt > result-js.txt; \
+        else \
+            node *.js > result-js.txt; \
+        fi; \
     fi
