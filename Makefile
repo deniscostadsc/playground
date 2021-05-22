@@ -29,6 +29,7 @@ JAVA = java
 JS = js
 KT = kt
 LUA = lua
+ML = ml
 PAS = pas
 PHP = php
 PY = py
@@ -50,6 +51,7 @@ LANGUAGES = \
 	$(JS) \
 	$(KT) \
 	$(LUA) \
+	$(ML) \
 	$(PAS) \
 	$(PHP) \
 	$(PY) \
@@ -132,10 +134,12 @@ __shell-lint-build:
 
 clean:
 	@find . -name '*.class' -delete
+	@find . -name '*.cml' -delete
+	@find . -name '*.cmo' -delete
+	@find . -name '*.exe' -delete
 	@find . -name '*.hi' -delete
 	@find . -name '*.o' -delete
 	@find . -name '*.out' -delete
-	@find . -name 'a.exe' -delete
 	@find . -name 'result-*.txt' -delete
 	@find . -type d -name "META-INF" -exec rm -rf {} +
 	@find . -type d -name "\?" -exec rm -rf {} +

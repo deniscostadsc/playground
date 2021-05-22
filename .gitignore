@@ -12,4 +12,6 @@
 .vscode
 ?/
 Main.class
+main.cmi
+main.cmo
 result*.txt
