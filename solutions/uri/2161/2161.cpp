@@ -2,7 +2,7 @@
 #include <iostream>
 
 double sqrtt(int n) {
-    double result = 1 / 6;
+    double result = 0.0;
 
     for (int i = 0; i < n; i++) {
         result = 1 / (6 + result);
