@@ -1,4 +1,6 @@
 .PHONY: \
+	__clj-lint \
+	__clj-lint-build \
 	__cpp-format-code \
 	__cpp-lint \
 	__cpp-lint-build \
@@ -68,6 +70,12 @@ endif
 
 DOCKER_RUN := docker run -v $(shell pwd):/code -u "$$(id -u):$$(id -g)"
 DOCKER_BUILD := docker build -q -f
+
+__clj-lint: __clj-lint-build
+	@$(DOCKER_RUN) $(CLJ)-lint ./scripts/clj-lint.sh
+
+__clj-lint-build:
+	@$(DOCKER_BUILD) .docker/lint/$(CLJ)-lint.Dockerfile -t $(CLJ)-lint .
 
 __cpp-format-code: __cpp-lint-build
 	@$(DOCKER_RUN) $(CPP)-lint \
@@ -146,7 +154,7 @@ clean:
 
 format-code: __cpp-format-code __go-format-code __js-format-code __py-format-code
 
-lint: __cpp-lint __go-lint __js-lint __py-lint __shell-lint
+lint: __clj-lint __cpp-lint __go-lint __js-lint __py-lint __shell-lint
 
 run: __run-build
 	@./scripts/run-problems.sh "$(FOLDERS)" "$(LANGUAGES)" "$(DOCKER_RUN)"
