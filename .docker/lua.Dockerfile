@@ -1,9 +1,8 @@
 FROM debian:jessie
 
-ENV LUA_VERSION  5.4.0
+ENV LUA_VERSION 5.4.0
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
-		curl \
 		wget \
 		build-essential \
 		make \
@@ -13,7 +12,6 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 		ca-certificates \
 		unzip \
 		libssl-dev \
-		git \
     --no-install-recommends && rm -r /var/lib/apt/lists/*
 
 RUN wget http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz && \

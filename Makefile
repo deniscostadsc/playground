@@ -68,7 +68,7 @@ else
 FOLDERS := $(shell find . -name 'problem.txt' | sed 's/problem.txt//g' | sort)
 endif
 
-DOCKER_RUN := docker run -v $(shell pwd):/code -u "$$(id -u):$$(id -g)"
+DOCKER_RUN := docker run -v $$(pwd):/code -u "$$(id -u):$$(id -g)"
 DOCKER_BUILD := docker build -q -f
 
 __clj-lint: __clj-lint-build
