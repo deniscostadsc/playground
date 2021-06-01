@@ -11,5 +11,5 @@ CMD cd $PROBLEM && \
         else \
             ./pas.out > result-pas.txt; \
         fi; \
-        rm -rf 1000.o pas.out; \
+        rm -rf *.o pas.out; \
     fi
