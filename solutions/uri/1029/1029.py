@@ -1,5 +1,3 @@
-from functools import lru_cache
-
 fibs = [0] * 40
 calls = [0] * 40
 
