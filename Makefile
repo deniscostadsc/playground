@@ -5,7 +5,7 @@
 	__cpp-lint \
 	__cpp-lint-build \
 	__go_lint \
-	__js-build-lint \
+	__js-lint-build \
 	__js-format-code \
 	__js-lint \
 	__py-format-code \
@@ -108,14 +108,15 @@ __go-lint: __go-lint-build
 __go-format-code: __go-lint-build
 	@$(DOCKER_RUN) $(GO) gofmt -w .
 
-__js-build-lint:
-	@$(DOCKER_BUILD) .docker/lint/$(JS)-lint.Dockerfile -t $(JS)-lint .
 
 __js-format-code: __js-build-lint
 	@$(DOCKER_RUN) $(JS)-lint standard --fix
 
-__js-lint: __js-build-lint
+__js-lint: __js-lint-build
 	@$(DOCKER_RUN) $(JS)-lint standard
+
+__js-lint-build:
+	@$(DOCKER_BUILD) .docker/lint/$(JS)-lint.Dockerfile -t $(JS)-lint .
 
 __py-format-code: __py-lint-build
 	@$(DOCKER_RUN) $(PY)-lint black .
