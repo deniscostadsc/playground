@@ -109,7 +109,6 @@ __go-lint: __go-lint-build
 __go-format-code: __go-lint-build
 	@$(DOCKER_RUN) $(GO) gofmt -w .
 
-
 __js-format-code: __js-lint-build
 	@$(DOCKER_RUN) $(JS)-lint standard --fix
 
