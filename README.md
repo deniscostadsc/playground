@@ -11,6 +11,7 @@ The following command are available:
 ```shell
 make clean  # remove files created by run task
 make format-code  # format all code
+make languages  # show numbers of solutions in different languages per folder
 make lint  # check lint for all solutions
 make run  # run and test all past solutions (ignore solution with WRONG file)
 make run FOLDER=sub/path/to/run  # run and test a specific sub-folder
