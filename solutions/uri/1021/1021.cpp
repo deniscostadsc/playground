@@ -1,35 +1,40 @@
+#include <cmath>
 #include <cstdio>
 
 int main() {
-    double n,
-        d[]
-        = {100.0, 50.0, 20.0, 10.0, 5.0, 2.0, 1.0, 0.5, 0.25, 0.10, 0.05, 0.01};
-    int t = 0, c, i;
+    double n;
+    int d[] = {10000, 5000, 2000, 1000, 500, 200, 100, 50, 25, 10, 5, 1};
+    int total_value, t = 0, c, i;
 
-    scanf("%lf", &n);
-    printf("NOTAS:\n");
+    while (scanf("%lf", &n) != EOF) {
+        total_value = static_cast< int >(ceil((n * 100)));
+        printf("NOTAS:\n");
 
-    t = 0;
+        t = 0;
 
-    for (i = 0; i < 12; i++) {
-        c = 0;
+        for (i = 0; i < 12; i++) {
+            c = 0;
 
-        while (n >= d[t]) {
-            n -= d[t];
-            c++;
+            while (total_value >= d[t]) {
+                total_value -= d[t];
+                c++;
+            }
+
+            if (d[t] == 100) {
+                printf("MOEDAS:\n");
+            }
+
+            if (d[t] >= 200) {
+                printf("%d nota(s) de R$ %d.00\n", c, d[t] / 100);
+            } else {
+                printf(
+                    "%d moeda(s) de R$ %.2f\n",
+                    c,
+                    static_cast< float >(d[t]) / 100.0);
+            }
+
+            t++;
         }
-
-        if (d[t] == 1.0) {
-            printf("MOEDAS:\n");
-        }
-
-        if (d[t] >= 2.0) {
-            printf("%d nota(s) de R$ %.2f\n", c, d[t]);
-        } else {
-            printf("%d moeda(s) de R$ %.2f\n", c, d[t]);
-        }
-
-        t++;
     }
 
     return 0;
