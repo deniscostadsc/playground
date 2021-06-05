@@ -2,7 +2,9 @@
 
 int main() {
     int n, q;
+
     scanf("%d %d", &n, &q);
+
     if (n == 1) {
         printf("Total: R$ %.2f\n", 4.00 * q);
     } else if (n == 2) {
@@ -14,5 +16,6 @@ int main() {
     } else {
         printf("Total: R$ %.2f\n", 1.50 * q);
     }
+
     return 0;
 }
