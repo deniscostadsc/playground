@@ -41,7 +41,7 @@ RB = rb
 RS = rs
 SCALA = scala
 
-# don't add SQL to the LANGUAGE var
+# don't add SQL to the LANGUAGES var
 LANGUAGES = \
 	$(C) \
 	$(CLJ) \
@@ -156,9 +156,9 @@ clean:
 format-code: __cpp-format-code __go-format-code __js-format-code __py-format-code
 
 lint: __clj-lint __cpp-lint __go-lint __js-lint __py-lint __shell-lint
+
 languages:
 	@./scripts/languages.sh
-
 
 run: __run-build
 	@./scripts/run-problems.sh "$(FOLDERS)" "$(LANGUAGES)" "$(DOCKER_RUN)"
