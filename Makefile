@@ -164,7 +164,7 @@ lint: __clj-lint __cpp-lint __go-lint __js-lint __py-lint __shell-lint
 new-problem:
 ifdef FOLDER
 	@mkdir -p $(FOLDER)
-	@touch $(FOLDER)/{in.txt,out.txt,problem.txt,tags.txt,$(shell basename $(FOLDER)).cpp,WRONG}
+	@touch $(FOLDER)/{in.txt,out.txt,problem.txt,tags.txt,$(shell basename $(FOLDER)).cpp}
 else
 	@echo "You must specify a FOLDER variable to create a new problem. See example bellow:"
 	@echo ""
