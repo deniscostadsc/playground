@@ -21,7 +21,7 @@ int main() {
     unsigned long long line;
     memset(memo, 0, sizeof(memo));
 
-    while(scanf("%llu", &line) != EOF) {
+    while (scanf("%llu", &line) != EOF) {
         printf("%llu\n", calculate_sum(line));
     }
 
