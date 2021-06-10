@@ -18,6 +18,7 @@
 	format-code \
 	languages \
 	lint \
+	new-problem \
 	run \
 	wrong
 
@@ -156,6 +157,16 @@ clean:
 format-code: __cpp-format-code __go-format-code __js-format-code __py-format-code
 
 lint: __clj-lint __cpp-lint __go-lint __js-lint __py-lint __shell-lint
+
+new-problem:
+ifdef FOLDER
+	@mkdir -p $(FOLDER)
+	@touch $(FOLDER)/{in.txt,out.txt,problem.txt,tags.txt,$(shell basename $(FOLDER)).cpp,WRONG}
+else
+	@echo "You must specify a FOLDER variable to create a new problem. See example bellow:"
+	@echo ""
+	@echo "make new-problem FOLDER=solutions/uri/1000"
+endif
 
 languages:
 	@./scripts/languages.sh
