@@ -1,0 +1,14 @@
+http://br.spoj.com/problems/QUADRAD2/
+
+# Quadrados
+
+Dado um inteiro $N$, determine quanto vale $N^2$.
+
+## Entrada
+
+A entrada é composta por um único caso de teste,
+composto por uma única linha que contém o inteiro $N$.
+
+## Saída
+
+Seu programa deve produzir uma única linha, contendo o valor de $N^2$.

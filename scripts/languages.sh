@@ -4,7 +4,7 @@ set -euo pipefail
 
 pushd "$(dirname "$0")/.." > /dev/null
 
-FOLDERS=$(find . -name 'problem.txt' | sed 's/problem.txt//g' | sort)
+FOLDERS=$(find . -name 'problem.md' | sed 's/problem.md//g' | sort)
 
 for folder in $FOLDERS; do
     solutions="$(\

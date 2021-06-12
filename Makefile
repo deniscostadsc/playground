@@ -66,9 +66,9 @@ LANGUAGES = \
 	$(SCALA)
 
 ifdef FOLDER
-FOLDERS := $(shell find $(FOLDER) -name 'problem.txt' | sed 's/problem.txt//g' | sort)
+FOLDERS := $(shell find $(FOLDER) -name 'problem.md' | sed 's/problem.md//g' | sort)
 else
-FOLDERS := $(shell find . -name 'problem.txt' | sed 's/problem.txt//g' | sort)
+FOLDERS := $(shell find . -name 'problem.md' | sed 's/problem.md//g' | sort)
 endif
 
 DOCKER_RUN := docker run -v $$(pwd):/code -u "$$(id -u):$$(id -g)"
@@ -168,7 +168,7 @@ lint: __clj-lint __cpp-lint __go-lint __js-lint __py-lint __shell-lint
 new-problem:
 ifdef FOLDER
 	@mkdir -p $(FOLDER)
-	@touch $(FOLDER)/{in.txt,out.txt,problem.txt,tags.txt,$(shell basename $(FOLDER)).cpp}
+	@touch $(FOLDER)/{in.txt,out.txt,problem.md,tags.txt,$(shell basename $(FOLDER)).cpp}
 else
 	@echo "You must specify a FOLDER variable to create a new problem. See example bellow:"
 	@echo ""
