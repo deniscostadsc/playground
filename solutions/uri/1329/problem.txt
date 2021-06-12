@@ -1,9 +1,7 @@
 http://www.urionlinejudge.com.br/judge/en/problems/view/1329
 
-
-
 John and Mary have been friends since nursery school. Since then, they have
-shared a playful routine: every time they meet, they play Head or Tail with 
+shared a playful routine: every time they meet, they play Head or Tail with
 a coin, and whoever wins has the priviledge of deciding what they are going
 to play during the day. Mary always choose Head, and John always choose Tail.
 

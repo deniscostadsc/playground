@@ -1,0 +1,1 @@
+graph, bfs, chess, knight's tour, shortest path

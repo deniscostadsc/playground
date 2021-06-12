@@ -14,6 +14,7 @@
 	__run_build \
 	__shell-lint \
 	__shell-lint-build \
+	check-tags \
 	clean \
 	format-code \
 	languages \
@@ -141,6 +142,9 @@ __shell-lint: __shell-lint-build
 
 __shell-lint-build:
 	@$(DOCKER_BUILD) .docker/lint/shell-lint.Dockerfile -t shell-lint .
+
+check-tags:
+	@./scripts/check-tags.sh
 
 clean:
 	@find . -name '*.class' -delete

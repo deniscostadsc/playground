@@ -1,4 +1,4 @@
-https://practice.geeksforgeeks.org/problems/longest-common-substring/0
+https://practice.geeksforgeeks.org/problems/longest-common-substring/1
 
 Given two strings X and Y. The task is to find the length of the longest common
 substring.

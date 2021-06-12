@@ -1,0 +1,1 @@
+graph, disjoint set, kruskal algorithm, path compression

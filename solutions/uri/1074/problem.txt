@@ -3,6 +3,7 @@ http://www.urionlinejudge.com.br/judge/problems/view/1074
 Read an integer value N. After, read these N values and print
 a message for each value saying if this value is odd, even,
 positive, negative or null.
+
 The message must be in uppercase letters.
 
 Input

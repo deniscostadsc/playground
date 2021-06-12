@@ -1,6 +1,5 @@
 http://www.urionlinejudge.com.br/judge/en/problems/view/1235
 
-
 Your printer has been infected by a virus and is printing gibberish.
 After staring at several printed pages for a while, you realize that
 it is printing every line inside-out. In other words, the left half of
