@@ -8,10 +8,9 @@
 *~
 .DS_Store
 .calva/
-.vagrant
 .vscode
 \?/
 Main.class
 main.cmi
 main.cmo
-result*.txt
+result-*.txt
