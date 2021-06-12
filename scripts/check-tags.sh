@@ -6,7 +6,7 @@ FOLDERS=$(find . -name 'problem.txt' | sed 's/problem.txt//g' | sort)
 EXIT_STATUS=0
 
 for folder_tag in $FOLDERS; do
-    [ -s ${folder_tag}tags.txt ] && continue
+    [ -s "${folder_tag}tags.txt" ] && continue
 
     EXIT_STATUS=1
     echo "Missing content for ${folder_tag}tags.txt"
