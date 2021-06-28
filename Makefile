@@ -93,6 +93,13 @@ __cpp-lint: __cpp-lint-build
 		cpplint \
 			--quiet \
 			--recursive \
+			--extensions=c \
+			--filter="-legal/copyright,-runtime/int,-runtime/arrays,-readability/casting" .
+	@$(DOCKER_RUN) $(CPP)-lint \
+		cpplint \
+			--quiet \
+			--recursive \
+			--extensions=cpp \
 			--filter="-legal/copyright,-runtime/int,-runtime/arrays" .
 	@$(DOCKER_RUN) $(CPP)-lint \
 		scripts/run-clang-format.py \
