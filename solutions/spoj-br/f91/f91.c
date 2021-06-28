@@ -1,6 +1,6 @@
+#include <stdint.h>
 #include <stdio.h>
 #include <string.h>
-#include <stdint.h>
 
 int16_t r[1000000];
 

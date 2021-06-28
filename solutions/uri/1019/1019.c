@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <stdint.h>
+#include <stdio.h>
 
 int main() {
     int32_t t, h = 0, m = 0;

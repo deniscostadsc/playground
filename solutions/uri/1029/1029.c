@@ -1,6 +1,6 @@
+#include <stdint.h>
 #include <stdio.h>
 #include <string.h>
-#include <stdint.h>
 
 int32_t f[39];
 int32_t r[39];

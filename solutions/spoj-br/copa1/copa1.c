@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <stdint.h>
+#include <stdio.h>
 
 int main() {
     int16_t a, b, i, j = 8, t = 1, l = 1;

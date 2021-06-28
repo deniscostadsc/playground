@@ -1,6 +1,6 @@
 #include <math.h>
-#include <stdio.h>
 #include <stdint.h>
+#include <stdio.h>
 
 int16_t is_prime(int32_t n) {
     int32_t i;

@@ -1,6 +1,6 @@
 #include <math.h>
-#include <stdio.h>
 #include <stdint.h>
+#include <stdio.h>
 
 int main() {
     int16_t a, b;

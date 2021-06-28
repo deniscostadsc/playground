@@ -1,7 +1,7 @@
 #include <math.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <string.h>
-#include <stdint.h>
 
 int16_t is_prime(int16_t n) {
     int16_t i;
