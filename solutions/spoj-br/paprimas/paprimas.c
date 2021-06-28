@@ -1,6 +1,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdint.h>
 
 int16_t is_prime(int16_t n) {
     int16_t i;
@@ -22,7 +23,7 @@ int16_t is_prime(int16_t n) {
     return 1;
 }
 
-int16_t main() {
+int main() {
     int16_t i, j, s;
     char p[21];
     char l[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";

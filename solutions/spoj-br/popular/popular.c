@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdint.h>
 
-int16_t main() {
+int main() {
     int16_t i, n, k, y, maior;
 
     while (scanf("%d", &i) && i != 0) {

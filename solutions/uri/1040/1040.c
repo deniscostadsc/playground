@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int16_t main() {
+int main() {
     float a, b, c, d, e, m;
 
     scanf("%f %f %f %f", &a, &b, &c, &d);

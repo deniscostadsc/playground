@@ -11,7 +11,7 @@ int16_t capicua(int16_t n) {
     return 1;
 }
 
-int16_t main() {
+int main() {
     int16_t i, j, g = 1;
     for (i = 100; i <= 999; i++)
         for (j = 100; j <= 999; j++)

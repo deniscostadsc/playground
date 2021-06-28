@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int16_t main() {
+int main() {
     puts("Hello World!");
 
     return 0;

@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <stdint.h>
 
-int16_t main() {
+int main() {
     int16_t a, b, i, j = 8, t = 1, l = 1;
     char c[] = "ABCDEFGHIJKLMNOP";
 

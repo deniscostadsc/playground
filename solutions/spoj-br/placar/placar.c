@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdint.h>
 
-int16_t main() {
-    int16_t i, j, m, p, c = 1;
+int main() {
+    int32_t i, j, m, p, c = 1;
     char n[21], r[21];
 
     while (scanf("%d", &i) != EOF) {

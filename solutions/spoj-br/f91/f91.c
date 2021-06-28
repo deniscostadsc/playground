@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdint.h>
 
 int16_t r[1000000];
 
@@ -16,7 +17,7 @@ int16_t f91(int16_t n) {
     return r[n];
 }
 
-int16_t main() {
+int main() {
     int16_t n;
 
     memset(r, 0, sizeof(r));

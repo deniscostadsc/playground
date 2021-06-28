@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int16_t main() {
+int main() {
     double n;
 
     scanf("%lf", &n);

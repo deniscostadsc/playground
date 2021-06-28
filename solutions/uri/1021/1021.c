@@ -1,7 +1,8 @@
 #include <math.h>
 #include <stdio.h>
+#include <stdint.h>
 
-int16_t main() {
+int main() {
     double n;
     int16_t d[] = {10000, 5000, 2000, 1000, 500, 200, 100, 50, 25, 10, 5, 1};
     int16_t total_value, t = 0, c, i;

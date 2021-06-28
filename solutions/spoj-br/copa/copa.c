@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <stdint.h>
 
-int16_t main() {
+int main() {
     int16_t t, j, n, s;
     char x[10];
     while (scanf("%d %d", &t, &j) && t != 0) {

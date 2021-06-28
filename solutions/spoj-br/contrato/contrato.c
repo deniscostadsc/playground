@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <stdint.h>
 
-int16_t main() {
+int main() {
     int16_t n, s, t;
     while ((t = getchar()) != '0') {
         getchar();

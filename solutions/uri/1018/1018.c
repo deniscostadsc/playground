@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <stdint.h>
 
-int16_t main() {
+int main() {
     int16_t d[] = {100, 50, 20, 10, 5, 2, 1};
     int16_t n, t = 0;
 

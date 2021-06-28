@@ -1,5 +1,6 @@
 #include <math.h>
 #include <stdio.h>
+#include <stdint.h>
 
 int16_t is_prime(int32_t n) {
     int32_t i;
@@ -20,7 +21,7 @@ int16_t is_prime(int32_t n) {
     return 1;
 }
 
-int16_t main() {
+int main() {
     int32_t n;
 
     scanf("%ld", &n);

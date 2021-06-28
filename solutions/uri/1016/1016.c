@@ -1,7 +1,8 @@
 #include <math.h>
 #include <stdio.h>
+#include <stdint.h>
 
-int16_t main() {
+int main() {
     int16_t n;
 
     scanf("%d", &n);

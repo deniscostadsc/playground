@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <stdint.h>
 
-int16_t main() {
+int main() {
     int16_t a = 1, b = 2, aux, sum = 2;
     while (b < 4000000) {
         aux = a + b;

@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdint.h>
 
-int32_t int16_t f[39];
-int32_t int16_t r[39];
+int32_t f[39];
+int32_t r[39];
 
-int32_t int16_t fib(int32_t int16_t n) {
+int32_t fib(int16_t n) {
     if (n == 0) {
         return f[0];
     }
@@ -19,9 +20,9 @@ int32_t int16_t fib(int32_t int16_t n) {
     return f[n];
 }
 
-int16_t main() {
+int main() {
     int16_t i, j;
-    int32_t int16_t n;
+    int16_t n;
 
     memset(f, 0, sizeof(f));
     memset(r, 0, sizeof(r));

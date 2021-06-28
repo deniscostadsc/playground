@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdint.h>
 
-int16_t main() {
-    int16_t d, dd, h, hh, m, mm, s, ss;
+int main() {
+    int32_t d, dd, h, hh, m, mm, s, ss;
 
     scanf("Dia %d", &d);
     scanf("%d : %d : %d\n", &h, &m, &s);

@@ -3,7 +3,7 @@
 
 #define pi 3.14159
 
-int16_t main() {
+int main() {
     float r;
 
     while (scanf("%f", &r) != EOF) {
