@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int main() {
-    int n, q;
+int16_t main() {
+    int16_t n, q;
 
     scanf("%d %d", &n, &q);
 

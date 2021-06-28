@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 
-unsigned long long memo[1000];
+u_int64_t memo[1000];
 
-unsigned long long calculate_sum(unsigned long long line) {
+u_int64_t calculate_sum(u_int64_t line) {
     if (memo[line] != 0) {
         return memo[line];
     }
@@ -17,8 +17,8 @@ unsigned long long calculate_sum(unsigned long long line) {
     return memo[line];
 }
 
-int main() {
-    unsigned long long line;
+int16_t main() {
+    u_int64_t line;
     memset(memo, 0, sizeof(memo));
 
     while (scanf("%llu", &line) != EOF) {

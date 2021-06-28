@@ -1,7 +1,7 @@
 #include <math.h>
 #include <stdio.h>
 
-int main() {
+int16_t main() {
     char a[300];
     float b, c;
 

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int16_t main() {
     char c;
     while (scanf("%c", &c) != EOF) {
         if (65 <= c && c <= 67)

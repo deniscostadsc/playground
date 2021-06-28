@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int main() {
-    int d[] = {100, 50, 20, 10, 5, 2, 1};
-    int n, t = 0;
+int16_t main() {
+    int16_t d[] = {100, 50, 20, 10, 5, 2, 1};
+    int16_t n, t = 0;
 
     scanf("%d", &n);
     printf("%d\n", n);

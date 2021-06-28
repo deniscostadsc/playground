@@ -94,7 +94,7 @@ __cpp-lint: __cpp-lint-build
 			--quiet \
 			--recursive \
 			--extensions=c \
-			--filter="-legal/copyright,-runtime/int,-runtime/arrays,-readability/casting" .
+			--filter="-legal/copyright,-runtime/arrays,-readability/casting" .
 	@$(DOCKER_RUN) $(CPP)-lint \
 		cpplint \
 			--quiet \

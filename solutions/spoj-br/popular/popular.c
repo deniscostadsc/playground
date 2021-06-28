@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
-    int i, n, k, y, maior;
+int16_t main() {
+    int16_t i, n, k, y, maior;
 
     while (scanf("%d", &i) && i != 0) {
-        int v[i];
+        int16_t v[i];
 
         memset(v, 0, sizeof(v));
         maior = v[0];

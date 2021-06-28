@@ -1,8 +1,8 @@
 #include <math.h>
 #include <stdio.h>
 
-int main() {
-    int a, b;
+int16_t main() {
+    int16_t a, b;
     float c, s = 0.0;
 
     while (scanf("%d %d %f", &a, &b, &c) != EOF) {

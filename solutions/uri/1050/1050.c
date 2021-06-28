@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int main() {
-    int d;
+int16_t main() {
+    int16_t d;
     scanf("%d", &d);
     if (d == 61) {
         printf("Brasilia\n");

@@ -1,7 +1,7 @@
 #include <math.h>
 #include <stdio.h>
 
-int main() {
+int16_t main() {
     float x1, y1, x2, y2;
 
     scanf("%f %f", &x1, &y1);

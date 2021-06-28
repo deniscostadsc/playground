@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int main() {
-    int d, dd, h, hh, m, mm, s, ss;
+int16_t main() {
+    int16_t d, dd, h, hh, m, mm, s, ss;
 
     scanf("Dia %d", &d);
     scanf("%d : %d : %d\n", &h, &m, &s);

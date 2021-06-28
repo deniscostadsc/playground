@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int is_prime(int n) {
-    int i;
+int16_t is_prime(int16_t n) {
+    int16_t i;
 
     // 1 não é primo,
     // mas o problema acha que é 8(
@@ -22,8 +22,8 @@ int is_prime(int n) {
     return 1;
 }
 
-int main() {
-    int i, j, s;
+int16_t main() {
+    int16_t i, j, s;
     char p[21];
     char l[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     while (scanf("%s", p) != EOF) {

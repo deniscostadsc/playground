@@ -1,8 +1,8 @@
 #include <math.h>
 #include <stdio.h>
 
-int is_prime(long n) {
-    long i;
+int16_t is_prime(int32_t n) {
+    int32_t i;
 
     if (n == 2) {
         return 1;
@@ -20,8 +20,8 @@ int is_prime(long n) {
     return 1;
 }
 
-int main() {
-    long n;
+int16_t main() {
+    int32_t n;
 
     scanf("%ld", &n);
     if (is_prime(n)) {

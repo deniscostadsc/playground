@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
-    int a, b, c, m;
+int16_t main() {
+    int16_t a, b, c, m;
 
     while (scanf("%d %d %d", &a, &b, &c) != EOF) {
         m = (a + b + abs(a - b)) / 2;

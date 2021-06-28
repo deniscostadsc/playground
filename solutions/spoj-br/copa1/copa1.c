@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int main() {
-    int a, b, i, j = 8, t = 1, l = 1;
+int16_t main() {
+    int16_t a, b, i, j = 8, t = 1, l = 1;
     char c[] = "ABCDEFGHIJKLMNOP";
 
     while (scanf("%d %d", &a, &b) != EOF) {

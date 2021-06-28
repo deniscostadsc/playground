@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int main() {
-    int t, h = 0, m = 0;
+int16_t main() {
+    int16_t t, h = 0, m = 0;
 
     while (scanf("%d", &t) != EOF) {
         if (t >= 60 * 60) {

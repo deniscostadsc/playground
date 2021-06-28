@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int16_t main() {
     float a, b;
 
     while (scanf("%f %f", &a, &b) != EOF) {

@@ -1,7 +1,7 @@
 #include <math.h>
 #include <stdio.h>
 
-int main() {
+int16_t main() {
     double r1, x1, y1, r2, x2, y2;
     double distance;
 
