@@ -4,11 +4,11 @@
 
 int main() {
     double n;
-    int16_t d[] = {10000, 5000, 2000, 1000, 500, 200, 100, 50, 25, 10, 5, 1};
-    int16_t total_value, t = 0, c, i;
+    int32_t d[] = {10000, 5000, 2000, 1000, 500, 200, 100, 50, 25, 10, 5, 1};
+    int32_t total_value, t = 0, c, i;
 
     while (scanf("%lf", &n) != EOF) {
-        total_value = (int16_t)(ceil((n * 100)));
+        total_value = (int32_t)(ceil((n * 100)));
         printf("NOTAS:\n");
 
         t = 0;
