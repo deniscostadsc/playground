@@ -186,4 +186,4 @@ run: __run-build
 	@./scripts/run-problems.sh "$(FOLDERS)" "$(LANGUAGES)" "$(DOCKER_RUN)"
 
 wrong:
-	@(find . -name 'WRONG')
+	@find . -name 'WRONG' | sort
