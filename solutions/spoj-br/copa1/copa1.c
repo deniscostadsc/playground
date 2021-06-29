@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main() {
-    int16_t a, b, i, j = 8, t = 1, l = 1;
+    int32_t a, b, i, j = 8, t = 1, l = 1;
     char c[] = "ABCDEFGHIJKLMNOP";
 
     while (scanf("%d %d", &a, &b) != EOF) {

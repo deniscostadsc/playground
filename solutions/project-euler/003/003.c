@@ -2,7 +2,7 @@
 #include <stdint.h>
 #include <stdio.h>
 
-int16_t is_prime(int32_t n) {
+int32_t is_prime(int32_t n) {
     int32_t i;
 
     if (n == 2) {
@@ -21,7 +21,7 @@ int16_t is_prime(int32_t n) {
 }
 
 int main() {
-    int16_t i;
+    int32_t i;
     int64_t n = 600851475143;
     int32_t r;
 
