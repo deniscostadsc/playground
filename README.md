@@ -16,6 +16,8 @@ make lint  # check lint for all solutions
 make new-problem FOLDER=path/to/create/  # create solution template
 make run  # run and test all past solutions (ignore solution with WRONG file)
 make run FOLDER=sub/path/to/run  # run and test a specific sub-folder
+make run FOLDER=sub/path/to/run LANGUAGE=language-extension  # combine FOLDER and LANGUAGE behavior
+make run LANGUAGE=language-extension  # run and test all problems of specific language
 make wrong  # show all solutions that are not complete yet
 ```
 

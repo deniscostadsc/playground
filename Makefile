@@ -65,6 +65,10 @@ LANGUAGES = \
 	$(RS) \
 	$(SCALA)
 
+ifdef LANGUAGE
+LANGUAGES := $(LANGUAGE)
+endif
+
 ifdef FOLDER
 FOLDERS := $(shell find $(FOLDER) -name 'problem.md' | sed 's/problem.md//g' | sort)
 else
@@ -183,7 +187,12 @@ else
 endif
 
 run: __run-build
+ifdef LANGUAGE
 	@./scripts/run-problems.sh "$(FOLDERS)" "$(LANGUAGES)" "$(DOCKER_RUN)"
+else
+	@./scripts/run-problems.sh "$(FOLDERS)" "$(LANGUAGES) sql" "$(DOCKER_RUN)"
+endif
+
 
 wrong:
 	@find . -name 'WRONG' | sort
