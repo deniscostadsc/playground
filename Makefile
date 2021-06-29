@@ -42,8 +42,8 @@ R = r
 RB = rb
 RS = rs
 SCALA = scala
+SQL = sql
 
-# don't add SQL to the LANGUAGES var
 LANGUAGES = \
 	$(C) \
 	$(CLJ) \
@@ -63,7 +63,8 @@ LANGUAGES = \
 	$(R) \
 	$(RB) \
 	$(RS) \
-	$(SCALA)
+	$(SCALA) \
+	$(SQL)
 
 ifdef LANGUAGE
 LANGUAGES := $(LANGUAGE)
@@ -187,12 +188,7 @@ else
 endif
 
 run: __run-build
-ifdef LANGUAGE
 	@./scripts/run-problems.sh "$(FOLDERS)" "$(LANGUAGES)" "$(DOCKER_RUN)"
-else
-	@./scripts/run-problems.sh "$(FOLDERS)" "$(LANGUAGES) sql" "$(DOCKER_RUN)"
-endif
-
 
 wrong:
 	@find . -name 'WRONG' | sort
