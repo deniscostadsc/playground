@@ -1,5 +1,4 @@
 import sys
-from math import ceil
 
 bills = [10000, 5000, 2000, 1000, 500, 200]
 coins = [100, 50, 25, 10, 5, 1]
