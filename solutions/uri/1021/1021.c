@@ -8,7 +8,7 @@ int main() {
     int32_t total_value, t = 0, c, i;
 
     while (scanf("%lf", &n) != EOF) {
-        total_value = (int32_t)(ceil((n * 100)));
+        total_value = (int32_t)(n * 100);
         printf("NOTAS:\n");
 
         t = 0;

@@ -7,7 +7,7 @@ int main() {
     int total_value, t = 0, c, i;
 
     while (scanf("%lf", &n) != EOF) {
-        total_value = static_cast< int >(ceil((n * 100)));
+        total_value = static_cast< int >(n * 100);
         printf("NOTAS:\n");
 
         t = 0;
