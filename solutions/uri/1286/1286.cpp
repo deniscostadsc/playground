@@ -10,7 +10,7 @@ int max_time_deliveries(int amounts[], int times[], int n, int p) {
                 continue;
             }
 
-            if (j - times[i - 1] >= 0) {
+            if (times[i - 1] <= j) {
                 result[i][j] = std::max(
                     result[i - 1][j],
                     result[i - 1][j - times[i - 1]] + amounts[i - 1]);
