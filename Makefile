@@ -185,6 +185,7 @@ else
 	@echo "You must specify a FOLDER variable to create a new problem. See example bellow:"
 	@echo ""
 	@echo "make new-problem FOLDER=solutions/uri/1000"
+	@echo ""
 endif
 
 run: __run-build
