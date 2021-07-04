@@ -1,6 +1,6 @@
 #include <iostream>
 
-int max_time_deliveries(int amounts[], int times[], int n, int p) {
+int max_time_deliveries(int time[], int amount[], int n, int p) {
     int result[n + 1][p + 1];
 
     for (int i = 0; i <= n; i++) {
@@ -10,10 +10,10 @@ int max_time_deliveries(int amounts[], int times[], int n, int p) {
                 continue;
             }
 
-            if (times[i - 1] <= j) {
+            if (amount[i - 1] <= j) {
                 result[i][j] = std::max(
                     result[i - 1][j],
-                    result[i - 1][j - times[i - 1]] + amounts[i - 1]);
+                    result[i - 1][j - amount[i - 1]] + time[i - 1]);
             } else {
                 result[i][j] = result[i - 1][j];
             }
@@ -28,14 +28,15 @@ int main() {
 
     while (std::cin >> n && n != 0) {
         std::cin >> p;
-        int amounts[n];
-        int times[n];
+
+        int time[n];
+        int amount[n];
 
         for (int i = 0; i < n; i++) {
-            std::cin >> amounts[i] >> times[i];
+            std::cin >> time[i] >> amount[i];
         }
 
-        std::cout << max_time_deliveries(amounts, times, n, p) << " min."
+        std::cout << max_time_deliveries(time, amount, n, p) << " min."
                   << std::endl;
     }
 
