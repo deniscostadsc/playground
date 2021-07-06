@@ -1,20 +1,21 @@
+#include <cstdint>
 #include <cstring>
 #include <iostream>
 #include <map>
 #include <stack>
 #include <vector>
 
-int indexes[2001];
-int lowlink[2001];
-int onstack[2001];
-int current_index;
+int16_t indexes[2001];
+int16_t lowlink[2001];
+int16_t onstack[2001];
+int16_t current_index;
 
-std::map< int, std::vector< int > > graph;
-std::map< int, std::vector< int > > scc;
-std::stack< int > s;
+std::map< int16_t, std::vector< int16_t > > graph;
+std::map< int16_t, std::vector< int16_t > > scc;
+std::stack< int16_t > s;
 
-void dfs_tarjan(int v) {
-    std::vector< int >::iterator v_it;
+void dfs_tarjan(int16_t v) {
+    std::vector< int16_t >::iterator v_it;
     indexes[v] = lowlink[v] = current_index++;
     s.push(v);
     onstack[v] = 1;
@@ -29,7 +30,7 @@ void dfs_tarjan(int v) {
     }
 
     if (lowlink[v] == indexes[v]) {
-        int w;
+        int16_t w;
 
         do {
             w = s.top();
@@ -41,7 +42,7 @@ void dfs_tarjan(int v) {
 }
 
 void tarjan() {
-    std::map< int, std::vector< int > >::iterator m_it;
+    std::map< int16_t, std::vector< int16_t > >::iterator m_it;
 
     for (m_it = graph.begin(); m_it != graph.end(); m_it++) {
         if (indexes[m_it->first] == -1) {
@@ -51,9 +52,9 @@ void tarjan() {
 }
 
 int main() {
-    int n, m, v, w, p;
-    std::map< int, std::vector< int > >::iterator m_it;
-    std::vector< int >::iterator v_it;
+    int16_t n, m, v, w, p;
+    std::map< int16_t, std::vector< int16_t > >::iterator m_it;
+    std::vector< int16_t >::iterator v_it;
 
     while (std::cin >> n >> m && n && m) {
         current_index = 0;

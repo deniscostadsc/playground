@@ -1,14 +1,15 @@
+#include <cstdint>
 #include <iostream>
 #include <queue>
 #include <stack>
 #include <vector>
 
-std::queue< int > trains;
-std::stack< int > station;
-std::vector< int > required_order;
+std::queue< int16_t > trains;
+std::stack< int16_t > station;
+std::vector< int16_t > required_order;
 
-int next_train(int n) {
-    int train;
+int16_t next_train(int16_t n) {
+    int16_t train;
 
     if (!station.empty() && n == station.top()) {
         train = station.top();
@@ -31,7 +32,7 @@ int next_train(int n) {
 }
 
 int main() {
-    int n, t, i;
+    int16_t n, t, i;
     bool valid;
 
     while (std::cin >> n && n) {

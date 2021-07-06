@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int i, j, x, n, l, swap;
+    int16_t i, j, x, n, l, swap;
     bool swapped;
 
     std::cin >> n;
@@ -10,7 +11,7 @@ int main() {
         std::cin >> l;
         swap = 0;
 
-        int train[l];
+        int16_t train[l];
 
         for (i = 0; i < l; i++) {
             std::cin >> train[i];

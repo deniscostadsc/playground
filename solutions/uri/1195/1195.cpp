@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <cstdlib>
 #include <iostream>
 
 struct node {
-    int value;
+    int16_t value;
     node *left_node;
     node *right_node;
 };
@@ -54,7 +55,7 @@ void post_print_node(node *tree) {
 }
 
 int main() {
-    int c, n, i, value, nn = 0;
+    int16_t c, n, i, value, nn = 0;
 
     std::cin >> n;
 

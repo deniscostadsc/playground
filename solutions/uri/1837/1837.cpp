@@ -1,8 +1,9 @@
 #include <cmath>
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int a, b, r, q;
+    int16_t a, b, r, q;
     bool q_is_zero, negative, positive;
 
     while (std::cin >> a >> b) {

@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int n, d, f;
+    int16_t n, d, f;
 
     std::cin >> n;
 

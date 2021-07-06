@@ -1,9 +1,12 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
     float x, y;
-    int n;
+    int16_t n;
+
     scanf("%d", &n);
+
     while (n--) {
         scanf("%f %f", &x, &y);
         if (y == 0.0) {
@@ -12,5 +15,6 @@ int main() {
             printf("%.1f\n", x / y);
         }
     }
+
     return 0;
 }

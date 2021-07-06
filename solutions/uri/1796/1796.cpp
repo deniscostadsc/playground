@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int q, v, not_ok_count, survey_count;
+    int16_t q, v, not_ok_count, survey_count;
 
     while (std::cin >> q) {
         not_ok_count = 0;

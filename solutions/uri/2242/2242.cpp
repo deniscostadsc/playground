@@ -1,3 +1,4 @@
+#include <cstdint>
 #include <iostream>
 
 bool is_vowel(char c) {
@@ -13,16 +14,17 @@ int main() {
         laugh_vowels = "";
         is_funniest = true;
 
-        for (int i = 0; i < static_cast< int >(laugh.size()); i++) {
+        for (int16_t i = 0; i < static_cast< int16_t >(laugh.size()); i++) {
             if (is_vowel(laugh[i])) {
                 laugh_vowels += laugh[i];
             }
         }
 
-        for (int i = 0; i < static_cast< int >(laugh_vowels.size()) / 2; i++) {
+        for (int16_t i = 0; i < static_cast< int16_t >(laugh_vowels.size()) / 2;
+             i++) {
             if (laugh_vowels[i]
                 != laugh_vowels
-                       [static_cast< int >(laugh_vowels.size()) - 1 - i]) {
+                       [static_cast< int16_t >(laugh_vowels.size()) - 1 - i]) {
                 is_funniest = false;
             }
         }

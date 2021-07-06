@@ -1,7 +1,7 @@
 #include <cstdio>
 
 int main() {
-    int n, case_n = 0;
+    int16_t n, case_n = 0;
     double c, f, x, total_seconds, seconds, cookies, cookies_per_second;
 
     scanf("%d", &n);

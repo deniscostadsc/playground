@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    unsigned long long x, m;
+    uint64_t x, m;
 
     while (std::cin >> x >> m && x && m) {
         std::cout << x * m << std::endl;

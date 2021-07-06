@@ -1,3 +1,4 @@
+#include <cstdint>
 #include <iomanip>
 #include <iostream>
 #include <string>
@@ -5,8 +6,8 @@
 
 int main() {
     bool newline = false;
-    int n;
-    unsigned int i, g;
+    int16_t n;
+    uint16_t i, g;
     std::string s;
     std::vector< std::string > ss;
 

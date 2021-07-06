@@ -1,9 +1,10 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
     double s = 1.0;
 
-    for (int i = 2; i <= 100; i++) {
+    for (int16_t i = 2; i <= 100; i++) {
         s += 1.0 / static_cast< double >(i);
     }
 

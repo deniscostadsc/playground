@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <cstdio>
 #include <iostream>
 
 int main() {
-    int c, n, m, im = 0, i = 0;
+    int16_t c, n, m, im = 0, i = 0;
 
     std::cin >> c;
     std::cin >> n;

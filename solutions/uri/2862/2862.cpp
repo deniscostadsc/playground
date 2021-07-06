@@ -1,11 +1,12 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int c, energy;
+    int16_t c, energy;
 
     std::cin >> c;
 
-    for (int i = 0; i < c; i++) {
+    for (int16_t i = 0; i < c; i++) {
         std::cin >> energy;
 
         if (energy > 8000) {

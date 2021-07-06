@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <cstdio>
 #include <iostream>
 
 int main() {
-    int x, s;
+    int16_t x, s;
 
     while (scanf("%d", &x) && x != 0) {
         s = 0;
@@ -11,7 +12,7 @@ int main() {
             x++;
         }
 
-        for (int i = 0; i <= 4; i++, x += 2) {
+        for (int16_t i = 0; i <= 4; i++, x += 2) {
             s += x;
         }
 

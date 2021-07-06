@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-    unsigned int a, b;
+    uint16_t a, b;
 
     while (std::cin >> a >> b) {
         std::cout << (a ^ b) << std::endl;

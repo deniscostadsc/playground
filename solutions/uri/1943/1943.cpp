@@ -1,10 +1,12 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int k;
+    int16_t k;
 
     while (std::cin >> k) {
         std::cout << "Top ";
+
         if (k == 1) {
             std::cout << 1;
         } else if (k <= 3) {

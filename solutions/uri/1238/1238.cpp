@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
-    unsigned int i, n, l;
+    uint16_t i, n, l;
     std::string a, b;
 
     std::cin >> n;

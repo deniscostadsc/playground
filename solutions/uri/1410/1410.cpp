@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int a, d, i, j, nearest_attack_player, defense_distance, count, temp;
+    int16_t a, d, i, j, nearest_attack_player, defense_distance, count, temp;
 
     while (std::cin >> a >> d && a && d) {
         std::cin >> nearest_attack_player;

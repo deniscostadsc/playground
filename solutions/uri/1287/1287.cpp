@@ -1,10 +1,11 @@
+#include <cstdint>
 #include <cstdio>
 #include <iostream>
 #include <string>
 
 int main() {
     char c;
-    long long s = 0;
+    int64_t s = 0;
     bool got_any_number = false, got_invalid_char = false, got_overflow = false;
     std::string valid_chars = "0123456789lOo";
     std::string ignored_chars = ", ";

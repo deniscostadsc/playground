@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int n;
-    long m, bigest_m;
+    int16_t n;
+    int32_t m, bigest_m;
     float grade, bigest_grade;
 
     std::cin >> n;

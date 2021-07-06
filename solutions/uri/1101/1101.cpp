@@ -1,7 +1,9 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int i, j, x, z, s;
+    int16_t i, j, x, z, s;
+
     while (scanf("%d %d", &i, &j) && i > 0 && j > 0) {
         s = 0;
         if (j < i) {
@@ -15,5 +17,6 @@ int main() {
         }
         printf("Sum=%d\n", s);
     }
+
     return 0;
 }

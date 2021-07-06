@@ -1,9 +1,10 @@
+#include <cstdint>
 #include <cstdio>
 #include <cstring>
 
-unsigned long long memo[1000];
+uint64_t memo[1000];
 
-unsigned long long calculate_sum(unsigned long long line) {
+uint64_t calculate_sum(uint64_t line) {
     if (memo[line] != 0) {
         return memo[line];
     }
@@ -18,7 +19,7 @@ unsigned long long calculate_sum(unsigned long long line) {
 }
 
 int main() {
-    unsigned long long line;
+    uint64_t line;
     memset(memo, 0, sizeof(memo));
 
     while (scanf("%llu", &line) != EOF) {

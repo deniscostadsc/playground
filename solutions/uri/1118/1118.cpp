@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <cstdio>
 #include <iostream>
 
 int main() {
-    int r, c;
+    int16_t r, c;
     float n, s;
 
     do {

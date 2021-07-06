@@ -1,10 +1,11 @@
+#include <cstdint>
 #include <iostream>
 #include <map>
 
 int main() {
-    int sum = 0;
+    int16_t sum = 0;
     std::string input;
-    std::map< std::string, int > blink2int;
+    std::map< std::string, int16_t > blink2int;
 
     blink2int["---"] = 0;
     blink2int["--*"] = 1;

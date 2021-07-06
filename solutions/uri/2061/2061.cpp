@@ -1,13 +1,14 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int n, m, open_tabs;
+    int16_t n, m, open_tabs;
     std::string command;
 
     while (std::cin >> n >> m) {
         open_tabs = n;
 
-        for (int i = 0; i < m; i++) {
+        for (int16_t i = 0; i < m; i++) {
             std::cin >> command;
 
             if (command == "fechou") {

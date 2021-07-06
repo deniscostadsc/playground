@@ -1,11 +1,12 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int n, m, i, j;
+    int16_t n, m, i, j;
     bool has_peak, has_any_peak;
 
     while (std::cin >> n >> m) {
-        int map[n][m];
+        int16_t map[n][m];
 
         for (i = 0; i < n; i++) {
             for (j = 0; j < m; j++) {

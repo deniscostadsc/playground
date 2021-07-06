@@ -1,7 +1,9 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int n, i;
+    int16_t n, i;
+
     while (scanf("%d", &n) && n != 0) {
         printf("1");
         for (i = 2; i <= n; i++) {
@@ -9,5 +11,6 @@ int main() {
         }
         printf("\n");
     }
+
     return 0;
 }

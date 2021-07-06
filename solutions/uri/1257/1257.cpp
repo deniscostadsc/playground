@@ -1,9 +1,10 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
-    int n, l, current, sum;
-    unsigned int i;
+    int16_t n, l, current, sum;
+    uint16_t i;
     std::string word, alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     std::cin >> n;

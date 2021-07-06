@@ -1,11 +1,12 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int c, x, y;
+    int16_t c, x, y;
 
     std::cin >> c;
 
-    for (int i = 0; i < c; i++) {
+    for (int16_t i = 0; i < c; i++) {
         std::cin >> x >> y;
         switch (x + y) {
             case 0:

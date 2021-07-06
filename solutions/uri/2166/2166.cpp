@@ -1,10 +1,11 @@
+#include <cstdint>
 #include <iomanip>
 #include <iostream>
 
-double sqrtt(int n) {
+double sqrtt(int16_t n) {
     double result = 1 / 2;
 
-    for (int i = 0; i < n; i++) {
+    for (int16_t i = 0; i < n; i++) {
         result = 1 / (2 + result);
     }
 
@@ -12,7 +13,7 @@ double sqrtt(int n) {
 }
 
 int main() {
-    int n;
+    int16_t n;
 
     while (std::cin >> n) {
         std::cout << std::fixed << std::setprecision(10) << sqrtt(n)

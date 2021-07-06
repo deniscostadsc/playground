@@ -1,11 +1,12 @@
 #include <cmath>
+#include <cstdint>
 #include <cstring>
 #include <iostream>
 
-unsigned long long memo_fib[263];
-unsigned long long memo_calls[263];
+uint64_t memo_fib[263];
+uint64_t memo_calls[263];
 
-long long fib(long long n) {
+int64_t fib(int64_t n) {
     if (n == 0 || memo_calls[n]) {
         return memo_fib[n];
     }
@@ -17,8 +18,8 @@ long long fib(long long n) {
 }
 
 int main() {
-    unsigned long long n;
-    int b;
+    uint64_t n;
+    int16_t b;
 
     memset(memo_calls, 0, sizeof(memo_calls));
     memset(memo_fib, 0, sizeof(memo_fib));

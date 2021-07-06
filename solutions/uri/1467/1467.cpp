@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int a, b, c;
+    int16_t a, b, c;
 
     while (std::cin >> a >> b >> c) {
         if (a == b && b == c) {

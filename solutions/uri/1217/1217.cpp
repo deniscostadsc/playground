@@ -1,11 +1,12 @@
 #include <algorithm>
+#include <cstdint>
 #include <cstdio>
 #include <iomanip>
 #include <iostream>
 #include <string>
 
 int main() {
-    int n, c;
+    int16_t n, c;
     double p, prices, k, kilos = 0;
     std::string s;
 

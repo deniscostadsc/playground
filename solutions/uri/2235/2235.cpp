@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int a, b, c;
+    int16_t a, b, c;
     bool possible;
 
     while (std::cin >> a >> b >> c) {

@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <iomanip>
 #include <iostream>
 
 int main() {
-    int t;
+    int16_t t;
     std::string word;
 
     std::cin >> t;

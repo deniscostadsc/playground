@@ -1,10 +1,11 @@
 #include <algorithm>
+#include <cstdint>
 #include <iostream>
 #include <vector>
 
 int main() {
-    int c, n, l, j;
-    std::vector< int > p;
+    int16_t c, n, l, j;
+    std::vector< int16_t > p;
 
     std::cin >> n;
     c = 0;

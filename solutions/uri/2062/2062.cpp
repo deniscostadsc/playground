@@ -1,12 +1,13 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
-    int n;
+    int16_t n;
     std::string word;
 
     while (std::cin >> n) {
-        for (int i = 0; i < n; i++) {
+        for (int16_t i = 0; i < n; i++) {
             if (i > 0) {
                 std::cout << " ";
             }

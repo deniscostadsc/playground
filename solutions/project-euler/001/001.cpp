@@ -1,7 +1,7 @@
 #include <iostream>
 
-int sum_all_divisible_by_n(int n, int target) {
-    int p = target / n;
+int32_t sum_all_divisible_by_n(int32_t n, int32_t target) {
+    int32_t p = target / n;
     return n * (p * (p + 1)) / 2;
 }
 

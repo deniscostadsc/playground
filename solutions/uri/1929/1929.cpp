@@ -1,6 +1,7 @@
+#include <cstdint>
 #include <iostream>
 
-bool can_form_triangle(int a, int b, int c) {
+bool can_form_triangle(int16_t a, int16_t b, int16_t c) {
     if (a >= b + c) {
         return false;
     }
@@ -14,7 +15,7 @@ bool can_form_triangle(int a, int b, int c) {
 }
 
 int main() {
-    int a, b, c, d;
+    int16_t a, b, c, d;
     bool result;
 
     while (std::cin >> a >> b >> c >> d) {

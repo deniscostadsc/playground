@@ -1,10 +1,11 @@
 #include <cmath>
+#include <cstdint>
 #include <iostream>
 #include <string>
 
-std::string dec2hex(long dec) {
+std::string dec2hex(int32_t dec) {
     std::string hex_digits = "0123456789ABCDEF";
-    int hex_digits_length = hex_digits.length();
+    int16_t hex_digits_length = hex_digits.length();
     std::string hex = "";
 
     while (dec) {
@@ -16,7 +17,7 @@ std::string dec2hex(long dec) {
 }
 
 int main() {
-    long v;
+    int32_t v;
 
     while (std::cin >> v) {
         std::cout << dec2hex(v) << std::endl;

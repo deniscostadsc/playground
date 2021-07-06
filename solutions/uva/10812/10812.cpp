@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-    int n, s, d, l, g;
+    int16_t n, s, d, l, g;
 
     std::cin >> n;
     while (n--) {

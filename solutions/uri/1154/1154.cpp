@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
     float sum = 0.0;
-    int n, count = 0;
+    int16_t n, count = 0;
 
     while (scanf("%d", &n) && n >= 0) {
         sum += n;

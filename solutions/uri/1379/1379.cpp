@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int a, b;
+    int32_t a, b;
 
     while (std::cin >> a >> b && a && b) {
         if (a < b) {

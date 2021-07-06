@@ -1,9 +1,10 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
     std::string line;
-    int proc, read, clocks;
+    int16_t proc, read, clocks;
 
     while (getline(std::cin, line)) {
         clocks = 0;

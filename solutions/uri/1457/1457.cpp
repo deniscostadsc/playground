@@ -1,11 +1,12 @@
+#include <cstdint>
 #include <cstdio>
 #include <iostream>
 #include <string>
 
-unsigned int n, k;
+uint16_t n, k;
 
-unsigned long long oracle(unsigned int f) {
-    int answer = n - (f * k);
+uint64_t oracle(uint16_t f) {
+    int16_t answer = n - (f * k);
 
     if (answer >= 1) {
         return answer * oracle(f + 1);
@@ -14,7 +15,7 @@ unsigned long long oracle(unsigned int f) {
 }
 
 int main() {
-    unsigned int c;
+    uint16_t c;
     std::string k_str;
 
     std::cin >> c;

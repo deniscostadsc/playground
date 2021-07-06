@@ -1,14 +1,15 @@
+#include <cstdint>
 #include <iostream>
 #include <vector>
 
 struct Bank {
-    int owe_to;
-    int owe_value;
-    int reserve;
+    int16_t owe_to;
+    int16_t owe_value;
+    int16_t reserve;
 };
 
 int main() {
-    int r, b, n, i, d, c, v;
+    int16_t r, b, n, i, d, c, v;
     bool liquidated;
     std::vector< Bank > banks;
 

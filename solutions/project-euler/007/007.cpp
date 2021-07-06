@@ -1,7 +1,8 @@
 #include <cmath>
+#include <cstdint>
 #include <iostream>
 
-bool is_prime(unsigned long long n) {
+bool is_prime(uint64_t n) {
     if (n == 2) {
         return true;
     }
@@ -9,7 +10,7 @@ bool is_prime(unsigned long long n) {
         return false;
     }
 
-    for (unsigned long i = 3; i <= sqrt(n); i += 2) {
+    for (uint32_t i = 3; i <= sqrt(n); i += 2) {
         if (n % i == 0) {
             return false;
         }
@@ -19,8 +20,8 @@ bool is_prime(unsigned long long n) {
 }
 
 int main() {
-    int c = 0;
-    unsigned long long n = 1;
+    int16_t c = 0;
+    uint64_t n = 1;
 
     while (n++) {
         if (is_prime(n)) {

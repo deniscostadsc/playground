@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int g, i, gv = 0, iv = 0, e = 0, n = 0, r;
+    int32_t g, i, gv = 0, iv = 0, e = 0, n = 0, r;
 
     do {
         scanf("%d %d", &i, &g);

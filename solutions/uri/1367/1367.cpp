@@ -1,10 +1,11 @@
+#include <cstdint>
 #include <cstdio>
 #include <cstring>
 #include <iostream>
 #include <string>
 
 int main() {
-    int n, time, total_time, count, extra_time[26];
+    int16_t n, time, total_time, count, extra_time[26];
     char letter;
     std::string status, letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 

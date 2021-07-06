@@ -1,18 +1,19 @@
+#include <cstdint>
 #include <cstring>
 #include <iostream>
 #include <map>
 #include <stack>
 #include <vector>
 
-int visited[10001];
-int scc_count;  // scc = strongly connected components
+int16_t visited[10001];
+int16_t scc_count;  // scc = strongly connected components
 
-std::map< int, std::vector< int > > graph;
-std::map< int, std::vector< int > > transposed_graph;
-std::stack< int > traverse_order;
+std::map< int16_t, std::vector< int16_t > > graph;
+std::map< int16_t, std::vector< int16_t > > transposed_graph;
+std::stack< int16_t > traverse_order;
 
-void order_filler_dfs(int i) {
-    std::vector< int >::iterator it;
+void order_filler_dfs(int16_t i) {
+    std::vector< int16_t >::iterator it;
 
     visited[i] = 1;
 
@@ -25,8 +26,8 @@ void order_filler_dfs(int i) {
     traverse_order.push(i);
 }
 
-void scc_counter_dfs(int i) {
-    std::vector< int >::iterator it;
+void scc_counter_dfs(int16_t i) {
+    std::vector< int16_t >::iterator it;
 
     visited[i] = 1;
 
@@ -40,8 +41,8 @@ void scc_counter_dfs(int i) {
 }
 
 int main() {
-    int t, n, m, a, b;
-    std::map< int, std::vector< int > >::iterator it;
+    int16_t t, n, m, a, b;
+    std::map< int16_t, std::vector< int16_t > >::iterator it;
 
     std::cin >> t;
 

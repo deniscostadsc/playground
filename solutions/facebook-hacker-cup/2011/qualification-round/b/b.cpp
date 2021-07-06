@@ -1,18 +1,18 @@
 #include <cstdio>
 #include <iostream>
 
-int **create_grid(int r, int c, int m, int **missing) {
-    int i, j;
-    int **grid = new int *[r];
+int16_t **create_grid(int16_t r, int16_t c, int16_t m, int16_t **missing) {
+    int16_t i, j;
+    int16_t **grid = new int16_t *[r];
 
     for (i = 0; i < r; i++) {
         if (i % 2 == 1) {
-            grid[i] = new int[c - 1];
+            grid[i] = new int16_t[c - 1];
             for (j = 0; j < c - 1; j++) {
                 grid[i][j] = 1;
             }
         } else {
-            grid[i] = new int[c];
+            grid[i] = new int16_t[c];
             for (j = 0; j < c; j++) {
                 grid[i][j] = 1;
             }
@@ -48,7 +48,13 @@ int **create_grid(int r, int c, int m, int **missing) {
 }
 
 void calculate_probability(
-    int i, int j, int r, int c, int k, int **grid, double probability) {
+    int16_t i,
+    int16_t j,
+    int16_t r,
+    int16_t c,
+    int16_t k,
+    int16_t **grid,
+    double probability) {
     if (i == r - 1 && j == k) {
         std::cout << probability << std::endl;
     }
@@ -79,8 +85,8 @@ void calculate_probability(
     }
 }
 
-void where_to_drop(int r, int c, int k, int **grid) {
-    int j;
+void where_to_drop(int16_t r, int16_t c, int16_t k, int16_t **grid) {
+    int16_t j;
 
     for (j = 0; j < c; j++) {
         calculate_probability(0, j, r, c, k, grid, 1.0);
@@ -88,18 +94,18 @@ void where_to_drop(int r, int c, int k, int **grid) {
 }
 
 int main() {
-    int n, r, c, k, m, ri, ci, i, j;
-    int **grid;
+    int16_t n, r, c, k, m, ri, ci, i, j;
+    int16_t **grid;
 
     std::cin >> n;
 
     for (i = 1; i <= n; i++) {
         std::cin >> r >> c >> k >> m;
 
-        int **missing = new int *[m];
+        int16_t **missing = new int16_t *[m];
 
         for (j = 0; j < m; j++) {
-            missing[j] = new int[2];
+            missing[j] = new int16_t[2];
 
             std::cin >> ri >> ci;
             missing[j][0] = ri;

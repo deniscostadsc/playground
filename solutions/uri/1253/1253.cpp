@@ -1,9 +1,10 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
-    unsigned int i;
-    int n, c;
+    uint16_t i;
+    int16_t n, c;
     std::string a = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ";
     std::string s;
 

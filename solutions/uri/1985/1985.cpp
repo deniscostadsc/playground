@@ -1,16 +1,17 @@
+#include <cstdint>
 #include <iomanip>
 #include <iostream>
 #include <map>
 
 int main() {
-    std::map< int, float > menu;
+    std::map< int16_t, float > menu;
     menu[1001] = 1.5;
     menu[1002] = 2.5;
     menu[1003] = 3.5;
     menu[1004] = 4.5;
     menu[1005] = 5.5;
 
-    int p, q, id = 0;
+    int16_t p, q, id = 0;
     float sum = 0.0;
 
     std::cin >> p;

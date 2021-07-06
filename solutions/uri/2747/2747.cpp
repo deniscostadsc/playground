@@ -1,18 +1,19 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    for (int i = 0; i < 39; i++) {
+    for (int16_t i = 0; i < 39; i++) {
         std::cout << "-";
     }
     std::cout << std::endl;
-    for (int i = 0; i < 5; i++) {
+    for (int16_t i = 0; i < 5; i++) {
         std::cout << "|";
-        for (int i = 0; i < 37; i++) {
+        for (int16_t i = 0; i < 37; i++) {
             std::cout << " ";
         }
         std::cout << "|" << std::endl;
     }
-    for (int j = 0; j < 39; j++) {
+    for (int16_t j = 0; j < 39; j++) {
         std::cout << "-";
     }
     std::cout << std::endl;

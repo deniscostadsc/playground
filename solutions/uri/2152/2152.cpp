@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int test_cases, h, m, o;
+    int16_t test_cases, h, m, o;
 
     std::cin >> test_cases;
 

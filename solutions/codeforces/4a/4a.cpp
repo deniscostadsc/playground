@@ -1,11 +1,11 @@
 #include <iostream>
 
-bool two(int number) {
+bool two(int16_t number) {
     return number % 2 == 0 || number != 2;
 }
 
 int main() {
-    int n;
+    int16_t n;
 
     std::cin >> n;
 

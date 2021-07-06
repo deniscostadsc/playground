@@ -1,6 +1,7 @@
+#include <cstdint>
 #include <cstdio>
 
-int fat(int n) {
+int32_t fat(int32_t n) {
     if (n == 0 || n == 1) {
         return 1;
     }
@@ -8,8 +9,11 @@ int fat(int n) {
 }
 
 int main() {
-    int n;
+    int16_t n;
+
     scanf("%d", &n);
+
     printf("%d\n", fat(n));
+
     return 0;
 }

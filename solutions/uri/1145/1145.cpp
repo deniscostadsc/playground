@@ -1,9 +1,11 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int x, y, i, j;
+    int16_t x, y, i = 1, j;
+
     scanf("%d %d", &x, &y);
-    i = 1;
+
     while (i <= y) {
         for (j = 0; j < x; j++) {
             if (i > y) {
@@ -17,5 +19,6 @@ int main() {
         }
         printf("\n");
     }
+
     return 0;
 }

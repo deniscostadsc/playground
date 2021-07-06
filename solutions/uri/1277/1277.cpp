@@ -1,10 +1,11 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 #include <vector>
 
 int main() {
     bool c;
-    int i, n, q;
+    int16_t i, n, q;
     double a, p;
     std::string attendances;
     std::string name;

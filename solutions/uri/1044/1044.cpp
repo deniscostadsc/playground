@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int a, b;
+    int16_t a, b;
 
     scanf("%d %d", &a, &b);
 

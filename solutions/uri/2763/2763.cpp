@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int x, y, z, d;
+    int16_t x, y, z, d;
 
     while (scanf("%d.%d.%d-%d", &x, &y, &z, &d) != EOF) {
         printf("%03d\n", x);

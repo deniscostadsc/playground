@@ -1,8 +1,8 @@
 #include <cmath>
 #include <iostream>
 
-int count_squares(long x) {
-    int count = 0, i, j;
+int16_t count_squares(int32_t x) {
+    int16_t count = 0, i, j;
 
     for (i = 0; i <= sqrt(x); i++) {
         for (j = 0; j <= i; j++) {
@@ -16,8 +16,8 @@ int count_squares(long x) {
 }
 
 int main() {
-    long x;
-    int n, i;
+    int32_t x;
+    int16_t n, i;
 
     std::cin >> n;
 

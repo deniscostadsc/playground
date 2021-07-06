@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int n, i, sum;
+    int32_t n, i, sum;
 
     while (std::cin >> n && n != 0) {
         sum = 0;

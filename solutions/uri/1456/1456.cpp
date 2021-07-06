@@ -1,14 +1,15 @@
+#include <cstdint>
 #include <cstdio>
 #include <cstring>
 #include <iostream>
 #include <string>
 
 char store[30000];
-int pointer, word_index;
+int16_t pointer, word_index;
 
 void brainfuck(std::string program, std::string word) {
-    int j, brackets_level;
-    unsigned int i;
+    int16_t j, brackets_level;
+    uint16_t i;
     std::string inner_code;
 
     for (i = 0; i < program.size(); i++) {
@@ -29,7 +30,7 @@ void brainfuck(std::string program, std::string word) {
                 std::cout << store[pointer];
                 break;
             case ',':
-                if (word_index >= static_cast< int >(word.size())) {
+                if (word_index >= static_cast< int16_t >(word.size())) {
                     store[pointer] = 0;
                 } else {
                     store[pointer] = word[word_index];
@@ -72,7 +73,7 @@ void brainfuck(std::string program, std::string word) {
 }
 
 int main() {
-    int n, nn;
+    int16_t n, nn;
     std::string word;
     std::string program;
     std::cin >> n;

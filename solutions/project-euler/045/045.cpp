@@ -1,20 +1,20 @@
 #include <iostream>
 
-long triangle(long n) {
+int64_t triangle(int64_t n) {
     return n * (n + 1) / 2;
 }
 
-long pentagonal(long n) {
+int64_t pentagonal(int64_t n) {
     return n * (3 * n - 1) / 2;
 }
 
-long hexagonal(long n) {
+int64_t hexagonal(int64_t n) {
     return n * (2 * n - 1);
 }
 
 int main() {
     bool got_pentagonal = false, got_hexagonal = false;
-    long tn, pn = 0, hn = 0, t = 285 + 1, p = 165, h = 143;
+    int64_t tn, pn = 0, hn = 0, t = 285 + 1, p = 165, h = 143;
 
     while (!got_pentagonal && !got_hexagonal) {
         tn = triangle(t++);

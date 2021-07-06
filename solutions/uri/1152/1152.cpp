@@ -1,12 +1,13 @@
 #include <algorithm>
+#include <cstdint>
 #include <iostream>
 #include <map>
 #include <vector>
 
 struct arc {
-    int node_a;
-    int node_b;
-    int meters;
+    int32_t node_a;
+    int32_t node_b;
+    int32_t meters;
 };
 
 std::vector< arc > graph;
@@ -16,13 +17,13 @@ bool comparator(arc a, arc b) {
 }
 
 struct disjointset_node {
-    int data;
+    int32_t data;
     disjointset_node *parent;
 };
 
-std::map< int, disjointset_node > disjointset;
+std::map< int32_t, disjointset_node > disjointset;
 
-void makeset(int data) {
+void makeset(int32_t data) {
     disjointset[data].data = data;
     disjointset[data].parent = &disjointset[data];
 }
@@ -34,7 +35,7 @@ disjointset_node *findset(disjointset_node *n) {
     return n->parent;
 }
 
-bool unionset(int data_a, int data_b) {
+bool unionset(int32_t data_a, int32_t data_b) {
     disjointset_node node_a = disjointset[data_a];
 
     disjointset_node node_b = disjointset[data_b];
@@ -51,7 +52,7 @@ bool unionset(int data_a, int data_b) {
 }
 
 int main() {
-    int m, n, x, y, z, i, count;
+    int32_t m, n, x, y, z, i, count;
 
     while (std::cin >> m >> n && m && n) {
         for (i = 0; i < n; i++) {

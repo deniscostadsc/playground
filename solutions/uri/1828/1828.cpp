@@ -1,7 +1,9 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
-int rock_paper_scissors_lizard_spock(std::string sheldons, std::string rajs) {
+int16_t
+    rock_paper_scissors_lizard_spock(std::string sheldons, std::string rajs) {
     if (sheldons == rajs) {
         return 0;
     }
@@ -16,7 +18,7 @@ int rock_paper_scissors_lizard_spock(std::string sheldons, std::string rajs) {
 }
 
 int main() {
-    int t, i, result;
+    int16_t t, i, result;
     std::string sheldons, rajs;
 
     std::cin >> t;

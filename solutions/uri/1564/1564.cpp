@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int people;
+    int16_t people;
 
     while (std::cin >> people) {
         if (people) {

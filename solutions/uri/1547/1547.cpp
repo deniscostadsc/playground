@@ -1,8 +1,9 @@
 #include <cmath>
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int n, qt, s, g, i, lowest_sub, best_guesser;
+    int16_t n, qt, s, g, i, lowest_sub, best_guesser;
 
     std::cin >> n;
 

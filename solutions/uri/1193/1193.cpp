@@ -1,9 +1,10 @@
 #include <cassert>
+#include <cstdint>
 #include <cstdlib>
 #include <iostream>
 #include <string>
 
-std::string dec2bin(unsigned int n) {
+std::string dec2bin(uint16_t n) {
     if (n == 0) {
         return "0";
     }
@@ -17,9 +18,9 @@ std::string dec2bin(unsigned int n) {
     return dec2bin(n / 2) + "1";
 }
 
-unsigned int bin2dec(std::string b) {
-    unsigned int dec = 0, base = 1;
-    int index = b.length();
+uint16_t bin2dec(std::string b) {
+    uint16_t dec = 0, base = 1;
+    int16_t index = b.length();
 
     while (index--) {
         if (b.at(index) == '1') {
@@ -31,10 +32,10 @@ unsigned int bin2dec(std::string b) {
     return dec;
 }
 
-std::string dec2hex(unsigned int n) {
+std::string dec2hex(uint16_t n) {
     std::string chars = "0123456789abcdef";
 
-    unsigned int i = n % 16;
+    uint16_t i = n % 16;
 
     if (n / 16 > 0) {
         return dec2hex(n / 16) + chars.at(i);
@@ -46,9 +47,9 @@ std::string dec2hex(unsigned int n) {
     return result;
 }
 
-unsigned int hex2dec(std::string h) {
-    unsigned int dec = 0, base = 1;
-    int index = h.length();
+uint16_t hex2dec(std::string h) {
+    uint16_t dec = 0, base = 1;
+    int16_t index = h.length();
     std::string chars = "0123456789abcdef";
 
     while (index--) {
@@ -60,7 +61,7 @@ unsigned int hex2dec(std::string h) {
 }
 
 int main() {
-    int n, nn;
+    int16_t n, nn;
     std::string number, base;
 
     std::cin >> n;

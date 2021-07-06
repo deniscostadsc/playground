@@ -1,14 +1,15 @@
+#include <cstdint>
 #include <iostream>
 #include <map>
 
 struct Pair {
-    long next;
-    unsigned long length;
+    int64_t next;
+    uint32_t length;
 };
 
-std::map< unsigned long, Pair > acks;
+std::map< uint32_t, Pair > acks;
 
-long ack(long n) {
+int64_t ack(int64_t n) {
     if (acks[n].next != 0) {
         return acks[n].next;
     }
@@ -26,8 +27,8 @@ long ack(long n) {
 }
 
 int main() {
-    long l, h, i, g_number, x;
-    unsigned long g_sequence;
+    int64_t l, h, i, g_number, x;
+    uint32_t g_sequence;
 
     acks[1].next = 1;
     acks[1].length = 0;

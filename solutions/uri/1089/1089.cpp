@@ -1,9 +1,10 @@
+#include <cstdint>
 #include <iostream>
 
 #define null -99999
 
 int main() {
-    int n, nn, c, p, pa, s, sa, si, sf;
+    int32_t n, nn, c, p, pa, s, sa, si, sf;
 
     while (std::cin >> n && n != 0) {
         c = 0;

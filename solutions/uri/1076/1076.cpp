@@ -1,10 +1,11 @@
+#include <cstdint>
 #include <cstdio>
 
-int graph[49][49];
+int16_t graph[49][49];
 bool discovered[49];
 
-int dfs(int vertex, int v) {
-    int i, count = 0;
+int16_t dfs(int16_t vertex, int16_t v) {
+    int16_t i, count = 0;
 
     discovered[vertex] = true;
 
@@ -18,7 +19,7 @@ int dfs(int vertex, int v) {
 }
 
 int main() {
-    int t, n, v, a, i, j, from, to;
+    int16_t t, n, v, a, i, j, from, to;
 
     scanf("%d", &t);
 

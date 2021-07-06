@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int hi, mi, hf, mf, mr, hr;
+    int16_t hi, mi, hf, mf, mr, hr;
 
     scanf("%d %d %d %d", &hi, &mi, &hf, &mf);
 

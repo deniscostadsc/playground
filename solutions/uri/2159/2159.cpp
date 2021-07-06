@@ -1,9 +1,10 @@
 #include <cmath>
+#include <cstdint>
 #include <iomanip>
 #include <iostream>
 
 int main() {
-    int n;
+    int32_t n;
 
     while (std::cin >> n) {
         std::cout << std::setprecision(1) << std::fixed << n / log(n) << " "

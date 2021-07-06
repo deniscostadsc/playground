@@ -1,36 +1,37 @@
 #include <algorithm>
+#include <cstdint>
 #include <iostream>
 #include <map>
 #include <vector>
 
 struct arc {
-    int x;
-    int y;
-    int weight;
+    int32_t x;
+    int32_t y;
+    int32_t weight;
 };
 
 struct disjoint_node {
-    int node;
+    int32_t node;
     disjoint_node *parent;
 };
 
 std::vector< arc > arcs;
-std::map< int, int > disjoint_set;
+std::map< int32_t, int32_t > disjoint_set;
 
-void makeset(int node) {
+void makeset(int32_t node) {
     disjoint_set[node] = node;
 }
 
-int findset(int node) {
+int32_t findset(int32_t node) {
     if (disjoint_set[node] != node) {
         disjoint_set[node] = findset(disjoint_set[node]);
     }
     return disjoint_set[node];
 }
 
-bool unionset(int x, int y) {
-    int parent_x = findset(disjoint_set[x]);
-    int parent_y = findset(disjoint_set[y]);
+bool unionset(int32_t x, int32_t y) {
+    int32_t parent_x = findset(disjoint_set[x]);
+    int32_t parent_y = findset(disjoint_set[y]);
 
     if (parent_x == parent_y) {
         return false;
@@ -44,7 +45,7 @@ bool comparator(arc x, arc y) {
 }
 
 int main() {
-    int m, n, x, y, z, count;
+    int32_t m, n, x, y, z, count;
 
     while (std::cin >> m >> n && m && n) {
         while (n--) {

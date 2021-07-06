@@ -1,11 +1,12 @@
+#include <cstdint>
 #include <iostream>
 #include <vector>
 
 int main() {
-    int i, j, k, n, arc, triangles, len;
+    int16_t i, j, k, n, arc, triangles, len;
 
     while (std::cin >> n) {
-        std::vector< int > sum;
+        std::vector< int16_t > sum;
 
         for (i = 0; i < n; i++) {
             std::cin >> arc;

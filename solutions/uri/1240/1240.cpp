@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
-    int n, i, la;
+    int16_t n, i, la;
     std::string a, b;
     bool e;
 

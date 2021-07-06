@@ -1,14 +1,15 @@
+#include <cstdint>
 #include <iostream>
 #include <vector>
 
 int main() {
-    int t, p, ticket, c;
-    std::vector< int > tickets;
+    int16_t t, p, ticket, c;
+    std::vector< int16_t > tickets;
 
     while (std::cin >> t >> p && t != 0 && p != 0) {
         c = 0;
 
-        for (int i = 0; i <= t; i++) {
+        for (int16_t i = 0; i <= t; i++) {
             tickets.push_back(0);
         }
 

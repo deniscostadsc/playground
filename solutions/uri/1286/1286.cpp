@@ -1,10 +1,13 @@
+#include <cmath>
+#include <cstdint>
 #include <iostream>
 
-int max_time_deliveries(int time[], int amount[], int n, int p) {
-    int result[n + 1][p + 1];
+int32_t max_time_deliveries(
+    int32_t time[], int32_t amount[], int32_t n, int32_t p) {
+    int32_t result[n + 1][p + 1];
 
-    for (int i = 0; i <= n; i++) {
-        for (int j = 0; j <= p; j++) {
+    for (int32_t i = 0; i <= n; i++) {
+        for (int32_t j = 0; j <= p; j++) {
             if (i == 0 || j == 0) {
                 result[i][j] = 0;
                 continue;
@@ -24,15 +27,15 @@ int max_time_deliveries(int time[], int amount[], int n, int p) {
 }
 
 int main() {
-    int n, p, amount, time;
+    int32_t n, p, amount, time;
 
     while (std::cin >> n && n != 0) {
         std::cin >> p;
 
-        int time[n];
-        int amount[n];
+        int32_t time[n];
+        int32_t amount[n];
 
-        for (int i = 0; i < n; i++) {
+        for (int32_t i = 0; i < n; i++) {
             std::cin >> time[i] >> amount[i];
         }
 

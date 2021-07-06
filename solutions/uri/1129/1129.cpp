@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int i, n, o[5], c, r;
+    int16_t i, n, o[5], c, r;
     char l[] = "ABCDE";
 
     while (std::cin >> n && n != 0) {

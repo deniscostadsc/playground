@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int n, c = 0, i = 5;
+    int16_t n, c = 0, i = 5;
 
     while (i--) {
         scanf("%d", &n);

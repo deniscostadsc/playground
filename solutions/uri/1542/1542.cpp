@@ -1,8 +1,9 @@
 #include <cmath>
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int q, d, p, answer;
+    int16_t q, d, p, answer;
 
     while (std::cin >> q && q) {
         std::cin >> d >> p;

@@ -1,16 +1,17 @@
 #include <algorithm>
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
-    int t, i, count, limit;
-    unsigned int j;
+    int16_t t, count, limit;
+    uint16_t j;
     bool minus_found;
     std::string s;
 
     std::cin >> t;
 
-    for (i = 1; i <= t; i++) {
+    for (int16_t i = 1; i <= t; i++) {
         std::cin >> s;
         count = 0;
 
@@ -18,7 +19,7 @@ int main() {
             limit = 0;
             minus_found = false;
 
-            for (j = 0; j < s.length(); j++) {
+            for (int16_t j = 0; j < s.length(); j++) {
                 if (s.at(j) == '-') {
                     minus_found = true;
                 }

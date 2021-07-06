@@ -1,12 +1,13 @@
+#include <cstdint>
 #include <cstdio>
 #include <iostream>
 #include <string>
 
 int main() {
-    int c;
-    unsigned int i;
+    int16_t c;
+    uint16_t i;
     bool begin, match;
-    int previous_letter, current_letter;
+    int16_t previous_letter, current_letter;
     std::string lower = "abcdefghijklmnopqrstuvwxyz";
     std::string upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     std::string line;

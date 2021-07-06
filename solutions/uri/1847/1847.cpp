@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <cstdio>
 #include <iostream>
 
 int main() {
-    int a, b, c;
+    int16_t a, b, c;
     bool is_happy;
 
     while (std::cin >> a >> b >> c) {

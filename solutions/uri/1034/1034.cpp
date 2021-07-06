@@ -1,16 +1,17 @@
 #include <algorithm>
+#include <cstdint>
 #include <cstring>
 #include <iostream>
 #include <limits>
 
-int blocks[26];
+int32_t blocks[26];
 
-int minimum_blocks(int m, int n) {
-    int i, j, result[m + 1];
+int32_t minimum_blocks(int32_t m, int32_t n) {
+    int32_t i, j, result[m + 1];
 
     result[0] = 0;
     for (i = 1; i <= m; i++) {
-        result[i] = std::numeric_limits< int >::max();
+        result[i] = std::numeric_limits< int32_t >::max();
     }
 
     for (j = 0; j < n; j++) {
@@ -23,7 +24,7 @@ int minimum_blocks(int m, int n) {
 }
 
 int main() {
-    int i, t, n, m;
+    int32_t i, t, n, m;
 
     std::cin >> t;
 

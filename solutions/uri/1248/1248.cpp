@@ -1,10 +1,11 @@
 #include <algorithm>
+#include <cstdint>
 #include <iostream>
 #include <string>
 #include <vector>
 
 int main() {
-    int n;
+    int16_t n;
     std::string foods, breakfast, lunch, dinner;
     bool cheater;
 

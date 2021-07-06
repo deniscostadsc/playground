@@ -1,13 +1,14 @@
 #include <algorithm>
+#include <cstdint>
 #include <iostream>
 
-long long *fold(
-    long long *tape,
-    int tape_size,
-    long long *new_tape,
-    int new_tape_size,
-    int folding_index) {
-    int i, j, shift = 1;
+int64_t *fold(
+    int64_t *tape,
+    int16_t tape_size,
+    int64_t *new_tape,
+    int16_t new_tape_size,
+    int16_t folding_index) {
+    int16_t i, j, shift = 1;
 
     if (folding_index >= tape_size) {
         return tape;
@@ -37,15 +38,15 @@ long long *fold(
 }
 
 bool check_folding(
-    long long *input_tape,
-    int input_tape_size,
-    long long *output_tape,
-    int output_tape_size) {
+    int64_t *input_tape,
+    int16_t input_tape_size,
+    int64_t *output_tape,
+    int16_t output_tape_size) {
     bool all_equals = true;
     bool result;
 
     if (input_tape_size == output_tape_size) {
-        for (int i = 0; i < input_tape_size; i++) {
+        for (int16_t i = 0; i < input_tape_size; i++) {
             all_equals &= input_tape[i] == output_tape[i];
         }
         if (all_equals) {
@@ -57,12 +58,12 @@ bool check_folding(
         return false;
     }
 
-    for (int folding_index = 1; folding_index < input_tape_size;
+    for (int16_t folding_index = 1; folding_index < input_tape_size;
          folding_index++) {
-        int new_tape_size = std::max(
+        int16_t new_tape_size = std::max(
             input_tape_size - folding_index,
             input_tape_size - (input_tape_size - folding_index));
-        long long new_tape[new_tape_size];
+        int64_t new_tape[new_tape_size];
 
         fold(
             input_tape,
@@ -79,22 +80,23 @@ bool check_folding(
             break;
         }
     }
+
     return false;
 }
 
 int main() {
-    int n, m;
-    int i, j;
+    int16_t n, m;
+    int16_t i, j;
 
     while (std::cin >> n) {
-        long long input_tape[n];
+        int64_t input_tape[n];
 
         for (i = 0; i < n; i++) {
             std::cin >> input_tape[i];
         }
 
         std::cin >> m;
-        long long output_tape[m];
+        int64_t output_tape[m];
 
         for (j = 0; j < m; j++) {
             std::cin >> output_tape[j];

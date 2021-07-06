@@ -1,9 +1,10 @@
+#include <cstdint>
 #include <iostream>
 #include <map>
 
-std::map< int, int > previous_answers;
+std::map< int32_t, int32_t > previous_answers;
 
-int fibonacci(int n) {
+int32_t fibonacci(int32_t n) {
     if (previous_answers[n]) {
         return previous_answers[n];
     }
@@ -18,7 +19,7 @@ int fibonacci(int n) {
 }
 
 int main() {
-    int n, i = 0, s = 0;
+    int32_t n, i = 0, s = 0;
 
     while (true) {
         n = fibonacci(i);

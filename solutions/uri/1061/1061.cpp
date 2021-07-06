@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int d, dd, h, hh, m, mm, s, ss;
+    int32_t d, dd, h, hh, m, mm, s, ss;
 
     scanf("Dia %d", &d);
     scanf("%d : %d : %d\n", &h, &m, &s);

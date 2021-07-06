@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <cstdio>
 
-long long int f[61];
+int64_t f[61];
 
-long long int fib(long int n) {
+int64_t fib(int32_t n) {
     if (f[n] != -1) {
         return f[n];
     }
@@ -11,8 +12,8 @@ long long int fib(long int n) {
 }
 
 int main() {
-    int i, j;
-    long long int n;
+    int16_t i, j;
+    int64_t n;
     for (j = 0; j <= 60; j++) {
         f[j] = -1;
     }

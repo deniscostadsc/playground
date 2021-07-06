@@ -1,9 +1,10 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
-    unsigned int c, characters;
-    int n, l, lines;
+    uint16_t c, characters;
+    int16_t n, l, lines;
     std::string word;
 
     while (std::cin >> n >> l >> c) {

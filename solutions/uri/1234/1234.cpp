@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
-    unsigned int i;
+    uint16_t i;
     std::string l = "abcdefghijklmnopqrstuvwxyz";
     std::string u = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     std::string str;

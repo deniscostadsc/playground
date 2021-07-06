@@ -1,11 +1,12 @@
+#include <cstdint>
 #include <iostream>
 
 struct person {
-    int age;
+    int16_t age;
 };
 
 int main() {
-    int n, m, i, age, x, y;
+    int16_t n, m, i, age, x, y;
 
     std::cin >> n >> m >> i;
 
@@ -19,5 +20,6 @@ int main() {
 
     while (i--) {
     }
+
     return 0;
 }

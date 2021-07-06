@@ -1,13 +1,14 @@
+#include <cstdint>
 #include <cstdio>
 #include <iostream>
 #include <map>
 #include <string>
 
 int main() {
-    int i, count, acum;
+    int16_t i, count, acum;
     std::string jingle;
 
-    std::map< char, int > duration;
+    std::map< char, int16_t > duration;
     duration['W'] = 64;
     duration['H'] = 32;
     duration['Q'] = 16;
@@ -20,7 +21,7 @@ int main() {
         count = 0;
         acum = 0;
 
-        for (i = 0; i < static_cast< int >(jingle.size()); i++) {
+        for (i = 0; i < static_cast< int16_t >(jingle.size()); i++) {
             if (jingle[i] == '/') {
                 if (acum == 64) {
                     count++;

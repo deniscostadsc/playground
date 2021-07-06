@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int n;
+    int16_t n;
 
     while (std::cin >> n) {
         std::cout << (n - 1) << std::endl;

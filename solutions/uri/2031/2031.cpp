@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int n;
+    int16_t n;
     std::string player1_sign, player2_sign;
 
     std::cin >> n;

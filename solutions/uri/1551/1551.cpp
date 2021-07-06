@@ -1,28 +1,31 @@
+#include <cstdint>
 #include <cstdio>
 #include <iostream>
 #include <map>
 
 int main() {
-    int n, completeness;
+    int16_t n, completeness;
     std::string phrase, alphabet = "abcdefghijklmnopqrstuvwxyz";
-    std::map< char, int > letter_count;
+    std::map< char, int16_t > letter_count;
 
     std::cin >> n;
     getchar();
 
     while (n--) {
-        for (int i = 0; i < static_cast< int >(alphabet.length()); i++) {
+        for (int16_t i = 0; i < static_cast< int16_t >(alphabet.length());
+             i++) {
             letter_count[alphabet[i]] = 0;
         }
 
         std::getline(std::cin, phrase);
 
-        for (int j = 0; j < static_cast< int >(phrase.length()); j++) {
+        for (int16_t j = 0; j < static_cast< int16_t >(phrase.length()); j++) {
             letter_count[phrase[j]]++;
         }
 
         completeness = 0;
-        for (int z = 0; z < static_cast< int >(alphabet.length()); z++) {
+        for (int16_t z = 0; z < static_cast< int16_t >(alphabet.length());
+             z++) {
             if (letter_count[alphabet[z]] != 0) {
                 completeness++;
             }

@@ -1,12 +1,14 @@
+#include <cstdint>
 #include <iostream>
 
-int calculate_value(int attack, int defense, int bonus, int level) {
-    int result = (attack + defense) / 2;
+int16_t calculate_value(
+    int16_t attack, int16_t defense, int16_t bonus, int16_t level) {
+    int16_t result = (attack + defense) / 2;
     return result + (level % 2 == 0 ? bonus : 0);
 }
 
 int main() {
-    int t, a, d, l, bonus, dabriels_value, guartes_value;
+    int16_t t, a, d, l, bonus, dabriels_value, guartes_value;
 
     std::cin >> t;
 

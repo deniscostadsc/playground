@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <cstdio>
 #include <iostream>
 
 int main() {
-    int hour, minute, late;
+    int16_t hour, minute, late;
 
     while (scanf("%d:%d", &hour, &minute) != EOF) {
         std::cout << "Atraso maximo: "

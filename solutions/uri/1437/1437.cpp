@@ -1,9 +1,10 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
-    int q;
-    unsigned int i, n;
+    int16_t q;
+    uint16_t i, n;
     std::string c;
     std::string d = "NLSO";
 

@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int hi, hf, mi, mf, m;
+    int32_t hi, hf, mi, mf, m;
 
     while (1) {
         scanf("%d %d %d %d", &hi, &mi, &hf, &mf);

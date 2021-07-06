@@ -1,9 +1,10 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
-    int qt;
-    long first_number, second_number;
+    int16_t qt;
+    int32_t first_number, second_number;
     bool is_even, first_won;
     std::string first_player, first_choice, second_player, second_choice;
 

@@ -1,8 +1,9 @@
 #include <cmath>
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int i;
+    int16_t i;
 
     for (i = 0; i <= 20; i += 2) {
         if (i == 0 || i == 10 || i == 20) {

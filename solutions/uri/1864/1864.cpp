@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
-    int n;
+    int16_t n;
     std::string quote = "LIFE IS NOT A PROBLEM TO BE SOLVED";
 
     while (std::cin >> n) {

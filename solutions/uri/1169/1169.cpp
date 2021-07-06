@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <cstring>
 #include <iostream>
 
-unsigned long long grains(unsigned long long n) {
+uint64_t grains(uint64_t n) {
     if (n == 1) {
         return 2;
     }
@@ -9,8 +10,8 @@ unsigned long long grains(unsigned long long n) {
 }
 
 int main() {
-    int n;
-    unsigned long long x;
+    int16_t n;
+    uint64_t x;
 
     std::cin >> n;
     while (n--) {

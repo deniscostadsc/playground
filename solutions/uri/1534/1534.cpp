@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int n, i, j;
+    int16_t n, i, j;
 
     while (std::cin >> n) {
         for (i = 0; i < n; i++) {

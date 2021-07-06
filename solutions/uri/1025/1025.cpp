@@ -2,10 +2,10 @@
 #include <iostream>
 #include <vector>
 
-int bi_search(std::vector< int > v, int n) {
-    int begin = 0;
-    int end = v.size() - 1;
-    int middle = end / 2;
+int16_t bi_search(std::vector< int16_t > v, int16_t n) {
+    int16_t begin = 0;
+    int16_t end = v.size() - 1;
+    int16_t middle = end / 2;
 
     while (begin < end) {
         if (v.at(middle) < n) {
@@ -26,8 +26,8 @@ int bi_search(std::vector< int > v, int n) {
 }
 
 int main() {
-    int n, q, marble, query, position, c = 0;
-    std::vector< int > marbles;
+    int16_t n, q, marble, query, position, c = 0;
+    std::vector< int16_t > marbles;
 
     while (std::cin >> n >> q && n && q) {
         marbles.clear();

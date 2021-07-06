@@ -1,12 +1,13 @@
+#include <cstdint>
 #include <cstdio>
 #include <iostream>
 #include <string>
 
-int graph[20][20];
+int16_t graph[20][20];
 bool discovered[20];
 
-bool dfs(int vertex, int v, int spaces) {
-    int i;
+bool dfs(int16_t vertex, int16_t v, int16_t spaces) {
+    int16_t i;
     bool has_path = false;
 
     discovered[vertex] = true;
@@ -28,8 +29,8 @@ bool dfs(int vertex, int v, int spaces) {
     return has_path;
 }
 
-void dfs_runner(int v) {
-    int i, index = 0;
+void dfs_runner(int16_t v) {
+    int16_t i, index = 0;
 
     while (true) {
         if (dfs(index, v, 2)) {
@@ -52,7 +53,7 @@ void dfs_runner(int v) {
 }
 
 int main() {
-    int i, j, n, v, e, from, to, ncase = 0;
+    int16_t i, j, n, v, e, from, to, ncase = 0;
 
     scanf("%d", &n);
 

@@ -1,3 +1,4 @@
+#include <cstdint>
 #include <iostream>
 
 bool is_password_valid(std::string password) {
@@ -12,7 +13,7 @@ bool is_password_valid(std::string password) {
     bool has_uppercase = false, has_lowercase = false, has_number = false,
          is_valid_char;
 
-    for (int i = 0; i < password.size(); i++) {
+    for (int16_t i = 0; i < password.size(); i++) {
         is_valid_char = false;
 
         found = uppercase_letters.find(password[i]);

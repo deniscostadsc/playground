@@ -1,15 +1,16 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
-    int c;
+    int16_t c;
 
     std::string s;
 
     while (std::cin >> s) {
         c = 0;
 
-        for (unsigned int i = 0; i < s.length(); ++i) {
+        for (uint16_t i = 0; i < s.length(); ++i) {
             if (s.at(i) == ')') {
                 c--;
             } else if (s.at(i) == '(') {

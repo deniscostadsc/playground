@@ -1,15 +1,16 @@
+#include <cstdint>
 #include <cstring>
 #include <iostream>
 #include <string>
 #include <vector>
 
 int main() {
-    unsigned int n, i;
-    int g;
+    uint16_t n, i;
+    int16_t g;
     std::string s;
     std::string l = "abcdefghijklmnopqrstuvwxyz";
     std::string u = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    int c[26];
+    int16_t c[26];
 
     std::cin >> n;
     getline(std::cin, s);  // it's a hack!

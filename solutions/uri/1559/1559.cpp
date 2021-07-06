@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int n, i, j, board[4][4];
+    int16_t n, i, j, board[4][4];
     bool left, right, up, down, none;
 
     std::cin >> n;

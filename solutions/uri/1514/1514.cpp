@@ -1,11 +1,12 @@
+#include <cstdint>
 #include <cstring>
 #include <iostream>
 
 int main() {
-    int n, m, i, j, r1, r2, r3, r4;
+    int16_t n, m, i, j, r1, r2, r3, r4;
 
     while (std::cin >> n >> m && n && m) {
-        int current, solved_by_each[n], solutions_per_problem[m];
+        int16_t current, solved_by_each[n], solutions_per_problem[m];
 
         r1 = 1;
         r2 = 1;

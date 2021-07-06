@@ -1,10 +1,11 @@
+#include <cstdint>
 #include <iostream>
 
-unsigned long long decrease_n(unsigned long long n) {
-    unsigned long long subtraction_term = 0;
+uint64_t decrease_n(uint64_t n) {
+    uint64_t subtraction_term = 0;
 
     if (n % 100 == 10) {
-        unsigned long long n_copy = n;
+        uint64_t n_copy = n;
         n_copy /= 10;
         while (n_copy && n_copy % 10 == 1) {
             n_copy /= 10;
@@ -19,12 +20,12 @@ unsigned long long decrease_n(unsigned long long n) {
     return n - 1;
 }
 
-bool is_tidy(unsigned long long n) {
+bool is_tidy(uint64_t n) {
     if (n <= 9) {
         return true;
     }
 
-    int current, previous;
+    int16_t current, previous;
 
     previous = n % 10;
     n /= 10;
@@ -42,8 +43,8 @@ bool is_tidy(unsigned long long n) {
 }
 
 int main() {
-    int t, i;
-    unsigned long long n;
+    int16_t t, i;
+    uint64_t n;
 
     std::cin >> t;
 

@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 #include <vector>
 
-int find(std::vector< int > v, int n) {
+int16_t find(std::vector< int16_t > v, int16_t n) {
     for (std::string::size_type i = 0; i < v.size(); i++) {
         if (n == v.at(i)) {
             return i;
@@ -11,9 +12,9 @@ int find(std::vector< int > v, int n) {
 }
 
 int main() {
-    int i, j, n, p, overtakes;
-    std::vector< int > start;
-    std::vector< int > finish;
+    int16_t i, j, n, p, overtakes;
+    std::vector< int16_t > start;
+    std::vector< int16_t > finish;
 
     while (std::cin >> n) {
         start.clear();

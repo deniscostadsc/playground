@@ -3,9 +3,9 @@
 #include <map>
 #include <vector>
 
-std::vector< unsigned long > primes;
+std::vector< uint32_t > primes;
 
-bool is_prime(unsigned long n) {
+bool is_prime(uint32_t n) {
     if (n == 2) {
         return true;
     }
@@ -13,7 +13,7 @@ bool is_prime(unsigned long n) {
         return false;
     }
 
-    for (unsigned long i = 3; i <= sqrt(n); i += 2) {
+    for (uint32_t i = 3; i <= sqrt(n); i += 2) {
         if (n % i == 0) {
             return false;
         }
@@ -21,17 +21,16 @@ bool is_prime(unsigned long n) {
     return true;
 }
 
-void next_prime(unsigned long n) {
+void next_prime(uint32_t n) {
     while (!is_prime(++n)) {
     }
     primes.push_back(n);
 }
 
-unsigned long div_count(unsigned long n) {
-    unsigned long count = 1;
-    unsigned long i = 0;
-    std::map< unsigned long, int > c;
-    std::map< unsigned long, int >::iterator iter;
+uint32_t div_count(uint32_t n) {
+    uint32_t count = 1, i = 0;
+    std::map< uint32_t, int16_t > c;
+    std::map< uint32_t, int16_t >::iterator iter;
 
     if (is_prime(n)) {
         return 2;
@@ -57,12 +56,12 @@ unsigned long div_count(unsigned long n) {
 }
 
 int main() {
-    int t = 1, n = 1;
+    int32_t t = 1, n = 1;
 
     primes.push_back(2);
 
     while (true) {
-        int d = div_count(t);
+        int32_t d = div_count(t);
 
         if (d > 500) {
             std::cout << t << std::endl;

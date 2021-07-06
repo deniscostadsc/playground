@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int day, month, year;
+    int16_t day, month, year;
 
     while (scanf("%d/%d/%d", &day, &month, &year) != EOF) {
         printf("%02d/%02d/%02d\n", month, day, year);

@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int n, r, previous_r, position;
+    int16_t n, r, previous_r, position;
     bool decreased;
 
     while (std::cin >> n) {
@@ -9,7 +10,7 @@ int main() {
 
         std::cin >> previous_r;
 
-        for (int i = 2; i <= n; i++) {
+        for (int16_t i = 2; i <= n; i++) {
             std::cin >> r;
 
             if (!decreased && r < previous_r) {

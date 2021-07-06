@@ -1,8 +1,11 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int d;
+    int16_t d;
+
     scanf("%d", &d);
+
     if (d == 61) {
         printf("Brasilia\n");
     } else if (d == 71) {
@@ -22,4 +25,6 @@ int main() {
     } else {
         printf("DDD nao cadastrado\n");
     }
+
+    return 0;
 }

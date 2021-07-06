@@ -1,14 +1,15 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int p, n, current_pipe, previous_pipe;
+    int16_t p, n, current_pipe, previous_pipe;
     bool game_over;
 
     while (std::cin >> p >> n) {
         std::cin >> previous_pipe;
         game_over = false;
 
-        for (int i = 0; i < n - 1; i++) {
+        for (int16_t i = 0; i < n - 1; i++) {
             std::cin >> current_pipe;
 
             if (abs(previous_pipe - current_pipe) > p) {

@@ -1,5 +1,6 @@
 #include <algorithm>
 #include <cmath>
+#include <cstdint>
 #include <iomanip>
 #include <iostream>
 #include <map>
@@ -9,7 +10,7 @@ struct person {
     double x;
     double y;
     person *parent;
-    int rank;
+    int16_t rank;
 };
 
 std::vector< person * > people;
@@ -59,7 +60,7 @@ bool unionset(person *p1, person *p2) {
 }
 
 int main() {
-    int c, n, i, arcs_mst;
+    int16_t c, n, i, arcs_mst;
     double x, y, total_web;
     std::vector< arc * >::iterator it;
     std::vector< person * >::iterator it_p1, it_p2;

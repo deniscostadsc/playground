@@ -2,7 +2,7 @@
 #include <cstdio>
 
 int main() {
-    int n;
+    int16_t n;
 
     scanf("%d", &n);
 

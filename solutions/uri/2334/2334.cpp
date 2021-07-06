@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    unsigned long long p;
+    uint64_t p;
 
     while (std::cin >> p && p != -1) {
         if (p == 0) {

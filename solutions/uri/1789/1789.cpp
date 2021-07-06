@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int l, v, fastest;
+    int16_t l, v, fastest;
 
     while (scanf("%d", &l) != EOF) {
         fastest = 0;

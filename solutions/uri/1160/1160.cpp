@@ -1,12 +1,14 @@
+#include <cstdint>
 #include <cstdio>
 #include <iostream>
 
 int main() {
-    int n, c;
-    int a, b;
+    int32_t n, c;
+    int32_t a, b;
     float ac, bc;
 
     std::cin >> n;
+
     while (n--) {
         c = 0;
         scanf("%d %d %f %f", &a, &b, &ac, &bc);
@@ -23,5 +25,6 @@ int main() {
             printf("%d anos.\n", c);
         }
     }
+
     return 0;
 }

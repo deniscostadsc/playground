@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 void postorder_print_from_preorder_inorder(std::string pre, std::string in) {
-    int in_root_index = in.find(pre[0]);
+    int16_t in_root_index = in.find(pre[0]);
 
     if (in.substr(0, in_root_index).length() > 0) {
         postorder_print_from_preorder_inorder(

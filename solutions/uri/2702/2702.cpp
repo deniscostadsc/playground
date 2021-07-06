@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int chicken_meals, beef_meals, pasta_meals, chicken_orders, beef_orders,
+    int16_t chicken_meals, beef_meals, pasta_meals, chicken_orders, beef_orders,
         pasta_orders, result;
 
     while (std::cin >> chicken_meals >> beef_meals >> pasta_meals

@@ -1,10 +1,11 @@
+#include <cstdint>
 #include <iostream>
 
-int calculate_days(int month, int day) {
-    int month_days[] = {0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 25};
-    int total_days = 0;
+int16_t calculate_days(int16_t month, int16_t day) {
+    int16_t month_days[] = {0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 25};
+    int16_t total_days = 0;
 
-    for (int i = month; i <= 12; i++) {
+    for (int16_t i = month; i <= 12; i++) {
         total_days += month_days[i];
     }
 
@@ -12,7 +13,7 @@ int calculate_days(int month, int day) {
 }
 
 int main() {
-    int month, day;
+    int16_t month, day;
 
     while (std::cin >> month >> day) {
         if (month == 12 && day == 25) {

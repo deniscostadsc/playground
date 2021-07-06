@@ -1,22 +1,23 @@
 #include <algorithm>
+#include <cstdint>
 #include <cstdio>
 #include <set>
 
 int main() {
-    int a, b, aux;
+    int16_t a, b, aux;
 
     while (scanf("%d %d", &a, &b) && a && b) {
-        std::set< int > cards_a;
-        std::set< int > cards_b;
-        std::set< int > cards_b_not_in_a;
-        std::set< int > cards_a_not_in_b;
+        std::set< int16_t > cards_a;
+        std::set< int16_t > cards_b;
+        std::set< int16_t > cards_b_not_in_a;
+        std::set< int16_t > cards_a_not_in_b;
 
         while (a--) {
             scanf("%d", &aux);
             cards_a.insert(aux);
         }
 
-        std::set< int >::iterator it_a = cards_a.begin();
+        std::set< int16_t >::iterator it_a = cards_a.begin();
 
         while (b--) {
             scanf("%d", &aux);
@@ -32,7 +33,7 @@ int main() {
             }
         }
 
-        std::set< int >::iterator it_b = cards_b.begin();
+        std::set< int16_t >::iterator it_b = cards_b.begin();
 
         for (it_a = cards_a.begin(); it_a != cards_a.end(); ++it_a) {
             while (*it_b < *it_a && it_b != cards_b.end()) {

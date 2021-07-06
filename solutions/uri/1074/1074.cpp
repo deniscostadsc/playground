@@ -1,8 +1,11 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int q, n;
+    int16_t q, n;
+
     scanf("%d", &q);
+
     while (q--) {
         scanf("%d", &n);
         if (n == 0) {

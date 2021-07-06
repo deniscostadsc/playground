@@ -1,11 +1,12 @@
+#include <cstdint>
 #include <cstdio>
 #include <set>
 
 int main() {
-    long long n, x;
-    long long total_sheeps;
-    int attacked_stars;
-    int total_zeros;
+    int64_t n, x;
+    int64_t total_sheeps;
+    int16_t attacked_stars;
+    int16_t total_zeros;
     bool done;
 
     scanf("%lld", &n);
@@ -14,7 +15,7 @@ int main() {
     total_zeros = 0;
     done = false;
 
-    for (int i = 0; i < n; i++) {
+    for (int16_t i = 0; i < n; i++) {
         scanf("%lld", &x);
         total_sheeps += x;
 

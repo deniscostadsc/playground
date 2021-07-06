@@ -1,3 +1,4 @@
+#include <cstdint>
 #include <iomanip>
 #include <iostream>
 
@@ -8,5 +9,6 @@ int main() {
         std::cout << std::fixed << std::setprecision(2)
                   << 100 * (price2 - price1) / price1 << "%" << std::endl;
     }
+
     return 0;
 }

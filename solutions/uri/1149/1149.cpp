@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int a, b, s;
+    int16_t a, b, s;
 
     std::cin >> a;
     s = a;
@@ -10,7 +11,7 @@ int main() {
     while (b <= 0) {
         std::cin >> b;
     }
-    for (int i = 1; i < b; i++) {
+    for (int16_t i = 1; i < b; i++) {
         s += ++a;
     }
 

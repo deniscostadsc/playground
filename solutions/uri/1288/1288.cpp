@@ -1,10 +1,12 @@
+#include <cstdint>
 #include <iostream>
 
-bool mission_successful(int power[], int weight[], int n, int k, int r) {
-    int result[n + 1][k + 1];
+bool mission_successful(
+    int32_t power[], int32_t weight[], int32_t n, int32_t k, int32_t r) {
+    int32_t result[n + 1][k + 1];
 
-    for (int i = 0; i <= n; i++) {
-        for (int j = 0; j <= k; j++) {
+    for (int32_t i = 0; i <= n; i++) {
+        for (int32_t j = 0; j <= k; j++) {
             if (i == 0 || j == 0) {
                 result[i][j] = 0;
                 continue;
@@ -24,17 +26,17 @@ bool mission_successful(int power[], int weight[], int n, int k, int r) {
 }
 
 int main() {
-    int tests, n, k, resistance;
+    int32_t tests, n, k, resistance;
 
     std::cin >> tests;
 
-    for (int i = 0; i < tests; i++) {
+    for (int32_t i = 0; i < tests; i++) {
         std::cin >> n;
 
-        int power[n];
-        int weight[n];
+        int32_t power[n];
+        int32_t weight[n];
 
-        for (int j = 0; j < n; j++) {
+        for (int32_t j = 0; j < n; j++) {
             std::cin >> power[j] >> weight[j];
         }
 

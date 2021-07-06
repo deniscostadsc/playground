@@ -1,7 +1,9 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int x, y;
+    int16_t x, y;
+
     while (scanf("%d %d", &x, &y) != EOF && x != 0 && y != 0) {
         if (x > 0 && y > 0) {
             printf("primeiro\n");
@@ -13,5 +15,6 @@ int main() {
             printf("quarto\n");
         }
     }
+
     return 0;
 }

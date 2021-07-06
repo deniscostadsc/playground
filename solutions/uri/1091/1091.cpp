@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int n, x, y, xc, yc;
+    int16_t n, x, y, xc, yc;
 
     while (std::cin >> n && n != 0) {
         std::cin >> x >> y;

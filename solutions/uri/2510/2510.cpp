@@ -1,12 +1,13 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int n;
+    int16_t n;
     std::string name;
 
     std::cin >> n;
 
-    for (int i = 0; i < n; i++) {
+    for (int16_t i = 0; i < n; i++) {
         std::cout << "Y" << std::endl;
     }
 

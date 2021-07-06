@@ -1,3 +1,4 @@
+#include <cstdint>
 #include <iostream>
 #include <map>
 #include <queue>
@@ -6,11 +7,11 @@
 
 std::map< std::string, std::vector< std::string > > graph;
 std::map< std::string, bool > visited;
-std::map< std::string, int > distances;
+std::map< std::string, int16_t > distances;
 std::queue< std::string > q;
 
 void create_chess_graph() {
-    int i, j;
+    int16_t i, j;
     std::string letters = "-abcdefgh";
     std::string numbers = "-12345678";
     std::string li, nj;
@@ -64,7 +65,7 @@ void create_chess_graph() {
 }
 
 void unvisit() {
-    int i, j;
+    int16_t i, j;
     std::string letters = "-abcdefgh";
     std::string numbers = "-12345678";
     std::string li, nj;
@@ -79,7 +80,7 @@ void unvisit() {
     }
 }
 
-int bfs(std::string start, std::string goal) {
+int16_t bfs(std::string start, std::string goal) {
     std::vector< std::string >::iterator it;
 
     unvisit();

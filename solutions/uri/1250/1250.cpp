@@ -1,13 +1,14 @@
+#include <cstdint>
 #include <iostream>
 #include <vector>
 
 int main() {
-    int n, s, ss, c, h;
+    int16_t n, s, ss, c, h;
     unsigned i;
     char b;
     bool is_standup_shot, is_jump_shot;
     std::vector< char > bs;
-    std::vector< int > hs;
+    std::vector< int16_t > hs;
 
     std::cin >> n;
 

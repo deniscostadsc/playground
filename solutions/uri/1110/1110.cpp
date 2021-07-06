@@ -1,13 +1,14 @@
 #include <algorithm>
+#include <cstdint>
 #include <iostream>
 #include <vector>
 
 int main() {
-    unsigned int i, n;
+    uint16_t i, n;
 
     while (std::cin >> n && n != 0) {
-        std::vector< int > l;
-        std::vector< int > r;
+        std::vector< int16_t > l;
+        std::vector< int16_t > r;
 
         for (i = 1; i <= n; i++) {
             l.push_back(i);

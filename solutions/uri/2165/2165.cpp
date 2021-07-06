@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
     char letter;
-    int count = 0;
+    int16_t count = 0;
 
     while (std::cin.get(letter)) {
         if (letter != '\n') {

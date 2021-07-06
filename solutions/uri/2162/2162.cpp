@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int n, h, previous_h, direction;
+    int16_t n, h, previous_h, direction;
     bool has_pattern;
 
     while (std::cin >> n) {

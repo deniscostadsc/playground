@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int t, a = 0, m = 0, d = 0;
+    int16_t t, a = 0, m = 0, d = 0;
 
     while (scanf("%d", &t) != EOF) {
         if (t >= 365) {

@@ -1,7 +1,7 @@
 #include <iostream>
 
-int gcd(int a, int b) {
-    int x;
+int16_t gcd(int16_t a, int16_t b) {
+    int16_t x;
     while (b > 0) {
         x = b;
         b = a % b;
@@ -11,7 +11,7 @@ int gcd(int a, int b) {
 }
 
 int main() {
-    int n, a, b;
+    int16_t n, a, b;
 
     std::cin >> n;
 

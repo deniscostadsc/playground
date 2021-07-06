@@ -1,8 +1,10 @@
+
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int qty, current_index, first_index, second_index, number, first_suspicous,
-        second_suspicous;
+    int16_t qty, current_index, first_index, second_index, number,
+        first_suspicous, second_suspicous;
 
     while (std::cin >> qty && qty) {
         first_suspicous = 0;

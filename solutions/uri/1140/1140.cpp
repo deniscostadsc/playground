@@ -1,9 +1,10 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
     bool is_tautogram;
-    int letter, index;
+    int16_t letter, index;
     std::string lower = "abcdefghijklmnopqrstuvwxyz";
     std::string upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     std::string word;

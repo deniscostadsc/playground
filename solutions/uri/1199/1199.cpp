@@ -1,12 +1,13 @@
 #include <algorithm>
+#include <cstdint>
 #include <cstdlib>
 #include <iostream>
 #include <string>
 
-std::string dec2hex(unsigned int n) {
+std::string dec2hex(uint32_t n) {
     std::string chars = "0123456789ABCDEF";
 
-    unsigned int i = n % 16;
+    uint32_t i = n % 16;
 
     if (n / 16 > 0) {
         return dec2hex(n / 16) + chars.at(i);
@@ -18,9 +19,9 @@ std::string dec2hex(unsigned int n) {
     return result;
 }
 
-unsigned int hex2dec(std::string h) {
-    unsigned int dec = 0, base = 1;
-    int index = h.length();
+uint32_t hex2dec(std::string h) {
+    uint32_t dec = 0, base = 1;
+    int32_t index = h.length();
     std::string chars = "0123456789abcdef";
 
     while (index--) {

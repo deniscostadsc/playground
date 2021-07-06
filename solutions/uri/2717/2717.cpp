@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int n, a, b;
+    int16_t n, a, b;
 
     while (std::cin >> n >> a >> b) {
         if (a + b <= n) {

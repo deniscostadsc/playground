@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 std::string get_significand(std::string number) {
-    int digits_count = 0;
+    int16_t digits_count = 0;
     std::size_t found;
     std::string digits = "0123456789";
     std::string digits_to_round = "56789";
@@ -30,7 +31,7 @@ std::string get_significand(std::string number) {
                 }
 
                 if (found != std::string::npos) {
-                    int last_digit = significand[4] - '0';
+                    int16_t last_digit = significand[4] - '0';
                     last_digit++;
                     significand[4] = last_digit + '0';
                 }
@@ -47,7 +48,7 @@ std::string get_significand(std::string number) {
 }
 
 std::string get_exponent(std::string number) {
-    int sign_shift = 0;
+    int16_t sign_shift = 0;
     bool has_leading_zeros;
     std::size_t dot, non_zero, first_non_zero;
     std::string exponent;
@@ -65,7 +66,8 @@ std::string get_exponent(std::string number) {
         if (number[sign_shift] == '0') {
             sign = "-";
             first_non_zero = 666;
-            for (int i = 0; i < static_cast< int >(non_zero_digits.size());
+            for (int16_t i = 0;
+                 i < static_cast< int16_t >(non_zero_digits.size());
                  i++) {
                 non_zero = number.find(non_zero_digits[i]);
                 if (non_zero < first_non_zero) {

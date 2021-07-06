@@ -1,3 +1,4 @@
+#include <cstdint>
 #include <iostream>
 
 std::string rock_paper_scissors_lizard_spock_judge(
@@ -21,7 +22,7 @@ std::string rock_paper_scissors_lizard_spock_judge(
 }
 
 int main() {
-    int c;
+    int16_t c;
     std::string sheldons_hand, rajeshs_hand;
 
     std::cin >> c;

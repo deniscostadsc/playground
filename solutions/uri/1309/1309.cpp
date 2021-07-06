@@ -1,9 +1,10 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
-    int cents;
-    int comma;
+    int16_t cents;
+    int16_t comma;
     std::string money;
 
     while (std::cin >> money) {

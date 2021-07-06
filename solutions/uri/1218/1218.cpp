@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
-    int m, f, c = 0;
+    int16_t m, f, c = 0;
     std::string s, l, cs, g;
 
     while (std::cin >> s) {

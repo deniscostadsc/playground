@@ -1,8 +1,14 @@
+#include <cstdint>
 #include <iostream>
 
-int merge(int numbers[], int temp[], int left, int middle, int right) {
-    int left_index = left, right_index = middle, temp_index = left,
-        swaps_count = 0;
+int32_t merge(
+    int32_t numbers[],
+    int32_t temp[],
+    int32_t left,
+    int32_t middle,
+    int32_t right) {
+    int32_t left_index = left, right_index = middle, temp_index = left,
+            swaps_count = 0;
 
     while (left_index <= middle - 1 && right_index <= right) {
         if (numbers[left_index] <= numbers[right_index]) {
@@ -21,15 +27,16 @@ int merge(int numbers[], int temp[], int left, int middle, int right) {
         temp[temp_index++] = numbers[right_index++];
     }
 
-    for (int i = left; i <= right; i++) {
+    for (int32_t i = left; i <= right; i++) {
         numbers[i] = temp[i];
     }
 
     return swaps_count;
 }
 
-int merge_sort(int numbers[], int temp[], int left, int right) {
-    int middle, swaps_count;
+int32_t
+    merge_sort(int32_t numbers[], int32_t temp[], int32_t left, int32_t right) {
+    int32_t middle, swaps_count;
 
     if (left < right) {
         middle = left + (right - left) / 2;
@@ -42,19 +49,19 @@ int merge_sort(int numbers[], int temp[], int left, int right) {
     return swaps_count;
 }
 
-int count_swaps(int numbers[], int n) {
-    int temp[n];
+int32_t count_swaps(int32_t numbers[], int32_t n) {
+    int32_t temp[n];
 
     return merge_sort(numbers, temp, 0, n - 1);
 }
 
 int main() {
-    int n, cur;
+    int32_t n, cur;
 
     while (std::cin >> n && n) {
-        int numbers[n];
+        int32_t numbers[n];
 
-        for (int i = 0; i < n; i++) {
+        for (int32_t i = 0; i < n; i++) {
             std::cin >> cur;
             numbers[i] = cur;
         }

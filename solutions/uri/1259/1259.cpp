@@ -1,8 +1,9 @@
 #include <algorithm>
+#include <cstdint>
 #include <iostream>
 #include <vector>
 
-bool compare(int i, int j) {
+bool compare(int16_t i, int16_t j) {
     if (i % 2 == 0 && j % 2 == 1) {
         return true;
     }
@@ -17,9 +18,9 @@ bool compare(int i, int j) {
 }
 
 int main() {
-    int n, c;
-    unsigned int i;
-    std::vector< int > v;
+    int16_t n, c;
+    uint16_t i;
+    std::vector< int16_t > v;
 
     std::cin >> c;
     while (c--) {

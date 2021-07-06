@@ -1,9 +1,10 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
-    int n;
-    unsigned int i;
+    int16_t n;
+    uint16_t i;
     bool first;
     std::string s;
 

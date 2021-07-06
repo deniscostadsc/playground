@@ -108,7 +108,7 @@ __cpp-lint: __cpp-lint-build
 			--quiet \
 			--recursive \
 			--extensions=cpp \
-			--filter="-legal/copyright,-runtime/int,-runtime/arrays" .
+			--filter="-legal/copyright,-runtime/arrays" .
 	@$(DOCKER_RUN) $(CPP)-lint \
 		scripts/run-clang-format.py \
 			--clang-format-executable=clang-format-7 \

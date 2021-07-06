@@ -1,3 +1,4 @@
+#include <cstdint>
 #include <iostream>
 #include <set>
 #include <string>
@@ -5,12 +6,12 @@
 std::set< std::string > matches;
 
 void brute_force(std::string sequence) {
-    int i;
+    int16_t i;
 
     if (sequence.size()) {
         matches.insert(sequence);
 
-        for (i = 0; i < static_cast< int >(sequence.size()); i++) {
+        for (i = 0; i < static_cast< int16_t >(sequence.size()); i++) {
             if (matches.count(sequence.substr(0, i) + sequence.substr(i + 1))) {
                 continue;
             }

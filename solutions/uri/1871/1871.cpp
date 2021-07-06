@@ -1,8 +1,9 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
 int main() {
-    long int m, n, sum, divisor;
+    int32_t m, n, sum, divisor;
     std::string str_sum;
 
     while (std::cin >> m >> n && m && n) {

@@ -1,19 +1,20 @@
+#include <cstdint>
 #include <iostream>
 
-int rafael(int x, int y) {
+int16_t rafael(int16_t x, int16_t y) {
     return ((3 * x) * (3 * x)) + (y * y);
 }
 
-int beto(int x, int y) {
+int16_t beto(int16_t x, int16_t y) {
     return 2 * (x * x) + ((5 * y) * (5 * y));
 }
 
-int carlos(int x, int y) {
+int16_t carlos(int16_t x, int16_t y) {
     return -100 * x + (y * y * y);
 }
 
 int main() {
-    int n, x, y;
+    int16_t n, x, y;
 
     std::cin >> n;
 

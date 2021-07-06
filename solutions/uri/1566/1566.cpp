@@ -1,11 +1,12 @@
 #include <algorithm>
+#include <cstdint>
 #include <cstdio>
 #include <vector>
 
 int main() {
-    int nc, n, h;
-    std::vector< int > heights;
-    std::vector< int >::iterator it;
+    int32_t nc, n, h;
+    std::vector< int32_t > heights;
+    std::vector< int32_t >::iterator it;
 
     scanf("%d", &nc);
 

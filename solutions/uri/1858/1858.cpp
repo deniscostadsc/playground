@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int n, t, i, index, lowest = 21;
+    int16_t n, t, i, index, lowest = 21;
 
     std::cin >> n;
 

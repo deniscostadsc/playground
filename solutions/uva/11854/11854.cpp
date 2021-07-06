@@ -4,8 +4,8 @@
 #include <vector>
 
 int main() {
-    int a, b, c;
-    std::vector< int > s;
+    int16_t a, b, c;
+    std::vector< int16_t > s;
 
     while (std::cin >> a >> b >> c && a != 0 && b != 0 && c != 0) {
         s.clear();

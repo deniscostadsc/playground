@@ -1,9 +1,10 @@
+#include <cstdint>
 #include <cstdio>
 #include <iostream>
 #include <string>
 
 int main() {
-    int i, t, n, index, position, commands[102];
+    int16_t i, t, n, index, position, commands[102];
     std::string command;
 
     scanf("%d", &t);

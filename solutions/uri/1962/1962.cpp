@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int n, t, year;
+    int32_t n, t, year;
 
     std::cin >> n;
 

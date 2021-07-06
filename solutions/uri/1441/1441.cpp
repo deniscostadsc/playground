@@ -1,9 +1,10 @@
+#include <cstdint>
 #include <iostream>
 #include <vector>
 
-std::vector< int > sequence;
+std::vector< int32_t > sequence;
 
-void ackermann(int h) {
+void ackermann(int32_t h) {
     sequence.push_back(h);
     if (h != 1) {
         if (h % 2 == 0) {
@@ -15,7 +16,7 @@ void ackermann(int h) {
 }
 
 int main() {
-    int h, greatest;
+    int32_t h, greatest;
 
     while (std::cin >> h && h) {
         ackermann(h);

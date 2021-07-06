@@ -1,3 +1,4 @@
+#include <cstdint>
 #include <cstdio>
 #include <iostream>
 #include <map>
@@ -5,7 +6,7 @@
 
 int main() {
     double price, result;
-    int n, p, q, quantity;
+    int32_t n, p, q, quantity;
     std::map< std::string, double > prices;
     std::string fruit;
 

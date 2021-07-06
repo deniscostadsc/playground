@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 #include <string>
 
-std::string dec2bin(int n) {
+std::string dec2bin(int16_t n) {
     if (n == 0) {
         return "0";
     }
@@ -16,7 +17,7 @@ std::string dec2bin(int n) {
 }
 
 int main() {
-    int i, h, m, h_binary_length, m_binary_length;
+    int16_t i, h, m, h_binary_length, m_binary_length;
     char c;
     std::string h_binary, m_binary;
 
@@ -40,7 +41,7 @@ int main() {
         std::cout << std::endl;
         std::cout << "|   |   ";
 
-        int k = 0;
+        int16_t k = 0;
         for (i = 3; i >= 0; i--) {
             if (h_binary_length - 1 >= i) {
                 if (h_binary[k] == '1') {

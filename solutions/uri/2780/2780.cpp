@@ -1,7 +1,8 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
-    int d;
+    int16_t d;
 
     while (std::cin >> d) {
         if (d <= 800) {

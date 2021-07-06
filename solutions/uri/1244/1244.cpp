@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <cstdint>
 #include <iostream>
 #include <iterator>
 #include <sstream>
@@ -7,7 +8,7 @@
 
 struct Pair {
     std::string first;
-    unsigned int second;
+    uint16_t second;
 };
 
 bool compare(Pair i, Pair j) {
@@ -18,7 +19,7 @@ bool compare(Pair i, Pair j) {
 }
 
 int main() {
-    int n;
+    int16_t n;
     std::string s;
 
     std::cin >> n;
@@ -36,13 +37,13 @@ int main() {
 
         std::vector< Pair > strings;
 
-        for (unsigned int i = 0; i < raw_strings.size(); i++) {
+        for (uint16_t i = 0; i < raw_strings.size(); i++) {
             strings.push_back({raw_strings.at(i), i});
         }
 
         sort(strings.begin(), strings.end(), compare);
 
-        for (unsigned int i = 0; i < strings.size(); i++) {
+        for (uint16_t i = 0; i < strings.size(); i++) {
             std::cout << strings.at(i).first;
             if (i < strings.size() - 1) {
                 std::cout << " ";
