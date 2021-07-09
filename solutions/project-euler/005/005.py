@@ -11,7 +11,7 @@ def lcm(x, y):
 def lcm_many(numbers):
     result = numbers[0]
 
-    for n in numbers:
+    for n in numbers[1:]:
         result = lcm(result, n)
     return result
 
