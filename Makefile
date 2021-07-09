@@ -8,9 +8,9 @@
 	__dart-lint \
 	__dart-lint-build \
 	__go_lint \
-	__js-lint-build \
 	__js-format-code \
 	__js-lint \
+	__js-lint-build \
 	__py-format-code \
 	__py-lint \
 	__py-lint-build \
