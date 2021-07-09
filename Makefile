@@ -4,6 +4,9 @@
 	__cpp-format-code \
 	__cpp-lint \
 	__cpp-lint-build \
+	__dart-format-code \
+	__dart-lint \
+	__dart-lint-build \
 	__go_lint \
 	__js-lint-build \
 	__js-format-code \
@@ -114,6 +117,15 @@ __cpp-lint: __cpp-lint-build
 __cpp-lint-build:
 	@$(DOCKER_BUILD) .docker/lint/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
 
+__dart-format-code: __dart-lint-build
+	@$(DOCKER_RUN) $(DART)-lint dart format .
+
+__dart-lint: __dart-lint-build
+	@$(DOCKER_RUN) $(DART)-lint [ "$$(dart format -o none . | wc -l)" -eq 1 ]
+
+__dart-lint-build:
+	@$(DOCKER_BUILD) .docker/lint/$(DART)-lint.Dockerfile -t $(DART)-lint .
+
 __go-lint-build:
 	@$(DOCKER_BUILD) .docker/$(GO).Dockerfile -t $(GO) .
 
@@ -170,12 +182,17 @@ clean:
 	@find . -type d -name "META-INF" -exec rm -rf {} +
 	@find . -type d -name "\?" -exec rm -rf {} +
 
-format-code: __cpp-format-code __go-format-code __js-format-code __py-format-code
+format-code: \
+	__cpp-format-code \
+	__dart-format-code \
+	__go-format-code \
+	__js-format-code \
+	__py-format-code
 
 languages:
 	@./scripts/languages.sh
 
-lint: __clj-lint __cpp-lint __go-lint __js-lint __py-lint __shell-lint
+lint: __clj-lint __cpp-lint __dart-lint __go-lint __js-lint __py-lint __shell-lint
 
 new-problem:
 ifdef FOLDER
