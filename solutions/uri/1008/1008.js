@@ -6,5 +6,5 @@ const [_a, _b, _c] = input
 const [a, b] = [_a, _b].map(x => parseInt(x))
 const c = parseFloat(_c)
 
-console.log(`NUMBER = ${parseInt(a)}`);
-console.log(`SALARY = U$ ${(b * c).toFixed(2)}`);
+console.log(`NUMBER = ${parseInt(a)}`)
+console.log(`SALARY = U$ ${(b * c).toFixed(2)}`)
