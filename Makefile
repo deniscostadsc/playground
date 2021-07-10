@@ -192,7 +192,7 @@ format-code: \
 languages:
 	@./scripts/languages.sh
 
-lint: __clj-lint __cpp-lint __dart-lint __go-lint __js-lint __py-lint __shell-lint
+lint: __clj-lint __cpp-lint __go-lint __js-lint __py-lint __shell-lint
 
 new-problem:
 ifdef FOLDER
