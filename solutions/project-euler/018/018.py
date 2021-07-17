@@ -13,5 +13,5 @@ def msp(f):
     return previous_line[0]
 
 
-with open("triangle.txt", "r") as f:
+with open('triangle.txt', 'r') as f:
     print(msp(f))

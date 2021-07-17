@@ -145,11 +145,11 @@ __js-lint-build:
 	@$(DOCKER_BUILD) .docker/lint/$(JS)-lint.Dockerfile -t $(JS)-lint .
 
 __py-format-code: __py-lint-build
-	@$(DOCKER_RUN) $(PY)-lint black .
+	@$(DOCKER_RUN) $(PY)-lint blue .
 	@$(DOCKER_RUN) $(PY)-lint isort .
 
 __py-lint: __py-lint-build
-	@$(DOCKER_RUN) $(PY)-lint black --check .
+	@$(DOCKER_RUN) $(PY)-lint blue --check .
 	@$(DOCKER_RUN) $(PY)-lint flake8
 	@$(DOCKER_RUN) $(PY)-lint isort -c .
 

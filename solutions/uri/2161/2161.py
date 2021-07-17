@@ -12,4 +12,4 @@ def sqrtt(number):
 
 for line in sys.stdin:
     number = int(line)
-    print(f"{sqrtt(number):.10f}")
+    print(f'{sqrtt(number):.10f}')

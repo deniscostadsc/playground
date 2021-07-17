@@ -23,4 +23,4 @@ for _ in range(i):
     n = int(input())
     fibonacci_result = fibonacci(n)
     calls_count = calls[n]
-    print(f"fib({n}) = {calls_count} calls = {fibonacci_result}")
+    print(f'fib({n}) = {calls_count} calls = {fibonacci_result}')

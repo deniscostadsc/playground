@@ -5,7 +5,7 @@ n = int(input())
 print(n)
 
 for bill in bills:
-    print(f"{n // bill} nota(s) de R$ {bill},00")
+    print(f'{n // bill} nota(s) de R$ {bill},00')
 
     if n >= bill:
         n -= bill * (n // bill)

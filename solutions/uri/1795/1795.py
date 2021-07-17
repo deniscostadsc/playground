@@ -23,7 +23,8 @@ def calculate_number(index, line, items_per_line):
 def sum_line(line):
     items_per_line = (line + 1) * 2 - 1
     return sum(
-        calculate_number(index, line, items_per_line) for index in range(items_per_line)
+        calculate_number(index, line, items_per_line)
+        for index in range(items_per_line)
     )
 
 

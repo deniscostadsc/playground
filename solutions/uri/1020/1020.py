@@ -13,6 +13,6 @@ for t in sys.stdin:
         m = t // 30
         t %= 30
 
-    print(f"{a} ano(s)")
-    print(f"{m} mes(es)")
-    print(f"{t} dia(s)")
+    print(f'{a} ano(s)')
+    print(f'{m} mes(es)')
+    print(f'{t} dia(s)')

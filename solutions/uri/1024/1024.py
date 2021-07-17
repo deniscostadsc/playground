@@ -17,4 +17,4 @@ for _ in range(n):
         if i >= len(reversed_str) // 2:
             listed_str[i] = chr(ord(listed_str[i]) - 1)
 
-    print("".join(listed_str))
+    print(''.join(listed_str))

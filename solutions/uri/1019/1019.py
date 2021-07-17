@@ -14,7 +14,7 @@ for t in sys.stdin:
         m = t // 60
         t %= 60
 
-    print(f"{h}:{m}:{t}")
+    print(f'{h}:{m}:{t}')
 
     h = 0
     m = 0

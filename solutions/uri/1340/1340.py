@@ -32,9 +32,9 @@ class DataStructures:
 
     def remove(self):
         return {
-            "stack": self.remove_from_stack(),
-            "queue": self.remove_from_queue(),
-            "priority queue": self.remove_from_priority_queue(),
+            'stack': self.remove_from_stack(),
+            'queue': self.remove_from_queue(),
+            'priority queue': self.remove_from_priority_queue(),
         }
 
     def clean(self):
@@ -47,7 +47,7 @@ data_structure_bag = DataStructures()
 
 for test_case_size in sys.stdin:
     test_case_size = int(test_case_size)
-    possible_data_structures = ["stack", "queue", "priority queue"]
+    possible_data_structures = ['stack', 'queue', 'priority queue']
 
     for _ in range(test_case_size):
         command, x = map(int, input().split())
@@ -56,23 +56,23 @@ for test_case_size in sys.stdin:
             data_structure_bag.add(x)
         else:
             removals = data_structure_bag.remove()
-            if x != removals["stack"] and "stack" in possible_data_structures:
-                possible_data_structures.remove("stack")
+            if x != removals['stack'] and 'stack' in possible_data_structures:
+                possible_data_structures.remove('stack')
 
-            if x != removals["queue"] and "queue" in possible_data_structures:
-                possible_data_structures.remove("queue")
+            if x != removals['queue'] and 'queue' in possible_data_structures:
+                possible_data_structures.remove('queue')
 
             if (
-                x != removals["priority queue"]
-                and "priority queue" in possible_data_structures
+                x != removals['priority queue']
+                and 'priority queue' in possible_data_structures
             ):
-                possible_data_structures.remove("priority queue")
+                possible_data_structures.remove('priority queue')
 
     if len(possible_data_structures) == 1:
         print(possible_data_structures[0])
     elif len(possible_data_structures) > 1:
-        print("not sure")
+        print('not sure')
     else:
-        print("impossible")
+        print('impossible')
 
     data_structure_bag.clean()

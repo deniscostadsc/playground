@@ -1,7 +1,8 @@
-FROM python:3.6
+FROM python:3.9.4
 
+RUN pip install -U pip
 RUN pip install \
-    black \
+    blue \
     flake8 \
     isort
 

@@ -1,4 +1,4 @@
 a = int(input())
 b = int(input())
 
-print("PROD = {}".format(a * b))
+print('PROD = {}'.format(a * b))

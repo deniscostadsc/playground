@@ -5,4 +5,4 @@ x2, y2 = map(float, input().split())
 
 distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2))
 
-print(f"{distance:.4f}")
+print(f'{distance:.4f}')

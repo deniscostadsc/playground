@@ -6,13 +6,13 @@ for _ in range(n):
     a, _, b, o, c, _, d = sys.stdin.readline().split()
     a, b, c, d = map(int, [a, b, c, d])
 
-    if o == "+":
+    if o == '+':
         num = (b * d) * a // b + (b * d) * c // d
         den = b * d
-    elif o == "-":
+    elif o == '-':
         num = (b * d) * a // b - (b * d) * c // d
         den = b * d
-    elif o == "*":
+    elif o == '*':
         num = a * c
         den = b * d
     else:
@@ -34,4 +34,4 @@ for _ in range(n):
         else:
             j += 1
 
-    print(f"{num}/{den} = {num_r}/{den_r}")
+    print(f'{num}/{den} = {num_r}/{den_r}')
