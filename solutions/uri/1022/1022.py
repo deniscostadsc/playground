@@ -2,6 +2,7 @@ import sys
 
 n = int(sys.stdin.readline())
 
+# TODO: change this to lcm calculation
 for _ in range(n):
     a, _, b, o, c, _, d = sys.stdin.readline().split()
     a, b, c, d = map(int, [a, b, c, d])
