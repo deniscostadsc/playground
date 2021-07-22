@@ -2,6 +2,7 @@ import sys
 
 sys.setrecursionlimit(10002)
 
+
 # TODO: convert this function to interactive
 def josephus(n: int, k: int) -> int:
     if n == 1:
