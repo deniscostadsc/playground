@@ -11,6 +11,8 @@ start killing themselves using a step of three. Josephus states that by
 luck or maybe by the hand of God, he remained the last and gave up to the
 Romans.”
 
+![](imgs/UOJ_1030_a.jpg)
+
 ## Input
 
 There are $NC (1 \leq NC \leq 30 )$ test cases. In each input test case
@@ -21,6 +23,8 @@ $n$. The number k represents the size of step between two men in the circle.
 
 Follow an example with 5 men and step 2: In this example the remaining
 element is 3.
+
+![](imgs/UOJ_1030_b.jpg)
 
 The data must be read from standard input.
 
