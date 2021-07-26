@@ -4,7 +4,7 @@
 (defn main []
   (loop [line (read-line)
          result 0.0]
-    (if (= ":done" line)
+    (if (not line)
       result
       (let [[_ b c] (str/split line #" ")
             b' (Double/parseDouble b)
