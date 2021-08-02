@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main () {
+int main() {
     int32_t x;
 
     while (std::cin >> x) {
