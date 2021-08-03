@@ -1,4 +1,4 @@
-FROM mono:5.20.1
+FROM mono:5.10.1
 
 RUN mkdir /code
 WORKDIR /code
