@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main() {
-    uint16_t a, b;
+    uint32_t a, b;
 
     while (scanf("%u %u", &a, &b) != EOF) {
         printf("%u\n", a ^ b);
