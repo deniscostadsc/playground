@@ -1,5 +1,5 @@
-#include <iostream>
 #include <cstdint>
+#include <iostream>
 
 int main() {
     int32_t l, d, k, p, result;
