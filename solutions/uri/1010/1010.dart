@@ -5,7 +5,6 @@ void main() {
   double c, result = 0.0;
   String line;
 
-
   while ((line = stdin.readLineSync()) != null) {
     var numbers = line.split(' ');
     b = int.parse(numbers[1]);
