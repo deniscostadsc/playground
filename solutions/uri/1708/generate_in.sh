@@ -20,14 +20,14 @@ for _ in $(seq $TEST_CASES); do
 
     echo "$x $y"
 
-    LIMIT_X=$((LIMIT_X + $INCREASE_X))
-    LIMIT_Y=$((LIMIT_Y + $INCREASE_Y))
+    LIMIT_X=$((LIMIT_X + INCREASE_X))
+    LIMIT_Y=$((LIMIT_Y + INCREASE_Y))
 
     if [ $LIMIT_X -gt $MAX_X ]; then
         LIMIT_X=$MAX_X
     fi
 
-    if [ $LIMIT_X -gt $MAX_X ]; then
-        LIMIT_X=$MAX_X
+    if [ $LIMIT_Y -gt $MAX_Y ]; then
+        LIMIT_Y=$MAX_Y
     fi
 done
