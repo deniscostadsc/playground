@@ -30,7 +30,7 @@ int main() {
     while (c--) {
         std::cin >> rajeshs_hand >> sheldons_hand;
         std::cout << rock_paper_scissors_lizard_spock_judge(
-                         rajeshs_hand, sheldons_hand)
+            rajeshs_hand, sheldons_hand)
                   << std::endl;
     }
 

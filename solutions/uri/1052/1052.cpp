@@ -4,18 +4,19 @@
 #include <string>
 
 int main() {
-    char m[12][10] = {"January",
-                      "February",
-                      "March",
-                      "April",
-                      "May",
-                      "June",
-                      "July",
-                      "August",
-                      "September",
-                      "October",
-                      "November",
-                      "December"};
+    char m[12][10]
+        = {"January",
+           "February",
+           "March",
+           "April",
+           "May",
+           "June",
+           "July",
+           "August",
+           "September",
+           "October",
+           "November",
+           "December"};
     int16_t n;
 
     scanf("%d", &n);

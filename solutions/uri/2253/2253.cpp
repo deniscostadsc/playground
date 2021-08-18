@@ -46,9 +46,10 @@ int main() {
     std::string password;
 
     while (std::getline(std::cin, password)) {
-        std::cout << (is_password_valid(password) ? "Senha valida."
-                                                  : "Senha invalida.")
-                  << std::endl;
+        std::cout
+            << (is_password_valid(password) ? "Senha valida."
+                                            : "Senha invalida.")
+            << std::endl;
     }
 
     return 0;

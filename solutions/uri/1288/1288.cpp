@@ -43,10 +43,11 @@ int main() {
         std::cin >> k;
         std::cin >> resistance;
 
-        std::cout << (mission_successful(power, weight, n, k, resistance)
-                          ? "Missao completada com sucesso"
-                          : "Falha na missao")
-                  << std::endl;
+        std::cout
+            << (mission_successful(power, weight, n, k, resistance)
+                    ? "Missao completada com sucesso"
+                    : "Falha na missao")
+            << std::endl;
     }
     return 0;
 }

@@ -90,7 +90,7 @@ __clj-lint-build:
 
 __cpp-format-code: __cpp-lint-build
 	@$(DOCKER_RUN) $(CPP)-lint \
-			clang-format-7 \
+			clang-format \
 				--style=file \
 				-i \
 				$$(find . -name '*.cpp') \
@@ -111,7 +111,7 @@ __cpp-lint: __cpp-lint-build
 			--filter="-legal/copyright,-runtime/arrays" .
 	@$(DOCKER_RUN) $(CPP)-lint \
 		scripts/run-clang-format.py \
-			--clang-format-executable=clang-format-7 \
+			--clang-format-executable=clang-format \
 			-r .
 
 __cpp-lint-build:

@@ -24,7 +24,7 @@ int main() {
              i++) {
             if (laugh_vowels[i]
                 != laugh_vowels
-                       [static_cast< int16_t >(laugh_vowels.size()) - 1 - i]) {
+                    [static_cast< int16_t >(laugh_vowels.size()) - 1 - i]) {
                 is_funniest = false;
             }
         }
