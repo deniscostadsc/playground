@@ -7,10 +7,11 @@
 *.swp
 *~
 .DS_Store
+.cache
 .calva/
 .vscode
-\?/
 Main.class
+\?/
 main.cmi
 main.cmo
 result-*.txt

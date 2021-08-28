@@ -14,6 +14,7 @@
 	__py-format-code \
 	__py-lint \
 	__py-lint-build \
+	__py-lint-update-requirements \
 	__run_build \
 	__shell-lint \
 	__shell-lint-build \
@@ -155,6 +156,9 @@ __py-lint: __py-lint-build
 
 __py-lint-build:
 	@$(DOCKER_BUILD) .docker/lint/$(PY)-lint.Dockerfile -t $(PY)-lint .
+
+__py-lint-update-requirements: __py-lint-build
+	@$(DOCKER_RUN) $(PY)-lint scripts/update-python-requirements-ci.sh
 
 __run-build:
 	@for language in $(LANGUAGES); do \

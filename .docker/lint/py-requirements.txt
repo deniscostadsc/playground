@@ -1,0 +1,3 @@
+blue
+flake8
+isort
