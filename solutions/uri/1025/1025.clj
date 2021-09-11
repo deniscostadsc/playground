@@ -2,30 +2,35 @@
   (:require
    [clojure.string :as str]))
 
-(defn binary-search [value array]
+(defn binary-search [_ _]
   1)
 
-;; (defn binary-search [value array]
+;; (defn binary-search [value items]
 ;;   (loop [begin 0
-;;          end (-> (count array) (dec))
-;;          middle (-> (+ begin end) (quot 2))]
+;;          end (-> (count items)
+;;                  (dec))
+;;          middle (-> (+ begin end)
+;;                     (quot 2))]
+;;     (if  (> begin end)
+;;       -1
+;;       (cond
+;;         (< (items middle) value)
+;;         (recur (inc middle)
+;;                end
+;;                (-> (+ begin end)
+;;                    (quot 2)))
 
-;;     (when (> begin end) -1)
+;;         (or (> (items middle) value)
+;;             (and (> middle 0)
+;;                  (== (items (dec middle)) value)))
+;;         (recur
+;;          begin
+;;          (dec middle)
+;;          (-> (+ begin end)
+;;              (quot 2)))
 
-;;     (cond
-;;       (< (array middle) value)
-;;       (recur (inc middle) end (-> (+ begin end) (quot 2)))
-
-;;       (or (> (array middle) value)
-;;           (and (> middle 0)
-;;                (== (array (dec middle)) value)))
-;;       (recur begin (dec middle) (-> (+ begin end) (quot 2)))
-
-;;       :else
-;;       (inc middle))))
-
-;; (defn read-values [total]
-;;   [5 4 3 2 1])
+;;         :else
+;;         (inc middle)))))
 
 (defn read-values [total]
   (loop [reverse-index total
@@ -54,25 +59,8 @@
                      (map #(Integer/parseInt %)))
           marbles (sort (read-values n))
           all-queries (reverse (read-values q))]
-      (process-and-print index marbles all-queries)
       (when (and (not= n 0) (not= q 0))
+        (process-and-print index marbles all-queries)
         (recur (read-line) (inc index))))))
-
-;; (defn main []
-;;   (loop [line (read-line)]
-;;     (let [[n q] (->> (str/split line #" ")
-;;                      (map #(Integer/parseInt %)))
-;;           marbles (sort (read-values n))
-;;           all-queries (read-values q)]
-;;       (loop [rest-queries all-queries]
-;;         (let [query (first rest-queries)
-;;               position (binary-search query marbles)]
-;;           (if (>= position 0)
-;;             (printf "%d found at %d%n" query position)
-;;             (printf "%d not found%n" query)))
-;;         (when (seq? (rest rest-queries))
-;;           (recur (rest rest-queries))))
-;;       (when (and (not= n 0) (not= q 0))
-;;         (recur (read-line))))))
 
 (main)
