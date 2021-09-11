@@ -209,7 +209,7 @@ else
 	@echo ""
 endif
 
-run: __run-build
+run: clean __run-build
 	@./scripts/run-problems.sh "$(FOLDERS)" "$(LANGUAGES)" "$(DOCKER_RUN)"
 
 wrong:
