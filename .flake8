@@ -1,4 +1,4 @@
 [flake8]
 extend-ignore = E203
-inline-quotes = double
+inline-quotes = single
 max-line-length = 88
