@@ -21,7 +21,7 @@
           (recur begin
                  (dec middle))
 
-          :default
+          :else
           (inc middle))))))
 
 (defn read-values [total]
