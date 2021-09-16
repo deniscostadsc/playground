@@ -7,8 +7,7 @@
          end (-> (count items)
                  (dec))]
     (let [middle (-> (+ begin end)
-                     (quot 2))
-          items (vec items)]
+                     (quot 2))]
       (if  (> begin end)
         -1
         (cond
@@ -25,17 +24,16 @@
           :else
           (inc middle))))))
 
-(defn read-values [total]
-  (loop [reverse-index total
+(defn read-values [total-lines]
+  (loop [current-line total-lines
          vals []]
-    (if (== reverse-index 0)
+    (if (== current-line 0)
       vals
-      (recur (dec reverse-index)
-             (concat vals [(Integer/parseInt (read-line))])))))
+      (recur (dec current-line)
+             (cons (Integer/parseInt (read-line)) vals)))))
 
-
-(defn process-print [index marbles queries]
-  (printf "CASE# %d:%n" index)
+(defn process-print [test-case-index marbles queries]
+  (printf "CASE# %d:%n" test-case-index)
   (loop [queries queries]
     (let [query (first queries)
           position (binary-search query marbles)]
@@ -47,13 +45,16 @@
 
 (defn main []
   (loop [line (read-line)
-         index 1]
+         test-case-index 1]
     (let [[n q] (->> (str/split line #" ")
                      (map #(Integer/parseInt %)))
-          marbles (sort (read-values n))
-          queries (read-values q)]
+          marbles (-> (read-values n)
+                      (sort)
+                      (vec))
+          queries (-> (read-values q)
+                      (reverse))]
       (when (and (not= n 0) (not= q 0))
-        (process-print index marbles queries)
-        (recur (read-line) (inc index))))))
+        (process-print test-case-index marbles queries)
+        (recur (read-line) (inc test-case-index))))))
 
 (main)
