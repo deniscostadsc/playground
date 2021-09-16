@@ -23,9 +23,9 @@ The following tasks are available in the Makefile:
 
 ```shell
 make clean  # remove files created by the run task
-make format-code  # format all code
 make languages  # show numbers of solutions in different languages per folder
 make lint  # check lint for all solutions
+make lint-fix  # format all code
 make new-problem FOLDER=path/to/create/  # create solution template
 make run  # run and test all past solutions
 make run FOLDER=sub/path/to/run  # run and test a specific sub-folder
