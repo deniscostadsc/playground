@@ -7,7 +7,8 @@
          end (-> (count items)
                  (dec))]
     (let [middle (-> (+ begin end)
-                     (quot 2))]
+                     (quot 2))
+          items (vec items)]
       (if  (> begin end)
         -1
         (cond
