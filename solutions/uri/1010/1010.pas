@@ -2,28 +2,27 @@ Uses types,
      strutils,
      sysutils;
 
-Var line, line2 : String;
-    b, c, s, ss : Double;
-    numbers, bumners : TStringDynArray;
+Var stdin : text;
+    line : String;
+    b, c, result : Double;
+    numbers : TStringDynArray;
 
 begin
-    s := 0.0;
-    read(line);
-    read(line2);
-    WriteLn(line);
-    WriteLn('++++');
-    numbers := SplitString(line, ' ');
-    val(numbers[1], b);
-    val(numbers[2], c);
-    s := s + (b * c);
+    result := 0.0;
 
-    // read(line2);
-    WriteLn(line2);
-    WriteLn('----');
-    bumners := SplitString(line2, ' ');
-    val(bumners[1], b);
-    val(bumners[2], c);
-    ss := s + (b * c);
+    assign(stdin, '');
+    reset(stdin);
 
-    WriteLn(Format('VALOR A PAGAR: R$ %.2f', [ss]));
+    while not eof(stdin) do
+    begin
+        readln(stdin, line);
+        numbers := SplitString(line, ' ');
+        val(numbers[1], b);
+        val(numbers[2], c);
+        result := result + (b * c);
+    end;
+
+    close(stdin);
+
+    writeln(Format('VALOR A PAGAR: R$ %.2f', [result]));
 end.
