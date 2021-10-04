@@ -182,6 +182,7 @@ clean:
 	@find . -name '*.hi' -delete
 	@find . -name '*.o' -delete
 	@find . -name '*.out' -delete
+	@find . -name 'Main.java' -delete
 	@find . -name 'result-*.txt' -delete
 	@find . -type d -name "META-INF" -exec rm -rf {} +
 	@find . -type d -name "\?" -exec rm -rf {} +
