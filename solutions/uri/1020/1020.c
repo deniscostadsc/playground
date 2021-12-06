@@ -2,9 +2,11 @@
 #include <stdio.h>
 
 int main() {
-    int16_t t, a = 0, m = 0, d = 0;
+    int16_t t, a, m, d;
 
     while (scanf("%d", &t) != EOF) {
+        a = 0, m = 0, d = 0;
+
         if (t >= 365) {
             a = t / 365;
             t %= 365;
