@@ -12,7 +12,7 @@ RUN cd /bin && \
 CMD /bin/wait-for-it.sh database-server:5432 && \
     cd $PROBLEM && \
     if [ "$(find . -name '*.sql' | wc -l)" -eq 3 ]; then \
-        psql -h database-server -d uri -U uri < schema.sql && \
-        psql -h database-server -d uri -U uri < $(eval "echo ????.sql") > result-sql.txt && \
-        psql -h database-server -d uri -U uri < drop-table.sql; \
+        psql -h database-server -d beecrowd -U beecrowd < schema.sql && \
+        psql -h database-server -d beecrowd -U beecrowd < $(eval "echo ????.sql") > result-sql.txt && \
+        psql -h database-server -d beecrowd -U beecrowd < drop-table.sql; \
     fi

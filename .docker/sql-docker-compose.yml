@@ -15,7 +15,7 @@ services:
   database-server:
     image: postgres:9.4.19
     environment:
-      POSTGRES_DB: uri
-      POSTGRES_USER: uri
+      POSTGRES_DB: beecrowd
+      POSTGRES_USER: beecrowd
     volumes:
         - /tmp/db:/var/lib/postgresql/data

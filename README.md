@@ -5,6 +5,7 @@
 In this repository, you'll see my solutions for programming/security
 challenges/contest sites. Here you can find my solutions for:
 
+- [Beecrowd](https://www.beecrowd.com.br/)
 - [Codeforces](https://codeforces.com/)
 - [Facebook Hacker Cup](https://www.facebook.com/codingcompetitions/hacker-cup)
 - [GeeksForGeeks](https://www.geeksforgeeks.org/)
@@ -12,9 +13,8 @@ challenges/contest sites. Here you can find my solutions for:
 - [OverTheWire](https://overthewire.org/wargames/)
 - [Project Euler](https://projecteuler.net/)
 - [Rosalind](http://rosalind.info/problems/locations/)
-- [SPOJ](https://www.spoj.com/)
 - [SPOJ-br](https://br.spoj.com/)
-- [URI Online Judge](https://www.urionlinejudge.com.br/j)
+- [SPOJ](https://www.spoj.com/)
 - [UVA](https://onlinejudge.org/)
 
 ## Project structure
@@ -66,8 +66,8 @@ The scripts/CI assume a few things:
 Bellow, you can see an example of a problem folder structure:
 
 ```
-$ tree solutions/uri/
-solutions/uri/
+$ tree solutions/beecrowd/
+solutions/beecrowd/
 ├── 1000
 │   ├── 1000.c
 │   ├── 1000.clj
