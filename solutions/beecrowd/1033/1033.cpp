@@ -61,7 +61,8 @@ int main() {
     t = 1;
 
     while (std::cin >> n >> b && n || b) {
-        std::cout << "Case " << t << ": " << n << " " << b << " " << leonardo(n) % b << std::endl;
+        std::cout << "Case " << t << ": " << n << " " << b << " "
+                  << leonardo(n) % b << std::endl;
 
         t++;
     }
