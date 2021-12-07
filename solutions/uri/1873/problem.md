@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/1873
+https://www.beecrowd.com.br/judge/en/problems/view/1873
 
 # Rock-paper-scissors-lizard-Spock
 

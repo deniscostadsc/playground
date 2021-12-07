@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/2152
+https://www.beecrowd.com.br/judge/en/problems/view/2152
 
 # Pepe, I Already Took the Candle!
 

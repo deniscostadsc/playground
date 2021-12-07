@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1036
+http://www.beecrowd.com.br/judge/problems/view/1036
 
 Read 3 floating-point numbers. After, print the roots of
 bhaskara’s formula. If was impossible to calculate the roots

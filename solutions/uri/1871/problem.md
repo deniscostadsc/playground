@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/1871
+https://www.beecrowd.com.br/judge/en/problems/view/1871
 
 # Zero means Zero
 

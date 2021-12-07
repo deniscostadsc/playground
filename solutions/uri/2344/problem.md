@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/2344
+https://www.beecrowd.com.br/judge/en/problems/view/2344
 
 Rosy é uma talentosa professora do Ensino Médio que já ganhou muitos prêmios
 pela qualidade de sua aula. Seu reconhecimento foi tamanho que foi convidada a

@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/en/problems/view/1249
+http://www.beecrowd.com.br/judge/en/problems/view/1249
 
 Write a program that receives a secret message, and returns this coded
 message. The message is encrypted with a cipher called rot13. Rot13 works as

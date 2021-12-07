@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/2174
+https://www.beecrowd.com.br/judge/en/problems/view/2174
 
 # Pomekon Collection
 

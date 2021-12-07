@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1037
+http://www.beecrowd.com.br/judge/problems/view/1037
 
 The input file contain a float-point number. Your task is to print a
 message saying in which of following intervals the number belongs:

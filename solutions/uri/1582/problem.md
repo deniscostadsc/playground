@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/1582
+https://www.beecrowd.com.br/judge/en/problems/view/1582
 
 # The Pythagorean Theorem
 

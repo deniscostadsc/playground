@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1021
+http://www.beecrowd.com.br/judge/problems/view/1021
 
 # Banknotes and Coins
 

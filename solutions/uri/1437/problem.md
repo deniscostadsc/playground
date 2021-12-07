@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/en/problems/view/1437
+http://www.beecrowd.com.br/judge/en/problems/view/1437
 
 # Turn Left!
 

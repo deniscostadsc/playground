@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/1088
+https://www.beecrowd.com.br/judge/en/problems/view/1088
 https://br.spoj.com/problems/BALDES/
 
 # Bubbles and Buckets

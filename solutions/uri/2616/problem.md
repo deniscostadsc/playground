@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/2616
+https://www.beecrowd.com.br/judge/en/problems/view/2616
 
 # No Rental
 

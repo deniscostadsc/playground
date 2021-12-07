@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/pt/problems/view/2221
+https://www.beecrowd.com.br/judge/pt/problems/view/2221
 
 # Batalha de Pomekons
 

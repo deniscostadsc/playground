@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1015
+http://www.beecrowd.com.br/judge/problems/view/1015
 
 # Distance Between Two Points
 

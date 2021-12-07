@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1174
+http://www.beecrowd.com.br/judge/problems/view/1174
 
 # Array Selection I
 

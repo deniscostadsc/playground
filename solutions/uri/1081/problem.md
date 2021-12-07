@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/1081
+https://www.beecrowd.com.br/judge/en/problems/view/1081
 
 # DFSr - Depth Hierarchy
 

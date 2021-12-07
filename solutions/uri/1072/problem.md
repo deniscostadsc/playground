@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1072
+http://www.beecrowd.com.br/judge/problems/view/1072
 
 Read an integer N. This N will be the number of integer numbers
 X that will be read. Print how many these numbers X are in the

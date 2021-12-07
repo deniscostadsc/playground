@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/2234
+https://www.beecrowd.com.br/judge/en/problems/view/2234
 
 # Hot Dogs
 

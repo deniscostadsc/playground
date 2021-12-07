@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1216
+http://www.beecrowd.com.br/judge/problems/view/1216
 
 # Getline One
 

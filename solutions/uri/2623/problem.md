@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/2623
+https://www.beecrowd.com.br/judge/en/problems/view/2623
 
 # Categories with Various Products
 

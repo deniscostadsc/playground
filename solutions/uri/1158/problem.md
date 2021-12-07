@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1158
+http://www.beecrowd.com.br/judge/problems/view/1158
 
 # Sum of Consecutive Odd Numbers III
 

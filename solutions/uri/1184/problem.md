@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1184
+http://www.beecrowd.com.br/judge/problems/view/1184
 
 # Below the Main Diagonal
 

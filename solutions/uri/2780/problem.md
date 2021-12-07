@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/2780
+https://www.beecrowd.com.br/judge/en/problems/view/2780
 
 # Robot Basketball
 

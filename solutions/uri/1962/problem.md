@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/1962
+https://www.beecrowd.com.br/judge/en/problems/view/1962
 
 # A Long, Long Time Ago
 

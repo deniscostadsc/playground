@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/2766
+https://www.beecrowd.com.br/judge/en/problems/view/2766
 
 # Input and Output Reading and Skipping Names
 

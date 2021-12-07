@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1397
+http://www.beecrowd.com.br/judge/problems/view/1397
 
 # Game of The Greatest
 

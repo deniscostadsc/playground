@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/en/problems/view/1026
+http://www.beecrowd.com.br/judge/en/problems/view/1026
 
 # To Carry or not to Carry
 

@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/2162
+https://www.beecrowd.com.br/judge/en/problems/view/2162
 
 # Peaks and Valleys
 

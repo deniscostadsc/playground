@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/1340
+https://www.beecrowd.com.br/judge/en/problems/view/1340
 
 # I Can Guess the Data Structure!
 

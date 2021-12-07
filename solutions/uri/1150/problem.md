@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1150
+http://www.beecrowd.com.br/judge/problems/view/1150
 
 # Exceeding Z
 

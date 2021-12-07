@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1185
+http://www.beecrowd.com.br/judge/problems/view/1185
 
 # Above the Secundary Diagonal
 

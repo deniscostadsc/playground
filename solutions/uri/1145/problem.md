@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1145
+http://www.beecrowd.com.br/judge/problems/view/1145
 
 # Logical Sequence 2
 

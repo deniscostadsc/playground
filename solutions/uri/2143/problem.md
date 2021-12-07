@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/2143
+https://www.beecrowd.com.br/judge/en/problems/view/2143
 
 # The Return of Radar
 

@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/2253
+https://www.beecrowd.com.br/judge/en/problems/view/2253
 
 # Passwords Validator
 

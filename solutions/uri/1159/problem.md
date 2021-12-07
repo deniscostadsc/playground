@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1159
+http://www.beecrowd.com.br/judge/problems/view/1159
 
 # Sum of Consecutive Even Numbers
 

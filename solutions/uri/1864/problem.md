@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/1864
+https://www.beecrowd.com.br/judge/en/problems/view/1864
 
 # Our Days Are Never Coming Back
 

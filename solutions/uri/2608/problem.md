@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/2608
+https://www.beecrowd.com.br/judge/en/problems/view/2608
 
 # Higher and Lower Price
 

@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1020
+http://www.beecrowd.com.br/judge/problems/view/1020
 
 # Age in Days
 

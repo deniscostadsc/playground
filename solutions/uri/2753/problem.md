@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/2753
+https://www.beecrowd.com.br/judge/en/problems/view/2753
 
 # Output 7
 

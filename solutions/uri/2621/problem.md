@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/2621
+https://www.beecrowd.com.br/judge/en/problems/view/2621
 
 # Amounts Between 10 and 20
 

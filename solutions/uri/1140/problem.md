@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/en/problems/view/1140
+http://www.beecrowd.com.br/judge/en/problems/view/1140
 
 # Flowers Flourish from France
 

@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/1789
+https://www.beecrowd.com.br/judge/en/problems/view/1789
 
 # The Race of Slugs
 

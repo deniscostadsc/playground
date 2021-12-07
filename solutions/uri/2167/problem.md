@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/2167
+https://www.beecrowd.com.br/judge/en/problems/view/2167
 
 # Engine Failure
 

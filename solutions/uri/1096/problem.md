@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1096
+http://www.beecrowd.com.br/judge/problems/view/1096
 
 # Sequence IJ 2
 

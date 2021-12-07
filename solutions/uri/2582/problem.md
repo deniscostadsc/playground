@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/2582
+https://www.beecrowd.com.br/judge/en/problems/view/2582
 
 # System of a Download
 

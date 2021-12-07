@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/1076
+https://www.beecrowd.com.br/judge/en/problems/view/1076
 
 # Design Labirints
 

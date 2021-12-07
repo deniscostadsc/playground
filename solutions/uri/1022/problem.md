@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/pt/problems/view/1022
+http://www.beecrowd.com.br/judge/pt/problems/view/1022
 
 # TDA Racional
 

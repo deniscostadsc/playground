@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1156
+http://www.beecrowd.com.br/judge/problems/view/1156
 
 # S Sequence II
 

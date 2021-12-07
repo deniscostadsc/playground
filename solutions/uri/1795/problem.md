@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/1795
+https://www.beecrowd.com.br/judge/en/problems/view/1795
 
 # Trinomial Triangle
 

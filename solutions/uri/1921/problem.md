@@ -1,4 +1,4 @@
-https://www.urionlinejudge.com.br/judge/en/problems/view/1921
+https://www.beecrowd.com.br/judge/en/problems/view/1921
 
 # Guilherme and His Kites
 

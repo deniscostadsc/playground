@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/en/problems/view/1030
+http://www.beecrowd.com.br/judge/en/problems/view/1030
 
 # Flavious Josephus Legend
 

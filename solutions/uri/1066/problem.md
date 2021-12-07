@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/problems/view/1066
+http://www.beecrowd.com.br/judge/problems/view/1066
 
 # Even, Odd, Positive and Negative
 

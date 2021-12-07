@@ -1,4 +1,4 @@
-http://www.urionlinejudge.com.br/judge/en/problems/view/1555
+http://www.beecrowd.com.br/judge/en/problems/view/1555
 
 # Functions
 
