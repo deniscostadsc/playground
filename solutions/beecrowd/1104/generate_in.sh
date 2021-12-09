@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 for _ in $(seq 100); do
     a=$((RANDOM % 100 + 1))

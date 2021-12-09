@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 testcases_qty=300
 

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 TESTCASES=300
 MINIMUM_N=5

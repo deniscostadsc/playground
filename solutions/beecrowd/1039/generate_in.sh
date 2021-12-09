@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 for (( i = 0; i < 1000; i++ )); do
     r1=$((RANDOM % 1000 + 1))
