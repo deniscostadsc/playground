@@ -74,10 +74,17 @@ ifdef LANGUAGE
 LANGUAGES := $(LANGUAGE)
 endif
 
+FOLDER_EXISTS = 0
+ifneq ("$(wildcard $(FOLDER))","")
+    FOLDER_EXISTS = 1
+endif
+
 ifdef FOLDER
-FOLDERS := $(shell find $(FOLDER) -name 'problem.md' | sed 's/problem.md//g' | sort)
+	ifeq ("$(FOLDER_EXISTS)","1")
+		FOLDERS := $(shell find $(FOLDER) -name 'problem.md' | sed 's/problem.md//g' | sort)
+	endif
 else
-FOLDERS := $(shell find . -name 'problem.md' | sed 's/problem.md//g' | sort)
+	FOLDERS := $(shell find . -name 'problem.md' | sed 's/problem.md//g' | sort)
 endif
 
 DOCKER_RUN := docker run -v $$(pwd):/code -u "$$(id -u):$$(id -g)"
