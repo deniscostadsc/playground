@@ -3,7 +3,7 @@
 set -euo pipefail
 
 PROBLEM_FOLDER=$1
-LANGUAGES="$2 sql"
+LANGUAGES="$2"
 EXIT_STATUS=0
 
 cd "$PROBLEM_FOLDER" || exit 1
