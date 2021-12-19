@@ -4,7 +4,6 @@ const PI = 3.14159
 
 const rl = readline.createInterface({
   input: process.stdin,
-  output: process.stdout,
   terminal: false
 });
 
