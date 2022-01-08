@@ -8,7 +8,7 @@ const rl = readline.createInterface({
 let evenLine = false
 let previousLine
 
-(() => {
+;(() => {
   rl.on('line', (line) => {
     const n = parseFloat(line)
 

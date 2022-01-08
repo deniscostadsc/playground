@@ -3,9 +3,9 @@ const readline = require('readline')
 const rl = readline.createInterface({
   input: process.stdin,
   terminal: false
-});
+})
 
-(() => {
+;(() => {
   rl.on('line', (line) => {
     const [a, b, c] = line.split(' ').map(x => parseInt(x))
 

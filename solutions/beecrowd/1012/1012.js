@@ -5,9 +5,9 @@ const PI = 3.14159
 const rl = readline.createInterface({
   input: process.stdin,
   terminal: false
-});
+})
 
-(() => {
+;(() => {
   rl.on('line', (line) => {
     const [a, b, c] = line.split(' ').map(x => parseFloat(x))
 

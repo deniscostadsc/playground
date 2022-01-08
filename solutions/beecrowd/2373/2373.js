@@ -3,9 +3,9 @@ const readline = require('readline')
 const rl = readline.createInterface({
   input: process.stdin,
   terminal: false
-});
+})
 
-(() => {
+;(() => {
   let totalBrokenglasses = 0
   let firstLine = true
 

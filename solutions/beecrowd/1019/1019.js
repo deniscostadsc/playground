@@ -3,9 +3,9 @@ const readline = require('readline')
 const rl = readline.createInterface({
   input: process.stdin,
   terminal: false
-});
+})
 
-(() => {
+;(() => {
   rl.on('line', (line) => {
     let n = parseInt(line)
     let h = 0
