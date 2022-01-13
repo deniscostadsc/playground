@@ -5,7 +5,7 @@ const rl = readline.createInterface({
   terminal: false
 })
 
-;(() => {
+const main = () => {
   let s = 0.0
   let c = 0.0
 
@@ -22,4 +22,6 @@ const rl = readline.createInterface({
     console.log(`${c} valores positivos`)
     console.log(`${(s / c).toFixed(1)}`)
   })
-})()
+}
+
+main()

@@ -5,7 +5,7 @@ const rl = readline.createInterface({
   terminal: false
 })
 
-;(() => {
+const main = () => {
   rl.on('line', (line) => {
     let n = parseInt(line)
     let h = 0
@@ -22,4 +22,6 @@ const rl = readline.createInterface({
 
     console.log(`${h}:${m}:${n}`)
   })
-})()
+}
+
+main()

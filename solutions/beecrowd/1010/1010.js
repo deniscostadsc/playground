@@ -5,7 +5,7 @@ const rl = readline.createInterface({
   terminal: false
 })
 
-;(() => {
+const main = () => {
   let s = 0.0
 
   rl.on('line', (line) => {
@@ -17,4 +17,6 @@ const rl = readline.createInterface({
   rl.on('close', () => {
     console.log(`VALOR A PAGAR: R$ ${s.toFixed(2)}`)
   })
-})()
+}
+
+main()

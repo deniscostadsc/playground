@@ -20,11 +20,13 @@ const printChange = (moneyType, moneyUnits, currentValue) => {
   return currentValue
 }
 
-;(() => {
+const main = () => {
   rl.on('line', (line) => {
     let totalValue = parseFloat(line) * 100
 
     totalValue = printChange('nota', bills, totalValue)
     printChange('moeda', coins, totalValue)
   })
-})()
+}
+
+main()

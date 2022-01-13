@@ -5,7 +5,7 @@ const rl = readline.createInterface({
   terminal: false
 })
 
-;(() => {
+const main = () => {
   rl.on('line', (line) => {
     const [a, b, c] = line.split(' ').map(x => parseInt(x))
 
@@ -14,4 +14,6 @@ const rl = readline.createInterface({
 
     console.log(`${m} eh o maior`)
   })
-})()
+}
+
+main()

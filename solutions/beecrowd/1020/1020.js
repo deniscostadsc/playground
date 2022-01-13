@@ -5,7 +5,7 @@ const rl = readline.createInterface({
   terminal: false
 })
 
-;(() => {
+const main = () => {
   rl.on('line', (line) => {
     let a = 0
     let m = 0
@@ -25,4 +25,6 @@ const rl = readline.createInterface({
     console.log(`${m} mes(es)`)
     console.log(`${t} dia(s)`)
   })
-})()
+}
+
+main()

@@ -7,7 +7,7 @@ const rl = readline.createInterface({
   terminal: false
 })
 
-;(() => {
+const main = () => {
   rl.on('line', (line) => {
     const [a, b, c] = line.split(' ').map(x => parseFloat(x))
 
@@ -17,4 +17,6 @@ const rl = readline.createInterface({
     console.log(`QUADRADO: ${(b * b).toFixed(3)}`)
     console.log(`RETANGULO: ${(a * b).toFixed(3)}`)
   })
-})()
+}
+
+main()

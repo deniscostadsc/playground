@@ -5,7 +5,7 @@ const rl = readline.createInterface({
   terminal: false
 })
 
-;(() => {
+const main = () => {
   let totalBrokenglasses = 0
   let firstLine = true
 
@@ -25,4 +25,6 @@ const rl = readline.createInterface({
   rl.on('close', () => {
     console.log(`${totalBrokenglasses}`)
   })
-})()
+}
+
+main()
