@@ -7,10 +7,10 @@ for line in sys.stdin:
         break
 
     if x > 0 and y > 0:
-        print("primeiro")
+        print('primeiro')
     elif x < 0 and y < 0:
-        print("terceiro")
+        print('terceiro')
     elif x < 0:
-        print("segundo")
+        print('segundo')
     else:
-        print("quarto")
+        print('quarto')
