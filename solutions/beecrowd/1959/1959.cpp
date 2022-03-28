@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    uint32_t n, l;
+    uint64_t n, l;
 
     while (std::cin >> n >> l) {
         std::cout << n * l << std::endl;
