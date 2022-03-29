@@ -23,9 +23,9 @@
     (when line
       (let [value (-> line
                       (Double/parseDouble))]
-            (-> (* value 100)
-                (print-result notas "nota")
-                (print-result coins "moeda"))
+        (-> (* value 100)
+            (print-result notas "nota")
+            (print-result coins "moeda"))
         (recur (read-line))))))
 
 (main)
