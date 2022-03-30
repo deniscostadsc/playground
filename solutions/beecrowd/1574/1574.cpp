@@ -1,20 +1,18 @@
 #include <cstdint>
-#include <cstdio>
 #include <iostream>
 #include <string>
 
 int main() {
-    int16_t i, t, n, index, position, commands[102];
-    std::string command;
+    std::int16_t i, t, n, previous_index, position, commands[101];
+    std::string command, _junk;
 
-    scanf("%d", &t);
+    std::cin >> t;
 
     while (t--) {
-        i = 1;
         position = 0;
 
-        scanf("%d", &n);
-        while (i <= n) {
+        std::cin >> n;
+        for (i = 1; i <= n; i ++) {
             std::cin >> command;
 
             if (command == "LEFT") {
@@ -24,15 +22,13 @@ int main() {
                 position++;
                 commands[i] = 1;
             } else {
-                scanf(" AS %d", &index);
-                position += commands[index];
-                commands[i] = commands[index];
+                std::cin >> _junk >> previous_index;
+                position += commands[previous_index];
+                commands[i] = commands[previous_index];
             }
-
-            i++;
         }
 
-        printf("%d\n", position);
+        std::cout << position << std::endl;
     }
 
     return 0;
