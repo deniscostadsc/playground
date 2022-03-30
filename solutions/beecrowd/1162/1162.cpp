@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t i, j, x, n, l, swap;
+    std::int16_t i, j, x, n, l, swap;
     bool swapped;
 
     std::cin >> n;
@@ -11,7 +11,7 @@ int main() {
         std::cin >> l;
         swap = 0;
 
-        int16_t train[l];
+        std::int16_t train[l];
 
         for (i = 0; i < l; i++) {
             std::cin >> train[i];

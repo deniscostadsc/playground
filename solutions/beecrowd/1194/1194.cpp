@@ -3,7 +3,7 @@
 #include <string>
 
 void post_from_pre_in(std::string pre, std::string in) {
-    int16_t in_root_index = in.find(pre[0]);
+    std::int16_t in_root_index = in.find(pre[0]);
 
     if (in.substr(0, in_root_index).length() > 0) {
         post_from_pre_in(pre.substr(1), in.substr(0, in_root_index));
@@ -18,7 +18,7 @@ void post_from_pre_in(std::string pre, std::string in) {
 }
 
 int main() {
-    int16_t c, n;
+    std::int16_t c, n;
     std::string pre, in;
 
     std::cin >> c;

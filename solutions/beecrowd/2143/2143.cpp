@@ -1,10 +1,10 @@
 #include <iostream>
 
 int main() {
-    int16_t t, n;
+    std::int16_t t, n;
 
     while (std::cin >> t && t != 0) {
-        for (int16_t i = 0; i < t; i++) {
+        for (std::int16_t i = 0; i < t; i++) {
             std::cin >> n;
 
             if (n % 2 == 0) {

@@ -3,8 +3,8 @@
 #include <string>
 
 int main() {
-    int16_t n, l, current, sum;
-    uint16_t i;
+    std::int16_t n, l, current, sum;
+    std::uint16_t i;
     std::string word, alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     std::cin >> n;

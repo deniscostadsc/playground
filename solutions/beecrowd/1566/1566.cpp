@@ -4,9 +4,9 @@
 #include <vector>
 
 int main() {
-    int32_t nc, n, h;
-    std::vector< int32_t > heights;
-    std::vector< int32_t >::iterator it;
+    std::int32_t nc, n, h;
+    std::vector< std::int32_t > heights;
+    std::vector< std::int32_t >::iterator it;
 
     scanf("%d", &nc);
 

@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-    int32_t x;
+    std::int32_t x;
 
     while (std::cin >> x) {
         if (x % 2 == 0) {

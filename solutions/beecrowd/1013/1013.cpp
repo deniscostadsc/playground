@@ -1,8 +1,9 @@
 #include <cmath>
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int16_t a, b, c, m;
+    std::int16_t a, b, c, m;
 
     while (scanf("%d %d %d", &a, &b, &c) != EOF) {
         m = (a + b + std::abs(a - b)) / 2;

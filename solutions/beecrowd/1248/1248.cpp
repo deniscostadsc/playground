@@ -5,7 +5,7 @@
 #include <vector>
 
 int main() {
-    int16_t n;
+    std::int16_t n;
     std::string foods, breakfast, lunch, dinner;
     bool cheater;
 

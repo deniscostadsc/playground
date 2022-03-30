@@ -2,7 +2,7 @@
 #include <cstdio>
 
 int main() {
-    int16_t x, y, z, d;
+    std::int16_t x, y, z, d;
 
     while (scanf("%d.%d.%d-%d", &x, &y, &z, &d) != EOF) {
         printf("%03d\n", x);

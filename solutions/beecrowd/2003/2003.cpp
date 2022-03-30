@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    int16_t hour, minute, late;
+    std::int16_t hour, minute, late;
 
     while (scanf("%d:%d", &hour, &minute) != EOF) {
         std::cout << "Atraso maximo: "

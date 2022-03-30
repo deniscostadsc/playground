@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n;
+    std::int16_t n;
     double s, b, a, service_attempt, service_successful, block_attempt,
         block_successful, attack_attempt, attack_successful;
     std::string name;

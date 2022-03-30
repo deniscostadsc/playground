@@ -3,8 +3,8 @@
 #include <string>
 
 int main() {
-    int16_t n;
-    uint16_t i;
+    std::int16_t n;
+    std::uint16_t i;
     bool first;
     std::string s;
 

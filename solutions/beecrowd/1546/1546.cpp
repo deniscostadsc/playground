@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n, d, f;
+    std::int16_t n, d, f;
 
     std::cin >> n;
 

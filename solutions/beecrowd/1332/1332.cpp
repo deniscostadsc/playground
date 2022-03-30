@@ -3,7 +3,7 @@
 #include <cstring>
 
 int main() {
-    int16_t n;
+    std::int16_t n;
     char s[6];
 
     scanf("%d", &n);

@@ -6,7 +6,7 @@
 #include <string>
 
 int main() {
-    int16_t n, c;
+    std::int16_t n, c;
     double p, prices, k, kilos = 0;
     std::string s;
 

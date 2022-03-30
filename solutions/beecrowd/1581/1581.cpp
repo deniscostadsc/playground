@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n, k;
+    std::int16_t n, k;
     std::string language, previous_language;
     bool all_languages_equal;
 

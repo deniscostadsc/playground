@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t d;
+    std::int16_t d;
 
     while (std::cin >> d) {
         if (d <= 800) {

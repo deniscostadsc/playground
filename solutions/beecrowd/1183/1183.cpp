@@ -3,7 +3,7 @@
 
 int main() {
     char o;
-    int16_t i, j, x = 0;
+    std::int16_t i, j, x = 0;
     float s = 0, n;
 
     scanf("%c", &o);

@@ -3,8 +3,8 @@
 #include <string>
 
 int main() {
-    int16_t q;
-    uint16_t i, n;
+    std::int16_t q;
+    std::uint16_t i, n;
     std::string c;
     std::string d = "NLSO";
 

@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int32_t a, b;
+    std::int32_t a, b;
 
     while (std::cin >> a >> b && a && b) {
         if (a < b) {

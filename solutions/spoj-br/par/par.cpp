@@ -2,7 +2,7 @@
 #include <string>
 
 int main() {
-    int16_t n, i = 1, a, b;
+    std::int16_t n, i = 1, a, b;
     std::string first_player, second_player;
 
     while (std::cin >> n && n) {

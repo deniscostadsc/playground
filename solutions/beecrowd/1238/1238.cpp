@@ -3,7 +3,7 @@
 #include <string>
 
 int main() {
-    uint16_t i, n, l;
+    std::uint16_t i, n, l;
     std::string a, b;
 
     std::cin >> n;

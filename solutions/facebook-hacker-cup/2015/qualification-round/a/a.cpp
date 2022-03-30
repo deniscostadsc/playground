@@ -3,7 +3,7 @@
 #include <string>
 
 int main() {
-    int16_t t, j, k, i = 1;
+    std::int16_t t, j, k, i = 1;
     std::string n, lowest, greatest, copy;
     char c;
 

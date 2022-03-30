@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    int16_t a, b, c;
+    std::int16_t a, b, c;
 
     while (std::cin >> a && a) {
         std::cin >> b >> c;

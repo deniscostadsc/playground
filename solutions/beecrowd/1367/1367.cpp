@@ -5,7 +5,7 @@
 #include <string>
 
 int main() {
-    int16_t n, time, total_time, count, extra_time[26];
+    std::int16_t n, time, total_time, count, extra_time[26];
     char letter;
     std::string status, letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 

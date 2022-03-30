@@ -2,7 +2,7 @@
 #include <cstring>
 #include <iostream>
 
-uint64_t grains(uint64_t n) {
+std::uint64_t grains(std::uint64_t n) {
     if (n == 1) {
         return 2;
     }
@@ -10,8 +10,8 @@ uint64_t grains(uint64_t n) {
 }
 
 int main() {
-    int16_t n;
-    uint64_t x;
+    std::int16_t n;
+    std::uint64_t x;
 
     std::cin >> n;
     while (n--) {

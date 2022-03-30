@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-int16_t
+std::int16_t
     rock_paper_scissors_lizard_spock(std::string sheldons, std::string rajs) {
     if (sheldons == rajs) {
         return 0;
@@ -18,7 +18,7 @@ int16_t
 }
 
 int main() {
-    int16_t t, i, result;
+    std::int16_t t, i, result;
     std::string sheldons, rajs;
 
     std::cin >> t;

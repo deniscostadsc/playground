@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t l, c;
+    std::int16_t l, c;
 
     while (std::cin >> l >> c) {
         std::cout << ((l + c) % 2 == 0 ? 1 : 0) << std::endl;

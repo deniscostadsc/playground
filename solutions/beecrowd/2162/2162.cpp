@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n, h, previous_h, direction;
+    std::int16_t n, h, previous_h, direction;
     bool has_pattern;
 
     while (std::cin >> n) {

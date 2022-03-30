@@ -22,7 +22,7 @@ std::string rock_paper_scissors_lizard_spock_judge(
 }
 
 int main() {
-    int16_t c;
+    std::int16_t c;
     std::string sheldons_hand, rajeshs_hand;
 
     std::cin >> c;

@@ -2,9 +2,9 @@
 #include <cstring>
 #include <iostream>
 
-int16_t rfat[10];
+std::int16_t rfat[10];
 
-int16_t fat(int16_t n) {
+std::int16_t fat(std::int16_t n) {
     if (rfat[n] != 0) {
         return rfat[n];
     }
@@ -20,7 +20,7 @@ int16_t fat(int16_t n) {
 
 int main() {
     char n[6];
-    int16_t i, t, s;
+    std::int16_t i, t, s;
 
     // C old school style;
     while (std::cin >> n && n[0] != '0') {

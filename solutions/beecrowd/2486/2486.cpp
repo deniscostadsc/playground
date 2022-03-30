@@ -3,10 +3,10 @@
 #include <map>
 
 int main() {
-    int16_t MIN_VITAMIN_C = 110;
-    int16_t MAX_VITAMIN_C = 130;
+    std::int16_t MIN_VITAMIN_C = 110;
+    std::int16_t MAX_VITAMIN_C = 130;
 
-    int16_t t, n, total_c_vitamin;
+    std::int16_t t, n, total_c_vitamin;
 
     std::string food;
     std::map< std::string, int > vitamin_c_catalogue
@@ -20,7 +20,7 @@ int main() {
 
     while (std::cin >> t && t) {
         total_c_vitamin = 0;
-        for (int16_t i = 0; i < t; i++) {
+        for (std::int16_t i = 0; i < t; i++) {
             std::cin >> n;
             std::getline(std::cin, food);
 

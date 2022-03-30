@@ -3,7 +3,7 @@
 
 int main() {
     char letter;
-    int16_t count = 0;
+    std::int16_t count = 0;
 
     while (std::cin.get(letter)) {
         if (letter != '\n') {

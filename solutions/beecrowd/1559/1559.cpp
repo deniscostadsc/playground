@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n, i, j, board[4][4];
+    std::int16_t n, i, j, board[4][4];
     bool left, right, up, down, none;
 
     std::cin >> n;

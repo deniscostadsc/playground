@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t test_cases, h, m, o;
+    std::int16_t test_cases, h, m, o;
 
     std::cin >> test_cases;
 

@@ -1,9 +1,9 @@
 #include <cstdint>
 #include <cstdio>
 
-int64_t f[61];
+std::int64_t f[61];
 
-int64_t fib(int32_t n) {
+std::int64_t fib(std::int32_t n) {
     if (f[n] != -1) {
         return f[n];
     }
@@ -12,8 +12,8 @@ int64_t fib(int32_t n) {
 }
 
 int main() {
-    int16_t i, j;
-    int64_t n;
+    std::int16_t i, j;
+    std::int64_t n;
     for (j = 0; j <= 60; j++) {
         f[j] = -1;
     }

@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 
-int16_t find(std::vector< int16_t > v, int16_t n) {
+std::int16_t find(std::vector< std::int16_t > v, std::int16_t n) {
     for (std::string::size_type i = 0; i < v.size(); i++) {
         if (n == v.at(i)) {
             return i;
@@ -13,9 +13,9 @@ int16_t find(std::vector< int16_t > v, int16_t n) {
 
 int main() {
     bool valid;
-    int16_t i, j, n, nn = 1;
-    int16_t sudoku[9][9];
-    std::vector< int16_t > line, column, square1, square2, square3;
+    std::int16_t i, j, n, nn = 1;
+    std::int16_t sudoku[9][9];
+    std::vector< std::int16_t > line, column, square1, square2, square3;
 
     std::cin >> n;
     while (nn <= n) {

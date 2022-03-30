@@ -3,7 +3,7 @@
 
 int main() {
     double n;
-    int16_t i;
+    std::int16_t i;
 
     scanf("%lf", &n);
 

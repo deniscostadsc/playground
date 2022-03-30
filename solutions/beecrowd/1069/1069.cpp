@@ -5,7 +5,7 @@
 
 int main() {
     char e[1001];
-    int16_t d, n, c, i;
+    std::int16_t d, n, c, i;
 
     std::cin >> n;
     getchar();  // pra obrigar o cursor ir para a linha de baixo
@@ -16,7 +16,7 @@ int main() {
 
         fgets(e, 1000, stdin);
 
-        for (d = 0; d < static_cast< int16_t >(strlen(e)); d++) {
+        for (d = 0; d < static_cast< std::int16_t >(strlen(e)); d++) {
             if (e[d] == '<') {
                 i++;
             } else if (e[d] == '>' && i - 1 >= 0) {

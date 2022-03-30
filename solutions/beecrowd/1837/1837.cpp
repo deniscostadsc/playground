@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    int16_t a, b, r, q;
+    std::int16_t a, b, r, q;
     bool q_is_zero, negative, positive;
 
     while (std::cin >> a >> b) {

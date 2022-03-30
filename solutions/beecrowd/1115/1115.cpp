@@ -2,7 +2,7 @@
 #include <cstdio>
 
 int main() {
-    int16_t x, y;
+    std::int16_t x, y;
 
     while (scanf("%d %d", &x, &y) != EOF && x != 0 && y != 0) {
         if (x > 0 && y > 0) {

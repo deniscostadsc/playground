@@ -2,21 +2,21 @@
 #include <cstdio>
 #include <vector>
 
-int32_t gp, gc, gf;
-std::vector< std::vector< int32_t > > foods;
+std::int32_t gp, gc, gf;
+std::vector< std::vector< std::int32_t > > foods;
 
-bool still_valid(int32_t p, int32_t c, int32_t f) {
+bool still_valid(std::int32_t p, std::int32_t c, std::int32_t f) {
     return p <= gp && c <= gc && f <= gf;
 }
 
-bool is_ok(int32_t p, int32_t c, int32_t f) {
+bool is_ok(std::int32_t p, std::int32_t c, std::int32_t f) {
     return p == gp && c == gc && f == gf;
 }
 
 bool backtrack(
-    int32_t p, int32_t c, int32_t f, std::vector< int32_t > used_food) {
+    std::int32_t p, std::int32_t c, std::int32_t f, std::vector< std::int32_t > used_food) {
     bool ok = false;
-    int32_t next;
+    std::int32_t next;
 
     if (!still_valid(p, c, f)) {
         return false;
@@ -25,14 +25,14 @@ bool backtrack(
         return true;
     }
 
-    if (static_cast< int32_t >(used_food.size()) == 0) {
+    if (static_cast< std::int32_t >(used_food.size()) == 0) {
         next = 0;
     } else {
         next = used_food[used_food.size() - 1] + 1;
     }
 
-    while (next < static_cast< int32_t >(foods.size())) {
-        std::vector< int32_t > copy_used_food(used_food);
+    while (next < static_cast< std::int32_t >(foods.size())) {
+        std::vector< std::int32_t > copy_used_food(used_food);
         copy_used_food.insert(copy_used_food.end(), next);
         ok = backtrack(
                  p + foods[next][0],
@@ -47,12 +47,12 @@ bool backtrack(
 }
 
 bool can_eat_something() {
-    std::vector< int32_t > e;
+    std::vector< std::int32_t > e;
     return backtrack(0, 0, 0, e);
 }
 
 int main() {
-    int32_t t, n, p, c, f, i = 1;
+    std::int32_t t, n, p, c, f, i = 1;
 
     scanf("%d", &t);
     while (i <= t) {
@@ -60,7 +60,7 @@ int main() {
         scanf("%d", &n);
 
         while (n--) {
-            std::vector< int32_t > food;
+            std::vector< std::int32_t > food;
 
             scanf("%d %d %d ", &p, &c, &f);
 

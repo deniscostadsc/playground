@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t p, j1, j2, r, a, winner;
+    std::int16_t p, j1, j2, r, a, winner;
 
     while (std::cin >> p >> j1 >> j2 >> r >> a) {
         if ((p == 1 && (j1 + j2) % 2 == 0) || (p == 0 && (j1 + j2) % 2 == 1)) {

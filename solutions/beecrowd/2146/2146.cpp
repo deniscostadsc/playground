@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n;
+    std::int16_t n;
 
     while (std::cin >> n) {
         std::cout << (n - 1) << std::endl;

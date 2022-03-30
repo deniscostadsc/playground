@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-std::string dec2bin(int16_t n) {
+std::string dec2bin(std::int16_t n) {
     if (n == 0) {
         return "0";
     }
@@ -17,7 +17,7 @@ std::string dec2bin(int16_t n) {
 }
 
 int main() {
-    int16_t i, h, m, h_binary_length, m_binary_length;
+    std::int16_t i, h, m, h_binary_length, m_binary_length;
     char c;
     std::string h_binary, m_binary;
 
@@ -41,7 +41,7 @@ int main() {
         std::cout << std::endl;
         std::cout << "|   |   ";
 
-        int16_t k = 0;
+        std::int16_t k = 0;
         for (i = 3; i >= 0; i--) {
             if (h_binary_length - 1 >= i) {
                 if (h_binary[k] == '1') {

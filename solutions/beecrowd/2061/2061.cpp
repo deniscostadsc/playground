@@ -2,13 +2,13 @@
 #include <iostream>
 
 int main() {
-    int16_t n, m, open_tabs;
+    std::int16_t n, m, open_tabs;
     std::string command;
 
     while (std::cin >> n >> m) {
         open_tabs = n;
 
-        for (int16_t i = 0; i < m; i++) {
+        for (std::int16_t i = 0; i < m; i++) {
             std::cin >> command;
 
             if (command == "fechou") {

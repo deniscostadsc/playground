@@ -4,7 +4,7 @@
 #include <sstream>
 
 int main() {
-    int16_t i, j, k, n, initial, current, max_number, length_max_number,
+    std::int16_t i, j, k, n, initial, current, max_number, length_max_number,
         length_current, num_spaces;
 
     while (std::cin >> n && n) {

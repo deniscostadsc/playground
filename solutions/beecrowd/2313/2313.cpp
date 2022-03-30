@@ -3,7 +3,7 @@
 #include <cstdint>
 #include <iostream>
 
-bool can_form_triangle(int16_t a, int16_t b, int16_t c) {
+bool can_form_triangle(std::int16_t a, std::int16_t b, std::int16_t c) {
     if (a >= b + c) {
         return false;
     }
@@ -16,7 +16,7 @@ bool can_form_triangle(int16_t a, int16_t b, int16_t c) {
     return true;
 }
 
-std::string triangle_type(int16_t a, int16_t b, int16_t c) {
+std::string triangle_type(std::int16_t a, std::int16_t b, std::int16_t c) {
     if (a == b && b == c) {
         return "Equilatero";
     } else if (a == b || b == c || a == c) {
@@ -26,16 +26,16 @@ std::string triangle_type(int16_t a, int16_t b, int16_t c) {
     }
 }
 
-bool is_rectangle_triangle(int16_t a, int16_t b, int16_t c) {
-    int16_t hypotenuse = std::max(std::max(a, b), c);
-    int16_t cathetus1 = std::min(a, b);
-    int16_t cathetus2 = std::min(b, c);
+bool is_rectangle_triangle(std::int16_t a, std::int16_t b, std::int16_t c) {
+    std::int16_t hypotenuse = std::max(std::max(a, b), c);
+    std::int16_t cathetus1 = std::min(a, b);
+    std::int16_t cathetus2 = std::min(b, c);
 
     return hypotenuse == sqrt(pow(cathetus1, 2) + pow(cathetus2, 2));
 }
 
 int main() {
-    int16_t a, b, c;
+    std::int16_t a, b, c;
     bool is_valid_triangle;
 
     while (std::cin >> a >> b >> c) {

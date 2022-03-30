@@ -3,14 +3,14 @@
 #include <string>
 
 int main() {
-    int16_t c;
+    std::int16_t c;
 
     std::string s;
 
     while (std::cin >> s) {
         c = 0;
 
-        for (uint16_t i = 0; i < s.length(); ++i) {
+        for (std::uint16_t i = 0; i < s.length(); ++i) {
             if (s.at(i) == ')') {
                 c--;
             } else if (s.at(i) == '(') {

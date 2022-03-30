@@ -3,7 +3,7 @@
 #include <cstdio>
 
 int main() {
-    int16_t x1, y1, x2, y2, d_x, d_y;
+    std::int16_t x1, y1, x2, y2, d_x, d_y;
 
     while (scanf("%d %d %d %d", &x1, &y1, &x2, &y2) && x1 && y1 && x2 && y2) {
         if (x1 > x2) {

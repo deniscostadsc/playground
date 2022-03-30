@@ -3,10 +3,10 @@
 #include <iostream>
 #include <string>
 
-uint16_t n, k;
+std::uint16_t n, k;
 
-uint64_t oracle(uint16_t f) {
-    int16_t answer = n - (f * k);
+std::uint64_t oracle(std::uint16_t f) {
+    std::int16_t answer = n - (f * k);
 
     if (answer >= 1) {
         return answer * oracle(f + 1);
@@ -15,7 +15,7 @@ uint64_t oracle(uint16_t f) {
 }
 
 int main() {
-    uint16_t c;
+    std::uint16_t c;
     std::string k_str;
 
     std::cin >> c;

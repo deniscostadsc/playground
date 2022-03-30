@@ -2,11 +2,11 @@
 #include <iostream>
 
 int main() {
-    int16_t c, energy;
+    std::int16_t c, energy;
 
     std::cin >> c;
 
-    for (int16_t i = 0; i < c; i++) {
+    for (std::int16_t i = 0; i < c; i++) {
         std::cin >> energy;
 
         if (energy > 8000) {

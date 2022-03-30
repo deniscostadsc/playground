@@ -2,7 +2,7 @@
 #include <cstdio>
 
 int main() {
-    int16_t i = 1, j = 7;
+    std::int16_t i = 1, j = 7;
 
     while (i <= 9) {
         printf("I=%d J=%d\n", i, j--);

@@ -2,7 +2,7 @@
 #include <cstdio>
 
 int main() {
-    int16_t hi, hf, hr;
+    std::int16_t hi, hf, hr;
 
     scanf("%d %d", &hi, &hf);
 

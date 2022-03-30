@@ -2,7 +2,7 @@
 #include <cstdio>
 
 int main() {
-    int16_t l, v, fastest;
+    std::int16_t l, v, fastest;
 
     while (scanf("%d", &l) != EOF) {
         fastest = 0;

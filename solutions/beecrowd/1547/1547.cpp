@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n, qt, s, g, i, lowest_sub, best_guesser;
+    std::int16_t n, qt, s, g, i, lowest_sub, best_guesser;
 
     std::cin >> n;
 

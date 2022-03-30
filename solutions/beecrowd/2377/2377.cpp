@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int32_t l, d, k, p, result;
+    std::int32_t l, d, k, p, result;
 
     while (std::cin >> l >> d) {
         std::cin >> k >> p;

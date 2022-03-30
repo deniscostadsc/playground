@@ -2,9 +2,9 @@
 #include <cstdio>
 #include <cstring>
 
-uint64_t memo[1000];
+std::uint64_t memo[1000];
 
-uint64_t calculate_sum(uint64_t line) {
+std::uint64_t calculate_sum(std::uint64_t line) {
     if (memo[line] != 0) {
         return memo[line];
     }
@@ -19,7 +19,7 @@ uint64_t calculate_sum(uint64_t line) {
 }
 
 int main() {
-    uint64_t line;
+    std::uint64_t line;
     memset(memo, 0, sizeof(memo));
 
     while (scanf("%llu", &line) != EOF) {

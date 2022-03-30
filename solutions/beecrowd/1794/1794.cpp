@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n, la, lb, sa, sb;
+    std::int16_t n, la, lb, sa, sb;
 
     while (std::cin >> n >> la >> lb >> sa >> sb) {
         if (n >= la && n <= lb && n >= sa && n <= sb) {

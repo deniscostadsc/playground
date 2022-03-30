@@ -4,10 +4,10 @@
 #include <string>
 
 int main() {
-    int16_t c;
-    uint16_t i;
+    std::int16_t c;
+    std::uint16_t i;
     bool begin, match;
-    int16_t previous_letter, current_letter;
+    std::int16_t previous_letter, current_letter;
     std::string lower = "abcdefghijklmnopqrstuvwxyz";
     std::string upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     std::string line;

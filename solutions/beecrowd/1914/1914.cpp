@@ -3,8 +3,8 @@
 #include <string>
 
 int main() {
-    int16_t qt;
-    int32_t first_number, second_number;
+    std::int16_t qt;
+    std::int32_t first_number, second_number;
     bool is_even, first_won;
     std::string first_player, first_choice, second_player, second_choice;
 

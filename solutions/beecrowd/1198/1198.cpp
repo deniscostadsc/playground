@@ -2,7 +2,7 @@
 #include <cstdio>
 
 int main() {
-    int64_t a, b;
+    std::int64_t a, b;
 
     while (scanf("%lld %lld", &a, &b) != EOF) {
         if (a > b) {

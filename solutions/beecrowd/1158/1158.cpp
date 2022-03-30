@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n, x, y, s;
+    std::int16_t n, x, y, s;
 
     std::cin >> n;
 
@@ -16,7 +16,7 @@ int main() {
             x++;
         }
 
-        for (int16_t i = 0; i < y; i++, x += 2) {
+        for (std::int16_t i = 0; i < y; i++, x += 2) {
             s += x;
         }
 

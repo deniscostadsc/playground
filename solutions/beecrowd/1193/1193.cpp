@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 
-std::string dec2bin(uint16_t n) {
+std::string dec2bin(std::uint16_t n) {
     if (n == 0) {
         return "0";
     }
@@ -18,9 +18,9 @@ std::string dec2bin(uint16_t n) {
     return dec2bin(n / 2) + "1";
 }
 
-uint16_t bin2dec(std::string b) {
-    uint16_t dec = 0, base = 1;
-    int16_t index = b.length();
+std::uint16_t bin2dec(std::string b) {
+    std::uint16_t dec = 0, base = 1;
+    std::int16_t index = b.length();
 
     while (index--) {
         if (b.at(index) == '1') {
@@ -32,10 +32,10 @@ uint16_t bin2dec(std::string b) {
     return dec;
 }
 
-std::string dec2hex(uint16_t n) {
+std::string dec2hex(std::uint16_t n) {
     std::string chars = "0123456789abcdef";
 
-    uint16_t i = n % 16;
+    std::uint16_t i = n % 16;
 
     if (n / 16 > 0) {
         return dec2hex(n / 16) + chars.at(i);
@@ -47,9 +47,9 @@ std::string dec2hex(uint16_t n) {
     return result;
 }
 
-uint16_t hex2dec(std::string h) {
-    uint16_t dec = 0, base = 1;
-    int16_t index = h.length();
+std::uint16_t hex2dec(std::string h) {
+    std::uint16_t dec = 0, base = 1;
+    std::int16_t index = h.length();
     std::string chars = "0123456789abcdef";
 
     while (index--) {
@@ -61,7 +61,7 @@ uint16_t hex2dec(std::string h) {
 }
 
 int main() {
-    int16_t n, nn;
+    std::int16_t n, nn;
     std::string number, base;
 
     std::cin >> n;

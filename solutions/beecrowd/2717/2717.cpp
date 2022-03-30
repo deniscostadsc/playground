@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n, a, b;
+    std::int16_t n, a, b;
 
     while (std::cin >> n >> a >> b) {
         if (a + b <= n) {

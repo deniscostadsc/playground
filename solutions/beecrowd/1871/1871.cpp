@@ -3,7 +3,7 @@
 #include <string>
 
 int main() {
-    int32_t m, n, sum, divisor;
+    std::int32_t m, n, sum, divisor;
     std::string str_sum;
 
     while (std::cin >> m >> n && m && n) {

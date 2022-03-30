@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n, i, j, p, np;
+    std::int16_t n, i, j, p, np;
     bool c;
 
     while (std::cin >> n && n) {

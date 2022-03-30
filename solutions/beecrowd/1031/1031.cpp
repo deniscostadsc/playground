@@ -1,6 +1,6 @@
 #include <iostream>
 
-int16_t josephus(int16_t n, int16_t k) {
+std::int16_t josephus(std::int16_t n, std::int16_t k) {
     if (n == 1) {
         return 1;
     }
@@ -8,7 +8,7 @@ int16_t josephus(int16_t n, int16_t k) {
 }
 
 int main() {
-    int16_t n, m;
+    std::int16_t n, m;
 
     while (std::cin >> n && n) {
         m = 1;

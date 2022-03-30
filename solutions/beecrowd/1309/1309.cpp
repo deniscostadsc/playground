@@ -3,8 +3,8 @@
 #include <string>
 
 int main() {
-    int16_t cents;
-    int16_t comma;
+    std::int16_t cents;
+    std::int16_t comma;
     std::string money;
 
     while (std::cin >> money) {

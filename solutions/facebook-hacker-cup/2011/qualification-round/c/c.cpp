@@ -4,7 +4,7 @@
 #include <vector>
 
 bool comparator(std::string first, std::string second) {
-    int16_t i, length;
+    std::int16_t i, length;
 
     length = first.length();
     if (second.length() < first.length()) {
@@ -21,7 +21,7 @@ bool comparator(std::string first, std::string second) {
 }
 
 int main() {
-    int16_t n, m, c = 0;
+    std::int16_t n, m, c = 0;
     std::string word;
     std::vector< std::string > words;
     std::vector< std::string >::iterator it;

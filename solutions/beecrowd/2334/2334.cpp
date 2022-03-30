@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    uint64_t p;
+    std::uint64_t p;
 
     while (std::cin >> p && p != -1) {
         if (p == 0) {

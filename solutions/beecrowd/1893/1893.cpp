@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-    int16_t first_night, second_night;
+    std::int16_t first_night, second_night;
 
     while (std::cin >> first_night >> second_night) {
         if (second_night <= 2) {

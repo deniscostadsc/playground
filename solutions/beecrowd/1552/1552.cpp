@@ -10,7 +10,7 @@ struct person {
     double x;
     double y;
     person *parent;
-    int16_t rank;
+    std::int16_t rank;
 };
 
 std::vector< person * > people;
@@ -60,7 +60,7 @@ bool unionset(person *p1, person *p2) {
 }
 
 int main() {
-    int16_t c, n, i, arcs_mst;
+    std::int16_t c, n, i, arcs_mst;
     double x, y, total_web;
     std::vector< arc * >::iterator it;
     std::vector< person * >::iterator it_p1, it_p2;

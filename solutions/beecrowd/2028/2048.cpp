@@ -1,12 +1,12 @@
 #include <cstdint>
 #include <iostream>
 
-int16_t sum_all_numbers_until(int16_t n) {
+std::int16_t sum_all_numbers_until(std::int16_t n) {
     return (n * (n + 1)) / 2 + 1;
 }
 
 int main() {
-    int16_t n, x = 0, numbers;
+    std::int16_t n, x = 0, numbers;
 
     while (std::cin >> n) {
         numbers = sum_all_numbers_until(n);
@@ -15,8 +15,8 @@ int main() {
         std::cout << (numbers == 1 ? " numero" : " numeros") << std::endl;
 
         std::cout << 0;
-        for (int16_t i = 1; i <= n; i++) {
-            for (int16_t j = 1; j <= i; j++) {
+        for (std::int16_t i = 1; i <= n; i++) {
+            for (std::int16_t j = 1; j <= i; j++) {
                 std::cout << " " << i;
             }
         }

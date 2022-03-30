@@ -2,10 +2,10 @@
 #include <cstdio>
 #include <cstring>
 
-int32_t f[39];
-int32_t r[39];
+std::int32_t f[39];
+std::int32_t r[39];
 
-int32_t fib(int32_t n) {
+std::int32_t fib(std::int32_t n) {
     if (n == 0) {
         return f[0];
     }
@@ -21,8 +21,8 @@ int32_t fib(int32_t n) {
 }
 
 int main() {
-    int16_t i, j;
-    int32_t n;
+    std::int16_t i, j;
+    std::int32_t n;
 
     memset(f, 0, sizeof(f));
     memset(r, 0, sizeof(r));

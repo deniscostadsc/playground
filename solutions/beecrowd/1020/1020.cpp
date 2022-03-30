@@ -2,7 +2,7 @@
 #include <cstdio>
 
 int main() {
-    int16_t t, a, m, d;
+    std::int16_t t, a, m, d;
 
     while (scanf("%d", &t) != EOF) {
         a = 0, m = 0, d = 0;

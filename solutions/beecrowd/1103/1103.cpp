@@ -2,7 +2,7 @@
 #include <cstdio>
 
 int main() {
-    int32_t hi, hf, mi, mf, m;
+    std::int32_t hi, hf, mi, mf, m;
 
     while (1) {
         scanf("%d %d %d %d", &hi, &mi, &hf, &mf);

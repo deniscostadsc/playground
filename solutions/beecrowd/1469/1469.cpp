@@ -2,11 +2,11 @@
 #include <iostream>
 
 struct person {
-    int16_t age;
+    std::int16_t age;
 };
 
 int main() {
-    int16_t n, m, i, age, x, y;
+    std::int16_t n, m, i, age, x, y;
 
     std::cin >> n >> m >> i;
 

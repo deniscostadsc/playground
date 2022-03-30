@@ -2,7 +2,7 @@
 #include <cstdio>
 
 int main() {
-    int32_t t, h = 0, m = 0;
+    std::int32_t t, h = 0, m = 0;
 
     while (scanf("%d", &t) != EOF) {
         if (t >= 60 * 60) {

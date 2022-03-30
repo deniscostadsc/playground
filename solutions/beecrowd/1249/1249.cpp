@@ -7,7 +7,7 @@ char l[] = "abcdefghijklmnopqrstuvwxyzabcdefghijklm";
 char u[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 char rot13(char c) {
-    int16_t i;
+    std::int16_t i;
 
     for (i = 0; i <= 25; i++) {
         if (c == l[i]) {

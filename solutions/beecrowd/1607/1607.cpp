@@ -3,9 +3,9 @@
 #include <map>
 
 int main() {
-    int16_t t, operations_count, i;
+    std::int16_t t, operations_count, i;
     std::string a, b;
-    std::map< char, int16_t > letter_index;
+    std::map< char, std::int16_t > letter_index;
     std::string alphabet = "abcdefghijklmnopqrstuvwxyz";
 
     for (i = 0; i <= 26; i++) {
@@ -18,7 +18,7 @@ int main() {
         operations_count = 0;
         std::cin >> a >> b;
 
-        for (i = 0; i < static_cast< int16_t >(a.length()); i++) {
+        for (i = 0; i < static_cast< std::int16_t >(a.length()); i++) {
             if (letter_index[a[i]] <= letter_index[b[i]]) {
                 operations_count += letter_index[b[i]] - letter_index[a[i]];
             } else {

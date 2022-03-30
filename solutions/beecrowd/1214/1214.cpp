@@ -5,7 +5,7 @@
 #include <vector>
 
 int main() {
-    int16_t n, l;
+    std::int16_t n, l;
     double c, g, avg;
     std::vector< double > gs;
 
@@ -16,14 +16,14 @@ int main() {
         avg = 0;
         std::cin >> l;
 
-        for (int16_t i = 0; i < l; ++i) {
+        for (std::int16_t i = 0; i < l; ++i) {
             std::cin >> g;
             gs.push_back(g);
         }
 
         avg += accumulate(gs.begin(), gs.end(), 0) / gs.size();
 
-        for (int16_t i = 0; i < l; ++i) {
+        for (std::int16_t i = 0; i < l; ++i) {
             if (gs.at(i) > avg) {
                 c++;
             }

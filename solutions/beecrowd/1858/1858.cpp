@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n, t, i, index, lowest = 21;
+    std::int16_t n, t, i, index, lowest = 21;
 
     std::cin >> n;
 

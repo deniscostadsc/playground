@@ -4,7 +4,7 @@
 
 int main() {
     std::string line;
-    int16_t proc, read, clocks;
+    std::int16_t proc, read, clocks;
 
     while (getline(std::cin, line)) {
         clocks = 0;

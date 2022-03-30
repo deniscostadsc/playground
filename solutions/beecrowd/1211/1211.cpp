@@ -4,7 +4,7 @@
 #include <vector>
 
 int main() {
-    int32_t n, count, result;
+    std::int32_t n, count, result;
     std::vector< std::string > phone_numbers;
     std::vector< std::string >::iterator it;
     std::string phone_number;
@@ -13,7 +13,7 @@ int main() {
     while (std::cin >> n) {
         result = 0;
 
-        for (int32_t i = 0; i < n; i++) {
+        for (std::int32_t i = 0; i < n; i++) {
             std::cin >> phone_number;
             phone_numbers.push_back(phone_number);
         }

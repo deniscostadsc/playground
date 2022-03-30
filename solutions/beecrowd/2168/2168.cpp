@@ -2,8 +2,8 @@
 #include <iostream>
 
 int main() {
-    int16_t n;
-    int16_t cameras[101][101];
+    std::int16_t n;
+    std::int16_t cameras[101][101];
 
     while (std::cin >> n) {
         for (int i = 0; i <= n; i++) {

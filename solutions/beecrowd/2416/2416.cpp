@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int32_t c, n;
+    std::int32_t c, n;
 
     while (std::cin >> c >> n) {
         std::cout << c % n << std::endl;

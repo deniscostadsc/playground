@@ -4,8 +4,8 @@
 #include <vector>
 
 int main() {
-    int16_t c, n, l, j;
-    std::vector< int16_t > p;
+    std::int16_t c, n, l, j;
+    std::vector< std::int16_t > p;
 
     std::cin >> n;
     c = 0;

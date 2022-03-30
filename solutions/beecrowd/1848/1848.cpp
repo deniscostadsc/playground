@@ -3,9 +3,9 @@
 #include <map>
 
 int main() {
-    int16_t sum = 0;
+    std::int16_t sum = 0;
     std::string input;
-    std::map< std::string, int16_t > blink2int;
+    std::map< std::string, std::int16_t > blink2int;
 
     blink2int["---"] = 0;
     blink2int["--*"] = 1;

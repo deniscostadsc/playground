@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    int16_t a1, a2, a3;
+    std::int16_t a1, a2, a3;
 
     while (std::cin >> a1 >> a2 >> a3) {
         std::cout << std::min(

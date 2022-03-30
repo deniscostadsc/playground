@@ -4,7 +4,7 @@
 
 int main() {
     bool is_tautogram;
-    int16_t letter, index;
+    std::int16_t letter, index;
     std::string lower = "abcdefghijklmnopqrstuvwxyz";
     std::string upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     std::string word;

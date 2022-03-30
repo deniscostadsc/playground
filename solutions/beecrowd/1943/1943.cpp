@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t k;
+    std::int16_t k;
 
     while (std::cin >> k) {
         std::cout << "Top ";

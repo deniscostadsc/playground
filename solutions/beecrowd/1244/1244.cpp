@@ -8,7 +8,7 @@
 
 struct Pair {
     std::string first;
-    uint16_t second;
+    std::uint16_t second;
 };
 
 bool compare(Pair i, Pair j) {
@@ -19,7 +19,7 @@ bool compare(Pair i, Pair j) {
 }
 
 int main() {
-    int16_t n;
+    std::int16_t n;
     std::string s;
 
     std::cin >> n;
@@ -37,13 +37,13 @@ int main() {
 
         std::vector< Pair > strings;
 
-        for (uint16_t i = 0; i < raw_strings.size(); i++) {
+        for (std::uint16_t i = 0; i < raw_strings.size(); i++) {
             strings.push_back({raw_strings.at(i), i});
         }
 
         sort(strings.begin(), strings.end(), compare);
 
-        for (uint16_t i = 0; i < strings.size(); i++) {
+        for (std::uint16_t i = 0; i < strings.size(); i++) {
             std::cout << strings.at(i).first;
             if (i < strings.size() - 1) {
                 std::cout << " ";

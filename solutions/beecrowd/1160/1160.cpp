@@ -3,8 +3,8 @@
 #include <iostream>
 
 int main() {
-    int32_t n, c;
-    int32_t a, b;
+    std::int32_t n, c;
+    std::int32_t a, b;
     float ac, bc;
 
     std::cin >> n;

@@ -2,8 +2,8 @@
 #include <iostream>
 
 int main() {
-    int16_t n;
-    int32_t m, bigest_m;
+    std::int16_t n;
+    std::int32_t m, bigest_m;
     float grade, bigest_grade;
 
     std::cin >> n;

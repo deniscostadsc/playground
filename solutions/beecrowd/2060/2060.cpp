@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n, l, multiple_of_2, multiple_of_3, multiple_of_4, multiple_of_5;
+    std::int16_t n, l, multiple_of_2, multiple_of_3, multiple_of_4, multiple_of_5;
 
     std::cin >> n;
 

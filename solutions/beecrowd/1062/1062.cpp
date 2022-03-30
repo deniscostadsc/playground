@@ -4,12 +4,12 @@
 #include <stack>
 #include <vector>
 
-std::queue< int16_t > trains;
-std::stack< int16_t > station;
-std::vector< int16_t > required_order;
+std::queue< std::int16_t > trains;
+std::stack< std::int16_t > station;
+std::vector< std::int16_t > required_order;
 
-int16_t next_train(int16_t n) {
-    int16_t train;
+std::int16_t next_train(std::int16_t n) {
+    std::int16_t train;
 
     if (!station.empty() && n == station.top()) {
         train = station.top();
@@ -32,7 +32,7 @@ int16_t next_train(int16_t n) {
 }
 
 int main() {
-    int16_t n, t, i;
+    std::int16_t n, t, i;
     bool valid;
 
     while (std::cin >> n && n) {

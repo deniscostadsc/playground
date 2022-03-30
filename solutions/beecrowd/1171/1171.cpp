@@ -4,7 +4,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n[2001], x, i, j, c = 1;
+    std::int16_t n[2001], x, i, j, c = 1;
 
     memset(n, 0, sizeof(n));
 

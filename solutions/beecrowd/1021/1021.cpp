@@ -4,11 +4,11 @@
 
 int main() {
     double n;
-    int32_t d[] = {10000, 5000, 2000, 1000, 500, 200, 100, 50, 25, 10, 5, 1};
-    int32_t total_value, t = 0, c, i;
+    std::int32_t d[] = {10000, 5000, 2000, 1000, 500, 200, 100, 50, 25, 10, 5, 1};
+    std::int32_t total_value, t = 0, c, i;
 
     while (scanf("%lf", &n) != EOF) {
-        total_value = static_cast< int32_t >(n * 100);
+        total_value = static_cast< std::int32_t >(n * 100);
         printf("NOTAS:\n");
 
         t = 0;

@@ -2,7 +2,7 @@
 #include <cstdio>
 
 int main() {
-    int16_t n, i;
+    std::int16_t n, i;
 
     for (n = 0; n <= 9; n++) {
         scanf("%d", &i);

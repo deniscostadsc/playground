@@ -4,7 +4,7 @@
 #include <vector>
 
 int main() {
-    int16_t n;
+    std::int16_t n;
     std::string code;
     std::vector< std::string > codes;
     std::vector< std::string >::iterator it;

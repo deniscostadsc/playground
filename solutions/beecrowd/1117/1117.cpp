@@ -3,7 +3,7 @@
 
 int main() {
     float n, s = 0.0;
-    int16_t c = 0;
+    std::int16_t c = 0;
 
     while (c < 2) {
         scanf("%f", &n);

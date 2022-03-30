@@ -3,7 +3,7 @@
 
 int main() {
     float x, y;
-    int16_t n;
+    std::int16_t n;
 
     scanf("%d", &n);
 

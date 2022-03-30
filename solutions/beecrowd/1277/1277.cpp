@@ -5,7 +5,7 @@
 
 int main() {
     bool c;
-    int16_t i, n, q;
+    std::int16_t i, n, q;
     double a, p;
     std::string attendances;
     std::string name;

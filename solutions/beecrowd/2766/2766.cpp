@@ -5,7 +5,7 @@ int main() {
     std::string name;
 
     while (std::cin >> name) {
-        for (int8_t i = 1; i < 10; i++) {
+        for (std::int8_t i = 1; i < 10; i++) {
             std::cin >> name;
 
             if (i == 2 || i == 6 || i == 8) {

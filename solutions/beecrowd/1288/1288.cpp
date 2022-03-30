@@ -2,11 +2,11 @@
 #include <iostream>
 
 bool mission_successful(
-    int32_t power[], int32_t weight[], int32_t n, int32_t k, int32_t r) {
-    int32_t result[n + 1][k + 1];
+    std::int32_t power[], std::int32_t weight[], std::int32_t n, std::int32_t k, std::int32_t r) {
+    std::int32_t result[n + 1][k + 1];
 
-    for (int32_t i = 0; i <= n; i++) {
-        for (int32_t j = 0; j <= k; j++) {
+    for (std::int32_t i = 0; i <= n; i++) {
+        for (std::int32_t j = 0; j <= k; j++) {
             if (i == 0 || j == 0) {
                 result[i][j] = 0;
                 continue;
@@ -26,17 +26,17 @@ bool mission_successful(
 }
 
 int main() {
-    int32_t tests, n, k, resistance;
+    std::int32_t tests, n, k, resistance;
 
     std::cin >> tests;
 
-    for (int32_t i = 0; i < tests; i++) {
+    for (std::int32_t i = 0; i < tests; i++) {
         std::cin >> n;
 
-        int32_t power[n];
-        int32_t weight[n];
+        std::int32_t power[n];
+        std::int32_t weight[n];
 
-        for (int32_t j = 0; j < n; j++) {
+        for (std::int32_t j = 0; j < n; j++) {
             std::cin >> power[j] >> weight[j];
         }
 

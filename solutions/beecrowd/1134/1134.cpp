@@ -2,7 +2,7 @@
 #include <cstdio>
 
 int main() {
-    int32_t n, v[] = {0, 0, 0};
+    std::int32_t n, v[] = {0, 0, 0};
 
     while (scanf("%d", &n) && n != 4) {
         if (n >= 1 && n <= 3) {

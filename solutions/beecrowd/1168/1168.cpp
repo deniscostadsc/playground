@@ -2,7 +2,7 @@
 #include <cstdio>
 
 int main() {
-    int32_t n, s, l[10] = {6, 2, 5, 5, 4, 5, 6, 3, 7, 6};
+    std::int32_t n, s, l[10] = {6, 2, 5, 5, 4, 5, 6, 3, 7, 6};
 
     char d;
 

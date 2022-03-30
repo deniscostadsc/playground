@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n;
+    std::int16_t n;
     std::string player1_sign, player2_sign;
 
     std::cin >> n;

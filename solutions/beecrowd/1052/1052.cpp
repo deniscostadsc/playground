@@ -17,7 +17,7 @@ int main() {
            "October",
            "November",
            "December"};
-    int16_t n;
+    std::int16_t n;
 
     scanf("%d", &n);
     for (std::string::size_type i = 0; i < strlen(m[n - 1]); i++) {

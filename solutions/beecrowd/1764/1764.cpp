@@ -5,33 +5,33 @@
 #include <vector>
 
 struct arc {
-    int32_t x;
-    int32_t y;
-    int32_t weight;
+    std::int32_t x;
+    std::int32_t y;
+    std::int32_t weight;
 };
 
 struct disjoint_node {
-    int32_t node;
+    std::int32_t node;
     disjoint_node *parent;
 };
 
 std::vector< arc > arcs;
-std::map< int32_t, int32_t > disjoint_set;
+std::map< std::int32_t, std::int32_t > disjoint_set;
 
-void makeset(int32_t node) {
+void makeset(std::int32_t node) {
     disjoint_set[node] = node;
 }
 
-int32_t findset(int32_t node) {
+std::int32_t findset(std::int32_t node) {
     if (disjoint_set[node] != node) {
         disjoint_set[node] = findset(disjoint_set[node]);
     }
     return disjoint_set[node];
 }
 
-bool unionset(int32_t x, int32_t y) {
-    int32_t parent_x = findset(disjoint_set[x]);
-    int32_t parent_y = findset(disjoint_set[y]);
+bool unionset(std::int32_t x, std::int32_t y) {
+    std::int32_t parent_x = findset(disjoint_set[x]);
+    std::int32_t parent_y = findset(disjoint_set[y]);
 
     if (parent_x == parent_y) {
         return false;
@@ -45,7 +45,7 @@ bool comparator(arc x, arc y) {
 }
 
 int main() {
-    int32_t m, n, x, y, z, count;
+    std::int32_t m, n, x, y, z, count;
 
     while (std::cin >> m >> n && m && n) {
         while (n--) {

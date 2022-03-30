@@ -3,7 +3,7 @@
 #include <string>
 
 int main() {
-    int16_t n, i, la;
+    std::int16_t n, i, la;
     std::string a, b;
     bool e;
 

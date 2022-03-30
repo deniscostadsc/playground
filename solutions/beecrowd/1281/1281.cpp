@@ -6,7 +6,7 @@
 
 int main() {
     double price, result;
-    int32_t n, p, q, quantity;
+    std::int32_t n, p, q, quantity;
     std::map< std::string, double > prices;
     std::string fruit;
 

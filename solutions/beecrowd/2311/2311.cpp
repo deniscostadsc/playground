@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n, i;
+    std::int16_t n, i;
     double difficulty, max_score, min_score, current_score, total_score;
     std::string name;
 

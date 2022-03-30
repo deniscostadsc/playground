@@ -3,7 +3,7 @@
 #include <cstdio>
 
 int main() {
-    int16_t x, n, s;
+    std::int16_t x, n, s;
 
     scanf("%d", &x);
 
@@ -12,7 +12,7 @@ int main() {
 
         s = 0;
 
-        for (int16_t i = 1; i <= n / 2; i++) {
+        for (std::int16_t i = 1; i <= n / 2; i++) {
             if (n % i == 0) {
                 s += i;
             }

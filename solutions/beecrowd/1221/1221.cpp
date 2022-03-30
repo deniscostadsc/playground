@@ -2,7 +2,7 @@
 #include <cstdint>
 #include <iostream>
 
-bool is_prime(uint32_t n) {
+bool is_prime(std::uint32_t n) {
     if (n == 2) {
         return true;
     }
@@ -10,7 +10,7 @@ bool is_prime(uint32_t n) {
         return false;
     }
 
-    for (uint32_t i = 3; i <= sqrt(n); i += 2) {
+    for (std::uint32_t i = 3; i <= sqrt(n); i += 2) {
         if (n % i == 0) {
             return false;
         }
@@ -19,7 +19,7 @@ bool is_prime(uint32_t n) {
 }
 
 int main() {
-    int32_t n, p;
+    std::int32_t n, p;
 
     std::cin >> n;
 

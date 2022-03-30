@@ -5,11 +5,11 @@
 #include <string>
 
 char store[30000];
-int16_t pointer, word_index;
+std::int16_t pointer, word_index;
 
 void brainfuck(std::string program, std::string word) {
-    int16_t j, brackets_level;
-    uint16_t i;
+    std::int16_t j, brackets_level;
+    std::uint16_t i;
     std::string inner_code;
 
     for (i = 0; i < program.size(); i++) {
@@ -30,7 +30,7 @@ void brainfuck(std::string program, std::string word) {
                 std::cout << store[pointer];
                 break;
             case ',':
-                if (word_index >= static_cast< int16_t >(word.size())) {
+                if (word_index >= static_cast< std::int16_t >(word.size())) {
                     store[pointer] = 0;
                 } else {
                     store[pointer] = word[word_index];
@@ -73,7 +73,7 @@ void brainfuck(std::string program, std::string word) {
 }
 
 int main() {
-    int16_t n, nn;
+    std::int16_t n, nn;
     std::string word;
     std::string program;
     std::cin >> n;

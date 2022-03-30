@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t people;
+    std::int16_t people;
 
     while (std::cin >> people) {
         if (people) {

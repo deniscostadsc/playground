@@ -3,11 +3,11 @@
 
 #define _INFINITY 1 << 30
 
-int32_t matrix[501][501];
+std::int32_t matrix[501][501];
 
-int32_t dijkstra(int32_t source, int32_t destiny, int32_t n) {
-    int32_t shortest_distance, next_vertex, i, j;
-    int32_t distance[n];
+std::int32_t dijkstra(std::int32_t source, std::int32_t destiny, std::int32_t n) {
+    std::int32_t shortest_distance, next_vertex, i, j;
+    std::int32_t distance[n];
     bool correct[n];
 
     for (i = 1; i <= n; i++) {
@@ -47,8 +47,8 @@ int32_t dijkstra(int32_t source, int32_t destiny, int32_t n) {
     return distance[destiny];
 }
 
-int32_t main() {
-    int32_t n, e, x, y, h, k, o, d, i, j, result;
+std::int32_t main() {
+    std::int32_t n, e, x, y, h, k, o, d, i, j, result;
 
     while (scanf("%d %d", &n, &e) && n) {
         for (i = 1; i <= n; i++) {

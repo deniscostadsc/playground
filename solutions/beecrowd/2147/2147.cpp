@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    int16_t t;
+    std::int16_t t;
     std::string word;
 
     std::cin >> t;

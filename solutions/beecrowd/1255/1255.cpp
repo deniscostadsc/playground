@@ -5,12 +5,12 @@
 #include <vector>
 
 int main() {
-    uint16_t n, i;
-    int16_t g;
+    std::uint16_t n, i;
+    std::int16_t g;
     std::string s;
     std::string l = "abcdefghijklmnopqrstuvwxyz";
     std::string u = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    int16_t c[26];
+    std::int16_t c[26];
 
     std::cin >> n;
     getline(std::cin, s);  // it's a hack!

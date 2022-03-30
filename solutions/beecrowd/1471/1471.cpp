@@ -4,8 +4,8 @@
 
 int main() {
     bool check;
-    int16_t n, r, i, j, _v;
-    std::vector< int16_t > v;
+    std::int16_t n, r, i, j, _v;
+    std::vector< std::int16_t > v;
 
     while (std::cin >> n >> r) {
         for (i = 0; i < r; i++) {

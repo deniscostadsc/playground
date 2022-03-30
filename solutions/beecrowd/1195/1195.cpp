@@ -3,7 +3,7 @@
 #include <iostream>
 
 struct node {
-    int16_t value;
+    std::int16_t value;
     node *left_node;
     node *right_node;
 };
@@ -55,7 +55,7 @@ void post_print_node(node *tree) {
 }
 
 int main() {
-    int16_t c, n, i, value, nn = 0;
+    std::int16_t c, n, i, value, nn = 0;
 
     std::cin >> n;
 

@@ -2,9 +2,9 @@
 #include <iostream>
 #include <string>
 
-int16_t c;
+std::int16_t c;
 
-std::string dec2bin(int16_t n) {
+std::string dec2bin(std::int16_t n) {
     if (n == 0) {
         return "0";
     }
@@ -23,7 +23,7 @@ std::string dec2bin(int16_t n) {
 
 int main() {
     std::string b;
-    int16_t n;
+    std::int16_t n;
     while (scanf("%d", &n) && n != 0) {
         c = 0;
         b = dec2bin(n);

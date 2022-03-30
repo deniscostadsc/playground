@@ -4,8 +4,8 @@
 #include <string>
 
 int main() {
-    int16_t c, temp, index, result[12];
-    uint16_t i, size_a, size_b;
+    std::int16_t c, temp, index, result[12];
+    std::uint16_t i, size_a, size_b;
     std::string a, b;
 
     while (std::cin >> a >> b) {
@@ -19,7 +19,7 @@ int main() {
         index = 11;
         c = 0;
 
-        uint16_t k = (size_a > size_b ? size_a : size_b);
+        std::uint16_t k = (size_a > size_b ? size_a : size_b);
 
         for (i = 0; i < k; i++) {
             temp = 0;

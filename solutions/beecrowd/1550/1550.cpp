@@ -5,15 +5,15 @@
 #include <queue>
 #include <utility>
 
-int16_t reverse(int16_t number) {
-    int16_t reversed = 0;
-    int16_t digits_count = 0;
+std::int16_t reverse(std::int16_t number) {
+    std::int16_t reversed = 0;
+    std::int16_t digits_count = 0;
 
     if (number < 10) {
         return number;
     }
 
-    while (static_cast< int16_t >(number / std::pow(10, digits_count)) > 0) {
+    while (static_cast< std::int16_t >(number / std::pow(10, digits_count)) > 0) {
         digits_count++;
     }
 
@@ -24,11 +24,11 @@ int16_t reverse(int16_t number) {
     return reversed;
 }
 
-void bfs(int16_t number, int16_t goal) {
-    int16_t reversed;
-    std::pair< int16_t, int16_t > current;
-    std::queue< std::pair< int16_t, int16_t > > q;
-    std::map< int16_t, bool > visited;
+void bfs(std::int16_t number, std::int16_t goal) {
+    std::int16_t reversed;
+    std::pair< std::int16_t, std::int16_t > current;
+    std::queue< std::pair< std::int16_t, std::int16_t > > q;
+    std::map< std::int16_t, bool > visited;
 
     q.push(std::make_pair(number, 0));
     visited[number] = true;
@@ -56,7 +56,7 @@ void bfs(int16_t number, int16_t goal) {
 }
 
 int main() {
-    int16_t t, a, b;
+    std::int16_t t, a, b;
 
     std::cin >> t;
 

@@ -6,12 +6,12 @@ std::string conversor(
     std::string alien_number,
     std::string source_language,
     std::string target_language) {
-    int16_t number_value = 0, current_digit_index, i;
-    int16_t source_language_size = source_language.length();
-    int16_t target_language_size = target_language.length();
+    std::int16_t number_value = 0, current_digit_index, i;
+    std::int16_t source_language_size = source_language.length();
+    std::int16_t target_language_size = target_language.length();
     std::string target_number = "";
 
-    for (i = 0; i < static_cast< int16_t >(alien_number.length()); i++) {
+    for (i = 0; i < static_cast< std::int16_t >(alien_number.length()); i++) {
         current_digit_index
             = source_language.find(alien_number[alien_number.length() - i - 1]);
         number_value += current_digit_index * pow(source_language_size, i);
@@ -27,7 +27,7 @@ std::string conversor(
 }
 
 int main() {
-    int16_t n, i;
+    std::int16_t n, i;
     std::string alien_number, source_language, target_language;
 
     std::cin >> n;

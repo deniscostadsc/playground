@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int32_t n, t, year;
+    std::int32_t n, t, year;
 
     std::cin >> n;
 

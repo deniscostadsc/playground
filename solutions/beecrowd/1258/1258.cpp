@@ -10,7 +10,7 @@ struct order {
     std::string name;
 };
 
-std::map< std::string, int16_t > sizes_in_number;
+std::map< std::string, std::int16_t > sizes_in_number;
 
 bool comparator(order *o1, order *o2) {
     if (o1->color < o2->color) {
@@ -31,7 +31,7 @@ bool comparator(order *o1, order *o2) {
 }
 
 int main() {
-    int16_t n;
+    std::int16_t n;
     std::string name, color, size;
     std::vector< order * > orders;
     std::vector< order * >::iterator it_orders;
@@ -48,7 +48,7 @@ int main() {
 
         print_newline = true;
 
-        for (int16_t i = 0; i < n; i++) {
+        for (std::int16_t i = 0; i < n; i++) {
             getline(std::cin, name);
             getline(std::cin, name);
             std::cin >> color >> size;

@@ -3,8 +3,8 @@
 #include <set>
 
 int main() {
-    int16_t t, n, next, digits, i;
-    std::set< int16_t > all_digits;
+    std::int16_t t, n, next, digits, i;
+    std::set< std::int16_t > all_digits;
 
     std::cin >> t;
 

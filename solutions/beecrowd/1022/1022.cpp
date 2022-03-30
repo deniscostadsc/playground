@@ -3,7 +3,7 @@
 #include <cstdio>
 
 int main() {
-    int16_t n, a, b, c, d, r, num, den, num_r, den_r, j;
+    std::int16_t n, a, b, c, d, r, num, den, num_r, den_r, j;
     char o, i;
 
     scanf("%d", &n);

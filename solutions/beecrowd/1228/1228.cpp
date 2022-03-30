@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 
-int16_t find(std::vector< int16_t > v, int16_t n) {
+std::int16_t find(std::vector< std::int16_t > v, std::int16_t n) {
     for (std::string::size_type i = 0; i < v.size(); i++) {
         if (n == v.at(i)) {
             return i;
@@ -12,9 +12,9 @@ int16_t find(std::vector< int16_t > v, int16_t n) {
 }
 
 int main() {
-    int16_t i, j, n, p, overtakes;
-    std::vector< int16_t > start;
-    std::vector< int16_t > finish;
+    std::int16_t i, j, n, p, overtakes;
+    std::vector< std::int16_t > start;
+    std::vector< std::int16_t > finish;
 
     while (std::cin >> n) {
         start.clear();

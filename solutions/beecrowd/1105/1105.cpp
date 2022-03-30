@@ -3,13 +3,13 @@
 #include <vector>
 
 struct Bank {
-    int16_t owe_to;
-    int16_t owe_value;
-    int16_t reserve;
+    std::int16_t owe_to;
+    std::int16_t owe_value;
+    std::int16_t reserve;
 };
 
 int main() {
-    int16_t r, b, n, i, d, c, v;
+    std::int16_t r, b, n, i, d, c, v;
     bool liquidated;
     std::vector< Bank > banks;
 

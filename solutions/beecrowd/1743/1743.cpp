@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t i, plug, result = 1, conector[5];
+    std::int16_t i, plug, result = 1, conector[5];
 
     for (i = 0; i <= 4; i++) {
         std::cin >> conector[i];

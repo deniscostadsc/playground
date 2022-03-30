@@ -3,7 +3,7 @@
 
 int main() {
     char t;
-    int16_t n, c = 0, r = 0, s = 0, soma = 0, e;
+    std::int16_t n, c = 0, r = 0, s = 0, soma = 0, e;
 
     scanf("%d", &n);
 

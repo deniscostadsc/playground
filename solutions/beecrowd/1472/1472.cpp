@@ -3,10 +3,10 @@
 #include <vector>
 
 int main() {
-    int16_t i, j, k, n, arc, triangles, len;
+    std::int16_t i, j, k, n, arc, triangles, len;
 
     while (std::cin >> n) {
-        std::vector< int16_t > sum;
+        std::vector< std::int16_t > sum;
 
         for (i = 0; i < n; i++) {
             std::cin >> arc;

@@ -1,8 +1,9 @@
 #include <cmath>
+#include <cstdint>
 #include <cstdio>
 
 int main() {
-    int16_t n;
+    std::int16_t n;
 
     scanf("%d", &n);
 

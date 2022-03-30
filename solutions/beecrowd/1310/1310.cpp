@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n, per_day_cost, revenue, largest, largest_start;
+    std::int16_t n, per_day_cost, revenue, largest, largest_start;
 
     while (std::cin >> n) {
         std::cin >> per_day_cost;
@@ -11,7 +11,7 @@ int main() {
         largest = -1001;
         largest_start = 0;
 
-        for (int16_t i = 0; i < n; i++) {
+        for (std::int16_t i = 0; i < n; i++) {
             std::cin >> revenue;
 
             largest_start += revenue - per_day_cost;

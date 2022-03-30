@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t a, b;
+    std::int16_t a, b;
 
     while (std::cin >> a >> b) {
         std::cout << (a > b ? a : b) << std::endl;

@@ -3,13 +3,13 @@
 #include <map>
 
 struct Pair {
-    int64_t next;
-    uint32_t length;
+    std::int64_t next;
+    std::uint32_t length;
 };
 
-std::map< uint32_t, Pair > acks;
+std::map< std::uint32_t, Pair > acks;
 
-int64_t ack(int64_t n) {
+std::int64_t ack(std::int64_t n) {
     if (acks[n].next != 0) {
         return acks[n].next;
     }
@@ -27,8 +27,8 @@ int64_t ack(int64_t n) {
 }
 
 int main() {
-    int64_t l, h, i, g_number, x;
-    uint32_t g_sequence;
+    std::int64_t l, h, i, g_number, x;
+    std::uint32_t g_sequence;
 
     acks[1].next = 1;
     acks[1].length = 0;

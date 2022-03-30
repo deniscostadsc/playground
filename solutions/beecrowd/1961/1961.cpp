@@ -2,14 +2,14 @@
 #include <iostream>
 
 int main() {
-    int16_t p, n, current_pipe, previous_pipe;
+    std::int16_t p, n, current_pipe, previous_pipe;
     bool game_over;
 
     while (std::cin >> p >> n) {
         std::cin >> previous_pipe;
         game_over = false;
 
-        for (int16_t i = 0; i < n - 1; i++) {
+        for (std::int16_t i = 0; i < n - 1; i++) {
             std::cin >> current_pipe;
 
             if (abs(previous_pipe - current_pipe) > p) {

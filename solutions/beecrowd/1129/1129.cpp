@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t i, n, o[5], c, r;
+    std::int16_t i, n, o[5], c, r;
     char l[] = "ABCDE";
 
     while (std::cin >> n && n != 0) {

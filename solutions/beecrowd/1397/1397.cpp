@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n, a, b, ac, bc;
+    std::int16_t n, a, b, ac, bc;
 
     while (std::cin >> n && n != 0) {
         ac = 0;

@@ -2,7 +2,7 @@
 #include <cstdio>
 
 int main() {
-    int16_t n, q = 0, g = -1, i = -1;
+    std::int16_t n, q = 0, g = -1, i = -1;
 
     while (++q && q <= 100) {
         scanf("%d", &n);

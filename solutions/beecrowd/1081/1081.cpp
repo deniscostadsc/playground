@@ -3,11 +3,11 @@
 #include <iostream>
 #include <string>
 
-int16_t graph[20][20];
+std::int16_t graph[20][20];
 bool discovered[20];
 
-bool dfs(int16_t vertex, int16_t v, int16_t spaces) {
-    int16_t i;
+bool dfs(std::int16_t vertex, std::int16_t v, std::int16_t spaces) {
+    std::int16_t i;
     bool has_path = false;
 
     discovered[vertex] = true;
@@ -29,8 +29,8 @@ bool dfs(int16_t vertex, int16_t v, int16_t spaces) {
     return has_path;
 }
 
-void dfs_runner(int16_t v) {
-    int16_t i, index = 0;
+void dfs_runner(std::int16_t v) {
+    std::int16_t i, index = 0;
 
     while (true) {
         if (dfs(index, v, 2)) {
@@ -53,7 +53,7 @@ void dfs_runner(int16_t v) {
 }
 
 int main() {
-    int16_t i, j, n, v, e, from, to, ncase = 0;
+    std::int16_t i, j, n, v, e, from, to, ncase = 0;
 
     scanf("%d", &n);
 

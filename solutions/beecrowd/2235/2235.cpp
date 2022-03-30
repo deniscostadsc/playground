@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t a, b, c;
+    std::int16_t a, b, c;
     bool possible;
 
     while (std::cin >> a >> b >> c) {

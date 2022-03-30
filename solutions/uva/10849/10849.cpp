@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n, t, q, x1, y1, x2, y2;
+    std::int16_t n, t, q, x1, y1, x2, y2;
 
     std::cin >> n;
     while (n--) {

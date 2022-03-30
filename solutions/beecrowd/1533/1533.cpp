@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    int16_t qty, current_index, first_index, second_index, number,
+    std::int16_t qty, current_index, first_index, second_index, number,
         first_suspicous, second_suspicous;
 
     while (std::cin >> qty && qty) {

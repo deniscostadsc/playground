@@ -2,14 +2,14 @@
 #include <iostream>
 
 int main() {
-    int16_t n;
+    std::int16_t n;
 
     std::cin >> n;
 
     if (n % 2 == 0) {
         n++;
     }
-    for (int16_t i = 0; i <= 5; i++, n += 2) {
+    for (std::int16_t i = 0; i <= 5; i++, n += 2) {
         std::cout << n << std::endl;
     }
 

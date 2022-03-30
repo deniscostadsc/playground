@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    int16_t r, c;
+    std::int16_t r, c;
     float n, s;
 
     do {

@@ -2,7 +2,7 @@
 #include <cstdio>
 
 int main() {
-    int32_t g, i, gv = 0, iv = 0, e = 0, n = 0, r;
+    std::int32_t g, i, gv = 0, iv = 0, e = 0, n = 0, r;
 
     do {
         scanf("%d %d", &i, &g);

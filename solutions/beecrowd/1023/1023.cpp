@@ -3,13 +3,13 @@
 #include <iostream>
 #include <map>
 
-std::map< int16_t, int16_t > r;
+std::map< std::int16_t, std::int16_t > r;
 
 int main() {
-    int16_t n, nn = 0, x, y, s, c;
+    std::int16_t n, nn = 0, x, y, s, c;
     double xs, ys;
     bool first = true;
-    std::map< int16_t, int16_t >::iterator iter;
+    std::map< std::int16_t, std::int16_t >::iterator iter;
 
     while (std::cin >> n && n != 0) {
         if (!first) {

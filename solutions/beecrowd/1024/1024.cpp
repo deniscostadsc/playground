@@ -2,7 +2,7 @@
 #include <string>
 
 int main() {
-    int16_t n;
+    std::int16_t n;
     std::string s;
 
     std::cin >> n;
@@ -13,9 +13,9 @@ int main() {
 
         std::string r(s.rbegin(), s.rend());  // reverse string
 
-        uint16_t l = r.length();
+        std::uint16_t l = r.length();
 
-        for (uint16_t i = 0; i < s.length(); ++i) {
+        for (std::uint16_t i = 0; i < s.length(); ++i) {
             if ((r.at(i) >= 65 && r.at(i) <= 90)
                 || (r.at(i) >= 97 && r.at(i) <= 122)) {
                 r.at(i) = r.at(i) + 3;

@@ -4,11 +4,11 @@
 #include <vector>
 
 int main() {
-    uint16_t i, n;
+    std::uint16_t i, n;
 
     while (std::cin >> n && n != 0) {
-        std::vector< int16_t > l;
-        std::vector< int16_t > r;
+        std::vector< std::int16_t > l;
+        std::vector< std::int16_t > r;
 
         for (i = 1; i <= n; i++) {
             l.push_back(i);

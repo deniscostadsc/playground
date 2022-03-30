@@ -6,8 +6,8 @@
 
 int main() {
     bool newline = false;
-    int16_t n;
-    uint16_t i, g;
+    std::int16_t n;
+    std::uint16_t i, g;
     std::string s;
     std::vector< std::string > ss;
 

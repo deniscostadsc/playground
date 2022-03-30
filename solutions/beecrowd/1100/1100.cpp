@@ -7,11 +7,11 @@
 
 std::map< std::string, std::vector< std::string > > graph;
 std::map< std::string, bool > visited;
-std::map< std::string, int16_t > distances;
+std::map< std::string, std::int16_t > distances;
 std::queue< std::string > q;
 
 void create_chess_graph() {
-    int16_t i, j;
+    std::int16_t i, j;
     std::string letters = "-abcdefgh";
     std::string numbers = "-12345678";
     std::string li, nj;
@@ -65,7 +65,7 @@ void create_chess_graph() {
 }
 
 void unvisit() {
-    int16_t i, j;
+    std::int16_t i, j;
     std::string letters = "-abcdefgh";
     std::string numbers = "-12345678";
     std::string li, nj;
@@ -80,7 +80,7 @@ void unvisit() {
     }
 }
 
-int16_t bfs(std::string start, std::string goal) {
+std::int16_t bfs(std::string start, std::string goal) {
     std::vector< std::string >::iterator it;
 
     unvisit();

@@ -6,12 +6,12 @@
 // cat names.txt | tr ',' '\n' | sed 's/"//g' | sort > in.txt
 
 int main() {
-    int32_t index = 1, name_sum, total_score = 0;
-    uint32_t i;
+    std::int32_t index = 1, name_sum, total_score = 0;
+    std::uint32_t i;
     std::string name;
 
     // Is there a better way to do this?
-    std::map< char, int16_t > alphabet;
+    std::map< char, std::int16_t > alphabet;
     alphabet['A'] = 1;
     alphabet['B'] = 2;
     alphabet['C'] = 3;

@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int32_t n, i, sum;
+    std::int32_t n, i, sum;
 
     while (std::cin >> n && n != 0) {
         sum = 0;

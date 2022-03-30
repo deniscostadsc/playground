@@ -3,8 +3,8 @@
 #include <string>
 
 int main() {
-    uint16_t c, characters;
-    int16_t n, l, lines;
+    std::uint16_t c, characters;
+    std::int16_t n, l, lines;
     std::string word;
 
     while (std::cin >> n >> l >> c) {

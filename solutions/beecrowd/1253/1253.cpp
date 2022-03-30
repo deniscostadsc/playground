@@ -3,8 +3,8 @@
 #include <string>
 
 int main() {
-    uint16_t i;
-    int16_t n, c;
+    std::uint16_t i;
+    std::int16_t n, c;
     std::string a = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ";
     std::string s;
 

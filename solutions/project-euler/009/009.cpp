@@ -1,11 +1,11 @@
 #include <cmath>
 #include <iostream>
 
-int16_t s = 1000;
-int16_t s2 = s / 2;
-int16_t limit = sqrt(s2) - 1;
+std::int16_t s = 1000;
+std::int16_t s2 = s / 2;
+std::int16_t limit = sqrt(s2) - 1;
 
-int16_t gcd(int16_t x, int16_t y) {
+std::int16_t gcd(std::int16_t x, std::int16_t y) {
     if (y == 0) {
         return x;
     }
@@ -13,7 +13,7 @@ int16_t gcd(int16_t x, int16_t y) {
 }
 
 int main() {
-    int16_t m, n, sm, k, d, a, b, c;
+    std::int16_t m, n, sm, k, d, a, b, c;
 
     for (m = 2; m <= limit; m++) {
         if (s2 % m == 0) {

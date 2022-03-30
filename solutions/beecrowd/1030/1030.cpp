@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-int16_t josephus(int16_t n, int16_t k) {
+std::int16_t josephus(std::int16_t n, std::int16_t k) {
     if (n == 1) {
         return 1;
     }
@@ -10,7 +10,7 @@ int16_t josephus(int16_t n, int16_t k) {
 }
 
 int main() {
-    int16_t k, n, q, c = 0;
+    std::int16_t k, n, q, c = 0;
 
     std::cin >> q;
 

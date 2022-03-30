@@ -3,7 +3,7 @@
 #include <string>
 
 int main() {
-    uint16_t i;
+    std::uint16_t i;
     std::string l = "abcdefghijklmnopqrstuvwxyz";
     std::string u = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     std::string str;

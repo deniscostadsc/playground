@@ -2,10 +2,10 @@
 #include <iostream>
 
 int main() {
-    int16_t n, m, i, j, x, y;
+    std::int16_t n, m, i, j, x, y;
 
     while (std::cin >> n >> m) {
-        int16_t terrain[n][m];
+        std::int16_t terrain[n][m];
 
         x = 0;
         y = 0;

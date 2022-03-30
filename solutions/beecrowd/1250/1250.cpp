@@ -3,12 +3,12 @@
 #include <vector>
 
 int main() {
-    int16_t n, s, ss, c, h;
+    std::int16_t n, s, ss, c, h;
     unsigned i;
     char b;
     bool is_standup_shot, is_jump_shot;
     std::vector< char > bs;
-    std::vector< int16_t > hs;
+    std::vector< std::int16_t > hs;
 
     std::cin >> n;
 

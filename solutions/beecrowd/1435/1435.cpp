@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n, i, j, k, m, p, q, nl, np;
+    std::int16_t n, i, j, k, m, p, q, nl, np;
 
     while (std::cin >> n) {
         if (n == 0) {

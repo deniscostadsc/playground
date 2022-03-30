@@ -2,11 +2,11 @@
 #include <cstdio>
 #include <string>
 
-int32_t graph[26][26];
-int32_t discovered[26];
+std::int32_t graph[26][26];
+std::int32_t discovered[26];
 
-void dfs(int32_t vertex, int32_t v, int32_t cc) {
-    int32_t i;
+void dfs(std::int32_t vertex, std::int32_t v, std::int32_t cc) {
+    std::int32_t i;
 
     discovered[vertex] = cc;
 
@@ -17,8 +17,8 @@ void dfs(int32_t vertex, int32_t v, int32_t cc) {
     }
 }
 
-int32_t count_connected_components(int32_t v) {
-    int32_t i, index = 0, cc = 0;
+std::int32_t count_connected_components(std::int32_t v) {
+    std::int32_t i, index = 0, cc = 0;
 
     while (true) {
         cc++;
@@ -41,7 +41,7 @@ int32_t count_connected_components(int32_t v) {
 }
 
 int main() {
-    int32_t i, j, n, v, e, cc, tcase = 0;
+    std::int32_t i, j, n, v, e, cc, tcase = 0;
     char from, to;
     std::string alphabet = "abcdefghijklmnopqrstuvwxyz";
 
@@ -60,8 +60,8 @@ int main() {
         while (e--) {
             scanf("%c %c ", &from, &to);
 
-            i = static_cast< int32_t >(alphabet.find_first_of(from));
-            j = static_cast< int32_t >(alphabet.find_first_of(to));
+            i = static_cast< std::int32_t >(alphabet.find_first_of(from));
+            j = static_cast< std::int32_t >(alphabet.find_first_of(to));
             graph[i][j] = 1;
             graph[j][i] = 1;
         }

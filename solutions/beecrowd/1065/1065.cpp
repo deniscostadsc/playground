@@ -2,7 +2,7 @@
 #include <cstdio>
 
 int main() {
-    int16_t n, c = 0, i = 5;
+    std::int16_t n, c = 0, i = 5;
 
     while (i--) {
         scanf("%d", &n);

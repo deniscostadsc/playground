@@ -4,9 +4,9 @@
 #include <vector>
 
 int main() {
-    int16_t i, j, n, d, x;
+    std::int16_t i, j, n, d, x;
     bool p;
-    std::vector< int16_t > m;
+    std::vector< std::int16_t > m;
 
     while (std::cin >> n >> d && n && d) {
         for (i = 0; i < n; i++) {
@@ -17,7 +17,7 @@ int main() {
         for (i = 0; i < d - 1; i++) {
             for (j = 0; j < n; j++) {
                 std::cin >> x;
-                int16_t &ref = m.at(j);
+                std::int16_t &ref = m.at(j);
                 ref = x & m.at(j);
             }
         }

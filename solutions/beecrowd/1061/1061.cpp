@@ -2,7 +2,7 @@
 #include <cstdio>
 
 int main() {
-    int32_t d, dd, h, hh, m, mm, s, ss;
+    std::int32_t d, dd, h, hh, m, mm, s, ss;
 
     scanf("Dia %d", &d);
     scanf("%d : %d : %d\n", &h, &m, &s);

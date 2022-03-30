@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n;
+    std::int16_t n;
 
     std::cin >> n;
 

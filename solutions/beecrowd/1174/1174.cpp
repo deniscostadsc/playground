@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    int16_t n = -1;
+    std::int16_t n = -1;
     float i;
 
     while (++n <= 99) {

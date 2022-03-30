@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-    int16_t x, y, diff;
+    std::int16_t x, y, diff;
 
     while (std::cin >> x >> y) {
         diff = y - x;

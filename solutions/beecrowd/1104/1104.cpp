@@ -4,20 +4,20 @@
 #include <set>
 
 int main() {
-    int16_t a, b, aux;
+    std::int16_t a, b, aux;
 
     while (scanf("%d %d", &a, &b) && a && b) {
-        std::set< int16_t > cards_a;
-        std::set< int16_t > cards_b;
-        std::set< int16_t > cards_b_not_in_a;
-        std::set< int16_t > cards_a_not_in_b;
+        std::set< std::int16_t > cards_a;
+        std::set< std::int16_t > cards_b;
+        std::set< std::int16_t > cards_b_not_in_a;
+        std::set< std::int16_t > cards_a_not_in_b;
 
         while (a--) {
             scanf("%d", &aux);
             cards_a.insert(aux);
         }
 
-        std::set< int16_t >::iterator it_a = cards_a.begin();
+        std::set< std::int16_t >::iterator it_a = cards_a.begin();
 
         while (b--) {
             scanf("%d", &aux);
@@ -33,7 +33,7 @@ int main() {
             }
         }
 
-        std::set< int16_t >::iterator it_b = cards_b.begin();
+        std::set< std::int16_t >::iterator it_b = cards_b.begin();
 
         for (it_a = cards_a.begin(); it_a != cards_a.end(); ++it_a) {
             while (*it_b < *it_a && it_b != cards_b.end()) {

@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int16_t a, b, c, d;
+    std::int16_t a, b, c, d;
 
     while (std::cin >> a >> b >> c >> d) {
         if (a == 1) {

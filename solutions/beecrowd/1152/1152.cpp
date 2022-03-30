@@ -5,9 +5,9 @@
 #include <vector>
 
 struct arc {
-    int32_t node_a;
-    int32_t node_b;
-    int32_t meters;
+    std::int32_t node_a;
+    std::int32_t node_b;
+    std::int32_t meters;
 };
 
 std::vector< arc > graph;
@@ -17,13 +17,13 @@ bool comparator(arc a, arc b) {
 }
 
 struct disjointset_node {
-    int32_t data;
+    std::int32_t data;
     disjointset_node *parent;
 };
 
-std::map< int32_t, disjointset_node > disjointset;
+std::map< std::int32_t, disjointset_node > disjointset;
 
-void makeset(int32_t data) {
+void makeset(std::int32_t data) {
     disjointset[data].data = data;
     disjointset[data].parent = &disjointset[data];
 }
@@ -35,7 +35,7 @@ disjointset_node *findset(disjointset_node *n) {
     return n->parent;
 }
 
-bool unionset(int32_t data_a, int32_t data_b) {
+bool unionset(std::int32_t data_a, std::int32_t data_b) {
     disjointset_node node_a = disjointset[data_a];
 
     disjointset_node node_b = disjointset[data_b];
@@ -52,7 +52,7 @@ bool unionset(int32_t data_a, int32_t data_b) {
 }
 
 int main() {
-    int32_t m, n, x, y, z, i, count;
+    std::int32_t m, n, x, y, z, i, count;
 
     while (std::cin >> m >> n && m && n) {
         for (i = 0; i < n; i++) {

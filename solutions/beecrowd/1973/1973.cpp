@@ -3,10 +3,10 @@
 #include <set>
 
 int main() {
-    int64_t n, x;
-    int64_t total_sheeps;
-    int16_t attacked_stars;
-    int16_t total_zeros;
+    std::int64_t n, x;
+    std::int64_t total_sheeps;
+    std::int16_t attacked_stars;
+    std::int16_t total_zeros;
     bool done;
 
     scanf("%lld", &n);
@@ -15,7 +15,7 @@ int main() {
     total_zeros = 0;
     done = false;
 
-    for (int16_t i = 0; i < n; i++) {
+    for (std::int16_t i = 0; i < n; i++) {
         scanf("%lld", &x);
         total_sheeps += x;
 

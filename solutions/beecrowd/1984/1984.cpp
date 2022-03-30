@@ -4,7 +4,7 @@
 void reverse(std::string n) {
     std::string reversed_n = "";
 
-    for (int16_t i = n.length() - 1; i >= 0; i--) {
+    for (std::int16_t i = n.length() - 1; i >= 0; i--) {
         std::cout << n[i];
     }
 
