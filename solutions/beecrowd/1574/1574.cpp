@@ -12,7 +12,7 @@ int main() {
         position = 0;
 
         std::cin >> n;
-        for (i = 1; i <= n; i ++) {
+        for (i = 1; i <= n; i++) {
             std::cin >> command;
 
             if (command == "LEFT") {

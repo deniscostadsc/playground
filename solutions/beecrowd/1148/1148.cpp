@@ -5,7 +5,8 @@
 
 std::int32_t matrix[501][501];
 
-std::int32_t dijkstra(std::int32_t source, std::int32_t destiny, std::int32_t n) {
+std::int32_t
+    dijkstra(std::int32_t source, std::int32_t destiny, std::int32_t n) {
     std::int32_t shortest_distance, next_vertex, i, j;
     std::int32_t distance[n];
     bool correct[n];

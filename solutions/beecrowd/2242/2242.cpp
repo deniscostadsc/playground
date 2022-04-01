@@ -14,17 +14,20 @@ int main() {
         laugh_vowels = "";
         is_funniest = true;
 
-        for (std::int16_t i = 0; i < static_cast< std::int16_t >(laugh.size()); i++) {
+        for (std::int16_t i = 0; i < static_cast< std::int16_t >(laugh.size());
+             i++) {
             if (is_vowel(laugh[i])) {
                 laugh_vowels += laugh[i];
             }
         }
 
-        for (std::int16_t i = 0; i < static_cast< std::int16_t >(laugh_vowels.size()) / 2;
+        for (std::int16_t i = 0;
+             i < static_cast< std::int16_t >(laugh_vowels.size()) / 2;
              i++) {
             if (laugh_vowels[i]
                 != laugh_vowels
-                    [static_cast< std::int16_t >(laugh_vowels.size()) - 1 - i]) {
+                    [static_cast< std::int16_t >(laugh_vowels.size()) - 1
+                     - i]) {
                 is_funniest = false;
             }
         }

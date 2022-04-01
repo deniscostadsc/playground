@@ -14,7 +14,10 @@ bool is_ok(std::int32_t p, std::int32_t c, std::int32_t f) {
 }
 
 bool backtrack(
-    std::int32_t p, std::int32_t c, std::int32_t f, std::vector< std::int32_t > used_food) {
+    std::int32_t p,
+    std::int32_t c,
+    std::int32_t f,
+    std::vector< std::int32_t > used_food) {
     bool ok = false;
     std::int32_t next;
 

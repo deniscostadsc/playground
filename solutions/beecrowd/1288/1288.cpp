@@ -2,7 +2,11 @@
 #include <iostream>
 
 bool mission_successful(
-    std::int32_t power[], std::int32_t weight[], std::int32_t n, std::int32_t k, std::int32_t r) {
+    std::int32_t power[],
+    std::int32_t weight[],
+    std::int32_t n,
+    std::int32_t k,
+    std::int32_t r) {
     std::int32_t result[n + 1][k + 1];
 
     for (std::int32_t i = 0; i <= n; i++) {

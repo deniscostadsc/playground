@@ -3,7 +3,10 @@
 #include <iostream>
 
 std::int32_t max_time_deliveries(
-    std::int32_t time[], std::int32_t amount[], std::int32_t n, std::int32_t p) {
+    std::int32_t time[],
+    std::int32_t amount[],
+    std::int32_t n,
+    std::int32_t p) {
     std::int32_t result[n + 1][p + 1];
 
     for (std::int32_t i = 0; i <= n; i++) {

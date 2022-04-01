@@ -27,7 +27,7 @@ std::int64_t lcm_many(std::int32_t numbers[], std::int32_t n) {
 
 int main() {
     std::int32_t numbers[] = {1,  2,  3,  4,  5,  6,  7,  8,  9,  10,
-                         11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
+                              11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
 
     printf("%ld\n", lcm_many(numbers, 20));
 

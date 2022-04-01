@@ -2,7 +2,10 @@
 #include <iostream>
 
 std::int16_t calculate_value(
-    std::int16_t attack, std::int16_t defense, std::int16_t bonus, std::int16_t level) {
+    std::int16_t attack,
+    std::int16_t defense,
+    std::int16_t bonus,
+    std::int16_t level) {
     std::int16_t result = (attack + defense) / 2;
     return result + (level % 2 == 0 ? bonus : 0);
 }

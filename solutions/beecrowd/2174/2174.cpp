@@ -13,7 +13,8 @@ int main() {
             podekex[pomekon] = true;
         }
 
-        std::cout << "Falta(m) " << 151 - static_cast< std::int16_t >(podekex.size())
+        std::cout << "Falta(m) "
+                  << 151 - static_cast< std::int16_t >(podekex.size())
                   << " pomekon(s)." << std::endl;
         podekex.clear();
     }

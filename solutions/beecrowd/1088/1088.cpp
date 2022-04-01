@@ -8,7 +8,7 @@ std::int32_t merge(
     std::int32_t middle,
     std::int32_t right) {
     std::int32_t left_index = left, right_index = middle, temp_index = left,
-            swaps_count = 0;
+                 swaps_count = 0;
 
     while (left_index <= middle - 1 && right_index <= right) {
         if (numbers[left_index] <= numbers[right_index]) {
@@ -34,8 +34,11 @@ std::int32_t merge(
     return swaps_count;
 }
 
-std::int32_t
-    merge_sort(std::int32_t numbers[], std::int32_t temp[], std::int32_t left, std::int32_t right) {
+std::int32_t merge_sort(
+    std::int32_t numbers[],
+    std::int32_t temp[],
+    std::int32_t left,
+    std::int32_t right) {
     std::int32_t middle, swaps_count;
 
     if (left < right) {

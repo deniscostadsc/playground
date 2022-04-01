@@ -2,8 +2,8 @@
 #include <iostream>
 
 int main() {
-    std::int16_t chicken_meals, beef_meals, pasta_meals, chicken_orders, beef_orders,
-        pasta_orders, result;
+    std::int16_t chicken_meals, beef_meals, pasta_meals, chicken_orders,
+        beef_orders, pasta_orders, result;
 
     while (std::cin >> chicken_meals >> beef_meals >> pasta_meals
            >> chicken_orders >> beef_orders >> pasta_orders) {

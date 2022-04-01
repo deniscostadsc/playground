@@ -2,7 +2,8 @@
 #include <iostream>
 
 int main() {
-    std::int16_t a, d, i, j, nearest_attack_player, defense_distance, count, temp;
+    std::int16_t a, d, i, j, nearest_attack_player, defense_distance, count,
+        temp;
 
     while (std::cin >> a >> d && a && d) {
         std::cin >> nearest_attack_player;

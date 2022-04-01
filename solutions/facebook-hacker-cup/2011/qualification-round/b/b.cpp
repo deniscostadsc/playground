@@ -1,7 +1,8 @@
 #include <cstdio>
 #include <iostream>
 
-std::int16_t **create_grid(std::int16_t r, std::int16_t c, std::int16_t m, std::int16_t **missing) {
+std::int16_t **create_grid(
+    std::int16_t r, std::int16_t c, std::int16_t m, std::int16_t **missing) {
     std::int16_t i, j;
     std::int16_t **grid = new std::int16_t *[r];
 
@@ -85,7 +86,8 @@ void calculate_probability(
     }
 }
 
-void where_to_drop(std::int16_t r, std::int16_t c, std::int16_t k, std::int16_t **grid) {
+void where_to_drop(
+    std::int16_t r, std::int16_t c, std::int16_t k, std::int16_t **grid) {
     std::int16_t j;
 
     for (j = 0; j < c; j++) {

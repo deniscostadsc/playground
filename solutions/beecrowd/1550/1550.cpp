@@ -13,7 +13,8 @@ std::int16_t reverse(std::int16_t number) {
         return number;
     }
 
-    while (static_cast< std::int16_t >(number / std::pow(10, digits_count)) > 0) {
+    while (static_cast< std::int16_t >(number / std::pow(10, digits_count))
+           > 0) {
         digits_count++;
     }
 

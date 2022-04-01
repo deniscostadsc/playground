@@ -7,7 +7,7 @@ COMMANDS_QUANTITY_INCREASE_STEP=5
 
 commands_quantity=5
 
-echo $(($TESTCASES + 2))  # I want some hardcoded test cases
+echo "$((TESTCASES + 2))"  # I want some hardcoded test cases
 
 echo "1"
 echo "LEFT"
@@ -19,7 +19,7 @@ for _ in $(seq $TESTCASES); do
 
     for i in $(seq 1 $commands_quantity); do
         command_choice=$((RANDOM % 3));
-        if [ $i -eq 1 ] && [ $command_choice -eq 2 ]; then
+        if [ "$i" -eq 1 ] && [ "$command_choice" -eq 2 ]; then
             command_choice=$((RANDOM % 2));
         fi
 
