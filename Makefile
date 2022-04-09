@@ -11,9 +11,9 @@
 	__js-lint-fix \
 	__js-lint \
 	__js-lint-build \
-	__py-lint-fix \
 	__py-lint \
 	__py-lint-build \
+	__py-lint-fix \
 	__py-lint-update-requirements \
 	__run_build \
 	__shell-lint \
