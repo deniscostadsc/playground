@@ -1,2 +1,2 @@
-SELECT count(distinct customers.city)
+SELECT count(DISTINCT customers.city)
 FROM customers;

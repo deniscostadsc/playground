@@ -1,1 +1,1 @@
-select TRUNC(AVG(price), 2) as price from products;
+SELECT TRUNC(AVG(price), 2) AS price FROM products;

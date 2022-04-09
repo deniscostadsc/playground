@@ -18,6 +18,9 @@
 	__run_build \
 	__shell-lint \
 	__shell-lint-build \
+	__sql-lint \
+	__sql-lint-build \
+	__sql-lint-fix \
 	check-tags \
 	clean \
 	languages \
@@ -178,6 +181,15 @@ __shell-lint: __shell-lint-build
 __shell-lint-build:
 	@$(DOCKER_BUILD) .docker/lint/shell-lint.Dockerfile -t shell-lint .
 
+__sql-lint: __sql-lint-fix
+	@git diff --exit-code *.sql
+
+__sql-lint-build:
+	@$(DOCKER_BUILD) .docker/lint/$(SQL)-lint.Dockerfile -t $(SQL)-lint .
+
+__sql-lint-fix: __sql-lint-build
+	@$(DOCKER_RUN) $(SQL)-lint find . -name '*.sql' -exec sqlformat --indent_width=4 -k upper -o {} {} \;
+
 check-tags:
 	@./scripts/check-tags.sh
 
@@ -197,14 +209,15 @@ clean:
 languages:
 	@./scripts/languages.sh
 
-lint: __clj-lint __cpp-lint __go-lint __js-lint __py-lint __shell-lint
+lint: __clj-lint __cpp-lint __go-lint __js-lint __py-lint __shell-lint __sql-lint
 
 lint-fix: \
 	__cpp-lint-fix \
 	__dart-lint-fix \
 	__go-lint-fix \
 	__js-lint-fix \
-	__py-lint-fix
+	__py-lint-fix \
+	__sql-lint-fix
 
 new-problem:
 ifdef FOLDER

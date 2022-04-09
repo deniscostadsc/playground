@@ -9,5 +9,5 @@ FROM (SELECT name, customers_number, 1 AS filter
         FROM lawyers)
     UNION
     SELECT 'Average', ROUND(AVG(customers_number)), 2 AS filter
-    FROM lawyers) as nontable
+    FROM lawyers) AS nontable
 ORDER BY filter, customers_number DESC;

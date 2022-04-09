@@ -33,7 +33,7 @@ VALUES
   (3,	'South Chairs',	'Rua do Moinho',	'Santa Maria',	'RS'),
   (4,	'Elon Electro',	'Rua Apolo',	'São Paulo',	'SP'),
   (5,	'Mike electro',	'Rua Pedro da Cunha',	'Curitiba',	'PR');
-  
+
 INSERT INTO categories (id, name)
 VALUES
   (1,	'Super Luxury'),
@@ -41,7 +41,7 @@ VALUES
   (3,	'Tech'),
   (4,	'Vintage'),
   (5,	'Supreme');
-  
+
 INSERT INTO products ( id, name, amount, price, id_providers, id_categories)
 VALUES
   (1,	'Blue Chair',	30,	300.00,	5,	5),
@@ -49,7 +49,7 @@ VALUES
   (3,	'Disney Wardrobe',	400,	829.50,	4,	1),
   (4,	'Blue Toaster',	20,	9.90,	3,	1),
   (5,	'TV',	30,	3000.25,	2,	2);
-  
-  
+
+
 /*  Execute this query to drop the tables */
 -- DROP TABLE products, categories, providers; --

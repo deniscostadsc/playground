@@ -23,7 +23,7 @@ VALUES
   (3,	'Silver Seal',	2.50),
   (4,	'Gold Seal',	3.00),
   (5,	'Promotion',	1.50);
-  
+
 INSERT INTO movies (id, name, id_prices)
 VALUES
   (1,	'Batman',	3),
@@ -31,6 +31,6 @@ VALUES
   (3,	'White Duck',	5),
   (4,	'Breaking Barriers',	4),
   (5,	'The Two Hours',	2);
-  
+
   /*  Execute this query to drop the tables */
   -- DROP TABLE movies, prices; --
