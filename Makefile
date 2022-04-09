@@ -51,7 +51,7 @@ RS = rs
 SCALA = scala
 SQL = sql
 
-LANGUAGES = \
+SUPPORTED_LANGUAGES = \
 	$(C) \
 	$(CLJ) \
 	$(CPP) \
@@ -73,8 +73,8 @@ LANGUAGES = \
 	$(SCALA) \
 	$(SQL)
 
-ifdef LANGUAGE
-LANGUAGES := $(LANGUAGE)
+ifdef LANGUAGES
+SUPPORTED_LANGUAGES := $(LANGUAGES)
 endif
 
 FOLDER_EXISTS = 0
@@ -171,7 +171,7 @@ __py-lint-update-requirements: __py-lint-build
 	@$(DOCKER_RUN) $(PY)-lint scripts/update-python-requirements-ci.sh
 
 __run-build:
-	@for language in $(LANGUAGES); do \
+	@for language in $(SUPPORTED_LANGUAGES); do \
 		$(DOCKER_BUILD) .docker/$$language.Dockerfile -t $$language .; \
 	done
 
@@ -220,18 +220,33 @@ lint-fix: \
 	__sql-lint-fix
 
 new-problem:
-ifdef FOLDER
+ifdef LANGUAGES
+	$(error On new-problem task, you should use LANGUAGE not LANGUAGES)
+endif
+
+ifndef FOLDER
+	$(error You must specify a FOLDER variable to create a new problem)
+endif
+
+ifndef LANGUAGE
+	$(error You must specify a LANGUAGE variable to create a new problem)
+endif
+
 	@mkdir -p $(FOLDER)
-	@touch $(FOLDER)/{in.txt,out.txt,problem.md,tags.txt,$(shell basename $(FOLDER)).cpp}
+	@touch $(FOLDER)/{out.txt,problem.md,tags.txt,$(shell basename $(FOLDER)).$(LANGUAGE)}
+
+ifeq ($(strip $(LANGUAGE)),sql)
+	@touch $(FOLDER)/{schema.sql,drop-table.sql}
 else
-	@echo "You must specify a FOLDER variable to create a new problem. See example bellow:"
-	@echo ""
-	@echo "make new-problem FOLDER=solutions/uri/1000"
-	@echo ""
+	@touch $(FOLDER)/in.txt
 endif
 
 run: clean __run-build
-	@./scripts/run-problems.sh "$(FOLDERS)" "$(LANGUAGES)" "$(DOCKER_RUN)"
+ifdef LANGUAGE
+	$(error On run task, you should use LANGUAGES not LANGUAGE)
+endif
+
+	@./scripts/run-problems.sh "$(FOLDERS)" "$(SUPPORTED_LANGUAGES)" "$(DOCKER_RUN)"
 
 wrong:
 	@find . -name 'WRONG' | sort
