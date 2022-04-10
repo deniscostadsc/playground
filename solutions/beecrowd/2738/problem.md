@@ -10,4 +10,4 @@ ordered by score (highest first).
 
 The score is given by the weighted average described as:
 
-$Avg = \frac{(math \times 2) + (specific \times 3) + (project_plan \times 5)}{10}$
+$Avg = \frac{(math \times 2) + (specific \times 3) + (project\_plan \times 5)}{10}$

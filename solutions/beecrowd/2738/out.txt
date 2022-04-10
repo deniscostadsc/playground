@@ -1,14 +1,14 @@
- id |         name          
-----+-----------------------
-  1 | Michael P Cannon
-  2 | Barbra J Cable
-  3 | Ronald D Jones
-  4 | Timothy K Fitzsimmons
-  5 | Ivory B Morrison
-  6 | Sheila R Denis
-  7 | Edward C Durgan
-  8 | William K Spencer
-  9 | Donna D Pursley
- 10 | Ann C Davis
+         name          |  avg  
+-----------------------+-------
+ Edward C Durgan       | 74.10
+ Timothy K Fitzsimmons | 70.30
+ Donna D Pursley       | 58.90
+ Sheila R Denis        | 47.00
+ Michael P Cannon      | 43.10
+ Ivory B Morrison      | 35.90
+ Ann C Davis           | 31.80
+ Ronald D Jones        | 26.70
+ William K Spencer     | 14.40
+ Barbra J Cable        | 13.30
 (10 rows)
 
