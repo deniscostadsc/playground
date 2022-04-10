@@ -1,5 +1,6 @@
 import sys
 
+
 def can_form_trinagle(a, b, c):
     if a >= b + c:
         return False
@@ -8,6 +9,7 @@ def can_form_trinagle(a, b, c):
     if c >= a + b:
         return False
     return True
+
 
 for line in sys.stdin:
     a, b, c, d = map(int, line.split())
@@ -18,6 +20,6 @@ for line in sys.stdin:
     result |= can_form_trinagle(b, c, d)
 
     if result:
-        print("S")
+        print('S')
     else:
-        print("N")
+        print('N')
