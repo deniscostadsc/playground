@@ -10,7 +10,7 @@ NUMBERS=(1 2 3 4 5 6 7 8 9 0)
 function print_letters {
     count_letters=$1
 
-    for _ in $(seq $count_letters); do
+    for _ in $(seq "$count_letters"); do
         echo -n "${LETTERS[$((RANDOM % 52))]}"
     done
 }
@@ -20,10 +20,10 @@ function print_numbers {
 
     echo -n "${NUMBERS[$((RANDOM % 9))]}"
 
-    if [ $count_numbers -gt 1 ]; then
+    if [ "$count_numbers" -gt 1 ]; then
         count_numbers=$((count_numbers - 1))
 
-        for _ in $(seq $count_numbers); do
+        for _ in $(seq "$count_numbers"); do
             echo -n "${NUMBERS[$((RANDOM % 10))]}"
         done
     fi
