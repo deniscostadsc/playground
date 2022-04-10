@@ -1,8 +1,14 @@
 import sys
 
+
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+
 n = int(sys.stdin.readline())
 
-# TODO: change this to lcm calculation
 for _ in range(n):
     a, _, b, o, c, _, d = sys.stdin.readline().split()
     a, b, c, d = map(int, [a, b, c, d])
@@ -20,19 +26,6 @@ for _ in range(n):
         num = a * d
         den = b * c
 
-    r = abs(den)
-    if abs(num) < abs(den):
-        r = abs(num)
+    gcd_result = gcd(num, den)
 
-    num_r = num
-    den_r = den
-
-    j = 2
-    while j <= r // 2 + 1:
-        if num_r % j == 0 and den_r % j == 0:
-            num_r = num_r // j
-            den_r = den_r // j
-        else:
-            j += 1
-
-    print(f'{num}/{den} = {num_r}/{den_r}')
+    print(f'{num}/{den} = {num // gcd_result}/{den // gcd_result}')

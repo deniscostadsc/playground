@@ -2,8 +2,21 @@
 #include <cstdint>
 #include <cstdio>
 
+std::int16_t gcd(std::int16_t a, std::int16_t b) {
+    std::int16_t mod_result, x;
+
+    while (b != 0) {
+        x = b;
+        mod_result = a % b;
+        b = mod_result < 0 ? mod_result + b : mod_result;
+        a = x;
+    }
+
+    return a;
+}
+
 int main() {
-    std::int16_t n, a, b, c, d, r, num, den, num_r, den_r, j;
+    std::int16_t n, a, b, c, d, num, den, gcd_result;
     char o, i;
 
     scanf("%d", &n);
@@ -28,26 +41,11 @@ int main() {
                 break;
         }
 
-        if (std::abs(num) < std::abs(den)) {
-            r = std::abs(num);
-        } else {
-            r = std::abs(den);
-        }
+        gcd_result = gcd(num, den);
 
-        num_r = num;
-        den_r = den;
+        // printf("---> %d\n", gcd_result);
 
-        j = 2;
-        while (j <= r / 2 + 1) {
-            if (num_r % j == 0 && den_r % j == 0) {
-                num_r = num_r / j;
-                den_r = den_r / j;
-            } else {
-                j++;
-            }
-        }
-
-        printf("%d/%d = %d/%d\n", num, den, num_r, den_r);
+        printf("%d/%d = %d/%d\n", num, den, num / gcd_result, den / gcd_result);
     }
     return 0;
 }
