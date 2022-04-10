@@ -26,10 +26,10 @@ make clean  # remove files created by the run task
 make languages  # show numbers of solutions in different languages per folder
 make lint  # check lint for all solutions
 make lint-fix  # format all code
-make new-problem FOLDER=path/to/create/ LANGUAGE=language-extension  # create solution template
+make new-problem FOLDER=path/to/create/ LANGUAGE='language-extension'  # create solution template
 make run  # run and test all past solutions
 make run FOLDER=sub/path/to/run  # run and test a specific sub-folder
-make run FOLDER=sub/path/to/run LANGUAGES=language-extensions  # combine FOLDER and LANGUAGE behavior
+make run FOLDER=sub/path/to/run LANGUAGES='language-extensions'  # combine FOLDER and LANGUAGE behavior
 make run LANGUAGES=language-extensions  # run and test all problems of specific language
 make wrong  # show all solutions that are not complete yet
 ```
