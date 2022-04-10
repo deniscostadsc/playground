@@ -15,6 +15,9 @@ indent_style = tab
 [*.clj,*.dart,*.js,*.rb,*.yml,*.yaml]
 indent_size = 2
 
+[*.sql]
+insert_final_newline = false
+
 [out.txt]
 trim_trailing_whitespace = false
 insert_final_newline = true

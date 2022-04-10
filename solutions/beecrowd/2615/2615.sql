@@ -1,2 +1,2 @@
 SELECT DISTINCT city
-    FROM customers;
+FROM customers;
