@@ -1,4 +1,6 @@
-#!/usr/bin/env bash
+#/usr/bin/env bash
+
+set -euo pipefail
 
 TESTCASES_EASY=50
 TESTCASES_MEDIUM=100
