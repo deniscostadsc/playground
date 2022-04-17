@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 echo 100
 
 for ((number = 0; number < 100; number++)); do

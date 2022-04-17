@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 for month in $(seq 1 12); do
     for day in $(seq 1 31); do
         [ "$day" -ge 30 ] && [ "$month" -eq 2 ] && continue

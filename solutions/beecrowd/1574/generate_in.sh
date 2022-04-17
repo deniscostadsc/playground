@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# set -vx
+set -euo pipefail
 
 TESTCASES=20
 COMMANDS_QUANTITY_INCREASE_STEP=5

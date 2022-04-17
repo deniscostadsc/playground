@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 MAX_C=10000
 C_STEP=136
 MAX_N=100

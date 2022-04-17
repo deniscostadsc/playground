@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 test_cases=10
 minimum_city_number=5
 maximum_city_number=50

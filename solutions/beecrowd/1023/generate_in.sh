@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 for (( i = 0; i < 100; i++ )); do
     n=$((RANDOM % 10 + 1))
     echo "$n"

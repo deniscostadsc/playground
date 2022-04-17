@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 if [ "$((RANDOM % 2))" -eq 0 ]; then
     echo "S"
 else

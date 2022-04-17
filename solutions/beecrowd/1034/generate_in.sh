@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 TESTCASES=300
 MINIMUM_N=5
 MINIMUM_M=5

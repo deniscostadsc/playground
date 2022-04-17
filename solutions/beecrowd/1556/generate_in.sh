@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 TEST_CASES=200
 
 # shellcheck disable=SC2034

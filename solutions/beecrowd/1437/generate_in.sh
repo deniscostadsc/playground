@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 chars=(D E)
 
 for (( i = 0; i < 1000; i++ )); do

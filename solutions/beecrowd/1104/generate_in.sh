@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 for _ in $(seq 100); do
     a=$((RANDOM % 100 + 1))
     b=$((RANDOM % 100 + 1))

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 for (( i = 0; i < 65; i++ )); do
     n=$((RANDOM % 1000 + 1))
     q=$((RANDOM % n + 1))

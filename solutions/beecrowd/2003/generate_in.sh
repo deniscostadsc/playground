@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 HOUR_START=5
 HOUR_END=8
 MINUTE_START=0

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 testcase_number=300
 
 echo $testcase_number

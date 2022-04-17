@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 testcases_qty=300
 
 for (( i = 0; i < testcases_qty; i++ )); do

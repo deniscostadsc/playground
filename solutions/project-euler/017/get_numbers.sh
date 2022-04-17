@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 function get_numbers {
     base_url='https://www.ego4u.com/en/cram-up/vocabulary/numbers/generator?param='
     number=$1

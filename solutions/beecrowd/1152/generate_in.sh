@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 TEST_CASES=5
 
 for _ in $(seq $TEST_CASES); do

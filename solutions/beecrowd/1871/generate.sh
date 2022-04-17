@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 TEST_CASES=100000
 UPPER_LIMIT=999999999
 

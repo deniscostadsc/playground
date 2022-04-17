@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 # shellcheck disable=SC2207
 alphabet=($(echo {b..z}))
 NUMBER_OF_COMMANDS=80

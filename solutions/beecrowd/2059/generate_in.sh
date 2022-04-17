@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+set -euo pipefail
+
 for p in $(seq 0 1); do
     for j1 in $(seq 1 2); do
         for j2 in $(seq 1 2); do

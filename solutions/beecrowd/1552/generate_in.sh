@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 TEST_CASES=9
 MAX_PEOPLE=50
 MAX_X=50

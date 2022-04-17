@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 test_cases=100
 
 function random_number_for_2048 {

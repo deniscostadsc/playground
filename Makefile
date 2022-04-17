@@ -176,6 +176,7 @@ __run-build:
 	done
 
 __shell-lint: __shell-lint-build
+	@scripts/check-pipefail-in-shellscripts.sh
 	@$(DOCKER_RUN) shell-lint shellcheck $$(find . -name '*.sh')
 
 __shell-lint-build:
@@ -191,7 +192,7 @@ __sql-lint-fix: __sql-lint-build
 	@$(DOCKER_RUN) $(SQL)-lint find . -name '*.sql' -exec sqlformat --indent_width=4 -k upper -o {} {} \;
 
 check-tags:
-	@./scripts/check-tags.sh
+	@scripts/check-tags.sh
 
 clean:
 	@find . -name '*.class' -delete
@@ -246,7 +247,7 @@ ifdef LANGUAGE
 	$(error On run task, you should use LANGUAGES not LANGUAGE)
 endif
 
-	@./scripts/run-problems.sh "$(FOLDERS)" "$(SUPPORTED_LANGUAGES)" "$(DOCKER_RUN)"
+	@scripts/run-problems.sh "$(FOLDERS)" "$(SUPPORTED_LANGUAGES)" "$(DOCKER_RUN)"
 
 wrong:
 	@find . -name 'WRONG' | sort
