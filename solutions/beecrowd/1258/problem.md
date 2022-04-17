@@ -13,13 +13,13 @@ M or (G:large) and lastly by name.
 ## Input
 
 The input contains several test cases. Each test case begins with a integer
-and positive $N$ ($1 ≤ N ≤ 60$), that indicates the amount of shirts that will
-be made for that class. The next $2N$ lines contains information of each shirt
-(will be two lines of information for each shirt). The first line will contain
-the student's name and the second line will contain the color of the shirt
-details ("branco" -white or "vermelho" -red) followed by a space and the size
-of the shirt "P" "M" or "G". The input ends when the value of $N$ equals zero
-(0) and this number should not be processed.
+and positive $N (1 \leq N \leq 60)$, that indicates the amount of shirts that
+will be made for that class. The next $2N$ lines contains information of each
+shirt (will be two lines of information for each shirt). The first line will
+contain the student's name and the second line will contain the color of the
+shirt details ("branco" -white or "vermelho" -red) followed by a space and the
+size of the shirt "P" "M" or "G". The input ends when the value of $N$ equals
+zero (0) and this number should not be processed.
 
 ## Output
 
