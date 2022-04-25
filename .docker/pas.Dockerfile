@@ -1,4 +1,8 @@
-FROM kveroneau/fpc:3.2.0
+FROM ubuntu:14.04
+
+RUN apt update && \
+    apt upgrade -y && \
+    apt install -y fpc-2.6.2
 
 RUN mkdir /code
 WORKDIR /code
