@@ -12,9 +12,9 @@ to make a program that checks if the conversions made ​​by him are correct.
 ## Input
 
 The input contains many test cases. The first line of input contains an
-integer N indicating the number of test cases that follow, one by line. Each
-test case contains a number $X$ ($X > 0$) followed by a Y text with three
-characters, indicating if the X number is in binary, decimal or hexadecimal.
+integer $N$ indicating the number of test cases that follow, one by line. Each
+test case contains a number $X (X \gt 0)$ followed by a $Y$ text with three
+characters, indicating if the $X$ number is in binary, decimal or hexadecimal.
 Regardless of the format, any of the numbers must fit into a 32-bit integer.
 
 ## Output

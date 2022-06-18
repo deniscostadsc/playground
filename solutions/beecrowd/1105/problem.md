@@ -23,15 +23,15 @@ and credits.
 
 The input consists of several test cases. The first line of each test case
 contains two integers $B$ and $N$, indicating the number of banks
-($1 \leq B \leq 20$) and the number of debentures printed by the banks
-($1 \leq N \leq 20$). The banks are identified by integers between 1 and B.
+$(1 \leq B \leq 20)$ and the number of debentures printed by the banks
+$(1 \leq N \leq 20)$. The banks are identified by integers between 1 and B.
 The second line contains $B$ integers $R_i$ separated by spaces, indicating
 the monetary reserves of each one of the B banks
-($0 \leq R_i \leq 10^4$, for $1 \leq i \leq B$).  The $N$ following lines
+$(0 \leq R_i \leq 10^4$, for $1 \leq i \leq B)$.  The $N$ following lines
 contain each one three integers separated by spaces: an integer $D$,
-indicating the debtor bank ($1 \leq D \leq B$), an integer C, indicating
-the creditor bank ($1 \leq C \leq B e D \neq C$) and an
-integer V, indicating the debenture value ($1 \leq V \leq 10^4$).
+indicating the debtor bank $(1 \leq D \leq B)$, an integer C, indicating
+the creditor bank $(1 \leq C \leq B e D \neq C)$ and an
+integer V, indicating the debenture value $(1 \leq V \leq 10^4)$.
 
 The end of input is indicated by a line containing only two zeros, separated
 by spaces.

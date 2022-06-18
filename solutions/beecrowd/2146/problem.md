@@ -15,7 +15,7 @@ password.
 ## Input
 
 The entry will have many test cases. Each test case will have a number N,
-representing the number written on paper ($1001 \leq N \leq 9999$). The entry
+representing the number written on paper $(1001 \leq N \leq 9999)$. The entry
 ends with the end of the file.
 
 ## Output

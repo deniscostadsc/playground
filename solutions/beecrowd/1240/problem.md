@@ -10,7 +10,7 @@ last digit of A.
 
 The input consists of several test cases. The first line of input contains an
 integer N that indicates the number of test cases. Each test case consists of
-two integers $A$ ($1 \leq A < 2^{31}$) e B ($1 \leq B < 2^{31}$) positives.
+two integers $A (1 \leq A \lt 2^{31})$ e $B (1 \leq B \lt 2^{31})$ positives.
 
 ## Output
 

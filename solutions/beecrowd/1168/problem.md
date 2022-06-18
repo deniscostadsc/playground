@@ -11,9 +11,9 @@ value.
 ![](imgs/UOJ_1168.png)
 ## Input
 
-The input contains an integer $N$, ($1 \leq N \leq 2000$) corresponding to the
+The input contains an integer $N, (1 \leq N \leq 2000)$ corresponding to the
 number of test cases, followed by $N$ lines, each line containing an number
-($1 \leq V \leq 10^100$) corresponding to the value that John wants to set
+$(1 \leq V \leq 10^100)$ corresponding to the value that John wants to set
 with the leds.
 
 ## Output

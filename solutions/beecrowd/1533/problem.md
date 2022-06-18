@@ -17,13 +17,13 @@ method.
 
 ## Input
 
-There will be several test cases. Each test case starts with an integer $N$
-($2 \leq N \leq 1000$), representing the number of suspects.
+There will be several test cases. Each test case starts with an integer $N (2
+\leq N \leq 1000)$, representing the number of suspects.
 
 Following there will be N distinct integers, where the $i$-th integer, for
 each $1 \leq i \leq N$, represents how much the $i$-th person is suspect,
-given John Watson's opinion. Be $V$ the value of $i$-th integer,
-$1 \leq V \leq 10000$.
+given John Watson's opinion. Be $V$ the value of $i$-th integer, $1 \leq V
+\leq 10000$.
 
 The last test case is indicated when $N = 0$, which should not be processed.
 

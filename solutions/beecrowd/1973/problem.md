@@ -16,10 +16,10 @@ farm.
 
 ## Input
 
-The first input line consists of a single integer $N$ ($1 \leq N \leq 10^6$),
-which represents the number of Stars. The second input line consists of N
-integers, such that the ith integer, $X_i$ ($1 \leq X_i \leq 10^6$),
-represents the initial number of sheep in Star i.
+The first input line consists of a single integer $N (1 \leq N \leq 10^6)$,
+which represents the number of Stars. The second input line consists of $N$
+integers, such that the ith integer, $X_i (1 \leq X_i \leq 10^6)$, represents
+the initial number of sheep in Star $i$.
 
 ## Output
 

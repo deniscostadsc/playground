@@ -15,7 +15,7 @@ number N of repetitions.
 
 ## Input
 
-The input is a natural number $N$ ($0 \leq N \leq 100$) that indicates the
+The input is a natural number $N (0 \leq N \leq 100)$ that indicates the
 quantity of denominator repetitions in the continued fraction.
 
 ## Output

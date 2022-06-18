@@ -18,8 +18,8 @@ Péricles clicked on an ad).
 
 ## Input
 
-The input is initiated by a line containing two integer numbers, $N$ e $M$
-($0 < N, M < 500$), representing the initial number of tabs and the number of
+The input is initiated by a line containing two integer numbers, $N$ e $M (0
+\lt N, M \lt 500)$, representing the initial number of tabs and the number of
 actions performed by Péricles. Each subsequent line contains an action (fechou
 or clicou). Naturally, the current number of tabs is always greater of equal
 to zero.

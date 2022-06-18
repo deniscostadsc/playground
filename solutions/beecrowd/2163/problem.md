@@ -19,13 +19,13 @@ lightsaber pattern in it. No scan have more than one lightsaber pattern.
 
 The first line of the input has two positive integers $N$ and $M$,
 representing respectively the number of rows and the number of columns scanned
-in a terrain ($3 \leq N, M \leq 1000$). Each of the next $N$ lines have $M$
+in a terrain $(3 \leq N, M \leq 1000)$. Each of the next $N$ lines have $M$
 integers, describing the values scanned in each cell of the terrain
-($-100 \leq Tij \leq 100, for 1 \leq i \leq N$ and $1 \leq j \leq M$).
+$(-100 \leq T_{ij} \leq 100, \space for \space 1 \leq i \leq N \space and \space 1 \leq j \leq M)$.
 
 ## Output
 
 The output is a single line with 2 integers $X$ and $Y$ separated by one
-space. They represent the ($X$, $Y$)-coordinate of the lightsaber, if it is
+space. They represent the $(X, Y)$-coordinate of the lightsaber, if it is
 found. If the terrain doesn't have a lightsaber pattern, $X$ and $Y$ are both
 zero.

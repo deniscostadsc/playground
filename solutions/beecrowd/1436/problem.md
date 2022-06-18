@@ -17,8 +17,8 @@ the captain.
 
 ## Input
 
-Input starts with an integer $T$ ($T \leq 100$), the number of test cases.
-Each of the next $T$ lines will start with an integer $N$ ($1 < N < 11$),
+Input starts with an integer $T (T \leq 100)$, the number of test cases.
+Each of the next $T$ lines will start with an integer $N (1 \lt N \lt 11)$,
 number of team members followed by $N$ space separated integers representing
 ages of all of the members of a team. Each of these $N$ integers will be
 between 11 and 20 (inclusive). Note that, ages will be given in strictly

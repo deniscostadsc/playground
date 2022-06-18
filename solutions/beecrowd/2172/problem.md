@@ -15,11 +15,11 @@ othe event. You can help them?
 
 ## Input
 
-There will be several test cases. Each test case contains two values: $X$
-($0 < X \leq 3$) indicating the increase in value of EXP from monsters and $M$
-($10 \leq M \leq 2^{32}-1$) indicating the EXP value of the monster. The entry
+There will be several test cases. Each test case contains two values: $X (0
+\lt X \leq 3)$ indicating the increase in value of EXP from monsters and $M
+(10 \leq M \leq 2^{32}-1)$ indicating the EXP value of the monster. The entry
 ends with values $X == 0$ and $M == 0$, in which should not be processed.
 
 ## Output
 
-For each case, your program should show a value E, value of new Monster EXP.
+For each case, your program should show a value $E$, value of new Monster EXP.

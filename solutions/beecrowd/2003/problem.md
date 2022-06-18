@@ -17,7 +17,7 @@ delay Bino.
 ## Input
 
 The input consists of multiple test cases. Each case contains a single line
-containing a time $H$ ($5:00 \leq H \leq 9:00$) that Bino woken up. The input
+containing a time $H (5:00 \leq H \leq 9:00)$ that Bino woken up. The input
 ends with the final file (EOF).
 
 ## Output

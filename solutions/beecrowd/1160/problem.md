@@ -18,11 +18,11 @@ Century".
 ## Input
 
 The first line of the input contains a single integer $T$, indicating the
-number of test cases ($1 \leq T \leq 3000$). Each test case contains four
+number of test cases $(1 \leq T \leq 3000)$. Each test case contains four
 numbers: two integers $PA$ and
-$PB$ ($100 \leq PA \leq 1000000, 100 \leq PB \leq 1000000, PA \leq PB$)
+$PB (100 \leq PA \leq 1000000, 100 \leq PB \leq 1000000, PA \leq PB)$
 indicating respectively the population of $A$ and $B$ and two numbers $G1$ and
-$G2$ ($0.1 \leq G1 \leq 10.0, 0.1 \leq G2 \leq 10.0, G2 \leq G1$) with one
+$G2 (0.1 \leq G1 \leq 10.0, 0.1 \leq G2 \leq 10.0, G2 \leq G1)$ with one
 digit after the decimal point each, indicating the populational growing (in
 percentual) for $A$ and $B$ respectively.
 

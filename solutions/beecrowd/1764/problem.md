@@ -13,10 +13,10 @@ routes drawn on the map.
 ## Input
 
 The input file contains several test cases. Each test case starts with two
-numbers $M$ ($2 \leq M < 40000$) and $N$ ($1 \leq N < 50000$), the number of
+numbers $M (2 \leq M \lt 40000)$ and $N (1 \leq N \lt 50000)$, the number of
 cities and the number of roads respectively. Input is terminated by
-$M = N = 0$. Then follow N integer triples $X$ ($0 \leq X$), $Y$ ($Y < M$) and
-$Z$ ($1 \leq Z \leq 999$), specifying that there will be a bidirectional route
+$M = N = 0$. Then follow $N$ integer triples $X (0 \leq X)$, $Y (Y \lt M)$ and
+$Z (1 \leq Z \leq 999)$, specifying that there will be a bidirectional route
 between $X$ and $Y$ with $Z$ kilometers, considering that $X \neq Y$ and the
 total sum of all routes in each map is less than $2^{31}$.
 

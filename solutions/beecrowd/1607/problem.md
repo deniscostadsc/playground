@@ -16,7 +16,7 @@ transform the first string into the second one.
 
 ## Input
 
-The first line contains an integer $T$ ($T \leq 100$) indicating the number of
+The first line contains an integer $T (T \leq 100)$ indicating the number of
 test cases.
 
 For each case, the only line will contain the strings $A$

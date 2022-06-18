@@ -14,7 +14,7 @@ regular polygon, show its perimeter.
 
 The input are two positive integers: $N$ and $L$, which are, respectively, the
 number of sides and the length of each side of a regular polygon
-($3 \leq N \leq 1000000$ and $1 \leq L \leq 4000$).
+$(3 \leq N \leq 1000000 \space and \space 1 \leq L \leq 4000)$.
 
 ## Output
 

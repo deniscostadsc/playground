@@ -20,10 +20,10 @@ hours. Note that if the calculated time is 24, its program should print 0
 
 ## Input
 
-The input contains 3 integers: $S$ ($0 \leq S \leq 23$), $T$
-($1 \leq T \leq 12$) and $F$ ($-5 \leq F \leq 5$), separated by a space,
-respectively indicating the time of departure, the travel time and destination
-time zone with respect to the origin.
+The input contains 3 integers: $S (0 \leq S \leq 23)$, $T (1 \leq T \leq 12)$
+and $F (-5 \leq F \leq 5)$, separated by a space, respectively indicating the
+time of departure, the travel time and destination time zone with respect to
+the origin.
 
 ## Output
 

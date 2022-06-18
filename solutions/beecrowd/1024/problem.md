@@ -22,7 +22,7 @@ part is "t#\$A", the letters "A\$" are to be displaced.
 The input contains a number of test cases. The first line of each test case
 contains an integer $N (1 \leq N \leq 1 \times 10^4)$, indicating the number of lines
 the problem should encrypt. The following N lines contains M characters each
-$M$ ($1 \leq M \leq 1 \times 10^3$).
+$M (1 \leq M \leq 1 \times 10^3)$.
 
 ## Output
 

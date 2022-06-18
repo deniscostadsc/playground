@@ -14,10 +14,10 @@ maximum values to the approximate number of primes up to n.
 
 ## Input
 
-The input is a natural number $n$ ($17 \leq n \leq 10^9$).
+The input is a natural number $n (17 \leq n \leq 10^9)$.
 
 ## Output
 
 The output is given as two values $P$ and $M$ with 1 decimal place each, such
-that $P < (n) < M$ according to the given inequality above. These two values
+that $P \lt (n) \lt M$ according to the given inequality above. These two values
 have one blank space between them.

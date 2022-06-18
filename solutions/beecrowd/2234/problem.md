@@ -21,8 +21,8 @@ dogs consumed by participants.
 
 ## Input
 
-The input consists of a single line containing two integers $M$ and $P$ ($1
-\leq H, P \leq 100$) indicating respectively the total number of consumed hot
+The input consists of a single line containing two integers $M$ and $P (1
+\leq H, P \leq 100)$ indicating respectively the total number of consumed hot
 dogs and the total number of participants in the competition.
 
 ## Output

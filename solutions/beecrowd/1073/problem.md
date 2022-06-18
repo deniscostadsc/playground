@@ -7,7 +7,7 @@ $N$ including N if is the case.
 
 ## Input
 
-The input contain an integer $N (5 < N < 2000)$.
+The input contain an integer $N (5 \lt N \lt 2000)$.
 
 ## Output
 

@@ -16,14 +16,14 @@ not.
 
 The input contains several test cases. The first line of a test case contains
 two integers N and M, separated by a space, indicating the number of
-intersections ($2 \leq N \leq 2000$) and number of streets
-($2 \leq M \leq N(N−1)/2$). The next M lines describe the city street system,
-with each line describing one street. A street description consists of
-three integers V, W and P, separated by a blank space, where V and W are
-distinct identifiers for intersections ($1 \leq V, W \leq N , V \neq W$) and $P$
-can be 1 or 2; if $P = 1$ the street is one-way, and traffic goes from $V$ to $W$;
-if $P = 2$ then the street is two-way and links $V$ and $W$. A pair of
-intersections is connected by at most one street.
+intersections $(2 \leq N \leq 2000)$ and number of streets $(2 \leq M \leq
+N(N−1)/2)$. The next M lines describe the city street system, with each line
+describing one street. A street description consists of three integers V, W
+and P, separated by a blank space, where V and W are distinct identifiers for
+intersections $(1 \leq V, W \leq N , V \neq W)$ and $P$ can be 1 or 2; if $P =
+1$ the street is one-way, and traffic goes from $V$ to $W$; if $P = 2$ then
+the street is two-way and links $V$ and $W$. A pair of intersections is
+connected by at most one street.
 
 The last test case is followed by a line that contains only two zero numbers
 separated by a blank space.

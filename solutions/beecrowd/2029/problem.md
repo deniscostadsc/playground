@@ -21,8 +21,8 @@ NB.: Consider $\pi = 3.14$
 
 The input contains several test cases and ends with EOF. Each test case
 consists of a line containing two floating-point values of double precision
-with two decimals after comma, one $V$ ($1.00 \leq V \leq 10000.00$) and one
-$D$ ($1.00 \leq D \leq 100.00$), respectively representing the volume and the
+with two decimals after comma, one $V (1.00 \leq V \leq 10000.00)$ and one $D
+(1.00 \leq D \leq 100.00)$, respectively representing the volume and the
 container diameter.
 
 ## Output

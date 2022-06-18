@@ -23,10 +23,10 @@ program to solve this type of problem.
 The input contains several test cases. The only line of each test case
 contains four integers $X_1$, $Y_1$, $X_2$ and
 $Y2 (1 \leq X1, Y1, X2, Y2 \leq 8)$. The queen starts in the square with
-coordinates ($X+1$, $Y_1$), and must finish at the square with coordinates ($X_2$,
-$Y_2$). In the chessboard, columns are numbered from 1 to 8, from left ro
+coordinates $(X+1, Y_1)$, and must finish at the square with coordinates $(X_2,
+Y_2)$. In the chessboard, columns are numbered from 1 to 8, from left ro
 right; lines are also numbered from 1 to 8, from top to bottom. The
-coordinates of a square in line X and column $Y$ are ($X$, $Y$).
+coordinates of a square in line X and column $Y$ are $(X, Y)$.
 
 The end of input is indicated by a line containing four zeros,
 separated by spaces.

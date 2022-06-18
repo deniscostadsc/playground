@@ -25,11 +25,11 @@ determines the maximum number of cards they can trade.
 
 The input contains several test cases. The first line of a test case contains
 two integers A and B, separated by a blank space, indicating respectively the
-number of cards Alice and Betty have ($1 \leq A \leq 10^4$ and
-$1 \leq B \leq 10^4$). The second line contains A space-separated integers $X_i$,
-each indicating one of Alice's cards($1 \leq X_i \leq 10^5$). The third line
+number of cards Alice and Betty have $(1 \leq A \leq 10^4 \space and \space 1
+\leq B \leq 10^4)$. The second line contains A space-separated integers $X_i$,
+each indicating one of Alice's cards $(1 \leq X_i \leq 10^5)$. The third line
 contains B integers $Y_i$ separated by whitespaces, each number indicating one
-of Betty's cards($1 \leq Y_i \leq 10^5$). Alice and Betty's cards are listed
+of Betty's cards $(1 \leq Y_i \leq 10^5)$. Alice and Betty's cards are listed
 in non-descending order.
 
 The end of input is indicated by a line containing only two zeros, separated by

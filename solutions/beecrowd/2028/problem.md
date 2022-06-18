@@ -21,7 +21,7 @@ quantity of numbers of this sequence and below the complete sequence.
 ## Input
 
 The input consists of several test cases. Each case is composed of an integer
-$N$ ($0 \leq N \leq 200$) that indicates the last value of the last N numbers
+$N (0 \leq N \leq 200)$ that indicates the last value of the last N numbers
 of the sequence numbers. The input ends with end of file (EOF).
 
 ## Output

@@ -16,7 +16,7 @@ necessary to compose a N-sided regular polygon.
 
 ## Input
 
-The input is a single number $N$ ($3 \leq N \leq 10^9$), indicating the number
+The input is a single number $N (3 \leq N \leq 10^9)$, indicating the number
 of sides of a regular polygon.
 
 ## Output

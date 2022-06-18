@@ -25,7 +25,7 @@ group of people, and then he asked your help.
 The first line will contain an integer $N$, representing the number of test
 cases to follow.
 
-Each test case starts with an integer $K$ ($2 \leq K \leq 100$), representing
+Each test case starts with an integer $K (2 \leq K \leq 100)$, representing
 the number of people in the group. Following there will be $K$ lines,
 containing a string S each, representing the native language of these $K$
 people.

@@ -17,13 +17,12 @@ a napkin where he wrote a simple puzzle: "how many different squares are there
 in a grid of N ×N squares?".
 
 In the same napkin there was a drawing which is reproduced below, showing
-that, for N=2, the answer is 5.
-​
+that, for N=2, the answer is 5. ​
 ## Input
 
 The input contains several test cases. Each test case is composed of a single
 line, containing only one integer $N$, representing the number of squares in
-each side of the grid ($1 \leq N \leq 100$).
+each side of the grid $(1 \leq N \leq 100)$.
 
 The end of input is indicated by a line containing only one zero.
 

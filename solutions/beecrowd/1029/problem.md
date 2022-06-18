@@ -11,7 +11,7 @@ the formula to find any Fibonacci number is:
 ```
 fib(0) = 0
 fib(1) = 1
-fib(n) = fib(n-1) + fib(n-2);
+fib(n) = fib(n - 1) + fib(n - 2);
 ```
 
 One way of finding Fibonacci numbers is by recursive calls. This is

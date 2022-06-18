@@ -14,8 +14,8 @@ simulation of the output they found to get out of the most diverse problems.
 ## Input
 
 The input is composed of several test cases. The first line contains an
-integer C (2 <= C <= 99) relative to the number of questions the teacher has
-asked. The following C lines come with a question asked by the teacher.
+integer $C (2 \le C \le 99)$ relative to the number of questions the teacher
+has asked. The following C lines come with a question asked by the teacher.
 
 ## Output
 

@@ -8,7 +8,7 @@ $N = N \times (N-1) \times (N-2) \times (N-3) \times ... \times 1$.
 
 ## Input
 
-The input contains an integer value $N$ ($0 < N < 13$).
+The input contains an integer value $N (0 \lt N \lt 13)$.
 
 ## Output
 

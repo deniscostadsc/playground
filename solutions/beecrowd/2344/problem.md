@@ -29,8 +29,8 @@ determina o conceito correspondente.
 
 A entrada contém um único conjunto de testes, que deve ser lido do dispositivo
 de entrada padrão (normalmente o teclado). A entrada contém uma única linha
-com um número inteiro $N$ ($0 \leq N \leq 100$), representando uma nota de
-prova no sistema numérico.
+com um número inteiro $N (0 \leq N \leq 100)$, representando uma nota de prova
+no sistema numérico.
 
 ## Saída
 

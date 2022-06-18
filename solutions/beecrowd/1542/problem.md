@@ -13,11 +13,11 @@ the book?
 
 ## Input
 
-The input has many test cases. Each test has tree numbers $Q$ ($0 < Q < 20$),
-$D$ ($0 < D < 20$) and $P$ ($0 < P < 20$) separated by one blank space. $Q$
-means the amount of pages read per day. $D$ is the number of days you could
-speed up, if you were reading the amount of pages $P$. An unique 0 (zero)
-value means end of inputs.
+The input has many test cases. Each test has tree numbers $Q (0 \lt Q \lt
+20)$, $D (0 \lt D \lt 20)$ and $P (0 \lt P \lt 20)$ separated by one blank
+space. $Q$ means the amount of pages read per day. $D$ is the number of days
+you could speed up, if you were reading the amount of pages $P$. An unique 0
+(zero) value means end of inputs.
 
 ## Output
 

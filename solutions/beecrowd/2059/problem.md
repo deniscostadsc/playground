@@ -30,8 +30,8 @@ develop a program that given an OEC match it determines the winner.
 
 ## Input
 
-The input consists of one line with 5 integers: $p$, $j1$, $j2$, $r$, $a$.
-($0 \leq p, r, a \leq 1$ e $1 \leq j1, j2 \leq 100$).
+The input consists of one line with 5 integers: $p, j1, j2, r, a.
+(0 \leq p, r, a \leq 1 \space e \space 1 \leq j1, j2 \leq 100)$.
 
 $p$ is the player 1 choice (if $p = 1$ then player 1 chooses even, if $p = 0$
 then player 1 chooses odd). $j1$, $j2$, represents respectively the numbers

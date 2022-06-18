@@ -16,8 +16,8 @@ values ​​to dollars and cents return String formatted properly.
 ## Input
 
 The input consists of several test cases. Each test case consists of two
-integers, $dollars$ ($0 \leq dollars \leq 2 \times 10^9$) and $cents$
-($0 \leq cents \leq 99$), respectively.
+integers, $dollars (0 \leq dollars \leq 2 \times 10^9)$ and $cents (0 \leq
+cents \leq 99)$, respectively.
 
 ## Output
 

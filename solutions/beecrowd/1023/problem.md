@@ -13,11 +13,10 @@ inhabitant of each town.
 
 The input contains a number of test cases. The first line of each test case
 contains an integer $N (1 \leq N \leq 1 \times 10^6)$, indicating the amount
-properties. The following N lines contains a pair of values $X$
-($1 \leq X \leq 10)$ and $Y ( 1 \leq Y \leq 200)$ indicating the number of
-residents of each property and its total consumption (m3). Surely, no
-residence consumes more than 200 m3 per month. The end of input is represented
-by zero.
+properties. The following N lines contains a pair of values $X (1 \leq X \leq
+10)$ and $Y (1 \leq Y \leq 200)$ indicating the number of residents of each
+property and its total consumption (m3). Surely, no residence consumes more
+than 200 m3 per month. The end of input is represented by zero.
 
 ## Output
 

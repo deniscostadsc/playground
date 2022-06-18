@@ -2,7 +2,7 @@ http://www.beecrowd.com.br/judge/problems/view/1159
 
 # Sum of Consecutive Even Numbers
 
-Make a program that reads an integer $X$ times (stop when $X=0$). For each
+Make a program that reads an integer $X$ times (stop when $X = 0$). For each
 $X$, print the sum of five consecutive even numbers from $X$, including it if
 $X$
 is even. If the input number is 4, for example, the output must be 40, that is

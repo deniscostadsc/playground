@@ -18,7 +18,7 @@ something else that you can hardly imagine!
 ## Input
 
 There are several test cases. Each test case begins with a line containing a
-single integer $n$ ($1 \leq n \leq 1000$). Each of the next $n$ lines is either
+single integer $n (1 \leq n \leq 1000)$. Each of the next $n$ lines is either
 a type-1 command, or an integer 2 followed by an integer $x$. That means after
 executing a type-2 command, we get an element $x$ without error. The value of
 x is always a positive integer not larger than 100. The input is terminated by

@@ -19,8 +19,8 @@ and its value.
 ## Input
 
 The first entry is reported the number of purchased products
-($1 \leq p \leq 5$). For each product follows the quantity
-($1 \leq q \leq 500$) that the customer purchased.
+$(1 \leq p \leq 5)$. For each product follows the quantity
+$(1 \leq q \leq 500)$ that the customer purchased.
 
 Obs .: the product number will not be repeated.
 

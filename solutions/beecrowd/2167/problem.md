@@ -12,10 +12,10 @@ test, what is the first point in which this speed fall happens.
 ## Input
 
 The input is an engine test and is given in two lines. The first one has the
-number N of speed measures ($1 < N \leq 100$). The second line has $N$
-integers: the engine RPM (revolutions per minute) $R_i$ of each measure
-($0 \leq Ri \leq 10000$, for all $Ri$, such that $1 \leq i \leq N$). A measure
-is considered a speed fall if it is lower than the previous measure.
+number N of speed measures $(1 \lt N \leq 100)$. The second line has $N$
+integers: the engine RPM (revolutions per minute) $R_i$ of each measure ($0
+\leq Ri \leq 10000$, for all $Ri$, such that $1 \leq i \leq N$). A measure is
+considered a speed fall if it is lower than the previous measure.
 
 ## Output
 

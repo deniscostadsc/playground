@@ -8,7 +8,7 @@ given an I index of happiness, your Christmas scream is more lively.
 
 ## Input
 
-The input consists of an integer $I$ ($1 < I \leq 10^4$) that represents that
+The input consists of an integer $I (1 \lt I \leq 10^4)$ that represents that
 happiness index.
 
 ## Output

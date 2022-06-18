@@ -17,8 +17,8 @@ integer T indicating the number of test cases that follow.
 
 Each test case is composed of three input lines:
 
-- The first line of a test case will contain an integer $N$
-  ($0 \leq N \leq 100$) indicating the number of students in the class.
+- The first line of a test case will contain an integer $N (0 \leq N \leq
+  100)$ indicating the number of students in the class.
 - The second line will contain N student names separated by a single space
   character. All names will contain only uppercase or lowercase letters (‘A’-
   ‘Z’,‘a’-‘z’).

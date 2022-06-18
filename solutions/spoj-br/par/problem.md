@@ -18,14 +18,14 @@ programa para indicar o vencedor de cada uma das partidas.
 ## Entrada
 
 A entrada é composta de vários conjuntos de testes. A primeira linha de um
-conjunto de testes contém um inteiro N, que indica o número de partidas de Par
-ou Ímpar que aconteceram. As duas linhas seguintes contêm cada uma um nome de
-jogador. Um nome de jogador é uma cadeia de no mínimo um e no máximo dez letras
-(maiúsculas e minúsculas), sem espaços em branco. As N linhas seguintes contêm
-cada uma dois inteiros A e B que representam o número de dedos que cada jogador
-mostrou em cada partida ($0 \leq A \leq 5$ e $0 \leq B \leq 5$). Em todas as
-partidas, o primeiro jogador sempre escolhe Par. O final da entrada é
-indicado por $N = 0$.
+conjunto de testes contém um inteiro $N$, que indica o número de partidas de
+Par ou Ímpar que aconteceram. As duas linhas seguintes contêm cada uma um nome
+de jogador. Um nome de jogador é uma cadeia de no mínimo um e no máximo dez
+letras (maiúsculas e minúsculas), sem espaços em branco. As $N$ linhas
+seguintes contêm cada uma dois inteiros $A$ e $B$ que representam o número de
+dedos que cada jogador mostrou em cada partida $(0 \leq A \leq 5 \space e
+\space 0 \leq B \leq 5)$. Em todas as partidas, o primeiro jogador sempre
+escolhe Par. O final da entrada é indicado por $N = 0$.
 
 
 ###  Exemplo de entrada

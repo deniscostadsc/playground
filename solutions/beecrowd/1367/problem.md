@@ -13,10 +13,10 @@ submissions. Please, please, someone help us!
 
 The input contains several test cases. The first line of a test case contains
 a single integer $N$ indicating the number of submissions in the test
-($1 \leq N \leq 300$). Each of the following N lines describe a submission;
+$(1 \leq N \leq 300)$. Each of the following N lines describe a submission;
 each of these lines contains a problem identifier (a single letter from ’A’ to
 ’Z’), followed by an integer $T$ representing the time in minutes
-($0 \leq T \leq 300$), followed by a judgement (the word “correct” or the word
+$(0 \leq T \leq 300)$, followed by a judgement (the word “correct” or the word
 “incorrect”). The input is in ascending order by time, and there will be at
 most one“correct”judgement for each problem. The end of input is indicated by
 $N = 0$. The input must be read from standard input.

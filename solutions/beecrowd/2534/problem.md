@@ -20,17 +20,17 @@ queries informing the grade of the citizen that is ranked at a given position.
 ## Input
 
 The input contains several test cases. The first line of each test case
-contains two integers $N$ ($1 \leq N \leq 100$) and $Q$ ($1 \leq Q \leq 100$),
-the number of citizens and the number of queries.
+contains two integers $N (1 \leq N \leq 100)$ and $Q (1 \leq Q \leq 100)$, the
+number of citizens and the number of queries.
 
-Each of the next N lines contains the grade ni obtained by the i-th citizen
-($0 \leq ni \leq 30000$).
+Each of the next $N$ lines contains the grade $n_i$ obtained by the $i$-th
+citizen $(0 \leq n_i \leq 30000)$.
 
-Each of the next Q lines contains a position pi.
+Each of the next $Q$ lines contains a position $p_i$.
 
 The input ends with end-of-file (EOF).
 
 ## Output
 
 For each test case, print, for each query, a line containing the grade of the
-citizen that is ranked at position Pi.
+citizen that is ranked at position $p_i$.

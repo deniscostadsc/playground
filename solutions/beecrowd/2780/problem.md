@@ -17,16 +17,16 @@ Given the distance D of the robot to the beginning of the court, where the
 basket is, the rule is as follows:
 
 - If $D \leq 800$, the basket is worth 1 point;
-- If $800 < D \leq 1400$, the basket is worth 2 points;
-- If $1400 < D \leq 2000$, the basket is worth 3 points. The OIBR organization
+- If $800 \lt D \leq 1400$, the basket is worth 2 points;
+- If $1400 \lt D \leq 2000$, the basket is worth 3 points. The OIBR organization
   needs help to automate the game's scoreboard. Given the value of distance D,
   you must write a program to calculate the number of launch points.
 
 ## Input
 
-The first and only line of the input contains an integer $D$
-($0 \leq D \leq 2000$) indicating the distance of the robots to the start of
-the block, in centimeters, at launch.
+The first and only line of the input contains an integer $D (0 \leq D \leq
+2000)$ indicating the distance of the robots to the start of the block, in
+centimeters, at launch.
 
 ## Output
 

@@ -5,7 +5,7 @@ http://www.beecrowd.com.br/judge/problems/view/1013
 Make a program that read 3 integer numbers and print the greatest one using
 the following formula:
 
-$MaiorAB = \frac{(a + b + abs(a - b))}{2}$
+$$MaiorAB = \cfrac{(a + b + abs(a - b))}{2}$$
 
 ## Input
 

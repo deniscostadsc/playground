@@ -11,7 +11,7 @@ number of terms, report the result of the sum above.
 ## Input
 
 An integer C shall be informed , which is the amount of test cases. Each test
-case starts with an integer $N$ ($1 \leq N \leq 1000$), indicating the number
+case starts with an integer $N (1 \leq N \leq 1000)$, indicating the number
 of terms of the sum.
 
 ## Output

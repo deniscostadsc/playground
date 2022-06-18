@@ -13,11 +13,11 @@ one KG of each fruit.
 
 ## Input
 
-The first line of input contains an integer $N$ ($1 \leq N \leq 365$)
-indicating the number of test cases that follows. Each test case is composed
-of two lines. The first line contains a floating point number $V$
-($0.10 \leq V \leq 20.00$) indicating the amount spent on the second line
-contains the name of each fruit that owns Parcinova bought.
+The first line of input contains an integer $N (1 \leq N \leq 365)$ indicating
+the number of test cases that follows. Each test case is composed of two
+lines. The first line contains a floating point number $V (0.10 \leq V \leq
+20.00)$ indicating the amount spent on the second line contains the name of
+each fruit that owns Parcinova bought.
 
 ## Output
 

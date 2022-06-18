@@ -19,8 +19,8 @@ is to determine how many times the technique was used.
 ## Input
 
 The input contains several test cases. Each test case contains a line with the
-number $N$ ($1 \leq N \leq 10^6$). It is guaranteed that $N$ is such that it
-is possible to get exactly $N$ copies of a ninja (including the original one).
+number $N (1 \leq N \leq 10^6)$. It is guaranteed that $N$ is such that it is
+possible to get exactly $N$ copies of a ninja (including the original one).
 
 The input ends with end-of-file (EOF).
 

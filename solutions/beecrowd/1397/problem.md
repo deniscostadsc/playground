@@ -17,11 +17,11 @@ math. Will you help Og to determine the final score?
 ## Input
 
 The input consists of several test cases (matches). Each test case starts with
-an integer $N$ ($1 \leq N \leq 10$) that describes the number of rounds of the
-match. The value N = 0 indicates the end of the input, and should not be
-processed. The next N lines contain two integers $A$ and $B$ each
-($0 \leq A, B \leq 10$). A is the number yelled by the first player during the
-round, and B is the number yelled by the second player during the round.
+an integer $N (1 \leq N \leq 10)$ that describes the number of rounds of the
+match. The value $N = 0$ indicates the end of the input, and should not be
+processed. The next $N$ lines contain two integers $A$ and $B$ each $(0 \leq
+A, B \leq 10)$. $A$ is the number yelled by the first player during the round,
+and B is the number yelled by the second player during the round.
 
 ## Output
 

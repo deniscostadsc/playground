@@ -22,7 +22,7 @@ category this position belongs.
 ## Input
 
 Each test case has one integer $K$, representing a position
-($1 \leq K \leq 100$).
+$(1 \leq K \leq 100)$.
 
 ## Output
 

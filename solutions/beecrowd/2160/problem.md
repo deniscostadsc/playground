@@ -10,7 +10,7 @@ length form.
 
 ## Input
 
-Input is a text line $L$ ($1 \leq |L| \leq 500$).
+Input is a text line $L (1 \leq |L| \leq 500)$.
 
 ## Output
 

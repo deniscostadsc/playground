@@ -17,7 +17,7 @@ is 3). Help Mr Pi find out the ideal land for each project.
 ## Input
 
 The input has many test cases. Each one is made by tree integer numbers $A$,
-$B$ and $C$ ($> 0 and \leq 1000$) separated by one blank space. This numbers
+$B$ and $C (> 0 and \leq 1000)$ separated by one blank space. This numbers
 are the size of the house ($A$ and $B$) and the maximum percentage allowed to
 build in this neighborhood ($C$). An unique 0 (zero) value means end of
 inputs.

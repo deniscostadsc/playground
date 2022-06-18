@@ -7,7 +7,7 @@ which divided by N will give the rest = 2.
 
 ## Input
 
-The input is an integer $N (N < 1000)$
+The input is an integer $N (N \lt 1000)$
 
 ## Output
 

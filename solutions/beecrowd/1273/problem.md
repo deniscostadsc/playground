@@ -9,9 +9,9 @@ justified, in the same order as they appear in the input.
 ## Input
 
 The input contains several test cases. The first line of a test case will
-contain an integer $N$ ($1 \leq N \leq 50$) indicating the number of following
+contain an integer $N (1 \leq N \leq 50)$ indicating the number of following
 words. Each word is composed of up to 50 uppercase letters (‘A’-‘Z’) and will
-contain at least one letter. The end of input is indicated by N = 0.
+contain at least one letter. The end of input is indicated by $N = 0$.
 
 ## Output
 

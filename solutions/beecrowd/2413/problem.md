@@ -16,7 +16,7 @@ busca, e, como você é amigo dele, quer sua ajuda nesta tarefa.
 
 ## Entrada
 
-Cada caso de teste possui apenas um número, $t$ ($1 \leq t \leq 1000$), que
+Cada caso de teste possui apenas um número, $t (1 \leq t \leq 1000)$, que
 representa o número de pessoas que clicaram no terceiro link da busca.
 
 ## Saída

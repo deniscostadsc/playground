@@ -10,12 +10,14 @@ times.
 For example, by repeating 2 times the continued fraction to calculate the
 square root of 10, we have the following equation.
 
+$$\sqrt{10} \approx 3 + \cfrac{1}{6+\cfrac{1}{6}} $$
+
 Your task is to calculate the approximate value of square root of 10 given the
 number N of repetitions.
 
 ## Input
 
-The input is a natural number $N$ ($0 \leq N \leq 100$) that indicates the
+The input is a natural number $N (0 \leq N \leq 100)$ that indicates the
 quantity of denominator repetitions in the continued fraction.
 
 ## Output

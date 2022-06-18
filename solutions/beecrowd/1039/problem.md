@@ -30,9 +30,9 @@ The input contains many instances and ends with end of file (EOF). Each instance
 consists in a line with six integers: $R_1 (1 \leq R_1)$, $X_1(|X_1|)$,
 $Y_1(|Y_1|)$, $R_2 (R_2 \leq 1000)$, $X_2(|X_2|)$, $Y_2 (Y_2 \leq 1000)$.
 
-The circle drawn by the hunter has radius R1 and center ($X_1$; $Y_1$).
+The circle drawn by the hunter has radius R1 and center $(X_1; Y_1)$.
 The circle that represents the flower area have radius R2 e center
-($X_2$; $Y_2$).
+$(X_2; Y_2)$.
 
 ## Output
 

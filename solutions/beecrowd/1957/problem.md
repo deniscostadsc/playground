@@ -11,7 +11,7 @@ its representation in hexadecimal.
 ## Input
 
 The input is a positive integer number $V$ at base 10
-($1 \leq V \leq 2 x 10^9$).
+$(1 \leq V \leq 2 \times 10^9)$.
 
 ## Output
 

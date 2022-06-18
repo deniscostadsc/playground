@@ -11,12 +11,12 @@ successful.
 
 ## Input
 
-Input starts with the number of players $N$ ($1 \leq N \leq 100$), followed by
+Input starts with the number of players $N (1 \leq N \leq 100)$, followed by
 the names of each of these players. Below the name of each player, two rows of
 integers are presented. In the first row, the numbers represent the service,
-blocks and attack attempts ($0 \leq S,B,A \leq 10000$) by the specific player.
+blocks and attack attempts $(0 \leq S,B,A \leq 10000)$ by the specific player.
 In the second row there is the number of these services, blocks and attacks
-($0 \leq S1 \leq S; 0 \leq B1 \leq B; 0 \leq A1 \leq A$) that were successful.
+$(0 \leq S1 \leq S; 0 \leq B1 \leq B; 0 \leq A1 \leq A)$ that were successful.
 
 ## Output
 

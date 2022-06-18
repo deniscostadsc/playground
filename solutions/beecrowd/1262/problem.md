@@ -11,18 +11,18 @@ number of processes used by the computation, calculate the minimum duration of
 the computation in clock cycles. The trace represents each read as an 'R' and
 each write as a 'W'.
 
-For example, if trace is "RWWRRR" and procs is 3, then the minimum number of
-clock cycles is 4: one for the first read, one each for the two writes, and
+For example, if trace is "RWWRRR" and procs is $3$, then the minimum number of
+clock cycles is $4$: one for the first read, one each for the two writes, and
 one for the last group of reads.
 
 ## Input
 
 The input contains several test cases. Each test case is composed by two
-lines. The first line has a string made out of 1 to 50 characters, where each
-can be either 'R' or 'W'. The second line contains an integer $P$
-($1 \leq P \leq 10$), which represents the number of processes as a direct
-indicator of how many read operations can be performed simultaneously. The
-input stream ends in EOF.
+lines. The first line has a string made out of $1$ to $50$ characters, where
+each can be either 'R' or 'W'. The second line contains an integer $P (1 \leq
+P \leq 10)$, which represents the number of processes as a direct indicator of
+how many read operations can be performed simultaneously. The input stream
+ends in EOF.
 
 ## Output
 

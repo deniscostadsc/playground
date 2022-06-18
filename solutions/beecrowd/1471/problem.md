@@ -25,8 +25,7 @@ lives to save the city.
 ## Input
 
 The input contains several test cases and ends with EOF. Each test case is
-composed of two lines. The first line contains two integers $N$ and $R$
-($1 \leq R \leq N \leq 10^4$), indicating respectively the number of
+composed of two lines. The first line contains two integers $N$ and $R (1 \leq R \leq N \leq 10^4)$, indicating respectively the number of
 volunteers that went to the mission and the number of volunteers that returned
 from the mission. Volunteers are identified by numbers from 1 to $N$. The
 second line contains R integers, indicating the volunteers which returned from

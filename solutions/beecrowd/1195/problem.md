@@ -15,18 +15,19 @@ as in-order traversal can be very efficient.
 
 For this problem, you will receive many set of numbers and from each set you
 must to build the BST equivalent. For example, an imput with the sequence of
-numbers: 8 3 10 14 6 4 13 7 1 will result in the following binary search tree:
+numbers: $8$ $3$ $10$ $14$ $6$ $4$ $13$ $7$ $1$ will result in the following
+binary search tree:
 
 ![](imgs/UOJ_1195.png)
 
 ## Input
 
 The input file contains many test cases. The first line of input contains an
-integer $C$ ($C \leq 1000$), indicating the number of test cases that follow.
-Each test case contains two lines. The first line contains a number $N$ ($1
-\leq N \leq 500$) indicating the amount of numbers that will form each one of
-the trees. The second line contains the $N$ distinct non-negative numbers,
-each one separated by a space.
+integer $C (C \leq 1000)$, indicating the number of test cases that follow.
+Each test case contains two lines. The first line contains a number $N (1 \leq
+N \leq 500)$ indicating the amount of numbers that will form each one of the
+trees. The second line contains the $N$ distinct non-negative numbers, each
+one separated by a space.
 
 ## Output
 

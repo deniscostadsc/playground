@@ -17,7 +17,7 @@ each animal is used in each experiment.
 
 The first line of input contains an integer $N$ indicating the number
 of test cases that follows. Each test case contains an integer $Amount$
-($1 \leq Amount \leq 15$) which represents the amount of animal used and a
+$(1 \leq Amount \leq 15)$ which represents the amount of animal used and a
 character Type ('C', 'R' or 'S'), indicating the type of animal:
 
 - C: Coelho (rabbit in portuguese)

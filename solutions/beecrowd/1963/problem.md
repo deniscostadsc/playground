@@ -30,10 +30,9 @@ percentage she needs to complete the poster.
 
 ## Input
 
-The only input line consists of two values $A$ and $B$
-($0.00 < A \leq B \leq 1000.00$), given with exactly two digits after the
-decimal point, which represent respectively the old and the new prices of the
-cinema tickets.
+The only input line consists of two values $A$ and $B (0.00 \lt A \leq B \leq
+1000.00)$, given with exactly two digits after the decimal point, which
+represent respectively the old and the new prices of the cinema tickets.
 
 ## Output
 

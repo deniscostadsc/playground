@@ -22,7 +22,7 @@ number of caracteristics that were achieved on this contest.
 ## Input
 
 There will be several tests cases. Each test case starts with two integers $N$
-and $M$ ($3 \leq N, M \leq 100$).
+and $M (3 \leq N, M \leq 100)$.
 
 Then, there will be $N$ lines with $M$ integers each, where the integer on the
 $i$-th line and on the $j$-th column is 1 if the $i$-th contestant solved the

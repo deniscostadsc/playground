@@ -9,9 +9,9 @@ Brazilians are ok or not ok with the current economic scenario.
 
 ## Input
 
-The first line contains an integer $Q$ ($4 \leq Q \leq 233000$) representing
-how many citizens joined this survey. The second line contains Q integers $Vi$
-($0 \leq Vi \leq 1$, $1 \leq i \leq Q$) representing the opinion of the $i$-th
+The first line contains an integer $Q (4 \leq Q \leq 233000)$ representing how
+many citizens joined this survey. The second line contains Q integers $V_i (0
+\leq V_i \leq 1$, $1 \leq i \leq Q)$ representing the opinion of the $i$-th
 Brazilian citizen surveyed about the current economic scenario. Where "0"
 represents the ones who answered that are ok with the current economic
 scenario and "1" the ones who are not ok.

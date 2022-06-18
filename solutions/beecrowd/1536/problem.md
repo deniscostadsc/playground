@@ -23,14 +23,13 @@ it identifies the winning team?
 
 ## Input
 
-The first line of input gives the number of test cases $N$
-($1 \leq N \leq 100$). Each test case consists of two scores: the outcome of
-match 1 and the outcome of the 2. The score is represented by the format
-$M \times V$, where $M$ ($1 \leq M \leq 100$) is the number of goals for
-principal team and $V$ ($1 \leq V \leq 100$) is the number of goals for the
-visiting team. As for each test case there are 2 matches, consider that Team 1
-is always the principal of the first match and the visitor of the second and
-vice versa for Team 2.
+The first line of input gives the number of test cases $N (1 \leq N \leq
+100)$. Each test case consists of two scores: the outcome of match 1 and the
+outcome of the 2. The score is represented by the format $M \times V$, where
+$M (1 \leq M \leq 100)$ is the number of goals for principal team and $V (1
+\leq V \leq 100)$ is the number of goals for the visiting team. As for each
+test case there are 2 matches, consider that Team 1 is always the principal of
+the first match and the visitor of the second and vice versa for Team 2.
 
 ## Output
 

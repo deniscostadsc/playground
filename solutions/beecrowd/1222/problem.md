@@ -17,14 +17,14 @@ considering the rules of the contest.
 
 ## Input
 
-The first line of a test case contains three integers $N$
-($2 \leq N \leq 1000$), $L$ ($1 \leq L \leq 30$) and $C$
-($1 \leq C \leq 70$), which indicate, respectively, the number of words of the
+The first line of a test case contains three integers $N
+(2 \leq N \leq 1000)$, $L (1 \leq L \leq 30)$ and $C
+(1 \leq C \leq 70)$, which indicate, respectively, the number of words of the
 short story, the maximum number of lines per page and the maximum number of
 characters per line. Machado’s short story is innovative and contains no
 characters besides upper and lower case letters and blanks.  The second line
 contains Machado’s short story, consisting of $N$ words
-($1 \leq length \space of \space each \space word \leq C$) separated by
+$(1 \leq length \space of \space each \space word \leq C)$ separated by
 exactly one blank space. The end of input is determined by EOF.
 
 ## Output

@@ -18,11 +18,11 @@ manufacture both gifts today, or if he should delay the work for the next day.
 ## Input
 
 Each test case starts with a integer $N$, indicating how many minutes there
-are until the time to go away ($2 \leq N \leq 100$).
+are until the time to go away $(2 \leq N \leq 100)$.
 
 Following there will be two integers A and B, indicating how many minutes it
 takes to manufacture each of both gifts Ed has to manufacture
-($1 \leq A, B \leq 100$).
+$(1 \leq A, B \leq 100)$.
 
 ## Output
 

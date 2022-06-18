@@ -12,16 +12,16 @@ do amigo. Sem entender a situação, Joãozinho pediu ajuda a outro amigo de
 outra série, que explicou que o comprimento do lado interfere no equilíbrio da
 gangorra, pois a gangorra estará equilibrada quando
 
-$P1 \times C1 = P2 \times C2$
+$$P_1 \times C_1 = P_2 \times C_2$$
 
-onde P1 e P2 são os pesos da criança no lado esquerdo e direito,
-respectivamente, e C1 e C2 são os comprimentos da gangorra do lado esquerdo e
-direito, respectivamente.
+onde $P_1$ e $P_2$ são os pesos da criança no lado esquerdo e direito,
+respectivamente, e $C_1$ e $C_2$ são os comprimentos da gangorra do lado
+esquerdo e direito, respectivamente.
 
 ## Entrada
 
-A primeira e única linha da entrada contém 4 inteiros, P1, C1, P2 e C2,
-($10 \leq P1, C1, P2$ e $C2 \leq 100$) nesta ordem.
+A primeira e única linha da entrada contém 4 inteiros, $P_1$, $C_1$, $P_2$ e
+$C_2$, $(10 \leq P_1, C_1, P_2 \space e \space C_2 \leq 100)$ nesta ordem.
 
 ## Saída
 

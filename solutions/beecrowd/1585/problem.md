@@ -16,9 +16,9 @@ forming a lozenge.
 
 The input contains many test cases. The first line of input contains an
 integer N that represents the among of kites that will be built. Each one of
-the N following lines contains two integer numbers $x$ ($10 \leq x \leq 100$)
-and $y$ ($10 \leq y \leq 100$) that indicates the size of the two bambus used
-to built the kite.
+the N following lines contains two integer numbers $x (10 \leq x \leq 100)$
+and $y (10 \leq y \leq 100)$ that indicates the size of the two bambus used to
+built the kite.
 
 ## Output
 

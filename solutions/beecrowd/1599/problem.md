@@ -23,7 +23,7 @@ documented region.
 The entry consists of several instances and ends with the end of file (EOF).
 
 Each instance corresponds to a region of the map and represented by a matrix
-$N \times M$ ($1 \leq N \leq 1000$). The first row in each instance contains
+$N \times M (1 \leq N \leq 1000)$. The first row in each instance contains
 the integers $N$ and $M$. For i = 1, 2,. . . N, $(i + 1)$-th row corresponte
 the i-th row of the matrix and contains M integers separated by a space.
 

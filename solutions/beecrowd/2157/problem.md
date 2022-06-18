@@ -14,7 +14,7 @@ Write a program that, given two integers, print their mirror sequence.
 ## Input
 
 The input has an integer value C indicating the number of test cases. Then
-each case has two integer values ​​$E$ and $B$ ($1 \leq B \leq E \leq 12221$),
+each case has two integer values ​​$E$ and $B (1 \leq B \leq E \leq 12221)$,
 indicating the start and end of the sequence.
 
 ## Output

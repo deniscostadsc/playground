@@ -32,7 +32,7 @@ make a program that prints Sheldon reaction to the outcome.
 
 ## Input
 
-The first line contains an integer $T$ ($T \leq 100$) indicating the number of
+The first line contains an integer $T (T \leq 100)$ indicating the number of
 test cases. Each test case is described using one line. The line contains
 Sheldon and Raj options, separated by one blank space. The possible options
 are: pedra, papel, tesoura, lagarto e Spock (rock, paper, scissors, lizard and

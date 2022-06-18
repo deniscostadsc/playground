@@ -16,7 +16,8 @@ Your task in this problem is to draw the clock image at a given time.
 ## Input
 
 The input consists of several test cases. Each test case consists of one line
-containing a time in the format HH:MM ($0 \leq HH < 12$ e $0 \leq MM < 60$).
+containing a time in the format $HH:MM (0 \leq HH \lt 12$ e $0 \leq MM \lt
+60)$.
 
 ## Output
 

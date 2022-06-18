@@ -13,7 +13,7 @@ Available bills: 2, 5, 10, 20, 50 and 100.
 ## Input
 
 The input contains an integer N representing the buy price and then an integer
-M representing the price paid by the costumer ($N < M \leq 10^4$). Read input
+M representing the price paid by the costumer $(N \lt M \leq 10^4)$. Read input
 until $N = M = 0$.
 
 ## Output

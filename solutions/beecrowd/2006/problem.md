@@ -17,10 +17,10 @@ contestants who got the correct answer.
 
 ## Input
 
-The first line contains an integer T representing the tea type
-($1 \leq T \leq 4$). The second line contains five integers $A$, $B$, $C$, $D$
-and $E$, indicating the answer given by each contestant
-($1 \leq A, B, C, D, E \leq 4$).
+The first line contains an integer T representing the tea type $(1 \leq T \leq
+4)$. The second line contains five integers $A$, $B$, $C$, $D$ and $E$,
+indicating the answer given by each contestant $(1 \leq A, B, C, D, E \leq
+4)$.
 
 ## Output
 

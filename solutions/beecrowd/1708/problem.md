@@ -15,7 +15,7 @@ crosses the start line.
 ## Input
 
 The input contains several test cases. Each test case consists of one line
-with two integers $X$ and $Y$ $(1 \leq X < Y \leq 10000)$, the times, in
+with two integers $X$ and $Y (1 \leq X \lt Y \leq 10000)$, the times, in
 seconds, that it takes for the fastest and the slowest pilot, respectively, to
 complete one lap.
 

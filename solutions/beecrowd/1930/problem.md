@@ -24,7 +24,7 @@ number of devices that can be connected to the energy in the same instant.
 ## Input
 
 The input consists of a line with four integers T1, T2, T3, T4, indicating the
-number of taken from each of the four strips ($2 \leq Ti \leq 6$).
+number of taken from each of the four strips $(2 \leq Ti \leq 6)$.
 
 ## Output
 

@@ -17,10 +17,10 @@ rules.
 
 ## Input
 
-The first row of input has the number of divers $N$ ($0 \leq N \leq 100$).
-Next, the name of each competitor is followed by the degree of difficulty $D$
-($1.2 \leq D \leq 3.8$) of the dive and, in the next line, the seven scores
-$S1$ to $S7$ ($0 \leq S1 to S7 \leq 10$) given by the judges.
+The first row of input has the number of divers $N (0 \leq N \leq 100)$. Next,
+the name of each competitor is followed by the degree of difficulty $D (1.2
+\leq D \leq 3.8)$ of the dive and, in the next line, the seven scores $S1$ to
+$S7 (0 \leq S1 \space to \space S7 \leq 10)$ given by the judges.
 
 ## Output
 

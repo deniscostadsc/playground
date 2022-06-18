@@ -32,7 +32,7 @@ won the game.
 
 ## Input
 
-The input consist of $N$ ($1 \leq N \leq 1000$) test cases. $N$ should be read
+The input consist of $N (1 \leq N \leq 1000)$ test cases. $N$ should be read
 in the first line of input. Each test case is composed of two lines each
 containing a string. The first string is the sign chosen by Player 1 and the
 second string is the sign chosen by the Player 2. These string can be:

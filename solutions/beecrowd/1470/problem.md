@@ -45,14 +45,14 @@ The input contains several.
 The input contains several test cases and ends with EOF. Each test case is
 composed of four lines. The first two lines refer to the input tape for the
 Folding machine and the last two lines refer to the output tape. The first
-line contains a single number, $N$ ($M \leq N \leq 15$), describing the input
-tape size. The second line contains N integers v1, . . . , vN, describing the
-content of the input tape. The third line contains a single integer $M$
-($1 \leq M \leq N$), the output tape size; and the fourth line contains M
-integers w1, . . . ,wM, the content of the output tape.
+line contains a single number, $N (M \leq N \leq 15)$, describing the input
+tape size. The second line contains $N$ integers $v_1, ..., v_N$, describing
+the content of the input tape. The third line contains a single integer $M (1
+\leq M \leq N)$, the output tape size; and the fourth line contains $M$
+integers $w_1, ..., w_M$, the content of the output tape.
 
-Note: $0 \leq v_i$, $w_j \leq 10^8 for \space 1 \leq _i \leq N$ and
-$1 \leq _j \leq M$.
+Note: $0 \leq v_i$, $w_j \leq 10^8 for \space 1 \leq _i \leq N$ and $1 \leq _j
+\leq M$.
 
 ## Output
 

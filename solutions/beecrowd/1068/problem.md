@@ -21,7 +21,7 @@ quantity of closing and open parenthesis must be the same.
 
 ## Input
 
-The input file contains N expressions $(1 <= N <= 10000)$, each one with up to
+The input file contains N expressions $(1 \leq N \leq 10000)$, each one with up to
 1000 characters.
 
 ## Output

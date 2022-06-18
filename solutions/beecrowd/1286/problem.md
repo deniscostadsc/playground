@@ -27,12 +27,12 @@ Roberto will take to deliver these worst deliveries (in time consuming).
 ## Input
 
 The input contains many test cases. Each test case contains in the first line
-an integer number $N$ ($1 \leq N \leq 20$) that indicates the number of
-orders. The following line contains an integer number $P$ ($1 \leq P \leq 30$)
-that indicates the maximum number of pizzas that can be delivered by Roberto.
-Each one of the next $N$ lines contains a order with the total time to be
-delivered and the among of pizzas of this order, respectively. The end of
-input is represented by $N = 0$, and can't be processed.
+an integer number $N (1 \leq N \leq 20)$ that indicates the number of orders.
+The following line contains an integer number $P (1 \leq P \leq 30)$ that
+indicates the maximum number of pizzas that can be delivered by Roberto. Each
+one of the next $N$ lines contains a order with the total time to be delivered
+and the among of pizzas of this order, respectively. The end of input is
+represented by $N = 0$, and can't be processed.
 
 ## Output
 

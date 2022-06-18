@@ -40,22 +40,21 @@ old; in figure (b), the youngest manager of Clara is 21 years old.
 
 The input contains several test cases and ends with EOF. Each test case is
 described using several lines. The first line of a test case contains three
-integers $N$ ($1 \leq N \leq 500$), $M$ ($0 \leq M \leq 60 \times 10^3$) and
-$I$ ($1 \leq I \leq 500$) , representing respectively the number of employees,
-the number of direct manage relations and the number of instructions. E
-mployees are identified by numbers from 1 to $N$. The second line contains $N$
-integers $K_i$ ($1 \leq Ki \leq 100$, para $1 \leq i \leq N$) , where $K_i$
-indicates the age of the employee number i.
+integers $N (1 \leq N \leq 500)$, $M (0 \leq M \leq 60 \times 10^3)$ and $I (1 \leq I \leq 500)$ , representing respectively the number of employees, the
+number of direct manage relations and the number of instructions. Employees
+are identified by numbers from 1 to $N$. The second line contains $N$ integers
+$K_i (1 \leq Ki \leq 100, \space for \space 1 \leq i \leq N)$, where $K_i$
+indicates the age of the employee number $i$.
 
-Each of the following $M$ lines contains two integers $X$ and $Y$
-($1 \leq X$, $Y \leq N$, $X != Y$) , indicating that $X$ manages $Y$ directly.
-Then it follows $I$ lines, each describing an instruction. An instruction of
-type managem ent change is described by a line containing the identifier $T$
-followed by two integers $A$ and $B$ ($1 \leq A$, $B \leq N$) , indicating the
-two employers that must swap places in the chain of command. An instruction of
-type query is described by a line containing the identifier $P$ followed by
-one integer $E$ ($1 \leq E \leq N$) , representing the number of an employer.
-The last instruction is of type query.
+Each of the following $M$ lines contains two integers $X$ and $Y (1 \leq X, Y
+\leq N, X \neq Y)$, indicating that $X$ manages $Y$ directly. Then it follows
+$I$ lines, each describing an instruction. An instruction of type managem ent
+change is described by a line containing the identifier $T$ followed by two
+integers $A$ and $B (1 \leq A, B \leq N)$, indicating the two employers that
+must swap places in the chain of command. An instruction of type query is
+described by a line containing the identifier $P$ followed by one integer $E
+(1 \leq E \leq N)$, representing the number of an employer. The last
+instruction is of type query.
 
 ## Output
 

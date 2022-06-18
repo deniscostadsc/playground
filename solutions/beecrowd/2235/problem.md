@@ -20,8 +20,8 @@ of the three credit at most once.
 
 ## Input
 
-The input consists of a single line containing three credits $A$, $B$ e $C$
-($1 \leq A, B, C \leq 1000$).
+The input consists of a single line containing three credits $A$, $B$ e $C (1
+\leq A, B, C \leq 1000)$.
 
 ## Output
 

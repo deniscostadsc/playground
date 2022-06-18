@@ -25,10 +25,10 @@ reordering.
 The first line contains an integer $N$, indicating the number of test cases to
 follow.
 
-Each test case starts with an integer $M$ ($1 \leq M \leq 1000$), indicating
-the number of students. Following there will be M distinct integers $P_i$
-($1 \leq P_i \leq 1000$), where the $i$-th integer indicates the grade of the
-$i$-th student.
+Each test case starts with an integer $M (1 \leq M \leq 1000)$, indicating the
+number of students. Following there will be M distinct integers $P_i (1 \leq
+P_i \leq 1000)$, where the $i$-th integer indicates the grade of the $i$-th
+student.
 
 The above integers are given in the arrival order, or in other words, the
 first integer is from the first student to get to the queue, the second

@@ -13,11 +13,11 @@ can’t be simplified, it must be repeated after a ‘=’ operator.
 
 ## Input
 
-The input contains several test cases. The first value is a integer $N$
-($1 \leq N \leq 1 \times 10^4)$, indicating the amount of test cases that must
-be read. Each test case contains a rational value $X$ ($1 \leq X \leq 1000$),
-an operation (-, +, * or /) and another rational value $Y$
-($1 \leq Y \leq 1000$).
+The input contains several test cases. The first value is a integer $N (1 \leq
+N \leq 1 \times 10^4)$, indicating the amount of test cases that must be read.
+Each test case contains a rational value $X (1 \leq X \leq 1000)$, an
+operation (-, +, * or /) and another rational value $Y$ $(1 \leq Y \leq
+1000)$.
 
 ## Output
 

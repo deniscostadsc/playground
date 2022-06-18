@@ -5,7 +5,7 @@ https://www.beecrowd.com.br/judge/en/problems/view/1441
 Consider the sequence formed by starting from a positive integer $h_0$ and
 iterating with n = 1, 2, . . . the following definition until $h_n = 1$:
 
-$h_n = \frac{1}{2} \times h_{n-1}$ if $h_{n-1}$ is even;
+$h_n = \cfrac{1}{2} \times h_{n-1}$ if $h_{n-1}$ is even;
 
 $h_n = 3 \times h_{n-1} + 1$ if $h_{n-1}$ is odd.
 
@@ -26,7 +26,7 @@ number in the Hailstone sequence which starts with the given number.
 
 Each test case is described using a single line. The line contains an integer
 $H$ representing the starting value to build the sequence
-($1 \leq H \leq 500$).
+$(1 \leq H \leq 500)$.
 
 The last test case is followed by a line containing one zero.
 

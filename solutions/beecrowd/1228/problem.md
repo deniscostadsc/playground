@@ -11,7 +11,7 @@ during the competition.
 ## Input
 
 The input contains several test cases. Each test case uses three lines. The
-first line of a test case contains an integer $N$ ($2 \leq N \leq 24$)
+first line of a test case contains an integer $N (2 \leq N \leq 24)$
 indicating the number of competitors. Each competitor is identified by a
 number from 1 to N. The second line contains the N competitors in order of the
 starting grid. The third line of each case has the same competitors, but now

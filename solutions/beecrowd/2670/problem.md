@@ -20,9 +20,9 @@ tempo total gasto pelos funcionários subindo e descendo escadas.
 
 ## Input
 
-A entrada consiste em 3 números, $A1$, $A2$, $A3$
-($0 \leq A1, A2, A3 \leq 1000$), um por linha, onde Ai representa o número de
-pessoas que trabalham no i-ésimo andar.
+A entrada consiste em 3 números, $A1, A2, A3 (0 \leq A1, A2, A3 \leq 1000)$,
+um por linha, onde Ai representa o número de pessoas que trabalham no i-ésimo
+andar.
 
 ## Output
 

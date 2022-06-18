@@ -25,11 +25,11 @@ the sergeant?
 ## Input
 
 The input contains several test cases. The first line of a test case contains
-an integer $N$ indicating the number of commands issued by the sergeant
-($1 \leq N \leq 1000$). The second line contains N characters, describing a
-series of commands issued by the Sergeant. Each command is represented by an
-letter: 'E' (for "Turn left!") and 'D' (for "Turn right!"). The end of input
-is indicated by $N = 0$.
+an integer $N$ indicating the number of commands issued by the sergeant $(1
+\leq N \leq 1000)$. The second line contains N characters, describing a series
+of commands issued by the Sergeant. Each command is represented by an letter:
+'E' (for "Turn left!") and 'D' (for "Turn right!"). The end of input is
+indicated by $N = 0$.
 
 The input must be read from standard input.
 

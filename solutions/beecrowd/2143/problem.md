@@ -20,8 +20,8 @@ always worth going to Radar!
 
 ## Input
 
-The input consists of the integer $T$ ($1 \leq T \leq 100$) indicating the
-number of test cases and then, $T$ integers $N$ ($3 \leq N \leq 10^4$)
+The input consists of the integer $T (1 \leq T \leq 100)$ indicating the
+number of test cases and then, $T$ integers $N (3 \leq N \leq 10^4)$
 indicating the number of people. The table is rectangular and there will be at
 least and at most one person at one end, i.e., if an end is empty, the other
 must be occupied, otherwise, the two ends must be occupied, but the number of

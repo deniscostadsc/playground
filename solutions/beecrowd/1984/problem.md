@@ -13,8 +13,8 @@ invert number.
 
 ## Input
 
-The file contains only a test line which is the number found
-($0 < n < 9999999999$).
+The file contains only a test line which is the number found $(0 \lt n \lt
+9999999999)$.
 
 Note.: the read number is too high to store in a variable of type int, so you
 will need to use the long type, for reading and printing in C, you should use

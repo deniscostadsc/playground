@@ -12,9 +12,9 @@ maximum in one second, because she hates waiting :>).
 
 ## Input
 
-The first input line contains an integer $N$ ($1 \leq N \leq 200$),
+The first input line contains an integer $N (1 \leq N \leq 200)$,
 corresponding to the number of test cases. Follow N lines, each one containig
-one integer number $X$ ($1 < X < 2^{31}$) that can be or not a prime number.
+one integer number $X (1 \lt X \lt 2^{31})$ that can be or not a prime number.
 
 ## Output
 

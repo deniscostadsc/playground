@@ -25,11 +25,11 @@ distances, decides whether a player is offside.
 The input file contains several test cases. The first line of each test case
 contains two integers $A$ and $D$ separated by a single space indicating,
 respectively, the number of attacking and defending players involved in the
-play ($2 \leq A, D \leq 11$). The next line contains $A$ integers $B_i$
+play $(2 \leq A, D \leq 11)$. The next line contains $A$ integers $B_i$
 separated by single spaces, indicating the distances of the attacking players
-to the goal line ($1 \leq B_i \leq 10^4$). The next line contains $D$ integers
+to the goal line $(1 \leq B_i \leq 10^4)$. The next line contains $D$ integers
 $C_j$ separated by single spaces, indicating the distances of the defending
-players to the goal line ($1 \leq C_j \leq 10^4$). The end of input is
+players to the goal line $(1 \leq C_j \leq 10^4)$. The end of input is
 indicated by $A = D = 0$.
 
 ## Output

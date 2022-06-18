@@ -19,11 +19,11 @@ the maximun number of days, inclusive. If George brings his circus to town for
 ## Input
 
 The input contains many test cases. The first line of a teste case contains an
-integer $N$ ($1 \leq N \leq 50$) that represents the number of days that
+integer $N (1 \leq N \leq 50)$ that represents the number of days that
 George can bring his circus to the town. The second line of a test case
-contains an integer $perDayCost$ ($0 \leq perDayCost < 1000$) that represents
-the cost in manteining the circus in that town. Follow N lines (one per each
-day) containing each one an integer revenue ($0 \leq revenue < 1000$)
+contains an integer $perDayCost (0 \leq perDayCost \lt 1000)$ that represents
+the cost in manteining the circus in that town. Follow $N$ lines (one per each
+day) containing each one an integer $revenue (0 \leq revenue \lt 1000)$
 representing the revenue the circus will earn on each day. The end of input is
 indicated by EOF (end of file).
 

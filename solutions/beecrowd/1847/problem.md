@@ -43,9 +43,9 @@ love and war that we love Game of Thrones!
 ![](imgs/UOJ_1847.jpg)
 ## Input
 
-The input consists only of three integers, $A$, $B$ and $C$
-($-100 \leq A, B, C \leq 100$), which represent respectively the temperatures
-recorded in the 1st, in the 2nd and in the 3rd day.
+The input consists only of three integers, $A$, $B$ and $C (-100 \leq A, B, C
+\leq 100)$, which represent respectively the temperatures recorded in the 1st,
+in the 2nd and in the 3rd day.
 
 ## Output
 

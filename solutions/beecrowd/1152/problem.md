@@ -9,8 +9,8 @@ Dollar per meter and day. To save money, they decided to no longer illuminate
 every road, but to switch off the road lighting of some streets. To make sure
 that the inhabitants of Byteland still feelsafe, they want to optimize the
 lighting in such a way, that after darkening some streets at night, there will
-still be at least one illuminated path from every junction in Byteland to every
-other junction.
+still be at least one illuminated path from every junction in Byteland to
+every other junction.
 
 What is the maximum daily amount of money the government of Byteland can save,
 without making their inhabitants feel unsafe?
@@ -18,14 +18,15 @@ without making their inhabitants feel unsafe?
 ## Input
 
 The input file contains several test cases. Each test case starts with two
-numbers $m$ ($1 \leq m \leq 200000$) and $n$ ($m-1 \leq n \leq 200000$), that
-are the number of junctions in Byteland and the number of roads in Byteland,
+numbers $m (1 \leq m \leq 200000)$ and $n (m-1 \leq n \leq 200000)$, that are
+the number of junctions in Byteland and the number of roads in Byteland,
 respectively. Follow $n$ integer triples $x$, $y$, $z$, specifying that there
-will be a bidirectional road between $x$ and $y$ with length $z$ meters
-($0 \leq x, y < m$ and $x \neq y$).
+will be a bidirectional road between $x$ and $y$ with length $z$ meters $(0
+\leq x, y \lt m \space and \space x \neq y)$.
 
 The input is terminated by $m = n = 0$. The graph specified by each test case
-is connected. The total length of all roads in each test case is less than 231.
+is connected. The total length of all roads in each test case is less than
+$2^{31}$.
 
 ## Output
 

@@ -16,8 +16,8 @@ reached".
 
 ## Input
 
-The file first contains the number of students ($3 \leq n \leq 100$) and then
-the $n$ students bearing the registration number ($0 < m < 1000000$) each,
+The file first contains the number of students $(3 \leq n \leq 100)$ and then
+the $n$ students bearing the registration number $(0 \lt m \lt 1000000)$ each,
 followed by the note ($0 \leq note \leq 10.0$, with 1 decimal place).
 
 Obs.: the notes will not be repeated. In other words, has no chance to have

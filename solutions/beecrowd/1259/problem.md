@@ -8,9 +8,9 @@ followed by the odd in descending order.
 
 ## Input
 
-The first line of input contains a positive integer number $N$
-($1 < N < 10^5$). This is the number of following input lines. The next N
-lines contain, each one, a integer non-negative number.
+The first line of input contains a positive integer number $N (1 \lt N \lt
+10^5)$. This is the number of following input lines. The next $N$ lines contain,
+each one, a integer non-negative number.
 
 ## Output
 

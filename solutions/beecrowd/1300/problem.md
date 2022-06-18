@@ -34,8 +34,8 @@ degrees. Help her with a program that answers this question.
 
 ## Input
 
-Each test case is described using one line. The line contains an integer $A$
-​($0 \leq A \leq 180$) representing the angle to be checked.
+Each test case is described using one line. The line contains an integer $A (0
+\leq A \leq 180)$ representing the angle to be checked.
 
 ## Output
 

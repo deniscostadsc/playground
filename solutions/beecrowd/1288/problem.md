@@ -19,11 +19,11 @@ completed or not.
 ## Input
 
 The first line of input contains the number of test cases. Each test case
-begin with a line containing a integer $N$ ($1 \leq N \leq 50$), that
+begin with a line containing a integer $N (1 \leq N \leq 50)$, that
 represents the number of lead pieces available. Follow $N$ lines containing two
 integer $X$ and $Y$ each, representing respectively the amount of destruction
-power and projectil (bullet) weight. The next line contains an integer $K$
-($1 \leq K \leq 100$) that represents the load capacity of the cannon and the
+power and projectil (bullet) weight. The next line contains an integer $K
+(1 \leq K \leq 100)$ that represents the load capacity of the cannon and the
 last line of each test case contains an integer $R$ that indicates the castle
 total resistance.
 

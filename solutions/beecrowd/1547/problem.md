@@ -19,8 +19,8 @@ guessing. This will always be the student number 1, and so on.
 
 The first line of input contains an integer $N$ that determines the amount of
 test cases, or shirts that will be raffled. Each test case consists of two
-lines. The first line contains two integers $QT$ ($4 \leq QT \leq 10$) and $S$
-($1 \leq S \leq 100$) separated by a space, which indicate the amount of
+lines. The first line contains two integers $QT (4 \leq QT \leq 10)$ and $S
+(1 \leq S \leq 100)$ separated by a space, which indicate the amount of
 students in the group and the secret number to be guessed. The second row
 contains each $QT$ values, separated by a space.
 

@@ -27,14 +27,14 @@ wait for the boy and will improvise some stunt.
 
 The input consists of several test cases. The first line of input contains an
 integer C that determines the number of test cases. Each test case starts with
-a sigle positive integer $n$ ($n \leq 500$), which stands for the number of
+a sigle positive integer $n (n \leq 500)$, which stands for the number of
 people in the group. Follow then n lines, each of them representing one person
-of the group by  one's coordinates $x$ and $y$ in the mesh
-($0 \leq x, y \leq 10^4$).
+of the group by  one's coordinates $x$ and $y$ in the mesh ($0 \leq x, y \leq
+10^4)$.
 
 ## Output
 
-For each test case, your program is meant to output a line containing the value
-with two decimal places of precision relative to the minimum length of web, in
-meters, needed to connect all the people in the group. Watch for the decimal
-mark is . (dot), not , (comma).
+For each test case, your program is meant to output a line containing the
+value with two decimal places of precision relative to the minimum length of
+web, in meters, needed to connect all the people in the group. Watch for the
+decimal mark is . (dot), not , (comma).

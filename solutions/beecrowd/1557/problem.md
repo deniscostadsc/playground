@@ -2,7 +2,7 @@ https://www.beecrowd.com.br/judge/en/problems/view/1557
 
 # Square Matrix III
 
-Write a program that read an integer number $N$ ($0 \leq N \leq 15$) that
+Write a program that read an integer number $N (0 \leq N \leq 15)$ that
 correspont to the order of a bidimentional array of integers, and build the
 array according to the above example.
 

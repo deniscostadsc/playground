@@ -17,7 +17,7 @@ that do not have repeated digits.
 ## Input
 
 Each test case is described using one line. The line contains two integers $N$
-and $M$, as described above ($1 \leq N \leq M \leq 5000$).
+and $M$, as described above $(1 \leq N \leq M \leq 5000)$.
 
 ## Output
 

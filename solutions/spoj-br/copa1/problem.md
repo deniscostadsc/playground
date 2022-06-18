@@ -35,7 +35,7 @@ jogo de número 1, a segunda linha o resultado do jogo de número
 por dois números inteiros M e N separados por um espaço em
 branco, indicando respectivamente o número de gols da equipe
 representada à esquerda e à direita na tabela de jogos
-($0 \leq M \leq 20$, $0 \leq N \leq 20$ e $M \neq N$).
+$(0 \leq M \leq 20, 0 \leq N \leq 20$ e $M \neq N)$.
 
 ## Saída
 

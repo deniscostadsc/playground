@@ -4,7 +4,7 @@ http://www.beecrowd.com.br/judge/problems/view/1007
 
 Make a simple program that reads four variables named $A$, $B$, $C$ and $D$.
 Calculate and print the difference of the product of A and B with the product
-of $C$ and $D$ ($A \times B - C \times D$).
+of $C$ and $D$ $(A \times B - C \times D)$.
 
 ## Input
 

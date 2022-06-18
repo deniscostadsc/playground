@@ -14,7 +14,7 @@ height and both begin in 0 (zero).
 ## Input
 
 The input contains a number of test cases and ends with EOF (end of file).
-Each test case consists of an odd integer number $N$ ($5 \leq N \leq 101$) that is
+Each test case consists of an odd integer number $N (5 \leq N \leq 101)$ that is
 the size of the array. For each test case, print the corresponding array as
 below. After each test case, print a blank line.
 

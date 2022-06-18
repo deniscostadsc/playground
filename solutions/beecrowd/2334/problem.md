@@ -20,8 +20,8 @@ the mountains, at the seashore, how many ducklings did not return from there.
 ## Input
 
 There will be several test cases, the first line of each test case contains an
-integer  ($0 \leq P \leq 10^19$) representing the total amount of ducks, the
-input ends with P = -1.
+integer $(0 \leq P \leq 10^19)$ representing the total amount of ducks, the
+input ends with $P = -1$.
 
 ## Output
 

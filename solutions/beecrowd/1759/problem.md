@@ -12,7 +12,7 @@ that he should speak given the number drawn.
 
 ## Input
 
-The input consists of a single integer $N$ ($0 \leq N \leq 106$) representing
+The input consists of a single integer $N (0 \leq N \leq 106)$ representing
 how many "Ho" will be spoken by Santa.
 
 ## Output

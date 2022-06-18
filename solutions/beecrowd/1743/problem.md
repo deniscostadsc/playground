@@ -10,10 +10,10 @@ packaging the connectors sent to the costumers may not be compatible.
 
 ![](imgs/UOJ_1743_en.png)
 
-An in-line connector is composed of five connection points, labelled from 1
-to 5. Each connection point of a connector can be either a plug or an outlet.
-We say two connectors are compatible if, for every label, one connection point
-is a plug and the other connection point is an outlet (in other words, two
+An in-line connector is composed of five connection points, labelled from 1 to
+5. Each connection point of a connector can be either a plug or an outlet. We
+say two connectors are compatible if, for every label, one connection point is
+a plug and the other connection point is an outlet (in other words, two
 connectors are compatible if, for every connection point with the same label,
 a plug and an outlet meet when the two connectors are connected).
 
@@ -30,12 +30,12 @@ determine if the connectors are compatible.
 
 ## Input
 
-The first line contains five integers $X_i$ ($0 \leq Xi \leq 1$ for
-$i = 1, 2, ..., 5$), representing the connection points of the first connector
-in the pair. The second line contains five integers $Y_i$
-($0 \leq Yi \leq 1$ for $i = 1, 2, ..., 5$), representing the connection
-points of the second connector. In the input, a 0 represents an outlet an a 1
-represents a plug.
+The first line contains five integers $X_i (0 \leq Xi \leq 1 \space for \space
+i = 1, 2, ..., 5)$, representing the connection points of the first connector
+in the pair. The second line contains five integers $Y_i (0 \leq Y_i \leq 1
+\space for \space i = 1, 2, ..., 5)$, representing the connection points of
+the second connector. In the input, a 0 represents an outlet an a 1 represents
+a plug.
 
 ## Output
 

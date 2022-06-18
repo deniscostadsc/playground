@@ -15,7 +15,7 @@ has this pattern.
 ## Input
 
 The input is given in two lines. The first one has the number $N$ of landscape
-measures ($1 < N \leq 100$). The second line has $N$ integers: the height
+measures $(1 \lt N \leq 100)$. The second line has $N$ integers: the height
 $H_i$ of each measure ($-10000 \leq H_i \leq 10000$, for all $H_i$, such that
 $1 \leq i \leq N$). A measure is considered a peak if it is higher than the
 previous measure. A measure is considered a valley if it is lower than the

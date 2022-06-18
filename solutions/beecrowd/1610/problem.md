@@ -17,16 +17,16 @@ documents, it is, to compute if there isn't a loop in the given dependencies.
 
 ## Input
 
-The first line contains an integer $T$ ($T = 100$) indicating the number of
-test cases.
+The first line contains an integer $T (T = 100)$ indicating the number of test
+cases.
 
-On the first line in each test case there will be the integers $N$
-($2 \leq N \leq 100$\* or $2 \leq N \leq 10^4$\**) and $M$
-($1 \leq M \leq 300$* or $1 \leq M \leq 3 \times 10^4$\**), indicating the
-number of documents and the dependencies. In each of the following M lines,
-there will be two integers $A$ ($1 \leq A$) and $B$ ($B \leq N and A != B$),
-indicating that the document A depends on the document B. There might be
-repeated dependencies!
+On the first line in each test case there will be the integers $N (2 \leq N
+\leq 100* \space or \space 2 \leq N \leq 10^4**)$ and $M (1 \leq M \leq 300*
+\space or \space 1 \leq M \leq 3 \times 10^4**)$, indicating the number of
+documents and the dependencies. In each of the following M lines, there will
+be two integers $A (1 \leq A)$ and $B (B \leq N and A \neq B)$, indicating
+that the document A depends on the document B. There might be repeated
+dependencies!
 
 \* For around 90% of the cases;
 

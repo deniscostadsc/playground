@@ -24,8 +24,8 @@ maximizes the probability of that player winning the game.
 ## Input
 
 The input contains several test cases. In each test case, the input consists
-of a single line, which contains two integers $A$ ($1 \leq A \leq 13$) and $B$
-($1 \leq B \leq 13$) that indicates the value of the two first received cards.
+of a single line, which contains two integers $A (1 \leq A \leq 13)$ and $B (1
+\leq B \leq 13)$ that indicates the value of the two first received cards.
 
 ## Output
 

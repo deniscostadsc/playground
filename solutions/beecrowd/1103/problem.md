@@ -24,9 +24,9 @@ the number of minutes she could sleep.
 
 The input contains several test cases. Each test case is described
 in one line, containing four integers $H_1$, $M_1$, $H_2$ and $M_2$,
-with $H_1$:$M_1$ representing the current hour and minute, and $H_2$:$M_2$
+with $H_1:M_1$ representing the current hour and minute, and $H_2:M_2$
 representing the time (hour and minute) when the alarm clock is set to ring
-($0 \leq H_1 \leq 23, 0 \leq M_1 \leq 59, 0 \leq H_2 \leq 23, 0 \leq M_2 \leq 59$).
+$(0 \leq H_1 \leq 23, 0 \leq M_1 \leq 59, 0 \leq H_2 \leq 23, 0 \leq M_2 \leq 59)$.
 
 The end of the input is indicated by a line containing only
 four zeros, separated by blank spaces.

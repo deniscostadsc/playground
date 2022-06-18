@@ -15,7 +15,7 @@ lift the Thunder Hammer, inform the person succeeded in lifting it.
 
 An integer C shall be informed, which is the amount of test cases. Each test
 case begins with one word, which is the first name of who is trying to raise
-Mjölnir, and an integer $N$ ($1 \leq N \leq 25000$), indicating the force
+Mjölnir, and an integer $N (1 \leq N \leq 25000)$, indicating the force
 applied upward in Newtons to pull the hammer of so try to lift it.
 
 ## Output

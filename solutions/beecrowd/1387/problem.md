@@ -12,7 +12,7 @@ write him a program that will do the addition.
 
 The input contains several test cases. Each test case consists of a single
 line containing two integers L and R, separated by a single space, indicating
-respectively the number of sons and daughters ($1 \leq L, R \leq 5$).
+respectively the number of sons and daughters $(1 \leq L, R \leq 5)$.
 
 The end of input is indicated by $L = R = 0$.
 

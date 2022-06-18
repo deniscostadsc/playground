@@ -15,8 +15,8 @@ the instructions.
 
 ## Input
 
-The first line contains the number of test cases $T$ ($T \leq 100$). Each test
-case begins with an integer $n$ ($1 \leq n \leq 100$), the number of
+The first line contains the number of test cases $T (T \leq 100)$. Each test
+case begins with an integer $n (1 \leq n \leq 100)$, the number of
 instructions. Each of the following n lines contains an instruction.
 
 ## Output

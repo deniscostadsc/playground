@@ -10,7 +10,7 @@ and the list of notes.
 
 ## Input
 
-The input file contain an integer number $N (0 < N < 1000000$).
+The input file contain an integer number $N (0 \lt N \lt 1000000)$.
 
 ## Output
 

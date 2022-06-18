@@ -28,11 +28,11 @@ have been hired to help implementing the system.
 
 The input contains several test cases. The first line of a test case contains
 one integer $K$ indicating the number of queries that will be made
-($0 < K \leq 10^3$). The second line of a test case contains two integers $N$
+$(0 \lt K \leq 10^3)$. The second line of a test case contains two integers $N$
 and $M$ representing the coordinates of the division point
-($-10^4 < N, M < 10ˆ4$). Each of the K following lines contains two integers
+$(-10^4 \lt N, M \lt 10^4)$. Each of the K following lines contains two integers
 $X$ and $Y$ representing the coordinates of a residence
-($-10ˆ4 \leq X, Y \leq 10ˆ4$).
+$(-10^4 \leq X, Y \leq 10^4)$.
 
 The end of input is indicated by a line containing only the number zero.
 

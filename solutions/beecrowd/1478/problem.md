@@ -2,7 +2,7 @@ http://www.beecrowd.com.br/judge/en/problems/view/1478
 
 # Square Matrix II
 
-Write a program that read an integer number $N$ ($0 \leq N \leq 100$) that
+Write a program that read an integer number $N (0 \leq N \leq 100)$ that
 correspont to the order of a Bidimentional array of integers, and build the
 Array according to the above example.
 

@@ -8,7 +8,7 @@ or not.
 
 ## Input
 
-Input is given by three integers $A$, $B$ e $C$ ($0 < A,B,C < 10^5$).
+Input is given by three integers $A$, $B$ e $C (0 \lt A,B,C \lt 10^5)$.
 
 ## Output
 

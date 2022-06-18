@@ -7,7 +7,7 @@ task is to check if a text will fit in a tweet.
 
 ## Input
 
-Input is a text line $T$ ($1 \leq |T| \leq 500$).
+Input is a text line $T (1 \leq |T| \leq 500)$.
 
 ## Output
 

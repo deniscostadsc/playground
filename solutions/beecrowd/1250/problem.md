@@ -14,8 +14,8 @@ KiloMan take?
 
 The input contains several test cases. The first line of input contain an
 integer N that indicates the number of test cases. Each test case is composed
-by three lines and starts with a line containing the number of shots $S$
-($1 \leq S \leq 50$).  The second line contains S integers, that represent the
+by three lines and starts with a line containing the number of shots $S (1
+\leq S \leq 50)$.  The second line contains S integers, that represent the
 pattern of heights at which the shots are being fired. Each element of pattern
 will be between 1 and 7, inclusive.  The third line of input contains the
 string 'jumps', that represents the sequence of jumps that KiloMan will

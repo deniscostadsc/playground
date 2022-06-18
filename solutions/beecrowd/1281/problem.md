@@ -16,7 +16,7 @@ trips of Dona Parcinova to the market (which is nothing more than the number
 of test cases). Each test case starts with an integer $M$ which is the
 quantity of products with prices that are available for sale at the market.
 Follow $M$ products with their respective prices per unit or Kg. The next
-input line contains an integer $P$ ($1 \leq P \leq M$) that indicates the list
+input line contains an integer $P (1 \leq P \leq M)$ that indicates the list
 of products that Ms. Parcinova want to buy. Follow $P$ lines containing a
 string and an integer, representing each item with the desired quantity of
 this item.

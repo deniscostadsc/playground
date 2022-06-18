@@ -18,7 +18,7 @@ of its elements. For instance, the sum of elements at row 2 is 9 = 1 + 2 + 3 +
 
 ## Input
 
-The input is the row number $R$ ($0 \leq R \leq 20$).
+The input is the row number $R (0 \leq R \leq 20)$.
 
 ## Output
 

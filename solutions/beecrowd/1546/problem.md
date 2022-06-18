@@ -20,11 +20,11 @@ The team members responsible for each sector are:
 
 ## Input
 
-The first value is the number of test cases $N$ ($1 < N < 100$). Each test
+The first value is the number of test cases $N (1 \lt N \lt 100)$. Each test
 case represent a day of work responding feedbacks. Each test case starts with
-$K$ ($1 < K < 50$), indicating the number of feedbacks received on that date.
-Then follows K lines with and integer representing the category of each of the
-feedbacks as shown above (1, 2, 3 or 4).
+$K (1 \lt K \lt 50)$, indicating the number of feedbacks received on that
+date. Then follows K lines with and integer representing the category of each
+of the feedbacks as shown above (1, 2, 3 or 4).
 
 ## Output
 

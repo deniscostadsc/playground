@@ -23,8 +23,8 @@ The input contains several test cases. The first line of each test case
 contains a string with exactly 26 uppercase letters, containing all letters of
 the English alphabet. The first letter in the string is associated to bulb 1;
 the second letter in the string is associated to bulb 2; and so on. The next
-line contains an integer $N$ ($1 \leq N \leq 10^4$), the number of bulbs that
-were blinked. The third line contains N integers $l_i$ ($1 \leq l_i \leq 26$),
+line contains an integer $N (1 \leq N \leq 10^4)$, the number of bulbs that
+were blinked. The third line contains $N$ integers $l_i (1 \leq l_i \leq 26)$,
 indicating the bulbs that were blinked, in that order.
 
 The input ends with end-of-file (EOF).

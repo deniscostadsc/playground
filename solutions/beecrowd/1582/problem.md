@@ -26,8 +26,8 @@ triples.
 
 ## Input
 
-Each line of the input consists of 3 integers $x$, $y$ e $z$
-($1 \leq x, y, z \leq 10^4$), separated by a blank space and given not necessarily in any order.
+Each line of the input consists of 3 integers $x$, $y$ e $z
+(1 \leq x, y, z \leq 10^4)$, separated by a blank space and given not necessarily in any order.
 
 ## Output
 

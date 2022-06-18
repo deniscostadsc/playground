@@ -14,7 +14,7 @@ about it, we will host again!
 
 The input contains several test cases. Each test case consists of a line
 containing a number N of complaints about the world cup forwarded to the
-president ($0 \leq N \leq 100$).
+president $(0 \leq N \leq 100)$.
 
 ## Output
 

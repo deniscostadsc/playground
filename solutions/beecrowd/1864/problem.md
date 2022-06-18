@@ -21,7 +21,7 @@ every time practicing or studying at home. Our days are never coming back.
 
 ## Input
 
-The input consists of a single integer $N$ ($1 \leq N \leq 34$) in a line.
+The input consists of a single integer $N (1 \leq N \leq 34)$ in a line.
 
 ## Output
 

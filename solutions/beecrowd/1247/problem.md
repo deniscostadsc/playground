@@ -22,10 +22,10 @@ allow a trajectory so as retilíınea the coast.
 ## Input
 
 The input consists of several test cases. Each test case is described in a
-line containing three integers, $D$ ($1 \leq D \leq 100$), $VF$ ($1 \leq VF
-\leq 100$) and $VG$ ($1 \leq VG \leq 100$), indicating the initial distance
-between the fugitive and the Coast Guard, the runaway boat speed and the Coast
-Guard boat speed.
+line containing three integers, $D (1 \leq D \leq 100)$, $VF (1 \leq VF \leq
+100)$ and $VG (1 \leq VG \leq 100)$, indicating the initial distance between
+the fugitive and the Coast Guard, the runaway boat speed and the Coast Guard
+boat speed.
 
 ## Output
 

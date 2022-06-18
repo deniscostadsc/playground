@@ -20,11 +20,11 @@ be equal to $B$.
 
 ## Input
 
-The input is started by an integer $T$, $0 < T \leq 500$, which indicates the
+The input is started by an integer $T, 0 \lt T \leq 500$, which indicates the
 number of test cases. After this, the input consists of $T$ lines, each one
-containing two integers $A$ and $B$, $0 < A < B < 10000$, $A$ is equal to the
-initial value on the display and $B$ is equal to the final number we need to
-get on the display.
+containing two integers $A$ and $B$, $0 \lt A \lt B \lt 10000$, $A$ is equal
+to the initial value on the display and $B$ is equal to the final number we
+need to get on the display.
 
 ## Output
 

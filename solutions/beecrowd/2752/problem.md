@@ -2,8 +2,6 @@ https://www.beecrowd.com.br/judge/en/problems/view/2752
 
 # Output 6
 
-
-
 Your teacher would like you to do a program with the following
 characteristics:
 
@@ -33,4 +31,3 @@ There is not.
 ## Output
 
 The result of your program should be written according to the output example.
-

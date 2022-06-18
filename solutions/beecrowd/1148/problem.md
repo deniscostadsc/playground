@@ -14,20 +14,20 @@ code so that only the receiver is able to read and understand it.
 The spies use the only service available in war time, the post offices. Each
 city has one post office where letters can be sent. Letters can be sent
 directly to its destination or to other post offices, until it arrives to the
-post office of the intended city, if possible.
-A post office in city A can send a printed letter directly to a post office in
-city B if there’s a letter sending agreement, which determines the time,
-measured in hours, that a letter takes to travel from city A to city B (and not
-necessarily the opposite). If there’s no agreement between the cities, then
-post office A can try to send the letter to as many other post offices as
-necessary, until it is delivered to its destination, if possible.
-Some post offices are electronically interconnected with satellites and optical
-fiber. Before war, these connections could reach all offices, making a letter
-to be sent instantly, but during hostilities period, each country began to
-control the electronic communication, and one office can only send a letter
-electronically to other, if both offices are in the same country. Two post
-offices, A and B, are in the same country if there’s any way that a printed
-letter sent from one office is delivered in the other one.
+post office of the intended city, if possible. A post office in city A can
+send a printed letter directly to a post office in city B if there’s a letter
+sending agreement, which determines the time, measured in hours, that a letter
+takes to travel from city A to city B (and not necessarily the opposite). If
+there’s no agreement between the cities, then post office A can try to send
+the letter to as many other post offices as necessary, until it is delivered
+to its destination, if possible. Some post offices are electronically
+interconnected with satellites and optical fiber. Before war, these
+connections could reach all offices, making a letter to be sent instantly, but
+during hostilities period, each country began to control the electronic
+communication, and one office can only send a letter electronically to other,
+if both offices are in the same country. Two post offices, A and B, are in the
+same country if there’s any way that a printed letter sent from one office is
+delivered in the other one.
 
 The espionage service of your country was able to obtain all letter sending
 agreements in the world e wishes to find out the minimum time for sending a
@@ -35,21 +35,20 @@ letter between various pairs of cities. Would you be able to help it?
 
 ## Input
 
-The input contains several test cases. The first line of each case contains two
-integers separated by a White space, $N$ ($1 \leq N \leq 500$) and $E$
-($0 \leq E \leq N2$), indicating the number of cities (enumerated from 1 to N)
-and of letter sending agreements, respectively. Follow, then, E lines, each
-one with three integers separated by a White space, $X$, $Y$ and $H$
-($1 \leq X, Y \leq N, 1 \leq H \leq 1000$), indicating that there is an
-agreement to sending a printed letter from city X to city Y, and that this
-letter will be delivered in H hours.
+The input contains several test cases. The first line of each case contains
+two integers separated by a White space, $N (1 \leq N \leq 500)$ and $E (0
+\leq E \leq N2)$, indicating the number of cities (enumerated from 1 to N) and
+of letter sending agreements, respectively. Follow, then, E lines, each one
+with three integers separated by a White space, $X$, $Y$ and $H (1 \leq X, Y
+\leq N, 1 \leq H \leq 1000)$, indicating that there is an agreement to sending
+a printed letter from city X to city Y, and that this letter will be delivered
+in H hours.
 
-Next, there will be a line with an integer $K$ ($0 \leq K \leq 100$), the
-number of queries. Finally, $K$ lines of input, each one representing a query
-that contains two integers separated by a white space, $O$ and $D$
-($1 \leq O, D \leq N$). You should determine the minimum time for sending a
-letter from city $O$ to city $D$. The end of input is determined by
-$N = E = 0$.
+Next, there will be a line with an integer $K (0 \leq K \leq 100)$, the number
+of queries. Finally, $K$ lines of input, each one representing a query that
+contains two integers separated by a white space, $O$ and $D (1 \leq O, D \leq
+N)$. You should determine the minimum time for sending a letter from city $O$
+to city $D$. The end of input is determined by $N = E = 0$.
 
 ## Output
 

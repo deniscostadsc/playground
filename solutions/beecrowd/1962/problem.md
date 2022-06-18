@@ -15,10 +15,10 @@ the portuguese A.C. for BC and D.C. for AD according to the output sample.
 
 ## Input
 
-The input has several lines. The first one has a positive integer number $N$
-($1 \leq N \leq 100000$). There are $N$ lines after the first one. Each of
-these $N$ lines has a single non negative integer $T$, which indicates how
-many years have passed until 2015 AD ($0 \leq T < 2^31$).
+The input has several lines. The first one has a positive integer number $N (1
+\leq N \leq 100000)$. There are $N$ lines after the first one. Each of these
+$N$ lines has a single non negative integer $T$, which indicates how many
+years have passed until 2015 AD $(0 \leq T \lt 2^31)$.
 
 ## Output
 

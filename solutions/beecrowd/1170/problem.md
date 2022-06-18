@@ -9,10 +9,10 @@ eat all this supply until left a kg or less.
 
 ## Input
 
-The first line of the input contains a single integer $N$
-($1 \leq N \leq 1000$), indicating the number of test cases. Each test case
-contains a single floating-point number $X$ ($1 \leq X \leq 1000$), indicating
-the amount of food available for Blobs.
+The first line of the input contains a single integer $N (1 \leq N \leq
+1000)$, indicating the number of test cases. Each test case contains a single
+floating-point number $X (1 \leq X \leq 1000)$, indicating the amount of food
+available for Blobs.
 
 ## Output
 

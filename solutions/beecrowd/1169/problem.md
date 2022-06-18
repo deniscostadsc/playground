@@ -18,10 +18,9 @@ number.
 
 ## Input
 
-The first line of the input contains a single integer $N$
-($1 \leq N \leq 100$), indicating the number of test cases. Each test case
-contains a single integer $X$ ($1 \leq X \leq 64$), indicating the number of
-possible squares to be used.
+The first line of the input contains a single integer $N (1 \leq N \leq 100)$,
+indicating the number of test cases. Each test case contains a single integer
+$X (1 \leq X \leq 64)$, indicating the number of possible squares to be used.
 
 ## Output
 

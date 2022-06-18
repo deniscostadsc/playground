@@ -15,7 +15,7 @@ skills. Your task is simple: sort the books by their code.
 ## Input
 
 The input consists of several test cases. The first line of each test case
-contains an integer $N$ ($1 \leq N \leq 1000$). The subsequent $N$ lines will
+contains an integer $N (1 \leq N \leq 1000)$. The subsequent $N$ lines will
 have the books' code, which are always in the form "xxxx", that is, there will
 be no registration '1', for example, but "0001". Read input until EOF.
 

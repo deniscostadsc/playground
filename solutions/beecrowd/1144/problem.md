@@ -8,7 +8,7 @@ digits, all digits must be printed (no cientific notation allowed).
 
 ## Input
 
-The input file contains an integer $N$ ($1 < N < 1000$).
+The input file contains an integer $N (1 \lt N \lt 1000)$.
 
 ## Output
 

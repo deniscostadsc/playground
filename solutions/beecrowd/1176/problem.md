@@ -10,11 +10,11 @@ a unsigned 64 bits number.
 
 ## Input
 
-The first line of the input contains a single integer T, indicating the number
-of test cases. Each test case contains a single integer $N$
-($0 \leq N \leq 60$), corresponding to the N-th term of the Fibonacci series.
+The first line of the input contains a single integer $T$, indicating the number
+of test cases. Each test case contains a single integer $N (0 \leq N \leq
+60)$, corresponding to the $N$-th term of the Fibonacci series.
 
 ## Output
 
-For each test case in the input, print the message "Fib (N) = X", where X is
-the N-th term of the Fibonacci series.
+For each test case in the input, print the message "Fib (N) = X", where $X$ is
+the $N$-th term of the Fibonacci series.

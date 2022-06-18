@@ -17,8 +17,8 @@ Given the values of x and y, say who chose the function with higher outcome.
 ## Input
 
 The first line of input contains an integer $N$ that determines the number of
-test cases. Each test case consists of two integers $x$ and $y$
-($1 \leq x, y \leq 100$), indicating the variables to input in the function.
+test cases. Each test case consists of two integers $x$ and $y (1 \leq x, y
+\leq 100)$, indicating the variables to input in the function.
 
 ## Output
 

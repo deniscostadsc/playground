@@ -25,7 +25,7 @@ while the rest of the country is blacked out.
 ## Input
 
 Input will consist of a series of lines, each line containing the number of
-regions $N (13 \leq N \leq 100 )$. The file will be terminated by a line
+regions $N (13 \leq N \leq 100)$. The file will be terminated by a line
 consisting of a single 0.
 
 ## Output

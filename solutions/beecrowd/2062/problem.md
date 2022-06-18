@@ -16,8 +16,8 @@ should not be altered.
 
 ## Input
 
-The input contains two lines. The first line contain a integer number $N$
-($1 < N < 10000$) that indicates the amount of text words. The second line
+The input contains two lines. The first line contain a integer number $N (1
+\lt N \lt 10000)$ that indicates the amount of text words. The second line
 contains these text words, each one with up to 20 characters ('A'-'Z'),
 inclusive, or at least, one letter ('A'-'Z').
 

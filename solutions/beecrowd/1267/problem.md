@@ -21,12 +21,12 @@ alumna took part in all of the dinners.
 ## Input
 
 The input contains several test cases. The ﬁrst line of a test case contains
-two integers N and D indicating respectively the number of alumni and the
-number of dinners organized ($1 \leq N \leq 100$ and $1 \leq D \leq 500$).
-Alumni are identiﬁed by integers from 1 to $N$. Each of the next D lines
-describes the attendees of a dinner, and contains N integers $X_i$ indicating
-if the alumnus/alumna i attended that dinner ($X_i = 1$) or not ($X_i = 0$).
-The end of input is indicated by $N = D = 0$.
+two integers $N$ and $D$ indicating respectively the number of alumni and the
+number of dinners organized $(1 \leq N \leq 100 \space and \space 1 \leq D
+\leq 500)$. Alumni are identiﬁed by integers from $1$ to $N$. Each of the next
+D lines describes the attendees of a dinner, and contains N integers $X_i$
+indicating if the alumnus/alumna i attended that dinner $(X_i = 1)$ or not
+$(X_i = 0)$. The end of input is indicated by $N = D = 0$.
 
 ## Output
 

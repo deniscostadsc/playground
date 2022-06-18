@@ -16,9 +16,9 @@ black!
 
 ## Input
 
-The first line of the input contains an integer $L$ ($1 \leq L \leq 1000$)
+The first line of the input contains an integer $L (1 \leq L \leq 1000)$
 indicating the number of lines in the chessboard. The second line of the input
-contains an integer $C$ ($1 \leq C \leq 1000$) representing the number of
+contains an integer $C (1 \leq C \leq 1000)$ representing the number of
 columns.
 
 ## Output
