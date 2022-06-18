@@ -6,6 +6,8 @@ Using the following table, write a program that reads a code and a among of
 an item. After print the value to pay. This is a very simple program with
 the only intention of practice of selection commands.
 
+![](imgs/UOJ_1038_en.webp)
+
 ## Input
 
 The input file contains two integer numbers X and Y. X is the product code
