@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 TESTS_PER_CODE=10
 
 for code in $(seq 5); do
