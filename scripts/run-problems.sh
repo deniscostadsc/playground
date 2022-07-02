@@ -32,7 +32,5 @@ for folder in $FOLDERS; do
         fi
     done
 
-
-
     scripts/diff.sh "$folder" "$LANGUAGES"
 done
