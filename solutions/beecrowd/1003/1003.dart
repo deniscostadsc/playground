@@ -6,5 +6,5 @@ void main() {
 
   int soma = a + b;
 
-  print("SOMA = $soma");
+  print('SOMA = $soma');
 }

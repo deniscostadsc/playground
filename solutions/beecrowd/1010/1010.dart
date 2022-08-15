@@ -3,7 +3,7 @@ import 'dart:io';
 void main() {
   int b;
   double c, result = 0.0;
-  String line;
+  var line;
 
   while ((line = stdin.readLineSync()) != null) {
     var numbers = line.split(' ');
@@ -13,5 +13,5 @@ void main() {
     result += c * b;
   }
 
-  print("VALOR A PAGAR: R\$ ${result.toStringAsFixed(2)}");
+  print('VALOR A PAGAR: R\$ ${result.toStringAsFixed(2)}');
 }

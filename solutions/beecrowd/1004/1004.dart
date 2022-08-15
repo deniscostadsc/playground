@@ -6,5 +6,5 @@ void main() {
 
   int prod = a * b;
 
-  print("PROD = $prod");
+  print('PROD = $prod');
 }

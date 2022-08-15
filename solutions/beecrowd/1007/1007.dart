@@ -8,5 +8,5 @@ void main() {
 
   int diff = a * b - c * d;
 
-  print("DIFERENCA = $diff");
+  print('DIFERENCA = $diff');
 }

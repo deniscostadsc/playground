@@ -6,6 +6,6 @@ void main() {
   double c = double.parse(stdin.readLineSync() ?? '');
   double salary = c * b;
 
-  print("NUMBER = ${a}");
-  print("SALARY = U\$ ${salary.toStringAsFixed(2)}");
+  print('NUMBER = ${a}');
+  print('SALARY = U\$ ${salary.toStringAsFixed(2)}');
 }

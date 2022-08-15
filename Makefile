@@ -210,7 +210,7 @@ clean:
 languages:
 	@./scripts/languages.sh
 
-lint: __clj-lint __cpp-lint __go-lint __js-lint __py-lint __shell-lint __sql-lint
+lint: __clj-lint __cpp-lint __dart-lint __go-lint __js-lint __py-lint __shell-lint __sql-lint
 
 lint-fix: \
 	__cpp-lint-fix \
