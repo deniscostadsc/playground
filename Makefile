@@ -132,8 +132,7 @@ __dart-lint-fix: __dart-lint-build
 	@$(DOCKER_RUN) $(DART)-lint dart format . > /dev/null
 
 __dart-lint: __dart-lint-build
-	@$(DOCKER_RUN) $(DART)-lint which dart > /dev/null && \
-		dart format -o none --set-exit-if-changed . > /dev/null
+	@$(DOCKER_RUN) $(DART)-lint ./scripts/dart-lint.sh
 
 __dart-lint-build:
 	@$(DOCKER_BUILD) .docker/lint/$(DART)-lint.Dockerfile -t $(DART)-lint .
