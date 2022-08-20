@@ -129,10 +129,11 @@ __cpp-lint-build:
 	@$(DOCKER_BUILD) .docker/lint/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
 
 __dart-lint-fix: __dart-lint-build
-	@$(DOCKER_RUN) $(DART)-lint dart format .
+	@$(DOCKER_RUN) $(DART)-lint dart format . > /dev/null
 
 __dart-lint: __dart-lint-build
-	@$(DOCKER_RUN) $(DART)-lint [ "$$(dart format -o none . | wc -l)" -eq 1 ]
+	@$(DOCKER_RUN) $(DART)-lint which dart > /dev/null && \
+		dart format -o none --set-exit-if-changed . > /dev/null
 
 __dart-lint-build:
 	@$(DOCKER_BUILD) .docker/lint/$(DART)-lint.Dockerfile -t $(DART)-lint .
