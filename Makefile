@@ -94,7 +94,7 @@ DOCKER_RUN := docker run -v $$(pwd):/code -u "$$(id -u):$$(id -g)"
 DOCKER_BUILD := docker build -q -f
 
 __clj-lint: __clj-lint-build
-	@$(DOCKER_RUN) $(CLJ)-lint ./scripts/clj-lint.sh
+	@$(DOCKER_RUN) $(CLJ)-lint ./scripts/lint-clj.sh
 
 __clj-lint-build:
 	@$(DOCKER_BUILD) .docker/lint/$(CLJ)-lint.Dockerfile -t $(CLJ)-lint .
@@ -132,7 +132,7 @@ __dart-lint-fix: __dart-lint-build
 	@$(DOCKER_RUN) $(DART)-lint dart format . > /dev/null
 
 __dart-lint: __dart-lint-build
-	@$(DOCKER_RUN) $(DART)-lint ./scripts/dart-lint.sh
+	@$(DOCKER_RUN) $(DART)-lint ./scripts/lint-dart.sh
 
 __dart-lint-build:
 	@$(DOCKER_BUILD) .docker/lint/$(DART)-lint.Dockerfile -t $(DART)-lint .
