@@ -124,11 +124,12 @@ if [ "$single_input_file" -eq 1 ]; then
         form_token="$(get_form_token "$site" "$problem_id")"
         get_output "$site" "$problem_id" "$(cat "$input_file")" "$form_token"
     else
-        while read -r line; do
+        while read -r; do
+            line="${REPLY}"
             if [ "$split_lines_count" != 1 ]; then
                 for _ in $(seq 1 $((split_lines_count - 1))); do
-                    read -r next_line
-                    line="$(echo -e "${line}\n${next_line}")"
+                    read -r
+                    line="$(echo -e "${line}\n${REPLY}")"
                 done
             fi
             form_token="$(get_form_token "$site" "$problem_id")"
