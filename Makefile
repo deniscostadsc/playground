@@ -160,7 +160,7 @@ __py-lint-fix: __py-lint-build
 	@$(DOCKER_RUN) $(PY)-lint isort .
 
 __py-lint: __py-lint-build
-	@$(DOCKER_RUN) $(PY)-lint blue --check .
+	@$(DOCKER_RUN) $(PY)-lint blue --check . -q
 	@$(DOCKER_RUN) $(PY)-lint flake8
 	@$(DOCKER_RUN) $(PY)-lint isort -c .
 
