@@ -1,9 +1,9 @@
 import sys
 
 for line in sys.stdin:
-    first_variable = line.strip()
-    second_variable = input().strip()
-    third_variable = input().strip()
+    first_variable = line.replace('\n', '')
+    second_variable = input().replace('\n', '')
+    third_variable = input().replace('\n', '')
 
     print(first_variable, end='')
     print(second_variable, end='')

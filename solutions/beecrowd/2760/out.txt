@@ -26,11 +26,19 @@ wrghirgerierghoerpohreigewrihg
 1234567890a1234567890a1234567890a
 1234567890a1234567890a1234567890a
 123456789012345678901234567890
-a a a a aa a a a aa a a a a
-a a a a aa a a a aa a a a a
-a a a a aa a a a aa a a a a
-a a a a aa a a a aa a a a a
+a a a a a a a a a a a a a a a 
+a a a a a a a a a a a a a a a 
+a a a a a a a a a a a a a a a 
+a a a a a a a a a a a a a a a 
 a a a a a aa a a a a aa a a a a a
 a a a a a aa a a a a aa a a a a a
 a a a a a aa a a a a aa a a a a a
 a a a a a a a a a a a a a a a 
+112123
+121231
+123112
+112123
+this input has some spaces    at the end of each line    !    
+at the end of each line    !    this input has some spaces    
+!    this input has some spaces    at the end of each line    
+this inputat the end!    

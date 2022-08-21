@@ -25,3 +25,9 @@ a a a a a
 a a a a a a
 a a a a a a
 a a a a a a
+1
+12
+123
+this input has some spaces    
+at the end of each line    
+!    
