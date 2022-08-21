@@ -176,8 +176,7 @@ __run-build:
 	done
 
 __shell-lint: __shell-lint-build
-	@scripts/check-pipefail-in-shellscripts.sh
-	@$(DOCKER_RUN) shell-lint shellcheck $$(find . -name '*.sh')
+	@$(DOCKER_RUN) shell-lint scripts/lint-shell.sh
 
 __shell-lint-build:
 	@$(DOCKER_BUILD) .docker/lint/shell-lint.Dockerfile -t shell-lint .
