@@ -12,3 +12,9 @@ RUN ./install-clj-kondo
 
 RUN mkdir /code
 WORKDIR /code
+
+CMD echo "clj"; if [ "$LINT_FIX" = 1 ]; then \
+        true; \
+    else \
+        ./scripts/lint-clj.sh; \
+    fi

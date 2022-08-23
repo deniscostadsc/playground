@@ -7,3 +7,9 @@ WORKDIR /code
 
 RUN mkdir /.cache
 RUN chmod 777 /.cache
+
+CMD echo "js"; if [ "$LINT_FIX" = 1 ]; then \
+        standard --fix; \
+    else \
+        standard; \
+    fi

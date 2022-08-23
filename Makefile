@@ -1,26 +1,6 @@
 .PHONY: \
-	__clj-lint \
-	__clj-lint-build \
-	__cpp-lint-fix \
-	__cpp-lint \
-	__cpp-lint-build \
-	__dart-lint-fix \
-	__dart-lint \
-	__dart-lint-build \
-	__go_lint \
-	__js-lint-fix \
-	__js-lint \
-	__js-lint-build \
-	__py-lint \
-	__py-lint-build \
-	__py-lint-fix \
-	__py-lint-update-requirements \
-	__run_build \
-	__shell-lint \
-	__shell-lint-build \
-	__sql-lint \
-	__sql-lint-build \
-	__sql-lint-fix \
+	__run-build \
+	__run-lint-build \
 	check-tags \
 	clean \
 	languages \
@@ -29,6 +9,8 @@
 	new-problem \
 	run \
 	wrong
+
+SHELL = /bin/bash -euo pipefail
 
 C = c
 CLJ = clj
@@ -49,6 +31,7 @@ R = r
 RB = rb
 RS = rs
 SCALA = scala
+SHELLSCRIPT = shellscript
 SQL = sql
 
 SUPPORTED_LANGUAGES = \
@@ -77,6 +60,17 @@ ifdef LANGUAGES
 SUPPORTED_LANGUAGES := $(LANGUAGES)
 endif
 
+SUPPORTED_LINTS = \
+	$(C) \
+	$(CLJ) \
+	$(CPP) \
+	$(DART) \
+	$(GO) \
+	$(JS) \
+	$(PY) \
+	$(SHELLSCRIPT) \
+	$(SQL)
+
 FOLDER_EXISTS = 0
 ifneq ("$(wildcard $(FOLDER))","")
     FOLDER_EXISTS = 1
@@ -93,102 +87,18 @@ endif
 DOCKER_RUN := docker run -v $$(pwd):/code -u "$$(id -u):$$(id -g)"
 DOCKER_BUILD := docker build -q -f
 
-__clj-lint: __clj-lint-build
-	@$(DOCKER_RUN) $(CLJ)-lint ./scripts/lint-clj.sh
-
-__clj-lint-build:
-	@$(DOCKER_BUILD) .docker/lint/$(CLJ)-lint.Dockerfile -t $(CLJ)-lint .
-
-__cpp-lint-fix: __cpp-lint-build
-	@$(DOCKER_RUN) $(CPP)-lint \
-			clang-format \
-				--style=file \
-				-i \
-				$$(find . -name '*.cpp') \
-				$$(find . -name '*.c')
-
-__cpp-lint: __cpp-lint-build
-	@$(DOCKER_RUN) $(CPP)-lint \
-		cpplint \
-			--quiet \
-			--recursive \
-			--extensions=c \
-			--filter="-legal/copyright,-runtime/arrays,-readability/casting" .
-	@$(DOCKER_RUN) $(CPP)-lint \
-		cpplint \
-			--quiet \
-			--recursive \
-			--extensions=cpp \
-			--filter="-legal/copyright,-runtime/arrays" .
-	@$(DOCKER_RUN) $(CPP)-lint \
-		scripts/run-clang-format.py \
-			--clang-format-executable=clang-format \
-			-r .
-
-__cpp-lint-build:
-	@$(DOCKER_BUILD) .docker/lint/$(CPP)-lint.Dockerfile -t $(CPP)-lint .
-
-__dart-lint-fix: __dart-lint-build
-	@$(DOCKER_RUN) $(DART)-lint dart format . > /dev/null
-
-__dart-lint: __dart-lint-build
-	@$(DOCKER_RUN) $(DART)-lint ./scripts/lint-dart.sh
-
-__dart-lint-build:
-	@$(DOCKER_BUILD) .docker/lint/$(DART)-lint.Dockerfile -t $(DART)-lint .
-
-__go-lint-build:
-	@$(DOCKER_BUILD) .docker/$(GO).Dockerfile -t $(GO) .
-
-__go-lint: __go-lint-build
-	@$(DOCKER_RUN) $(GO) [ "$$(gofmt -l . | wc -l)" -eq 0 ]
-
-__go-lint-fix: __go-lint-build
-	@$(DOCKER_RUN) $(GO) gofmt -w .
-
-__js-lint-fix: __js-lint-build
-	@$(DOCKER_RUN) $(JS)-lint standard --fix
-
-__js-lint: __js-lint-build
-	@$(DOCKER_RUN) $(JS)-lint standard
-
-__js-lint-build:
-	@$(DOCKER_BUILD) .docker/lint/$(JS)-lint.Dockerfile -t $(JS)-lint .
-
-__py-lint-fix: __py-lint-build
-	@$(DOCKER_RUN) $(PY)-lint blue .
-	@$(DOCKER_RUN) $(PY)-lint isort .
-
-__py-lint: __py-lint-build
-	@$(DOCKER_RUN) $(PY)-lint blue --check . -q
-	@$(DOCKER_RUN) $(PY)-lint flake8
-	@$(DOCKER_RUN) $(PY)-lint isort -c .
-
-__py-lint-build:
-	@$(DOCKER_BUILD) .docker/lint/$(PY)-lint.Dockerfile -t $(PY)-lint .
-
-__py-lint-update-requirements: __py-lint-build
-	@$(DOCKER_RUN) $(PY)-lint scripts/update-python-requirements-ci.sh
-
 __run-build:
 	@for language in $(SUPPORTED_LANGUAGES); do \
 		$(DOCKER_BUILD) .docker/$$language.Dockerfile -t $$language .; \
 	done
 
+__run-lint-build:
+	@for language_lint in $(SUPPORTED_LINTS); do \
+		$(DOCKER_BUILD) .docker/lint/$${language_lint}-lint.Dockerfile -t $${language_lint}-lint .; \
+	done
+
 __shell-lint: __shell-lint-build
 	@$(DOCKER_RUN) shell-lint scripts/lint-shell.sh
-
-__shell-lint-build:
-	@$(DOCKER_BUILD) .docker/lint/shell-lint.Dockerfile -t shell-lint .
-
-__sql-lint: __sql-lint-fix
-	@git diff --exit-code *.sql
-
-__sql-lint-build:
-	@$(DOCKER_BUILD) .docker/lint/$(SQL)-lint.Dockerfile -t $(SQL)-lint .
-
-__sql-lint-fix: __sql-lint-build
-	@$(DOCKER_RUN) $(SQL)-lint find . -name '*.sql' -exec sqlformat --indent_width=4 -k upper -o {} {} \;
 
 check-tags:
 	@scripts/check-tags.sh
@@ -209,15 +119,15 @@ clean:
 languages:
 	@./scripts/languages.sh
 
-lint: __clj-lint __cpp-lint __dart-lint __go-lint __js-lint __py-lint __shell-lint __sql-lint
+lint: __run-lint-build
+	@for language_lint in $(SUPPORTED_LINTS); do \
+		$(DOCKER_RUN) $${language_lint}-lint; \
+	done
 
-lint-fix: \
-	__cpp-lint-fix \
-	__dart-lint-fix \
-	__go-lint-fix \
-	__js-lint-fix \
-	__py-lint-fix \
-	__sql-lint-fix
+lint-fix: __run-lint-build
+	@for language_lint in $(SUPPORTED_LINTS); do \
+		$(DOCKER_RUN) -e LINT_FIX=1 $${language_lint}-lint;\
+	done
 
 new-problem:
 ifdef LANGUAGES
