@@ -1,98 +1,79 @@
-def is_operator(char):
-    return char in ['+', '-', '*', '/', '^']
+def operator_precendence(term):
+    operator_precendences = {'+': 1, '-': 1, '*': 2, '/': 2, '^': 3}
+
+    return operator_precendences.get(term, 0)
 
 
-def is_opening_parenthesis(char):
-    return char == '('
+def is_operator(term):
+    return term in '+-*/^'
 
 
-def is_closing_parenthesis(char):
-    return char == ')'
+def is_opening_parenthesis(term):
+    return term == '('
 
 
-def is_parenthesis(char):
-    return char in '()'
+def is_closing_parenthesis(term):
+    return term == ')'
 
 
-def is_operand(char):
-    return not is_operator(char) and not is_parenthesis(char)
+def is_parenthesis(term):
+    return is_opening_parenthesis(term) or is_closing_parenthesis(term)
 
 
-def stack_terms(line, line_cursor, operation_stack):
-    if is_operand(line[line_cursor]):
-        operation_stack.append(line[line_cursor])
-        line_cursor += 1
-        return line_cursor
+def is_operand(term):
+    return not is_operator(term) and not is_parenthesis(term)
 
-    if is_operator(line[line_cursor]):
-        operator = line[line_cursor]
-        line_cursor = stack_terms(line, line_cursor + 1, operation_stack)
-        operation_stack.append(operator)
-        return line_cursor
 
-    if is_parenthesis(line[line_cursor]):
-        line_cursor += 1
-        parenthesis_depth = 1
-        sub_expression = ''
+def infix_to_postfix(line):
+    terms_stack = []
+    postfix_string = ''
 
-        for char in line[line_cursor:]:
-            if is_opening_parenthesis(char):
-                parenthesis_depth += 1
-            elif is_closing_parenthesis(char) and parenthesis_depth == 1:
-                parenthesis_depth -= 1
-                operation_stack.append(sub_expression)
-                line_cursor += 1
-                break
-            elif is_closing_parenthesis(char):
-                parenthesis_depth -= 1
+    for term in line:
+        if is_opening_parenthesis(term):
+            terms_stack.append(term)
+
+        if is_closing_parenthesis(term):
+            while terms_stack:
+                if is_opening_parenthesis(terms_stack[-1]):
+                    terms_stack.pop()
+                    break
+
+                postfix_string += terms_stack.pop()
+
+        if is_operand(term):
+            postfix_string += term
+
+        if is_operator(term):
+            if terms_stack and operator_precendence(
+                term
+            ) <= operator_precendence(terms_stack[-1]):
+                postfix_string += terms_stack.pop()
+
+                while terms_stack and operator_precendence(
+                    term
+                ) <= operator_precendence(terms_stack[-1]):
+                    postfix_string += terms_stack.pop()
+
+                terms_stack.append(term)
             else:
-                sub_expression += line[line_cursor]
+                terms_stack.append(term)
 
-            line_cursor += 1
+    else:
+        while terms_stack:
+            if is_parenthesis(terms_stack[-1]):
+                terms_stack.pop()
 
-        return line_cursor
+            postfix_string += terms_stack.pop()
 
-
-n = int(input())
-for _ in range(n):
-    line = input()
-    line_cursor = 0
-    operation_stack = []
-
-    while line_cursor < len(line):
-        line_cursor = stack_terms(line, line_cursor, operation_stack)
-
-    # while operation_stack:
-    #     pass
-    print(line)
-    print(operation_stack)
+    return postfix_string
 
 
-# def _postfix_print(node):
-#     if node.left:
-#         _postfix_print(node.left)
-#     if node.right:
-#         _postfix_print(node.right)
-#     print(node.value, end='')
+def main():
+    n = int(input())
+    for _ in range(n):
+        line = input()
 
-# def postfix_print(node):
-#     _postfix_print(node)
-#     print()
+        print(infix_to_postfix(line))
 
-# Node = namedtuple('Node', ['value', 'left', 'right'])
 
-# a = Node(value='A', left=None, right=None)
-# two = Node(value='2', left=None, right=None)
-# first_tree = Node(value='*', left=a, right=two)
-
-# postfix_print(first_tree)
-
-# a = Node(value='a', left=None, right=None)
-# b = Node(value='b', left=None, right=None)
-# minus = Node(value='-', left=a, right=b)
-# c = Node(value='c', left=None, right=None)
-# d = Node(value='d', left=None, right=None)
-# plus = Node(value='+', left=c, right=d)
-# second_tree = Node(value='/', left=minus, right=plus)
-
-# postfix_print(second_tree)
+main()

@@ -1,14 +1,14 @@
 https://www.beecrowd.com.br/judge/en/problems/view/1077
 
-# Data Structures and Libraries
+# Infix to Posfix
 
 The teacher asked you to write a program that convert an infix expression to a
 postfix expression. Like you know, the terms in and pos are according with the
 operators position. The program will have to handle only with the binary
-operators +, -, *, /, ^. parenthesis, letters and numbers. An example would be
-an expression like: (A*B+2*C^3)/2*A. The program must convert this expression
-(infix) to the posfix expression: AB*2C3^*+2/A* All expressions of the test
-cases are expressions with valid sintax.
+operators +, -, \*, /, ^. parenthesis, letters and numbers. An example would
+be an expression like: (A*B+2*C^3)/2*A. The program must convert this
+expression (infix) to the posfix expression: AB*2C3^*+2/A* All expressions of
+the test cases are expressions with valid sintax.
 
 ## Input
 
