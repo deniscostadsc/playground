@@ -1,0 +1,50 @@
+Aninha
+Bruninha
+Carlinhos
+Dudinha
+Fernandinha
+Gaguinho
+Joaozinho
+Julhinha
+Leandrinho
+Luquinhas
+Marquinhos
+Pedrinho
+Rafinha
+Tamirinha
+Tininha
+Zezinho
+Se comportaram: 7 | Nao se comportaram: 9
+Aninha
+Bruninha
+Fernandinha
+Joaozinho
+Luquinhas
+Mangojatinha
+Marquinhos
+Pedrinho
+Tininha
+Zezinho
+Se comportaram: 5 | Nao se comportaram: 5
+Aninha
+Bruninha
+Carlinhos
+Fernandinha
+Gaguinho
+Joaozinho
+Julhinha
+Leandrinho
+Luquinhas
+Mangojatinha
+Marquinhos
+Pedrinho
+Rafinha
+Tamirinha
+Zezinho
+Se comportaram: 10 | Nao se comportaram: 5
+Aninha
+AninhaB
+Se comportaram: 1 | Nao se comportaram: 1
+Aninha
+AninhaB
+Se comportaram: 1 | Nao se comportaram: 1
