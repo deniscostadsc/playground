@@ -19,14 +19,14 @@ for folder in $FOLDERS; do
         if [ "$language" == "sql" ]; then
             PROBLEM="$folder" \
             USER="$(id -u):$(id -g)" \
-                docker-compose \
-                    -f .docker/sql-docker-compose.yml \
-                    --log-level ERROR \
-                    up \
-                    --build \
-                    --quiet-pull \
-                    --abort-on-container-exit \
-                    --exit-code-from database-client > /dev/null
+            docker-compose \
+                -f .docker/sql-docker-compose.yml \
+                --log-level ERROR \
+                up \
+                --build \
+                --quiet-pull \
+                --abort-on-container-exit \
+                --exit-code-from database-client
         else
             $DOCKER_RUN_PREFIX -e PROBLEM="$folder" "$language"
         fi
