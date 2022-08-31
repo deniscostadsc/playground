@@ -1,0 +1,9 @@
+   name    | length 
+-----------+--------
+ Valentine |      9
+ Manuel    |      6
+ Karen     |      5
+ Ygor      |      4
+ Jo        |      2
+(5 rows)
+
