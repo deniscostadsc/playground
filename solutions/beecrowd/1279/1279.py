@@ -23,11 +23,13 @@ for line in sys.stdin:
 
     year = int(line)
 
+    if not is_leap(year) and not is_huluculu(year) and not is_bulukulu(year):
+        print('This is an ordinary year.')
+        continue
+
     if is_leap(year):
         print('This is leap year.')
     if is_huluculu(year):
         print('This is huluculu festival year.')
     if is_bulukulu(year):
         print('This is bulukulu festival year.')
-    if not is_leap(year) and not is_huluculu(year) and not is_bulukulu(year):
-        print('This is an ordinary year.')
