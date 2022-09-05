@@ -71,6 +71,10 @@ SUPPORTED_LINTS = \
 	$(SHELLSCRIPT) \
 	$(SQL)
 
+ifdef LINTS
+SUPPORTED_LINTS := $(LINTS)
+endif
+
 FOLDER_EXISTS = 0
 ifneq ("$(wildcard $(FOLDER))","")
     FOLDER_EXISTS = 1
@@ -120,11 +124,17 @@ languages:
 	@./scripts/languages.sh
 
 lint: __run-lint-build
+ifdef LANGUAGES
+	$(error On lint task, you should use LINTS not LANGUAGES)
+endif
 	@for language_lint in $(SUPPORTED_LINTS); do \
 		$(DOCKER_RUN) $${language_lint}-lint; \
 	done
 
 lint-fix: __run-lint-build
+ifdef LANGUAGES
+	$(error On lint-fix task, you should use LINTS not LANGUAGES)
+endif
 	@for language_lint in $(SUPPORTED_LINTS); do \
 		$(DOCKER_RUN) -e LINT_FIX=1 $${language_lint}-lint;\
 	done

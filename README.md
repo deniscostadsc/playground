@@ -24,13 +24,10 @@ The following tasks are available in the Makefile:
 ```shell
 make clean  # remove files created by the run task
 make languages  # show numbers of solutions in different languages per folder
-make lint  # check lint for all solutions
-make lint-fix  # format all code
+make lint [LINTS='language-extensions']  # check lint for all solutions if no LINTS is passed
+make lint-fix [LINTS='language-extensions']  # format all code if no LINTS is passed
 make new-problem FOLDER=path/to/create/ LANGUAGE='language-extension'  # create solution template
-make run  # run and test all past solutions
-make run FOLDER=sub/path/to/run  # run and test a specific sub-folder
-make run FOLDER=sub/path/to/run LANGUAGES='language-extensions'  # combine FOLDER and LANGUAGE behavior
-make run LANGUAGES=language-extensions  # run and test all problems of specific language
+make run [FOLDER=sub/path/to/run] [LANGUAGES='language-extensions']  # run and test all solutions if no FOLDER or LANGUAGES is passed
 make wrong  # show all solutions that are not complete yet
 ```
 
