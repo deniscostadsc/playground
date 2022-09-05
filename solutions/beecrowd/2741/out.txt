@@ -1,0 +1,6 @@
+            name            | grade 
+----------------------------+-------
+ Approved: Ben M. Dantzler  |   9.6
+ Approved: Terry B. Padilla |   7.3
+(2 rows)
+
