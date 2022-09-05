@@ -1,0 +1,3058 @@
+3
+a b c
+a b c
+3
+a b c
+b c a
+3
+a b c
+a c b
+3
+a b c
+c a b
+3
+a b c
+c b a
+1
+a
+a
+6
+b o m d i a
+d i a b o m
+4
+n o h e
+h e n o
+7
+c o r a g e m
+a g r o m e c
+26
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+26
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+z y x w v u t s r q p o n m l k j i h g f e d c b a
+26
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+a b e d c f j k i n m o l h g r t w v u x z y s q p
+26
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+b e d c f j k i n m o l h g r t w v u x z y s q a p
+4
+a b c d
+c a b d
+4
+a b c d
+c a d b
+6
+a b d c b a
+a b c b a d
+6
+a b c d b a
+d a b c b a
+4
+e t d a
+d a t e
+5
+o s t a p
+p a t o s
+14
+d m b l a f e h j c k n i g
+l b f c k j h e g i n a m d
+26
+f z e n s d k o p h u j m i g w r c b y l t x q a v
+f n d s p u m i j h w c y b l r g o t v a q x k e z
+24
+j w g d m l h a p e f k o i x u t b r q s c v n
+w j g p a e h l m f d u b r q c n v s t x i o k
+6
+e d c b a f
+f a b c d e
+12
+b e l c k d a j i h f g
+e b l c d k a h i f j g
+16
+h f o k e d n c b i a j m g l p
+k e o f c n d h b i a j m g l p
+17
+g l e n q j p c b d a f h o k i m
+n e q l p c b j g a d f h o m i k
+21
+f e q t n j p d s h o c b m l i a k u r g
+f e q t n p j d s c o h a i k l m u b g r
+26
+a b u p w x s q f d i v m t g j y c e n o h k r z l
+a b p u w f q s i d x m v g y c j e h r k z o n t l
+21
+u o a p d k b j g r m f q s t c i e h n l
+o a b f m r g j k q d p c i t h l n e s u
+11
+a g b j f i e k d h c
+a g b j f d c h k e i
+13
+h m a l d i b k g f j c e
+m h l d a b i k j f g e c
+9
+g e a f b d h i c
+a e f d c i h b g
+21
+c e p a o q b t i m l g n r h k j s u f d
+e c p a q m i t b l g o n r k h u f d s j
+23
+n e b l k p a i j o w u h t s c d f q m v r g
+n e b l k a p i o j u h w t s d f c q r g v m
+8
+g d e b a h c f
+g e a h b f c d
+26
+z e l k r p s o h g c q d x n v b m a i f j y u t w
+e l o g d q x n c a i j f y t u w m b v h s p r k z
+4
+b a c d
+c d a b
+6
+e a f b c d
+c b f d a e
+24
+a b i u o m j k p x w v t l f d r q s e c g n h
+a b i m j p x k t v l w o f u d q e s r c g h n
+6
+e d c f a b
+e d a f b c
+23
+j d a v t h b s w c e f q i l m g r k p n u o
+t s b h v w c a e f d j q i m r p k g l o u n
+10
+c j g i b d a f e h
+c j i g d b a f e h
+25
+o f a s m c e l b y h t x p g n q d w i k r u v j
+o f a s e b l t n g q d w p x h y c m v u r j k i
+20
+d e i r g j f n a b l q h s p c m k o t
+i e d g r j f a n l b h s q c t o k m p
+7
+f g d b a c e
+g d b f c e a
+20
+h o s a l t i j r d b e m n f c g k p q
+h l i t a j s o r d n m c q p k g f e b
+10
+a d e h b j i g f c
+d h c f g i j b e a
+11
+c d b k j e g a h i f
+c g e j a k b d i f h
+12
+k e d f j g i l c b h a
+k e d f g b a h c l i j
+5
+b a e d c
+c d e a b
+14
+g f d c j e k b l m a n i h
+g j c b k e d a h i n m l f
+15
+h k n m g f a b i c d j e l o
+n k h m f a i b c g d o l e j
+15
+d f o i m k g c e h l n b a j
+o m g h l b n e j a c k i f d
+24
+p x r a q b f j e u n k d l c t g v m i s h o w
+x p a r q f e k n u j b d l c t g v i s m o w h
+21
+d n b m r e s g a o q h p c t j k l u f i
+d e s g o j t l i f u k c p h q a r m b n
+18
+c d r f g o i k m n q p j h b l a e
+c d g o f i m n h j b l a p e q k r
+22
+h g i u c b r q l t f p a j d e v k n m o s
+i u l f t e m n k o s v d j a p q r b c g h
+7
+g f e d c b a
+g f e d a b c
+19
+h c o q g n p f e l b i a s d r m k j
+h o p n f l e g a i b d m r j k s q c
+14
+a n b h i c j f m d l e k g
+a b i j c d e g k l m f h n
+8
+h g e a f b d c
+h e a f g b c d
+6
+a b e c f d
+c d f e b a
+13
+h f j a c k e d m b g i l
+h j f a k e c d m l i g b
+9
+h f g d c b e a i
+h f g d b c e i a
+19
+a p g h o d e n l j k q r i s m b c f
+a o e l j n k q d f c b m s i r h g p
+15
+a d g l o h m b c f e n k j i
+a d o l g b m f n e c h j i k
+24
+u x n g l c q h b i f o a j d m e v r s k p w t
+u n x l g h b q c f i o j a d m e t w p k s r v
+9
+b f h d i a g e c
+h d f b i g a e c
+11
+e g a i f b h d k j c
+e g a i b f j c k d h
+7
+b c d a e g f
+b c a e g d f
+15
+f a h b c l i m d j o k n g e
+f c b h i l a o n e g k j d m
+17
+c l b k a i f g h m q j o e p d n
+l b c a i k f g h m e o p j d n q
+7
+f a b d e c g
+f a b d c e g
+25
+m e d s i w t k h r j c b p l q g a n u o f v x y
+d e i t w s m k h j r b l q g p c u n a o f v x y
+23
+e d w v i h c m b q k p s r a j n f g t l u o
+w d m c h i v e q b k s a r p n j f t u o l g
+16
+a m p n b l f i j e k h o c g d
+a m p n b l f i e o c g d h k j
+10
+a g d j h b c i f e
+a d j g h c e f i b
+11
+b d c i g h a e k j f
+i g e a k j f h c d b
+11
+c h g b f i j a e d k
+c b g f h i a e d k j
+10
+j g b a c e d f i h
+j g b a c e d i h f
+9
+h c f a e b g d i
+c f h e a d i g b
+19
+b i a l j e c n g k p q f r h o m d s
+i a l p k g n c e j q b r m d o h f s
+8
+a b f c h g d e
+a h d e g c f b
+4
+a b c d
+a b d c
+13
+e i g h f d c b l k j a m
+i d k l b j a c f h g e m
+10
+h g j f e d c i b a
+j f e g a b i c d h
+20
+d a q b r l e h i n p j c s t o f g m k
+d q a b r e l n p i h j c s g f o t k m
+6
+c b f a d e
+c b a f d e
+24
+d e c t g v i b h a r m q j k s u x o f p l n w
+e g t c d i q j k m r a u x o s f h w n l p b v
+19
+s n d q j g l o r i c f m b p a h k e
+s n d q j g o h a k p e b m f c i r l
+7
+a f b g c d e
+f a b c d g e
+20
+c f g d b q h r l i a t e n j s m p k o
+c g f d b q h r a e n t j m s p i k l o
+23
+h o v w r d c f j l k b n q a t e i s m p g u
+v o h w d r c f b k q n l a j e i t s m p u g
+17
+h l q j o a b g n f p i k m c e d
+h l q j o g n e d c m k i p f b a
+8
+h a e b f d g c
+h b d f g c e a
+4
+d a b c
+c b a d
+13
+k h e d c j b i l m a f g
+h k c b j d i l g f a m e
+16
+n c l o g d p b i a h j e m k f
+l c d g o n a i h b p j e f k m
+17
+a b c q l j m g e d n o i k h f p
+a b m d e k f p h i o n g j l q c
+18
+n g b c i j k d h m l f a e q r p o
+n g c b i k d f e r q a o p l m h j
+16
+n l g a i f b c h j k m o p e d
+a g f b c h i m k j l n o d e p
+4
+a b c d
+c d b a
+8
+c d a h b g e f
+d a h g b c e f
+21
+o f d c j l i s b t q a h p g r u n m e k
+o d f c j l b t s i a q g r u n m e p h k
+16
+o a n b l e c p g d f h k i j m
+o n b l p g c e d a h i j k m f
+13
+k g l e j i h m a b d c f
+k e l g j h m a i f c d b
+15
+a m n b c l j d k e h g i f o
+a b c l e g h k d o f i j n m
+6
+c a d b f e
+a d c b e f
+26
+a w h b q l r s c d e f z j i y n m k x p o t v g u
+a w b h l r q s d z f e j c y x k m n p i o u g v t
+23
+u f s e g v h n j p a b c t i r m k l o d w q
+f u e g v h s a b c p j n k l w d o q m r i t
+4
+a b c d
+d c b a
+13
+k e a i h j d m b c f g l
+e a k i d j m b l g f c h
+26
+n f u w c e r y j d z k v q m p a x s t b h l g o i
+w u c f n y r j e z v k q d m x a p s t b l o g h i
+7
+a g f d b e c
+a f g b d c e
+6
+c b a d e f
+a d e b f c
+20
+h k i d m s g l e a b q t j f o r p n c
+d i s a b o f r j p n t c q e l g m k h
+24
+g w u o a j c p m v i r f e b h t q l n x d k s
+a p v m i e b f r c h t q s k d x n l j o u w g
+23
+m a f l p u j g n r b i c s o t q v h e w d k
+a l f p n g j u m r b s t o w d e k h v q c i
+19
+o f h q g j c d a l b i r n e m s k p
+o q h f g j c d l b a r i n e k s p m
+17
+d k n l c b p q h g o a i f m e j
+k d n b q p g h i m f e j a o c l
+7
+f e a g d b c
+e f d g a b c
+26
+a k v b c j o l d m x u e f p g h r q y i w n s t z
+k a l d o e u f p g y q r i h x m w n s z t j c b v
+26
+g n v c a o u e q w j x l z f i d r y b p s m h k t
+n g v a c u o j w q x e l i b k t h m s p y r d f z
+8
+d c f g b a e h
+g f b c e h a d
+9
+a h b c d e i f g
+h b a d i e c g f
+12
+g e j h i a d k b c f l
+g e j h i a d b c k f l
+7
+d g f b a c e
+b f a c g e d
+17
+b k p a f h i q j d e c g n o l m
+a p k b i h q j g o l n m c e d f
+13
+m g h j e l i f k d c b a
+h g j d b a c k f i l e m
+5
+a b c e d
+e d c b a
+22
+e l t p k n o f a b j c d m v s r h q g u i
+l t f o a n k b c j p e d m s v r u i g q h
+5
+e d c b a
+c b a d e
+26
+d s c m x j l v t p r n i k z q w u y b g f e a h o
+d s m c j x p i y g b a h e f o u w q z k n r t v l
+12
+i h c l f d g a b e k j
+i l c h f d a b g e j k
+17
+e o q a l g h p k b f i m j c d n
+o q e h p g l a i f j c n d m b k
+26
+b v w d e o y j h n z l f c s a g m k p x r q i u t
+v b e d o w y j n h s c g a k x r u i q t p m f l z
+24
+d j h q t o i w a e u x r n m f l b s p g k c v
+h j q t o d i u x e a w f l p g s b v c k m n r
+15
+o h a j f n e k m b d l c i g
+a j n e m k b d l f c h o i g
+7
+d b c a e g f
+d b c a e g f
+21
+m e i k d j r l f t h a b s o p n c g u q
+m i d j k e a h t b o s f u g c n p l q r
+13
+a j k g d f m h b l i e c
+a j k g i l e b c h m f d
+17
+p d k c q h j e b n a f i l m g o
+q h c k j d p b e n a f i l m g o
+19
+k g h a m n c o d i p b s r e f l j q
+k a h g m c d p i b s j q l f e r o n
+5
+d c e b a
+c b a e d
+13
+l k c d j b m e g i a f h
+l d c b j m e k i g a f h
+21
+t g c b s p m r u h n j i f a d q k e l o
+t c s b g r j f i n h u q e k l o d a m p
+12
+b f j h l k d a c e i g
+b f j h k e c i g a d l
+8
+d h b g f e a c
+d b g h f a e c
+14
+m b k l e f j i d c h n a g
+m b l k e i h n a c d j f g
+19
+e j b q r d k f c i a h l g o m n s p
+e j b d k f r q i c o g l h m s p n a
+11
+j c b k i e h a d f g
+k h e a d i f b g c j
+26
+w m a g p l n h x b y i z j c s o d e k v r q f u t
+w m a g p l n i z j o s c d e k y b x h r t u f q v
+23
+i o r t l e k u w f b n m d a h c g q p v j s
+o l t r i e k w g v p q j c h s a d m n b f u
+21
+s d o t r u p k f b h c l j e a g i q m n
+s t o d b h f l j e a q n m i g c k p u r
+16
+a h b j l c m p d i k g f e n o
+b l c m d p j k e f o n g i h a
+21
+p g h n k c b e r o u m a i f d j l q t s
+h n g p k c e r u a d f j i q l m s t o b
+26
+v h p s d o w r n i c x u e b a t l k q y z m j f g
+v p w r n x b a e q y k z m g f j l t u c i o d s h
+10
+a b j f c i g h e d
+a b f j e h d g i c
+7
+g e d c f b a
+e d g f c b a
+25
+h o r a b g u l f y k n v w i c x t j p e q d s m
+o a r b g h y f v n i w x p e j t q c k m s d l u
+15
+h g o a b n j i m c e f k l d
+j i n e f c k m b d l a o g h
+26
+l f o p y w s g m c d i k j q e u b x r n t z v a h
+f c d m j q u e k i b g s w x r y t h a v z n p o l
+11
+d h f i a b e j c k g
+a b e c j k i f h g d
+13
+d h k i e f c l g b m j a
+h i e c f j a m b g l k d
+12
+b d a h j e f k l i c g
+d h a j e b k l c g i f
+8
+e d c h f b a g
+c h d f b e a g
+9
+a b i f g c d e h
+b a g h e d c f i
+26
+g j o h v c z p r t d n f q x e b l k i s a m y u w
+j g o r d b l e x m a w u y s i k q f n t p z c v h
+8
+f g c b e h d a
+c d a h e b g f
+9
+h e c b i d a g f
+i f g a d b c e h
+15
+a n h l b c d j m i k o e f g
+n a h l j k o e i m f d g c b
+14
+c b f d m a h i j l e g k n
+c f d j i k n g e l h a m b
+23
+d c n s g k f w b o r i m e p u q l j h a v t
+d s g n c f o b i m q l u a v h t j p e r w k
+12
+f a k g j l b c e h d i
+a k g f j c b e h l d i
+14
+c d f h e b a i j g n l k m
+c d e a b h f i j g n k m l
+16
+e c a d p j l o g k f h b n i m
+a d c p j l o e i n b m h f k g
+7
+a g b c f e d
+d e f c b g a
+16
+e h j m d f k o c l g b i n p a
+m d j k o f c h g l p n i b a e
+23
+p e d n c l m b a r h q o w u s g f t k i v j
+p e d l c h r a b q m n u w g f s t i j v k o
+7
+c b e d g f a
+c e d b g a f
+22
+o a b l k g m n q t j r p f u d i e h c v s
+l g n t q m u f p d i r e c h j k s v b a o
+12
+c h j e f i b k l g d a
+h j e f k d g a l b i c
+10
+f c d i b e j h a g
+f c i d j a h g e b
+9
+e d c f a i h b g
+a f b h g i c d e
+23
+q o f a r e u p w v j n m d k t i b s h g c l
+r e p u w n j m k t d i b s g h l c v a f o q
+4
+a b c d
+a c d b
+12
+c d j i f l h g e k b a
+l h g k b e a f i j d c
+16
+n g a i k b p m h o f d l c e j
+n h o m p b l d f j e c k i a g
+26
+h a b f c z w x d e j m q y s k l t r p v u i o g n
+j m s y k t i o u v n g p r l q e d x w z c f b a h
+26
+l f e s z b x a i c d h p v m j k t g n q u r o w y
+f l e x b c h d v p i a z s m j k q n w y o r u g t
+20
+n b t c l k d e o a f j q r s m i g h p
+t c b n l k e d o f a j q g i p h m s r
+7
+c a f d e b g
+c a d e b g f
+6
+e d f c b a
+e d f a b c
+14
+k m i l c h b f n a g e j d
+b h c l i f a n m d j e g k
+21
+s m a d r o b l e h f u p q k n i g j c t
+m s a o b u p f k q j g i c n h e t l r d
+24
+v a w t o l g s k m b x n q f j e c p d r u i h
+v w a l g m b k s o t q j d p c e i u r f n x h
+5
+d c b e a
+c d a e b
+24
+k n e h s u r l v d g c x b a o m p q j t i w f
+n e k s r u h c b x g d v m j q w f i t p o a l
+7
+a f e b g c d
+e b c g f d a
+25
+w c u o l q t i r d g f m y k x p n s v b j h e a
+w c u q l o r i t d g f k n p x y m s j b h v e a
+24
+q b u d g s e r p k w a c t i n f o l x h v j m
+q u d g e r p s b w a c t k n f o i l v h x m j
+9
+b a f h c i g e d
+a b h i c f d e g
+21
+p o c j b i a e u g d m h k t q s r f l n
+p o c b j a g d h m u e i k t q s r f n l
+20
+f g m p k d e c t h o b q i s j n a l r
+g d c t i j n r l a s q b o h e k p m f
+19
+j k e d s g m n q b h a r c p i o l f
+k j d g n m q s h a b r c e p i o l f
+11
+c d f b a k g e i j h
+a k h j i e g b f d c
+10
+e j b f d c g h a i
+e j h g c d a i f b
+16
+p a k i e j g b l h c n m d f o
+p j e i g k b a l h d m o f n c
+11
+d i k j a f h b c e g
+i h f a e g c b j k d
+15
+b m h a g n c e i d l k f j o
+b m a g d k o j f l i e c n h
+5
+c b a d e
+c b a e d
+10
+b j a i c e d h f g
+j c i a b h g f d e
+16
+c f d k b g e p o i l a n h j m
+f c d b k e l i o a n p g h j m
+4
+d c b a
+b a c d
+13
+j i h g f e l d c b a k m
+j i h g f c a m k b d l e
+7
+a e g b c f d
+g f c b e a d
+9
+h i e d a f b g c
+h i a d b g c f e
+21
+f i m d k h p t n q a s g b e o r u l j c
+f h k d p m i t n q a g s b o e r l c j u
+19
+a b f m c d h g j r k p q s i o e l n
+a b f m c d j r k g q p i s o e h l n
+24
+e n d u k f s c i r x w l q b j t h o m g p a v
+e n c s i r x l w f t j o m v a p g h b q k u d
+8
+d b f c g e h a
+d g c f a h e b
+9
+c d h f i b a g e
+c d h b i e g a f
+13
+g d k e f j m h i c l b a
+g e f k d j m h i b l a c
+8
+f h a e b d c g
+h a e b g c d f
+19
+c d n f g o i a s e p b l m k j r h q
+c d f n o i s a e p b g m l k r q h j
+4
+d c b a
+d c a b
+10
+d g b h j c f e a i
+d i a e f c j h b g
+7
+a b g e c d f
+a b e g c d f
+7
+e d c g b a f
+e b g c d a f
+17
+f d l h j n a k i p q m b g o c e
+f a n j h l i p k d g b m e c o q
+17
+i n d o m k e g l b c h j p a f q
+n i d o k m e l b c g p q f a j h
+26
+t f n h a x j p z w g y c b v o q r m e d i u s k l
+t f h a n w z g y b q o v m u i d k s l e r c p j x
+14
+k d i c h b f a e m j n g l
+k d i h c b a g n l j m e f
+15
+h a f k o j e l n g c m d b i
+h f a e j g c i b d m n l o k
+20
+p t a k o j b c i r g d e s m f q h l n
+p a k t b c j o r i g d f n l h q m s e
+6
+a d c b e f
+a d b f e c
+23
+l c t r k b q h f u j s d v a n w e p g i o m
+r t q s d v j a u n f h w b e p k i g m o c l
+21
+i m j p r b d a e s c l k o h u q f g n t
+i m p j b d a r s e c k h o l u q f g t n
+22
+t d h k l g p r v j s u c b e a i o f n q m
+h d k l v r j u s p a e o i b c f g t n q m
+4
+c d b a
+a b d c
+11
+a d i b e g c k f h j
+a b e i d g k c h f j
+26
+l i u a n e t h r b m f y g x v w q d z s p c o j k
+u h t b r f m e y n x g w v q a i l d z c p s k j o
+24
+n k d o h l a f t m g q u r e i b j v s c w p x
+k n d o h f a m g t q r i j b e u c s w p v l x
+4
+d a b c
+d a b c
+9
+i b f g h c a d e
+i f h a d e c g b
+11
+h j d b f k i a g c e
+h j i a k g f e c b d
+25
+d c f q s i u w m e p o y l b t n a r j v g h x k
+d c q f s i u w m e l t n x k h g v j r a b y o p
+12
+f h i d k g c b j l e a
+h c g k d l j e a b i f
+9
+a f e d i b c g h
+a i b d e g h c f
+4
+d c b a
+b c d a
+23
+d u m g j o i k f l s b n r v e q c w a t h p
+d u m o k f i j g l s n v r e c a h t w p q b
+4
+b a d c
+b a d c
+6
+f a e b c d
+f e a b d c
+15
+d e f k i m n c l g b a j o h
+d k f e i l h o j a b g c n m
+17
+n a e h b i g k d f o j m q c p l
+n e a h b g k i d j o f q c m l p
+12
+k l a b d i e g c j h f
+a i e g c d b l k j h f
+26
+x h p v q n w j m y i e o t f r d l s z c b a k u g
+x h p q v w n j e i y m o t r f z s l a b k g u c d
+6
+f e d c b a
+e f d c a b
+4
+b a c d
+b a c d
+25
+o l q n e b g j x d k h u w v f i y p a r s t m c
+o l q n x k d j g b e h u w y a s r p m c t i f v
+10
+a j h d i f e b c g
+a j i g c b e f d h
+6
+b d a f e c
+a e f d c b
+26
+w e l d h n z f g x i u s o k r j p c y v b a t m q
+w e d l h f i s u x r p v t q m a b y c j k o g z n
+22
+q p s e a j b c v k r n h i d l u m f g o t
+p q s a b k r v c h n i u l m d j g t o f e
+7
+a c d e b f g
+c a d g f b e
+16
+d g n i c h p k m a b o f j e l
+n c h i p b f o j l e a m k g d
+7
+f c b a e d g
+g d e a b c f
+11
+c g h b j i f d e a k
+c h g e d a k f i j b
+18
+a r m j o g q d c b i p e f l h k n
+r q g o p i f l h n k e b c d j m a
+6
+c b d a e f
+c a e d f b
+5
+d c b a e
+b a e c d
+20
+e m l d g h b f k a c n q j s p i r t o
+d g l m h b e k f j s p q r o t i n c a
+4
+a b d c
+a d c b
+16
+g c k a p d e h i l m j b o n f
+k d e p a h i m f n o b j l c g
+11
+f h j g e k a d b i c
+j h g e k d c i b a f
+6
+d c b f a e
+b c d e a f
+26
+g p u r a b h i f l o t w j m c x s d z k n y v e q
+g p u r a f l o m x k z n v y e d s c j w q t i h b
+13
+a i k j l b e c h d f g m
+a j l c h e g f m d b k i
+5
+a b e c d
+a e b c d
+4
+a b c d
+a d c b
+10
+b i h c g f e j d a
+b i h c g e f j d a
+14
+g n l a h i e d m j c b k f
+h i a d c j m e f k b l n g
+17
+p b f d i a l j e g m q k n h c o
+f i a l d b g e q o c h n k m j p
+16
+j c g o b d l m a n i k f e p h
+c j g o d b l a n m k i f e p h
+24
+h q g m f e o d n s w u k p j v c l i r x b a t
+h g m e f o q n d s w k u p c v x b r i l t a j
+17
+o a h j b d i c g q m k l p e f n
+o j g l p n f e k m q c i d b h a
+24
+c g j o q r d f m u a v e n i l s p b h k t w x
+c g q o j r v e a n i l u s m k t x w h b p f d
+5
+a b c d e
+b a d c e
+8
+e d c b a g h f
+c b g h a f d e
+22
+l d n h v c e j i o p q b r g s a k t u f m
+l n c v h j o i e d p b r q g a s t f m u k
+9
+f d c e h b g i a
+f d c a i g b h e
+6
+b f c d e a
+f c b a e d
+12
+c d j k f a e i h g b l
+d k f j e a l b g h i c
+20
+j e q o d p g f c m s i b r a t l h k n
+j d m c f i s a r b g t p o h k n l q e
+13
+h g b e j f a l i m k d c
+h g b l m i a k d c f j e
+26
+o z r q p i x a j b c u m g s f w h t d n l k v e y
+j a c b u x w f h s d t l n g k m y e v i p q r z o
+12
+i d b j g h a c k l e f
+g j b a c l e k f h d i
+23
+c q f s r u v h j w b l n o t k m a g i p e d
+f r u v w j h l o n b s a d e p i g m k t q c
+14
+d g l j b m h c a n e k i f
+g d l j b h m c a e k n i f
+12
+j h c f g d b e k i a l
+j h f g d b a i l k e c
+18
+m b n g l k c e d i h o j a f r p q
+b m k c l g d e h i o f a j p q r n
+11
+e h k a b j c d f i g
+e k h a b c i f d j g
+24
+a g m n v w p e h t f d r q x i u s k c j b o l
+a m g n v e p w h f q r d i x s u t l o b j c k
+17
+h b p i d k a l e m f c n q g o j
+h p b d i k m e f n c l j o g q a
+9
+h b i e c a g d f
+b e i h c d g f a
+9
+d c f b a g i h e
+d c b i g h a e f
+7
+g b a e d c f
+g a e c d f b
+18
+a i g p h k r b n c o e q d l f m j
+g h p k i a n b r c e f l d q o j m
+6
+a b c f d e
+a b d e f c
+14
+l a m h i b c j n f g d e k
+l a h m i c b n k e d g f j
+22
+e m g d i h k j p c s b t a l n f q v u o r
+g k h j i c p d s b m e f n l a q r o u v t
+18
+a c f j e q b m h i l k o p r d g n
+c q e j f h m i o p r d k l n g b a
+15
+f n i k a o d g b e j l c h m
+f k i n o b g d a e j l m h c
+16
+j l f g e m n h d o i p k c b a
+j f e g h o i p d b c k a n m l
+7
+a b c g d e f
+a b d e f g c
+12
+a i k f b c h j l d g e
+a i k f c h b j d e g l
+21
+a b p f t c k e d j h o r l i u q g s m n
+b p a t k c f d j r o h u q i s g l m e n
+26
+r k a q p e f i v y t b z x o g m h l j n c s u w d
+k e p q i y v f a t r x z b m j c n l h s g o w u d
+10
+a b d g j f h e c i
+a d f j h g c e b i
+20
+o g a h s i p j b c d r k l q e m t f n
+s i j d c l q k m f t n e r b p h a g o
+22
+o k u s h d t j m f p i q g r b n e l c a v
+o k u s h d j t p f m q i g n b v a c l e r
+18
+r o c l d j b e n a g k f h q p i m
+c o r d l b k g a n e j f m i p q h
+26
+x a b l q d h m v t j s z f o e g i u p r w c k n y
+a q l b v t m h z s j f g e u i r w c p o n y k d x
+11
+c d f b i k h a e g j
+b a h k i e g f d c j
+6
+f b e c a d
+f b e d a c
+22
+d i j b s v n g e h p k u a f l r t c m q o
+i j d b s v n g e h p u k f a t m q c r l o
+13
+d i m a f j l k g b c h e
+i m l j f a d g k c e h b
+9
+h i d e b c g a f
+h i d e c b a f g
+19
+h e m n d j k a l f b c q g s r o i p
+h m e f l c b q a r s g o k j p i d n
+14
+a b l n c d m e f g h i j k
+l n b c a e g f m h i d k j
+19
+s a e h l i j b c m d g f p n r q k o
+a s i b c o k q r n p f g d m j l h e
+13
+a e b c l f k h d i g m j
+a e c f l b d h i g m k j
+6
+d c b e a f
+c d b e a f
+23
+t a u l r b p f v s i g q e d n w j m o k c h
+t u a l f s i v e q n d w g m h c k o j p b r
+22
+h i j g s a r p b q m l e t c k f n u d v o
+h i g j p r a b q s m c f k n t e l d o v u
+19
+s l m q d b i n r a p k h f o g c e j
+q m l i k h f p g o e j c a r n b d s
+20
+e k b f a r m p d t g i c j h l q s o n
+b f k e r m d p i g t a c n o s q l h j
+24
+t u l c r a q p v x i h d n g e s m w k f b j o
+u r c l a p q x v t b o j f k w m s e g n d h i
+14
+k f a b e c i d n j l g h m
+k f a b c n d h m g l j i e
+13
+a m b c k i f e j h g d l
+a m b c k i e j g d l h f
+9
+i b d g h e a c f
+d e h c a f g b i
+14
+a j k f g m n d b e i h l c
+f k i e b h l c d n m g j a
+8
+e h g a c d f b
+e g b f d c a h
+21
+s m p k h g e d c r q n b t o a l i f j u
+s k p g e h m c d n q t b r a o i f u j l
+25
+h k q o e l j i m v y w a u b f g s c p r x t d n
+k h q o e l i j m y a f c s r t n d x p g b u w v
+5
+a d b c e
+e c b d a
+26
+b t j d f l y s x w g h z a e i m n o u k p v r q c
+j f s x y w l g d t e i a z n m u v c q r p k o h b
+19
+b d m a k o f h e c q l j r n g s i p
+m d h e c f q l o j k a b r g n s i p
+13
+a d f b j c m g k i e l h
+a d f k g m c i e j b h l
+13
+c g k h d l b j a f m e i
+c d l h b k g f m e i a j
+21
+g l u h f t o e b k c q i n j d a p r m s
+g l o e j n i p a r d q m c k b t f s h u
+19
+g r e j c q n m s p i f o h l d k b a
+g r e c q j n m p o b k a d l h f i s
+22
+d c o i e t v r n g u b q a h l p j f s k m
+o i t e r v c d n g u q b a l h m k s f j p
+18
+a d m e q b j i k c l r g p h o n f
+a m e q d b j i r l c k h p g f n o
+9
+a b f i c d h e g
+a i c f b d g e h
+19
+g a m h q r i d l p k f o e s b n j c
+m a q h g l k o e b s f p n d i c j r
+19
+m h d p j a f i q b g e r s l k n o c
+j p d h m a f q i g b r c o n k l s e
+9
+i b g a h f e c d
+b a g i d c e f h
+5
+c a d e b
+c a b e d
+26
+c d f y r g a e w x h i q b t m v s k u n p z o j l
+c g e a h x q b t v s m i p z n u o k w j r l y f d
+19
+n o q h a b c i e m g r l d p k f s j
+n o h b a c m r g d p k f l s e i q j
+25
+d t f h q o k j a u m s e w x v i n y g p r b l c
+d f q o k u a e x w v i s p r g b y l n c m j h t
+22
+c d b n v f t i l o s r m k e u a j h g q p
+c d f v n b l i o t s m r k u e j g h a p q
+4
+a b d c
+a b d c
+15
+i n c l o e b a d g j m h k f
+n i l o c e g d h k m f j a b
+10
+h j g a b f c e i d
+e i c d f b a g j h
+4
+d a b c
+c b a d
+20
+f c k d q j t g p s o m i r b e h n a l
+c d q j k f p o i m s r g t b e a l n h
+6
+d c f b e a
+d f b c a e
+21
+f b u k i a e p c d s m h l j t g q r o n
+b f k e a p s h m d c g t r o q j n l i u
+7
+e b f a g c d
+b g a c d f e
+9
+c b g h i d e a f
+c i d h e a g f b
+13
+g h a l b k c i e m j d f
+g h a l k c b e i m d f j
+16
+n e d h o f i p j c b l k g a m
+e n d o j c p i f h l k m a g b
+25
+h d v i f c k w q o g r s l e y t u n x b a j m p
+d i v c f w q k o g h s r l n u t x j a b p m y e
+18
+p n k d o c l f g e r q a b m j h i
+p k n d o l g r a b m h i j q e f c
+13
+l a i b c d e k f j m g h
+l a i b c d f j k e m g h
+21
+a d k n r m b s p l e g j q f i c h t u o
+d k a n b m r l j g f o u t h c i q e p s
+17
+h e p o i c j f a m b q l n k d g
+e p j c i a f o h m b n d g k l q
+24
+w a x l t k v p r c q i f b g o j m n d h u e s
+w a x l t v k p i q b j d n m e s u h o g f c r
+6
+e a f d b c
+d f a e b c
+18
+n b j r l m a i f k d c p e q h o g
+b n j l r m f k p c d e i a o g h q
+12
+c a d h i l b k e f j g
+h d a i l k g j f e b c
+17
+n c l b k h g i f e a m p o q d j
+c b k h e p o m a j d q f i g l n
+23
+p a h b c v r l q d s i g j u n m o w k e t f
+a p b h c r s i j u g d m k e f t w o n q l v
+15
+c n b o h j d f a e k m g i l
+n c o b h j d f m i l g k e a
+22
+s d v u o p b m a r i q j e h c l k n t f g
+v u o p b d m s a r q j i e k l n c h t g f
+17
+q h a m f o j g e d p k n l b c i
+h f m g j o a e q p n c i b l k d
+6
+f c b a e d
+f b c a d e
+23
+b n w a j u v d g m t q i r o s c f l h p k e
+w j a n b u d v m c l h p k f s o e r i q t g
+15
+l a i b g c d e h n j o k m f
+i a b g c l d h e n o k j m f
+10
+e f b g d j i h a c
+e h a i j d c g b f
+13
+d a i k b f c m e h l g j
+d c f b m k h e l i g j a
+5
+c b d e a
+c d e b a
+16
+c g l n a o i m k h j e p f d b
+c g l n a o i m k b d f p e j h
+18
+q o b m i p l e a j g r f d c h k n
+q i p l m b a f r g d n k h c j e o
+25
+q u s h a d b f e t c x y g w i m v p k l r o j n
+u s q a d h f b t e x y g c w m i v l k p r n j o
+26
+g b o x p c m i t a f n d s j y k h q w u l z v e r
+g x o b p c m i a t f n k h q l z r e v u w y j s d
+25
+j i n p y e l a t u q b w m g c s x k v o h r d f
+j n i p e l y t a u b q w g s c o v k x h r m f d
+17
+i o f k c a n m e l h d p b q j g
+o i k c a m n f l d p h e q j g b
+23
+o t e s h r j n l u p d v i f b q w a k g c m
+t s e r h o n j l d v i m c g k a w q b f p u
+20
+j q c b t a h l n o d p e i g k s f m r
+q c j b a t d o n p l h e g s k i f m r
+25
+j a w p d b g q i t c v l f o s e r m k h y u n x
+i t c v q g b f l o s r h k m e d x n u y p w a j
+25
+a m s p b j q l w c x y n r d g k e u f o h t i v
+a m s p q l j b y x r g d n e k f u h i v t o c w
+20
+c t h d f s m p e b n a j l i r k q g o
+f d m s e p h n b a l j t c i g q k r o
+9
+b g d a e c h f i
+g b e a d i f h c
+16
+d l e a g i f p h n b c j k o m
+l g f i a e p h d n b c j k m o
+11
+a b f j e i c d h g k
+a i e j f b c g h d k
+16
+e k h i a f d g n b j m o c l p
+e k i h a d f g n j b l p c o m
+16
+i a l k p m b f j o n d h e c g
+k m p b f l n d o j h a g c e i
+24
+m e o l x p q d k f u n c v t s i j b r h g w a
+m e o d k q p f x l n c v i j s t u r b h a w g
+20
+j k b a p q h s r e t f c l g d m i o n
+a s r e t m d g l c f i o n h q p b k j
+10
+c a b i j d f h e g
+c i j d f h b a e g
+10
+d c e i h b a f j g
+c d e h i b a g j f
+15
+i a j b g e k m n f o c h d l
+i j a b m n o f l d h c k e g
+11
+a b k j i h e c g d f
+a h e d g f c i j k b
+18
+q a h e f b j n m c d o p l g i r k
+q a f j b n e c m h d l p i g o r k
+7
+d a b e g f c
+a d e b c f g
+16
+l k g m a e i h n b j c f p d o
+k a e m n h i b g l j p o d f c
+6
+a f d c b e
+f c e b d a
+7
+c d b f e a g
+c b d g a e f
+26
+j t d l v n r w o f s g c b k e a u x h y m i z p q
+j t d l f o w c g s r n b v k h x u a i p z m y e q
+21
+p m r e a t d b j s h c f u i l k o g n q
+m p a d t e b h s c i u f l g o k j n q r
+23
+d s c t e k b h n a v g o p r u l m j i q f w
+d s t c k b a n g v h e p r j i m w f q l u o
+24
+l b s t c j n o h k v w p u g q m e x r f i d a
+l s t b k v w h o u g r i a d f x e m q p n j c
+12
+l i k h g f e d c j b a
+i l k h d j a b c e f g
+19
+g h r a b l c i o p k n d j e f q s m
+h r g l b c k e q m s f j d n p o i a
+19
+h d r j n i b p q f a e k o m g l c s
+d h r n p b i j q f a k o e g m c s l
+8
+a h b f e d c g
+b d e f h c a g
+24
+h p q d s o x f l c e v b i k m a r w t g j n u
+h p q s d o x l e b v m k i w r a j g u n t c f
+8
+h e d g c f b a
+d e c a b f g h
+25
+e a j q h w y x d r n l m i b f c g p s k o t v u
+e a q j h y d x w r i m b l f n c g s v u t o k p
+20
+o a s h i q j b k t r l e f n m g c p d
+o s a i j q h r l m n g f c e d p t k b
+8
+h e c b d g a f
+h c b g f a d e
+19
+f a b e j l m g r q d p o c k i h n s
+f b e g m l r o p c n s h i k d q j a
+19
+j p q a e b l k n f o d c r g h i m s
+j p q a e l b k f n o d r c g h i m s
+6
+d f c a e b
+d a c e b f
+14
+m d g k a n b j h c i l e f
+n b a k g d i c h j f e l m
+14
+f d j a e i l c h k g n b m
+j a i h c g m b n k l e d f
+5
+d c b e a
+c d a e b
+9
+d f g c e b i a h
+d f g c e b h a i
+19
+m i p e o a j b n h g d l s c k f q r
+m e a o p i j b n k f c s r q l d g h
+7
+b c a f e d g
+b c a f d g e
+22
+a s p e b j k v u n l h c f r m q g d i o t
+e b p s a j k v n u r f c h l g d o t i q m
+5
+a d b c e
+a d b e c
+21
+d b k h m f o e u j n a r c i l s g p t q
+b k d m h f o a n j r c u i e l s t q p g
+4
+b d a c
+b a d c
+9
+d e c g b h f i a
+e d b f a i h g c
+20
+r s c h m j q t o a l d k f n p g i e b
+r s m h j l a d k i g p n f e b o t q c
+22
+e d f s h m u r o p v t c q l b n j a k i g
+e d f s o r p u v c t q l i k a j g n b m h
+26
+b p h n t u a g q j e o d s c x z r i v l k y w f m
+b p n h u t g j q e a o d s c x r i z l k m f w y v
+26
+w v c j b q y m u g x d s t p n f i r z h k l e a o
+v w c y q b j m u g p t f i k h a o e l z r n s d x
+9
+c g h b f i d a e
+f b d e a i h g c
+21
+g u h s n j a r o b i f k c q e t l d p m
+g n s j a h r o u f q m p d l t e c k i b
+5
+a b d e c
+d e c b a
+22
+q p d j a h o g f m k v l n u s e b c i r t
+p j a h o l v k m f g s u n i c t r b e d q
+18
+d f j g k p c n l m q e i h o b r a
+d j g p k f m q l e n c b o h r a i
+17
+d n l f a h o j i b e q p k c g m
+d n l f o b i e p c k q g m j h a
+5
+e b c a d
+e c d a b
+4
+d b c a
+b d c a
+8
+c a b h e g d f
+a b h c g d f e
+17
+m g a b n k p h o l i q j f c d e
+g b a m n k l o i h p q j f c e d
+23
+k h q i d p f v c r n m l u b j a s e t w g o
+k q p d i r n c v f u b l m s a j w t e h g o
+22
+k v l d f c j a u m q o n e b g t s h p r i
+v k f d l c m u a j q o n b g t e i r p h s
+23
+u a e p t g h q k w l n b c o i d r s m v f j
+u p g q h k t e w o s r d v j f m i c b n l a
+7
+a f b c g e d
+a b c e g f d
+16
+a d n g k c i f j b p e m h o l
+k c f j i b g o h m e p l n d a
+11
+b g i k a f d h c j e
+k i g b f a e j c h d
+8
+a d e h b f c g
+a d b g c f h e
+24
+t h b n d s x p m k l a e c f w j i v g u r q o
+h t b d x m k l p s a n f c e w j g v u q o r i
+7
+c d f b g a e
+c b f d g a e
+23
+d i l v b r e o c j n m s h w a f g k u p t q
+l i d v r e o c s m n a w h j b q t p u k g f
+16
+o d b h m i a k j e l c n f g p
+o h b m d i j e k a l g p f n c
+6
+f e d c b a
+f d c e b a
+11
+f e d i k c b a j g h
+f e i d k c a g j b h
+21
+j b f a o i h c r q e p s g l u d k m n t
+b j f a i o h e p s q r c m n k d t u l g
+20
+s r a g j b m c d h n e k t q l p i f o
+s g a r j b m d h c e n q t p l o f i k
+26
+c a k x f e u z w i n m b t y d l h q g j r o p s v
+c x e z u f k w a m b n i y t d h g q j r l o p v s
+7
+b g a c f e d
+b g f e c d a
+26
+d g c y m f r p b x e h i k a u j v t o l z q s n w
+g c d y m f r e i a v j t u z l o k h x b q p s n w
+21
+a l e g t i q b u k d c j h o f n r s p m
+l e a i t g b k d j c o h n r f p s m u q
+13
+k c g f j i h l d b a m e
+g c k l b e m a d h i j f
+13
+g d a b j h m c e i l k f
+g j h b a c m e d f k l i
+5
+e d c b a
+c b d a e
+5
+e d c a b
+a c d b e
+25
+m b o g s y u l x r w q i j p f d c v e h a k n t
+g o s b m l x u y q i p c d f j w e v r k a h t n
+16
+k m f d g j p o a l e h b n i c
+f m k g j l e b c i n h a o p d
+6
+d f c e b a
+d f a b e c
+26
+f h c z r a m v j g t o d e b w q u x y k l p i s n
+c h z m a v r f j g t o b e d w y x n s i p l k u q
+19
+i b r f j a q e g h c k o p s n l d m
+c k o h g p s n l e q a m d j f r b i
+24
+b a p t j k u i q c x w h f v m n d s e g l r o
+a b p t j u k q i x c w m v n f e o r l g s d h
+12
+a c g b f h i l j k e d
+h l d e k j i f b g c a
+4
+a b d c
+c d b a
+17
+i l f q m k e d c g b a h j o n p
+i l q k e m f c g d b a h p n o j
+11
+k d a b h i e c j f g
+k a d b h i e j c f g
+6
+f e d c b a
+f e d c b a
+5
+d c b e a
+d c b e a
+12
+j g e i h k c d b a f l
+j g i e h k c d f a l b
+26
+s q b x d u a w h e t v z o f p c m r j y l i g k n
+s x b d q u a h w e z o c p f m r l y i j g v t n k
+13
+k f h j a c b g d i m l e
+j h c g b i m d a l e f k
+24
+r h v c g x d e b f i q a w p k j s l t u m o n
+r h c v d x e g b f i a q k s j p l u n o m t w
+7
+c d e f b g a
+c e d f b g a
+15
+a o d g h c l n f i e j k b m
+o c l h g d a i f n j k b m e
+9
+g e f i a b c d h
+f i b d c h a e g
+25
+i m o p a l q f k x s u n b e g c t y r d j w v h
+i m o p a q l f x k e c w v h j d r y t g b n u s
+26
+n d a m i l v h b s t x w g q f o z j k p u y c e r
+n a v l i h m d t s b q f o z j g k p w y u e c x r
+11
+k c d a b i j h e f g
+k d c a i j b h e g f
+10
+h e j f i a c d b g
+e h j f a i g b d c
+15
+a l b o n e f d h g i k c j m
+a b n f c k i g h m j d e o l
+16
+b e j d h a m c p f i k g l n o
+e j a h d b c p g k l i o n f m
+5
+a b c d e
+b e d c a
+10
+h a b f c e d j g i
+h b a f c e i g j d
+8
+a b g h f c d e
+a b h f c d e g
+16
+h n j i d k l a b c e o g m p f
+j i d l b c a e o k n p m g f h
+9
+e d f h i b c g a
+e f h i d b c a g
+16
+c l g h p d i k e a j b n f o m
+c g l h p d e k i j b n m o f a
+5
+e c d b a
+c e d a b
+24
+a b n w m g i h s k t u f c r l o j e p v q d x
+a b n w h i g k s u c j o p x d q v e l r f t m
+4
+d c b a
+d a b c
+9
+f d g i h a c e b
+i h a g d f e b c
+23
+c b m h g p j d a k i r f o t u s w v l e n q
+c b h m g p j d i k r a f o u t w s e l v n q
+14
+c g b f j d i a n l k e m h
+b f d n l a e h m k i j g c
+12
+g f l d h b e i j a c k
+g f d l e a j i k c b h
+21
+a k b e m f u i c g o t d p j l r n h s q
+a e b k f m c i u t o d n r s q h l j p g
+15
+g h d o i k f a n m e l b c j
+h g o i d k a n m b c l e f j
+19
+g n d s q k p h c r j e o b l m f i a
+d n g h p c o b e i a f m l j r k q s
+24
+w g a l k u m j i e v p d b o c f h r n s t q x
+g m u i j e k p o c b f d h s t q n r x v l a w
+16
+d h l a i c g e f b n k o j p m
+h a l d i c f e g b k n j m p o
+10
+d h c f e i b a j g
+d c b a j i g e f h
+15
+b n a f e l c h o m d i j k g
+a n l c o m d h e f b i j k g
+6
+b a d e c f
+b a d f c e
+21
+c e l s d g p n o t h m j b u k a r i f q
+c l e g d p n h t m i q f r a k u b j o s
+20
+i f t k s r a o b h n m p d c g q e j l
+f i t k a r h n b o m s p c d l j e q g
+23
+e d h r s i u n c k b v q w o j g t p l m f a
+d e h c w o q g t p j v l m f a b k n u i s r
+17
+h f q a o b j i m l e g p d c k n
+f b j o a m i l q h e g p c d k n
+16
+o n a k h p c g d b j i m e f l
+o n k h a p c b d i m j l f e g
+20
+a d f s q p r t j e m i b g h c l k n o
+a q r e j m b h g c i l n o k t p s f d
+10
+c b e h d i a f g j
+c b h d e j g f a i
+11
+g a f e b c j h d i k
+g a c b e h j i d f k
+21
+d f k s g i l p b m a q e h r c t j o u n
+d f k l i b m p g q h t c o j u r e n a s
+4
+a d b c
+a d b c
+18
+l e i c p b a m k q d o h f n j g r
+i b a p c e m k l q d h g j n r f o
+13
+g c f b h k d i e j a l m
+g c f b j e l m a i d k h
+16
+g i j a f n l m p h e k b c o d
+i f b k e c h p o d m l n a j g
+24
+m n l h r o e j a s f p i x b w q c g t k u d v
+m n l h o r j a x i b q c g w p f u k d v t s e
+5
+b e c a d
+e b c a d
+20
+l p a b r f m o h c s n t e i j q g d k
+p b r a l m h o c s f n e t j g k d q i
+12
+d k a f l e h b c j i g
+d k l j i c g b h e f a
+22
+p q l a t d r j g v b h i e u m c o k n f s
+p l a t q j r g d b v h i c o k m u f n e s
+22
+d h r l v c f q i s t u k e p g b o n a j m
+h r d c v l q i f s t u k g p o b e n m j a
+15
+i l c o k b m a d g f h e j n
+i k d g f h a m b o c n j e l
+8
+d b g h f a c e
+d b h g e c a f
+24
+t r w f l b e o p s j q h v c a u d k m i n g x
+r t l f b w e p c u a v d h i x g n m k q j s o
+20
+l i h s m t g p f o n r j k e d q c b a
+h i l s m p g o f j r n t d q e a b c k
+26
+x f o h q j n z m i p r t d c s g b a v w l y k e u
+h q o j n m p t c g b s d v w a r i l y k u e z f x
+11
+a g h j b d c k f e i
+g j c e f k i d b h a
+15
+a e j h l d m b i g o c k f n
+e j l h b m d g i a o n f k c
+20
+e t l k j m i p n g a q s f o h r b c d
+e t l k j a g n p q o f s c d b r h i m
+16
+e d j p g c n l k a b o m f h i
+d e p j c g n l k b o a m h f i
+16
+p d e l n j o g c k i h f b m a
+d e p l n o g j c k h i b f a m
+25
+a b c p k d j o t r s e u y f h i m n x v l q g w
+b c a k d p j r t o s e u f h y m x n v i g q w l
+13
+m b g h a k f i e j d l c
+m h g i e j f l c d k a b
+14
+d k c e h f i j l m b a g n
+d e c h i f k j m b a g n l
+10
+a c h i j e d b f g
+a c i d e f b j g h
+25
+w p q n a o u k l h e v x r f b c y s i d j g m t
+w q p a o n u k l e h v r x b s y c f i d m g j t
+17
+d q i m k h j b a n e o g p l f c
+i m k j h p c f l g o e n a b q d
+5
+a b c d e
+a c b e d
+9
+f h b e i g a d c
+f h b e a g i d c
+10
+g c i f b a h j e d
+c g i f b a h j e d
+9
+a i f b h c d e g
+a i f b e d c h g
+23
+j a q h r e g s b w n f v t u i l m d k p o c
+j q a r h e g s b w f t l k c o p d m i u v n
+25
+l x v b f e g h s i d a c o t r p k j q u y m w n
+v f e g b d t r k p o q y u j n w m c a i s h x l
+5
+b a d e c
+b a c e d
+13
+j e a b k i l g c h d f m
+b a k e j i l g c d f m h
+14
+k i g b e j f n l h a c d m
+k i g b e f j a h d m c l n
+22
+b a k q m f h j s t p u e d g i c r l v n o
+k a q b t u e p g c r i d s j h f l v m o n
+18
+a n d h g c q l m b j k f e r p o i
+a h l q c b m k r e o p i f j g d n
+15
+g m h n o f e j l k i d c b a
+g n h m f o e j l i k a b c d
+10
+d j c i f h b e g a
+c j h f i e a g b d
+15
+d a o k n j g e b c l i h m f
+o g j n k a c b e l h i f m d
+16
+d c f b i o g m h l a n e k p j
+c f d b g m o h n a e l i k j p
+4
+d c b a
+c d b a
+13
+a h d j g e m k f b l i c
+a h e m g k j l c i b f d
+5
+a b c e d
+a b c e d
+22
+m h a b c l o q g u k p f d r i j t e s v n
+h m a b o l c q g u p k f r j i d s e t v n
+21
+g f a s b p e n m r l q u h t c o i j k d
+a s f g e m n p b r q t o d k j i c h u l
+17
+e a o d i b f h l j n k p g c q m
+e i d h j l f n g p m q c k b o a
+11
+f g e h i d c b a k j
+f e g i c d j k a b h
+22
+o q c b g l p s a v i k d u r t e j h n m f
+o g b c l q p a t e r n m f h j u d k i v s
+23
+h r a i t g m j o b v p f l u c d q w s n k e
+t m o b j p f u q d c s w k e n l v g i a r h
+14
+k i a b d h m c g l e j n f
+i a k d h c g l m n j f e b
+26
+n z k o t g y v x a b w u s c r m h q d p e i j f l
+n z y x v g u w b s r e p d q h i j m l f c a t o k
+20
+g k n q h j r a e f i b m c d l o t s p
+n k q g h r j a i b f e m t s o p l d c
+8
+b h d f g c e a
+b h d f e c a g
+22
+k n a b q v c o d t i j g l s e m p r h f u
+k b q c v o t d g j l i m e p s a n r u f h
+12
+h e i d j c b f l k a g
+h e d c j i l a k f g b
+5
+c a b e d
+e b d a c
+16
+e d c j m o i p n l g b h a f k
+e c j m o p g l n b a k f h i d
+13
+k h m b e j a c d l i g f
+m h k e a j b c d l i g f
+9
+a f b h e c g d i
+a b f g d c e i h
+14
+g d k b m c a e f l h n j i
+k d b g c m a e f i j n h l
+7
+d c b a g f e
+a g e f b c d
+15
+a h g c k m f i n e l b j d o
+h g a k m n i e f l c b o d j
+18
+l j r h g f e d n c b k i p a m o q
+l r h j g e f d b c p i k n a o q m
+9
+i e d c f h b a g
+i e d h g a b f c
+7
+a b c d e f g
+a b e f g d c
+24
+o t i r d w m f s u c b g k e j a v h x l q p n
+o t i r d m f s w b k j e a g c v l q x h u p n
+12
+d l i k g a f j h e b c
+d i k a g l f j e b h c
+20
+f k o j r n s m a g d l h t b i e q p c
+f r n a d h i b t l g m s p q e c j o k
+20
+a c m k g j h r o t n f d b q s i p l e
+c a k g h r o t j n m b i e l p s q d f
+12
+d j e l f b g h i a c k
+e l j h g k c a i b f d
+15
+a i m l k c e h f n o b j g d
+i m a h b j o n f d g e c k l
+25
+m d s w o g r l q v j c f h i y p e u b k n x a t
+d m s o r g w l q j c v f i h e n x k b u p t a y
+12
+f a d e g c l i b k j h
+f e d l c b j h k i g a
+21
+d a e l b t k n p i j h q u f s c g m o r
+d l e k q f s u h j i o m g c r p n t b a
+19
+l b o a d n j e m f s g p i h r k c q
+b a d o l j n m e s f g p i h r k c q
+19
+d s m f i b e a c h q p r k n j o l g
+s d h q r p c a e b i n j k f l o g m
+19
+d c h j m n k b a e r p s l q f g o i
+d j m h b k n a c r e p l o i g f q s
+17
+a q i o k n j h f g b e m c d p l
+a i q o k n f h g j b c d l p m e
+4
+b c d a
+c b a d
+22
+c r b a f k p u t v h g q s n j d i l o m e
+c r b a p t u k f g h v n s q d j i e m o l
+8
+b a g d c h e f
+g a b h c f e d
+12
+c i k l j b f d a e h g
+c l k i j d f b a g h e
+25
+a t q p h j i y n b k u g c d m e o x l s f w r v
+a q p t h n b k y u c x s f l o w r e m v d g i j
+22
+n f j r a i s h p l m b v o c e d k q u t g
+n j f r a i m b v d k q e g t u c o l p h s
+19
+g b a f n m j e k i o h l c s r p q d
+g f a b n m e j c s p d q r l h o i k
+26
+z h n i l a c m p d e q b x u w j s r k f y o t v g
+n l a m e q d p c i h b z u x j s f k r w y g v t o
+6
+c f d a e b
+c f d a b e
+4
+a c d b
+b d c a
+26
+n f t w v m h q a z k o j b g e s y u p c x i d l r
+n w t v q z a o j b e y s u c x p g k l r d i h m f
+22
+a u v l f c m g d q t k i b j e h n s p o r
+u v a l f m c t q i r o p s n h e j b k d g
+17
+e k q l f i g p o d c m b a j n h
+e f l i p c d m o g b q a n h j k
+8
+e g d f a b c h
+e g b c h a f d
+19
+s m e d c a p l i j b k h g f q n o r
+s d a c p e m b j k f q n g r o h i l
+15
+f h a o m c e d j k l i b g n
+f h a m c o d k j l e b i n g
+22
+g q e r i n a f b s m h v c d u p l k j t o
+i n s b f a r e q c d u v h p j t k l m g o
+9
+a g b h f e d c i
+g a b e d f c h i
+7
+b d g f a e c
+d b f a g e c
+9
+g h d c e b a i f
+h g c d e b a f i
+23
+h d o f c k m p t u q j i a n b s e g r w l v
+o f d m k c h j i a q b n w r l g v e s u t p
+20
+e n d q k j l i s f a o r m b c h g t p
+n k j q l d a f s i o e r m c h p t g b
+6
+b a d c e f
+b d f e c a
+23
+l f d u q v t k w r i j n g p o s c h b e a m
+l f q w i r k t j p g o n v u s d c m a e b h
+7
+b d c a g e f
+b c d a f e g
+23
+w b l d i v o h q e r a s f c u t m j p g k n
+b w d v i o l q h t j m u c p f s g k a n r e
+15
+h i n k a b d e g j l c f m o
+i h g e j d f o m c l b a k n
+8
+e b g h c f d a
+b e g c h d f a
+10
+g f e j d h c b i a
+g j e h i a b c d f
+18
+q c h j g o e d n m r b i k a p l f
+q h c j g o e d n r k i b a f l p m
+17
+f a l g b n i k p e q c d j m o h
+f l a g n i k b e q p c d j m o h
+17
+h c a g q i p n m f k l b d e j o
+h a p n f m i q l b k d g c e o j
+16
+m d h a g b i n e j l p k c f o
+h d g b a m i l j e n p k c o f
+4
+a d b c
+d b c a
+20
+f o a g q b p n i k s h e r l m j t c d
+f o q b g i n r e l h m s k j c t p d a
+18
+o k l m e h n d i b p a j c f r g q
+o l k h e m d n a f c j r p b q g i
+6
+f c b e a d
+d a e b c f
+17
+h c m k q e o n b l d a i f j g p
+h o e b l j f i a d n g p q k m c
+20
+l o h g f k e q d t p s c r m j i b a n
+g h o k q e d t p f l s n a b i j m r c
+4
+a b c d
+a d c b
+24
+x k a b m t w g h c q v n d e l j f r o s p u i
+b a k x w t h g m n d l j e v q r f c s o p i u
+12
+k a g i j b e f c h l d
+j b i e g c f h l d a k
+8
+c b d a e h f g
+b c e a d h f g
+25
+a j x d u q k o s p b v y f i t e m l c g n w r h
+a j d u x o k q p b i t e f y v s m l c g n w h r
+13
+k l f a c d j h m g i b e
+k l c a j d e b i g m h f
+4
+c a b d
+c a d b
+17
+i j b c m e p f l n o d h a k q g
+j i b p l f o h g q k a d n e m c
+12
+c f l d g i j b h e a k
+c f l d g i b h e j k a
+23
+g q w d v l k j n a u p c s t b f o e r i m h
+d w l j k n a u v q c b t e o f s m h i r p g
+18
+r i n b m d p g j q k a e f c l h o
+r m b n p g d i a k l c f e q o h j
+24
+p t j d a e h n q m l k b o w v u c f r x s g i
+p d q n b v w c u o i g s x r f k l m h e a j t
+11
+a b c k i d e f j h g
+a c k i b d e j f g h
+18
+k b m n q a d i h g r c l e f j p o
+n m b k q d g h c r i a l e j o p f
+13
+m b e i g k a l h c d j f
+m b e i g k a c h l f j d
+14
+m b h k d c i a l f e j n g
+b m h k i c f j e n g l a d
+24
+e g b d t l a n u i k q h j o w m v r f p c s x
+b g e d t l u q k h o j i s x c p f r v m w n a
+24
+r b j l x h c o a v n p d w s m q t f i k e u g
+c o v a w d p n q m f t i g u e k s h x l j b r
+8
+c a d h b g f e
+c h d a g b e f
+16
+k m h i e d f c b n p a j g l o
+k m h i d a p j n b c f e g l o
+22
+q g v d l c e b i t k n a r h j f o p u m s
+q v e b i c k r j h a f m u p s o n t l d g
+4
+d c b a
+c d b a
+8
+a b e g c h d f
+a e b g f d h c
+25
+g m y r c d p t o x j n a l q w b e v u s i k h f
+g c r y o x j a n t p q w b s u v e l i d k m h f
+12
+g h l i f k b a c e d j
+h g k f b i e c a j d l
+7
+d c e b f a g
+d e c f g a b
+14
+f e d j g i c h b a m n k l
+f n k m a l b h c i g j d e
+25
+n k b e g m c i w t y q u s d x o p l a h f j v r
+k n b g m e i c y t w u q s d o x j f v r h a l p
+7
+g b f a c d e
+f b g a c e d
+24
+g w x t c i s q a m f u o h e k l r b j d n v p
+g w c q a o e l r k h u j n d v p b f m s i t x
+13
+b a f j c h m l d g k e i
+b a f j c l m d g i e k h
+5
+e d c b a
+e d a b c
+23
+l f q d k c o e v t r m n p b s i h w g j a u
+l f d k q e t v o m r n c p b i s h w j a g u
+6
+d a f e b c
+d a e c b f
+8
+c f d e a b h g
+c e d b a f g h
+12
+i a g b j c l k d h e f
+i a g b j l c k f e h d
+5
+a b c d e
+b a e d c
+8
+b c d g a h e f
+b c g a e f h d
+10
+a i b g d h f e j c
+g d b i h a j e c f
+6
+e d c b a f
+e d f a b c
+24
+u i m p t s l f h a b j c o g r d q x e k n v w
+i p m t s l u f b j o c a h r d e n k v x w q g
+20
+h j m t s o f e n g l c i b d p r k q a
+j h m f e n l c d b p k a q r i g o s t
+20
+a p o n b i j t s q k l f r g c m d h e
+p o a n i s t j b q k f l g r c m h d e
+5
+d b a e c
+e c a b d
+14
+f n j a b c g d i h e m k l
+a j g d i c e h l k m b n f
+7
+c g d e b a f
+g c d b e a f
+13
+g k l b d m e c f i j a h
+g k b d f c i e j a h m l
+6
+d b f c e a
+c a e f b d
+10
+g f j i a b h c d e
+g f j i h b d c e a
+19
+n e p l d m k q a r s i f o h b j c g
+p e n d k m l q a r f b g c j h o i s
+9
+a b c e d h i f g
+b a c h d e f g i
+20
+g e m l d c b a k s i n p t j o r q f h
+e g b a c k d s l t j o p n q r h f i m
+10
+c b j a d f i e g h
+b c j e h g i f d a
+26
+g c s a e r u l x y z h p j o d v t f i b w k q n m
+g c a s e u r l x y o d j v p i k q n m w b f t h z
+18
+d h n k e q c m b g a i p f l r o j
+d h k n e b m c i p a j o r l f g q
+12
+k f d e l h j b a i g c
+e d l h b g c i a j f k
+20
+a r q b s j c f p i t l e n o g d h k m
+q b r s c j i p t f l a o d g n e m k h
+18
+b i r n k l d f p q o g m e c j h a
+i r l q p g m o f c j h e d a k n b
+4
+d c b a
+a b c d
+22
+c f u v s d p j i t o b r m q k g h e a n l
+c s v u d p j o t b h e a g n k q m l r i f
+15
+d h k b e m o c i a j g l f n
+d h b e i g j a c o l m n f k
+11
+e k d h a b c i j f g
+e d k a h b j f g i c
+11
+k f d c j i a e h b g
+f d j b h g e a i c k
+14
+n i h l a b g f c k m e d j
+h i b f g a l k c m d j e n
+15
+a e k f m h l j b c o i d g n
+a m h j b c i o l f d g k e n
+4
+c b d a
+c b d a
+5
+c d b a e
+c d e a b
+11
+d a i f c h b e k g j
+d f i a c e b h j g k
+16
+e b f c h k m n p a d i g l j o
+e c f b h m k d a i p n g j l o
+12
+e b d j f a h g k c i l
+d h a f j k g b e l i c
+23
+f k t q l s p a j b h e i v w r g n o m u d c
+t s a i e h b v w j p n o m u d c g r l q k f
+13
+b a d m h c l i e j g f k
+a b h c m i e j f k g l d
+20
+q r t c h p m d b i j a e g n o s f l k
+q r p m d b h c t j g n o s e a i f l k
+4
+d c b a
+a b c d
+22
+g f k o n h m d v u b s q p t c l e r a j i
+g h m n v s q c t p l e b a i j r u d o k f
+20
+n h s d k j b q p t r i m g c o l e a f
+s j b q p t i m o c g r l k d a f e h n
+21
+r d q f c m b a s e p n k o i g j u t h l
+d r q f c m a s e b n k p o i g h l t u j
+14
+f d g a e n b j h k l c i m
+f d e h k l c i j m b n a g
+7
+g b d c e f a
+g b a f e c d
+22
+v m b r p a i o g s n h k f d q c e l u t j
+v r b m a g s n o f q d k h i c p e t j u l
+9
+d c h b i a e f g
+d b i g f e a h c
+23
+d u a g j q b l k e i s m h w c o n f r v t p
+d a u g j k l e b i q c f v r t p n o w h m s
+16
+m f a b g l k n d o i c h j p e
+m f a l g b n k o i h c e p j d
+5
+c b d a e
+c b d a e
+21
+h e r l k j a i n b c p t q m f s d o u g
+r l e k j i n a h c b q m s f d t p o u g
+5
+d a b c e
+d b a e c
+4
+a b c d
+a d c b
+25
+c v w i e d l q x a h s r o p y u k g f m n b t j
+w e d l q x s y p u k g t j b n m f o r h a i v c
+8
+c f d h b g e a
+h d a e g b f c
+4
+c a b d
+a c d b
+9
+d c h g b f a e i
+d g f e a b i h c
+10
+a b h f i e j d g c
+a e j d i f h g b c
+14
+e c f i k j n g b l h d a m
+e c f k g n b j d a h m l i
+8
+a b f d h e c g
+b f d h g c e a
+7
+e a f b c g d
+g c d b f a e
+19
+p h a b i j r l e c m d o n q k s f g
+p r c o d n m e k g f s q l j i b a h
+11
+g c b d h k j e a f i
+g h d k b c a f e i j
+17
+m h d p i c j b a k e f g n o l q
+j c i b p d h m a e k f g n q l o
+22
+c u j k g d r e v s n b i a m t o h p f q l
+j u c g k d r v e a t h o m p i b q l f n s
+7
+c g e b f a d
+c e d a f b g
+14
+e a j i k l f b c h g d m n
+e c h n m d g b f l k i j a
+25
+h c l e f q b m u a j i y k x g p w n o s r t d v
+e l f c q h b u a j i m y x g o s r t d n w v p k
+18
+a h m r l p j n b c i d k e q f g o
+a m b n f q e g o k d i c j p l r h
+20
+d g s a f t m r h i p j b q l e c k n o
+d g s a r h m p j i t b f q e l n k c o
+10
+g d a e b c j i h f
+g c j i b f h e a d
+20
+l a g h b q i s e t f p r n j m o c k d
+l a h g b q i s e f t j m n r p c o k d
+25
+a j l n p b x y q v f c k i m u h s r e d g o w t
+a j p n x b y q c f i k h u e d r o w g t s m v l
+14
+c k j i d h g m b l a n e f
+k j c i h d g b n a l f e m
+13
+f d a k h b j m i g l c e
+b h k a d j f i g m l e c
+21
+a b c d t e f g h i s j q u p k l m r n o
+c t d e f i q u k l p m r o n j s h g b a
+18
+d j i c n f k m q b a h l r g p o e
+f k q m h a b r g l p n e o c i j d
+4
+d b c a
+a c b d
+11
+d c f e g k b h j a i
+d g e h b i a j k f c
+19
+n h l q i a c o g f e p m r s j k d b
+i q o f p r m e j d b k s g c a l h n
+10
+g e b j d h a c i f
+e b g j d i c a h f
+5
+d e a b c
+d e b a c
+5
+a b c d e
+b e d c a
+12
+k e l d j f c g b a i h
+k e l d j g c i a h b f
+11
+a g h k j f b i d c e
+a k h g b f d c e i j
+24
+n o m h s i k f a p t l v q w b e d c u g j r x
+m k i s h a p f l v q e d b w c u r x j g t o n
+25
+k a w y n b t c x m j o u s q d h f i l p g v e r
+k a w y n b t c m o u j q d s l i p g f h x r e v
+19
+n g h l f e d c j b i a m s k q o r p
+n g l c m s q p r o k a i b j d e f h
+18
+b h k g l j m f p a o r i e d n q c
+b h e n d c q i r o a p f m j l g k
+10
+c h b j d e g a i f
+h j b c g a f i e d
+8
+g a b h c f d e
+g b a h f c e d
+13
+a b l d e j k i g h m f c
+l k j g i e h d b f c m a
+4
+d b a c
+c a b d
+5
+a d b e c
+e b c d a
+24
+d f l j o e q k i t n b p w x s c a g r m u h v
+d f j l o q e k t i b n x s c w p a g m r v h u
+23
+c b o k g p n u r l v a h s i f w m j d t q e
+c b k o g u r n p v l a h i s w f m j e q t d
+11
+h g b c i d f e j k a
+b g h c i f d j k e a
+16
+d a m b p o n c g h l f j e i k
+d a m b p o n g f l h i e j c k
+25
+c s w y b h u o i p j k v r f d l m a x e g t n q
+y b w s p j i o u k v h r l g t e n x a q m d f c
+6
+a f b c d e
+f b e d c a
+20
+d g l q t f h j o n a c k p e s b r i m
+d g q t l f j o h n a p k e c r b s i m
+5
+a d b e c
+d a e c b
+14
+n g f e d h m l c b a i k j
+f e m h c l b a d i g n k j
+16
+f p m b j a n h e l c k o d i g
+a j b m p d o g i k c l e h n f
+5
+e d c b a
+e d b a c
+6
+a b c d e f
+b a d c f e
+5
+a b c d e
+a c b e d
+8
+a g b c e d f h
+d h f e c b g a
+19
+i c d m b p k a s j h g r o f e q n l
+i c b p m k r g h j o q e f n s a l d
+17
+a n c f d j i e h k b l g q m o p
+a n f j d c i e k h b g m q l p o
+11
+a f g h b c i d j e k
+a f d i c b h g e k j
+14
+d c i m f n j g b h e a l k
+c d n f j m h k l a e b g i
+23
+v f h a t o k p i q l u w g m n b c s d j e r
+v f t o q w u g l m n i s d c b r e j p k a h
+4
+b a d c
+d c a b
+16
+g e i a n j k m f o b l p h d c
+g e j k f o m n a b i l p h d c
+23
+b a u n g e j v c f m p h o s l i r k d q t w
+b a n u g v h o p m f c j s e i l d q k t r w
+11
+c f b i j k e h g a d
+c i b f k j h e a d g
+26
+c b u s f z j y x q t h n e r g l m p v d k w a i o
+c s f u z b q n h e g r t p k a w o i d v m l x y j
+15
+i a e h l f n d b m j c k o g
+i e a b c j k m d o g n f l h
+20
+p s l a g f q h b r k d e o i n t c j m
+p s a f g l q b k r d e o h i n t c j m
+24
+n a f t s d h k m w q u o p x j b v c g e i l r
+a n t f k q p o x u w m v b l i r e g c j h d s
+13
+f h e k g a i d b c j l m
+f h e d i a g k j c b l m
+13
+h c f m b d l g a e j k i
+h c m f d b l a e j k i g
+17
+a p d m k e f j h b l c g i q n o
+p d j f e h k b q i n g c l o m a
+14
+d a j c b n g l i f e k h m
+c b j g n f e k m h i l a d
+9
+h a g b f e c i d
+h a i d c e f b g
+11
+f e h d k j g i c b a
+f e h d j k b c i a g
+6
+a b d c e f
+a b d c f e
+8
+e a b c h g d f
+e c h b d f g a
+12
+l f e i d c h b a g k j
+l f i h a j k g b c d e
+13
+m l j d c g i a f b h k e
+l m g c d j i a f b h k e
+4
+d a b c
+a d c b
+16
+b f l c o j g k m i d e a n p h
+f b c o k g m n h p a e d i j l
+26
+x d c u t o n w h r v i y g a m e f p s j q k z b l
+x c u d t o n w v r g a y i f q j s p z b k l e m h
+18
+j a r o m l e n f d q p g b i h c k
+o n f e q p i h c k b g d l m r a j
+13
+g m d c e j b a f l i k h
+d m g e c j b a l f k i h
+13
+a g c j d k h b l e i f m
+a c g j k d h l b e i m f
+16
+a k f n g l d b o i e c p j m h
+a k f g n l o e i b d c p h m j
+19
+a n b m i j o f c h r s p d g q l e k
+b n m j o f h r p d s g l e k q c i a
+21
+i n g c l f b a h s o u k m q p t j r d e
+n i c g l f b a s k m u r j t p e d q o h
+13
+i l m a b h f g j c d k e
+l b h a f j g e k d c m i
+19
+o c a l f j q r b n g s p d h m k e i
+o c f l a j r n b s g h d p k i e m q
+20
+f k q o a r n b l g c j i s t e d h m p
+f k q o a l b n g r i j s t e c p m h d
+7
+g e f d a c b
+e g f d c a b
+11
+k f d a e b g i j h c
+a d e f k b i c h j g
+26
+d p l i c y n b j q v s m e x a z u g o h k t w f r
+d p y b n v e x m s q g o u z a k f r w t h j c i l
+19
+c e b n s g j l d a f p k i m o q h r
+e c n b g s m h q o r i k p f a d l j
+18
+h n a i e d m k q f p l b c j o g r
+h n e q l b p c f j k m o r g d i a
+20
+b a q t f e i l d m s k g c o j r n p h
+t q a i e m d l f b s k c g j r n h p o
+15
+c a m i g j k e l o h f n d b
+k e j h o b d n f l g i m a c
+4
+b c a d
+b a d c
+5
+d c e b a
+d a b e c
+17
+a b c d o p i q h e m j n f l g k
+b c d p e n f l g k j m h q i o a
+15
+a b c d e i f g o l m k n h j
+a b c d f o g i m h n k l e j
+7
+g a b c d e f
+g a d c b e f
+24
+a s i p h n o b l j c d q g f v r m u k w e t x
+i h n p o s a b l j g q d c r v m f u k w t e x
+26
+b p d j g w f e s m l u n v i a r o t q k y z c x h
+p d w l m u s e n v t o r k x h c z y q a i f g j b
+12
+d g c b a e f j h i k l
+a b e c g d h j k l i f
+13
+l d e k b h i m a c f j g
+l d k e h a g j f c m i b
+19
+o f e r b p l a j m k i q d n s c g h
+r p b l e f o a m j q i h g c s n d k
+7
+f e g d c b a
+e d b c g a f
+16
+e l k b o p c a n m g j d i f h
+l o p b c n i d h f j g m a k e
+8
+g f a b e d c h
+f a d h c e b g
+25
+o a g j l r d k h y p i w m e b u s f v c q t n x
+l r y h e m s u b w i f v p c k q t d n j g x a o
+21
+t j e a b c i p f g n l r u m h d q k o s
+t j a e b c g r l n h s o k q d m u f p i
+16
+a f o g k m h b c n i p j l d e
+o g k n i c b j p d l h e m f a
+19
+a b c m d j l o n p r q k e i f s g h
+a c b m l o j d r q p n k i e g h s f
+5
+e d c b a
+c a b d e
+12
+a b j f h g k i d l c e
+b a j g h i k d f c e l
+21
+k p j n g s a h o b t u e m l r c q f i d
+k p j g n s b o e u t q i f c d r l m h a
+25
+a f t e d n r j q y u k s x o v b w l m i h c g p
+a f n q u y k j r s d x e t v o l p g c h i m w b
+18
+a q n j f d i h g c r b k l p m e o
+q j i d h f n a c g k l p o e m b r
+9
+a b h e c f d i g
+a b h e f c d i g
+17
+e a k o i p h f n g b l q c j d m
+e a o i h f l b c j q m d g n p k
+20
+a b g p k f n i l r h s d e c t m j q o
+a g b k p f h s d c e r l t j m q i n o
+22
+h i o d s k t r v j b m u e p n g a c f l q
+i h d k s o t r v j b m p n g a f c e u q l
+6
+c b a d e f
+c b f e d a
+21
+u t p a b j l k c m d h e i f q s r n g o
+u t a b j l c d m i e h k f s r q p o g n
+21
+j c r p b a l g n u m e d f h o s k i q t
+c j r p a n g l m u s o h f d k e b i t q
+7
+e d f c g b a
+e f g a b c d
+17
+m n f e i q g d c h p b k a j o l
+f e q k b p h c a d o l j g i n m
+10
+f h a b i c j d e g
+i b g e d j c a h f
+13
+e c b d i a g k l f m h j
+e i d b c k l g f a m h j
+13
+f l j c b e a h k m d g i
+l f j c h a m d i g k e b
+23
+g w i d v a r u q h b o c e l p k j s m f t n
+d i v w g a r q u h b o e p k j l m s t n f c
+25
+d l c j q k n o r b h f a i v t m e x w p s u y g
+d k q j o r a i f v h b t m n e c s p w x y u l g
+17
+a j b q g d c h f i e p m l o k n
+b q g j d c f h e i p a m l o n k
+16
+l a h j d n e b i c k p o m f g
+l a j e b k c m f g o p i n d h
+18
+k e p b a m j f i g c r h d l o q n
+k i d h q n o l r c g f j m a b p e
+15
+a m b n f c g j d h i k o e l
+a m c d j h g f l e o k i n b
+21
+a b f n d l e h i c j u k r t p s m o g q
+b a l d n i h k u r j c e t p s m f q g o
+11
+b f a c g h i d k e j
+b f g h c a e j k d i
+9
+c i d b e g h f a
+c i d e b g a f h
+12
+e k l h j d f a c g b i
+k e h l j f a d c b g i
+16
+h k f d a m b n p e c g j i l o
+h k f d m n c g e j p i b l o a
+21
+g u o f r p a s q h b n l d i t e c k j m
+u g a s q h b l n p r f o d e t c j k i m
+15
+f a n k o e j h b g d l c m i
+f e j g d b h o k n a c m i l
+26
+i p l s g k y a q t u o x h f n e j z b c w d v m r
+i l p s k g o u x h t j z c b w d e n v f q m r a y
+10
+g i c j b f d h e a
+f h d a e b j c i g
+20
+o p r h a l n e d b i f s j k m c t g q
+o a l e d i f b n t g q c m k j s h r p
+11
+f b c a k e h d g i j
+c k a b f d g h e i j
+25
+m h x d l j w g v y a b p u e q i t n c r s f o k
+m w g j l b p a e r k o f s c n t i q u y v d x h
+23
+r f w t s h i e v d p n l k q c b u m a g j o
+w f r d p v l n k e i h s q u m a g b j c t o
+6
+f e d c b a
+f e c b a d
+4
+a b c d
+a d c b
+8
+h c b g a d e f
+h c g a d b f e
+21
+t p l e u g q c s f i a r d o k h m j n b
+p t l g q f i r a s d o k h m n b j c u e
+17
+l d a g n q j i h e b o c f p m k
+a d g n q l j e h m p k f c o b i
+9
+g h i e a f c b d
+g h i e a f d b c
+4
+b c a d
+d a c b
+22
+a b k s r f c t u h n q m l g p d j i e v o
+k s b r a f u t c q m n l h p g d j e i v o
+8
+a e g b c d f h
+g e d f h c b a
+25
+n w p e g d m c s i r o u l x v b h a y f j t q k
+n w e g m c i s d r p o x l h b v a t q k j f y u
+10
+i g d j h a b e c f
+i g a c e f b h j d
+26
+x c b a h i g v t z o r l y f j n s w p d u k e m q
+x b c a h v t g o y l f s n j r w z i u e k m q d p
+14
+b h j n a l e m k d c i f g
+a n e l j h b m k d c i f g
+15
+a k m f d h j n i b c o g l e
+a f m k j i n h d b c o g l e
+22
+h a s j r u p o v d b f k e c q t m i g l n
+h s a r j u o v b d f k e c p t m i q g l n
+13
+k b f i a c h d l m e j g
+k b f i c a h m e j g l d
+10
+d j c e g i f b h a
+j d i a h b f g e c
+4
+d c b a
+c d b a
+18
+e p m n k a o i j g f q c b r d l h
+p e k o g f j i a n m b h l d r c q
+21
+g o t c j s d p f k m h e i b n l q u a r
+o g c f p n b r a u q l i e h m k d s j t
+16
+e a k d p b i o g m l c j f h n
+e a p d o f n h j c l m g i b k
+9
+a f i h b d e c g
+f a h i e d c b g
+5
+c b d e a
+c d b e a
+10
+f b a g e d j c i h
+f g a b c h i j d e
+8
+h f d g a c e b
+f h d g a e c b
+8
+c b h f a e d g
+b h c e d g a f
+7
+b g a f e d c
+b a g e d c f
+11
+e g i h d k c b a f j
+e g i k d h c a f b j
+7
+g f e d c b a
+a b c d e f g
+5
+a b e d c
+e c d b a
+5
+a b c d e
+c b a e d
+26
+a i q g x j f k b d r h n m o z s c e v u l t w y p
+a i j b h m n r z o d k f x g q c u t p y w l v e s
+16
+i b k a j e c d m p n l o f g h
+k b c d e p m j n l o f a g i h
+18
+q p h o n g f k e l i d c m b j r a
+q p h o f k e g m c j a r b d i l n
+22
+f d c e a b h o t q g v s u j i r m l n k p
+f d c e a h t q v g o b s u r m i l j n k p
+22
+c b p d a h v j m k l i r t e f q g s u n o
+p b c d a h k m l j v t e r i q f g u s o n
+15
+f o e i a k l h d g n j c m b
+f o e h d n g l k a i j m b c
+24
+s l w i n m h k e j d x u c f r q t b v p g a o
+s l w h m n x d j u c e q t r f k b i v p o a g
+8
+g d c e b f a h
+d g c e f b a h
+10
+e b a i g c d f j h
+a g i b e c d h j f
+13
+g h m i d c a k e b f j l
+h i a k c d m g e b j l f
+16
+a b j c d e f g l m n o p h i k
+a c d j b l m g o k i h p n f e
+22
+f a u m k d b l o j q i g h e r v n c p t s
+a f u d k b m l o q i j e r h g c n v t p s
+5
+c b d e a
+c b e d a
+21
+j t i f o b h a u m l g s q p c d e k n r
+i f b a h o t u m j q c d p k n e r s g l
+7
+a f g d b e c
+g f b d c e a
+26
+r y x o w l a b t z m i n c p j q u e s v g k d h f
+x t n i j p q u e c s v g m h d f k z b a l w o y r
+17
+n q d c p m i f b l j e h g o a k
+n d q c p i b f l m j e a o k g h
+11
+c h e j b f d i a g k
+h j e a g k i d f b c
+11
+i k b a j h g f e d c
+i b a g h e f j d k c
+18
+c r d b a l m e n o j g i f k q p h
+c d r b a o j n e g m l f i k q h p
+5
+a b c e d
+b a e c d
+15
+c b f e i a h m d l n o k j g
+f b e c a i m d n o l j g k h
+18
+r p n l a q b m c h d o i k e f g j
+r p n l q a b m c o i f g e j k d h
+15
+k a m o e b f i j h c l d g n
+k a f b i e o m j c h l d g n
+17
+l c b a g o e n q p f m h d i j k
+l b c o n p h j k i d m f q e g a
+8
+d e g f b c a h
+c a b f h g e d
+15
+i n b e j o k d a f m c g h l
+i n b e j d a k m c f o g l h
+18
+j q a k i b d l h f m g p e c r n o
+a i b k d q j h f l g p m e c o n r
+23
+a u r g b v i l n e d c f m h j p k o s t w q
+g r u a b v i l n d p s w q t o k j h m f c e
+26
+m p u s o j x y i q l a z b c e t r d g h k v f n w
+m u p l b z a q e c i d g h v k f n r w t y x j o s
+17
+d e i k p g l o a q h c b n m f j
+e d p g k i l o a c b j f m n h q
+20
+i a q k m b g e o p j l t c n d s h r f
+a i m e j l p c d s f r h n t o g b k q
+16
+h k l a d b m g o f i c e p j n
+k a l b m d h g o e c n j p i f
+13
+b e f a g l k i j m h d c
+b f e g a l k i j m d c h
+25
+u a f k b i v j x w m c t n g q l h p e s o d y r
+u a f i v b k x w j m c n l h q g p e t d o s r y
+26
+z w s c m v r x j h a l f y p i b q t k d e u o n g
+z w c s m v r h j l f k t q b i e d p y u o a x n g
+10
+a j g h b f i c e d
+j i f b h g a d e c
+9
+d b f a g e c h i
+d b a e c g h f i
+26
+g m h t j v w z q s k i l c d b e a x r f y n p u o
+g m t j h w i l c k s d q e b p u o n y f r x a z v
+7
+a b f c e d g
+f b d g e c a
+4
+c d a b
+c d b a
+10
+j i h g f e d c b a
+j i h f e g b a c d
+20
+j g s t n h d o p k i q c r b l f m e a
+g j n h t s d p i k o q r l b e a m f c
+8
+h b f e c a d g
+e c a f b h g d
+25
+g p w q a x r v t b k j u h s y o f d i m n c l e
+g a q r x v w p t b k j u h y d f o s n m i c l e
+11
+e k d c g h b f i a j
+e k d c g h i f a j b
+26
+a r b u f c q h l s d y w e o p n t x g v z m k i j
+a r c f h d w y t n x v g p o z j i k m e s l q u b
+17
+k i c j b d a p n e l h o q f m g
+j c b d a e n q f m g o h l p i k
+15
+o a e j h i g f n l d m k b c
+a o j e f n g l c b k m d i h
+21
+h k f b n i r s g a j q d p o u c e l m t
+h k f b n r s j q u o c p d l m t e a g i
+12
+k h l f c d e b j a g i
+h k f l c d a j b g e i
+22
+n g v a l k i b c u j f h d q s r p t e m o
+n g a v k l b i c j f u q s p o m e t r d h
+16
+o a e j f p l k m n b g h c i d
+o e a l p f j k m n b h g c i d
+8
+b a f c d e g h
+b a c d g h e f
+15
+a m b n k o c d i j e l f g h
+a b m n d c o k e h g f l j i
+12
+c k j d g f b h a i l e
+c j g d k h b a l e i f
+21
+r j a u s t c l p g m n d i h e q k o b f
+j r a u s t l p c g m n d i h b o f k q e
+14
+f i b l j e n k a c d h m g
+l b i j f e n a c d m g h k
+12
+c f k i d b h g l a j e
+c f k i d g j e a l h b
+21
+g f i e q d c t b u r m l j s a k p o h n
+e q d i t b c f g u j s l m a k r p h n o
+9
+b a f i g h d e c
+a b f i e c d h g
+22
+v o t i s r m a h l u b q c p d e n g k f j
+o v i t s r m h a b u q d p n g j f k e c l
+7
+f c d g e b a
+f c e g d a b
+11
+h g k c j b a i f d e
+g h c j a b k i d f e
+12
+e h d c f b k l a i g j
+e d h c f k g i j a l b
+10
+d i b f c e a g j h
+d b i h j g a e c f
+5
+a e d b c
+a e d b c
+17
+d h q g i l c b j f n p m k o e a
+i g l q c h d b j f m k o a e p n
+22
+o c g i l h q f p u b d a v t k n s r j e m
+i h l g c f q u a k t n r j m e s v d b p o
+24
+j i x o h s g q t p n l f e d w m u c b k r a v
+i j x h o g s q t n p f e w d u m r a v k b c l
+21
+a b m r j i f t s k g e u h o q p c n l d
+b r m i j a s g k e t h q o u f c n p l d
+14
+c i l n a d h b g e f k m j
+c n d a l h i b g e f k m j
+26
+b a o i h p n x c r w u e v d q y f k z t m g l j s
+b o i h p n a x c r w v e u y f k m g t z q d j s l
+22
+k g o b h r e l p j a t u s d v m c f q i n
+k o g b l a j p e t s v m c n i q f d u r h
+23
+o c v b q s d e r n m p i a w h j f k t u g l
+v c o b q s d r e p h f j t k w u a g l i m n
+4
+b d a c
+b d c a
+4
+d a b c
+d c b a
+4
+b d c a
+d c a b
+24
+k d a n e u b h g m r i l f v s q x j o c p w t
+d n u r m g l i f h b s q x v o c t w p j e a k
+20
+o s p n d c i b j f k m a t q e l g h r
+o n k m e l h g q r t a f j b i c d p s
+22
+q n d o h c j u l b p s i f a v k r g e m t
+q d n j c h o u b p l f i s a r k g m e v t
+17
+k n c p l f b i a g q d m h e o j
+k c n l f p g q a i b o e h m d j
+10
+h e f b d a i g c j
+e h f b g c i j a d
+23
+r l h q i w g m o p s f t e d c j k b a u v n
+r l o m k j b u n v a c d e t f s p g w i q h
+17
+d q b k c a m l e g n f j h p i o
+q d a m l n g e c f k b i p h j o
+12
+g f l a h k j b c i d e
+g a l f j b c k i h e d
+16
+e l d c n f k o b p h a i g j m
+d l c n e p b o h k i j m g a f
+26
+a z b x s f t p o c i k q d g j u v m e n l y h w r
+x s t f p b z a u n e h y l w m r v j g d q k i c o
+18
+e l p h g k b d r c a o i j f q m n
+e p l h k g b d r a c o j i q f n m
+14
+f k i e j m l d h c b a g n
+f k j d l m h e b a c g n i
+18
+e o c n i a q f l j r b k m d h g p
+i n c q a f l o e r b k j d m g h p
+24
+r a n f g l h o t i w p d b q u c m s x j k e v
+a r n f g d p w i c s x e k j m v u q b t o h l
+24
+d a v f i w g u b c e p q l x j t o r h k s n m
+d v a g c b u p e w i f x o t r j l q h n m s k
+0
