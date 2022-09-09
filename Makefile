@@ -92,6 +92,9 @@ DOCKER_RUN := docker run -v $$(pwd):/code -u "$$(id -u):$$(id -g)"
 DOCKER_BUILD := docker build -q -f
 
 __run-build:
+ifdef LANGUAGE
+	$(error On run task, you should use LANGUAGES not LANGUAGE)
+endif
 	@for language in $(SUPPORTED_LANGUAGES); do \
 		$(DOCKER_BUILD) .docker/$$language.Dockerfile -t $$language .; \
 	done
