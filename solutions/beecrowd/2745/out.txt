@@ -1,0 +1,9 @@
+       name        |  tax   
+-------------------+--------
+ Rafael T. Hendon  | 428.10
+ Linda J. Gardner  | 443.70
+ Nicholas J. Conn  | 801.10
+ Lolita S. Graves  | 870.90
+ Denis C. Comunist | 300.10
+(5 rows)
+
