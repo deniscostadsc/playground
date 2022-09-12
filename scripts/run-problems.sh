@@ -28,7 +28,7 @@ for folder in $FOLDERS; do
                 --abort-on-container-exit \
                 --exit-code-from database-client
         else
-            $DOCKER_RUN_PREFIX -e PROBLEM="$folder" "$language"
+            docker start -a "${language}-container" 2> /dev/null || $DOCKER_RUN_PREFIX --name "${language}-container" -e PROBLEM="$folder" "$language"
         fi
     done
 
