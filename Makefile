@@ -31,7 +31,7 @@ R = r
 RB = rb
 RS = rs
 SCALA = scala
-SHELLSCRIPT = shellscript
+SH = sh
 SQL = sql
 
 SUPPORTED_LANGUAGES = \
@@ -68,7 +68,7 @@ SUPPORTED_LINTS = \
 	$(GO) \
 	$(JS) \
 	$(PY) \
-	$(SHELLSCRIPT) \
+	$(SH) \
 	$(SQL)
 
 ifdef LINTS
