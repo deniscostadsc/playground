@@ -1,5 +1,7 @@
 FROM postgres:9.4.19
 
+ENV PGPASSWORD beecrowd
+
 RUN mkdir /code
 WORKDIR /code
 

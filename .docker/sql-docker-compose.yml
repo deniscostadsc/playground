@@ -19,5 +19,6 @@ services:
     environment:
       POSTGRES_DB: beecrowd
       POSTGRES_USER: beecrowd
+      POSTGRES_PASSWORD: beecrowd
     volumes:
         - /tmp/db:/var/lib/postgresql/data
