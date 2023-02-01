@@ -2,7 +2,7 @@ FROM debian:jessie
 
 ENV LUA_VERSION 5.4.0
 
-RUN apt-get update && apt-get upgrade -y && apt-get install -y \
+RUN apt-get update && apt-get upgrade -y && apt-get install -y --force-yes \
 		wget \
 		build-essential \
 		make \
