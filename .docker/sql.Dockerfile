@@ -5,7 +5,7 @@ ENV PGPASSWORD beecrowd
 RUN mkdir /code
 WORKDIR /code
 
-RUN apt update && apt install wget -y
+RUN apt update && apt install -y --force-yes wget
 
 RUN cd /bin && \
     wget https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh && \
