@@ -5,6 +5,7 @@ ENV PGPASSWORD beecrowd
 RUN mkdir /code
 WORKDIR /code
 
+RUN sed -i 's/tessa/bullseye/g' /etc/apt/sources.list.d/pgdg.list
 RUN apt update && apt install -y --force-yes wget
 
 RUN cd /bin && \
