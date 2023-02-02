@@ -104,9 +104,6 @@ __run-lint-build:
 		$(DOCKER_BUILD) .docker/lint/$${language_lint}-lint.Dockerfile -t $${language_lint}-lint .; \
 	done
 
-__shell-lint: __shell-lint-build
-	@$(DOCKER_RUN) shell-lint scripts/lint-shell.sh
-
 check-tags:
 	@scripts/check-tags.sh
 
