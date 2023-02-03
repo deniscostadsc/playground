@@ -8,13 +8,4 @@ RUN curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E4
 RUN apt-get update
 RUN apt-get install -y --force-yes scala
 
-CMD cd $PROBLEM && \
-    if [ "$(ls *.scala | wc -l)" -eq 1 ]; then \
-        scalac *.scala; \
-        if [ -f in.txt ]; then \
-            scala Main < in.txt > result-scala.txt; \
-        else \
-            scala Main > result-scala.txt; \
-        fi; \
-        rm -rf Main*.class; \
-    fi
+CMD /code/scripts/docker/run-scala.sh $FOLDERS

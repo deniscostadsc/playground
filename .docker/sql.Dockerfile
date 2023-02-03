@@ -5,19 +5,12 @@ ENV PGPASSWORD beecrowd
 RUN mkdir /code
 WORKDIR /code
 
-RUN cat /etc/apt/sources.list.d/pgdg.list
-RUN sed -i 's/tessa/bullseye/g' /etc/apt/sources.list.d/pgdg.list
-RUN cat /etc/apt/sources.list.d/pgdg.list
+# Got this hack here: https://stackoverflow.com/a/63300637
+RUN rm -rf /etc/apt/sources.list.d/pgdg.list 
 RUN apt update && apt install -y --force-yes wget
 
 RUN cd /bin && \
     wget https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh && \
     chmod +x wait-for-it.sh
 
-CMD /bin/wait-for-it.sh database-server:5432 && \
-    cd $PROBLEM && \
-    if [ "$(find . -name '*.sql' | wc -l)" -eq 3 ]; then \
-        psql -h database-server -d $POSTGRES_DB -U $POSTGRES_USER < schema.sql && \
-        psql -h database-server -d $POSTGRES_DB -U $POSTGRES_USER < $(eval "echo ????.sql") > result-sql.txt && \
-        psql -h database-server -d $POSTGRES_DB -U $POSTGRES_USER < drop-table.sql; \
-    fi
+CMD /code/scripts/docker/run-sql.sh $FOLDERS

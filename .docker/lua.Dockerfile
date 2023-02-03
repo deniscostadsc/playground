@@ -32,11 +32,4 @@ RUN apt-get remove --purge -y \
 RUN mkdir /code
 WORKDIR /code
 
-CMD cd $PROBLEM && \
-    if [ "$(find . -name '*.lua' | wc -l)" -eq 1 ]; then \
-        if [ -f in.txt ]; then \
-            lua *.lua < in.txt > result-lua.txt; \
-        else \
-            lua *.lua > result-lua.txt; \
-        fi; \
-    fi
+CMD /code/scripts/docker/run-lua.sh $FOLDERS
