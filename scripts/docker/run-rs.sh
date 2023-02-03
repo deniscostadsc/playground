@@ -9,11 +9,11 @@ echo
 for folder in $FOLDERS; do
     [ -f "${folder}WRONG" ] && continue
 
-    if [ "$(find $folder -name '*.rs' | wc -l)" -eq 1 ]; then
+    if [ "$(find "$folder" -name '*.rs' | wc -l)" -eq 1 ]; then
         echo "$folder" 
         cd "$folder" || exit 1
 
-        rustc -o main *.rs
+        rustc -o main ./*.rs
 
         if [ -f in.txt ]; then
             ./main < in.txt > result-rs.txt

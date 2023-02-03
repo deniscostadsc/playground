@@ -9,11 +9,11 @@ echo
 for folder in $FOLDERS; do
     [ -f "${folder}WRONG" ] && continue
 
-    if [ "$(find $folder -name '*.hs' | wc -l)" -eq 1 ]; then
+    if [ "$(find "$folder" -name '*.hs' | wc -l)" -eq 1 ]; then
         echo "$folder" 
         cd "$folder" || exit 1
 
-        ghc -o hs.out *.hs > /dev/null
+        ghc -o hs.out ./*.hs > /dev/null
 
         if [ -f in.txt ]; then
             ./hs.out < in.txt > result-hs.txt
@@ -21,7 +21,7 @@ for folder in $FOLDERS; do
             ./hs.out > result-hs.txt
         fi
 
-        rm -rf *.o *.hi hs.out
+        rm -rf ./*.o ./*.hi hs.out
 
         diff result-hs.txt out.txt
 

@@ -9,11 +9,11 @@ echo
 for folder in $FOLDERS; do
     [ -f "${folder}WRONG" ] && continue
 
-    if [ "$(find $folder -name '*.scala' | wc -l)" -eq 1 ]; then
+    if [ "$(find "$folder" -name '*.scala' | wc -l)" -eq 1 ]; then
         echo "$folder" 
         cd "$folder" || exit 1
 
-        scalac *.scala
+        scalac ./*.scala
 
         if [ -f in.txt ]; then
             scala Main < in.txt > result-scala.txt

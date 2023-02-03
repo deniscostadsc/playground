@@ -9,11 +9,11 @@ echo
 for folder in $FOLDERS; do
     [ -f "${folder}WRONG" ] && continue
 
-    if [ "$(find $folder -name '*.ml' | wc -l)" -eq 1 ]; then
+    if [ "$(find "$folder" -name '*.ml' | wc -l)" -eq 1 ]; then
         echo "$folder" 
         cd "$folder" || exit 1
 
-        cp *.ml main.ml
+        cp ./*.ml main.ml
         ocamlc -o ml.out main.ml
 
         if [ -f in.txt ]; then

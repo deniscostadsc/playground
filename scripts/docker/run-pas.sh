@@ -9,11 +9,11 @@ echo
 for folder in $FOLDERS; do
     [ -f "${folder}WRONG" ] && continue
 
-    if [ "$(find $folder -name '*.pas' | wc -l)" -eq 1 ]; then
+    if [ "$(find "$folder" -name '*.pas' | wc -l)" -eq 1 ]; then
         echo "$folder" 
         cd "$folder" || exit 1
 
-        fpc -opas.out *.pas
+        fpc -opas.out ./*.pas
 
         if [ -f in.txt ]; then
             ./pas.out < in.txt > result-pas.txt
@@ -21,7 +21,7 @@ for folder in $FOLDERS; do
             ./pas.out > result-pas.txt
         fi
 
-        rm -rf *.o pas.out
+        rm -rf ./*.o pas.out
 
         diff result-pas.txt out.txt
 
