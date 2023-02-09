@@ -1,15 +1,15 @@
 #include <cstdint>
-#include <cstdio>
+#include <iostream>
 
 int main() {
     std::int16_t a, b;
 
-    scanf("%d %d", &a, &b);
-
-    if (a % b == 0 || b % a == 0) {
-        printf("Sao Multiplos\n");
-    } else {
-        printf("Nao sao Multiplos\n");
+    while (std::cin >> a >> b) {
+        if (a % b == 0 || b % a == 0) {
+            std::cout << "Sao Multiplos" << std::endl;
+        } else {
+            std::cout << "Nao sao Multiplos" << std::endl;
+        }
     }
 
     return 0;
