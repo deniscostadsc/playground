@@ -8,7 +8,9 @@ FOLDERS=$(find . -name 'problem.md' | sed 's/problem.md//g' | sort)
 
 for folder in $FOLDERS; do
     solutions="$(\
-        find "$folder" -regex '.*\(c\|clj\|cpp\|cs\|dart\|go\|hs\|java\|js\|kt\|lua\|ml\|pas\|php\|py\|r\|rb\|rs\|scala\|sql\)' |\
+        find "$folder" \
+            -regex \
+            '.*\(c\|clj\|cpp\|cs\|dart\|go\|hs\|java\|js\|kt\|lua\|ml\|pas\|php\|py\|r\|rb\|rs\|scala\|sql\)' |\
         grep -Ev 'drop-table.sql|schema.sql')"
     echo "$(echo "$solutions" | wc -w | sed 's/ //g') $folder"
 done | sort -nr
