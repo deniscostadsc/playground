@@ -1,7 +1,7 @@
 #include <cstdint>
-#include <cstdio>
+#include <iostream>
 
-std::int16_t fat(std::int16_t n) {
+std::int32_t fat(std::int16_t n) {
     if (n == 0 || n == 1) {
         return 1;
     }
@@ -11,8 +11,9 @@ std::int16_t fat(std::int16_t n) {
 int main() {
     std::int16_t n;
 
-    scanf("%d", &n);
-    printf("%d\n", fat(n));
+    while (std::cin >> n){
+        std::cout << fat(n) << std::endl;
+    }
 
     return 0;
 }
