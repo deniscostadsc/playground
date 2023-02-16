@@ -1,5 +1,4 @@
 import sys
-from math import ceil
 
 for line in sys.stdin:
     a, b = map(float, line.split())
