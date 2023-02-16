@@ -11,7 +11,7 @@ std::int32_t fat(std::int16_t n) {
 int main() {
     std::int16_t n;
 
-    while (std::cin >> n){
+    while (std::cin >> n) {
         std::cout << fat(n) << std::endl;
     }
 

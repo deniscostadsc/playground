@@ -9,13 +9,13 @@ while True:
             grade_sum += grade
             valid_grade_count += 1
         else:
-            print("nota invalida")
+            print('nota invalida')
 
-    print(f"media = {grade_sum / 2.0:.2f}")
+    print(f'media = {grade_sum / 2.0:.2f}')
 
-    answer = input("novo calculo (1-sim 2-nao)\n")
-    while answer not in ["1", "2"]:
-        answer = input("novo calculo (1-sim 2-nao)\n")
+    answer = input('novo calculo (1-sim 2-nao)\n')
+    while answer not in ['1', '2']:
+        answer = input('novo calculo (1-sim 2-nao)\n')
 
-    if answer == "2":
+    if answer == '2':
         break
