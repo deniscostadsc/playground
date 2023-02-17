@@ -9,7 +9,7 @@ function generate_number {
     decimal_places=$1
     decimals=""
 
-    for _ in $(seq $decimal_places); do
+    for _ in $(seq "$decimal_places"); do
         decimals="${decimals}$((RANDOM % 9 + 1))"
     done
 
