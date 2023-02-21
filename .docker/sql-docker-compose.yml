@@ -6,7 +6,7 @@ services:
       context: ../
       dockerfile: .docker/sql.Dockerfile
     environment:
-      PROBLEM: $PROBLEM
+      FOLDERS: $FOLDERS
       POSTGRES_DB: beecrowd
       POSTGRES_USER: beecrowd
     volumes:
