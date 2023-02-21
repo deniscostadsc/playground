@@ -1,0 +1,9 @@
+        name        | day 
+--------------------+-----
+ Cristian Ghyprievy |  19
+ John Serial        |  10
+ Michael Seven      |  17
+ Joana Cabel        |   5
+ Miguel Santos      |  20
+(5 rows)
+
