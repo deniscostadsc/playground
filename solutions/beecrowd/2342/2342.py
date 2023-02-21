@@ -1,5 +1,5 @@
-import sys
 import operator
+import sys
 
 for line in sys.stdin:
     limit = int(line)
@@ -7,7 +7,7 @@ for line in sys.stdin:
     p = int(p)
     q = int(q)
 
-    if operation == "+":
+    if operation == '+':
         operation = operator.add
     else:
         operation = operator.mul
@@ -15,6 +15,6 @@ for line in sys.stdin:
     result = operation(p, q)
 
     if result > limit:
-        print("OVERFLOW")
+        print('OVERFLOW')
     else:
-        print("OK")
+        print('OK')
