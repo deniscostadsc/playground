@@ -1,7 +1,11 @@
+import struct
 import sys
 
 for line in sys.stdin:
     a, b = map(float, line.split())
+    a = struct.unpack('f', struct.pack('f', a))[0]
+    b = struct.unpack('f', struct.pack('f', b))[0]
+
     c, d = map(float, input().split())
 
     print(f'A = {a:.6f}, B = {b:.6f}')
