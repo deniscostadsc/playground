@@ -6,7 +6,7 @@ RUN mkdir /code
 WORKDIR /code
 
 # Got this hack here: https://stackoverflow.com/a/63300637
-RUN rm -rf /etc/apt/sources.list.d/pgdg.list 
+RUN rm -rf /etc/apt/sources.list.d/pgdg.list
 RUN apt update && apt install -y --force-yes wget
 
 RUN cd /bin && \
