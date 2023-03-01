@@ -1,3 +1,39 @@
+Novo salario: 0.00
+Reajuste ganho: 0.00
+Em percentual: 15 %
+Novo salario: 269.46
+Reajuste ganho: 35.15
+Em percentual: 15 %
 Novo salario: 460.00
 Reajuste ganho: 60.00
 Em percentual: 15 %
+Novo salario: 448.01
+Reajuste ganho: 48.00
+Em percentual: 12 %
+Novo salario: 756.60
+Reajuste ganho: 81.06
+Em percentual: 12 %
+Novo salario: 896.00
+Reajuste ganho: 96.00
+Em percentual: 12 %
+Novo salario: 880.01
+Reajuste ganho: 80.00
+Em percentual: 10 %
+Novo salario: 1108.75
+Reajuste ganho: 100.80
+Em percentual: 10 %
+Novo salario: 1320.00
+Reajuste ganho: 120.00
+Em percentual: 10 %
+Novo salario: 1284.01
+Reajuste ganho: 84.00
+Em percentual: 7 %
+Novo salario: 1820.06
+Reajuste ganho: 119.07
+Em percentual: 7 %
+Novo salario: 2140.00
+Reajuste ganho: 140.00
+Em percentual: 7 %
+Novo salario: 2080.01
+Reajuste ganho: 80.00
+Em percentual: 4 %
