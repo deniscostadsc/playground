@@ -5,30 +5,25 @@ int main() {
 
     while (scanf("%f", &n) != EOF) {
         if (n <= 400.0) {
-            printf(
-                "Novo salario: %.2f\nReajuste ganho: %.2f\nEm percentual: 15 %%\n",
-                n * 1.15,
-                n * 1.15 - n);
+            printf("Novo salario: %.2f\n", n * 1.15);
+            printf("Reajuste ganho: %.2f\n", n * 1.15 - n);
+            puts("Em percentual: 15 %");
         } else if (n <= 800.0) {
-            printf(
-                "Novo salario: %.2f\nReajuste ganho: %.2f\nEm percentual: 12 %%\n",
-                n * 1.12,
-                n * 1.12 - n);
+            printf("Novo salario: %.2f\n", n * 1.12);
+            printf("Reajuste ganho: %.2f\n", n * 1.12 - n);
+            puts("Em percentual: 12 %");
         } else if (n <= 1200.0) {
-            printf(
-                "Novo salario: %.2f\nReajuste ganho: %.2f\nEm percentual: 10 %%\n",
-                n * 1.10,
-                n * 1.10 - n);
+            printf("Novo salario: %.2f\n", n * 1.10);
+            printf("Reajuste ganho: %.2f\n", n * 1.10 - n);
+            puts("Em percentual: 10 %");
         } else if (n <= 2000.0) {
-            printf(
-                "Novo salario: %.2f\nReajuste ganho: %.2f\nEm percentual: 7 %%\n",
-                n * 1.07,
-                n * 1.07 - n);
+            printf("Novo salario: %.2f\n", n * 1.07);
+            printf("Reajuste ganho: %.2f\n", n * 1.07 - n);
+            puts("Em percentual: 7 %");
         } else {
-            printf(
-                "Novo salario: %.2f\nReajuste ganho: %.2f\nEm percentual: 4 %%\n",
-                n * 1.04,
-                n * 1.04 - n);
+            printf("Novo salario: %.2f\n", n * 1.04);
+            printf("Reajuste ganho: %.2f\n", n * 1.04 - n);
+            puts("Em percentual: 4 %");
         }
     }
 
