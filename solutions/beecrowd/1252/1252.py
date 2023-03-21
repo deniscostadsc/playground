@@ -6,6 +6,7 @@ def mod(n, m):
         return n % m
     return (n % m) - m
 
+
 def main():
     n, m = map(int, input().split())
 
@@ -37,7 +38,7 @@ def main():
 
         n, m = map(int, input().split())
 
-    print("0 0")
+    print('0 0')
 
 
 main()
