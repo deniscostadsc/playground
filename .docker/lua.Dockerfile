@@ -2,6 +2,10 @@ FROM debian:jessie
 
 ENV LUA_VERSION 5.4.0
 
+RUN echo 'deb http://archive.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
+RUN sed -i '/jessie-updates/d' /etc/apt/sources.list
+RUN apt-get -o Acquire::Check-Valid-Until=false update`
+
 RUN apt-get update && apt-get upgrade -y && apt-get install -y --force-yes \
 		wget \
 		build-essential \
