@@ -11,6 +11,12 @@ def main():
     n, m = map(int, input().split())
 
     while n and m:
+        numbers = []
+
+        for _ in range(n):
+            numbers.append(int(input()))
+
+        print(n, m)
 
         def compare(n1, n2):
             n1_mod = mod(n1, m)
@@ -25,15 +31,11 @@ def main():
                 return -1
             elif n1_is_even and not n2_is_even:
                 return 1
-            else:
+            elif not n1_is_even and not n2_is_even:
                 return n2 - n1
+            else:
+                return n1 - n2
 
-        numbers = []
-
-        for _ in range(n):
-            numbers.append(int(input()))
-
-        print(n, m)
         print('\n'.join(map(str, sorted(numbers, key=cmp_to_key(compare)))))
 
         n, m = map(int, input().split())
