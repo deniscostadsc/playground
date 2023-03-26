@@ -1,0 +1,9 @@
+              name               
+---------------------------------
+ Podium: The Quack Bats
+ Podium: The Responsible Hornets
+ Podium: The Bawdy Dolphins
+ Demoted: The Rough Robins
+ Demoted: The Silver Crocs
+(5 rows)
+
