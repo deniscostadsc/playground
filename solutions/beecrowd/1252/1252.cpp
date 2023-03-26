@@ -1,6 +1,6 @@
+#include <algorithm>
 #include <cstdint>
 #include <iostream>
-#include <algorithm>
 #include <vector>
 
 int32_t m;
