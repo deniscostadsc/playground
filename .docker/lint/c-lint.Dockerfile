@@ -10,7 +10,10 @@ RUN mkdir /code
 WORKDIR /code
 
 CMD echo "c"; if [ "$LINT_FIX" = 1 ]; then \
-        true; \
+        clang-format \
+            --style=file \
+            -i \
+            $(find . -name '*.c'); \
     else \
         cpplint \
             --quiet \
