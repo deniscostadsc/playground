@@ -3,13 +3,17 @@
 --- www.urionlinejudge.com.br
 --- Problem 2740
 
+--- sqlfomat wrongly assume that position is a keyword
+--- but since postgresql converts now quoted column name
+--- to lowercase, this wont be a problem.
+--- https://stackoverflow.com/questions/20878932/are-postgresql-column-names-case-sensitive
 CREATE TABLE league(
-  position INTEGER,
+  POSITION INTEGER,
   team CHARACTER VARYING (255)
 );
 
 
-INSERT INTO league(position, team)
+INSERT INTO league(POSITION, team)
 VALUES (1, 'The Quack Bats'),
        (2, 'The Responsible Hornets'),
        (3, 'The Bawdy Dolphins'),
