@@ -6,9 +6,10 @@ function get_form_token {
     site=$1
     problem=$2
 
-    curl -s "https://www.udebug.com/$site/$problem" | \
-        grep -o "form-[a-zA-Z0-9_-]\{43\}" | \
-        sed '1d'
+    curl -s "https://www.udebug.com/$site/$problem" \
+        -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0' | \
+    grep -o "form-[a-zA-Z0-9_-]\{43\}" | \
+    sed '1d'
 }
 
 function get_output {
