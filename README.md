@@ -9,7 +9,7 @@ challenges/contest sites. Here you can find my solutions for:
 - [Codeforces](https://codeforces.com/)
 - [Facebook Hacker Cup](https://www.facebook.com/codingcompetitions/hacker-cup)
 - [GeeksForGeeks](https://www.geeksforgeeks.org/)
-- [Google Code Jam](https://codingcompetitions.withgoogle.com/codejam/)
+- [Google Code Jam](https://github.com/google/coding-competitions-archive)
 - [OverTheWire](https://overthewire.org/wargames/)
 - [Project Euler](https://projecteuler.net/)
 - [Rosalind](http://rosalind.info/problems/locations/)
