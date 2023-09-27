@@ -12,7 +12,6 @@ for language in $LANGUAGES; do
         USER="$(id -u):$(id -g)" \
         docker-compose \
             -f .docker/sql-docker-compose.yml \
-            --log-level ERROR \
             up \
             --build \
             --quiet-pull \
