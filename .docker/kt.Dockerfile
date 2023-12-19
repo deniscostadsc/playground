@@ -2,8 +2,8 @@ FROM alpine:latest
 
 RUN apk -U upgrade && apk add wget bash openjdk11
 
-RUN wget https://github.com/JetBrains/kotlin/releases/download/v1.4.10/kotlin-compiler-1.4.10.zip
-RUN unzip kotlin-compiler-1.4.10.zip
+RUN wget https://github.com/JetBrains/kotlin/releases/download/v1.2.10/kotlin-compiler-1.2.10.zip
+RUN unzip kotlin-compiler-1.2.10.zip
 
 RUN mkdir /code
 WORKDIR /code
