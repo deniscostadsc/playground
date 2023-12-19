@@ -2,7 +2,7 @@ FROM ubuntu:22.04
 
 ENV LUA_VERSION 5.4.0
 
-RUN apt-get update && apt-get upgrade -y && apt-get install -y --force-yes \
+RUN apt update && apt upgrade -y && apt install -y \
 		wget \
 		build-essential \
 		make \
@@ -20,14 +20,14 @@ RUN wget http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz && \
     make linux && \
     ln -s /lua-${LUA_VERSION}/src/lua /usr/bin/lua
 
-RUN apt-get remove --purge -y \
+RUN apt remove --purge -y \
     wget \
     make \
     build-essential \
     libreadline-dev \
     ca-certificates \
     mingw-w64 && \
-    apt-get autoremove -y
+    apt autoremove -y
 
 RUN mkdir /code
 WORKDIR /code
