@@ -7,15 +7,16 @@ echo "C++"
 echo
 
 for folder in $FOLDERS; do
-    [ -f "${folder}WRONG" ] && continue
+    [[ -f "${folder}WRONG" ]] && continue
+    cpp_files="$(find "$folder" -name '*.cpp')"
+    cpp_files_count="$(wc -l <<< "${cpp_files}")"
 
-    if [ "$(find "$folder" -name '*.cpp' | wc -l)" -eq 1 ]; then
-        echo "$folder" 
-        cd "$folder" || exit 1
+    if [[ "${cpp_files_count}" -eq 1 ]]; then
+        cd "${folder}" || exit 1
 
-        g++ -Werror -std=c++17 -O2 -lm ./*.cpp
+        g++ -Werror -std=c++20 -O2 -lm ./*.cpp
 
-        if [ -f in.txt ]; then
+        if [[ -f in.txt ]]; then
             ./a.out < in.txt > result-cpp.txt
         else
             ./a.out > result-cpp.txt
