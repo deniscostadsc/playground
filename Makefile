@@ -88,7 +88,7 @@ else
 	FOLDERS := $(shell find . -name 'problem.md' | sed 's/problem.md//g' | sort)
 endif
 
-DOCKER_RUN := docker run -v $$(pwd):/code -u "$$(id -u):$$(id -g)"
+DOCKER_RUN := docker run --rm -v $$(pwd):/code -u "$$(id -u):$$(id -g)"
 DOCKER_BUILD := docker build -q -f
 
 __run-build:
