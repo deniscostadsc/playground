@@ -3,7 +3,7 @@
 #include <iostream>
 #include <vector>
 
-bool compare(std::int16_t i, std::int16_t j) {
+bool compare(std::int32_t i, std::int32_t j) {
     if (i % 2 == 0 && j % 2 == 1) {
         return true;
     }
@@ -18,9 +18,9 @@ bool compare(std::int16_t i, std::int16_t j) {
 }
 
 int main() {
-    std::int16_t n, c;
-    std::uint16_t i;
-    std::vector< std::int16_t > v;
+    std::int32_t n, c;
+    std::uint32_t i;
+    std::vector< std::int32_t > v;
 
     std::cin >> c;
     while (c--) {
