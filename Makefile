@@ -36,25 +36,25 @@ SQL = sql
 
 SUPPORTED_LANGUAGES = \
 	$(C) \
-	$(CLJ) \
 	$(CPP) \
 	$(CS) \
 	$(DART) \
 	$(GO) \
 	$(HS) \
 	$(JAVA) \
-	$(JS) \
-	$(KT) \
 	$(LUA) \
-	$(ML) \
-	$(PAS) \
 	$(PHP) \
 	$(PY) \
 	$(R) \
 	$(RB) \
 	$(RS) \
-	$(SCALA) \
 	$(SQL)
+# $(ML)
+# $(PAS)
+# $(SCALA)
+# $(CLJ)
+# $(JS)
+
 
 ifdef LANGUAGES
 SUPPORTED_LANGUAGES := $(LANGUAGES)
