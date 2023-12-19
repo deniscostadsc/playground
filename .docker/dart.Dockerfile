@@ -1,4 +1,4 @@
-FROM google/dart:2.9
+FROM dart:3.0.5
 
 RUN mkdir /code
 WORKDIR /code
