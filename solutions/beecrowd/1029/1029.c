@@ -21,7 +21,7 @@ int32_t fib(int16_t n) {
 }
 
 int main() {
-    int16_t i, j;
+    int16_t i;
     int16_t n;
 
     memset(f, 0, sizeof(f));

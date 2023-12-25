@@ -21,8 +21,8 @@ std::int32_t fib(std::int32_t n) {
 }
 
 int main() {
-    std::int16_t i, j;
-    std::int32_t n;
+    std::int16_t i;
+    std::int16_t n;
 
     memset(f, 0, sizeof(f));
     memset(r, 0, sizeof(r));
@@ -30,8 +30,12 @@ int main() {
 
     scanf("%d", &i);
     while (i--) {
-        scanf("%ld", &n);
-        printf("fib(%ld) = %ld calls = %ld\n", n, r[n], fib(n));
+        scanf("%d", &n);
+
+        std::int32_t fib_result = fib(n);
+
+        printf("fib(%d) = %d calls = %d\n", n, r[n], fib_result);
+
     }
 
     return 0;

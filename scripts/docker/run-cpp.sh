@@ -8,10 +8,8 @@ echo
 
 for folder in $FOLDERS; do
     [[ -f "${folder}WRONG" ]] && continue
-    cpp_files="$(find "$folder" -name '*.cpp')"
-    cpp_files_count="$(wc -l <<< "${cpp_files}")"
-
-    if [[ "${cpp_files_count}" -eq 1 ]]; then
+    if [ "$(find "$folder" -name '*.cpp' | wc -l)" -eq 1 ]; then
+        echo "$folder"
         cd "${folder}" || exit 1
 
         g++ -Werror -std=c++20 -O2 -lm ./*.cpp
