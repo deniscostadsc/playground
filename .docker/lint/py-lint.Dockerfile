@@ -13,7 +13,7 @@ CMD echo "py"; ./scripts/update-python-requirements-ci.sh 2> /dev/null && \
         blue . && \
         isort .; \
     else \
-        blue --check . -q && \
+        blue --check . && \
         flake8 && \
-        isort -c . > /dev/null; \
+        isort -c .; \
     fi
