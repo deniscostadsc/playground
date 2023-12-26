@@ -1,6 +1,5 @@
 import sys
 
-
 for line in sys.stdin:
     n = int(line)
     m, l = map(int, input().split())
@@ -17,9 +16,15 @@ for line in sys.stdin:
 
     attribute = int(input())
 
-    if marcos_cards[marcos_card - 1][attribute - 1] > leonardo_cards[leonardo_card  - 1][attribute - 1]:
+    if (
+        marcos_cards[marcos_card - 1][attribute - 1]
+        > leonardo_cards[leonardo_card - 1][attribute - 1]
+    ):
         print('Marcos')
-    elif leonardo_cards[leonardo_card - 1][attribute - 1] > marcos_cards[marcos_card - 1][attribute - 1]:
+    elif (
+        leonardo_cards[leonardo_card - 1][attribute - 1]
+        > marcos_cards[marcos_card - 1][attribute - 1]
+    ):
         print('Leonardo')
     else:
         print('Empate')
