@@ -1,0 +1,1 @@
+DROP TABLE life_registry, dimensions;

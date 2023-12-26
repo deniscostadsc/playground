@@ -1,0 +1,5 @@
+        name         | The N Factor 
+---------------------+--------------
+ Richard Gran Master |        4.045
+(1 row)
+
