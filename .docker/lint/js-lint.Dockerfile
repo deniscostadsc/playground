@@ -1,4 +1,4 @@
-FROM node:12.18.3
+FROM node:12.22.0
 
 RUN npm install -g standard
 

@@ -101,7 +101,7 @@ endif
 
 __run-lint-build:
 	@for language_lint in $(SUPPORTED_LINTS); do \
-		$(DOCKER_BUILD) .docker/lint/$${language_lint}-lint.Dockerfile -t $${language_lint}-lint .; \
+		$(DOCKER_BUILD) .docker/lint/$${language_lint}-lint.Dockerfile --platform linux/arm64 -t $${language_lint}-lint .; \
 	done
 
 check-tags:

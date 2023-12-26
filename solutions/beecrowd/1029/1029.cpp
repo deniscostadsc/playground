@@ -35,7 +35,6 @@ int main() {
         std::int32_t fib_result = fib(n);
 
         printf("fib(%d) = %d calls = %d\n", n, r[n], fib_result);
-
     }
 
     return 0;
