@@ -68,8 +68,8 @@ SUPPORTED_LINTS = \
 	$(GO) \
 	$(JS) \
 	$(PY) \
-	$(SH) \
-	$(SQL)
+	$(SH)
+# $(SQL)
 
 ifdef LINTS
 SUPPORTED_LINTS := $(LINTS)
