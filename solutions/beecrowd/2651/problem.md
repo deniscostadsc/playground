@@ -14,7 +14,7 @@ fan has called you in the letter.
 
 ## Input
 
-Contains a string $S (1 \leq |S| \leq 105)$ that represents how the Link fan referred to
+Contains a string $S (1 \leq |S| \leq 10^5)$ that represents how the Link fan referred to
 him on the letter The string is composed of only uppercase and lowercase
 letters.
 
