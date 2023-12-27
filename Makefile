@@ -61,6 +61,7 @@ SUPPORTED_LANGUAGES := $(LANGUAGES)
 endif
 
 SUPPORTED_LINTS = \
+	$(C) \
 	$(CLJ) \
 	$(CPP) \
 	$(DART) \
@@ -69,7 +70,6 @@ SUPPORTED_LINTS = \
 	$(PY) \
 	$(SH)
 # $(SQL)
-# $(C)
 
 ifdef LINTS
 SUPPORTED_LINTS := $(LINTS)
@@ -89,7 +89,7 @@ else
 endif
 
 DOCKER_RUN := docker run --rm -v $$(pwd):/code -u "$$(id -u):$$(id -g)"
-DOCKER_BUILD := docker build -q -f
+DOCKER_BUILD := docker build -f
 
 __run-build:
 ifdef LANGUAGE
@@ -100,7 +100,7 @@ endif
 	done
 
 __run-lint-build:
-	@for language_lint in $(SUPPORTED_LINTS); do \
+	for language_lint in $(SUPPORTED_LINTS); do \
 		$(DOCKER_BUILD) .docker/lint/$${language_lint}-lint.Dockerfile --platform linux/arm64 -t $${language_lint}-lint .; \
 	done
 
