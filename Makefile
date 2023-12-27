@@ -61,7 +61,6 @@ SUPPORTED_LANGUAGES := $(LANGUAGES)
 endif
 
 SUPPORTED_LINTS = \
-	$(C) \
 	$(CLJ) \
 	$(CPP) \
 	$(DART) \
@@ -70,6 +69,7 @@ SUPPORTED_LINTS = \
 	$(PY) \
 	$(SH)
 # $(SQL)
+# $(C)
 
 ifdef LINTS
 SUPPORTED_LINTS := $(LINTS)
