@@ -1,7 +1,6 @@
 FROM python:3
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
-
+RUN pip install -U pip
 RUN pip install cpplint
 RUN apt update && apt install clang-format -y
 
