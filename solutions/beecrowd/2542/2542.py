@@ -1,15 +1,15 @@
 import sys
 
 for line in sys.stdin:
-    n = int(line)
-    m, l = map(int, input().split())
+    attribute_count = int(line)
+    marcos_deck_len, leonardo_deck_len = map(int, input().split())
 
     marcos_cards = []
-    for _ in range(m):
+    for _ in range(marcos_deck_len):
         marcos_cards.append(list(map(int, input().split())))
 
     leonardo_cards = []
-    for _ in range(l):
+    for _ in range(leonardo_deck_len):
         leonardo_cards.append(list(map(int, input().split())))
 
     marcos_card, leonardo_card = map(int, input().split())

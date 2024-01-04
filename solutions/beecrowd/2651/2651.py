@@ -19,7 +19,7 @@ for line in sys.stdin:
                 index += 1
 
         if index == 5:
-            print("Link Bolado")
+            print('Link Bolado')
             break
     else:
-        print("Link Tranquilo")
+        print('Link Tranquilo')
