@@ -20,8 +20,8 @@ jobs:
             cache-from: type=gha
             cache-to: type=gha,mode=max
             push: false
-      - name: Run Pytest
+      - name: Run lint for c
         uses: addnab/docker-run-action@v3
         with:
             image: c-lint:latest
-            options: -v $$(pwd):/code
+            options: -v ${{ github.workspace }}:/code
