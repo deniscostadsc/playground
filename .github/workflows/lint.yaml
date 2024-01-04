@@ -24,5 +24,7 @@ jobs:
         uses: addnab/docker-run-action@v3
         with:
             image: c-lint:latest
-            options: -v ${{ github.workspace }}:/code
-            run: ls
+            options: -v ${{ github.workspace }}:/code -e LINT_FIX=0
+            run: |
+                ls
+                pwd
