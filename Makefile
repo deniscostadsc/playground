@@ -42,6 +42,7 @@ SUPPORTED_LANGUAGES = \
 	$(GO) \
 	$(HS) \
 	$(JAVA) \
+	$(JS) \
 	$(LUA) \
 	$(PHP) \
 	$(PY) \
@@ -53,8 +54,6 @@ SUPPORTED_LANGUAGES = \
 # $(PAS)
 # $(SCALA)
 # $(CLJ)
-# $(JS)
-
 
 ifdef LANGUAGES
 SUPPORTED_LANGUAGES := $(LANGUAGES)
