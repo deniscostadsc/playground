@@ -25,3 +25,4 @@ jobs:
         with:
             image: c-lint:latest
             options: -v ${{ github.workspace }}:/code
+            run: ls
