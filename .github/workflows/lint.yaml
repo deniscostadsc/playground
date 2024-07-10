@@ -6,37 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
-      - uses: docker/setup-buildx-action@v2
-      - name: check if tags are correct
+        uses: actions/checkout@v4
+      - name: Run lint
         run: |
-          make check-tags
-      - uses: docker/build-push-action@v4
-        with:
-            context: .
-            file: ".docker/lint/c-lint.Dockerfile"
-            tags: c-lint:latest
-            load: true
-            cache-from: type=gha
-            cache-to: type=gha,mode=max
-            push: false
-      - name: Run lint for c
-        uses: addnab/docker-run-action@v3
-        with:
-            image: c-lint:latest
-            options: -v ${{ github.workspace }}:/code -e LINT_FIX=0
-            run: echo "c"; if [ "$LINT_FIX" = 1 ]; then \
-                    clang-format \
-                        --style=file \
-                        -i \
-                        $(find . -name '*.c'); \
-                else \
-                    cpplint \
-                        --quiet \
-                        --recursive \
-                        --extensions=c \
-                        --filter="-legal/copyright,-runtime/arrays,-readability/casting" . && \
-                    scripts/run-clang-format.py \
-                        --clang-format-executable=clang-format \
-                        -r .; \
-                fi
+          make lint

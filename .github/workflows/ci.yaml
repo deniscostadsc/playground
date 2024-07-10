@@ -1,12 +1,8 @@
 name: CI
-
 on: [push]
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
       - name: Clear up some space on runner
         run: |
@@ -24,14 +20,11 @@ jobs:
           sudo apt-get clean
           rm -rf /usr/share/dotnet/
           df -h
-
       - name: Checkout code
-        uses: actions/checkout@v2
-
+        uses: actions/checkout@v4
       - name: check if tags are correct
         run: |
           make check-tags
-
       - name: run solutions
         run: |
           make run
