@@ -1,4 +1,4 @@
-FROM python:3.11.4
+FROM python:3.9.4
 
 RUN python -m ensurepip --upgrade
 RUN pip install pip-tools
