@@ -1,6 +1,6 @@
 FROM python:3.11.4
 
-RUN which pip
+RUN python -m ensurepip --upgrade
 RUN pip install -U pip
 RUN pip install cpplint
 RUN apt update && apt install clang-format -y
