@@ -41,7 +41,7 @@ class Node:
     def __print(self):
         global add_space_before_letter
         if add_space_before_letter:
-            print(" ", end="")
+            print(' ', end='')
         print(self.letter, end='')
         add_space_before_letter = True
 
