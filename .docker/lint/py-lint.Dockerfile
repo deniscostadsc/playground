@@ -1,6 +1,7 @@
 FROM python:3.11.4
 
-RUN pip install -U pip pip-tools
+RUN python -m ensurepip --upgrade
+RUN pip install pip-tools
 
 RUN mkdir /code
 WORKDIR /code
