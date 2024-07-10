@@ -2,7 +2,7 @@
 name: Lint
 on: [push]
 jobs:
-  lint-c:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
