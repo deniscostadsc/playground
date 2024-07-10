@@ -7,8 +7,8 @@ LANGUAGES=$2
 DOCKER_RUN_PREFIX=$3
 
 for language in $LANGUAGES; do
-    if [ "$language" == "sql" ]; then
-        FOLDERS="$FOLDERS" \
+    if [[ "${language}" == "sql" ]]; then
+        FOLDERS="${FOLDERS}" \
         USER="$(id -u):$(id -g)" \
         docker-compose \
             -f .docker/sql-docker-compose.yml \
@@ -18,6 +18,6 @@ for language in $LANGUAGES; do
             --abort-on-container-exit \
             --exit-code-from database-client
     else
-        $DOCKER_RUN_PREFIX -e FOLDERS="$FOLDERS" "$language"
+        ${DOCKER_RUN_PREFIX} -e FOLDERS="${FOLDERS}" "${language}"
     fi
 done
