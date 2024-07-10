@@ -16,11 +16,14 @@ for line in sys.stdin:
         break
 
     prize = input()
+    current_digit = 0
 
-    while d:
-        possibilities = [remove(prize, i) for i, _ in enumerate(prize)]
-        possibilities.sort(key=int)
-        prize = possibilities[-1]
+    for i in range(d):
+        index = prize.find(str(current_digit))
+        if index == -1:
+            current_digit += 1
+            index = prize.find(str(current_digit))
+        prize = remove(prize, index)
 
         d -= 1
 

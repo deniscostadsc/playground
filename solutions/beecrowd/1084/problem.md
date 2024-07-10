@@ -25,6 +25,7 @@ number does not start with a zero.
 
 The end of input is indicated by a line containing only two zeros, separated by
 a space.
+
 ## Output
 
 For each test case in the input your program must produce one single line in the
