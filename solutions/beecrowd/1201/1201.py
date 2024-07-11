@@ -2,6 +2,7 @@ import sys
 
 add_space_before_number = True
 
+
 def _remove_node(tree, number):
     if not tree:
         return tree
@@ -26,6 +27,8 @@ def _remove_node(tree, number):
             else:
                 successor_parent.right = successor.right
     return tree
+
+
 class Node:
     def __init__(self, number=None, left=None, right=None):
         self.number = number
