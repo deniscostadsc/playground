@@ -7,6 +7,18 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Run lint
-        run: |
-          make lint
+      - uses: docker/setup-buildx-action@v2
+      - uses: docker/build-push-action@v4
+        with:
+          context: .
+          file: ".docker/lint/c-lint.Dockerfile"
+          tags: c-lint:latest
+          load: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          push: false
+      - name: Run C lint
+        uses: addnab/docker-run-action@v3
+        with:
+          image: c-lint:latest
+          options: -v $(pwd):/code -e LINT_FIX=1
