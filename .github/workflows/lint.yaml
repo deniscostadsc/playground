@@ -60,4 +60,12 @@ jobs:
         with:
           image: cpp-lint:latest
           options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
-          run: ./scripts/lint-clj.sh
+          run: |
+            cpplint \
+                --quiet \
+                --recursive \
+                --extensions=cpp \
+                --filter="-legal/copyright,-runtime/arrays" .
+            scripts/run-clang-format.py \
+                --clang-format-executable=clang-format \
+                -r .;
