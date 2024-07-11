@@ -99,7 +99,4 @@ jobs:
         with:
           image: py-lint:latest
           options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
-          run: |
-            blue --check .
-            flake8
-            isort -c .
+          run: blue --check . && flake8 && isort -c .
