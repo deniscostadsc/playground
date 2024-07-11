@@ -20,5 +20,5 @@ jobs:
       - name: Run C lint
         uses: addnab/docker-run-action@v3
         with:
-          image: c-lint:latest
+          image: deniscostadsc/c-lint:latest
           options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
