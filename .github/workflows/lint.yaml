@@ -35,6 +35,15 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           push: false
+      - uses: docker/build-push-action@v4
+        with:
+          context: .
+          file: ".docker/lint/py-lint.Dockerfile"
+          tags: py-lint:latest
+          load: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          push: false
       - name: Run C lint
         uses: addnab/docker-run-action@v3
         with:
@@ -69,3 +78,13 @@ jobs:
             scripts/run-clang-format.py \
                 --clang-format-executable=clang-format \
                 -r .;
+            - name: Run C++ lint
+      - name: Run Python lint
+        uses: addnab/docker-run-action@v3
+        with:
+          image: py-lint:latest
+          options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
+          run: |
+            blue --check .
+            flake8
+            isort -c .
