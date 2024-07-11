@@ -8,7 +8,7 @@ jobs:
         run: |
           dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n | tail -n 100
           df -h
-          sudo apt-get remove -y '^dotnet-.*'
+          sudo apt-get remove -y '^dotnet-.*' --fix-missing
           sudo apt-get remove -y '^libclang.*'
           sudo apt-get remove -y '^llvm-.*'
           sudo apt-get remove -y '^mongodb-.*'
