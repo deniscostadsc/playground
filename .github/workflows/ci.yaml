@@ -32,9 +32,9 @@ jobs:
           df -h
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: check if tags are correct
+      - name: Check if tags are correct
         run: |
           make check-tags
-      - name: run solutions
+      - name: Run solutions
         run: |
           make run
