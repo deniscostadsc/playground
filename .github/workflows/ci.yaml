@@ -14,7 +14,6 @@ jobs:
           sudo apt-get remove -y '^clang-.*'
           sudo apt-get remove -y '^cpp-.*'
           sudo apt-get remove -y '^dotnet-.*'
-          sudo apt-get remove -y '^gcc-.*'
           sudo apt-get remove -y '^gfortran-.*'
           sudo apt-get remove -y '^google-.*'
           sudo apt-get remove -y '^libclang.*'
