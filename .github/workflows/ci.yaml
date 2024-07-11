@@ -9,14 +9,24 @@ jobs:
           dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n | tail -n 100
           df -h
           sudo sudo apt update
+          sudo apt-get remove -y '^aspnetcore-.*'
+          sudo apt-get remove -y '^azure-.*'
+          sudo apt-get remove -y '^clang-.*'
+          sudo apt-get remove -y '^cpp-.*'
           sudo apt-get remove -y '^dotnet-.*'
+          sudo apt-get remove -y '^gcc-.*'
+          sudo apt-get remove -y '^gfortran-.*'
+          sudo apt-get remove -y '^google-.*'
           sudo apt-get remove -y '^libclang.*'
           sudo apt-get remove -y '^llvm-.*'
+          sudo apt-get remove -y '^microsoft-.*'
           sudo apt-get remove -y '^mongodb-.*'
+          sudo apt-get remove -y '^mono-.*'
           sudo apt-get remove -y '^mysql-.*'
+          sudo apt-get remove -y '^php.*'
           sudo apt-get remove -y '^postgresql-.*'
-          sudo apt-get remove -y 'php.*'
-          sudo apt-get remove -y azure-cli google-chrome-stable firefox powershell mono-devel
+          sudo apt-get remove -y '^temurin-.*'
+          sudo apt-get remove -y firefox powershell
           sudo apt-get autoremove -y
           sudo apt-get clean
           rm -rf /usr/share/dotnet/
