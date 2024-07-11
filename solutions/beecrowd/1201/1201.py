@@ -2,7 +2,30 @@ import sys
 
 add_space_before_number = True
 
-
+def _remove_node(tree, number):
+    if not tree:
+        return tree
+    if number < tree.number:
+        tree.left = _remove_node(tree.left, number)
+    elif number > tree.number:
+        tree.right = _remove_node(tree.right, number)
+    else:
+        if not tree.left:
+            return tree.right
+        elif not tree.right:
+            return tree.left
+        else:
+            successor_parent = tree
+            successor = tree.right
+            while successor.left:
+                successor_parent = successor
+                successor = successor.left
+            tree.number = successor.number
+            if successor_parent.left == successor:
+                successor_parent.left = successor.right
+            else:
+                successor_parent.right = successor.right
+    return tree
 class Node:
     def __init__(self, number=None, left=None, right=None):
         self.number = number
@@ -76,32 +99,7 @@ class Node:
         print()
 
     def remove(self, number):
-        _remove(self, number)
-
-def _remove(tree, number):
-    if not tree:
-        return tree
-    if number < tree.number:
-        tree.left = _remove(tree.left, number)
-    elif number > tree.number:
-        tree.right = _remove(tree.right, number)
-    else:
-        if not tree.left:
-            return tree.right
-        elif not tree.right:
-            return tree.left
-        else:
-            successor_parent = tree
-            successor = tree.right
-            while successor.left:
-                successor_parent = successor
-                successor = successor.left
-            tree.number = successor.number
-            if successor_parent.left is successor:
-                successor_parent.left = successor.right
-            else:
-                successor_parent.right = successor.right
-    return tree
+        _remove_node(self, number)
 
 
 def main():
