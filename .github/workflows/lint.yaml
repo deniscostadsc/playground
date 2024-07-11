@@ -58,15 +58,7 @@ jobs:
         with:
           image: c-lint:latest
           options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
-          run: |
-            cpplint \
-                --quiet \
-                --recursive \
-                --extensions=c \
-                --filter="-legal/copyright,-runtime/arrays,-readability/casting" .
-            scripts/run-clang-format.py \
-                --clang-format-executable=clang-format \
-                -r .;
+          run: cpplint --quiet --recursive --extensions=c --filter="-legal/copyright,-runtime/arrays" . && scripts/run-clang-format.py --clang-format-executable=clang-format -r .
       - name: Run Clojure lint
         uses: addnab/docker-run-action@v3
         with:
@@ -78,22 +70,13 @@ jobs:
         with:
           image: cpp-lint:latest
           options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
-          run: |
-            cpplint \
-                --quiet \
-                --recursive \
-                --extensions=cpp \
-                --filter="-legal/copyright,-runtime/arrays" .
-            scripts/run-clang-format.py \
-                --clang-format-executable=clang-format \
-                -r .;
+          run: cpplint --quiet --recursive --extensions=cpp --filter="-legal/copyright,-runtime/arrays" . && scripts/run-clang-format.py --clang-format-executable=clang-format -r .
       - name: Run Dart lint
         uses: addnab/docker-run-action@v3
         with:
           image: dart-lint:latest
           options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
-          run: |
-            ./scripts/lint-dart.sh
+          run: ./scripts/lint-dart.sh
       - name: Run Python lint
         uses: addnab/docker-run-action@v3
         with:
