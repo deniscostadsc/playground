@@ -17,6 +17,24 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           push: false
+      - uses: docker/build-push-action@v4
+        with:
+          context: .
+          file: ".docker/lint/clj-lint.Dockerfile"
+          tags: clj-lint:latest
+          load: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          push: false
+      - uses: docker/build-push-action@v4
+        with:
+          context: .
+          file: ".docker/lint/cpp-lint.Dockerfile"
+          tags: cpp-lint:latest
+          load: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          push: false
       - name: Run C lint
         uses: addnab/docker-run-action@v3
         with:
@@ -30,4 +48,16 @@ jobs:
                 --filter="-legal/copyright,-runtime/arrays,-readability/casting" .
             scripts/run-clang-format.py \
                 --clang-format-executable=clang-format \
-                -r .; \
+                -r .;
+      - name: Run Clojure lint
+        uses: addnab/docker-run-action@v3
+        with:
+          image: clj-lint:latest
+          options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
+          run: ./scripts/lint-clj.sh
+      - name: Run C++ lint
+        uses: addnab/docker-run-action@v3
+        with:
+          image: cpp-lint:latest
+          options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
+          run: ./scripts/lint-clj.sh
