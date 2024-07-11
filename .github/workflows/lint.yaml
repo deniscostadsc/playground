@@ -38,6 +38,15 @@ jobs:
       - uses: docker/build-push-action@v4
         with:
           context: .
+          file: ".docker/lint/dart-lint.Dockerfile"
+          tags: dart-lint:latest
+          load: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          push: false
+      - uses: docker/build-push-action@v4
+        with:
+          context: .
           file: ".docker/lint/py-lint.Dockerfile"
           tags: py-lint:latest
           load: true
@@ -78,6 +87,13 @@ jobs:
             scripts/run-clang-format.py \
                 --clang-format-executable=clang-format \
                 -r .;
+      - name: Run Dart lint
+        uses: addnab/docker-run-action@v3
+        with:
+          image: dart-lint:latest
+          options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
+          run: |
+            ./scripts/lint-dart.sh
       - name: Run Python lint
         uses: addnab/docker-run-action@v3
         with:
