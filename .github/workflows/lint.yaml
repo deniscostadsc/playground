@@ -78,7 +78,6 @@ jobs:
             scripts/run-clang-format.py \
                 --clang-format-executable=clang-format \
                 -r .;
-            - name: Run C++ lint
       - name: Run Python lint
         uses: addnab/docker-run-action@v3
         with:
