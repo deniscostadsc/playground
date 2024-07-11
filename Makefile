@@ -60,15 +60,15 @@ SUPPORTED_LANGUAGES := $(LANGUAGES)
 endif
 
 SUPPORTED_LINTS = \
+	$(C) \
+	$(CLJ) \
+	$(CPP) \
+	$(DART) \
+	$(GO) \
+	$(JS) \
 	$(PY) \
-	$(SH)
-# $(C)
-# $(SQL)
-# $(CLJ)
-# $(CPP)
-# $(DART)
-# $(GO)
-# $(JS)
+	$(SH) \
+	$(SQL)
 
 ifdef LINTS
 SUPPORTED_LINTS := $(LINTS)
