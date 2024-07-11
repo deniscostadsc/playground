@@ -75,17 +75,33 @@ class Node:
         self.__traverse_print(traverse_type='POSTFIX')
         print()
 
+    def remove(self, number):
+        _remove(self, number)
 
-def remove(tree, number):
-    if tree.number == None:
+def _remove(tree, number):
+    if not tree:
         return tree
-
-    if number > tree.number and tree.right:
-        tree.right = tree.right.remove(number)
-        return tree
-    if number < tree.number and tree.left:
-        tree.left = tree.left.remove(number)
-        return tree
+    if number < tree.number:
+        tree.left = _remove(tree.left, number)
+    elif number > tree.number:
+        tree.right = _remove(tree.right, number)
+    else:
+        if not tree.left:
+            return tree.right
+        elif not tree.right:
+            return tree.left
+        else:
+            successor_parent = tree
+            successor = tree.right
+            while successor.left:
+                successor_parent = successor
+                successor = successor.left
+            tree.number = successor.number
+            if successor_parent.left is successor:
+                successor_parent.left = successor.right
+            else:
+                successor_parent.right = successor.right
+    return tree
 
 
 def main():
@@ -103,7 +119,7 @@ def main():
                 else:
                     print(f'{number} nao existe')
             case ['R', number]:
-                remove(tree, number)
+                tree.remove(number)
             case ['PREFIXA']:
                 tree.prefix_print()
             case ['INFIXA']:
