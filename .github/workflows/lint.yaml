@@ -47,6 +47,15 @@ jobs:
       - uses: docker/build-push-action@v4
         with:
           context: .
+          file: ".docker/lint/go-lint.Dockerfile"
+          tags: go-lint:latest
+          load: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          push: false
+      - uses: docker/build-push-action@v4
+        with:
+          context: .
           file: ".docker/lint/py-lint.Dockerfile"
           tags: py-lint:latest
           load: true
@@ -77,6 +86,13 @@ jobs:
           image: dart-lint:latest
           options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
           run: ./scripts/lint-dart.sh
+      - name: Run Go lint
+        uses: addnab/docker-run-action@v3
+        with:
+          image: go-lint:latest
+          options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
+          run: |
+            [ "$(gofmt -l . | wc -l)" -eq 0 ]
       - name: Run Python lint
         uses: addnab/docker-run-action@v3
         with:
