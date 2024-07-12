@@ -49,10 +49,10 @@ SUPPORTED_LANGUAGES = \
 	$(R) \
 	$(RB) \
 	$(RS) \
+	$(SCALA) \
 	$(SQL)
 # $(ML)
 # $(PAS)
-# $(SCALA)
 # $(CLJ)
 
 ifdef LANGUAGES
