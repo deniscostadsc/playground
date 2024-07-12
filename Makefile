@@ -36,6 +36,7 @@ SQL = sql
 
 SUPPORTED_LANGUAGES = \
 	$(C) \
+	$(CLJ) \
 	$(CPP) \
 	$(CS) \
 	$(DART) \
@@ -53,7 +54,7 @@ SUPPORTED_LANGUAGES = \
 	$(SQL)
 # $(ML)
 # $(PAS)
-# $(CLJ)
+#
 
 ifdef LANGUAGES
 SUPPORTED_LANGUAGES := $(LANGUAGES)

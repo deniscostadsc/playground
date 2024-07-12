@@ -1,4 +1,4 @@
-FROM clojure:latest
+FROM clojure:temurin-8-jammy
 
 RUN mkdir /code
 WORKDIR /code
