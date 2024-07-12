@@ -1,4 +1,4 @@
-name: CI
+name: Compile and Run
 on: [push]
 jobs:
   build:
@@ -32,9 +32,5 @@ jobs:
           df -h
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Check if tags are correct
-        run: |
-          make check-tags
       - name: Run solutions
-        run: |
-          make run
+        run: make run
