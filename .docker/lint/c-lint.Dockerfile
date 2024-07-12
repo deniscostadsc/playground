@@ -20,5 +20,6 @@ CMD echo "c"; if [ "$LINT_FIX" = 1 ]; then \
             --filter="-legal/copyright,-runtime/arrays,-readability/casting" . && \
         scripts/run-clang-format.py \
             --clang-format-executable=clang-format \
+            --extensions=c \
             -r .; \
     fi

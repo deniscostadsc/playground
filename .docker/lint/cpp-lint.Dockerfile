@@ -20,5 +20,6 @@ CMD echo "cpp"; if [ "$LINT_FIX" = 1 ]; then \
             --filter="-legal/copyright,-runtime/arrays" . && \
         scripts/run-clang-format.py \
             --clang-format-executable=clang-format \
+            --extensions=cpp \
             -r .; \
     fi
