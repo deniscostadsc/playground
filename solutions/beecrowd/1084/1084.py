@@ -1,30 +1,25 @@
 import sys
 
-
-def remove(_str, index):
-    if index == len(_str) - 1:
-        return _str[:-1]
-    elif index == 0:
-        return _str[1:]
-    return _str[:index] + _str[index + 1 :]
-
-
 for line in sys.stdin:
     n, d = map(int, line.split())
 
     if not n and not d:
         break
 
-    prize = input()
-    current_digit = 0
+    prize_initial = input()
+    prize_final = []
 
-    for i in range(d):
-        index = prize.find(str(current_digit))
-        if index == -1:
-            current_digit += 1
-            index = prize.find(str(current_digit))
-        prize = remove(prize, index)
+    for index, digit in enumerate(prize_initial):
+        if not prize_final:
+            prize_final.append(digit)
+        else:
+            while (
+                prize_final
+                and digit > prize_final[-1]
+                and n - index + len(prize_final) > n - d
+            ):
+                prize_final.pop()
+            if len(prize_final) < n - d:
+                prize_final.append(digit)
 
-        d -= 1
-
-    print(prize)
+    print(''.join(prize_final))
