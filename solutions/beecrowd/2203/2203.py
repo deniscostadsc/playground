@@ -1,5 +1,5 @@
-from math import sqrt
 import sys
+from math import sqrt
 
 for line in sys.stdin:
     xf, yf, xi, yi, vi, r1, r2 = map(int, line.split())
