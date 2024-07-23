@@ -20,7 +20,7 @@ bool is_prime(std::int32_t n) {
 
 int main() {
     std::int32_t x;
-    std::int16_t n;
+    std::int32_t n;
 
     std::cin >> n;
 
