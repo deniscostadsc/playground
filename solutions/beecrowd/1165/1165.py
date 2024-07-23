@@ -1,5 +1,6 @@
 import math
 
+
 def is_prime(n):
     if n == 2:
         return True
@@ -16,4 +17,4 @@ n = int(input())
 
 for _ in range(n):
     x = int(input())
-    print(f"{x} eh primo" if is_prime(x) else f"{x} nao eh primo")
+    print(f'{x} eh primo' if is_prime(x) else f'{x} nao eh primo')
