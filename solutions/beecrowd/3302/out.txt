@@ -1,0 +1,5 @@
+resposta 1: 10
+resposta 2: 20
+resposta 3: 30
+resposta 1: 40
+resposta 2: 50
