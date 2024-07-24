@@ -14,7 +14,7 @@ Harbin in blocks of standard height and depth, and several different lengths.
 The artist can determine the length he wishes his block of ice and the
 sculpture can begin to be carved.
 
-The lengths of the available blocks are {$A_1$; $A_2$; ...; $a_N$} and
+The lengths of the available blocks are {$a_1$; $a_2$; ...; $a_N$} and
 wished length by the artist is M. The block with length = 1 is widely used,
 for this reason he always appears in the list of available blocks. Your
 task is to find the minimum number of blocks such that the sum of their
