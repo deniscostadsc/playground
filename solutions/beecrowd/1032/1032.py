@@ -47,10 +47,10 @@ def next_prime(number):
     if number in primes:
         return primes[number]
 
-    next = number + 1
-    while not is_prime(next):
-        next += 1
-    primes[number] = next
+    next_number = number + 1
+    while not is_prime(next_number):
+        next_number += 1
+    primes[number] = next_number
 
     return primes[number]
 
