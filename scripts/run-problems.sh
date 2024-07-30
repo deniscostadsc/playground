@@ -2,11 +2,11 @@
 
 set -euo pipefail
 
-FOLDERS=$1
-LANGUAGES=$2
-DOCKER_RUN_PREFIX=$3
+FOLDERS=${1}
+LANGUAGES=${2}
+DOCKER_RUN_PREFIX=${3}
 
-for language in $LANGUAGES; do
+for language in ${LANGUAGES}; do
     if [[ "${language}" == "sql" ]]; then
         FOLDERS="${FOLDERS}" \
         USER="$(id -u):$(id -g)" \

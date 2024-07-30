@@ -4,7 +4,7 @@ set -euo pipefail
 
 echo "$((RANDOM % 12))"
 
-if [ "$((RANDOM % 2))" -eq 0 ]; then
+if [[ "$((RANDOM % 2))" -eq 0 ]]; then
     echo "S"
 else
     echo "M"

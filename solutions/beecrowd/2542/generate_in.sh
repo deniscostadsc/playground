@@ -5,7 +5,7 @@ set -euo pipefail
 TESTCASES=80
 MAX_NUMBER=80
 
-for _ in $(seq 1 ${TESTCASES}); do
+for _ in $(seq 1 "${TESTCASES}"); do
     n=$((RANDOM % MAX_NUMBER + 1))
     m=$((RANDOM % MAX_NUMBER + 1))
     l=$((RANDOM % MAX_NUMBER + 1))
@@ -13,7 +13,7 @@ for _ in $(seq 1 ${TESTCASES}); do
     echo "${n}"
     echo "${m} ${l}"
 
-    for _ in $(seq 1 $m); do
+    for _ in $(seq 1 "${m}"); do
         if [[ n -eq 1 ]]; then
             echo "$((RANDOM % 100 + 1))"
         else
@@ -24,7 +24,7 @@ for _ in $(seq 1 ${TESTCASES}); do
         fi
     done
 
-    for _ in $(seq 1 $l); do
+    for _ in $(seq 1 "${l}"); do
         if [[ n -eq 1 ]]; then
             echo "$((RANDOM % 100 + 1))"
         else

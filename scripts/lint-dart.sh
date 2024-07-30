@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-if which dart > /dev/null; then
+if command -v dart > /dev/null; then
     dart format -o none --set-exit-if-changed . > /dev/null
 else
     true

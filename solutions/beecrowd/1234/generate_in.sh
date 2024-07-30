@@ -8,7 +8,7 @@ for (( i = 0; i < 1000; i++ )); do
     t=$((RANDOM % 40 + 10))
     for (( j = 0; j < t; j++ )); do
         c=$((RANDOM % 63))
-        echo -n "${chars[$c]}"
+        echo -n "${chars[${c}]}"
     done
     echo ""
 done

@@ -12,7 +12,7 @@ for _ in $(seq "${TEST_CASES}"); do
 
     echo "${n} ${m}"
 
-    for _ in $(seq ${n}); do
+    for _ in $(seq "${n}"); do
         if [[ $((RANDOM % 2)) -eq 0 ]]; then
             echo "$((RANDOM % 2147483647))"
         else

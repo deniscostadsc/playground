@@ -6,17 +6,17 @@ echo
 echo "KOTLIN"
 echo
 
-for folder in $FOLDERS; do
-    [ -f "${folder}WRONG" ] && continue
+for folder in ${FOLDERS}; do
+    [[ -f "${folder}WRONG" ]] && continue
 
-    if [ "$(find "$folder" -name '*.kt' | wc -l)" -eq 1 ]; then
-        echo "$folder" 
-        cd "$folder" || exit 1
+    if [[ "$(find "${folder}" -name '*.kt' | wc -l)" -eq 1 ]]; then
+        echo "${folder}"
+        cd "${folder}" || exit 1
 
         cp ./*.kt main.kt
         /kotlinc/bin/kotlinc main.kt
 
-        if [ -f in.txt ]; then
+        if [[ -f in.txt ]]; then
             /kotlinc/bin/kotlin MainKt < in.txt > result-kt.txt
         else
             /kotlinc/bin/kotlin MainKt > result-kt.txt

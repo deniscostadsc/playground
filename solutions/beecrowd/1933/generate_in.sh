@@ -4,6 +4,6 @@ set -euo pipefail
 
 for a in $(seq 1 13); do
     for b in $(seq 1 13); do
-        echo "$a $b"
+        echo "${a} ${b}"
     done
 done

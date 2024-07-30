@@ -6,7 +6,7 @@ for (( i = 0; i < 65; i++ )); do
     n=$((RANDOM % 1000 + 1))
     q=$((RANDOM % n + 1))
 
-    echo "$n $q"
+    echo "${n} ${q}"
 
     for (( j = 0; j < n; j++ )); do
         echo $((RANDOM % 100 + 1))

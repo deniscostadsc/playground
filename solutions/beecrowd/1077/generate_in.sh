@@ -14,18 +14,18 @@ function echo_operator {
     echo -n "${POSSIBLE_OPERATORS[$((RANDOM % 3))]}"
 }
 
-echo "$TESTCASES"
+echo "${TESTCASES}"
 
 operators_count=2
-for test_index in $(seq $TESTCASES); do
+for test_index in $(seq "${TESTCASES}"); do
     echo_term
-    for _ in $(seq $operators_count); do
+    for _ in $(seq "${operators_count}"); do
         echo_operator
         echo_term
     done
     echo
 
-    if [ $((test_index % 10)) -eq 0 ]; then
+    if [[ $((test_index % 10)) -eq 0 ]]; then
         operators_count=$((operators_count + 1))
     fi
 done

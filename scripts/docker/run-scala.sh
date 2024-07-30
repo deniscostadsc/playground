@@ -6,16 +6,16 @@ echo
 echo "SCALA"
 echo
 
-for folder in $FOLDERS; do
-    [ -f "${folder}WRONG" ] && continue
+for folder in ${FOLDERS}; do
+    [[ -f "${folder}WRONG" ]] && continue
 
-    if [ "$(find "$folder" -name '*.scala' | wc -l)" -eq 1 ]; then
-        echo "$folder" 
-        cd "$folder" || exit 1
+    if [[ "$(find "${folder}" -name '*.scala' | wc -l)" -eq 1 ]]; then
+        echo "${folder}"
+        cd "${folder}" || exit 1
 
         scalac ./*.scala
 
-        if [ -f in.txt ]; then
+        if [[ -f in.txt ]]; then
             scala Main < in.txt > result-scala.txt
         else
             scala Main > result-scala.txt

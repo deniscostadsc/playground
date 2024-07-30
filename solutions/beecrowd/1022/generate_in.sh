@@ -8,7 +8,7 @@ OPERATIONS=(/ + \* -)
 
 echo $((TESTCASES * 4))
 
-for _ in $(seq $TESTCASES); do
+for _ in $(seq "${TESTCASES}"); do
     a="$((RANDOM % MAX_RATIONAL + 1))"
     b="$((RANDOM % MAX_RATIONAL + 1))"
     c="$((RANDOM % MAX_RATIONAL + 1))"

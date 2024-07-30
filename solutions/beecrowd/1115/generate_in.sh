@@ -4,11 +4,11 @@ set -euo pipefail
 
 for x in $(seq -10 10); do
     for y in $(seq -10 10); do
-        if [ "$x" -eq 0 ] || [ "$y" -eq 0 ]; then
+        if [[ "${x}" -eq 0 ]] || [[ "${y}" -eq 0 ]]; then
             continue
         fi
 
-        echo "$x $y"
+        echo "${x} ${y}"
     done
 done
 

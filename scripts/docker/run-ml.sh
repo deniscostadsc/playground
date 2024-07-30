@@ -6,17 +6,17 @@ echo
 echo "OCAML"
 echo
 
-for folder in $FOLDERS; do
-    [ -f "${folder}WRONG" ] && continue
+for folder in ${FOLDERS}; do
+    [[ -f "${folder}WRONG" ]] && continue
 
-    if [ "$(find "$folder" -name '*.ml' | wc -l)" -eq 1 ]; then
-        echo "$folder" 
-        cd "$folder" || exit 1
+    if [[ "$(find "${folder}" -name '*.ml' | wc -l)" -eq 1 ]]; then
+        echo "${folder}"
+        cd "${folder}" || exit 1
 
         cp ./*.ml main.ml
         ocamlc -o ml.out main.ml
 
-        if [ -f in.txt ]; then
+        if [[ -f in.txt ]]; then
             ./ml.out < in.txt > result-ml.txt
         else
             ./ml.out > result-ml.txt

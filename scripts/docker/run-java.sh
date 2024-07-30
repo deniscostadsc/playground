@@ -6,17 +6,17 @@ echo
 echo "JAVA"
 echo
 
-for folder in $FOLDERS; do
-    [ -f "${folder}WRONG" ] && continue
+for folder in ${FOLDERS}; do
+    [[ -f "${folder}WRONG" ]] && continue
 
-    if [ "$(find "$folder" -name '*.java' | wc -l)" -eq 1 ]; then
-        echo "$folder" 
-        cd "$folder" || exit 1
+    if [[ "$(find "${folder}" -name '*.java' | wc -l)" -eq 1 ]]; then
+        echo "${folder}"
+        cd "${folder}" || exit 1
 
         cp ./*.java Main.java
         javac Main.java
 
-        if [ -f in.txt ]; then
+        if [[ -f in.txt ]]; then
             java Main < in.txt > result-java.txt
         else
             java Main > result-java.txt

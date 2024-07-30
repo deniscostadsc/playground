@@ -2,13 +2,13 @@
 
 set -euo pipefail
 
-pushd "$(dirname "$0")/.." > /dev/null
+pushd "$(dirname "${0}")/.." > /dev/null
 
 FOLDERS=$(find . -name 'problem.md' | sed 's/problem.md//g' | sort)
 
-for folder in $FOLDERS; do
+for folder in ${FOLDERS}; do
     solutions="$(\
-        find "$folder" \
+        find "${folder}" \
             -name '*.c' -o \
             -name '*.clj' -o \
             -name '*.cpp' -o \
@@ -30,7 +30,7 @@ for folder in $FOLDERS; do
             -name '*.scala' -o \
             -name '*.sql' | \
         grep -Ev 'drop-table.sql|schema.sql')"
-    echo "$(echo "$solutions" | wc -w | sed 's/ //g') $folder"
+    echo "$(echo "${solutions}" | wc -w | sed 's/ //g') ${folder}"
 done | sort -nr
 
 popd  > /dev/null

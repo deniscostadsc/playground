@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-if [ "$((RANDOM % 2))" -eq 0 ]; then
+if [[ "$((RANDOM % 2))" -eq 0 ]]; then
     echo "S"
 else
     echo "M"

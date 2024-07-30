@@ -6,10 +6,10 @@ echo
 echo "C++"
 echo
 
-for folder in $FOLDERS; do
+for folder in ${FOLDERS}; do
     [[ -f "${folder}WRONG" ]] && continue
-    if [[ "$(find "$folder" -name '*.cpp' | wc -l)" -eq 1 ]]; then
-        echo "$folder"
+    if [[ "$(find "${folder}" -name '*.cpp' | wc -l)" -eq 1 ]]; then
+        echo "${folder}"
         cd "${folder}" || exit 1
 
         g++ -Werror -std=c++20 -O2 -lm ./*.cpp

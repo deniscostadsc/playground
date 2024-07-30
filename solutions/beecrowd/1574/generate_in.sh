@@ -14,16 +14,16 @@ echo "LEFT"
 echo "1"
 echo "RIGHT"
 
-for _ in $(seq $TESTCASES); do
-    echo $commands_quantity
+for _ in $(seq "${TESTCASES}"); do
+    echo "${commands_quantity}"
 
-    for i in $(seq 1 $commands_quantity); do
+    for i in $(seq 1 "${commands_quantity}"); do
         command_choice=$((RANDOM % 3));
-        if [ "$i" -eq 1 ] && [ "$command_choice" -eq 2 ]; then
+        if [[ "${i}" -eq 1 ]] && [[ "${command_choice}" -eq 2 ]]; then
             command_choice=$((RANDOM % 2));
         fi
 
-        case $command_choice in
+        case ${command_choice} in
             0)
                 echo "RIGHT"
             ;;
@@ -32,7 +32,7 @@ for _ in $(seq $TESTCASES); do
             ;;
             2)
                 previous_index=$(((RANDOM % (i - 1)) + 1))
-                echo "SAME AS $previous_index"
+                echo "SAME AS ${previous_index}"
             ;;
         esac
     done

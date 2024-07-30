@@ -12,13 +12,13 @@ function random_number_for_2048 {
     fi
 }
 
-echo "$test_cases"
+echo "${test_cases}"
 
 # shellcheck disable=SC2034
-for i in $(seq $test_cases); do
+for i in $(seq "${test_cases}"); do
     for j in $(seq 4); do
         for k in $(seq 4); do
-            if [[ $k == 4 ]]; then
+            if [[ ${k} == 4 ]]; then
                 echo -n "$(random_number_for_2048)"
             else
                 echo -n "$(random_number_for_2048) "
