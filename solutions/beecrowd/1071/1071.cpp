@@ -2,26 +2,27 @@
 #include <iostream>
 
 int main() {
-    std::int16_t i, x, y, s = 0;
+    std::int64_t x, y, s;
 
-    std::cin >> x;
-    std::cin >> y;
+    while (std::cin >> x && std::cin >> y) {
+        if (x > y) {
+            int64_t temp = x;
+            x = y;
+            y = temp;
+        }
 
-    if (x < y) {
-        for (i = x + 1; i < y; i++) {
-            if (i % 2 != 0) {
-                s += i;
-            }
+        x++;
+        if (x % 2 == 0) {
+            x++;
         }
-    } else {
-        for (i = y + 1; i < x; i++) {
-            if (i % 2 != 0) {
-                s += i;
-            }
+
+        s = 0;
+        for (std::int64_t i = x; i < y; i += 2) {
+            s += i;
         }
+
+        std::cout << s << std::endl;
     }
-
-    std::cout << s << std::endl;
 
     return 0;
 }
