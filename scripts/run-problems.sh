@@ -10,7 +10,7 @@ for language in ${LANGUAGES}; do
     if [[ "${language}" == "sql" ]]; then
         FOLDERS="${FOLDERS}" \
         USER="$(id -u):$(id -g)" \
-        docker-compose \
+        docker compose \
             -f .docker/sql-docker-compose.yml \
             up \
             --build \
