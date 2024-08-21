@@ -3,4 +3,4 @@ FROM haskell:latest
 RUN mkdir /code
 WORKDIR /code
 
-CMD /code/scripts/docker/run-hs.sh $FOLDERS
+CMD /code/scripts/docker/run-hs.sh

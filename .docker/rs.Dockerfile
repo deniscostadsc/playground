@@ -5,4 +5,4 @@ ENV RUST_BACKTRACE 1
 RUN mkdir /code
 WORKDIR /code
 
-CMD /code/scripts/docker/run-rs.sh $FOLDERS
+CMD /code/scripts/docker/run-rs.sh

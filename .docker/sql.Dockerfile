@@ -11,4 +11,4 @@ RUN cd /bin && \
     wget https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh && \
     chmod +x wait-for-it.sh
 
-CMD /bin/wait-for-it.sh database-server:5432 && /code/scripts/docker/run-sql.sh $FOLDERS
+CMD /bin/wait-for-it.sh database-server:5432 && /code/scripts/docker/run-sql.sh

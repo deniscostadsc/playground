@@ -6,8 +6,6 @@ echo
 echo "C"
 echo
 
-FOLDERS=$(find . -name 'problem.md' | sed 's/problem.md//g' | sort)
-
 for folder in ${FOLDERS}; do
     [[ -f "${folder}WRONG" ]] && continue
 

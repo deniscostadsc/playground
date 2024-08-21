@@ -11,4 +11,4 @@ RUN cd ocaml-${OCAML_VERSION} && ./configure && make world.opt && make install
 RUN mkdir /code
 WORKDIR /code
 
-CMD /code/scripts/docker/run-ml.sh $FOLDERS
+CMD /code/scripts/docker/run-ml.sh

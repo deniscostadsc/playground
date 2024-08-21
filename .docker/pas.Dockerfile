@@ -7,4 +7,4 @@ RUN apt update && \
 RUN mkdir /code
 WORKDIR /code
 
-CMD /code/scripts/docker/run-pas.sh $FOLDERS
+CMD /code/scripts/docker/run-pas.sh
