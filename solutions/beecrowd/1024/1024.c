@@ -43,7 +43,7 @@ int main() {
                 line[j] = line[j] + 3;
             }
             if (j >= line_length / 2) {
-                line[j] = line[j] - 1;
+                line[j]--;
             }
         }
 
