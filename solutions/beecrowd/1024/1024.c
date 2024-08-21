@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <stdint.h>
+#include <stdio.h>
 #include <string.h>
 
 #define MAX_M 1000
@@ -38,8 +38,8 @@ int main() {
         reverse_string(line);
 
         for (uint16_t j = 0; j < line_length; j++) {
-            if ((line[j] >= 65 && line[j] <= 90) // between A and Z
-                || (line[j] >= 97 && line[j] <= 122)) { // between a and z
+            if ((line[j] >= 65 && line[j] <= 90)  // between A and Z
+                || (line[j] >= 97 && line[j] <= 122)) {  // between a and z
                 line[j] = line[j] + 3;
             }
             if (j >= line_length / 2) {
