@@ -5,7 +5,6 @@ int main() {
     int64_t x, y, s;
 
     while (scanf("%lld", &x) != EOF && scanf("%lld", &y) != EOF) {
-
         if (x > y) {
             int64_t temp = x;
             x = y;
