@@ -4,8 +4,8 @@ set -euo pipefail
 
 TESTCASES=1000
 
-echo "$TESTCASES"
-for _ in $(seq $TESTCASES); do
+echo "${TESTCASES}"
+for _ in $(seq "${TESTCASES}"); do
     if [[ $((RANDOM % 2)) -eq 0 ]]; then
         echo "$((RANDOM % 10000 + 1)) $((RANDOM % 100 + 1))"
     else

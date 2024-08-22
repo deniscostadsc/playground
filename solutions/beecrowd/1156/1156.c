@@ -6,7 +6,7 @@ int main() {
     int16_t i;
 
     for (i = 3; i <= 39; i += 2) {
-        s += (double)(i / x);
+        s += i / x;
         x *= 2;
     }
 
