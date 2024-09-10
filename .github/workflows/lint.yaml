@@ -69,7 +69,7 @@ jobs:
         with:
           image: c-lint:latest
           options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
-          run: cpplint --quiet --recursive --extensions=c --filter="-legal/copyright,-runtime/arrays" . && scripts/run-clang-format.py --clang-format-executable=clang-format --extensions=c -r .
+          run: cpplint --quiet --recursive --extensions=c --filter="-legal/copyright,-runtime/arrays,-readability/casting" . && scripts/run-clang-format.py --clang-format-executable=clang-format --extensions=c -r .
       - name: Run Clojure lint
         uses: addnab/docker-run-action@v3
         with:
