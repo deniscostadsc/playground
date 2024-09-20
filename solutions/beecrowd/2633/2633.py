@@ -17,7 +17,7 @@ for line in sys.stdin:
 
     for i in range(n):
         if i > 0 and i < n:
-            print(" ", end="")
-        print(heapq.heappop(sorted_ingredients)[1], end="")
+            print(' ', end='')
+        print(heapq.heappop(sorted_ingredients)[1], end='')
 
     print()
