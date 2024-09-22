@@ -3,7 +3,7 @@
 
 int main() {
     std::int16_t d, t, i, s = 0;
-    while(scanf("%d", &d) != EOF) {
+    while (scanf("%d", &d) != EOF) {
         scanf("%d", &t);
 
         std::int32_t s = 0;
