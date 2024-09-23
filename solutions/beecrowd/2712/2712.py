@@ -1,8 +1,10 @@
 import re
 
+
 def is_valid_plate(plate):
     match = re.match(r'^[A-Z]{3}-\d{4}$', plate)
     return bool(match)
+
 
 def get_restricted_day(plate):
     match tuple(plate):
@@ -16,6 +18,7 @@ def get_restricted_day(plate):
             return 'THURSDAY'
         case [*_, '9' | '0']:
             return 'FRIDAY'
+
 
 n = int(input())
 for _ in range(n):
