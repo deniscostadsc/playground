@@ -1,0 +1,8 @@
+    cpf     |       enome       |  dnome   
+------------+-------------------+----------
+ 1014332672 | Natalia Marques   | Pesquisa
+ 1733332162 | Tulio Vidal       | Ensino
+ 2434332222 | Aline Barros      | Pesquisa
+ 4244435272 | Juliana Rodrigues | Ensino
+(4 rows)
+

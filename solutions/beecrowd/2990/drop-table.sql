@@ -1,0 +1,1 @@
+DROP TABLE empregados, trabalha, departamentos, projetos CASCADE;
