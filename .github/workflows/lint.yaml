@@ -68,36 +68,36 @@ jobs:
         uses: addnab/docker-run-action@v3
         with:
           image: c-lint:latest
-          options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
+          options: -v ${{ github.workspace }}:/code
           run: cpplint --quiet --recursive --extensions=c --filter="-legal/copyright,-runtime/arrays,-readability/casting" . && scripts/run-clang-format.py --clang-format-executable=clang-format --extensions=c -r .
       - name: Run Clojure lint
         uses: addnab/docker-run-action@v3
         with:
           image: clj-lint:latest
-          options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
+          options: -v ${{ github.workspace }}:/code
           run: ./scripts/lint-clj.sh
       - name: Run C++ lint
         uses: addnab/docker-run-action@v3
         with:
           image: cpp-lint:latest
-          options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
+          options: -v ${{ github.workspace }}:/code
           run: cpplint --quiet --recursive --extensions=cpp --filter="-legal/copyright,-runtime/arrays" . && scripts/run-clang-format.py --clang-format-executable=clang-format --extensions=cpp -r .
       - name: Run Dart lint
         uses: addnab/docker-run-action@v3
         with:
           image: dart-lint:latest
-          options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
+          options: -v ${{ github.workspace }}:/code
           run: ./scripts/lint-dart.sh
       - name: Run Go lint
         uses: addnab/docker-run-action@v3
         with:
           image: go-lint:latest
-          options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
+          options: -v ${{ github.workspace }}:/code
           run: |
             [ "$(gofmt -l . | wc -l)" -eq 0 ]
       - name: Run Python lint
         uses: addnab/docker-run-action@v3
         with:
           image: py-lint:latest
-          options: -v ${{ github.workspace }}:/code -e LINT_FIX=1
+          options: -v ${{ github.workspace }}:/code
           run: blue --check . && flake8 && isort -c .
