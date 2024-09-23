@@ -1,0 +1,26 @@
+Ana YES
+Luana YES
+Frederico YES
+Julia YES
+Felipe YES
+Ricardo NO
+Carlos YES
+Jessica YES
+Maria YES
+Ana YES
+João NO
+Mariane NO
+Felipe YES
+Carlos YES
+Luana YES
+Jessica YES
+Beatriz NO
+Mateus NO
+Ana YES
+Julia YES
+Tiago NO
+Frederico YES
+Luana YES
+Maria YES
+Ana YES
+FIM
