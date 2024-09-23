@@ -48,7 +48,7 @@ def main():
     c = int(input())
     for test_case_index in range(1, c + 1):
         root = Node()
-        _ = int(input())
+        _ = input()
         numbers = map(int, input().split())
         for number in numbers:
             root.insert(number)
