@@ -7,7 +7,7 @@ RUN apt update -y && apt upgrade -y && apt install clang-format -y
 RUN mkdir /code
 WORKDIR /code
 
-CMD echo "c"; if [ "$LINT_FIX" = 1 ]; then \
+CMD echo "c"; if [ "${LINT_FIX:=0}" -eq 1 ]; then \
         clang-format \
             --style=file \
             -i \
