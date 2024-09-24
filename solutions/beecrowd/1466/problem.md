@@ -12,6 +12,8 @@ So the work here is, after some operations of insertion over a binary search
 tree, print the level order traversal of this tree. For example, an input with
 the sequence of numbers: 8 3 10 14 6 4 13 7 1 will result in the following tree:
 
+<center><img src="imgs/UOJ_1466.webp"></center>
+
 With the level order traversal output: 8 3 10 1 6 14 4 7 13.
 
 ## Input
