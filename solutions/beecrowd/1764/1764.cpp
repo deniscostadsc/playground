@@ -10,11 +10,6 @@ struct arc {
     std::int32_t weight;
 };
 
-struct disjoint_node {
-    std::int32_t node;
-    disjoint_node *parent;
-};
-
 std::vector< arc > arcs;
 std::map< std::int32_t, std::int32_t > disjoint_set;
 
