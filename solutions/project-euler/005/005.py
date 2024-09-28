@@ -1,3 +1,6 @@
+import functools
+
+
 def gcd(x, y):
     if y == 0:
         return x
@@ -5,15 +8,7 @@ def gcd(x, y):
 
 
 def lcm(x, y):
-    return abs(x) / gcd(x, y) * abs(y)
+    return int(abs(x) / gcd(x, y) * abs(y))
 
 
-def lcm_many(numbers):
-    result = numbers[0]
-
-    for n in numbers[1:]:
-        result = lcm(result, n)
-    return result
-
-
-print(int(lcm_many(range(1, 21))))
+print(functools.reduce(lcm, range(1, 21)))
