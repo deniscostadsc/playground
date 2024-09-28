@@ -19,8 +19,6 @@ for folder in ${FOLDERS}; do
             clojure -M ./*.clj > result-clj.txt
         fi
 
-        rm -rf './?'
-
         diff result-clj.txt out.txt
 
         cd - > /dev/null
