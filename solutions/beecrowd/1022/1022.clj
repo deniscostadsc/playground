@@ -1,61 +1,41 @@
 (ns main
   (:require [clojure.string :as str]))
 
-(defn debug [x]
-  (println x)
-  x)
-(defn gimme-type [x]
-  (println (type x))
-  x)
-
 (defn gcd [a b]
-  (println (type a) " - " (type b))
   (loop [a' a
          b' b]
-    (println (type a') " - " (type b'))
     (if (= 0 b')
       a'
-      (recur 'b (mod a' b')))))
+      (recur b' (mod a' b')))))
 
 (defn process-input [line]
   (let [[a' _ b' o c' _ d'] (str/split line #" ")
         [a b c d] (map #(Integer/parseInt %) [a' b' c' d'])]
     (cond
       (= o "+")
-      (-> (* b d)
-          (* a)
-          (/ b)
-          (+ (* b d))
-          (* c)
-          (/ d)
-          (gcd (* b d)))
+      (let [n (+ (* a d) (* c b))
+            d (* b d)]
+        [n d])
       (= o "-")
-      (-> (* b d)
-          (* a)
-          (/ b)
-          (- (* b d))
-          (* c)
-          (/ d)
-          (gcd (* b d)))
+      (let [n (- (* a d) (* c b))
+            d (* b d)]
+        [n d])
       (= o "*")
-      (-> a
-          (* c)
-          (gcd (* b d)))
+      (let [n (* a c)
+            d (* b d)]
+        [n d])
       :else
-      (-> a
-          (debug)
-          (gimme-type)
-          (* d)
-          (debug)
-          (gimme-type)
-          (gcd (* b c))))))
+      (let [n (* a d)
+            d (* b c)]
+        [n d]))))
 
 (defn main []
   (let [c (-> (read-line)
               (Integer/parseInt))]
     (loop [c' c]
-      (process-input (read-line))
-      (when c'
-        (recur (- c' 1))))))
+      (when (> c' 0)
+        (let [[n d] (process-input (read-line))]
+          (println (format "%d/%d = %d/%d" n d (/ n (gcd n d)) (/ d (gcd n d))))
+          (recur (- c' 1)))))))
 
 (main)
