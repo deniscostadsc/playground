@@ -1,0 +1,5 @@
+ most_frequent_value 
+---------------------
+                   1
+(1 row)
+
