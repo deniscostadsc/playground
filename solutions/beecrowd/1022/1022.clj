@@ -8,34 +8,31 @@
       a'
       (recur b' (mod a' b')))))
 
-(defn process-input [line]
-  (let [[a' _ b' o c' _ d'] (str/split line #" ")
-        [a b c d] (map #(Integer/parseInt %) [a' b' c' d'])]
-    (cond
-      (= o "+")
-      (let [n (+ (* a d) (* c b))
-            d (* b d)]
-        [n d])
-      (= o "-")
-      (let [n (- (* a d) (* c b))
-            d (* b d)]
-        [n d])
-      (= o "*")
-      (let [n (* a c)
-            d (* b d)]
-        [n d])
-      :else
-      (let [n (* a d)
-            d (* b c)]
-        [n d]))))
+(defn solve-expression [num-1 num-2 operator den-1 den-2]
+  (cond
+    (= operator "+")
+    [(+ (* num-1 den-2) (* den-1 num-2))
+     (* num-2 den-2)]
+    (= operator "-")
+    [(- (* num-1 den-2) (* den-1 num-2))
+     (* num-2 den-2)]
+    (= operator "*")
+    [(* num-1 den-1)
+     (* num-2 den-2)]
+    :else
+    [(* num-1 den-2)
+     (* num-2 den-1)]))
 
 (defn main []
-  (let [c (-> (read-line)
+  (let [n (-> (read-line)
               (Integer/parseInt))]
-    (loop [c' c]
-      (when (> c' 0)
-        (let [[n d] (process-input (read-line))]
-          (println (format "%d/%d = %d/%d" n d (/ n (gcd n d)) (/ d (gcd n d))))
-          (recur (- c' 1)))))))
+    (loop [n' n]
+      (when (> n' 0)
+        (let [[num-1 _ num-2 operator den-1 _ den-2] (str/split (read-line) #" ")
+              [num-1' num-2' den-1' den-2'] (map #(Integer/parseInt %) [num-1 num-2 den-1 den-2])
+              [num den] (solve-expression num-1' num-2' operator den-1' den-2')
+              gcd (gcd num den)]
+          (println (format "%d/%d = %d/%d" num den (/ num gcd) (/ den gcd)))
+          (recur (- n' 1)))))))
 
 (main)
