@@ -63,7 +63,7 @@ function help () {
     echo "  -s | --site <programming contest site>"
     echo "  -p | --problem <problem code>"
     echo "  -i | --input-file <input file>"
-    echo "  -m | --multiple-input-files"
+    echo "  -m | --multiple-input-files <input files folder>"
     echo "  -l | --split-lines"
     echo "  -h | --help"
     echo
@@ -95,7 +95,9 @@ while [[ $# -gt 0 ]]; do
             shift
         ;;
         -m|--multiple-input-files)
+            shift
             multiple_input_files=1
+            input_files_folder="${1}"
             shift
         ;;
         -l|--split-lines)
@@ -140,9 +142,24 @@ if [[ "${single_input_file}" -eq 1 ]]; then
 fi
 
 if [[ "${multiple_input_files}" -eq 1 ]]; then
-    for input_file in in-??.txt; do
-        output_suffix="$(echo "${input_file}" | grep -o '[0-9]\{2\}')"
+    input_files_count=$(find "./${input_files_folder%/}" -regex '^.*/in-[0-9]\{1,\}\.txt$' | wc -l)
+    if [[ ${input_files_count} -eq 0 ]]; then
+        echo "Option -m expect at least one file like in-<numbers>.txt"
+        exit 1
+    fi
+    for input_file in "${input_files_folder%/}/"in-*; do
+        output_suffix="$(echo "${input_file}" | grep -o 'in-[0-9]\+.txt' | grep -o '[0-9]\+')"
+        if [[ ! -f "${input_files_folder%/}"/out-${output_suffix}.txt ]]; then
+            touch "${input_files_folder%/}/out-${output_suffix}.txt"
+        fi
+        # shellcheck disable=SC2012
+        output_size=$(ls -la "${input_files_folder%/}/out-${output_suffix}.txt" | tr -s ' ' | cut -d' ' -f 5)
+        if [[ ${output_size} -gt 0 ]]; then
+            continue
+        fi
+        echo "${input_file}"
+        cat "${input_file}"
         form_token="$(get_form_token "${site}" "${problem_id}")"
-        get_output "${site}" "${problem_id}" "$(cat "${input_file}")" "${form_token}" > "out-${output_suffix}.txt"
+        get_output "${site}" "${problem_id}" "$(cat "${input_file}")" "${form_token}" > "${input_files_folder%/}/out-${output_suffix}.txt"
     done
 fi
