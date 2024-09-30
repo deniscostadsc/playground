@@ -19,7 +19,14 @@ int main() {
             if (c != 1) {
                 puts("*");
             } else {
-                printf("%c\n", l[r]);
+                // buggy code was printing non readable characters
+                if (r == 0) {
+                    printf("A\n");
+                } else if (r == 1) {
+                    printf("B\n");
+                } else {
+                    printf("%c\n", l[r]);
+                }
             }
         }
     }
