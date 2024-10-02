@@ -148,6 +148,7 @@ if [[ "${multiple_input_files}" -eq 1 ]]; then
         exit 1
     fi
     for input_file in "${input_files_folder%/}/"in-*; do
+        echo "${input_file}"
         output_suffix="$(echo "${input_file}" | grep -o 'in-[0-9]\+.txt' | grep -o '[0-9]\+')"
         if [[ ! -f "${input_files_folder%/}"/out-${output_suffix}.txt ]]; then
             touch "${input_files_folder%/}/out-${output_suffix}.txt"
@@ -157,8 +158,6 @@ if [[ "${multiple_input_files}" -eq 1 ]]; then
         if [[ ${output_size} -gt 0 ]]; then
             continue
         fi
-        echo "${input_file}"
-        cat "${input_file}"
         form_token="$(get_form_token "${site}" "${problem_id}")"
         get_output "${site}" "${problem_id}" "$(cat "${input_file}")" "${form_token}" > "${input_files_folder%/}/out-${output_suffix}.txt"
     done
