@@ -5,9 +5,7 @@ void main() {
   int final_day, final_hour, final_minute, final_second;
   var line;
 
-  for (line = stdin.readLineSync();
-      line != null;
-      line = stdin.readLineSync()) {
+  for (line = stdin.readLineSync(); line != null; line = stdin.readLineSync()) {
     var line_items = line.split(' ');
     initial_day = int.parse(line_items[1]);
 
@@ -33,18 +31,18 @@ void main() {
     var delta_day = final_day - initial_day;
 
     if (delta_second < 0) {
-        delta_second += 60;
-        delta_minute -= 1;
+      delta_second += 60;
+      delta_minute -= 1;
     }
 
     if (delta_minute < 0) {
-        delta_minute += 60;
-        delta_hour -= 1;
+      delta_minute += 60;
+      delta_hour -= 1;
     }
 
     if (delta_hour < 0) {
-        delta_hour += 24;
-        delta_day -= 1;
+      delta_hour += 24;
+      delta_day -= 1;
     }
 
     print('${delta_day} dia(s)');
