@@ -25,12 +25,14 @@
 
 (defn main []
   (loop [line (read-line)]
-    (let [[_ initial-day] (str/split line #" ")
-          initial-day (Integer/parseInt initial-day)
+    (let [[initial-day] (->> (str/split line #" ")
+                             (take-last 1)
+                             (map #(Integer/parseInt %)))
           [initial-hour initial-minute initial-second] (->> (str/split (read-line) #" : ")
                                                             (map #(Integer/parseInt %)))
-          [_ final-day] (str/split (read-line) #" ")
-          final-day (Integer/parseInt final-day)
+          [final-day] (->> (str/split (read-line) #" ")
+                           (take-last 1)
+                           (map #(Integer/parseInt %)))
           [final-hour final-minute final-second] (->> (str/split (read-line) #" : ")
                                                       (map #(Integer/parseInt %)))
           next-line (read-line)]
