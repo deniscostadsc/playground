@@ -21,8 +21,8 @@ fib(4), i.e. the fifth value of this sequence:
 ![](imgs/UOJ_1029.png)
 
 In this way,
-fib(4) = 1+0+1+1+0 = 3
-8 recursive calls were done.
+- fib(4) = 1+0+1+1+0 = 3
+- 8 recursive calls were done.
 
 ## Input
 
