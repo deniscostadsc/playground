@@ -58,6 +58,15 @@ jobs:
       - uses: docker/build-push-action@v4
         with:
           context: .
+          file: ".docker/lint/js-lint.Dockerfile"
+          tags: js-lint:latest
+          load: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          push: false
+      - uses: docker/build-push-action@v4
+        with:
+          context: .
           file: ".docker/lint/py-lint.Dockerfile"
           tags: py-lint:latest
           load: true
@@ -104,6 +113,12 @@ jobs:
           options: -v ${{ github.workspace }}:/code
           run: |
             [ "$(gofmt -l . | wc -l)" -eq 0 ]
+      - name: Run Javascript lint
+        uses: addnab/docker-run-action@v3
+        with:
+          image: js-lint:latest
+          options: -v ${{ github.workspace }}:/code
+          run: standard
       - name: Run Python lint
         uses: addnab/docker-run-action@v3
         with:
