@@ -1,14 +1,12 @@
 import sys
 
-sys.setrecursionlimit(10002)
 
-
-# TODO: convert this function to interactive
 def josephus(n: int, k: int) -> int:
-    if n == 1:
-        return 1
+    result = 1
+    for current_n in range(2, n + 1):
+        result = (result + k - 1) % current_n + 1
 
-    return ((josephus(n - 1, k) + k - 1) % n) + 1
+    return result
 
 
 _ = input()
