@@ -1,5 +1,6 @@
 #include <cstdint>
 #include <iostream>
+#include <string>
 
 void reverse(std::string n) {
     std::string reversed_n = "";

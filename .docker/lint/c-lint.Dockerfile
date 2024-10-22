@@ -17,7 +17,7 @@ CMD echo "c"; if [ "${LINT_FIX:=0}" -eq 1 ]; then \
             --quiet \
             --recursive \
             --extensions=c \
-            --filter="-legal/copyright,-runtime/arrays,-readability/casting" . && \
+            --filter="-legal/copyright,-runtime/arrays,-readability/casting,-build/include_what_you_use" . && \
         scripts/run-clang-format.py \
             --clang-format-executable=clang-format \
             --extensions=c \

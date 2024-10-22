@@ -1,5 +1,6 @@
 #include <cstdint>
 #include <iostream>
+#include <string>
 #include <vector>
 
 std::vector< std::int32_t > sequence;

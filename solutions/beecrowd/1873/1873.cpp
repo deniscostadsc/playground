@@ -1,5 +1,6 @@
 #include <cstdint>
 #include <iostream>
+#include <string>
 
 std::string rock_paper_scissors_lizard_spock_judge(
     std::string rajeshs_hand, std::string sheldons_hand) {

@@ -1,5 +1,6 @@
 #include <cstdint>
 #include <iostream>
+#include <string>
 
 bool is_password_valid(std::string password) {
     if (!(password.size() >= 6 && password.size() <= 32)) {

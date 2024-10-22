@@ -2,6 +2,7 @@
 #include <cstdio>
 #include <iostream>
 #include <map>
+#include <string>
 
 int main() {
     std::int16_t n, completeness;

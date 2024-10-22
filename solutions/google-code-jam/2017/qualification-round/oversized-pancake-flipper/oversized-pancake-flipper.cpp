@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 int main() {
     std::int16_t t, flipper_capacity;

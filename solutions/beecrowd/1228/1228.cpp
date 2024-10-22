@@ -1,5 +1,6 @@
 #include <cstdint>
 #include <iostream>
+#include <string>
 #include <vector>
 
 std::int16_t find(std::vector< std::int16_t > v, std::int16_t n) {

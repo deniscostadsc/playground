@@ -1,6 +1,7 @@
 #include <algorithm>
 #include <cstring>
 #include <iostream>
+#include <string>
 
 int main() {
     std::int16_t t, n, m, lcs;

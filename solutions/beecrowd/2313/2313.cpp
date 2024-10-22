@@ -2,6 +2,7 @@
 #include <cmath>
 #include <cstdint>
 #include <iostream>
+#include <string>
 
 bool can_form_triangle(std::int16_t a, std::int16_t b, std::int16_t c) {
     if (a >= b + c) {

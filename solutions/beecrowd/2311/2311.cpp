@@ -1,6 +1,8 @@
+#include <algorithm>
 #include <cstdint>
 #include <iomanip>
 #include <iostream>
+#include <string>
 
 int main() {
     std::int16_t n, i;

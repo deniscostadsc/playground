@@ -6,6 +6,9 @@ TESTCASES=4062
 MAX_CHARS_PER_LINE=1000
 
 function chr {
+    #shellcheck disable=SC2046
+    #shellcheck disable=SC2059
+    #shellcheck disable=SC2086
     printf \\$(printf '%03o' $1)
 }
 
