@@ -64,6 +64,15 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           push: false
+      - uses: docker/build-push-action@v4
+        with:
+          context: .
+          file: ".docker/lint/sh-lint.Dockerfile"
+          tags: sh-lint:latest
+          load: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          push: false
       - name: Run C lint
         uses: addnab/docker-run-action@v3
         with:
@@ -101,3 +110,9 @@ jobs:
           image: py-lint:latest
           options: -v ${{ github.workspace }}:/code
           run: blue --check . && flake8 && isort -c .
+      - name: Run Shell lint
+        uses: addnab/docker-run-action@v3
+        with:
+          image: sh-lint:latest
+          options: -v ${{ github.workspace }}:/code
+          run: ./scripts/lint-sh.sh
