@@ -1,2 +1,1250 @@
-R1 = -0.29788
-R2 = -1.71212
+Impossivel calcular
+R1 = -2.00000
+R2 = -7.00000
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.05293
+R2 = -9.44707
+R1 = -1.06727
+R2 = -8.43273
+R1 = -1.76393
+R2 = -6.23607
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.24663
+R2 = -2.89623
+R1 = -0.50000
+R2 = -3.00000
+R1 = -0.92051
+R2 = -13.57949
+R1 = -1.92397
+R2 = -8.57603
+Impossivel calcular
+Impossivel calcular
+R1 = -2.83485
+R2 = -21.16515
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.08701
+R2 = -5.74632
+R1 = -0.63927
+R2 = -14.86073
+R1 = -0.75379
+R2 = -17.24621
+R1 = -0.93786
+R2 = -11.72880
+Impossivel calcular
+Impossivel calcular
+R1 = -1.80113
+R2 = -37.19887
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.04360
+R2 = -15.28973
+R1 = -0.22446
+R2 = -22.27554
+R1 = -0.53672
+R2 = -10.71328
+R1 = -0.92963
+R2 = -5.73703
+R1 = -1.36430
+R2 = -4.92141
+R1 = -1.58232
+R2 = -3.86213
+R1 = -1.49375
+R2 = -41.50625
+R1 = -1.89221
+R2 = -39.10779
+Impossivel calcular
+R1 = -2.82986
+R2 = -10.83680
+R1 = -0.10223
+R2 = -19.56444
+R1 = -0.26052
+R2 = -53.73948
+R1 = -0.42898
+R2 = -12.82102
+R1 = -0.83108
+R2 = -4.94670
+R1 = -0.79921
+R2 = -13.45079
+R1 = -1.04356
+R2 = -23.95644
+R1 = -2.00000
+R2 = -3.66667
+R1 = -2.33333
+R2 = -3.33333
+Impossivel calcular
+Impossivel calcular
+R1 = -0.09739
+R2 = -15.40261
+R1 = -0.25403
+R2 = -15.74597
+R1 = -0.43153
+R2 = -62.56847
+R1 = -0.48439
+R2 = -16.51561
+R1 = -0.74168
+R2 = -6.59165
+R1 = -1.00000
+R2 = -6.75000
+R1 = -0.96727
+R2 = -21.36607
+R1 = -1.76986
+R2 = -4.89681
+R1 = -1.44420
+R2 = -11.35580
+R1 = -1.78102
+R2 = -7.21898
+R1 = -0.05278
+R2 = -18.94722
+R1 = -0.22921
+R2 = -9.27079
+R1 = -0.34850
+R2 = -18.65150
+R1 = -0.41564
+R2 = -74.58436
+R1 = -0.65561
+R2 = -35.84439
+R1 = -0.87527
+R2 = -7.23584
+R1 = -0.94290
+R2 = -71.05710
+R1 = -1.11585
+R2 = -13.08415
+R1 = -1.28678
+R2 = -10.87989
+R1 = -1.44686
+R2 = -21.88647
+R1 = -0.10742
+R2 = -41.89258
+Impossivel calcular
+R1 = -0.25321
+R2 = -19.74679
+R1 = -0.44763
+R2 = -27.55237
+R1 = -0.49671
+R2 = -8.94773
+R1 = -0.65592
+R2 = -21.34408
+Impossivel calcular
+R1 = -0.94744
+R2 = -39.05256
+R1 = -1.02533
+R2 = -40.47467
+R1 = -1.17805
+R2 = -8.48862
+R1 = -0.01087
+R2 = -91.98913
+Impossivel calcular
+R1 = -0.27900
+R2 = -17.92100
+Impossivel calcular
+R1 = -0.48058
+R2 = -13.37656
+R1 = -0.62448
+R2 = -18.57552
+R1 = -0.67318
+R2 = -11.32682
+R1 = -0.84793
+R2 = -14.15207
+R1 = -1.01191
+R2 = -21.98809
+R1 = -1.05504
+R2 = -31.27829
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.25000
+R2 = -2.00000
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.20773
+R2 = -1.92561
+R1 = -0.47424
+R2 = -1.71326
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.21149
+R2 = -2.52185
+R1 = -0.31229
+R2 = -2.97342
+R1 = -0.92891
+R2 = -1.93776
+R1 = -0.85714
+R2 = -2.50000
+R1 = -2.00000
+R2 = -2.09091
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.07465
+R2 = -2.82008
+R1 = -0.31075
+R2 = -4.02259
+R1 = -0.47789
+R2 = -5.02211
+R1 = -0.73872
+R2 = -2.20864
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.08953
+R2 = -6.09229
+R1 = -0.29695
+R2 = -3.57805
+R1 = -0.46167
+R2 = -3.18539
+R1 = -0.52574
+R2 = -3.35661
+R1 = -0.73892
+R2 = -4.51108
+R1 = -0.97837
+R2 = -5.20345
+R1 = -1.16598
+R2 = -4.83402
+Impossivel calcular
+R1 = -1.87185
+R2 = -4.12815
+Impossivel calcular
+R1 = -0.11182
+R2 = -5.50357
+R1 = -0.13570
+R2 = -4.33489
+R1 = -0.31006
+R2 = -3.98406
+R1 = -0.50000
+R2 = -6.00000
+R1 = -0.66667
+R2 = -5.50000
+R1 = -0.83815
+R2 = -4.29519
+R1 = -1.28493
+R2 = -2.66243
+R1 = -1.33941
+R2 = -3.94631
+R1 = -1.48813
+R2 = -5.71187
+R1 = -1.88698
+R2 = -3.17969
+R1 = 0.00000
+R2 = -5.37500
+R1 = -0.12704
+R2 = -4.55717
+R1 = -0.25082
+R2 = -6.13380
+R1 = -0.48867
+R2 = -3.98501
+R1 = -0.52341
+R2 = -7.29477
+R1 = -0.64973
+R2 = -4.52674
+R1 = -0.88094
+R2 = -7.71906
+R1 = -1.20918
+R2 = -3.26451
+R1 = -1.29226
+R2 = -4.20774
+R1 = -1.61257
+R2 = -3.72076
+R1 = -0.07903
+R2 = -4.92097
+R1 = -0.11753
+R2 = -7.79913
+R1 = -0.27394
+R2 = -9.12606
+R1 = -0.40992
+R2 = -6.44722
+R1 = -0.47103
+R2 = -9.12897
+R1 = -0.61827
+R2 = -4.49284
+R1 = -0.75569
+R2 = -4.41098
+R1 = -1.00000
+R2 = -4.58824
+R1 = -1.02917
+R2 = -5.57083
+R1 = -1.37274
+R2 = -3.68281
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = 0.00000
+R2 = -1.00000
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.17589
+R2 = -1.09334
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.17199
+R2 = -1.62801
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.10587
+R2 = -2.57594
+R1 = -0.34907
+R2 = -1.86832
+R1 = -0.52109
+R2 = -2.19319
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.06404
+R2 = -2.60263
+R1 = -0.20339
+R2 = -2.55661
+R1 = -0.54275
+R2 = -2.13725
+R1 = -0.70304
+R2 = -2.34696
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.08384
+R2 = -2.46789
+R1 = -0.28722
+R2 = -2.16106
+R1 = -0.37690
+R2 = -2.88397
+R1 = -0.62209
+R2 = -2.72574
+R1 = -0.77677
+R2 = -2.30656
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.10391
+R2 = -3.76565
+R1 = -0.20897
+R2 = -2.94488
+R1 = -0.34633
+R2 = -3.75367
+R1 = -0.43616
+R2 = -2.90999
+R1 = -0.54359
+R2 = -3.50403
+R1 = -0.90815
+R2 = -2.12633
+R1 = -1.14416
+R2 = -2.50802
+R1 = -1.36754
+R2 = -2.63246
+Impossivel calcular
+Impossivel calcular
+R1 = -0.08491
+R2 = -4.48652
+R1 = -0.10419
+R2 = -3.30960
+R1 = -0.31311
+R2 = -4.25832
+R1 = -0.39365
+R2 = -3.19894
+R1 = -0.50726
+R2 = -3.36774
+R1 = -0.69031
+R2 = -3.52708
+R1 = -0.87250
+R2 = -2.96083
+R1 = -1.24585
+R2 = -2.40800
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = 0.00000
+R2 = -0.75758
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.08571
+R2 = -1.00000
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.10308
+R2 = -1.25176
+R1 = -0.26697
+R2 = -1.17053
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.01803
+R2 = -1.84864
+R1 = -0.34500
+R2 = -1.12723
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.06353
+R2 = -1.96772
+R1 = -0.30629
+R2 = -1.36038
+R1 = -0.43908
+R2 = -1.59426
+R1 = -0.63988
+R2 = -1.42073
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.10985
+R2 = -1.91646
+R1 = -0.15253
+R2 = -2.25372
+R1 = -0.39111
+R2 = -1.77555
+R1 = -0.82009
+R2 = -1.32697
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.07764
+R2 = -2.20808
+R1 = -0.15650
+R2 = -2.25527
+R1 = -0.31263
+R2 = -2.06972
+R1 = -0.50000
+R2 = -2.46667
+R1 = -0.87425
+R2 = -1.40780
+R1 = -1.16238
+R2 = -1.35190
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.03064
+R2 = -2.71936
+R1 = -0.15006
+R2 = -2.45521
+R1 = -0.26249
+R2 = -2.39465
+R1 = -0.45072
+R2 = -2.10191
+R1 = -0.63605
+R2 = -2.03963
+R1 = -0.75151
+R2 = -1.87011
+R1 = -1.05263
+R2 = -1.50000
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.06773
+R2 = -1.10727
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.03607
+R2 = -1.28951
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.11090
+R2 = -1.43456
+R1 = -0.33912
+R2 = -1.20634
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.09360
+R2 = -1.66196
+R1 = -0.17198
+R2 = -1.66136
+R1 = -0.32670
+R2 = -1.53044
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.10719
+R2 = -1.78643
+R1 = -0.18780
+R2 = -1.65665
+R1 = -0.31901
+R2 = -1.56735
+R1 = -0.51821
+R2 = -1.41512
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.08778
+R2 = -2.07131
+R1 = -0.18305
+R2 = -1.86241
+R1 = -0.24667
+R2 = -2.12833
+R1 = -0.42993
+R2 = -1.79735
+R1 = -0.74054
+R2 = -1.35037
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.03298
+R2 = -0.59447
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.23111
+R2 = -0.55071
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = 0.00000
+R2 = -1.03704
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.03209
+R2 = -1.19868
+R1 = -0.36394
+R2 = -0.88135
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.06642
+R2 = -1.34430
+R1 = -0.15056
+R2 = -1.16523
+R1 = -0.32824
+R2 = -1.17176
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.10040
+R2 = -1.50337
+R1 = -0.19518
+R2 = -1.47789
+R1 = -0.55492
+R2 = -0.88576
+R1 = -0.58772
+R2 = -1.09153
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.08551
+R2 = -1.79910
+R1 = -0.22759
+R2 = -1.51786
+R1 = -0.26873
+R2 = -1.32449
+R1 = -0.45507
+R2 = -1.29493
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.10000
+R2 = -0.33333
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.15516
+R2 = -0.51151
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.16667
+R2 = -0.63636
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.07275
+R2 = -0.79681
+R1 = -0.34845
+R2 = -0.68329
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.10980
+R2 = -0.96596
+R1 = -0.17031
+R2 = -0.96402
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.03762
+R2 = -1.32905
+R1 = -0.19400
+R2 = -1.18305
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.09460
+R2 = -1.24364
+R1 = -0.22685
+R2 = -1.14996
+R1 = -0.33774
+R2 = -1.14613
+R1 = -0.42713
+R2 = -1.08057
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.11588
+R2 = -0.36983
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.02109
+R2 = -0.63224
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.01862
+R2 = -0.76709
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.13493
+R2 = -0.69174
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.11317
+R2 = -0.85905
+R1 = -0.39522
+R2 = -0.63256
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.03511
+R2 = -1.17037
+R1 = -0.23814
+R2 = -0.85047
+R1 = -0.54778
+R2 = -0.64141
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = 0.00000
+R2 = -1.36111
+R1 = -0.17589
+R2 = -1.09334
+R1 = -0.32051
+R2 = -0.90318
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.11111
+R2 = -0.55556
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.08439
+R2 = -0.74061
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.01434
+R2 = -0.78341
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.12629
+R2 = -0.83842
+R1 = -0.14112
+R2 = -0.82400
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.09572
+R2 = -0.94973
+R1 = -0.18486
+R2 = -0.86059
+R1 = -0.33604
+R2 = -0.83470
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.08316
+R2 = -0.50631
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = 0.00000
+R2 = -0.75824
+R1 = -0.29118
+R2 = -0.44795
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.01437
+R2 = -0.71012
+R1 = -0.16358
+R2 = -0.63024
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.03774
+R2 = -0.85473
+R1 = -0.16082
+R2 = -0.70516
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+R1 = -0.10582
+R2 = -0.90482
+R1 = -0.15536
+R2 = -0.81306
+R1 = -0.43285
+R2 = -0.57756
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
+Impossivel calcular
