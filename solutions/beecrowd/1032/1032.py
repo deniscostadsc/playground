@@ -55,10 +55,24 @@ def next_prime(number):
     return primes[number]
 
 
-def josephus(n, k=2) -> int:
+def josephus(n, k=2, nth_prime=None) -> int:
+
+    if nth_prime is None:
+        nth_prime = n
+    result = None
     if n == 1:
-        return 1
-    return ((josephus(n - 1, next_prime(k)) + k - 1) % n) + 1
+        result = 1
+    else:
+        result = ((josephus(n - 1, next_prime(k), nth_prime) + k - 1) % n) + 1
+
+    # print(f'nth_prime = {nth_prime - n}')
+    print(f'k = {k}')
+    print(f'n = {n}')
+
+    print(f'result = {result}')
+    print('--')
+
+    return result
 
 
 for line in sys.stdin:
@@ -68,3 +82,4 @@ for line in sys.stdin:
         break
 
     print(josephus(n))
+    print('--------------')
