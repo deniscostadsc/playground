@@ -11,4 +11,4 @@ The input will be an integer value.
 
 ## Output
 
-Print al odd values between 1 and $X$, including $X$ if is the case.
+Print all odd values between 1 and $X$, including $X$ if is the case.
