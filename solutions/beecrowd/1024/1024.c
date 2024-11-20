@@ -35,9 +35,9 @@ int main() {
             line_length--;
         }
 
-        reverse_string(line);
+        // reverse_string(line);
 
-        for (uint16_t j = 0; j < line_length; j++) {
+        for (uint16_t j = line_length - 1; j >= 0; j--) {
             if ((line[j] >= 65 && line[j] <= 90)  // between A and Z
                 || (line[j] >= 97 && line[j] <= 122)) {  // between a and z
                 line[j] = line[j] + 3;
@@ -45,9 +45,10 @@ int main() {
             if (j >= line_length / 2) {
                 line[j]--;
             }
+            printf("%c", line[j]);
         }
 
-        printf("%s\n", line);
+        printf("\n");
     }
 
     return 0;
