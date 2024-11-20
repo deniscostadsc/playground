@@ -1,14 +1,15 @@
 #include <cmath>
 #include <cstdint>
+#include <iomanip>
 #include <iostream>
 
 int main() {
-    std::int16_t q, d, p, answer;
+    double q, d, p, answer;
 
     while (std::cin >> q && q) {
         std::cin >> d >> p;
 
-        answer = trunc(static_cast< double >((q * d) / -(q - p) * p));
+        answer = trunc(((d * p) / (p - q)) * q);
 
         std::cout << answer << " pagina";
         if (answer > 1) {
