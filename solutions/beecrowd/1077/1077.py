@@ -1,7 +1,7 @@
-def operator_precendence(term):
-    operator_precendences = {'+': 1, '-': 1, '*': 2, '/': 2, '^': 3}
+def operator_precedence(term):
+    operator_precedences = {'+': 1, '-': 1, '*': 2, '/': 2, '^': 3}
 
-    return operator_precendences.get(term, 0)
+    return operator_precedences.get(term, 0)
 
 
 def is_operator(term):
@@ -44,14 +44,14 @@ def infix_to_postfix(line):
             postfix_string += term
 
         if is_operator(term):
-            if terms_stack and operator_precendence(
+            if terms_stack and operator_precedence(
                 term
-            ) <= operator_precendence(terms_stack[-1]):
+            ) <= operator_precedence(terms_stack[-1]):
                 postfix_string += terms_stack.pop()
 
-                while terms_stack and operator_precendence(
+                while terms_stack and operator_precedence(
                     term
-                ) <= operator_precendence(terms_stack[-1]):
+                ) <= operator_precedence(terms_stack[-1]):
                     postfix_string += terms_stack.pop()
 
                 terms_stack.append(term)
