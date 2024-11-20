@@ -4,20 +4,19 @@
 #include <string>
 
 int main() {
-    std::string m[12] = {
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December"
-    };
+    std::string m[12]
+        = {"January",
+           "February",
+           "March",
+           "April",
+           "May",
+           "June",
+           "July",
+           "August",
+           "September",
+           "October",
+           "November",
+           "December"};
     std::int16_t n;
 
     while (scanf("%d", &n) != EOF) {
