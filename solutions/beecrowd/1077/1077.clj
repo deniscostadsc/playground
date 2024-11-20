@@ -34,13 +34,14 @@
       (recur remaining-terms
              (conj terms-stack term)
              postfix-expression))
-    (when (opening-parenthesis? term)
-      (loop ))
+    ;; (when (opening-parenthesis? term)
+    ;;   (loop ))
     (when (operand? term)
       (recur remaining-terms
              terms-stack
              (conj postfix-expression term)))
-    (when (operator? term))))
+    ;; (when (operator? term))
+    ))
 
 (defn main []
   (loop [n (Integer/parseInt (read-line))]
