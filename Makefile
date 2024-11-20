@@ -117,7 +117,7 @@ clean:
 	@find . -name 'Main.java' -delete
 	@find . -name 'result-*.txt' -delete
 	@find . -type d -name "META-INF" -exec rm -rf {} +
-	@find . -type d -name "\?" -exec rm -rf {} +
+	@find solutions -type d -name "\?" -exec rm -rf {} +
 
 languages:
 	@./scripts/languages.sh

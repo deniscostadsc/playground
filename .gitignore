@@ -13,6 +13,7 @@
 Main.class
 Main.java
 \?/
+!.clojure/\?
 main.cmi
 main.cmo
 result-*.txt
