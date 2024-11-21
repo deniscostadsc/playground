@@ -33,6 +33,7 @@ RS = rs
 SCALA = scala
 SH = sh
 SQL = sql
+TS = ts
 
 SUPPORTED_LANGUAGES = \
 	$(C) \
@@ -114,12 +115,12 @@ clean:
 	@find . -name '*.hi' -delete
 	@find . -name '*.o' -delete
 	@find . -name '*.out' -delete
+	@find . -name 'compiledFromTSFile.js' -delete
 	@find . -name 'Main.java' -delete
 	@find . -name 'result-*.txt' -delete
 	@find . -type d -name "META-INF" -exec rm -rf {} +
 	@find solutions -type d -name "\?" -exec rm -rf {} +
 	@rm -rf \? || true
-
 
 languages:
 	@./scripts/languages.sh
