@@ -118,6 +118,8 @@ clean:
 	@find . -name 'result-*.txt' -delete
 	@find . -type d -name "META-INF" -exec rm -rf {} +
 	@find solutions -type d -name "\?" -exec rm -rf {} +
+	@rm -rf \? || true
+
 
 languages:
 	@./scripts/languages.sh
