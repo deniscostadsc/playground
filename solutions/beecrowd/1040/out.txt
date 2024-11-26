@@ -1,5 +1,3124 @@
+Media: 1.8
+Aluno reprovado.
+Media: 8.7
+Aluno aprovado.
+Media: 7.2
+Aluno aprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 9.5
+Aluno aprovado.
+Media final: 7.8
+Media: 6.1
+Aluno em exame.
+Nota do exame: 5.0
+Aluno aprovado.
+Media final: 5.5
+Media: 7.5
+Aluno aprovado.
+Media: 2.2
+Aluno reprovado.
+Media: 4.1
+Aluno reprovado.
+Media: 2.2
+Aluno reprovado.
+Media: 3.9
+Aluno reprovado.
+Media: 3.1
+Aluno reprovado.
+Media: 2.8
+Aluno reprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 3.6
+Aluno reprovado.
+Media final: 4.4
+Media: 6.7
+Aluno em exame.
+Nota do exame: 0.0
+Aluno reprovado.
+Media final: 3.3
+Media: 6.5
+Aluno em exame.
+Nota do exame: 2.3
+Aluno reprovado.
+Media final: 4.4
+Media: 4.2
+Aluno reprovado.
+Media: 3.7
+Aluno reprovado.
+Media: 4.4
+Aluno reprovado.
+Media: 5.1
+Aluno em exame.
+Nota do exame: 1.5
+Aluno reprovado.
+Media final: 3.3
+Media: 3.3
+Aluno reprovado.
+Media: 4.1
+Aluno reprovado.
+Media: 5.7
+Aluno em exame.
+Nota do exame: 6.6
+Aluno aprovado.
+Media final: 6.2
+Media: 3.5
+Aluno reprovado.
+Media: 4.5
+Aluno reprovado.
+Media: 3.9
+Aluno reprovado.
+Media: 4.2
+Aluno reprovado.
+Media: 4.9
+Aluno reprovado.
+Media: 5.8
+Aluno em exame.
+Nota do exame: 3.8
+Aluno reprovado.
+Media final: 4.8
+Media: 4.0
+Aluno reprovado.
+Media: 8.8
+Aluno aprovado.
+Media: 5.7
+Aluno em exame.
+Nota do exame: 1.6
+Aluno reprovado.
+Media final: 3.7
+Media: 4.8
+Aluno reprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 3.7
+Aluno reprovado.
+Media final: 4.5
+Media: 3.2
+Aluno reprovado.
+Media: 4.9
+Aluno reprovado.
 Media: 5.4
+Aluno em exame.
+Nota do exame: 1.9
+Aluno reprovado.
+Media final: 3.7
+Media: 1.9
+Aluno reprovado.
+Media: 7.8
+Aluno aprovado.
+Media: 4.5
+Aluno reprovado.
+Media: 4.5
+Aluno reprovado.
+Media: 5.3
+Aluno em exame.
+Nota do exame: 1.4
+Aluno reprovado.
+Media final: 3.4
+Media: 2.9
+Aluno reprovado.
+Media: 7.7
+Aluno aprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 1.7
+Aluno reprovado.
+Media final: 3.4
+Media: 6.3
+Aluno em exame.
+Nota do exame: 0.8
+Aluno reprovado.
+Media final: 3.5
+Media: 3.9
+Aluno reprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 5.6
+Aluno em exame.
+Nota do exame: 0.1
+Aluno reprovado.
+Media final: 2.8
+Media: 1.6
+Aluno reprovado.
+Media: 3.1
+Aluno reprovado.
+Media: 4.3
+Aluno reprovado.
+Media: 6.2
+Aluno em exame.
+Nota do exame: 8.1
+Aluno aprovado.
+Media final: 7.2
+Media: 2.6
+Aluno reprovado.
+Media: 7.2
+Aluno aprovado.
+Media: 5.0
+Aluno em exame.
+Nota do exame: 5.2
+Aluno aprovado.
+Media final: 5.1
+Media: 7.1
+Aluno aprovado.
+Media: 3.3
+Aluno reprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 2.5
+Aluno reprovado.
+Media final: 3.9
+Media: 4.5
+Aluno reprovado.
+Media: 3.8
+Aluno reprovado.
+Media: 8.2
+Aluno aprovado.
+Media: 1.9
+Aluno reprovado.
+Media: 7.4
+Aluno aprovado.
+Media: 6.2
+Aluno em exame.
+Nota do exame: 7.4
+Aluno aprovado.
+Media final: 6.8
+Media: 7.4
+Aluno aprovado.
+Media: 2.7
+Aluno reprovado.
+Media: 3.0
+Aluno reprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 5.7
+Aluno aprovado.
+Media final: 5.4
+Media: 4.7
+Aluno reprovado.
+Media: 6.0
+Aluno em exame.
+Nota do exame: 8.5
+Aluno aprovado.
+Media final: 7.3
+Media: 4.0
+Aluno reprovado.
+Media: 3.6
+Aluno reprovado.
+Media: 7.0
+Aluno aprovado.
+Media: 2.4
+Aluno reprovado.
+Media: 5.1
+Aluno em exame.
+Nota do exame: 5.2
+Aluno aprovado.
+Media final: 5.2
+Media: 2.9
+Aluno reprovado.
+Media: 5.7
+Aluno em exame.
+Nota do exame: 1.8
+Aluno reprovado.
+Media final: 3.8
+Media: 6.7
+Aluno em exame.
+Nota do exame: 4.1
+Aluno aprovado.
+Media final: 5.4
+Media: 6.0
+Aluno em exame.
+Nota do exame: 2.6
+Aluno reprovado.
+Media final: 4.3
+Media: 5.0
+Aluno em exame.
+Nota do exame: 4.9
+Aluno reprovado.
+Media final: 5.0
+Media: 1.8
+Aluno reprovado.
+Media: 4.3
+Aluno reprovado.
+Media: 3.2
+Aluno reprovado.
+Media: 3.1
+Aluno reprovado.
+Media: 5.8
+Aluno em exame.
+Nota do exame: 3.7
+Aluno reprovado.
+Media final: 4.8
+Media: 6.3
+Aluno em exame.
+Nota do exame: 8.9
+Aluno aprovado.
+Media final: 7.6
+Media: 4.6
+Aluno reprovado.
+Media: 3.1
+Aluno reprovado.
+Media: 6.0
+Aluno em exame.
+Nota do exame: 8.3
+Aluno aprovado.
+Media final: 7.2
+Media: 6.9
+Aluno em exame.
+Nota do exame: 9.1
+Aluno aprovado.
+Media final: 8.0
+Media: 7.0
+Aluno aprovado.
+Media: 3.0
+Aluno reprovado.
+Media: 2.3
+Aluno reprovado.
+Media: 5.6
+Aluno em exame.
+Nota do exame: 7.9
+Aluno aprovado.
+Media final: 6.8
+Media: 4.7
+Aluno reprovado.
+Media: 2.9
+Aluno reprovado.
+Media: 6.9
+Media: 5.3
+Aluno em exame.
+Nota do exame: 8.9
+Aluno aprovado.
+Media final: 7.1
+Media: 8.1
+Aluno aprovado.
+Media: 4.6
+Aluno reprovado.
+Media: 4.6
+Aluno reprovado.
+Media: 5.3
+Aluno em exame.
+Nota do exame: 1.0
+Aluno reprovado.
+Media final: 3.1
+Media: 7.3
+Aluno aprovado.
+Media: 7.3
+Aluno aprovado.
+Media: 2.4
+Aluno reprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 5.5
+Aluno aprovado.
+Media final: 5.4
+Media: 5.8
+Aluno em exame.
+Nota do exame: 8.3
+Aluno aprovado.
+Media final: 7.0
+Media: 1.1
+Aluno reprovado.
+Media: 2.7
+Aluno reprovado.
+Media: 3.4
+Aluno reprovado.
+Media: 2.7
+Aluno reprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 6.5
+Aluno aprovado.
+Media final: 6.3
+Media: 5.0
+Aluno reprovado.
+Media: 4.9
+Aluno reprovado.
+Media: 5.1
+Aluno em exame.
+Nota do exame: 9.4
+Aluno aprovado.
+Media final: 7.3
+Media: 8.5
+Aluno aprovado.
+Media: 5.8
+Aluno em exame.
+Nota do exame: 9.7
+Aluno aprovado.
+Media final: 7.7
+Media: 1.9
+Aluno reprovado.
+Media: 2.9
+Aluno reprovado.
+Media: 4.3
+Aluno reprovado.
+Media: 6.9
+Aluno em exame.
+Nota do exame: 6.1
+Aluno aprovado.
+Media final: 6.5
+Media: 5.5
+Aluno em exame.
+Nota do exame: 4.2
+Aluno reprovado.
+Media final: 4.8
+Media: 5.1
+Aluno em exame.
+Nota do exame: 5.5
+Aluno aprovado.
+Media final: 5.3
+Media: 4.3
+Aluno reprovado.
+Media: 4.3
+Aluno reprovado.
+Media: 7.6
+Aluno aprovado.
+Media: 5.3
+Aluno em exame.
+Nota do exame: 7.7
+Aluno aprovado.
+Media final: 6.5
+Media: 3.3
+Aluno reprovado.
+Media: 6.7
+Aluno em exame.
+Nota do exame: 0.2
+Aluno reprovado.
+Media final: 3.4
+Media: 1.6
+Aluno reprovado.
+Media: 5.0
+Aluno em exame.
+Nota do exame: 7.1
+Aluno aprovado.
+Media final: 6.1
+Media: 2.9
+Aluno reprovado.
+Media: 5.9
+Aluno em exame.
+Nota do exame: 8.3
+Aluno aprovado.
+Media final: 7.1
+Media: 6.2
+Aluno em exame.
+Nota do exame: 7.3
+Aluno aprovado.
+Media final: 6.8
+Media: 8.0
+Aluno aprovado.
+Media: 2.9
+Aluno reprovado.
+Media: 6.6
+Aluno em exame.
+Nota do exame: 2.4
+Aluno reprovado.
+Media final: 4.5
+Media: 4.9
+Aluno reprovado.
+Media: 3.4
+Aluno reprovado.
+Media: 4.7
+Aluno reprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 9.1
+Aluno aprovado.
+Media final: 7.2
+Media: 5.8
+Aluno em exame.
+Nota do exame: 1.3
+Aluno reprovado.
+Media final: 3.5
+Media: 4.5
+Aluno reprovado.
+Media: 4.1
+Aluno reprovado.
+Media: 6.7
+Aluno em exame.
+Nota do exame: 0.1
+Aluno reprovado.
+Media final: 3.4
+Media: 5.3
+Aluno em exame.
+Nota do exame: 6.7
+Aluno aprovado.
+Media final: 6.0
+Media: 5.2
+Aluno em exame.
+Nota do exame: 8.3
+Aluno aprovado.
+Media final: 6.8
+Media: 1.8
+Aluno reprovado.
+Media: 3.8
+Aluno reprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 3.9
+Aluno reprovado.
+Media final: 5.0
+Media: 6.5
+Aluno em exame.
+Nota do exame: 4.1
+Aluno aprovado.
+Media final: 5.3
+Media: 5.5
+Aluno em exame.
+Nota do exame: 6.9
+Aluno aprovado.
+Media final: 6.2
+Media: 6.1
+Aluno em exame.
+Nota do exame: 4.1
+Aluno aprovado.
+Media final: 5.1
+Media: 6.7
+Aluno em exame.
+Nota do exame: 3.4
+Aluno aprovado.
+Media final: 5.1
+Media: 3.7
+Aluno reprovado.
+Media: 5.0
+Aluno reprovado.
+Media: 3.6
+Aluno reprovado.
+Media: 4.9
+Aluno reprovado.
+Media: 6.7
+Aluno em exame.
+Nota do exame: 9.3
+Aluno aprovado.
+Media final: 8.0
+Media: 3.5
+Aluno reprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 1.4
+Aluno reprovado.
+Media final: 3.4
+Media: 4.7
+Aluno reprovado.
+Media: 6.2
+Aluno em exame.
+Nota do exame: 9.1
+Aluno aprovado.
+Media final: 7.6
+Media: 4.8
+Aluno reprovado.
+Media: 6.2
+Aluno em exame.
+Nota do exame: 6.7
+Aluno aprovado.
+Media final: 6.4
+Media: 4.3
+Aluno reprovado.
+Media: 7.2
+Aluno aprovado.
+Media: 5.9
+Aluno em exame.
+Nota do exame: 0.8
+Aluno reprovado.
+Media final: 3.3
+Media: 6.5
+Aluno em exame.
+Nota do exame: 7.2
+Aluno aprovado.
+Media final: 6.9
+Media: 7.6
+Aluno aprovado.
+Media: 3.3
+Aluno reprovado.
+Media: 4.5
+Aluno reprovado.
+Media: 4.4
+Aluno reprovado.
+Media: 6.5
+Aluno em exame.
+Nota do exame: 4.3
+Aluno aprovado.
+Media final: 5.4
+Media: 4.2
+Aluno reprovado.
+Media: 4.5
+Aluno reprovado.
+Media: 3.2
+Aluno reprovado.
+Media: 3.3
+Aluno reprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 3.7
+Aluno reprovado.
+Media final: 4.6
+Media: 3.6
+Aluno reprovado.
+Media: 4.6
+Aluno reprovado.
+Media: 5.0
+Aluno reprovado.
+Media: 2.4
+Aluno reprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 3.2
+Aluno reprovado.
+Media final: 4.6
+Media: 6.0
+Aluno em exame.
+Nota do exame: 5.4
+Aluno aprovado.
+Media final: 5.7
+Media: 4.5
+Aluno reprovado.
+Media: 5.5
+Aluno em exame.
+Nota do exame: 5.4
+Aluno aprovado.
+Media final: 5.5
+Media: 2.5
+Aluno reprovado.
+Media: 5.6
+Aluno em exame.
+Nota do exame: 2.2
+Aluno reprovado.
+Media final: 3.9
+Media: 2.9
+Aluno reprovado.
+Media: 2.1
+Aluno reprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 5.0
+Aluno aprovado.
+Media final: 5.1
+Media: 4.9
+Aluno reprovado.
+Media: 5.8
+Aluno em exame.
+Nota do exame: 8.0
+Aluno aprovado.
+Media final: 6.9
+Media: 3.3
+Aluno reprovado.
+Media: 5.5
+Aluno em exame.
+Nota do exame: 4.7
+Aluno aprovado.
+Media final: 5.1
+Media: 4.0
+Aluno reprovado.
+Media: 6.8
+Aluno em exame.
+Nota do exame: 3.7
+Aluno aprovado.
+Media final: 5.2
+Media: 3.3
+Aluno reprovado.
+Media: 4.5
+Aluno reprovado.
+Media: 7.5
+Aluno aprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 0.3
+Aluno reprovado.
+Media final: 3.2
+Media: 8.0
+Aluno aprovado.
+Media: 4.6
+Aluno reprovado.
+Media: 5.7
+Aluno em exame.
+Nota do exame: 2.4
+Aluno reprovado.
+Media final: 4.0
+Media: 8.3
+Aluno aprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 0.3
+Aluno reprovado.
+Media final: 3.2
+Media: 4.7
+Aluno reprovado.
+Media: 3.0
+Aluno reprovado.
+Media: 7.1
+Aluno aprovado.
+Media: 7.4
+Aluno aprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 3.5
+Aluno reprovado.
+Media final: 4.4
+Media: 5.9
+Aluno em exame.
+Nota do exame: 0.2
+Aluno reprovado.
+Media final: 3.0
+Media: 6.6
+Aluno em exame.
+Nota do exame: 8.5
+Aluno aprovado.
+Media final: 7.6
+Media: 4.2
+Aluno reprovado.
+Media: 5.5
+Aluno em exame.
+Nota do exame: 3.6
+Aluno reprovado.
+Media final: 4.5
+Media: 7.7
+Aluno aprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 4.3
+Aluno reprovado.
+Media: 5.0
+Aluno em exame.
+Nota do exame: 0.0
+Aluno reprovado.
+Media final: 2.5
+Media: 3.0
+Aluno reprovado.
+Media: 4.2
+Aluno reprovado.
+Media: 6.8
+Aluno em exame.
+Nota do exame: 3.4
+Aluno aprovado.
+Media final: 5.1
+Media: 2.6
+Aluno reprovado.
+Media: 3.6
+Aluno reprovado.
+Media: 4.2
+Aluno reprovado.
+Media: 5.3
+Aluno em exame.
+Nota do exame: 9.3
+Aluno aprovado.
+Media final: 7.3
+Media: 6.0
+Aluno em exame.
+Nota do exame: 1.5
+Aluno reprovado.
+Media final: 3.8
+Media: 4.6
+Aluno reprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 7.1
+Aluno aprovado.
+Media final: 6.6
+Media: 4.4
+Aluno reprovado.
+Media: 4.1
+Aluno reprovado.
+Media: 5.2
 Aluno em exame.
 Nota do exame: 6.4
 Aluno aprovado.
+Media final: 5.8
+Media: 4.2
+Aluno reprovado.
+Media: 6.7
+Aluno em exame.
+Nota do exame: 8.6
+Aluno aprovado.
+Media final: 7.7
+Media: 6.5
+Aluno em exame.
+Nota do exame: 8.2
+Aluno aprovado.
+Media final: 7.3
+Media: 7.9
+Aluno aprovado.
+Media: 3.6
+Aluno reprovado.
+Media: 4.5
+Aluno reprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 4.6
+Aluno reprovado.
+Media final: 5.0
+Media: 4.5
+Aluno reprovado.
+Media: 5.0
+Aluno reprovado.
+Media: 3.2
+Aluno reprovado.
+Media: 3.1
+Aluno reprovado.
+Media: 5.8
+Aluno em exame.
+Nota do exame: 0.4
+Aluno reprovado.
+Media final: 3.1
+Media: 2.9
+Aluno reprovado.
+Media: 3.3
+Aluno reprovado.
+Media: 3.8
+Aluno reprovado.
+Media: 6.6
+Aluno em exame.
+Nota do exame: 6.8
+Aluno aprovado.
+Media final: 6.7
+Media: 5.5
+Aluno em exame.
+Nota do exame: 5.9
+Aluno aprovado.
+Media final: 5.7
+Media: 5.2
+Aluno em exame.
+Nota do exame: 7.7
+Aluno aprovado.
+Media final: 6.4
+Media: 1.8
+Aluno reprovado.
+Media: 4.1
+Aluno reprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 3.3
+Aluno reprovado.
+Media: 6.8
+Aluno em exame.
+Nota do exame: 6.3
+Aluno aprovado.
+Media final: 6.5
+Media: 4.8
+Aluno reprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 2.7
+Aluno reprovado.
+Media final: 4.4
+Media: 6.2
+Aluno em exame.
+Nota do exame: 3.2
+Aluno reprovado.
+Media final: 4.7
+Media: 4.2
+Aluno reprovado.
+Media: 4.3
+Aluno reprovado.
+Media: 4.3
+Aluno reprovado.
+Media: 6.5
+Aluno em exame.
+Nota do exame: 1.8
+Aluno reprovado.
+Media final: 4.1
+Media: 3.3
+Aluno reprovado.
+Media: 6.5
+Aluno em exame.
+Nota do exame: 8.2
+Aluno aprovado.
+Media final: 7.4
+Media: 4.2
+Aluno reprovado.
+Media: 5.9
+Aluno em exame.
+Nota do exame: 4.9
+Aluno aprovado.
+Media final: 5.4
+Media: 5.9
+Aluno em exame.
+Nota do exame: 0.3
+Aluno reprovado.
+Media final: 3.1
+Media: 6.6
+Aluno em exame.
+Nota do exame: 2.4
+Aluno reprovado.
+Media final: 4.5
+Media: 5.0
+Aluno reprovado.
+Media: 2.5
+Aluno reprovado.
+Media: 4.4
+Aluno reprovado.
+Media: 5.1
+Aluno em exame.
+Nota do exame: 5.0
+Aluno aprovado.
+Media final: 5.0
+Media: 5.3
+Aluno em exame.
+Nota do exame: 3.6
+Aluno reprovado.
+Media final: 4.4
+Media: 5.1
+Aluno em exame.
+Nota do exame: 3.7
+Aluno reprovado.
+Media final: 4.4
+Media: 5.6
+Aluno em exame.
+Nota do exame: 8.2
+Aluno aprovado.
+Media final: 6.9
+Media: 2.4
+Aluno reprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 8.6
+Aluno aprovado.
+Media final: 6.9
+Media: 4.1
+Aluno reprovado.
+Media: 6.5
+Aluno em exame.
+Nota do exame: 1.9
+Aluno reprovado.
+Media final: 4.2
+Media: 5.1
+Aluno em exame.
+Nota do exame: 1.4
+Aluno reprovado.
+Media final: 3.2
+Media: 3.1
+Aluno reprovado.
+Media: 2.5
+Aluno reprovado.
+Media: 2.9
+Aluno reprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 2.7
+Aluno reprovado.
+Media final: 3.9
+Media: 6.5
+Aluno em exame.
+Nota do exame: 6.3
+Aluno aprovado.
+Media final: 6.4
+Media: 7.3
+Aluno aprovado.
+Media: 4.3
+Aluno reprovado.
+Media: 4.0
+Aluno reprovado.
+Media: 4.0
+Aluno reprovado.
+Media: 3.3
+Aluno reprovado.
+Media: 3.6
+Aluno reprovado.
+Media: 6.3
+Aluno em exame.
+Nota do exame: 8.3
+Aluno aprovado.
+Media final: 7.3
+Media: 2.5
+Aluno reprovado.
+Media: 6.6
+Aluno em exame.
+Nota do exame: 0.7
+Aluno reprovado.
+Media final: 3.6
+Media: 1.9
+Aluno reprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 7.9
+Aluno aprovado.
+Media final: 7.0
+Media: 5.5
+Aluno em exame.
+Nota do exame: 0.9
+Aluno reprovado.
+Media final: 3.2
+Media: 4.3
+Aluno reprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 5.6
+Aluno aprovado.
+Media final: 5.4
+Media: 3.5
+Aluno reprovado.
+Media: 7.1
+Aluno aprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 2.8
+Aluno reprovado.
+Media: 4.9
+Aluno reprovado.
+Media: 4.0
+Aluno reprovado.
+Media: 6.4
+Aluno em exame.
+Nota do exame: 3.9
+Aluno aprovado.
+Media final: 5.2
+Media: 5.3
+Aluno em exame.
+Nota do exame: 8.5
+Aluno aprovado.
+Media final: 6.9
+Media: 5.1
+Aluno em exame.
+Nota do exame: 3.3
+Aluno reprovado.
+Media final: 4.2
+Media: 7.0
+Media: 2.5
+Aluno reprovado.
+Media: 3.8
+Aluno reprovado.
+Media: 3.1
+Aluno reprovado.
+Media: 7.3
+Aluno aprovado.
+Media: 6.0
+Aluno em exame.
+Nota do exame: 3.3
+Aluno reprovado.
+Media final: 4.6
+Media: 3.3
+Aluno reprovado.
+Media: 3.7
+Aluno reprovado.
+Media: 3.3
+Aluno reprovado.
+Media: 4.9
+Aluno reprovado.
+Media: 5.7
+Aluno em exame.
+Nota do exame: 8.3
+Aluno aprovado.
+Media final: 7.0
+Media: 6.2
+Aluno em exame.
+Nota do exame: 9.4
+Aluno aprovado.
+Media final: 7.8
+Media: 4.5
+Aluno reprovado.
+Media: 5.6
+Aluno em exame.
+Nota do exame: 6.9
+Aluno aprovado.
+Media final: 6.3
+Media: 4.1
+Aluno reprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 2.7
+Aluno reprovado.
+Media final: 4.0
+Media: 6.6
+Aluno em exame.
+Nota do exame: 1.5
+Aluno reprovado.
+Media final: 4.1
+Media: 4.8
+Aluno reprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 2.6
+Aluno reprovado.
+Media final: 4.4
+Media: 5.6
+Aluno em exame.
+Nota do exame: 2.4
+Aluno reprovado.
+Media final: 4.0
+Media: 5.2
+Aluno em exame.
+Nota do exame: 8.8
+Aluno aprovado.
+Media final: 7.0
+Media: 7.0
+Media: 5.7
+Aluno em exame.
+Nota do exame: 5.5
+Aluno aprovado.
+Media final: 5.6
+Media: 4.6
+Aluno reprovado.
+Media: 3.1
+Aluno reprovado.
+Media: 6.3
+Aluno em exame.
+Nota do exame: 0.6
+Aluno reprovado.
+Media final: 3.5
+Media: 5.5
+Aluno em exame.
+Nota do exame: 6.9
+Aluno aprovado.
+Media final: 6.2
+Media: 3.2
+Aluno reprovado.
+Media: 4.6
+Aluno reprovado.
+Media: 7.1
+Aluno aprovado.
+Media: 3.0
+Aluno reprovado.
+Media: 2.7
+Aluno reprovado.
+Media: 6.9
+Aluno em exame.
+Nota do exame: 7.3
+Aluno aprovado.
+Media final: 7.1
+Media: 4.5
+Aluno reprovado.
+Media: 3.1
+Aluno reprovado.
+Media: 6.3
+Aluno em exame.
+Nota do exame: 3.6
+Aluno reprovado.
+Media final: 4.9
+Media: 3.0
+Aluno reprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 7.4
+Aluno aprovado.
+Media final: 6.4
+Media: 3.6
+Aluno reprovado.
+Media: 3.4
+Aluno reprovado.
+Media: 3.1
+Aluno reprovado.
+Media: 7.2
+Aluno aprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 2.0
+Aluno reprovado.
+Media final: 3.7
+Media: 3.5
+Aluno reprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 2.4
+Aluno reprovado.
+Media final: 3.8
+Media: 6.2
+Aluno em exame.
+Nota do exame: 6.8
+Aluno aprovado.
+Media final: 6.5
+Media: 4.1
+Aluno reprovado.
+Media: 3.0
+Aluno reprovado.
+Media: 7.5
+Aluno aprovado.
+Media: 3.0
+Aluno reprovado.
+Media: 5.7
+Aluno em exame.
+Nota do exame: 3.2
+Aluno reprovado.
+Media final: 4.5
+Media: 3.7
+Aluno reprovado.
+Media: 6.8
+Aluno em exame.
+Nota do exame: 3.2
+Aluno reprovado.
+Media final: 5.0
+Media: 6.0
+Aluno em exame.
+Nota do exame: 4.9
+Aluno aprovado.
+Media final: 5.5
+Media: 3.8
+Aluno reprovado.
+Media: 6.3
+Aluno em exame.
+Nota do exame: 9.8
+Aluno aprovado.
+Media final: 8.0
+Media: 7.2
+Aluno aprovado.
+Media: 2.7
+Aluno reprovado.
+Media: 7.0
+Aluno aprovado.
+Media: 4.6
+Aluno reprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 6.7
+Aluno em exame.
+Nota do exame: 6.6
+Aluno aprovado.
+Media final: 6.6
+Media: 4.0
+Aluno reprovado.
+Media: 4.5
+Aluno reprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 3.7
+Aluno reprovado.
+Media final: 4.6
+Media: 3.4
+Aluno reprovado.
+Media: 5.9
+Aluno em exame.
+Nota do exame: 6.5
+Aluno aprovado.
+Media final: 6.2
+Media: 5.7
+Aluno em exame.
+Nota do exame: 2.8
+Aluno reprovado.
+Media final: 4.2
+Media: 4.0
+Aluno reprovado.
+Media: 6.7
+Aluno em exame.
+Nota do exame: 9.4
+Aluno aprovado.
+Media final: 8.1
+Media: 6.0
+Aluno em exame.
+Nota do exame: 6.0
+Aluno aprovado.
+Media final: 6.0
+Media: 1.6
+Aluno reprovado.
+Media: 3.7
+Aluno reprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 5.8
+Aluno em exame.
+Nota do exame: 0.4
+Aluno reprovado.
+Media final: 3.1
+Media: 7.0
+Media: 5.7
+Aluno em exame.
+Nota do exame: 2.0
+Aluno reprovado.
+Media final: 3.8
+Media: 5.8
+Aluno em exame.
+Nota do exame: 9.0
+Aluno aprovado.
+Media final: 7.4
+Media: 6.0
+Aluno em exame.
+Nota do exame: 7.2
+Aluno aprovado.
+Media final: 6.6
+Media: 2.9
+Aluno reprovado.
+Media: 3.1
+Aluno reprovado.
+Media: 6.8
+Aluno em exame.
+Nota do exame: 7.3
+Aluno aprovado.
+Media final: 7.0
+Media: 6.3
+Aluno em exame.
+Nota do exame: 2.6
+Aluno reprovado.
+Media final: 4.4
+Media: 5.3
+Aluno em exame.
+Nota do exame: 9.9
+Aluno aprovado.
+Media final: 7.6
+Media: 2.6
+Aluno reprovado.
+Media: 4.7
+Aluno reprovado.
+Media: 4.3
+Aluno reprovado.
+Media: 2.3
+Aluno reprovado.
+Media: 3.9
+Aluno reprovado.
+Media: 3.8
+Aluno reprovado.
+Media: 6.4
+Aluno em exame.
+Nota do exame: 9.9
+Aluno aprovado.
+Media final: 8.1
+Media: 7.0
+Media: 0.6
+Aluno reprovado.
+Media: 6.9
+Media: 5.6
+Aluno em exame.
+Nota do exame: 8.6
+Aluno aprovado.
+Media final: 7.1
+Media: 6.2
+Aluno em exame.
+Nota do exame: 6.3
+Aluno aprovado.
+Media final: 6.2
+Media: 4.3
+Aluno reprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 6.7
+Aluno em exame.
+Nota do exame: 1.0
+Aluno reprovado.
+Media final: 3.8
+Media: 4.6
+Aluno reprovado.
+Media: 3.3
+Aluno reprovado.
+Media: 2.1
+Aluno reprovado.
+Media: 4.7
+Aluno reprovado.
+Media: 4.0
+Aluno reprovado.
+Media: 3.9
+Aluno reprovado.
+Media: 5.9
+Aluno em exame.
+Nota do exame: 9.6
+Aluno aprovado.
+Media final: 7.8
+Media: 4.2
+Aluno reprovado.
+Media: 4.2
+Aluno reprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 2.6
+Aluno reprovado.
+Media: 6.4
+Aluno em exame.
+Nota do exame: 6.3
+Aluno aprovado.
+Media final: 6.3
+Media: 4.2
+Aluno reprovado.
+Media: 6.9
+Aluno em exame.
+Nota do exame: 2.1
+Aluno reprovado.
+Media final: 4.5
+Media: 4.6
+Aluno reprovado.
+Media: 6.9
+Media: 3.5
+Aluno reprovado.
+Media: 4.1
+Aluno reprovado.
+Media: 7.1
+Aluno aprovado.
+Media: 6.7
+Aluno em exame.
+Nota do exame: 3.1
+Aluno reprovado.
+Media final: 4.9
+Media: 6.8
+Aluno em exame.
+Nota do exame: 9.8
+Aluno aprovado.
+Media final: 8.3
+Media: 3.4
+Aluno reprovado.
+Media: 6.2
+Aluno em exame.
+Nota do exame: 7.4
+Aluno aprovado.
+Media final: 6.8
+Media: 5.7
+Aluno em exame.
+Nota do exame: 3.5
+Aluno reprovado.
+Media final: 4.6
+Media: 6.4
+Aluno em exame.
+Nota do exame: 1.7
+Aluno reprovado.
+Media final: 4.0
+Media: 4.2
+Aluno reprovado.
+Media: 5.9
+Aluno em exame.
+Nota do exame: 3.4
+Aluno reprovado.
+Media final: 4.6
+Media: 4.3
+Aluno reprovado.
+Media: 4.1
+Aluno reprovado.
+Media: 6.6
+Aluno em exame.
+Nota do exame: 2.2
+Aluno reprovado.
+Media final: 4.4
+Media: 1.5
+Aluno reprovado.
+Media: 4.6
+Aluno reprovado.
+Media: 5.8
+Aluno em exame.
+Nota do exame: 6.3
+Aluno aprovado.
+Media final: 6.0
+Media: 4.1
+Aluno reprovado.
+Media: 5.1
+Aluno em exame.
+Nota do exame: 5.1
+Aluno aprovado.
+Media final: 5.1
+Media: 7.6
+Aluno aprovado.
+Media: 5.5
+Aluno em exame.
+Nota do exame: 1.0
+Aluno reprovado.
+Media final: 3.2
+Media: 6.8
+Aluno em exame.
+Nota do exame: 4.5
+Aluno aprovado.
+Media final: 5.7
+Media: 5.8
+Aluno em exame.
+Nota do exame: 0.9
+Aluno reprovado.
+Media final: 3.3
+Media: 4.6
+Aluno reprovado.
+Media: 6.3
+Aluno em exame.
+Nota do exame: 2.5
+Aluno reprovado.
+Media final: 4.4
+Media: 5.0
+Aluno em exame.
+Nota do exame: 7.5
+Aluno aprovado.
+Media final: 6.3
+Media: 5.4
+Aluno em exame.
+Nota do exame: 2.9
+Aluno reprovado.
+Media final: 4.1
+Media: 4.1
+Aluno reprovado.
+Media: 4.6
+Aluno reprovado.
+Media: 1.2
+Aluno reprovado.
+Media: 3.2
+Aluno reprovado.
+Media: 3.4
+Aluno reprovado.
+Media: 2.4
+Aluno reprovado.
+Media: 4.3
+Aluno reprovado.
+Media: 3.8
+Aluno reprovado.
+Media: 1.1
+Aluno reprovado.
+Media: 2.9
+Aluno reprovado.
+Media: 5.1
+Aluno em exame.
+Nota do exame: 6.2
+Aluno aprovado.
+Media final: 5.7
+Media: 6.3
+Aluno em exame.
+Nota do exame: 0.9
+Aluno reprovado.
+Media final: 3.6
+Media: 4.5
+Aluno reprovado.
+Media: 7.0
+Media: 5.4
+Aluno em exame.
+Nota do exame: 1.7
+Aluno reprovado.
+Media final: 3.5
+Media: 6.5
+Aluno em exame.
+Nota do exame: 0.2
+Aluno reprovado.
+Media final: 3.4
+Media: 5.7
+Aluno em exame.
+Nota do exame: 8.1
+Aluno aprovado.
+Media final: 6.9
+Media: 4.3
+Aluno reprovado.
+Media: 4.4
+Aluno reprovado.
+Media: 2.4
+Aluno reprovado.
+Media: 4.1
+Aluno reprovado.
+Media: 3.4
+Aluno reprovado.
+Media: 7.1
+Aluno aprovado.
+Media: 6.8
+Aluno em exame.
+Nota do exame: 9.4
+Aluno aprovado.
+Media final: 8.1
+Media: 4.0
+Aluno reprovado.
+Media: 7.7
+Aluno aprovado.
+Media: 5.9
+Aluno em exame.
+Nota do exame: 8.9
+Aluno aprovado.
+Media final: 7.4
+Media: 5.7
+Aluno em exame.
+Nota do exame: 6.8
+Aluno aprovado.
+Media final: 6.2
+Media: 6.3
+Aluno em exame.
+Nota do exame: 5.3
+Aluno aprovado.
+Media final: 5.8
+Media: 2.2
+Aluno reprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 9.3
+Aluno aprovado.
+Media final: 7.7
+Media: 2.0
+Aluno reprovado.
+Media: 5.5
+Aluno em exame.
+Nota do exame: 6.2
+Aluno aprovado.
 Media final: 5.9
+Media: 5.4
+Aluno em exame.
+Nota do exame: 7.3
+Aluno aprovado.
+Media final: 6.3
+Media: 7.8
+Aluno aprovado.
+Media: 3.2
+Aluno reprovado.
+Media: 4.9
+Aluno reprovado.
+Media: 3.8
+Aluno reprovado.
+Media: 3.6
+Aluno reprovado.
+Media: 4.6
+Aluno reprovado.
+Media: 5.1
+Aluno em exame.
+Nota do exame: 3.6
+Aluno reprovado.
+Media final: 4.4
+Media: 6.3
+Aluno em exame.
+Nota do exame: 1.7
+Aluno reprovado.
+Media final: 4.0
+Media: 3.4
+Aluno reprovado.
+Media: 5.6
+Aluno em exame.
+Nota do exame: 3.5
+Aluno reprovado.
+Media final: 4.5
+Media: 7.5
+Aluno aprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 4.8
+Aluno aprovado.
+Media final: 5.0
+Media: 6.1
+Aluno em exame.
+Nota do exame: 5.3
+Aluno aprovado.
+Media final: 5.7
+Media: 5.5
+Aluno em exame.
+Nota do exame: 9.0
+Aluno aprovado.
+Media final: 7.2
+Media: 6.8
+Aluno em exame.
+Nota do exame: 4.7
+Aluno aprovado.
+Media final: 5.8
+Media: 3.4
+Aluno reprovado.
+Media: 4.4
+Aluno reprovado.
+Media: 6.6
+Aluno em exame.
+Nota do exame: 0.2
+Aluno reprovado.
+Media final: 3.4
+Media: 7.9
+Aluno aprovado.
+Media: 5.9
+Aluno em exame.
+Nota do exame: 6.8
+Aluno aprovado.
+Media final: 6.3
+Media: 6.2
+Aluno em exame.
+Nota do exame: 6.1
+Aluno aprovado.
+Media final: 6.2
+Media: 3.3
+Aluno reprovado.
+Media: 6.7
+Aluno em exame.
+Nota do exame: 4.3
+Aluno aprovado.
+Media final: 5.5
+Media: 6.3
+Aluno em exame.
+Nota do exame: 2.6
+Aluno reprovado.
+Media final: 4.5
+Media: 1.5
+Aluno reprovado.
+Media: 4.5
+Aluno reprovado.
+Media: 4.1
+Aluno reprovado.
+Media: 1.6
+Aluno reprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 5.7
+Aluno em exame.
+Nota do exame: 6.6
+Aluno aprovado.
+Media final: 6.2
+Media: 4.2
+Aluno reprovado.
+Media: 7.8
+Aluno aprovado.
+Media: 4.0
+Aluno reprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 7.3
+Aluno aprovado.
+Media: 6.2
+Aluno em exame.
+Nota do exame: 9.6
+Aluno aprovado.
+Media final: 7.9
+Media: 4.5
+Aluno reprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 7.4
+Aluno aprovado.
+Media: 7.4
+Aluno aprovado.
+Media: 4.1
+Aluno reprovado.
+Media: 2.1
+Aluno reprovado.
+Media: 6.0
+Aluno em exame.
+Nota do exame: 6.3
+Aluno aprovado.
+Media final: 6.2
+Media: 5.6
+Aluno em exame.
+Nota do exame: 2.7
+Aluno reprovado.
+Media final: 4.2
+Media: 4.3
+Aluno reprovado.
+Media: 3.1
+Aluno reprovado.
+Media: 4.3
+Aluno reprovado.
+Media: 2.4
+Aluno reprovado.
+Media: 3.7
+Aluno reprovado.
+Media: 7.2
+Aluno aprovado.
+Media: 7.0
+Media: 4.4
+Aluno reprovado.
+Media: 4.7
+Aluno reprovado.
+Media: 4.0
+Aluno reprovado.
+Media: 2.3
+Aluno reprovado.
+Media: 3.3
+Aluno reprovado.
+Media: 3.2
+Aluno reprovado.
+Media: 5.3
+Aluno em exame.
+Nota do exame: 1.8
+Aluno reprovado.
+Media final: 3.5
+Media: 4.2
+Aluno reprovado.
+Media: 7.8
+Aluno aprovado.
+Media: 4.9
+Aluno reprovado.
+Media: 5.5
+Aluno em exame.
+Nota do exame: 7.9
+Aluno aprovado.
+Media final: 6.7
+Media: 4.7
+Aluno reprovado.
+Media: 6.8
+Aluno em exame.
+Nota do exame: 2.4
+Aluno reprovado.
+Media final: 4.6
+Media: 6.6
+Aluno em exame.
+Nota do exame: 3.1
+Aluno reprovado.
+Media final: 4.8
+Media: 6.1
+Aluno em exame.
+Nota do exame: 8.1
+Aluno aprovado.
+Media final: 7.1
+Media: 5.4
+Aluno em exame.
+Nota do exame: 0.0
+Aluno reprovado.
+Media final: 2.7
+Media: 1.5
+Aluno reprovado.
+Media: 5.0
+Aluno em exame.
+Nota do exame: 4.4
+Aluno reprovado.
+Media final: 4.7
+Media: 4.3
+Aluno reprovado.
+Media: 6.6
+Aluno em exame.
+Nota do exame: 9.7
+Aluno aprovado.
+Media final: 8.1
+Media: 6.3
+Aluno em exame.
+Nota do exame: 9.0
+Aluno aprovado.
+Media final: 7.6
+Media: 2.3
+Aluno reprovado.
+Media: 4.2
+Aluno reprovado.
+Media: 5.8
+Aluno em exame.
+Nota do exame: 5.7
+Aluno aprovado.
+Media final: 5.7
+Media: 5.2
+Aluno em exame.
+Nota do exame: 9.5
+Aluno aprovado.
+Media final: 7.3
+Media: 7.3
+Aluno aprovado.
+Media: 7.8
+Aluno aprovado.
+Media: 6.6
+Aluno em exame.
+Nota do exame: 6.9
+Aluno aprovado.
+Media final: 6.7
+Media: 5.1
+Aluno em exame.
+Nota do exame: 3.9
+Aluno reprovado.
+Media final: 4.5
+Media: 6.5
+Aluno em exame.
+Nota do exame: 10.0
+Aluno aprovado.
+Media final: 8.2
+Media: 4.9
+Aluno reprovado.
+Media: 5.9
+Aluno em exame.
+Nota do exame: 3.5
+Aluno reprovado.
+Media final: 4.7
+Media: 3.6
+Aluno reprovado.
+Media: 5.8
+Aluno em exame.
+Nota do exame: 2.5
+Aluno reprovado.
+Media final: 4.1
+Media: 5.9
+Aluno em exame.
+Nota do exame: 9.1
+Aluno aprovado.
+Media final: 7.5
+Media: 5.3
+Aluno em exame.
+Nota do exame: 8.6
+Aluno aprovado.
+Media final: 6.9
+Media: 3.0
+Aluno reprovado.
+Media: 4.1
+Aluno reprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 1.7
+Aluno reprovado.
+Media final: 3.5
+Media: 4.4
+Aluno reprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 3.5
+Aluno reprovado.
+Media final: 4.8
+Media: 5.4
+Aluno em exame.
+Nota do exame: 0.4
+Aluno reprovado.
+Media final: 2.9
+Media: 7.8
+Aluno aprovado.
+Media: 9.1
+Aluno aprovado.
+Media: 2.9
+Aluno reprovado.
+Media: 3.9
+Aluno reprovado.
+Media: 3.8
+Aluno reprovado.
+Media: 7.8
+Aluno aprovado.
+Media: 7.0
+Aluno aprovado.
+Media: 8.3
+Aluno aprovado.
+Media: 4.1
+Aluno reprovado.
+Media: 2.5
+Aluno reprovado.
+Media: 4.6
+Aluno reprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 5.0
+Aluno aprovado.
+Media final: 5.1
+Media: 3.2
+Aluno reprovado.
+Media: 7.2
+Aluno aprovado.
+Media: 5.0
+Aluno reprovado.
+Media: 5.6
+Aluno em exame.
+Nota do exame: 1.0
+Aluno reprovado.
+Media final: 3.3
+Media: 5.1
+Aluno em exame.
+Nota do exame: 3.9
+Aluno reprovado.
+Media final: 4.5
+Media: 4.3
+Aluno reprovado.
+Media: 5.3
+Aluno em exame.
+Nota do exame: 6.1
+Aluno aprovado.
+Media final: 5.7
+Media: 4.4
+Aluno reprovado.
+Media: 7.2
+Aluno aprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 6.2
+Aluno aprovado.
+Media final: 5.8
+Media: 5.6
+Aluno em exame.
+Nota do exame: 2.4
+Aluno reprovado.
+Media final: 4.0
+Media: 3.1
+Aluno reprovado.
+Media: 5.6
+Aluno em exame.
+Nota do exame: 7.9
+Aluno aprovado.
+Media final: 6.8
+Media: 1.8
+Aluno reprovado.
+Media: 6.5
+Aluno em exame.
+Nota do exame: 9.9
+Aluno aprovado.
+Media final: 8.2
+Media: 4.9
+Aluno reprovado.
+Media: 4.2
+Aluno reprovado.
+Media: 3.0
+Aluno reprovado.
+Media: 5.0
+Aluno reprovado.
+Media: 6.7
+Aluno em exame.
+Nota do exame: 0.0
+Aluno reprovado.
+Media final: 3.3
+Media: 4.0
+Aluno reprovado.
+Media: 3.5
+Aluno reprovado.
+Media: 4.5
+Aluno reprovado.
+Media: 3.5
+Aluno reprovado.
+Media: 7.4
+Aluno aprovado.
+Media: 3.4
+Aluno reprovado.
+Media: 4.0
+Aluno reprovado.
+Media: 4.3
+Aluno reprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 0.0
+Aluno reprovado.
+Media final: 2.6
+Media: 4.5
+Aluno reprovado.
+Media: 4.9
+Aluno reprovado.
+Media: 4.7
+Aluno reprovado.
+Media: 7.3
+Aluno aprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 5.9
+Aluno aprovado.
+Media final: 5.6
+Media: 5.5
+Aluno em exame.
+Nota do exame: 2.1
+Aluno reprovado.
+Media final: 3.8
+Media: 7.2
+Aluno aprovado.
+Media: 3.3
+Aluno reprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 5.9
+Aluno aprovado.
+Media final: 5.7
+Media: 3.5
+Aluno reprovado.
+Media: 7.0
+Media: 2.5
+Aluno reprovado.
+Media: 5.0
+Aluno em exame.
+Nota do exame: 1.7
+Aluno reprovado.
+Media final: 3.4
+Media: 7.1
+Aluno aprovado.
+Media: 6.4
+Aluno em exame.
+Nota do exame: 8.4
+Aluno aprovado.
+Media final: 7.4
+Media: 8.2
+Aluno aprovado.
+Media: 6.0
+Aluno em exame.
+Nota do exame: 4.7
+Aluno aprovado.
+Media final: 5.3
+Media: 2.7
+Aluno reprovado.
+Media: 3.6
+Aluno reprovado.
+Media: 4.4
+Aluno reprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 5.8
+Aluno aprovado.
+Media final: 5.5
+Media: 5.4
+Aluno em exame.
+Nota do exame: 8.9
+Aluno aprovado.
+Media final: 7.1
+Media: 4.3
+Aluno reprovado.
+Media: 6.0
+Aluno em exame.
+Nota do exame: 0.6
+Aluno reprovado.
+Media final: 3.3
+Media: 6.6
+Aluno em exame.
+Nota do exame: 8.7
+Aluno aprovado.
+Media final: 7.7
+Media: 4.6
+Aluno reprovado.
+Media: 8.6
+Aluno aprovado.
+Media: 5.8
+Aluno em exame.
+Nota do exame: 9.3
+Aluno aprovado.
+Media final: 7.6
+Media: 4.2
+Aluno reprovado.
+Media: 4.0
+Aluno reprovado.
+Media: 4.7
+Aluno reprovado.
+Media: 6.0
+Aluno em exame.
+Nota do exame: 9.6
+Aluno aprovado.
+Media final: 7.8
+Media: 5.9
+Aluno em exame.
+Nota do exame: 1.4
+Aluno reprovado.
+Media final: 3.7
+Media: 7.1
+Aluno aprovado.
+Media: 4.5
+Aluno reprovado.
+Media: 2.0
+Aluno reprovado.
+Media: 5.0
+Aluno reprovado.
+Media: 4.4
+Aluno reprovado.
+Media: 7.0
+Aluno aprovado.
+Media: 3.6
+Aluno reprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 4.0
+Aluno aprovado.
+Media final: 5.1
+Media: 4.0
+Aluno reprovado.
+Media: 5.1
+Aluno em exame.
+Nota do exame: 5.0
+Aluno aprovado.
+Media final: 5.0
+Media: 2.5
+Aluno reprovado.
+Media: 6.9
+Media: 3.9
+Aluno reprovado.
+Media: 6.6
+Aluno em exame.
+Nota do exame: 3.4
+Aluno aprovado.
+Media final: 5.0
+Media: 5.2
+Aluno em exame.
+Nota do exame: 7.1
+Aluno aprovado.
+Media final: 6.2
+Media: 4.5
+Aluno reprovado.
+Media: 2.7
+Aluno reprovado.
+Media: 4.2
+Aluno reprovado.
+Media: 3.2
+Aluno reprovado.
+Media: 2.9
+Aluno reprovado.
+Media: 4.2
+Aluno reprovado.
+Media: 8.0
+Aluno aprovado.
+Media: 5.1
+Aluno em exame.
+Nota do exame: 9.1
+Aluno aprovado.
+Media final: 7.1
+Media: 4.1
+Aluno reprovado.
+Media: 4.6
+Aluno reprovado.
+Media: 2.7
+Aluno reprovado.
+Media: 5.3
+Aluno em exame.
+Nota do exame: 3.3
+Aluno reprovado.
+Media final: 4.3
+Media: 4.5
+Aluno reprovado.
+Media: 2.6
+Aluno reprovado.
+Media: 4.3
+Aluno reprovado.
+Media: 8.7
+Aluno aprovado.
+Media: 6.6
+Aluno em exame.
+Nota do exame: 8.9
+Aluno aprovado.
+Media final: 7.8
+Media: 1.2
+Aluno reprovado.
+Media: 5.0
+Aluno em exame.
+Nota do exame: 7.5
+Aluno aprovado.
+Media final: 6.3
+Media: 3.3
+Aluno reprovado.
+Media: 5.5
+Aluno em exame.
+Nota do exame: 9.8
+Aluno aprovado.
+Media final: 7.6
+Media: 5.5
+Aluno em exame.
+Nota do exame: 6.3
+Aluno aprovado.
+Media final: 5.9
+Media: 2.7
+Aluno reprovado.
+Media: 5.5
+Aluno em exame.
+Nota do exame: 6.9
+Aluno aprovado.
+Media final: 6.2
+Media: 7.0
+Aluno aprovado.
+Media: 5.5
+Aluno em exame.
+Nota do exame: 7.1
+Aluno aprovado.
+Media final: 6.3
+Media: 2.8
+Aluno reprovado.
+Media: 6.7
+Aluno em exame.
+Nota do exame: 5.7
+Aluno aprovado.
+Media final: 6.2
+Media: 4.8
+Aluno reprovado.
+Media: 3.0
+Aluno reprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 3.0
+Aluno reprovado.
+Media final: 4.1
+Media: 2.9
+Aluno reprovado.
+Media: 6.0
+Aluno em exame.
+Nota do exame: 0.2
+Aluno reprovado.
+Media final: 3.1
+Media: 6.4
+Aluno em exame.
+Nota do exame: 9.5
+Aluno aprovado.
+Media final: 8.0
+Media: 5.5
+Aluno em exame.
+Nota do exame: 4.6
+Aluno aprovado.
+Media final: 5.1
+Media: 6.1
+Aluno em exame.
+Nota do exame: 8.6
+Aluno aprovado.
+Media final: 7.3
+Media: 4.1
+Aluno reprovado.
+Media: 3.8
+Aluno reprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 3.1
+Aluno reprovado.
+Media final: 4.2
+Media: 6.0
+Aluno em exame.
+Nota do exame: 2.7
+Aluno reprovado.
+Media final: 4.4
+Media: 3.7
+Aluno reprovado.
+Media: 5.7
+Aluno em exame.
+Nota do exame: 8.1
+Aluno aprovado.
+Media final: 6.9
+Media: 6.3
+Aluno em exame.
+Nota do exame: 8.6
+Aluno aprovado.
+Media final: 7.4
+Media: 5.7
+Aluno em exame.
+Nota do exame: 6.5
+Aluno aprovado.
+Media final: 6.1
+Media: 5.8
+Aluno em exame.
+Nota do exame: 2.1
+Aluno reprovado.
+Media final: 3.9
+Media: 4.0
+Aluno reprovado.
+Media: 2.2
+Aluno reprovado.
+Media: 7.1
+Aluno aprovado.
+Media: 4.7
+Aluno reprovado.
+Media: 4.6
+Aluno reprovado.
+Media: 1.6
+Aluno reprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 1.4
+Aluno reprovado.
+Media final: 3.3
+Media: 5.8
+Aluno em exame.
+Nota do exame: 8.0
+Aluno aprovado.
+Media final: 6.9
+Media: 2.1
+Aluno reprovado.
+Media: 7.0
+Media: 5.9
+Aluno em exame.
+Nota do exame: 5.3
+Aluno aprovado.
+Media final: 5.6
+Media: 2.3
+Aluno reprovado.
+Media: 3.9
+Aluno reprovado.
+Media: 5.6
+Aluno em exame.
+Nota do exame: 8.5
+Aluno aprovado.
+Media final: 7.1
+Media: 4.3
+Aluno reprovado.
+Media: 4.2
+Aluno reprovado.
+Media: 4.9
+Aluno reprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 7.0
+Media: 0.7
+Aluno reprovado.
+Media: 4.1
+Aluno reprovado.
+Media: 6.7
+Aluno em exame.
+Nota do exame: 9.4
+Aluno aprovado.
+Media final: 8.0
+Media: 7.1
+Aluno aprovado.
+Media: 8.3
+Aluno aprovado.
+Media: 3.7
+Aluno reprovado.
+Media: 3.2
+Aluno reprovado.
+Media: 5.9
+Aluno em exame.
+Nota do exame: 2.8
+Aluno reprovado.
+Media final: 4.4
+Media: 7.0
+Aluno aprovado.
+Media: 7.0
+Aluno aprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 2.2
+Aluno reprovado.
+Media final: 4.1
+Media: 5.9
+Aluno em exame.
+Nota do exame: 1.7
+Aluno reprovado.
+Media final: 3.8
+Media: 2.1
+Aluno reprovado.
+Media: 8.1
+Aluno aprovado.
+Media: 5.9
+Aluno em exame.
+Nota do exame: 2.9
+Aluno reprovado.
+Media final: 4.4
+Media: 2.8
+Aluno reprovado.
+Media: 4.9
+Aluno reprovado.
+Media: 3.5
+Aluno reprovado.
+Media: 6.4
+Aluno em exame.
+Nota do exame: 5.7
+Aluno aprovado.
+Media final: 6.1
+Media: 4.2
+Aluno reprovado.
+Media: 4.4
+Aluno reprovado.
+Media: 5.0
+Aluno em exame.
+Nota do exame: 8.9
+Aluno aprovado.
+Media final: 7.0
+Media: 5.9
+Aluno em exame.
+Nota do exame: 9.2
+Aluno aprovado.
+Media final: 7.5
+Media: 6.6
+Aluno em exame.
+Nota do exame: 6.3
+Aluno aprovado.
+Media final: 6.4
+Media: 3.6
+Aluno reprovado.
+Media: 5.5
+Aluno em exame.
+Nota do exame: 6.8
+Aluno aprovado.
+Media final: 6.2
+Media: 7.1
+Aluno aprovado.
+Media: 5.3
+Aluno em exame.
+Nota do exame: 1.3
+Aluno reprovado.
+Media final: 3.3
+Media: 6.4
+Aluno em exame.
+Nota do exame: 2.1
+Aluno reprovado.
+Media final: 4.3
+Media: 6.1
+Aluno em exame.
+Nota do exame: 9.3
+Aluno aprovado.
+Media final: 7.7
+Media: 6.0
+Aluno em exame.
+Nota do exame: 0.1
+Aluno reprovado.
+Media final: 3.0
+Media: 4.0
+Aluno reprovado.
+Media: 5.6
+Aluno em exame.
+Nota do exame: 4.4
+Aluno reprovado.
+Media final: 5.0
+Media: 5.1
+Aluno em exame.
+Nota do exame: 4.3
+Aluno reprovado.
+Media final: 4.7
+Media: 5.9
+Aluno em exame.
+Nota do exame: 7.1
+Aluno aprovado.
+Media final: 6.5
+Media: 5.0
+Aluno reprovado.
+Media: 5.1
+Aluno em exame.
+Nota do exame: 2.5
+Aluno reprovado.
+Media final: 3.8
+Media: 2.8
+Aluno reprovado.
+Media: 2.8
+Aluno reprovado.
+Media: 3.5
+Aluno reprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 2.6
+Aluno reprovado.
+Media final: 4.0
+Media: 5.2
+Aluno em exame.
+Nota do exame: 1.1
+Aluno reprovado.
+Media final: 3.1
+Media: 5.8
+Aluno em exame.
+Nota do exame: 3.9
+Aluno reprovado.
+Media final: 4.9
+Media: 5.2
+Aluno em exame.
+Nota do exame: 7.8
+Aluno aprovado.
+Media final: 6.5
+Media: 7.6
+Aluno aprovado.
+Media: 4.2
+Aluno reprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 5.1
+Aluno aprovado.
+Media final: 5.3
+Media: 8.6
+Aluno aprovado.
+Media: 8.1
+Aluno aprovado.
+Media: 7.2
+Aluno aprovado.
+Media: 3.6
+Aluno reprovado.
+Media: 6.6
+Aluno em exame.
+Nota do exame: 7.6
+Aluno aprovado.
+Media final: 7.1
+Media: 3.8
+Aluno reprovado.
+Media: 4.6
+Aluno reprovado.
+Media: 6.9
+Media: 4.2
+Aluno reprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 0.7
+Aluno reprovado.
+Media final: 3.4
+Media: 5.3
+Aluno em exame.
+Nota do exame: 1.7
+Aluno reprovado.
+Media final: 3.5
+Media: 3.6
+Aluno reprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 8.0
+Aluno aprovado.
+Media final: 6.6
+Media: 4.7
+Aluno reprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 2.9
+Aluno reprovado.
+Media: 5.6
+Aluno em exame.
+Nota do exame: 0.6
+Aluno reprovado.
+Media final: 3.1
+Media: 6.4
+Aluno em exame.
+Nota do exame: 6.6
+Aluno aprovado.
+Media final: 6.5
+Media: 5.4
+Aluno em exame.
+Nota do exame: 1.0
+Aluno reprovado.
+Media final: 3.2
+Media: 5.0
+Aluno reprovado.
+Media: 4.2
+Aluno reprovado.
+Media: 2.4
+Aluno reprovado.
+Media: 6.8
+Aluno em exame.
+Nota do exame: 4.4
+Aluno aprovado.
+Media final: 5.6
+Media: 6.3
+Aluno em exame.
+Nota do exame: 3.8
+Aluno aprovado.
+Media final: 5.0
+Media: 4.5
+Aluno reprovado.
+Media: 4.0
+Aluno reprovado.
+Media: 5.3
+Aluno em exame.
+Nota do exame: 5.1
+Aluno aprovado.
+Media final: 5.2
+Media: 2.3
+Aluno reprovado.
+Media: 5.5
+Aluno em exame.
+Nota do exame: 7.0
+Aluno aprovado.
+Media final: 6.2
+Media: 3.8
+Aluno reprovado.
+Media: 4.1
+Aluno reprovado.
+Media: 4.9
+Aluno reprovado.
+Media: 6.4
+Aluno em exame.
+Nota do exame: 5.1
+Aluno aprovado.
+Media final: 5.8
+Media: 5.0
+Aluno reprovado.
+Media: 3.5
+Aluno reprovado.
+Media: 8.2
+Aluno aprovado.
+Media: 2.3
+Aluno reprovado.
+Media: 7.8
+Aluno aprovado.
+Media: 1.6
+Aluno reprovado.
+Media: 2.2
+Aluno reprovado.
+Media: 2.0
+Aluno reprovado.
+Media: 4.2
+Aluno reprovado.
+Media: 6.0
+Aluno em exame.
+Nota do exame: 3.7
+Aluno reprovado.
+Media final: 4.8
+Media: 2.7
+Aluno reprovado.
+Media: 2.8
+Aluno reprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 9.8
+Aluno aprovado.
+Media final: 7.6
+Media: 3.7
+Aluno reprovado.
+Media: 4.1
+Aluno reprovado.
+Media: 6.2
+Aluno em exame.
+Nota do exame: 6.3
+Aluno aprovado.
+Media final: 6.3
+Media: 4.6
+Aluno reprovado.
+Media: 5.6
+Aluno em exame.
+Nota do exame: 0.1
+Aluno reprovado.
+Media final: 2.8
+Media: 7.7
+Aluno aprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 5.7
+Aluno aprovado.
+Media final: 5.5
+Media: 3.6
+Aluno reprovado.
+Media: 6.5
+Aluno em exame.
+Nota do exame: 9.7
+Aluno aprovado.
+Media final: 8.1
+Media: 3.0
+Aluno reprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 9.3
+Aluno aprovado.
+Media final: 7.3
+Media: 5.3
+Aluno em exame.
+Nota do exame: 7.7
+Aluno aprovado.
+Media final: 6.5
+Media: 6.0
+Aluno em exame.
+Nota do exame: 6.0
+Aluno aprovado.
+Media final: 6.0
+Media: 4.1
+Aluno reprovado.
+Media: 5.1
+Aluno em exame.
+Nota do exame: 5.2
+Aluno aprovado.
+Media final: 5.2
+Media: 2.7
+Aluno reprovado.
+Media: 2.2
+Aluno reprovado.
+Media: 4.3
+Aluno reprovado.
+Media: 4.3
+Aluno reprovado.
+Media: 5.9
+Aluno em exame.
+Nota do exame: 0.8
+Aluno reprovado.
+Media final: 3.3
+Media: 5.1
+Aluno em exame.
+Nota do exame: 4.2
+Aluno reprovado.
+Media final: 4.7
+Media: 7.0
+Aluno aprovado.
+Media: 3.6
+Aluno reprovado.
+Media: 5.1
+Aluno em exame.
+Nota do exame: 8.5
+Aluno aprovado.
+Media final: 6.8
+Media: 6.2
+Aluno em exame.
+Nota do exame: 8.4
+Aluno aprovado.
+Media final: 7.3
+Media: 3.2
+Aluno reprovado.
+Media: 2.8
+Aluno reprovado.
+Media: 4.9
+Aluno reprovado.
+Media: 4.2
+Aluno reprovado.
+Media: 5.6
+Aluno em exame.
+Nota do exame: 1.5
+Aluno reprovado.
+Media final: 3.5
+Media: 6.0
+Aluno em exame.
+Nota do exame: 6.0
+Aluno aprovado.
+Media final: 6.0
+Media: 5.7
+Aluno em exame.
+Nota do exame: 8.9
+Aluno aprovado.
+Media final: 7.3
+Media: 5.6
+Aluno em exame.
+Nota do exame: 7.5
+Aluno aprovado.
+Media final: 6.6
+Media: 5.3
+Aluno em exame.
+Nota do exame: 5.6
+Aluno aprovado.
+Media final: 5.4
+Media: 5.2
+Aluno em exame.
+Nota do exame: 6.7
+Aluno aprovado.
+Media final: 5.9
+Media: 5.8
+Aluno em exame.
+Nota do exame: 0.5
+Aluno reprovado.
+Media final: 3.2
+Media: 5.8
+Aluno em exame.
+Nota do exame: 6.3
+Aluno aprovado.
+Media final: 6.1
+Media: 8.5
+Aluno aprovado.
+Media: 3.1
+Aluno reprovado.
+Media: 6.5
+Aluno em exame.
+Nota do exame: 0.4
+Aluno reprovado.
+Media final: 3.4
+Media: 7.2
+Aluno aprovado.
+Media: 7.1
+Aluno aprovado.
+Media: 6.2
+Aluno em exame.
+Nota do exame: 7.6
+Aluno aprovado.
+Media final: 6.9
+Media: 4.6
+Aluno reprovado.
+Media: 6.3
+Aluno em exame.
+Nota do exame: 3.1
+Aluno reprovado.
+Media final: 4.7
+Media: 7.6
+Aluno aprovado.
+Media: 6.9
+Aluno em exame.
+Nota do exame: 6.7
+Aluno aprovado.
+Media final: 6.8
+Media: 7.2
+Aluno aprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 9.1
+Aluno aprovado.
+Media final: 7.2
+Media: 7.8
+Aluno aprovado.
+Media: 3.9
+Aluno reprovado.
+Media: 5.5
+Aluno em exame.
+Nota do exame: 8.1
+Aluno aprovado.
+Media final: 6.8
+Media: 7.7
+Aluno aprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 2.5
+Aluno reprovado.
+Media: 9.2
+Aluno aprovado.
+Media: 4.1
+Aluno reprovado.
+Media: 3.7
+Aluno reprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 2.3
+Aluno reprovado.
+Media final: 4.2
+Media: 3.7
+Aluno reprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 9.7
+Aluno aprovado.
+Media final: 7.5
+Media: 2.4
+Aluno reprovado.
+Media: 3.6
+Aluno reprovado.
+Media: 6.9
+Media: 5.4
+Aluno em exame.
+Nota do exame: 0.9
+Aluno reprovado.
+Media final: 3.1
+Media: 6.6
+Aluno em exame.
+Nota do exame: 9.4
+Aluno aprovado.
+Media final: 8.0
+Media: 6.5
+Aluno em exame.
+Nota do exame: 0.9
+Aluno reprovado.
+Media final: 3.7
+Media: 2.6
+Aluno reprovado.
+Media: 2.9
+Aluno reprovado.
+Media: 5.7
+Aluno em exame.
+Nota do exame: 6.8
+Aluno aprovado.
+Media final: 6.2
+Media: 5.9
+Aluno em exame.
+Nota do exame: 1.4
+Aluno reprovado.
+Media final: 3.7
+Media: 3.1
+Aluno reprovado.
+Media: 2.3
+Aluno reprovado.
+Media: 5.0
+Aluno reprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 4.2
+Aluno reprovado.
+Media final: 4.8
+Media: 4.0
+Aluno reprovado.
+Media: 5.5
+Aluno em exame.
+Nota do exame: 1.6
+Aluno reprovado.
+Media final: 3.6
+Media: 1.2
+Aluno reprovado.
+Media: 2.5
+Aluno reprovado.
+Media: 5.8
+Aluno em exame.
+Nota do exame: 2.4
+Aluno reprovado.
+Media final: 4.1
+Media: 4.0
+Aluno reprovado.
+Media: 5.4
+Aluno em exame.
+Nota do exame: 2.6
+Aluno reprovado.
+Media final: 4.0
+Media: 4.5
+Aluno reprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 2.8
+Aluno reprovado.
+Media: 6.2
+Aluno em exame.
+Nota do exame: 2.7
+Aluno reprovado.
+Media final: 4.4
+Media: 4.7
+Aluno reprovado.
+Media: 4.1
+Aluno reprovado.
+Media: 4.7
+Aluno reprovado.
+Media: 5.2
+Aluno em exame.
+Nota do exame: 4.1
+Aluno reprovado.
+Media final: 4.6
+Media: 4.7
+Aluno reprovado.
+Media: 6.2
+Aluno em exame.
+Nota do exame: 0.8
+Aluno reprovado.
+Media final: 3.5
+Media: 3.8
+Aluno reprovado.
+Media: 5.1
+Aluno em exame.
+Nota do exame: 8.2
+Aluno aprovado.
+Media final: 6.7
+Media: 3.9
+Aluno reprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 1.4
+Aluno reprovado.
+Media final: 3.8
+Media: 3.2
+Aluno reprovado.
+Media: 4.9
+Aluno reprovado.
+Media: 5.7
+Aluno em exame.
+Nota do exame: 9.9
+Aluno aprovado.
+Media final: 7.8
+Media: 4.9
+Aluno reprovado.
+Media: 2.6
+Aluno reprovado.
+Media: 5.9
+Aluno em exame.
+Nota do exame: 7.2
+Aluno aprovado.
+Media final: 6.6
+Media: 3.5
+Aluno reprovado.
+Media: 3.7
+Aluno reprovado.
+Media: 2.2
+Aluno reprovado.
+Media: 6.1
+Aluno em exame.
+Nota do exame: 4.2
+Aluno aprovado.
+Media final: 5.1
+Media: 3.4
+Aluno reprovado.
+Media: 8.5
+Aluno aprovado.
+Media: 2.4
+Aluno reprovado.
+Media: 3.7
+Aluno reprovado.
+Media: 3.5
+Aluno reprovado.
+Media: 6.4
+Aluno em exame.
+Nota do exame: 4.6
+Aluno aprovado.
+Media final: 5.5
+Media: 8.1
+Aluno aprovado.
+Media: 4.8
+Aluno reprovado.
+Media: 4.0
+Aluno reprovado.
+Media: 4.3
+Aluno reprovado.
+Media: 4.6
+Aluno reprovado.
+Media: 4.5
+Aluno reprovado.
+Media: 4.6
+Aluno reprovado.
+Media: 4.4
+Aluno reprovado.
+Media: 3.9
+Aluno reprovado.
+Media: 4.9
+Aluno reprovado.
+Media: 2.9
+Aluno reprovado.
+Media: 1.1
+Aluno reprovado.
+Media: 4.4
+Aluno reprovado.
+Media: 6.6
+Aluno em exame.
+Nota do exame: 4.5
+Aluno aprovado.
+Media final: 5.6
+Media: 4.3
+Aluno reprovado.
+Media: 2.9
+Aluno reprovado.
+Media: 2.7
+Aluno reprovado.
+Media: 1.9
+Aluno reprovado.
+Media: 6.2
+Aluno em exame.
+Nota do exame: 9.8
+Aluno aprovado.
+Media final: 8.0
+Media: 6.8
+Aluno em exame.
+Nota do exame: 5.4
+Aluno aprovado.
+Media final: 6.1
+Media: 6.3
+Aluno em exame.
+Nota do exame: 0.2
+Aluno reprovado.
+Media final: 3.2
+Media: 5.1
+Aluno em exame.
+Nota do exame: 8.8
+Aluno aprovado.
+Media final: 6.9
+Media: 6.1
+Aluno em exame.
+Nota do exame: 8.9
+Aluno aprovado.
+Media final: 7.5
+Media: 6.8
+Aluno em exame.
+Nota do exame: 1.9
+Aluno reprovado.
+Media final: 4.4
+Media: 3.9
+Aluno reprovado.
+Media: 6.0
+Aluno em exame.
+Nota do exame: 6.9
+Aluno aprovado.
+Media final: 6.5
+Media: 5.9
+Aluno em exame.
+Nota do exame: 1.7
+Aluno reprovado.
+Media final: 3.8
+Media: 5.1
+Aluno em exame.
+Nota do exame: 3.7
+Aluno reprovado.
+Media final: 4.4
+Media: 7.3
+Aluno aprovado.
+Media: 7.7
+Aluno aprovado.
+Media: 5.9
+Aluno em exame.
+Nota do exame: 7.8
+Aluno aprovado.
+Media final: 6.8
+Media: 8.1
+Aluno aprovado.
+Media: 3.1
+Aluno reprovado.
+Media: 6.2
+Aluno em exame.
+Nota do exame: 1.5
+Aluno reprovado.
+Media final: 3.9
+Media: 3.9
+Aluno reprovado.
+Media: 4.0
+Aluno reprovado.
+Media: 5.8
+Aluno em exame.
+Nota do exame: 5.0
+Aluno aprovado.
+Media final: 5.4
+Media: 2.9
+Aluno reprovado.
+Media: 7.3
+Aluno aprovado.
+Media: 3.4
+Aluno reprovado.
+Media: 4.4
+Aluno reprovado.
+Media: 4.3
+Aluno reprovado.
+Media: 3.8
+Aluno reprovado.
+Media: 7.2
+Aluno aprovado.
+Media: 3.3
+Aluno reprovado.
+Media: 4.5
+Aluno reprovado.
+Media: 6.7
+Aluno em exame.
+Nota do exame: 3.9
+Aluno aprovado.
+Media final: 5.3
+Media: 8.1
+Aluno aprovado.
+Media: 7.1
+Aluno aprovado.
+Media: 6.2
+Aluno em exame.
+Nota do exame: 4.5
+Aluno aprovado.
+Media final: 5.3
+Media: 5.9
+Aluno em exame.
+Nota do exame: 6.9
+Aluno aprovado.
+Media final: 6.4
+Media: 5.2
+Aluno em exame.
+Nota do exame: 3.9
+Aluno reprovado.
+Media final: 4.6
+Media: 5.5
+Aluno em exame.
+Nota do exame: 0.3
+Aluno reprovado.
+Media final: 2.9
+Media: 9.0
+Aluno aprovado.
+Media: 6.2
+Aluno em exame.
+Nota do exame: 9.2
+Aluno aprovado.
+Media final: 7.7
+Media: 6.1
+Aluno em exame.
+Nota do exame: 3.2
+Aluno reprovado.
+Media final: 4.6
+Media: 4.5
+Aluno reprovado.
+Media: 5.1
+Aluno em exame.
+Nota do exame: 8.7
+Aluno aprovado.
+Media final: 6.9
+Media: 5.2
+Aluno em exame.
+Nota do exame: 7.4
+Aluno aprovado.
+Media final: 6.3
+Media: 7.0
