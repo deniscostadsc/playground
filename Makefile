@@ -52,7 +52,8 @@ SUPPORTED_LANGUAGES = \
 	$(RB) \
 	$(RS) \
 	$(SCALA) \
-	$(SQL)
+	$(SQL) \
+	$(TS)
 # $(ML)
 # $(PAS)
 
