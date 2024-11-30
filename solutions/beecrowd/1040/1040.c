@@ -6,7 +6,7 @@ int main() {
     while (scanf("%f %f %f %f", &a, &b, &c, &d) != EOF) {
         m = (a * 2.0 + b * 3.0 + c * 4.0 + d) / 10.0;
 
-        printf("Media: %.1f\n", ((float)(int)(m*10)/10.0));
+        printf("Media: %.1f\n", ((float)(int)(m * 10) / 10.0));
 
         if (m >= 7.0) {
             printf("Aluno aprovado.\n");
