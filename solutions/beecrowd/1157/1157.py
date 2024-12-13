@@ -13,8 +13,8 @@ for line in sys.stdin:
             heapq.heappush(divisors, possible_divisor)
 
             if number // possible_divisor not in found_divisors:
-                heapq.heappush(divisors, number // possible_divisor)
                 found_divisors.add(number // possible_divisor)
+                heapq.heappush(divisors, number // possible_divisor)
 
     while divisors:
         print(heapq.heappop(divisors))
