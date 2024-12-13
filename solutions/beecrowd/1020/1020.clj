@@ -4,7 +4,7 @@
   (loop [line (read-line)]
     (when line
       (let [value (-> line
-                      (Integer/parseInt))
+                      Integer/parseInt)
             years (quot value 365)
             months (-> (mod value 365)
                        (quot 30))

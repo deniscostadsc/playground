@@ -4,7 +4,7 @@
 (defn maior-ab
   [a b]
   (-> (- a b)
-      (Math/abs)
+      Math/abs
       (+  b)
       (+  a)
       (/  2)))

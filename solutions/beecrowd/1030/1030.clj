@@ -12,7 +12,7 @@
                  (+ k)
                  dec
                  (mod current-n)
-                 (inc))))))
+                 inc)))))
 
 (defn main []
   (loop [nc (Integer/parseInt (read-line))

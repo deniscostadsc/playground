@@ -7,7 +7,7 @@
             black-squares (-> number
                               (Math/pow 2)
                               (/ 2)
-                              (int))
+                              int)
             white-square (if (zero? (mod number 2))
                            black-squares
                            (+ black-squares 1))]

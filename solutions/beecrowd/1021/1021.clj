@@ -22,7 +22,7 @@
   (loop [line (read-line)]
     (when line
       (let [value (-> line
-                      (Double/parseDouble))]
+                      Double/parseDouble)]
         (-> (* value 100)
             (print-result notas "nota")
             (print-result coins "moeda"))

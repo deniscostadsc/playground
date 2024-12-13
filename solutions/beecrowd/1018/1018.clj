@@ -3,7 +3,7 @@
 (defn main []
   (let [bills '(100 50 20 10 5 2 1)
         value (-> (read-line)
-                  (Integer/parseInt))]
+                  Integer/parseInt)]
     (println value)
     (loop [[bill & remaining-bills] bills
            v value]

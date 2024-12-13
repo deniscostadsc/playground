@@ -11,7 +11,7 @@
                  (+ k)
                  dec
                  (mod current-n)
-                 (inc))))))
+                 inc)))))
 
 (defn calculate [n]
   (loop [m 1]

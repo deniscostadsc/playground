@@ -7,10 +7,10 @@
 (defn main []
   (loop [index (Integer/parseInt (read-line))]
     (when (> index 0)
-      (-> (read-line)
-          (filter-uppercase-letter)
-          (str/reverse)
-          (println))
+      (-> read-line
+          filter-uppercase-letter
+          str/reverse
+          println)
       (recur (dec index)))))
 
 (main)

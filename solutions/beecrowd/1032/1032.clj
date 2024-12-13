@@ -13,9 +13,9 @@
                    (not-any? #(divisible? number %) (range
                                                      3
                                                      (-> (Math/sqrt number)
-                                                         (Math/ceil)
-                                                         (int)
-                                                         (inc))
+                                                         Math/ceil
+                                                         int
+                                                         inc)
                                                      2))))))
 
 (def next-prime
@@ -64,9 +64,9 @@
             ;;  (inc index-prime)
                  (-> result
                      (+ (nth-prime (- n current-n)))
-                     (dec)
+                     dec
                      (mod current-n)
-                     (inc))))))
+                     inc))))
 
 (defn main []
   (loop [number (Integer/parseInt (read-line))]

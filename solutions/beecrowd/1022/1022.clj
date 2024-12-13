@@ -25,7 +25,7 @@
 
 (defn main []
   (let [n (-> (read-line)
-              (Integer/parseInt))]
+              Integer/parseInt)]
     (loop [n' n]
       (when (> n' 0)
         (let [[num-1 _ den-1 operator num-2 _ den-2] (str/split (read-line) #" ")

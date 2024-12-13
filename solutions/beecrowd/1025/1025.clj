@@ -5,7 +5,7 @@
 (defn binary-search [value items]
   (loop [begin 0
          end (-> (count items)
-                 (dec))]
+                 dec)]
     (let [middle (-> (+ begin end)
                      (quot 2))]
       (if  (> begin end)
@@ -49,10 +49,10 @@
     (let [[n q] (->> (str/split line #" ")
                      (map #(Integer/parseInt %)))
           marbles (-> (read-values n)
-                      (sort)
-                      (vec))
+                      sort
+                      vec)
           queries (-> (read-values q)
-                      (reverse))]
+                      reverse)]
       (when (and (not= n 0) (not= q 0))
         (process-print test-case-index marbles queries)
         (recur (read-line) (inc test-case-index))))))
