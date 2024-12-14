@@ -4,6 +4,7 @@ set -euo pipefail
 
 TESTCASES=300
 MAX_N=10
+# shellcheck disable=SC2207
 ALPHABET_UPPERCASE=($(echo {A..Z}))
 VOWELS_LOWERCASE=(a e i o u)
 CONSONANTS_LOWERCASE=(b c d f g h j k l m n p q r s t v w x y z)
