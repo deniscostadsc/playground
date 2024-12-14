@@ -1,6 +1,6 @@
-import sys
-import math
 import heapq
+import math
+import sys
 
 for line in sys.stdin:
     number = int(line)
