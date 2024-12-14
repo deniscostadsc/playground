@@ -7,8 +7,6 @@ WORKDIR /code
 
 RUN apk add wget
 
-RUN cd /bin && \
-    wget https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh && \
-    chmod +x wait-for-it.sh
+COPY .docker/wait-for-it.sh /bin
 
 CMD /bin/wait-for-it.sh database-server:5432 && /code/scripts/docker/run-sql.sh
