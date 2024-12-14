@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
+# shellcheck disable=all
 # Use this script to test if a given TCP host/port are available
 # https://github.com/vishnubob/wait-for-it
+
+# set -euo pipefail
 
 WAITFORIT_cmdname=${0##*/}
 
@@ -63,9 +66,9 @@ wait_for_wrapper()
     wait $WAITFORIT_PID
     WAITFORIT_RESULT=$?
     if [[ $WAITFORIT_RESULT -ne 0 ]]; then
-        echoerr "$WAITFORIT_cmdname: timeout occurred after waiting $WAITFORIT_TIMEOUT seconds for $WAITFORIT_HOST:$WAITFORIT_PORT"
+    echoerr "$WAITFORIT_cmdname: timeout occurred after waiting ${WAITFORIT_TIMEOUT} seconds for $WAITFORIT_HOST:$WAITFORIT_PORT"
     fi
-    return $WAITFORIT_RESULT
+    return ${WAITFORIT_RESULT}
 }
 
 # process arguments
