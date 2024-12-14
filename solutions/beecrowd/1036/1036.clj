@@ -4,8 +4,7 @@
 (defn delta [a b c]
   (-> (* b b)
       (- 4)
-      (* a)
-      (* c)))
+      (* a c)))
 
 (defn bhaskara [a b delta]
   [(-> b

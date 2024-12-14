@@ -3,7 +3,7 @@
 (defn sum-all-divibles-by
   [n limit]
   (let [p (quot limit n)]
-    (quot (* n (* p (+ p 1))) 2)))
+    (quot (* n p (+ p 1)) 2)))
 
 (defn main []
   (- (+ (sum-all-divibles-by 3 999)

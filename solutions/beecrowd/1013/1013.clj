@@ -5,9 +5,8 @@
   [a b]
   (-> (- a b)
       Math/abs
-      (+  b)
-      (+  a)
-      (/  2)))
+      (+ b a)
+      (/ 2)))
 
 (defn main []
   (loop [line (read-line)]
