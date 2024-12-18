@@ -1,10 +1,11 @@
 import sys
 
-_ = int(input())
-distance = 0
-
 for line in sys.stdin:
-    t, v = map(int, line.split())
-    distance += t * v
+    n = int(line)
+    distance = 0
 
-print(distance)
+    for _ in range(n):
+        t, v = map(int, input().split())
+        distance += t * v
+
+    print(distance)
