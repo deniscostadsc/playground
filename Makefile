@@ -46,6 +46,7 @@ SUPPORTED_LANGUAGES = \
 	$(JAVA) \
 	$(JS) \
 	$(LUA) \
+	$(ML) \
 	$(PHP) \
 	$(PY) \
 	$(R) \
@@ -54,7 +55,6 @@ SUPPORTED_LANGUAGES = \
 	$(SCALA) \
 	$(SQL) \
 	$(TS)
-# $(ML)
 # $(PAS)
 
 ifdef LANGUAGES

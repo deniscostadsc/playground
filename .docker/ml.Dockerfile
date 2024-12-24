@@ -1,14 +1,16 @@
-FROM gcc:8.5.0
+FROM ubuntu:24.04
 
-ENV OCAML_VERSION 4.01.0
+ENV OCAML_VERSION 4.05.0
 
-RUN apt update && apt upgrade -y && apt install -y --force-yes make
+RUN apt update && apt upgrade -y && apt install -y --force-yes opam
 
-RUN wget https://github.com/ocaml/ocaml/archive/refs/tags/${OCAML_VERSION}.zip
-RUN unzip ${OCAML_VERSION}.zip
-RUN cd ocaml-${OCAML_VERSION} && ./configure && make world.opt && make install
+RUN opam init --disable-sandboxing
+RUN opam update
 
-RUN mkdir /code
+RUN opam install -y ocaml=${OCAML_VERSION}
+RUN opam switch create ${OCAML_VERSION}
+
+RUN mkdir code
 WORKDIR /code
 
 CMD /code/scripts/docker/run-ml.sh
