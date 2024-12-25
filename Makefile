@@ -115,8 +115,9 @@ clean:
 	@find . -name '*.exe' -delete
 	@find . -name '*.hi' -delete
 	@find . -name '*.o' -delete
-	@find . -name '*.s' -delete
 	@find . -name '*.out' -delete
+	@find . -name '*.res' -delete
+	@find . -name '*.s' -delete
 	@find . -name 'compiledFromTSFile.js' -delete
 	@find . -name 'Main.java' -delete
 	@find . -name 'result-*.txt' -delete
