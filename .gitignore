@@ -8,6 +8,8 @@
 *.o
 *.out
 *.py[oc]
+*.res
+*.s
 *.swp
 *~
 \?/
