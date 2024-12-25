@@ -18,15 +18,15 @@ for folder in ${FOLDERS}; do
         rm -rf "${folder}main.ml" 2> /dev/null
 
         cp ./*.ml main.ml
-        ocamlc -o ml main.ml
+        ocamlc -o ml.out main.ml
 
         if [[ -f in.txt ]]; then
-            ./ml < in.txt > result-ml.txt
+            ./ml.out < in.txt > result-ml.txt
         else
-            ./ml > result-ml.txt
+            ./ml.out > result-ml.txt
         fi
 
-        rm -rf ml main.ml main.cmi main.cmo
+        rm -rf ml.out main.ml main.cmi main.cmo
 
         diff result-ml.txt out.txt
 
