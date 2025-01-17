@@ -26,7 +26,10 @@ sum_numbers_that_are_sum_of_two_abundant = 0
 
 for i in abundant_numbers_below_limit:
     for j in abundant_numbers_below_limit:
-        if i + j <= LIMIT and i + j not in numbers_that_are_sum_of_two_abundant:
+        if (
+            i + j <= LIMIT
+            and i + j not in numbers_that_are_sum_of_two_abundant
+        ):
             numbers_that_are_sum_of_two_abundant.add(i + j)
             sum_numbers_that_are_sum_of_two_abundant += i + j
 
