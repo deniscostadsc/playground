@@ -17,6 +17,8 @@ for language in ${LANGUAGES}; do
             --quiet-pull \
             --abort-on-container-exit \
             --exit-code-from database-client
+    elif [[ "${language}" == "c" ]]; then
+        ${DOCKER_RUN_PREFIX} --platform linux/amd64 -e FOLDERS="${FOLDERS}" "${language}"
     else
         ${DOCKER_RUN_PREFIX} -e FOLDERS="${FOLDERS}" "${language}"
     fi
