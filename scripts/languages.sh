@@ -28,7 +28,8 @@ for folder in ${FOLDERS}; do
             -name '*.rb' -o \
             -name '*.rs' -o \
             -name '*.scala' -o \
-            -name '*.sql' | \
+            -name '*.sql' -o \
+            -name '*.ts' | \
         grep -Ev 'drop-table.sql|schema.sql')"
     echo "$(echo "${solutions}" | wc -w | sed 's/ //g') ${folder}"
 done | sort -nr
