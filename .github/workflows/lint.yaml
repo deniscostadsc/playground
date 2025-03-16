@@ -82,6 +82,15 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           push: false
+      - uses: docker/build-push-action@v4
+        with:
+          context: .
+          file: ".docker/lint/ts-lint.Dockerfile"
+          tags: ts-lint:latest
+          load: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          push: false
       - name: Run C lint
         uses: addnab/docker-run-action@v3
         with:
@@ -131,3 +140,9 @@ jobs:
           image: sh-lint:latest
           options: -v ${{ github.workspace }}:/code
           run: ./scripts/lint-sh.sh
+      - name: Run Typescript lint
+        uses: addnab/docker-run-action@v3
+        with:
+          image: ts-lint:latest
+          options: -v ${{ github.workspace }}:/code
+          run: ts-standard "**/*.ts"
