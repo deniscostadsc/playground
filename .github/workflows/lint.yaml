@@ -127,7 +127,7 @@ jobs:
         with:
           image: js-lint:latest
           options: -v ${{ github.workspace }}:/code
-          run: standard
+          run: standard "**/*.js"
       - name: Run Python lint
         uses: addnab/docker-run-action@v3
         with:
