@@ -66,11 +66,11 @@ def josephus(n, k=2, nth_prime=None) -> int:
         result = ((josephus(n - 1, next_prime(k), nth_prime) + k - 1) % n) + 1
 
     # print(f'nth_prime = {nth_prime - n}')
-    print(f'k = {k}')
-    print(f'n = {n}')
+    # print(f'k = {k}')
+    # print(f'n = {n}')
 
-    print(f'result = {result}')
-    print('--')
+    # print(f'result = {result}')
+    # print('--')
 
     return result
 
@@ -82,4 +82,4 @@ for line in sys.stdin:
         break
 
     print(josephus(n))
-    print('--------------')
+    # print('--------------')

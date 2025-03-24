@@ -1,51 +1,51 @@
-;; (ns main)
+(ns main)
 
-;; (defn divisible? [number divisor]
-;;   (zero? (rem number divisor)))
+(defn divisible? [number divisor]
+  (zero? (rem number divisor)))
 
-;; (def prime?
-;;   (memoize (fn [number]
-;;              (cond (= number 2)
-;;                    true
-;;                    (or (< number 2) (divisible? number 2))
-;;                    false
-;;                    :else
-;;                    (not-any? #(divisible? number %) (range
-;;                                                      3
-;;                                                      (-> (Math/sqrt number)
-;;                                                          Math/ceil
-;;                                                          int
-;;                                                          inc)
-;;                                                      2))))))
+(def prime?
+  (memoize (fn [number]
+             (cond (= number 2)
+                   true
+                   (or (< number 2) (divisible? number 2))
+                   false
+                   :else
+                   (not-any? #(divisible? number %) (range
+                                                     3
+                                                     (-> (Math/sqrt number)
+                                                         Math/ceil
+                                                         int
+                                                         inc)
+                                                     2))))))
 
-;; (def next-prime
-;;   (memoize (fn [number]
-;;              (let [next-number (inc number)]
-;;                (if (prime? next-number)
-;;                  next-number
-;;                  (next-prime (inc number)))))))
+(def next-prime
+  (memoize (fn [number]
+             (let [next-number (inc number)]
+               (if (prime? next-number)
+                 next-number
+                 (next-prime (inc number)))))))
 
-;; (def nth-prime
-;;   (memoize (fn [nth]
-;;              (loop [index 0
-;;                     prime 2]
-;;                (cond (= nth 0)
-;;                      2
-;;                      (= index (dec nth))
-;;                      (next-prime prime)
-;;                      :else
-;;                      (recur (inc index)
-;;                             (next-prime prime)))))))
+(def nth-prime
+  (memoize (fn [nth]
+             (loop [index 0
+                    prime 2]
+               (cond (= nth 0)
+                     2
+                     (= index (dec nth))
+                     (next-prime prime)
+                     :else
+                     (recur (inc index)
+                            (next-prime prime)))))))
 
-;; ;; (def josephus
-;; ;;   (memoize (fn [n k]
-;; ;;              (if (= n 1)
-;; ;;                1
-;; ;;                (-> (josephus (dec n) (next-prime k))
-;; ;;                    (+ k)
-;; ;;                    (dec)
-;; ;;                    (mod n)
-;; ;;                    (inc))))))
+(def josephus
+  (memoize (fn [n k]
+             (if (= n 1)
+               1
+               (-> (josephus (dec n) (next-prime k))
+                   (+ k)
+                   (dec)
+                   (mod n)
+                   (inc))))))
 
 ;; (defn josephus [n]
 ;;   (loop [current-n 1
@@ -68,14 +68,14 @@
 ;;                      (mod current-n)
 ;;                      inc))))
 
-;; (defn main []
-;;   (loop [number (Integer/parseInt (read-line))]
-;;     (printf "-----------%n")
-;;     (when (not= number 0)
-;;       (printf "%d%n" (josephus number))
-;;       (recur (Integer/parseInt (read-line))))))
+(defn main []
+  (loop [number (Integer/parseInt (read-line))]
+    (printf "-----------%n")
+    (when (not= number 0)
+      (printf "%d%n" (josephus number))
+      (recur (Integer/parseInt (read-line))))))
 
-;; (main)
+(main)
 
 ;; (defn print-primes []
 ;;   (loop [n 2]
@@ -83,7 +83,7 @@
 ;;       (printf "%d -> %d%n" n (next-prime n))
 ;;       (recur (next-prime n)))))
 
-;; ;; (print-primes)
+;; (print-primes)
 
 
 ;; (defn print-nth-primes []
@@ -92,4 +92,4 @@
 ;;       (printf "%d -> %d%n" n (nth-prime n))
 ;;       (recur (inc n)))))
 
-;; ;; (print-nth-primes)
+;; (print-nth-primes)
