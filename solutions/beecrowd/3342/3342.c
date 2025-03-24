@@ -14,8 +14,7 @@ int main() {
         printf(
             "%d casas brancas e %d casas pretas\n",
             white_squares,
-            black_squares
-        );
+            black_squares);
     }
 
     return 0;
