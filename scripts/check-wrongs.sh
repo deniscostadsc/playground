@@ -4,11 +4,12 @@ set -euo pipefail
 
 CHANGED_FILES="${1}"
 
-FOLDERS="$(echo "${CHANGED_FILES}" | xargs dirname | uniq)"
+FOLDERS="$(echo "${CHANGED_FILES}" | xargs dirname | sort | uniq)"
 
 EXIT_STATUS=0
 
 for folder in ${FOLDERS}; do
+    [[ -f "${folder}/problem.md" ]] || continue
     [[ -f "${folder}/WRONG" ]] || continue
     [[ -s "${folder}/WRONG" ]] && continue
 
