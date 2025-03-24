@@ -2,6 +2,7 @@
 	__run-build \
 	__run-lint-build \
 	check-tags \
+	check-wrongs \
 	clean \
 	languages \
 	lint \
@@ -108,6 +109,9 @@ __run-lint-build:
 
 check-tags:
 	@scripts/check-tags.sh
+
+check-wrongs:
+	@scripts/check-wrongs.sh $(CHANGED_FILES)
 
 clean:
 	@find . -name '*.class' -delete
