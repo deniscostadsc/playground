@@ -91,6 +91,10 @@ else
 	FOLDERS := $(shell find . -name 'problem.md' | sed 's/problem.md//g' | sort)
 endif
 
+ifndef CHANGED_FILES
+	CHANGED_FILES := $(shell find . -name 'problem.md' | sort)
+endif
+
 DOCKER_RUN := docker run --rm -v $$(pwd):/code -u "$$(id -u):$$(id -g)"
 DOCKER_BUILD := docker build -q -f
 
@@ -111,7 +115,7 @@ check-tags:
 	@scripts/check-tags.sh
 
 check-wrongs:
-	@scripts/check-wrongs.sh $(CHANGED_FILES)
+	@scripts/check-wrongs.sh "$(CHANGED_FILES)"
 
 clean:
 	@find . -name '*.class' -delete
