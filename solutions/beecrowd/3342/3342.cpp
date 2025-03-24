@@ -7,7 +7,7 @@ int main() {
         int16_t black_squares = n * n / 2;
         int16_t white_squares = black_squares;
 
-        if (!(n % 2 == 0)) {
+        if (n % 2 != 0) {
             white_squares++;
         }
 
