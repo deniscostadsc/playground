@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+#
+# TODO: in the future, we'll need to remove folder that already have solution
+# with all supported lanbguages.
+#
+
 set -euo pipefail
 
 FOLDERS=$(find solutions/beecrowd -name 'problem.md' | sed 's/problem.md//g' | sort)
