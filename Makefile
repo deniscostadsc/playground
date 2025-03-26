@@ -4,6 +4,7 @@
 	check-tags \
 	check-wrongs \
 	clean \
+	get-easiest-problems \
 	languages \
 	lint \
 	lint-fix \
@@ -133,6 +134,9 @@ clean:
 	@find . -type d -name "META-INF" -exec rm -rf {} +
 	@find solutions -type d -name "\?" -exec rm -rf {} +
 	@rm -rf \? || true
+
+get-easiest-problems:
+	@./scripts/get-easiest-problems.sh
 
 languages:
 	@./scripts/languages.sh
