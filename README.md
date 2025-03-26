@@ -23,7 +23,10 @@ challenges/contest sites. Here you can find my solutions for:
 The following tasks are available in the Makefile:
 
 ```shell
+make check-tags  # verify if all tag files have content describing the type of the problem
+make check-wrongs  # verify if WRONG files have content explaing which solution is failing and why
 make clean  # remove files created by the run task
+make get-easiest-problems  # list all complete problems sorted the sum of number of lines
 make languages  # show numbers of solutions in different languages per folder
 make lint [LINTS='language extensions']  # check lint for all solutions if no LINTS is passed
 make lint-fix [LINTS='language extensions']  # format all code if no LINTS is passed
