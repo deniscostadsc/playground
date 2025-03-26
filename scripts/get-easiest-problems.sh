@@ -13,7 +13,6 @@ for folder in ${FOLDERS}; do
     [[ -f "${folder}schema.sql" ]] && continue
     [[ -f "${folder}WRONG" ]] && continue
 
-    # echo "---> ${folder}"
     solutions="$(\
         find "${folder}" \
             -name '*.c' -o \
@@ -37,5 +36,8 @@ for folder in ${FOLDERS}; do
             -name '*.scala' -o \
             -name '*.ts' \
     )"
-    echo "$(cat ${solutions} | wc -l) ${folder}"
+    #shellcheck disable=SC2086
+    concated_solutions=$(cat ${solutions})
+    line_count=$(wc -l <<< "${concated_solutions}" )
+    echo "${line_count} ${folder}"
 done | sort -n
