@@ -14,12 +14,12 @@ alphabetical order.
 
 ## Input
 
-The first input line contains an integer N (N < 100) that indicates the number
-of test cases that follows. Each shopping list consists of a single line that
-contains from 1 to 1000 items or words composed only of lowercase letters (from
-one up to 20 chars), without accents and separated by a space.
+The first input line contains an integer $N (N \lt 100)$ that indicates the
+number of test cases that follows. Each shopping list consists of a single line
+that contains from 1 to 1000 items or words composed only of lowercase letters
+(from one up to 20 chars), without accents and separated by a space.
 
 ## Output
 
-The output consist of N lines, each representing one of Valentina's shopping
+The output consist of $N$ lines, each representing one of Valentina's shopping
 lists, with no items repeated and sorted in alphabetical order.
