@@ -6,7 +6,7 @@
   (loop [line (read-line)]
     (when line
       (let [[n m] (map #(bigdec %) (str/split line #" "))]
-        (println (count (take-while #(not (zero? %)) (iterate #(quot % 10) (.pow n m))))))
+        (println (count (str (.pow n m)))))
       (recur (read-line)))))
 
 (main)
