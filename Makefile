@@ -18,6 +18,7 @@ C = c
 CLJ = clj
 CPP = cpp
 CS = cs
+EXS = exs
 DART = dart
 GO = go
 HS = hs
@@ -47,6 +48,7 @@ SUPPORTED_LANGUAGES = \
 	$(HS) \
 	$(JAVA) \
 	$(JS) \
+	$(EXS) \
 	$(LUA) \
 	$(ML) \
 	$(PHP) \
