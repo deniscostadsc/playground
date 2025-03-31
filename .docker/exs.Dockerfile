@@ -6,4 +6,3 @@ RUN mkdir /code
 WORKDIR /code
 
 CMD /code/scripts/docker/run-exs.sh
-
