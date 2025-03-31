@@ -130,6 +130,7 @@ clean:
 	@find . -name '*.s' -delete
 	@find . -name 'compiledFromTSFile.js' -delete
 	@find . -name 'Main.java' -delete
+	@find . -name 'main.kt' -delete
 	@find . -name 'result-*.txt' -delete
 	@find . -type d -name "META-INF" -exec rm -rf {} +
 	@find solutions -type d -name "\?" -exec rm -rf {} +
