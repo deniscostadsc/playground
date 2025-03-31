@@ -18,5 +18,6 @@ Main.class
 main.cmi
 main.cmo
 Main.java
+main.kt
 result-*.txt
 !.clojure/\?
