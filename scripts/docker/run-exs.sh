@@ -14,9 +14,9 @@ for folder in ${FOLDERS}; do
         cd "${folder}" || exit 1
 
         if [[ -f in.txt ]]; then
-            elixir *.exs < in.txt > result-exs.txt
+            elixir ./*.exs < in.txt > result-exs.txt
         else
-            elixir *.exs > result-exs.txt
+            elixir ./*.exs > result-exs.txt
         fi
 
         diff result-exs.txt out.txt
