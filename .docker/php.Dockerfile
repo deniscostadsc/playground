@@ -1,4 +1,4 @@
-FROM php:7.4.3-alpine
+FROM php:8.1.2-alpine
 
 RUN mkdir /code
 WORKDIR /code
