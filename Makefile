@@ -23,6 +23,7 @@ EXS = exs
 GO = go
 HS = hs
 JAVA = java
+JL = jl
 JS = js
 KT = kt
 LUA = lua
@@ -48,6 +49,7 @@ SUPPORTED_LANGUAGES = \
 	$(GO) \
 	$(HS) \
 	$(JAVA) \
+	$(JL) \
 	$(JS) \
 	$(LUA) \
 	$(ML) \
