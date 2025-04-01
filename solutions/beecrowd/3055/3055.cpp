@@ -1,6 +1,7 @@
+#include <cstdint>
 #include <iostream>
 
-int main () {
+int main() {
     int16_t grade, average;
 
     while (std::cin >> grade) {
