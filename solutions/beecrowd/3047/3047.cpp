@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <iostream>
 
 int main() {
@@ -8,7 +9,8 @@ int main() {
         std::cin >> second_son;
         monica_minus_children = monica_age - first_son - second_son;
 
-        std::cout << std::max({first_son, second_son, monica_minus_children}) << std::endl;
+        std::cout << std::max({first_son, second_son, monica_minus_children})
+                  << std::endl;
     }
 
     return 0;
