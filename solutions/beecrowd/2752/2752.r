@@ -1,0 +1,8 @@
+cat("<AMO FAZER EXERCICIO NO URI>\n")
+cat("<    AMO FAZER EXERCICIO NO URI>\n")
+cat("<AMO FAZER EXERCICIO >\n")
+cat("<AMO FAZER EXERCICIO NO URI>\n")
+cat("<AMO FAZER EXERCICIO NO URI    >\n")
+cat("<AMO FAZER EXERCICIO NO URI>\n")
+cat("<          AMO FAZER EXERCICIO >\n")
+cat("<AMO FAZER EXERCICIO           >\n")
