@@ -15,8 +15,8 @@ int main() {
         std::cin >> line;
         variations = 1;
 
-        for (char &c : line) {
-            if (letters_with_three_options.contains(c)) {
+        for (char &letter : line) {
+            if (letters_with_three_options.contains(letter)) {
                 variations *= 3;
             } else {
                 variations *= 2;
