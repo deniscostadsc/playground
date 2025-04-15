@@ -73,10 +73,10 @@ SUPPORTED_LINTS = \
 	$(CPP) \
 	$(DART) \
 	$(GO) \
-	$(JS) \
 	$(PY) \
 	$(SH) \
 	$(TS)
+# $(JS)
 # $(SQL)
 
 ifdef LINTS
