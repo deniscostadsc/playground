@@ -6,6 +6,8 @@ FOLDERS=${1}
 LANGUAGES=${2}
 DOCKER_RUN_PREFIX=${3}
 
+echo "${FOLDERS}"
+
 for language in ${LANGUAGES}; do
     if [[ "${language}" == "sql" ]]; then
         FOLDERS="${FOLDERS}" \

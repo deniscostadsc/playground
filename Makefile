@@ -1,4 +1,8 @@
 .PHONY: \
+	__error_if_language_def \
+	__error_if_languages_def \
+	__error_if_language_ndef \
+	__error_if_folder_ndef \
 	__run-build \
 	__run-lint-build \
 	check-tags \
@@ -83,6 +87,10 @@ ifdef LINTS
 SUPPORTED_LINTS := $(LINTS)
 endif
 
+ifdef FOLDERS
+	$(error This task does not support FOLDERS variable)
+endif
+
 FOLDER_EXISTS = 0
 ifneq ("$(wildcard $(FOLDER))","")
     FOLDER_EXISTS = 1
@@ -103,10 +111,27 @@ endif
 DOCKER_RUN := docker run --rm -v $$(pwd):/code -u "$$(id -u):$$(id -g)"
 DOCKER_BUILD := docker build -q -f
 
-__run-build:
+__error_if_language_def:
 ifdef LANGUAGE
-	$(error On run task, you should use LANGUAGES not LANGUAGE)
+	$(error This task does not support LANGUAGE variable)
 endif
+
+__error_if_languages_def:
+ifdef LANGUAGES
+	$(error This task does not support LANGUAGES variable)
+endif
+
+__error_if_language_ndef:
+ifndef LANGUAGE
+	$(error This task requires LANGUAGE variable)
+endif
+
+__error_if_folder_ndef:
+ifndef FOLDER
+	$(error This task requires FOLDER variable)
+endif
+
+__run-build:
 	@for language in $(SUPPORTED_LANGUAGES); do \
 		$(DOCKER_BUILD) .docker/$$language.Dockerfile -t $$language .; \
 	done
@@ -146,35 +171,17 @@ get-easiest-problems:
 languages:
 	@./scripts/languages.sh
 
-lint: __run-lint-build
-ifdef LANGUAGES
-	$(error On lint task, you should use LINTS not LANGUAGES)
-endif
+lint: __error_if_languages_def __error_if_language_def __run-lint-build
 	@for language_lint in $(SUPPORTED_LINTS); do \
 		$(DOCKER_RUN) $${language_lint}-lint; \
 	done
 
-lint-fix: __run-lint-build
-ifdef LANGUAGES
-	$(error On lint-fix task, you should use LINTS not LANGUAGES)
-endif
+lint-fix: __error_if_languages_def __error_if_language_def __run-lint-build
 	@for language_lint in $(SUPPORTED_LINTS); do \
 		$(DOCKER_RUN) -e LINT_FIX=1 $${language_lint}-lint;\
 	done
 
-new-problem:
-ifdef LANGUAGES
-	$(error On new-problem task, you should use LANGUAGE not LANGUAGES)
-endif
-
-ifndef FOLDER
-	$(error You must specify a FOLDER variable to create a new problem)
-endif
-
-ifndef LANGUAGE
-	$(error You must specify a LANGUAGE variable to create a new problem)
-endif
-
+new-problem: __error_if_folder_ndef __error_if_language_ndef __error_if_languages_def
 	@mkdir -p $(FOLDER)
 	@touch $(FOLDER)/{out.txt,problem.md,tags.txt,$(shell basename $(FOLDER)).$(LANGUAGE)}
 
@@ -184,11 +191,7 @@ else
 	@touch $(FOLDER)/in.txt
 endif
 
-run: clean __run-build
-ifdef LANGUAGE
-	$(error On run task, you should use LANGUAGES not LANGUAGE)
-endif
-
+run: __error_if_language_def clean __run-build
 	@scripts/run-problems.sh "$(FOLDERS)" "$(SUPPORTED_LANGUAGES)" "$(DOCKER_RUN)"
 
 wrong:
