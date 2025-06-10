@@ -19,9 +19,11 @@ for folder in ${FOLDERS}; do
             -name '*.cpp' -o \
             -name '*.cs' -o \
             -name '*.dart' -o \
+            -name '*.exs' -o \
             -name '*.go' -o \
             -name '*.hs' -o \
             -name '*.java' -o \
+            -name '*.jl' -o \
             -name '*.js' -o \
             -name '*.kt' -o \
             -name '*.lua' -o \
