@@ -1,0 +1,3159 @@
+Teste 1
+10
+
+Teste 2
+7
+
+Teste 3
+15
+
+Teste 4
+1
+
+Teste 5
+9
+
+Teste 6
+1
+
+Teste 7
+8
+
+Teste 8
+20
+
+Teste 9
+3
+
+Teste 10
+6
+
+Teste 11
+7
+
+Teste 12
+1
+
+Teste 13
+9
+
+Teste 14
+7
+
+Teste 15
+16
+
+Teste 16
+12
+
+Teste 17
+7
+
+Teste 18
+7
+
+Teste 19
+5
+
+Teste 20
+6
+
+Teste 21
+7
+
+Teste 22
+12
+
+Teste 23
+11
+
+Teste 24
+11
+
+Teste 25
+2
+
+Teste 26
+4
+
+Teste 27
+8
+
+Teste 28
+1
+
+Teste 29
+18
+
+Teste 30
+13
+
+Teste 31
+6
+
+Teste 32
+3
+
+Teste 33
+2
+
+Teste 34
+2
+
+Teste 35
+15
+
+Teste 36
+7
+
+Teste 37
+19
+
+Teste 38
+18
+
+Teste 39
+9
+
+Teste 40
+6
+
+Teste 41
+11
+
+Teste 42
+2
+
+Teste 43
+2
+
+Teste 44
+2
+
+Teste 45
+2
+
+Teste 46
+20
+
+Teste 47
+8
+
+Teste 48
+18
+
+Teste 49
+8
+
+Teste 50
+5
+
+Teste 51
+2
+
+Teste 52
+2
+
+Teste 53
+1
+
+Teste 54
+3
+
+Teste 55
+3
+
+Teste 56
+9
+
+Teste 57
+5
+
+Teste 58
+8
+
+Teste 59
+15
+
+Teste 60
+1
+
+Teste 61
+8
+
+Teste 62
+13
+
+Teste 63
+16
+
+Teste 64
+5
+
+Teste 65
+13
+
+Teste 66
+6
+
+Teste 67
+15
+
+Teste 68
+8
+
+Teste 69
+2
+
+Teste 70
+2
+
+Teste 71
+2
+
+Teste 72
+3
+
+Teste 73
+14
+
+Teste 74
+3
+
+Teste 75
+5
+
+Teste 76
+3
+
+Teste 77
+20
+
+Teste 78
+3
+
+Teste 79
+7
+
+Teste 80
+1
+
+Teste 81
+8
+
+Teste 82
+5
+
+Teste 83
+5
+
+Teste 84
+14
+
+Teste 85
+1
+
+Teste 86
+4
+
+Teste 87
+5
+
+Teste 88
+14
+
+Teste 89
+5
+
+Teste 90
+4
+
+Teste 91
+5
+
+Teste 92
+1
+
+Teste 93
+1
+
+Teste 94
+15
+
+Teste 95
+3
+
+Teste 96
+1
+
+Teste 97
+1
+
+Teste 98
+16
+
+Teste 99
+2
+
+Teste 100
+2
+
+Teste 101
+12
+
+Teste 102
+1
+
+Teste 103
+2
+
+Teste 104
+3
+
+Teste 105
+5
+
+Teste 106
+3
+
+Teste 107
+6
+
+Teste 108
+2
+
+Teste 109
+4
+
+Teste 110
+5
+
+Teste 111
+3
+
+Teste 112
+7
+
+Teste 113
+4
+
+Teste 114
+9
+
+Teste 115
+5
+
+Teste 116
+17
+
+Teste 117
+12
+
+Teste 118
+3
+
+Teste 119
+11
+
+Teste 120
+3
+
+Teste 121
+2
+
+Teste 122
+4
+
+Teste 123
+1
+
+Teste 124
+5
+
+Teste 125
+6
+
+Teste 126
+3
+
+Teste 127
+5
+
+Teste 128
+4
+
+Teste 129
+3
+
+Teste 130
+18
+
+Teste 131
+11
+
+Teste 132
+4
+
+Teste 133
+4
+
+Teste 134
+1
+
+Teste 135
+5
+
+Teste 136
+7
+
+Teste 137
+6
+
+Teste 138
+17
+
+Teste 139
+6
+
+Teste 140
+1
+
+Teste 141
+3
+
+Teste 142
+2
+
+Teste 143
+13
+
+Teste 144
+2
+
+Teste 145
+2
+
+Teste 146
+1
+
+Teste 147
+1
+
+Teste 148
+7
+
+Teste 149
+1
+
+Teste 150
+1
+
+Teste 151
+5
+
+Teste 152
+5
+
+Teste 153
+6
+
+Teste 154
+4
+
+Teste 155
+10
+
+Teste 156
+15
+
+Teste 157
+16
+
+Teste 158
+13
+
+Teste 159
+8
+
+Teste 160
+4
+
+Teste 161
+3
+
+Teste 162
+9
+
+Teste 163
+2
+
+Teste 164
+3
+
+Teste 165
+10
+
+Teste 166
+5
+
+Teste 167
+2
+
+Teste 168
+2
+
+Teste 169
+1
+
+Teste 170
+8
+
+Teste 171
+9
+
+Teste 172
+2
+
+Teste 173
+1
+
+Teste 174
+8
+
+Teste 175
+1
+
+Teste 176
+4
+
+Teste 177
+15
+
+Teste 178
+1
+
+Teste 179
+12
+
+Teste 180
+1
+
+Teste 181
+12
+
+Teste 182
+6
+
+Teste 183
+8
+
+Teste 184
+2
+
+Teste 185
+3
+
+Teste 186
+6
+
+Teste 187
+4
+
+Teste 188
+2
+
+Teste 189
+2
+
+Teste 190
+3
+
+Teste 191
+4
+
+Teste 192
+5
+
+Teste 193
+2
+
+Teste 194
+1
+
+Teste 195
+6
+
+Teste 196
+12
+
+Teste 197
+13
+
+Teste 198
+2
+
+Teste 199
+14
+
+Teste 200
+5
+
+Teste 201
+2
+
+Teste 202
+11
+
+Teste 203
+2
+
+Teste 204
+5
+
+Teste 205
+2
+
+Teste 206
+1
+
+Teste 207
+5
+
+Teste 208
+3
+
+Teste 209
+4
+
+Teste 210
+1
+
+Teste 211
+2
+
+Teste 212
+9
+
+Teste 213
+1
+
+Teste 214
+3
+
+Teste 215
+12
+
+Teste 216
+6
+
+Teste 217
+1
+
+Teste 218
+4
+
+Teste 219
+12
+
+Teste 220
+9
+
+Teste 221
+3
+
+Teste 222
+11
+
+Teste 223
+15
+
+Teste 224
+3
+
+Teste 225
+14
+
+Teste 226
+2
+
+Teste 227
+15
+
+Teste 228
+3
+
+Teste 229
+1
+
+Teste 230
+1
+
+Teste 231
+5
+
+Teste 232
+5
+
+Teste 233
+14
+
+Teste 234
+6
+
+Teste 235
+4
+
+Teste 236
+9
+
+Teste 237
+8
+
+Teste 238
+14
+
+Teste 239
+1
+
+Teste 240
+9
+
+Teste 241
+14
+
+Teste 242
+9
+
+Teste 243
+4
+
+Teste 244
+4
+
+Teste 245
+3
+
+Teste 246
+4
+
+Teste 247
+4
+
+Teste 248
+5
+
+Teste 249
+12
+
+Teste 250
+1
+
+Teste 251
+5
+
+Teste 252
+4
+
+Teste 253
+6
+
+Teste 254
+14
+
+Teste 255
+11
+
+Teste 256
+16
+
+Teste 257
+3
+
+Teste 258
+9
+
+Teste 259
+7
+
+Teste 260
+7
+
+Teste 261
+10
+
+Teste 262
+4
+
+Teste 263
+3
+
+Teste 264
+6
+
+Teste 265
+12
+
+Teste 266
+5
+
+Teste 267
+3
+
+Teste 268
+8
+
+Teste 269
+4
+
+Teste 270
+11
+
+Teste 271
+3
+
+Teste 272
+15
+
+Teste 273
+14
+
+Teste 274
+2
+
+Teste 275
+1
+
+Teste 276
+3
+
+Teste 277
+8
+
+Teste 278
+6
+
+Teste 279
+3
+
+Teste 280
+2
+
+Teste 281
+3
+
+Teste 282
+10
+
+Teste 283
+8
+
+Teste 284
+9
+
+Teste 285
+4
+
+Teste 286
+14
+
+Teste 287
+4
+
+Teste 288
+4
+
+Teste 289
+15
+
+Teste 290
+8
+
+Teste 291
+6
+
+Teste 292
+6
+
+Teste 293
+13
+
+Teste 294
+5
+
+Teste 295
+2
+
+Teste 296
+1
+
+Teste 297
+5
+
+Teste 298
+7
+
+Teste 299
+9
+
+Teste 300
+6
+
+Teste 301
+9
+
+Teste 302
+2
+
+Teste 303
+13
+
+Teste 304
+4
+
+Teste 305
+17
+
+Teste 306
+8
+
+Teste 307
+11
+
+Teste 308
+3
+
+Teste 309
+8
+
+Teste 310
+4
+
+Teste 311
+9
+
+Teste 312
+6
+
+Teste 313
+1
+
+Teste 314
+7
+
+Teste 315
+6
+
+Teste 316
+10
+
+Teste 317
+11
+
+Teste 318
+3
+
+Teste 319
+2
+
+Teste 320
+12
+
+Teste 321
+4
+
+Teste 322
+8
+
+Teste 323
+5
+
+Teste 324
+6
+
+Teste 325
+7
+
+Teste 326
+1
+
+Teste 327
+9
+
+Teste 328
+3
+
+Teste 329
+3
+
+Teste 330
+1
+
+Teste 331
+14
+
+Teste 332
+3
+
+Teste 333
+1
+
+Teste 334
+1
+
+Teste 335
+8
+
+Teste 336
+12
+
+Teste 337
+6
+
+Teste 338
+11
+
+Teste 339
+8
+
+Teste 340
+5
+
+Teste 341
+7
+
+Teste 342
+5
+
+Teste 343
+17
+
+Teste 344
+2
+
+Teste 345
+2
+
+Teste 346
+9
+
+Teste 347
+1
+
+Teste 348
+3
+
+Teste 349
+18
+
+Teste 350
+2
+
+Teste 351
+10
+
+Teste 352
+4
+
+Teste 353
+2
+
+Teste 354
+3
+
+Teste 355
+15
+
+Teste 356
+4
+
+Teste 357
+4
+
+Teste 358
+4
+
+Teste 359
+5
+
+Teste 360
+3
+
+Teste 361
+7
+
+Teste 362
+12
+
+Teste 363
+2
+
+Teste 364
+4
+
+Teste 365
+17
+
+Teste 366
+7
+
+Teste 367
+1
+
+Teste 368
+7
+
+Teste 369
+5
+
+Teste 370
+7
+
+Teste 371
+4
+
+Teste 372
+3
+
+Teste 373
+5
+
+Teste 374
+6
+
+Teste 375
+5
+
+Teste 376
+7
+
+Teste 377
+6
+
+Teste 378
+4
+
+Teste 379
+1
+
+Teste 380
+2
+
+Teste 381
+16
+
+Teste 382
+17
+
+Teste 383
+6
+
+Teste 384
+5
+
+Teste 385
+1
+
+Teste 386
+5
+
+Teste 387
+4
+
+Teste 388
+18
+
+Teste 389
+2
+
+Teste 390
+6
+
+Teste 391
+7
+
+Teste 392
+3
+
+Teste 393
+2
+
+Teste 394
+1
+
+Teste 395
+1
+
+Teste 396
+5
+
+Teste 397
+5
+
+Teste 398
+4
+
+Teste 399
+9
+
+Teste 400
+4
+
+Teste 401
+10
+
+Teste 402
+3
+
+Teste 403
+13
+
+Teste 404
+7
+
+Teste 405
+11
+
+Teste 406
+2
+
+Teste 407
+7
+
+Teste 408
+1
+
+Teste 409
+5
+
+Teste 410
+2
+
+Teste 411
+1
+
+Teste 412
+1
+
+Teste 413
+7
+
+Teste 414
+5
+
+Teste 415
+10
+
+Teste 416
+6
+
+Teste 417
+1
+
+Teste 418
+7
+
+Teste 419
+7
+
+Teste 420
+1
+
+Teste 421
+1
+
+Teste 422
+6
+
+Teste 423
+6
+
+Teste 424
+3
+
+Teste 425
+2
+
+Teste 426
+3
+
+Teste 427
+4
+
+Teste 428
+9
+
+Teste 429
+2
+
+Teste 430
+7
+
+Teste 431
+3
+
+Teste 432
+11
+
+Teste 433
+5
+
+Teste 434
+11
+
+Teste 435
+15
+
+Teste 436
+2
+
+Teste 437
+5
+
+Teste 438
+3
+
+Teste 439
+6
+
+Teste 440
+2
+
+Teste 441
+9
+
+Teste 442
+1
+
+Teste 443
+5
+
+Teste 444
+7
+
+Teste 445
+2
+
+Teste 446
+4
+
+Teste 447
+5
+
+Teste 448
+11
+
+Teste 449
+5
+
+Teste 450
+8
+
+Teste 451
+3
+
+Teste 452
+4
+
+Teste 453
+3
+
+Teste 454
+8
+
+Teste 455
+12
+
+Teste 456
+16
+
+Teste 457
+2
+
+Teste 458
+2
+
+Teste 459
+3
+
+Teste 460
+4
+
+Teste 461
+5
+
+Teste 462
+2
+
+Teste 463
+6
+
+Teste 464
+7
+
+Teste 465
+1
+
+Teste 466
+12
+
+Teste 467
+1
+
+Teste 468
+2
+
+Teste 469
+6
+
+Teste 470
+7
+
+Teste 471
+10
+
+Teste 472
+2
+
+Teste 473
+1
+
+Teste 474
+1
+
+Teste 475
+7
+
+Teste 476
+4
+
+Teste 477
+2
+
+Teste 478
+18
+
+Teste 479
+11
+
+Teste 480
+2
+
+Teste 481
+3
+
+Teste 482
+2
+
+Teste 483
+5
+
+Teste 484
+4
+
+Teste 485
+1
+
+Teste 486
+15
+
+Teste 487
+1
+
+Teste 488
+9
+
+Teste 489
+1
+
+Teste 490
+9
+
+Teste 491
+2
+
+Teste 492
+5
+
+Teste 493
+4
+
+Teste 494
+6
+
+Teste 495
+3
+
+Teste 496
+3
+
+Teste 497
+2
+
+Teste 498
+5
+
+Teste 499
+1
+
+Teste 500
+1
+
+Teste 501
+2
+
+Teste 502
+1
+
+Teste 503
+10
+
+Teste 504
+13
+
+Teste 505
+4
+
+Teste 506
+9
+
+Teste 507
+4
+
+Teste 508
+2
+
+Teste 509
+2
+
+Teste 510
+3
+
+Teste 511
+4
+
+Teste 512
+1
+
+Teste 513
+6
+
+Teste 514
+6
+
+Teste 515
+15
+
+Teste 516
+6
+
+Teste 517
+2
+
+Teste 518
+5
+
+Teste 519
+3
+
+Teste 520
+2
+
+Teste 521
+1
+
+Teste 522
+8
+
+Teste 523
+6
+
+Teste 524
+2
+
+Teste 525
+7
+
+Teste 526
+6
+
+Teste 527
+5
+
+Teste 528
+6
+
+Teste 529
+8
+
+Teste 530
+5
+
+Teste 531
+8
+
+Teste 532
+4
+
+Teste 533
+6
+
+Teste 534
+4
+
+Teste 535
+6
+
+Teste 536
+4
+
+Teste 537
+7
+
+Teste 538
+2
+
+Teste 539
+16
+
+Teste 540
+2
+
+Teste 541
+5
+
+Teste 542
+1
+
+Teste 543
+2
+
+Teste 544
+8
+
+Teste 545
+1
+
+Teste 546
+2
+
+Teste 547
+4
+
+Teste 548
+15
+
+Teste 549
+5
+
+Teste 550
+6
+
+Teste 551
+10
+
+Teste 552
+2
+
+Teste 553
+1
+
+Teste 554
+4
+
+Teste 555
+3
+
+Teste 556
+11
+
+Teste 557
+15
+
+Teste 558
+2
+
+Teste 559
+3
+
+Teste 560
+4
+
+Teste 561
+15
+
+Teste 562
+17
+
+Teste 563
+1
+
+Teste 564
+11
+
+Teste 565
+4
+
+Teste 566
+9
+
+Teste 567
+4
+
+Teste 568
+1
+
+Teste 569
+10
+
+Teste 570
+14
+
+Teste 571
+6
+
+Teste 572
+1
+
+Teste 573
+6
+
+Teste 574
+5
+
+Teste 575
+3
+
+Teste 576
+3
+
+Teste 577
+16
+
+Teste 578
+7
+
+Teste 579
+5
+
+Teste 580
+2
+
+Teste 581
+3
+
+Teste 582
+1
+
+Teste 583
+1
+
+Teste 584
+5
+
+Teste 585
+5
+
+Teste 586
+14
+
+Teste 587
+8
+
+Teste 588
+9
+
+Teste 589
+9
+
+Teste 590
+3
+
+Teste 591
+4
+
+Teste 592
+18
+
+Teste 593
+8
+
+Teste 594
+7
+
+Teste 595
+7
+
+Teste 596
+19
+
+Teste 597
+9
+
+Teste 598
+8
+
+Teste 599
+8
+
+Teste 600
+2
+
+Teste 601
+6
+
+Teste 602
+2
+
+Teste 603
+6
+
+Teste 604
+5
+
+Teste 605
+1
+
+Teste 606
+2
+
+Teste 607
+2
+
+Teste 608
+9
+
+Teste 609
+2
+
+Teste 610
+8
+
+Teste 611
+6
+
+Teste 612
+1
+
+Teste 613
+13
+
+Teste 614
+5
+
+Teste 615
+11
+
+Teste 616
+11
+
+Teste 617
+3
+
+Teste 618
+8
+
+Teste 619
+1
+
+Teste 620
+1
+
+Teste 621
+2
+
+Teste 622
+2
+
+Teste 623
+4
+
+Teste 624
+16
+
+Teste 625
+4
+
+Teste 626
+2
+
+Teste 627
+14
+
+Teste 628
+5
+
+Teste 629
+10
+
+Teste 630
+5
+
+Teste 631
+5
+
+Teste 632
+6
+
+Teste 633
+10
+
+Teste 634
+4
+
+Teste 635
+3
+
+Teste 636
+11
+
+Teste 637
+5
+
+Teste 638
+7
+
+Teste 639
+5
+
+Teste 640
+5
+
+Teste 641
+3
+
+Teste 642
+9
+
+Teste 643
+9
+
+Teste 644
+4
+
+Teste 645
+1
+
+Teste 646
+1
+
+Teste 647
+8
+
+Teste 648
+12
+
+Teste 649
+13
+
+Teste 650
+9
+
+Teste 651
+11
+
+Teste 652
+2
+
+Teste 653
+3
+
+Teste 654
+4
+
+Teste 655
+3
+
+Teste 656
+7
+
+Teste 657
+2
+
+Teste 658
+3
+
+Teste 659
+13
+
+Teste 660
+1
+
+Teste 661
+13
+
+Teste 662
+2
+
+Teste 663
+15
+
+Teste 664
+3
+
+Teste 665
+1
+
+Teste 666
+6
+
+Teste 667
+10
+
+Teste 668
+4
+
+Teste 669
+4
+
+Teste 670
+9
+
+Teste 671
+6
+
+Teste 672
+2
+
+Teste 673
+3
+
+Teste 674
+16
+
+Teste 675
+7
+
+Teste 676
+5
+
+Teste 677
+1
+
+Teste 678
+5
+
+Teste 679
+2
+
+Teste 680
+2
+
+Teste 681
+11
+
+Teste 682
+1
+
+Teste 683
+1
+
+Teste 684
+8
+
+Teste 685
+10
+
+Teste 686
+10
+
+Teste 687
+14
+
+Teste 688
+9
+
+Teste 689
+7
+
+Teste 690
+4
+
+Teste 691
+5
+
+Teste 692
+5
+
+Teste 693
+3
+
+Teste 694
+11
+
+Teste 695
+3
+
+Teste 696
+14
+
+Teste 697
+3
+
+Teste 698
+8
+
+Teste 699
+16
+
+Teste 700
+2
+
+Teste 701
+14
+
+Teste 702
+4
+
+Teste 703
+13
+
+Teste 704
+2
+
+Teste 705
+8
+
+Teste 706
+9
+
+Teste 707
+1
+
+Teste 708
+11
+
+Teste 709
+4
+
+Teste 710
+4
+
+Teste 711
+7
+
+Teste 712
+14
+
+Teste 713
+4
+
+Teste 714
+4
+
+Teste 715
+13
+
+Teste 716
+10
+
+Teste 717
+7
+
+Teste 718
+3
+
+Teste 719
+2
+
+Teste 720
+2
+
+Teste 721
+17
+
+Teste 722
+5
+
+Teste 723
+7
+
+Teste 724
+2
+
+Teste 725
+1
+
+Teste 726
+1
+
+Teste 727
+2
+
+Teste 728
+11
+
+Teste 729
+1
+
+Teste 730
+5
+
+Teste 731
+7
+
+Teste 732
+6
+
+Teste 733
+1
+
+Teste 734
+2
+
+Teste 735
+10
+
+Teste 736
+3
+
+Teste 737
+11
+
+Teste 738
+8
+
+Teste 739
+6
+
+Teste 740
+7
+
+Teste 741
+2
+
+Teste 742
+1
+
+Teste 743
+3
+
+Teste 744
+2
+
+Teste 745
+2
+
+Teste 746
+3
+
+Teste 747
+16
+
+Teste 748
+2
+
+Teste 749
+8
+
+Teste 750
+1
+
+Teste 751
+8
+
+Teste 752
+4
+
+Teste 753
+5
+
+Teste 754
+1
+
+Teste 755
+5
+
+Teste 756
+4
+
+Teste 757
+2
+
+Teste 758
+2
+
+Teste 759
+3
+
+Teste 760
+4
+
+Teste 761
+2
+
+Teste 762
+5
+
+Teste 763
+11
+
+Teste 764
+3
+
+Teste 765
+9
+
+Teste 766
+1
+
+Teste 767
+3
+
+Teste 768
+5
+
+Teste 769
+3
+
+Teste 770
+15
+
+Teste 771
+4
+
+Teste 772
+2
+
+Teste 773
+8
+
+Teste 774
+10
+
+Teste 775
+7
+
+Teste 776
+9
+
+Teste 777
+10
+
+Teste 778
+10
+
+Teste 779
+1
+
+Teste 780
+15
+
+Teste 781
+4
+
+Teste 782
+9
+
+Teste 783
+9
+
+Teste 784
+8
+
+Teste 785
+4
+
+Teste 786
+1
+
+Teste 787
+3
+
+Teste 788
+2
+
+Teste 789
+3
+
+Teste 790
+3
+
+Teste 791
+1
+
+Teste 792
+7
+
+Teste 793
+5
+
+Teste 794
+10
+
+Teste 795
+15
+
+Teste 796
+8
+
+Teste 797
+12
+
+Teste 798
+3
+
+Teste 799
+8
+
+Teste 800
+2
+
+Teste 801
+8
+
+Teste 802
+10
+
+Teste 803
+1
+
+Teste 804
+4
+
+Teste 805
+5
+
+Teste 806
+1
+
+Teste 807
+6
+
+Teste 808
+2
+
+Teste 809
+18
+
+Teste 810
+3
+
+Teste 811
+9
+
+Teste 812
+7
+
+Teste 813
+4
+
+Teste 814
+2
+
+Teste 815
+4
+
+Teste 816
+3
+
+Teste 817
+4
+
+Teste 818
+7
+
+Teste 819
+12
+
+Teste 820
+1
+
+Teste 821
+4
+
+Teste 822
+16
+
+Teste 823
+13
+
+Teste 824
+2
+
+Teste 825
+1
+
+Teste 826
+10
+
+Teste 827
+15
+
+Teste 828
+1
+
+Teste 829
+6
+
+Teste 830
+4
+
+Teste 831
+6
+
+Teste 832
+6
+
+Teste 833
+2
+
+Teste 834
+1
+
+Teste 835
+5
+
+Teste 836
+1
+
+Teste 837
+2
+
+Teste 838
+1
+
+Teste 839
+5
+
+Teste 840
+4
+
+Teste 841
+6
+
+Teste 842
+6
+
+Teste 843
+5
+
+Teste 844
+15
+
+Teste 845
+2
+
+Teste 846
+3
+
+Teste 847
+3
+
+Teste 848
+5
+
+Teste 849
+15
+
+Teste 850
+5
+
+Teste 851
+2
+
+Teste 852
+6
+
+Teste 853
+1
+
+Teste 854
+7
+
+Teste 855
+5
+
+Teste 856
+2
+
+Teste 857
+2
+
+Teste 858
+6
+
+Teste 859
+6
+
+Teste 860
+4
+
+Teste 861
+2
+
+Teste 862
+1
+
+Teste 863
+1
+
+Teste 864
+1
+
+Teste 865
+6
+
+Teste 866
+6
+
+Teste 867
+7
+
+Teste 868
+16
+
+Teste 869
+1
+
+Teste 870
+3
+
+Teste 871
+4
+
+Teste 872
+5
+
+Teste 873
+5
+
+Teste 874
+3
+
+Teste 875
+10
+
+Teste 876
+12
+
+Teste 877
+3
+
+Teste 878
+1
+
+Teste 879
+13
+
+Teste 880
+3
+
+Teste 881
+3
+
+Teste 882
+16
+
+Teste 883
+5
+
+Teste 884
+2
+
+Teste 885
+1
+
+Teste 886
+1
+
+Teste 887
+15
+
+Teste 888
+2
+
+Teste 889
+5
+
+Teste 890
+4
+
+Teste 891
+5
+
+Teste 892
+2
+
+Teste 893
+4
+
+Teste 894
+7
+
+Teste 895
+11
+
+Teste 896
+1
+
+Teste 897
+9
+
+Teste 898
+3
+
+Teste 899
+4
+
+Teste 900
+4
+
+Teste 901
+3
+
+Teste 902
+1
+
+Teste 903
+5
+
+Teste 904
+5
+
+Teste 905
+7
+
+Teste 906
+14
+
+Teste 907
+3
+
+Teste 908
+11
+
+Teste 909
+1
+
+Teste 910
+7
+
+Teste 911
+13
+
+Teste 912
+10
+
+Teste 913
+2
+
+Teste 914
+1
+
+Teste 915
+1
+
+Teste 916
+5
+
+Teste 917
+18
+
+Teste 918
+7
+
+Teste 919
+6
+
+Teste 920
+3
+
+Teste 921
+5
+
+Teste 922
+17
+
+Teste 923
+14
+
+Teste 924
+9
+
+Teste 925
+18
+
+Teste 926
+3
+
+Teste 927
+1
+
+Teste 928
+3
+
+Teste 929
+9
+
+Teste 930
+8
+
+Teste 931
+1
+
+Teste 932
+19
+
+Teste 933
+4
+
+Teste 934
+4
+
+Teste 935
+2
+
+Teste 936
+8
+
+Teste 937
+6
+
+Teste 938
+8
+
+Teste 939
+1
+
+Teste 940
+1
+
+Teste 941
+7
+
+Teste 942
+7
+
+Teste 943
+3
+
+Teste 944
+2
+
+Teste 945
+2
+
+Teste 946
+4
+
+Teste 947
+9
+
+Teste 948
+4
+
+Teste 949
+2
+
+Teste 950
+1
+
+Teste 951
+3
+
+Teste 952
+1
+
+Teste 953
+5
+
+Teste 954
+9
+
+Teste 955
+2
+
+Teste 956
+7
+
+Teste 957
+3
+
+Teste 958
+8
+
+Teste 959
+18
+
+Teste 960
+9
+
+Teste 961
+1
+
+Teste 962
+14
+
+Teste 963
+4
+
+Teste 964
+3
+
+Teste 965
+2
+
+Teste 966
+13
+
+Teste 967
+4
+
+Teste 968
+3
+
+Teste 969
+2
+
+Teste 970
+7
+
+Teste 971
+2
+
+Teste 972
+4
+
+Teste 973
+4
+
+Teste 974
+6
+
+Teste 975
+5
+
+Teste 976
+4
+
+Teste 977
+8
+
+Teste 978
+2
+
+Teste 979
+7
+
+Teste 980
+9
+
+Teste 981
+7
+
+Teste 982
+1
+
+Teste 983
+1
+
+Teste 984
+7
+
+Teste 985
+3
+
+Teste 986
+1
+
+Teste 987
+12
+
+Teste 988
+4
+
+Teste 989
+6
+
+Teste 990
+1
+
+Teste 991
+1
+
+Teste 992
+9
+
+Teste 993
+4
+
+Teste 994
+4
+
+Teste 995
+16
+
+Teste 996
+1
+
+Teste 997
+4
+
+Teste 998
+11
+
+Teste 999
+4
+
+Teste 1000
+5
+
+Teste 1001
+10
+
+Teste 1002
+7
+
+Teste 1003
+15
+
+Teste 1004
+1296
+
+Teste 1005
+4188
+
+Teste 1006
+5247
+
+Teste 1007
+1071
+
+Teste 1008
+1661
+
+Teste 1009
+127
+
+Teste 1010
+237
+
+Teste 1011
+1134
+
+Teste 1012
+168
+
+Teste 1013
+530
+
+Teste 1014
+6
+
+Teste 1015
+881
+
+Teste 1016
+1407
+
+Teste 1017
+3491
+
+Teste 1018
+3157
+
+Teste 1019
+2064
+
+Teste 1020
+72
+
+Teste 1021
+1703
+
+Teste 1022
+566
+
+Teste 1023
+1892
+
+Teste 1024
+2407
+
+Teste 1025
+1816
+
+Teste 1026
+3246
+
+Teste 1027
+265
+
+Teste 1028
+4684
+
+Teste 1029
+1547
+
+Teste 1030
+4152
+
+Teste 1031
+7218
+
+Teste 1032
+6754
+
+Teste 1033
+1388
+
+Teste 1034
+1676
+
+Teste 1035
+9597
+
+Teste 1036
+2330
+
+Teste 1037
+245
+
+Teste 1038
+668
+
+Teste 1039
+52
+
+Teste 1040
+564
+
+Teste 1041
+4350
+
+Teste 1042
+942
+
+Teste 1043
+179
+
+Teste 1044
+1697
+
+Teste 1045
+7828
+
+Teste 1046
+1193
+
+Teste 1047
+2377
+
+Teste 1048
+2977
+
+Teste 1049
+7909
+
+Teste 1050
+264
+
+Teste 1051
+1149
+
+Teste 1052
+4328
+
+Teste 1053
+353
+
