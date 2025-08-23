@@ -16,5 +16,5 @@ WORKDIR /code
 CMD echo "clj"; if [ "${LINT_FIX:=0}" -eq 1 ]; then \
         true; \
     else \
-        ./scripts/lint-clj.sh; \
+        ./scripts/lint/lint-clj.sh; \
     fi
