@@ -10,7 +10,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Download previous failed files
-        uses: dawidd6/action-download-artifact@v2
+        uses: dawidd6/action-download-artifact@v6
         with:
           workflow: Lint
           workflow_search: true
