@@ -19,6 +19,12 @@ jobs:
         id: lint-scope
         run: |
           ./scripts/lint/determine-lint-scope.sh ${{ github.event.before }} ${{ github.event.after }} || echo "lints=" >> $GITHUB_OUTPUT
+      - name: Upload current files to check
+        uses: actions/upload-artifact@v4
+        with:
+          name: failing-changed-files-for-lint
+          path: all-files-to-check.txt
+          retention-days: 7
       - uses: docker/setup-buildx-action@v2
       - name: Run linters
         id: run-linters
@@ -28,25 +34,16 @@ jobs:
           else
             make lint
           fi
-      - name: Upload failed files
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: failing-changed-files-for-lint
-          path: all-files-to-check.txt
-          retention-days: 7
+      - name: Check if wrong files have a error description
+        run: make check-wrongs
+      - name: Check if tags are correct
+        run: make check-tags
       - name: Create empty file
-        if: success()
         run: |
           echo "" > empty-failed-files.txt
       - name: Upload success (empty file)
-        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: failing-changed-files-for-lint
           path: empty-failed-files.txt
           retention-days: 7
-      - name: Check if wrong files have a error description
-        run: make check-wrongs
-      - name: Check if tags are correct
-        run: make check-tags
