@@ -34,10 +34,24 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Download previous failed files
+        uses: dawidd6/action-download-artifact@v11
+        with:
+          workflow: build.yaml
+          search_artifacts: true
+          name: failing-changed-files-for-build
+          path: /tmp
+          if_no_artifact_found: ignore
       - name: Determine test scope
         id: test-scope
         run: |
           ./scripts/github-actions/determine-test-scope.sh ${{ github.event.before }} ${{ github.event.after }} || echo "folder=solutions/" >> $GITHUB_OUTPUT
+      - name: Upload current files to check
+        uses: actions/upload-artifact@v4
+        with:
+          name: failing-changed-files-for-build
+          path: failing-changed-files-for-build.txt
+          retention-days: 7
       - name: Run tests
         run: |
           if [[ -n "${{ steps.test-scope.outputs.languages }}" ]]; then
@@ -45,3 +59,15 @@ jobs:
           else
             make run FOLDER=${{ steps.test-scope.outputs.folder }}
           fi
+      - name: Create empty file
+        if: success()
+        run: |
+          echo "" >failing-changed-files-for-build.txt
+      - name: Upload success (empty file)
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failing-changed-files-for-build
+          path: failing-changed-files-for-build.txt
+          retention-days: 7
+          overwrite: true
