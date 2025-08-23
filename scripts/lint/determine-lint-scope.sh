@@ -27,20 +27,24 @@ else
     ALL_FILES=""
 fi
 
-if [[ -z "$ALL_FILES" ]]; then
-    LINTS=""
+if [[ -n "$ALL_FILES" ]]; then
+    echo "$ALL_FILES" >all-files-to-check.txt
 else
-    echo "$ALL_FILES" > changed_files.txt 2>/dev/null
+    echo "" >all-files-to-check.txt
+fi
 
-    SUPPORTED_LINTS=$(find .docker/lint -name "*.Dockerfile" 2>/dev/null | sed 's|.*/||' | sed 's|-lint\.Dockerfile$||' | tr '\n' ' ')
+if [[ -s all-files-to-check.txt ]]; then
+    SUPPORTED_LINTS=$(find .docker/lint -name "*.Dockerfile" 2>/dev/null | sed 's|.*/||' | sed 's|-lint\.Dockerfile$||' | tr '\n' ' ' | sed 's/ $//')
 
-    grep -E "\.($(echo "$SUPPORTED_LINTS" | tr ' ' '|'))$" changed_files.txt | sed 's/.*\.//' | sort -u > lint_extensions.txt
+    grep -E "\.($(echo "$SUPPORTED_LINTS" | tr ' ' '|'))$" all-files-to-check.txt | sed 's/.*\.//' | sort -u >lint_extensions.txt
 
     if [[ -s lint_extensions.txt ]]; then
-        LINTS=$(tr '\n' ' ' < lint_extensions.txt | sed 's/ $//')
+        LINTS=$(tr '\n' ' ' <lint_extensions.txt | sed 's/ $//')
     else
         LINTS=""
     fi
+else
+    LINTS=""
 fi
 
-echo "lints=$LINTS" >> "$GITHUB_OUTPUT"
+echo "lints=$LINTS" >>"$GITHUB_OUTPUT"

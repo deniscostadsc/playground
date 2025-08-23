@@ -28,15 +28,12 @@ jobs:
           else
             make lint
           fi
-      - name: Save current changed files
-        run: |
-          git diff --name-only --diff-filter=ACMRT ${{ github.event.before }} ${{ github.event.after }} > current-changed-files.txt 2>/dev/null || echo "" > current-changed-files.txt
       - name: Upload failed files
         if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: failing-changed-files-for-lint
-          path: current-changed-files.txt
+          path: all-files-to-check.txt
           retention-days: 7
       - name: Create empty file
         if: success()
