@@ -63,5 +63,5 @@ int main() {
     }
 
     return 0;
-    // infinite loop
+    // infinite loop is the main issue
 }
