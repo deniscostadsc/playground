@@ -32,5 +32,12 @@ jobs:
           df -h
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Run solutions
-        run: make run
+        with:
+          fetch-depth: 0
+      - name: Determine test scope
+        id: test-scope
+        run: |
+          ./scripts/determine-test-scope.sh ${{ github.event.before }} ${{ github.event.after }} || echo "folder=solutions/" >> $GITHUB_OUTPUT
+      - name: Run tests
+        run: |
+          make run FOLDER=${{ steps.test-scope.outputs.folder }}
