@@ -37,7 +37,7 @@ jobs:
       - name: Determine test scope
         id: test-scope
         run: |
-          ./scripts/determine-test-scope.sh ${{ github.event.before }} ${{ github.event.after }} || echo "folder=solutions/" >> $GITHUB_OUTPUT
+          ./scripts/github-actions/determine-test-scope.sh ${{ github.event.before }} ${{ github.event.after }} || echo "folder=solutions/" >> $GITHUB_OUTPUT
       - name: Run tests
         run: |
           if [[ -n "${{ steps.test-scope.outputs.languages }}" ]]; then
