@@ -12,7 +12,7 @@ jobs:
       - name: Download previous failed files
         uses: dawidd6/action-download-artifact@v11
         with:
-          workflow: Lint
+          workflow: lint.yaml
           workflow_conclusion: success
           search_artifacts: true
           name: failing-changed-files-for-lint
