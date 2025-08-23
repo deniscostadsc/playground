@@ -13,8 +13,8 @@ CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT "$BEFORE_COMMIT" "$AFTE
 
 echo "DEBUG: Current changed files: '$CHANGED_FILES'"
 
-if [[ -f "failing-changed-files-for-lint.txt" ]]; then
-    PREVIOUS_FAILED_FILES=$(cat failing-changed-files-for-lint.txt 2>/dev/null || echo "")
+if [[ -f "/tmp/failing-changed-files-for-lint.txt" ]]; then
+    PREVIOUS_FAILED_FILES=$(cat /tmp/failing-changed-files-for-lint.txt 2>/dev/null || echo "")
     echo "DEBUG: Found artifact file, content: '$PREVIOUS_FAILED_FILES'"
 else
     PREVIOUS_FAILED_FILES=""

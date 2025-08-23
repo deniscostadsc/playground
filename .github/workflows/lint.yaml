@@ -16,7 +16,7 @@ jobs:
           workflow_conclusion: success
           search_artifacts: true
           name: failing-changed-files-for-lint
-          path: ./
+          path: /tmp
           if_no_artifact_found: ignore
       - name: Determine lint scope
         id: lint-scope
