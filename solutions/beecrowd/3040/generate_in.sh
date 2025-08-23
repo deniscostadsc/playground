@@ -11,4 +11,3 @@ for h in $(seq 195 205) $(seq 295 305); do
         done
     done
 done
-

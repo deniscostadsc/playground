@@ -5,7 +5,7 @@ set -euo pipefail
 TESTCASES=300
 MAX_FUEL=10
 MAX_DISTANCE=20
-CURRENT_PATH=$( dirname -- "${BASH_SOURCE[0]}" )
+CURRENT_PATH=$(dirname -- "${BASH_SOURCE[0]}")
 
 for i in $(seq "${TESTCASES}"); do
     if [[ $((RANDOM % 1000)) -eq 0 ]]; then
@@ -36,5 +36,5 @@ for i in $(seq "${TESTCASES}"); do
         done
     fi
 
-    echo "${alcohol_price} ${gas_price} ${alcohol_distance} ${gas_distance}" > "${CURRENT_PATH}/in-$(printf "%03d" "${i}")".txt
+    echo "${alcohol_price} ${gas_price} ${alcohol_distance} ${gas_distance}" >"${CURRENT_PATH}/in-$(printf "%03d" "${i}")".txt
 done

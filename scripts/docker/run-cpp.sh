@@ -15,15 +15,15 @@ for folder in ${FOLDERS}; do
         g++ -Werror -std=c++20 -O2 -lm ./*.cpp
 
         if [[ -f in.txt ]]; then
-            ./a.out < in.txt > result-cpp.txt
+            ./a.out <in.txt >result-cpp.txt
         else
-            ./a.out > result-cpp.txt
+            ./a.out >result-cpp.txt
         fi
 
         rm -rf a.out
 
         diff result-cpp.txt out.txt
 
-        cd - > /dev/null
+        cd - >/dev/null
     fi
 done

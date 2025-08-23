@@ -14,13 +14,13 @@ for folder in ${FOLDERS}; do
         cd "${folder}" || exit 1
 
         if [[ -f in.txt ]]; then
-            php ./*.php < in.txt > result-php.txt
+            php ./*.php <in.txt >result-php.txt
         else
-            php ./*.php > result-php.txt
+            php ./*.php >result-php.txt
         fi
 
         diff result-php.txt out.txt
 
-        cd - > /dev/null
+        cd - >/dev/null
     fi
 done

@@ -9,10 +9,10 @@ for folder in ${FOLDERS}; do
     [[ -f "${folder}WRONG" ]] && continue
 
     supported_languages_dockerfiles=$(ls .docker/*.Dockerfile)
-    supported_languages_count=$(wc -w <<< "${supported_languages_dockerfiles}")
-    supported_programming_languages_count=$((supported_languages_count - 1))  # - 1 to remove sql
+    supported_languages_count=$(wc -w <<<"${supported_languages_dockerfiles}")
+    supported_programming_languages_count=$((supported_languages_count - 1)) # - 1 to remove sql
 
-    solutions="$(\
+    solutions="$(
         find "${folder}" \
             -name '*.c' -o \
             -name '*.clj' -o \
@@ -35,9 +35,9 @@ for folder in ${FOLDERS}; do
             -name '*.rb' -o \
             -name '*.rs' -o \
             -name '*.scala' -o \
-            -name '*.ts' \
+            -name '*.ts'
     )"
-    solutions_count=$(wc -w <<< "${solutions}")
+    solutions_count=$(wc -w <<<"${solutions}")
 
     if [[ ${supported_programming_languages_count} -eq ${solutions_count} ]]; then
         # exclude problems with solution in all languages
@@ -46,6 +46,6 @@ for folder in ${FOLDERS}; do
 
     #shellcheck disable=SC2086
     concated_solutions=$(cat ${solutions})
-    line_count=$(wc -l <<< "${concated_solutions}" | sed 's/ //g')
+    line_count=$(wc -l <<<"${concated_solutions}" | sed 's/ //g')
     echo "${line_count} ${folder}"
 done | sort -n

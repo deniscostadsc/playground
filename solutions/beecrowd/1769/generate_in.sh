@@ -51,4 +51,3 @@ for _ in $(seq "${TEST_CASES}"); do
         print_probably_invalid_cpf
     fi
 done
-

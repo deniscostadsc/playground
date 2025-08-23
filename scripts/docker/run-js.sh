@@ -14,13 +14,13 @@ for folder in ${FOLDERS}; do
         cd "${folder}" || exit 1
 
         if [[ -f in.txt ]]; then
-            node ./*.js < in.txt > result-js.txt
+            node ./*.js <in.txt >result-js.txt
         else
-            node ./*.js > result-js.txt
+            node ./*.js >result-js.txt
         fi
 
         diff result-js.txt out.txt
 
-        cd - > /dev/null
+        cd - >/dev/null
     fi
 done

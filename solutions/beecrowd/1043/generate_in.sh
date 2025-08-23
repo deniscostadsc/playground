@@ -2,7 +2,6 @@
 
 set -euo pipefail
 
-
 for i in $(seq 1 7); do
     for j in $(seq 1 7); do
         for k in $(seq 1 7); do

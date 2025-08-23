@@ -8,7 +8,7 @@ Q_MAX=1001
 TESTCASES=200
 
 for _ in $(seq "${TESTCASES}"); do
-    echo "$((RANDOM  % N_MAX))"
+    echo "$((RANDOM % N_MAX))"
     [[ $((RANDOM % 2)) -eq 0 ]] && C="+" || C="*"
-    echo "$((RANDOM  % P_MAX)) ${C} $((RANDOM  % Q_MAX))"
+    echo "$((RANDOM % P_MAX)) ${C} $((RANDOM % Q_MAX))"
 done

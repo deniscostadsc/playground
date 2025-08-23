@@ -16,15 +16,15 @@ for folder in ${FOLDERS}; do
         rustc -o main ./*.rs
 
         if [[ -f in.txt ]]; then
-            ./main < in.txt > result-rs.txt
+            ./main <in.txt >result-rs.txt
         else
-            ./main > result-rs.txt
+            ./main >result-rs.txt
         fi
 
         rm -rf main
 
         diff result-rs.txt out.txt
 
-        cd - > /dev/null
+        cd - >/dev/null
     fi
 done

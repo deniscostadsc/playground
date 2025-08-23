@@ -12,4 +12,3 @@ for _ in $(seq "${TESTCASES}"); do
     echo "$((RANDOM % MAX_B + MIN_B))"
     echo "$((RANDOM % MAX_G + MIN_G))"
 done
-

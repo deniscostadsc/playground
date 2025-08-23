@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-for (( i = 0; i < 1000; i++ )); do
+for ((i = 0; i < 1000; i++)); do
     r1=$((RANDOM % 1000 + 1))
 
     x1=$((RANDOM % 1000 + 1))

@@ -16,15 +16,15 @@ for folder in ${FOLDERS}; do
         mcs -out:a.exe ./*.cs
 
         if [[ -f in.txt ]]; then
-            mono a.exe < in.txt > result-cs.txt
+            mono a.exe <in.txt >result-cs.txt
         else
-            mono a.exe > result-cs.txt
+            mono a.exe >result-cs.txt
         fi
 
         rm -rf a.exe
 
         diff result-cs.txt out.txt
 
-        cd - > /dev/null
+        cd - >/dev/null
     fi
 done

@@ -17,15 +17,15 @@ for folder in ${FOLDERS}; do
         javac Main.java
 
         if [[ -f in.txt ]]; then
-            java Main < in.txt > result-java.txt
+            java Main <in.txt >result-java.txt
         else
-            java Main > result-java.txt
+            java Main >result-java.txt
         fi
 
         rm -rf Main.java Main.class
 
         diff result-java.txt out.txt
 
-        cd - > /dev/null
+        cd - >/dev/null
     fi
 done

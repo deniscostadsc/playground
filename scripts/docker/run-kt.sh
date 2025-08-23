@@ -17,15 +17,15 @@ for folder in ${FOLDERS}; do
         /kotlinc/bin/kotlinc main.kt
 
         if [[ -f in.txt ]]; then
-            /kotlinc/bin/kotlin MainKt < in.txt > result-kt.txt
+            /kotlinc/bin/kotlin MainKt <in.txt >result-kt.txt
         else
-            /kotlinc/bin/kotlin MainKt > result-kt.txt
+            /kotlinc/bin/kotlin MainKt >result-kt.txt
         fi
 
         rm -rf MainKt.class main.kt META-INF
 
         diff result-kt.txt out.txt
 
-        cd - > /dev/null
+        cd - >/dev/null
     fi
 done

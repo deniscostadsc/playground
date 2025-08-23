@@ -17,7 +17,7 @@ for _ in $(seq 100); do
             line="${line} $((RANDOM % 100 + 1))"
         fi
     done
-    tr ' ' '\n' <<< "${line}" | sort -n | tr '\n' ' '
+    tr ' ' '\n' <<<"${line}" | sort -n | tr '\n' ' '
     echo
 
     line=""
@@ -29,7 +29,7 @@ for _ in $(seq 100); do
             line="${line} $((RANDOM % 100 + 1))"
         fi
     done
-    tr ' ' '\n' <<< "${line}" | sort -n | tr '\n' ' '
+    tr ' ' '\n' <<<"${line}" | sort -n | tr '\n' ' '
     echo
 
 done

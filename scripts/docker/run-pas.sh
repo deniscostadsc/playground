@@ -16,15 +16,15 @@ for folder in ${FOLDERS}; do
         fpc -opas.out ./*.pas
 
         if [[ -f in.txt ]]; then
-            ./pas.out < in.txt > result-pas.txt
+            ./pas.out <in.txt >result-pas.txt
         else
-            ./pas.out > result-pas.txt
+            ./pas.out >result-pas.txt
         fi
 
         rm -rf ./*.o pas.out
 
         diff result-pas.txt out.txt
 
-        cd - > /dev/null
+        cd - >/dev/null
     fi
 done

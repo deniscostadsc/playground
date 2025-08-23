@@ -11,7 +11,7 @@ function print_insertion_command {
     local letter_index=$((RANDOM % alphabet_size))
     local letter=${alphabet[letter_index]}
     # shellcheck disable=SC2206
-    alphabet=(${alphabet[@]/${letter}})
+    alphabet=(${alphabet[@]/${letter}/})
 
     echo "I ${letter}"
 }

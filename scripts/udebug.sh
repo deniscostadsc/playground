@@ -7,9 +7,9 @@ function get_form_token {
     problem=${2}
 
     curl -s "https://www.udebug.com/${site}/${problem}" \
-        -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0' | \
-    grep -o "form-[a-zA-Z0-9_-]\{43\}" | \
-    sed '1d'
+        -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0' |
+        grep -o "form-[a-zA-Z0-9_-]\{43\}" |
+        sed '1d'
 }
 
 function get_output {
@@ -39,10 +39,10 @@ function get_output {
         --data 'output_data=' \
         --data 'user_output=' \
         --data "form_build_id=${form_token}" \
-        --data 'form_id=udebug_custom_problem_view_input_output_form' > "${response_html}"
+        --data 'form_id=udebug_custom_problem_view_input_output_form' >"${response_html}"
 
-    hxextract textarea "${response_html}" 2> /dev/null |\
-        hxselect 'textarea#edit-output-data' |\
+    hxextract textarea "${response_html}" 2>/dev/null |
+        hxselect 'textarea#edit-output-data' |
         sed 's/<[^>]*>//g'
 
     rm "${response_html}"
@@ -57,7 +57,7 @@ function check_file {
     fi
 }
 
-function help () {
+function help() {
     echo "usage: $(basename "${0}") <options>"
     echo
     echo "  -s | --site <programming contest site>"
@@ -74,41 +74,41 @@ single_input_file=0
 multiple_input_files=0
 while [[ $# -gt 0 ]]; do
     case ${1} in
-        -h|--help)
-            help
-            exit 0
+    -h | --help)
+        help
+        exit 0
         ;;
-        -p|--problem)
-            shift
-            problem_id="${1}"
-            shift
+    -p | --problem)
+        shift
+        problem_id="${1}"
+        shift
         ;;
-        -s|--site)
-            shift
-            site="${1:-URI}"
-            shift
+    -s | --site)
+        shift
+        site="${1:-URI}"
+        shift
         ;;
-        -i|--input-file)
-            shift
-            single_input_file=1
-            input_file="${1}"
-            shift
+    -i | --input-file)
+        shift
+        single_input_file=1
+        input_file="${1}"
+        shift
         ;;
-        -m|--multiple-input-files)
-            shift
-            multiple_input_files=1
-            input_files_folder="${1}"
-            shift
+    -m | --multiple-input-files)
+        shift
+        multiple_input_files=1
+        input_files_folder="${1}"
+        shift
         ;;
-        -l|--split-lines)
-            shift
-            split_lines=1
-            split_lines_count="${1}"
-            shift
+    -l | --split-lines)
+        shift
+        split_lines=1
+        split_lines_count="${1}"
+        shift
         ;;
-        *)
-            echo "${1} is an invalid option."
-            exit 1
+    *)
+        echo "${1} is an invalid option."
+        exit 1
         ;;
     esac
 done
@@ -137,7 +137,7 @@ if [[ "${single_input_file}" -eq 1 ]]; then
             fi
             form_token="$(get_form_token "${site}" "${problem_id}")"
             get_output "${site}" "${problem_id}" "${line}" "${form_token}"
-        done < "${input_file}"
+        done <"${input_file}"
     fi
 fi
 
@@ -159,6 +159,6 @@ if [[ "${multiple_input_files}" -eq 1 ]]; then
             continue
         fi
         form_token="$(get_form_token "${site}" "${problem_id}")"
-        get_output "${site}" "${problem_id}" "$(cat "${input_file}")" "${form_token}" > "${input_files_folder%/}/out-${output_suffix}.txt"
+        get_output "${site}" "${problem_id}" "$(cat "${input_file}")" "${form_token}" >"${input_files_folder%/}/out-${output_suffix}.txt"
     done
 fi

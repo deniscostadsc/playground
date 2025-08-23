@@ -14,13 +14,13 @@ for folder in ${FOLDERS}; do
         cd "${folder}" || exit 1
 
         if [[ -f in.txt ]]; then
-            Rscript ./*.r < in.txt > result-r.txt
+            Rscript ./*.r <in.txt >result-r.txt
         else
-            Rscript ./*.r > result-r.txt
+            Rscript ./*.r >result-r.txt
         fi
 
         diff result-r.txt out.txt
 
-        cd - > /dev/null
+        cd - >/dev/null
     fi
 done

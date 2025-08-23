@@ -16,15 +16,15 @@ for folder in ${FOLDERS}; do
         gcc -Werror -std=c99 -O2 -lm ./*.c
 
         if [[ -f in.txt ]]; then
-            ./a.out < in.txt > result-c.txt
+            ./a.out <in.txt >result-c.txt
         else
-            ./a.out > result-c.txt
+            ./a.out >result-c.txt
         fi
 
         rm -rf a.out
 
         diff result-c.txt out.txt
 
-        cd - > /dev/null
+        cd - >/dev/null
     fi
 done

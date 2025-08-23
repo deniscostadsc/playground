@@ -14,13 +14,13 @@ for folder in ${FOLDERS}; do
         cd "${folder}" || exit 1
 
         if [[ -f in.txt ]]; then
-            ruby ./*.rb < in.txt > result-rb.txt
+            ruby ./*.rb <in.txt >result-rb.txt
         else
-            ruby ./*.rb > result-rb.txt
+            ruby ./*.rb >result-rb.txt
         fi
 
         diff result-rb.txt out.txt
 
-        cd - > /dev/null
+        cd - >/dev/null
     fi
 done

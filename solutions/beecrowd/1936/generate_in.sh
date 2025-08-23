@@ -7,5 +7,5 @@ LIMIT=1000000
 number=1
 while [[ ${number} -lt ${LIMIT} ]]; do
     echo "${number}"
-    number=$((number+(RANDOM % 20000)))
+    number=$((number + (RANDOM % 20000)))
 done

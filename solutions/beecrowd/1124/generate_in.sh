@@ -2,7 +2,6 @@
 
 set -euo pipefail
 
-
 for l in $(seq 1 3 30); do
     for c in $(seq 1 3 30); do
         for r1 in $(seq 1 3 30); do

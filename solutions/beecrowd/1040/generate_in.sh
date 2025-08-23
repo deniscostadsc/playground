@@ -21,9 +21,9 @@ for i in $(seq "${TESTCASES}"); do
     average_py=$(python3 -c "print(f\"{(${n1} * 2.0 + ${n2} * 3.0 + ${n3} * 4.0 + ${n4}) / 10.0:.1f}\")")
 
     {
-    echo "${n1} ${n2} ${n3} ${n4}"
-    if (( $(echo "${average_py} >= 5.0" | bc -l) )) && (( $(echo "${average_py} <= 6.9" | bc -l) )); then
-        get_random_grade
-    fi
-    } >> "${CURRENT_PATH}/in-$(printf "%04d" "${i}")".txt
+        echo "${n1} ${n2} ${n3} ${n4}"
+        if (($(echo "${average_py} >= 5.0" | bc -l))) && (($(echo "${average_py} <= 6.9" | bc -l))); then
+            get_random_grade
+        fi
+    } >>"${CURRENT_PATH}/in-$(printf "%04d" "${i}")".txt
 done

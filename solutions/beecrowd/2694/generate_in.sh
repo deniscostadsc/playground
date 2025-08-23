@@ -47,7 +47,7 @@ for _ in $(seq "${TESTCASES}"); do
         echo -n "${second_number}"
         echo -n "$(print_letters 1)"
         echo -n "${third_number}"
-    ;;
+        ;;
     1)
         echo -n "${first_number}"
         echo -n "$(print_letters "${remaining_letters}")"
@@ -55,7 +55,7 @@ for _ in $(seq "${TESTCASES}"); do
         echo -n "${second_number}"
         echo -n "$(print_letters 1)"
         echo -n "${third_number}"
-    ;;
+        ;;
     2)
         echo -n "${first_number}"
         echo -n "$(print_letters 1)"
@@ -63,7 +63,7 @@ for _ in $(seq "${TESTCASES}"); do
         echo -n "${second_number}"
         echo -n "$(print_letters 1)"
         echo -n "${third_number}"
-    ;;
+        ;;
     3)
         echo -n "${first_number}"
         echo -n "$(print_letters 1)"
@@ -71,7 +71,7 @@ for _ in $(seq "${TESTCASES}"); do
         echo -n "$(print_letters "${remaining_letters}")"
         echo -n "$(print_letters 1)"
         echo -n "${third_number}"
-    ;;
+        ;;
     4)
         echo -n "${first_number}"
         echo -n "$(print_letters 1)"
@@ -79,11 +79,8 @@ for _ in $(seq "${TESTCASES}"); do
         echo -n "$(print_letters 1)"
         echo -n "${third_number}"
         echo -n "$(print_letters "${remaining_letters}")"
-    ;;
+        ;;
     esac
 
     echo
 done
-
-
-

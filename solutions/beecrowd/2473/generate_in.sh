@@ -9,16 +9,16 @@ repeated_max_item=0
 file_to_save_numbers=$(mktemp)
 
 function pick_number {
-    picked_numbers_count=$(wc -l < "${file_to_save_numbers}")
+    picked_numbers_count=$(wc -l <"${file_to_save_numbers}")
     if [[ ${picked_numbers_count} -eq 6 ]] || [[ ${picked_numbers_count} -eq 0 ]]; then
         picked_number=$((RANDOM % max_item + 1))
-        echo "${picked_number}" > "${file_to_save_numbers}"
+        echo "${picked_number}" >"${file_to_save_numbers}"
     else
         picked_number=$((RANDOM % max_item + 1))
         while grep -Fxq "${picked_number}" "${file_to_save_numbers}"; do
             picked_number=$((RANDOM % max_item + 1))
         done
-        echo "${picked_number}" >> "${file_to_save_numbers}"
+        echo "${picked_number}" >>"${file_to_save_numbers}"
 
     fi
     echo "${picked_number}"
@@ -41,7 +41,7 @@ for _ in $(seq "${TESTCASES}"); do
 
     if [[ ${max_item} -lt 10 ]] && [[ ${repeated_max_item} -lt 5 ]]; then
         repeated_max_item=$((repeated_max_item + 1))
-    elif [[ ${max_item} -lt 10 ]] &&  [[ ${repeated_max_item} -eq 5 ]]; then
+    elif [[ ${max_item} -lt 10 ]] && [[ ${repeated_max_item} -eq 5 ]]; then
         repeated_max_item=0
         max_item=$((max_item + 1))
     elif [[ ${max_item} -gt 99 ]]; then

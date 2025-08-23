@@ -14,13 +14,13 @@ for folder in ${FOLDERS}; do
         cd "${folder}" || exit 1
 
         if [[ -f in.txt ]]; then
-            julia ./*.jl < in.txt > result-jl.txt
+            julia ./*.jl <in.txt >result-jl.txt
         else
-            julia ./*.jl > result-jl.txt
+            julia ./*.jl >result-jl.txt
         fi
 
         diff result-jl.txt out.txt
 
-        cd - > /dev/null
+        cd - >/dev/null
     fi
 done

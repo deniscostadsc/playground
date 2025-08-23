@@ -12,4 +12,3 @@ for _ in $(seq "${TESTCASES}"); do
         echo "$((RANDOM % 100 + 1)) $((RANDOM % 10000 + 1))"
     fi
 done
-

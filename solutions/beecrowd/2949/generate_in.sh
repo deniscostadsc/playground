@@ -14,14 +14,14 @@ CURRENT_PATH=$(dirname -- "${BASH_SOURCE[0]}")
 for i in $(seq "${TESTCASES}"); do
     n=$((RANDOM % MAX_N + 1))
     {
-    echo "${n}"
-    for _ in $(seq "${n}"); do
-        echo -n "${ALPHABET_UPPERCASE[$((RANDOM % 26))]}"
-        for (( k = 0; k < $((RANDOM % 3 + 2)); k++ )); do
-            echo -n "${VOWELS_LOWERCASE[$((RANDOM % 5))]}"
-            echo -n "${CONSONANTS_LOWERCASE[$((RANDOM % 21))]}"
+        echo "${n}"
+        for _ in $(seq "${n}"); do
+            echo -n "${ALPHABET_UPPERCASE[$((RANDOM % 26))]}"
+            for ((k = 0; k < $((RANDOM % 3 + 2)); k++)); do
+                echo -n "${VOWELS_LOWERCASE[$((RANDOM % 5))]}"
+                echo -n "${CONSONANTS_LOWERCASE[$((RANDOM % 21))]}"
+            done
+            echo " ${RACES[$((RANDOM % 5))]}"
         done
-        echo " ${RACES[$((RANDOM % 5))]}"
-    done
-    } > "${CURRENT_PATH}/in-$(printf "%03d" "${i}")".txt
+    } >"${CURRENT_PATH}/in-$(printf "%03d" "${i}")".txt
 done

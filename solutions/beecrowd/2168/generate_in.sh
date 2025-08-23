@@ -2,7 +2,6 @@
 
 set -euo pipefail
 
-
 TEST_CASES=10
 MAX_N=30
 

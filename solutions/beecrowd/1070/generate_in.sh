@@ -6,5 +6,5 @@ TESTCASES=1000
 CURRENT_PATH=$(dirname -- "${BASH_SOURCE[0]}")
 
 for i in $(seq "${TESTCASES}"); do
-    echo "$((RANDOM % 10000))" > "${CURRENT_PATH}/in-$(printf "%04d" "${i}")".txt
+    echo "$((RANDOM % 10000))" >"${CURRENT_PATH}/in-$(printf "%04d" "${i}")".txt
 done

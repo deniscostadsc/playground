@@ -16,19 +16,19 @@ if [[ -z "$CHANGED_FILES" ]]; then
     FOLDER="solutions/"
     LANGUAGES=""
 else
-    echo "$CHANGED_FILES" > changed_files.txt 2>/dev/null
+    echo "$CHANGED_FILES" >changed_files.txt 2>/dev/null
 
     # Check if only solutions changed
     if grep -q "^solutions/" changed_files.txt && ! grep -v "^solutions/" changed_files.txt; then
         # Extract problem folders and find common parent
-        grep "^solutions/" changed_files.txt | sed 's|/[^/]*$||' | sort -u > problem_folders.txt
+        grep "^solutions/" changed_files.txt | sed 's|/[^/]*$||' | sort -u >problem_folders.txt
 
-        if [[ "$(wc -l < problem_folders.txt)" -eq 1 ]]; then
+        if [[ "$(wc -l <problem_folders.txt)" -eq 1 ]]; then
             FOLDER=$(cat problem_folders.txt)
         else
             # Find common parent directory
-            sed 's|/[^/]*$||' problem_folders.txt | sort -u > parent_folders.txt
-            if [[ "$(wc -l < parent_folders.txt)" -eq 1 ]]; then
+            sed 's|/[^/]*$||' problem_folders.txt | sort -u >parent_folders.txt
+            if [[ "$(wc -l <parent_folders.txt)" -eq 1 ]]; then
                 FOLDER=$(cat parent_folders.txt)
             else
                 FOLDER="solutions/"
@@ -39,10 +39,10 @@ else
         SUPPORTED_EXTENSIONS=$(find .docker -name "*.Dockerfile" 2>/dev/null | sed 's|.*/||' | sed 's|\.Dockerfile$||' | tr '\n' '|' | sed 's/|$//')
 
         # Extract language extensions from changed files
-        grep "^solutions/" changed_files.txt | grep -E "\.($SUPPORTED_EXTENSIONS)$" | sed 's/.*\.//' | sort -u > language_extensions.txt
+        grep "^solutions/" changed_files.txt | grep -E "\.($SUPPORTED_EXTENSIONS)$" | sed 's/.*\.//' | sort -u >language_extensions.txt
 
         if [[ -s language_extensions.txt ]]; then
-            LANGUAGES=$(tr '\n' ' ' < language_extensions.txt | sed 's/ $//')
+            LANGUAGES=$(tr '\n' ' ' <language_extensions.txt | sed 's/ $//')
         else
             LANGUAGES=""
         fi
@@ -52,5 +52,5 @@ else
     fi
 fi
 
-echo "folder=$FOLDER" >> "$GITHUB_OUTPUT"
-echo "languages=$LANGUAGES" >> "$GITHUB_OUTPUT"
+echo "folder=$FOLDER" >>"$GITHUB_OUTPUT"
+echo "languages=$LANGUAGES" >>"$GITHUB_OUTPUT"

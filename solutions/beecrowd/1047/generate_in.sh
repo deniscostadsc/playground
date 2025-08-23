@@ -12,4 +12,3 @@ for start_hour in $(seq 0 2); do
         done
     done
 done
-

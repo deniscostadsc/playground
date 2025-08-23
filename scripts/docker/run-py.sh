@@ -14,13 +14,13 @@ for folder in ${FOLDERS}; do
         cd "${folder}" || exit 1
 
         if [[ -f in.txt ]]; then
-            python ./*.py < in.txt > result-py.txt
+            python ./*.py <in.txt >result-py.txt
         else
-            python ./*.py > result-py.txt
+            python ./*.py >result-py.txt
         fi
 
         diff result-py.txt out.txt
 
-        cd - > /dev/null
+        cd - >/dev/null
     fi
 done

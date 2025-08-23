@@ -23,4 +23,3 @@ for _ in $(seq "${TESTCASES}"); do
         echo
     done
 done
-

@@ -14,13 +14,13 @@ for folder in ${FOLDERS}; do
         cd "${folder}" || exit 1
 
         if [[ -f in.txt ]]; then
-            go run ./*.go < in.txt > result-go.txt
+            go run ./*.go <in.txt >result-go.txt
         else
-            go run ./*.go > result-go.txt
+            go run ./*.go >result-go.txt
         fi
 
         diff result-go.txt out.txt
 
-        cd - > /dev/null
+        cd - >/dev/null
     fi
 done

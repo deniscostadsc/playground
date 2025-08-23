@@ -15,14 +15,14 @@ for folder in ${FOLDERS}; do
         tsc ./*.ts --outfile compiledFromTSFile.js
 
         if [[ -f in.txt ]]; then
-            node ./compiledFromTSFile.js < in.txt > result-ts.txt
+            node ./compiledFromTSFile.js <in.txt >result-ts.txt
         else
-            node ./compiledFromTSFile.js > result-ts.txt
+            node ./compiledFromTSFile.js >result-ts.txt
         fi
 
         rm compiledFromTSFile.js
         diff result-ts.txt out.txt
 
-        cd - > /dev/null
+        cd - >/dev/null
     fi
 done

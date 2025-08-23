@@ -9,8 +9,8 @@ DOCKER_RUN_PREFIX=${3}
 for language in ${LANGUAGES}; do
     if [[ "${language}" == "sql" ]]; then
         FOLDERS="${FOLDERS}" \
-        USER="$(id -u):$(id -g)" \
-        docker compose \
+            USER="$(id -u):$(id -g)" \
+            docker compose \
             -f .docker/sql-docker-compose.yml \
             up \
             --build \

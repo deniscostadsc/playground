@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-pushd "$(git rev-parse --show-toplevel)" > /dev/null
+pushd "$(git rev-parse --show-toplevel)" >/dev/null
 
 SUPPORTED_LANGUAGES=$(find .docker -name "*.Dockerfile" 2>/dev/null | sed 's|.*/||' | sed 's|\.Dockerfile$||' | grep -v 'sql-docker-compose' | grep -v lint | grep -v sql | tr '\n' '|' | sed 's/|$//')
 
@@ -19,4 +19,4 @@ for folder in ${FOLDERS}; do
     echo "$(echo "${solutions}" | wc -w | sed 's/ //g') ${folder}"
 done | sort -nr
 
-popd  > /dev/null
+popd >/dev/null

@@ -14,13 +14,13 @@ for folder in ${FOLDERS}; do
         cd "${folder}" || exit 1
 
         if [[ -f in.txt ]]; then
-            lua ./*.lua < in.txt > result-lua.txt
+            lua ./*.lua <in.txt >result-lua.txt
         else
-            lua ./*.lua > result-lua.txt
+            lua ./*.lua >result-lua.txt
         fi
 
         diff result-lua.txt out.txt
 
-        cd - > /dev/null
+        cd - >/dev/null
     fi
 done

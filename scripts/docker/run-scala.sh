@@ -16,15 +16,15 @@ for folder in ${FOLDERS}; do
         scalac ./*.scala
 
         if [[ -f in.txt ]]; then
-            scala Main < in.txt > result-scala.txt
+            scala Main <in.txt >result-scala.txt
         else
-            scala Main > result-scala.txt
+            scala Main >result-scala.txt
         fi
 
         rm -rf Main*.class
 
         diff result-scala.txt out.txt
 
-        cd - > /dev/null
+        cd - >/dev/null
     fi
 done

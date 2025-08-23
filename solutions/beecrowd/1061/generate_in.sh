@@ -38,11 +38,9 @@ for i in $(seq "${TESTCASES}"); do
     # echo "${second_hours} : ${second_minutes} : ${second_seconds}" >> "${CURRENT_PATH}/in-$(printf "%03d" "${i}")".txt
 
     {
-    echo "Dia ${first_day}"
-    echo "${first_hours} : ${first_minutes} : ${first_seconds}"
-    echo "Dia ${second_day}"
-    echo "${second_hours} : ${second_minutes} : ${second_seconds}"
-    } > "${CURRENT_PATH}/in-$(printf "%03d" "${i}")".txt
+        echo "Dia ${first_day}"
+        echo "${first_hours} : ${first_minutes} : ${first_seconds}"
+        echo "Dia ${second_day}"
+        echo "${second_hours} : ${second_minutes} : ${second_seconds}"
+    } >"${CURRENT_PATH}/in-$(printf "%03d" "${i}")".txt
 done
-
-

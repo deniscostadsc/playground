@@ -8,10 +8,10 @@ tests=1000
 
 echo "${tests}"
 
-for (( i = 0; i < tests; i++ )); do
+for ((i = 0; i < tests; i++)); do
     n=$((RANDOM % 20 + 1))
-    for (( j = 1; j <= n; j++ )); do
-        for (( k = 0; k < $((RANDOM % 50 + 1)); k++ )); do
+    for ((j = 1; j <= n; j++)); do
+        for ((k = 0; k < $((RANDOM % 50 + 1)); k++)); do
             echo -n "${alphabet[$((RANDOM % 52))]}"
         done
         if [[ "${j}" -ne ${n} ]]; then
