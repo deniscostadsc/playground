@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-if [ $# -ne 2 ]; then
+if [[ $# -ne 2 ]]; then
     exit 1
 fi
 
@@ -12,7 +12,7 @@ AFTER_COMMIT="$2"
 # Get changed files, handle potential failures gracefully
 CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT "$BEFORE_COMMIT" "$AFTER_COMMIT" 2>/dev/null || echo "")
 
-if [ -z "$CHANGED_FILES" ]; then
+if [[ -z "$CHANGED_FILES" ]]; then
     FOLDER="solutions/"
 else
     echo "$CHANGED_FILES" > changed_files.txt
@@ -20,14 +20,14 @@ else
     # Check if only solutions changed
     if grep -q "^solutions/" changed_files.txt && ! grep -v "^solutions/" changed_files.txt; then
         # Extract problem folders and find common parent
-        cat changed_files.txt | grep "^solutions/" | sed 's|/[^/]*$||' | sort -u > problem_folders.txt
+        grep "^solutions/" changed_files.txt | sed 's|/[^/]*$||' | sort -u > problem_folders.txt
 
-        if [ $(wc -l < problem_folders.txt) -eq 1 ]; then
+        if [[ "$(wc -l < problem_folders.txt)" -eq 1 ]]; then
             FOLDER=$(cat problem_folders.txt)
         else
             # Find common parent directory
-            cat problem_folders.txt | sed 's|/[^/]*$||' | sort -u > parent_folders.txt
-            if [ $(wc -l < parent_folders.txt) -eq 1 ]; then
+            sed 's|/[^/]*$||' problem_folders.txt | sort -u > parent_folders.txt
+            if [[ "$(wc -l < parent_folders.txt)" -eq 1 ]]; then
                 FOLDER=$(cat parent_folders.txt)
             else
                 FOLDER="solutions/"
@@ -38,4 +38,4 @@ else
     fi
 fi
 
-echo "folder=$FOLDER" >> $GITHUB_OUTPUT
+echo "folder=$FOLDER" >> "$GITHUB_OUTPUT"
