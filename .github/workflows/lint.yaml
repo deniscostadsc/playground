@@ -13,7 +13,6 @@ jobs:
         uses: dawidd6/action-download-artifact@v11
         with:
           workflow: lint.yaml
-          workflow_conclusion: failure
           search_artifacts: true
           name: failing-changed-files-for-lint
           path: /tmp
