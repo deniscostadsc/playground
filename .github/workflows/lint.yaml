@@ -13,7 +13,7 @@ jobs:
         id: changed-files
         run: echo "changed_files=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | xargs)" >> $GITHUB_OUTPUT
       - name: Check if wrong files have a error description
-        run: make check-wrongs CHANGED_FILES="${{ steps.changed-files.outputs.changed_files }}"
+        run: make check-wrongs
       - name: Check if tags are correct
         run: make check-tags
       - name: Determine lint scope

@@ -145,7 +145,7 @@ check-tags:
 	@scripts/makefile/check-tags.sh
 
 check-wrongs:
-	@scripts/makefile/check-wrongs.sh "$(CHANGED_FILES)"
+	@scripts/makefile/check-wrongs.sh
 
 clean:
 	@find . -name '*.class' -delete

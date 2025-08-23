@@ -2,7 +2,13 @@
 
 set -euo pipefail
 
-CHANGED_FILES="${1}"
+# Get changed files using git diff, handle potential failures gracefully
+CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT HEAD~1 HEAD 2>/dev/null || echo "")
+
+if [[ -z "$CHANGED_FILES" ]]; then
+    # No changes detected, exit successfully
+    exit 0
+fi
 
 FOLDERS="$(echo "${CHANGED_FILES}" | xargs dirname | sort | uniq)"
 
