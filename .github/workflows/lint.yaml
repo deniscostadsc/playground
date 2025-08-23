@@ -38,10 +38,12 @@ jobs:
           name: failing-changed-files-for-lint
           path: current-changed-files.txt
           retention-days: 7
-      - name: Upload success (empty file)
+      - name: Create empty file
         if: success()
         run: |
           echo "" > empty-failed-files.txt
+      - name: Upload success (empty file)
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: failing-changed-files-for-lint
