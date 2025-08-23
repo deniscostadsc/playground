@@ -14,8 +14,9 @@ CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT "$BEFORE_COMMIT" "$AFTE
 
 if [[ -z "$CHANGED_FILES" ]]; then
     FOLDER="solutions/"
+    LANGUAGES=""
 else
-    echo "$CHANGED_FILES" > changed_files.txt
+    echo "$CHANGED_FILES" > changed_files.txt 2>/dev/null
 
     # Check if only solutions changed
     if grep -q "^solutions/" changed_files.txt && ! grep -v "^solutions/" changed_files.txt; then
@@ -33,9 +34,23 @@ else
                 FOLDER="solutions/"
             fi
         fi
+
+        # Get supported languages from Docker files
+        SUPPORTED_EXTENSIONS=$(find .docker -name "*.Dockerfile" 2>/dev/null | sed 's|.*/||' | sed 's|\.Dockerfile$||' | tr '\n' '|' | sed 's/|$//')
+
+        # Extract language extensions from changed files
+        grep "^solutions/" changed_files.txt | grep -E "\.($SUPPORTED_EXTENSIONS)$" | sed 's/.*\.//' | sort -u > language_extensions.txt
+
+        if [[ -s language_extensions.txt ]]; then
+            LANGUAGES=$(tr '\n' ' ' < language_extensions.txt | sed 's/ $//')
+        else
+            LANGUAGES=""
+        fi
     else
         FOLDER="solutions/"
+        LANGUAGES=""
     fi
 fi
 
 echo "folder=$FOLDER" >> "$GITHUB_OUTPUT"
+echo "languages=$LANGUAGES" >> "$GITHUB_OUTPUT"
