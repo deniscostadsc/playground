@@ -25,7 +25,6 @@ jobs:
           name: failing-changed-files-for-lint
           path: all-files-to-check.txt
           retention-days: 7
-          overwrite: true
       - name: Run linters
         id: run-linters
         run: |
