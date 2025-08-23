@@ -38,9 +38,9 @@ fi
 echo "DEBUG: Final combined files: '$ALL_FILES'"
 
 if [[ -n "$ALL_FILES" ]]; then
-    echo "$ALL_FILES" > failing-changed-files-for-lint.txt
+    echo "$ALL_FILES" >failing-changed-files-for-lint.txt
 else
-    echo "" > failing-changed-files-for-lint.txt
+    echo "" >failing-changed-files-for-lint.txt
 fi
 
 if [[ -s failing-changed-files-for-lint.txt ]]; then
