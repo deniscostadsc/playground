@@ -10,7 +10,6 @@ cp -R .clojure/\? .
 
 for folder in ${FOLDERS}; do
     [[ -f "${folder}WRONG" ]] && continue
-    # folder=${folder//\/\//\/} # removes "//" from path
 
     if [[ "$(find "${folder}" -name '*.clj' | wc -l)" -eq 1 ]]; then
         # make sure we have one, and only one trailing slash
