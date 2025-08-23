@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-pushd "$(dirname "${0}")/.." > /dev/null
+pushd "$(git rev-parse --show-toplevel)" > /dev/null
 
 FOLDERS=$(find . -name 'problem.md' | sed 's/problem.md//g' | sort)
 

@@ -142,10 +142,10 @@ __run-lint-build:
 	done
 
 check-tags:
-	@scripts/check-tags.sh
+	@scripts/makefile/check-tags.sh
 
 check-wrongs:
-	@scripts/check-wrongs.sh "$(CHANGED_FILES)"
+	@scripts/makefile/check-wrongs.sh "$(CHANGED_FILES)"
 
 clean:
 	@find . -name '*.class' -delete
@@ -166,10 +166,10 @@ clean:
 	@rm -rf \? || true
 
 get-easiest-problems:
-	@./scripts/get-easiest-problems.sh
+	@./scripts/makefile/get-easiest-problems.sh
 
 languages:
-	@./scripts/languages.sh
+	@./scripts/makefile/languages.sh
 
 lint: __error_if_languages_def __error_if_language_def __run-lint-build
 	@for language_lint in $(SUPPORTED_LINTS); do \
@@ -192,7 +192,7 @@ else
 endif
 
 run: __error_if_language_def clean __run-build
-	@scripts/run-problems.sh "$(FOLDERS)" "$(SUPPORTED_LANGUAGES)" "$(DOCKER_RUN)"
+	@scripts/makefile/run-problems.sh "$(FOLDERS)" "$(SUPPORTED_LANGUAGES)" "$(DOCKER_RUN)"
 
 wrong:
 	@find . -name 'WRONG' | sort
