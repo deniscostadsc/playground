@@ -11,31 +11,21 @@ AFTER_COMMIT="$2"
 
 CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT "$BEFORE_COMMIT" "$AFTER_COMMIT" 2>/dev/null || echo "")
 
-echo "DEBUG: Current changed files: '$CHANGED_FILES'"
-
 if [[ -f "/tmp/failing-changed-files-for-build.txt" ]]; then
     PREVIOUS_FAILED_FILES=$(cat /tmp/failing-changed-files-for-build.txt 2>/dev/null || echo "")
-    echo "DEBUG: Found artifact file, content: '$PREVIOUS_FAILED_FILES'"
 else
     PREVIOUS_FAILED_FILES=""
-    echo "DEBUG: No artifact file found"
 fi
 
 if [[ -n "$CHANGED_FILES" && -n "$PREVIOUS_FAILED_FILES" ]]; then
     ALL_FILES=$(echo -e "$CHANGED_FILES\n$PREVIOUS_FAILED_FILES" | sort -u)
-    echo "DEBUG: Combining current and previous files"
 elif [[ -n "$CHANGED_FILES" ]]; then
     ALL_FILES="$CHANGED_FILES"
-    echo "DEBUG: Using only current files"
 elif [[ -n "$PREVIOUS_FAILED_FILES" ]]; then
     ALL_FILES="$PREVIOUS_FAILED_FILES"
-    echo "DEBUG: Using only previous files"
 else
     ALL_FILES=""
-    echo "DEBUG: No files to process"
 fi
-
-echo "DEBUG: Final combined files: '$ALL_FILES'"
 
 if [[ -z "$ALL_FILES" ]]; then
     FOLDER="solutions/"
@@ -72,7 +62,5 @@ else
     fi
 fi
 
-echo "DEBUG: Determined folder: '$FOLDER'"
-echo "DEBUG: Determined languages: '$LANGUAGES'"
 echo "folder=$FOLDER" >>"$GITHUB_OUTPUT"
 echo "languages=$LANGUAGES" >>"$GITHUB_OUTPUT"
