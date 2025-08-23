@@ -38,15 +38,15 @@ fi
 echo "DEBUG: Final combined files: '$ALL_FILES'"
 
 if [[ -n "$ALL_FILES" ]]; then
-    echo "$ALL_FILES" >all-files-to-check.txt
+    echo "$ALL_FILES" > failing-changed-files-for-lint.txt
 else
-    echo "" >all-files-to-check.txt
+    echo "" > failing-changed-files-for-lint.txt
 fi
 
-if [[ -s all-files-to-check.txt ]]; then
+if [[ -s failing-changed-files-for-lint.txt ]]; then
     SUPPORTED_LINTS=$(find .docker/lint -name "*.Dockerfile" 2>/dev/null | sed 's|.*/||' | sed 's|-lint\.Dockerfile$||' | tr '\n' ' ' | sed 's/ $//')
 
-    grep -E "\.($(echo "$SUPPORTED_LINTS" | tr ' ' '|'))$" all-files-to-check.txt | sed 's/.*\.//' | sort -u >lint_extensions.txt
+    grep -E "\.($(echo "$SUPPORTED_LINTS" | tr ' ' '|'))$" failing-changed-files-for-lint.txt | sed 's/.*\.//' | sort -u >lint_extensions.txt
 
     if [[ -s lint_extensions.txt ]]; then
         LINTS=$(tr '\n' ' ' <lint_extensions.txt | sed 's/ $//')

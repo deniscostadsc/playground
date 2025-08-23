@@ -26,7 +26,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: failing-changed-files-for-lint
-          path: all-files-to-check.txt
+          path: failing-changed-files-for-lint.txt
           retention-days: 7
       - name: Run linters
         id: run-linters
@@ -41,12 +41,14 @@ jobs:
       - name: Check if tags are correct
         run: make check-tags
       - name: Create empty file
+        if: success()
         run: |
-          echo "" > empty-failed-files.txt
+          echo "" > failing-changed-files-for-lint.txt
       - name: Upload success (empty file)
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: failing-changed-files-for-lint
-          path: empty-failed-files.txt
+          path: failing-changed-files-for-lint.txt
           retention-days: 7
           overwrite: true
