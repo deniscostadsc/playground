@@ -1,10 +1,11 @@
 .PHONY: \
-	__error_if_language_def \
-	__error_if_languages_def \
-	__error_if_language_ndef \
 	__error_if_folder_ndef \
+	__error_if_language_def \
+	__error_if_language_ndef \
+	__error_if_languages_def \
 	__run-build \
 	__run-lint-build \
+	__run-test-build \
 	check-tags \
 	check-wrongs \
 	clean \
@@ -14,6 +15,7 @@
 	lint-fix \
 	new-problem \
 	run \
+	test \
 	wrong
 
 SHELL = /bin/bash -euo pipefail
@@ -111,14 +113,14 @@ endif
 DOCKER_RUN := docker run --rm -v $$(pwd):/code -u "$$(id -u):$$(id -g)"
 DOCKER_BUILD := docker build -q -f
 
+__error_if_folder_ndef:
+ifndef FOLDER
+	$(error This task requires FOLDER variable)
+endif
+
 __error_if_language_def:
 ifdef LANGUAGE
 	$(error This task does not support LANGUAGE variable)
-endif
-
-__error_if_languages_def:
-ifdef LANGUAGES
-	$(error This task does not support LANGUAGES variable)
 endif
 
 __error_if_language_ndef:
@@ -126,9 +128,9 @@ ifndef LANGUAGE
 	$(error This task requires LANGUAGE variable)
 endif
 
-__error_if_folder_ndef:
-ifndef FOLDER
-	$(error This task requires FOLDER variable)
+__error_if_languages_def:
+ifdef LANGUAGES
+	$(error This task does not support LANGUAGES variable)
 endif
 
 __run-build:
@@ -140,6 +142,9 @@ __run-lint-build:
 	@for language_lint in $(SUPPORTED_LINTS); do \
 		$(DOCKER_BUILD) .docker/lint/$${language_lint}-lint.Dockerfile -t $${language_lint}-lint .; \
 	done
+
+__run-test-build:
+	@$(DOCKER_BUILD) .docker/test/test.Dockerfile -t test .
 
 check-tags:
 	@scripts/makefile/check-tags.sh
@@ -193,6 +198,9 @@ endif
 
 run: __error_if_language_def clean __run-build
 	@scripts/makefile/run-problems.sh "$(FOLDERS)" "$(SUPPORTED_LANGUAGES)" "$(DOCKER_RUN)"
+
+test: __run-test-build
+	@$(DOCKER_RUN) test
 
 wrong:
 	@find . -name 'WRONG' | sort
