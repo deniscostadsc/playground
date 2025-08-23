@@ -10,11 +10,11 @@ jobs:
         with:
           fetch-depth: 0
       - name: Download previous failed files
-        uses: dawidd6/action-download-artifact@v2
+        uses: dawidd6/action-download-artifact@v11
         with:
           workflow: Lint
-          workflow_search: true
           workflow_conclusion: success
+          search_artifacts: true
           name: failing-changed-files-for-lint
           path: ./
           if_no_artifact_found: ignore
