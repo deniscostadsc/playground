@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk -U upgrade && apk add bash
+RUN apk -U upgrade && apk add bash git tree
 RUN mkdir /code
 WORKDIR /code
 

@@ -1,0 +1,3 @@
+$ rm -f /tmp/failing-changed-files-for-lint.txt
+$ ./scripts/makefile/check-wrongs.sh; EXIT_CODE=$?; echo "Exit code: $EXIT_CODE"
+Exit code: 0
