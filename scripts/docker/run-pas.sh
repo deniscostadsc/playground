@@ -13,7 +13,7 @@ for folder in ${FOLDERS}; do
         echo "${folder}"
         cd "${folder}" || exit 1
 
-        fpc -opas.out -l- -v0 ./*.pas
+        fpc -opas.out -l- -v0 ./*.pas 2>/dev/null
 
         if [[ -f in.txt ]]; then
             ./pas.out <in.txt >result-pas.txt
