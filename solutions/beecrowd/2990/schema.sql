@@ -43,35 +43,35 @@ CREATE TABLE projetos (
 
 -- GRANT SELECT ON projetos TO sql_user;
 
-Insert Into empregados
-values ('049382234322','João Silva', 2350, '2434332222', 1010);
-Insert Into empregados(cpf, enome, salario, cpf_supervisor, dnumero)
-values ('586733922290','Mario Silveira', 3500, '2434332222', 1010);
-Insert Into empregados
-values ('2434332222','Aline Barros', 2350, NULL, 1010);
+INSERT INTO empregados
+VALUES ('049382234322','João Silva', 2350, '2434332222', 1010);
+INSERT INTO empregados(cpf, enome, salario, cpf_supervisor, dnumero)
+VALUES ('586733922290','Mario Silveira', 3500, '2434332222', 1010);
+INSERT INTO empregados
+VALUES ('2434332222','Aline Barros', 2350, NULL, 1010);
 
-Insert Into empregados
-values ('1733332162','Tulio Vidal', 8350, NULL, 1020);
-Insert Into empregados
-values ('4244435272','Juliana Rodrigues', 3310, NULL, 1020);
-Insert Into empregados
-values ('1014332672','Natalia Marques', 2900, NULL, 1010);
+INSERT INTO empregados
+VALUES ('1733332162','Tulio Vidal', 8350, NULL, 1020);
+INSERT INTO empregados
+VALUES ('4244435272','Juliana Rodrigues', 3310, NULL, 1020);
+INSERT INTO empregados
+VALUES ('1014332672','Natalia Marques', 2900, NULL, 1010);
 
 
-Insert Into departamentos (dnumero, dnome, cpf_gerente)
-values (1010, 'Pesquisa', '049382234322');
-Insert Into departamentos
-values (1020, 'Ensino', '2434332222');
-Insert Into trabalha (cpf_emp, pnumero)
-values ('049382234322', 2010);
-Insert Into trabalha (cpf_emp, pnumero)
-values ('586733922290', 2020);
-Insert Into trabalha (cpf_emp, pnumero)
-values ('049382234322', 2020);
-Insert Into projetos (pnumero, pnome, dnumero)
-values (2010,'Alpha', 1010);
-Insert Into projetos (pnumero, pnome, dnumero)
-values (2020,'Beta', 1020);
+INSERT INTO departamentos (dnumero, dnome, cpf_gerente)
+VALUES (1010, 'Pesquisa', '049382234322');
+INSERT INTO departamentos
+VALUES (1020, 'Ensino', '2434332222');
+INSERT INTO trabalha (cpf_emp, pnumero)
+VALUES ('049382234322', 2010);
+INSERT INTO trabalha (cpf_emp, pnumero)
+VALUES ('586733922290', 2020);
+INSERT INTO trabalha (cpf_emp, pnumero)
+VALUES ('049382234322', 2020);
+INSERT INTO projetos (pnumero, pnome, dnumero)
+VALUES (2010,'Alpha', 1010);
+INSERT INTO projetos (pnumero, pnome, dnumero)
+VALUES (2020,'Beta', 1020);
 
 ALTER TABLE empregados ADD CONSTRAINT fk_dnum FOREIGN KEY(dnumero)
 REFERENCES departamentos(dnumero);

@@ -29,18 +29,18 @@ FOREIGN KEY (id_work_shift) REFERENCES  work_shifts(id)
 
 GRANT SELECT ON attendances TO sql_user;
 
-insert into doctors (id,name) values
+INSERT INTO doctors (id,name) VALUES
 (1,'Arlino'),
 (2,'Tiago'),
 (3,'Amanda'),
 (4,'Wellington');
 
-insert into work_shifts (id,name,bonus) values
+INSERT INTO work_shifts (id,name,bonus) VALUES
 (1,'nocturnal',15),
 (2,'afternoon',2),
 (3,'day',1);
 
-insert into  attendances (id, id_doctor, hours, id_work_shift) values
+INSERT INTO  attendances (id, id_doctor, hours, id_work_shift) VALUES
 (1,1,5,1),
 (2,3,2,1),
 (3,3,3,2),
