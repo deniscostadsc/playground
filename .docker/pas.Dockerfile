@@ -1,15 +1,24 @@
-FROM ubuntu:14.04
+FROM --platform=linux/amd64 ubuntu:16.04
 
-RUN apt --fix-broken install
-RUN apt update
-RUN apt upgrade -y
-RUN dpkg --configure -a
-RUN apt install -y aptitude man-db
-RUN aptitude install -f -y fpc
+ENV DEBIAN_FRONTEND=noninteractive
 
-# COPY utils/fpc-2.6.2.arm-linux.tar .
-# RUN tar -xvf fpc-2.6.2.arm-linux.tar
-# RUN cd fpc-2.6.2.arm-linux && ./install.sh
+# Install basic dependencies
+RUN apt-get update && apt-get install -y \
+    wget \
+    build-essential \
+    libc6-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Download and install Free Pascal Compiler 2.6.2 for x86_64
+RUN cd /tmp && \
+    wget https://sourceforge.net/projects/freepascal/files/Linux/2.6.2/fpc-2.6.2.x86_64-linux.tar/download -O fpc-2.6.2.x86_64-linux.tar && \
+    tar -xf fpc-2.6.2.x86_64-linux.tar && \
+    cd fpc-2.6.2.x86_64-linux && \
+    ./install.sh --prefix=/usr/local --installdir=/usr/local --baseinstalldir=/usr/local && \
+    cd / && rm -rf /tmp/fpc-2.6.2.x86_64-linux*
+
+# Verify installation
+RUN fpc -iV
 
 RUN mkdir /code
 WORKDIR /code
