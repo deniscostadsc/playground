@@ -33,8 +33,6 @@ else
             fi
         fi
 
-        SUPPORTED_EXTENSIONS=$(get_supported_languages | tr ' ' '|' | sed 's/|$//')
-
         LANGUAGE_EXTENSIONS=$(get_language_extensions_from_files "$(grep "^solutions/" changed_files.txt)" "$(get_supported_languages)")
         echo "$LANGUAGE_EXTENSIONS" >language_extensions.txt
 
