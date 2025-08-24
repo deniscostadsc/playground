@@ -1,33 +1,18 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
+source "$(dirname "$0")/../utils/changed-files.sh"
 
-if [[ $# -ne 2 ]]; then
-    exit 1
-fi
+validate_commit_args "$@"
 
 BEFORE_COMMIT="$1"
 AFTER_COMMIT="$2"
 
-CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT "$BEFORE_COMMIT" "$AFTER_COMMIT" 2>/dev/null || echo "")
+CHANGED_FILES=$(get_changed_files "$BEFORE_COMMIT" "$AFTER_COMMIT")
+PREVIOUS_FAILED_FILES=$(load_artifact_files "/tmp/failing-changed-files-for-build.txt")
+ALL_FILES=$(merge_files "$CHANGED_FILES" "$PREVIOUS_FAILED_FILES")
 
-if [[ -f "/tmp/failing-changed-files-for-build.txt" ]]; then
-    PREVIOUS_FAILED_FILES=$(cat /tmp/failing-changed-files-for-build.txt 2>/dev/null || echo "")
-else
-    PREVIOUS_FAILED_FILES=""
-fi
-
-if [[ -n "$CHANGED_FILES" && -n "$PREVIOUS_FAILED_FILES" ]]; then
-    ALL_FILES=$(echo -e "$CHANGED_FILES\n$PREVIOUS_FAILED_FILES" | sort -u)
-elif [[ -n "$CHANGED_FILES" ]]; then
-    ALL_FILES="$CHANGED_FILES"
-elif [[ -n "$PREVIOUS_FAILED_FILES" ]]; then
-    ALL_FILES="$PREVIOUS_FAILED_FILES"
-else
-    ALL_FILES=""
-fi
-
-if [[ -z "$ALL_FILES" ]]; then
+if has_no_files "$ALL_FILES"; then
     FOLDER="solutions/"
     LANGUAGES=""
 else

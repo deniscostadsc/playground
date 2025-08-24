@@ -1,26 +1,13 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
+source "$(dirname "$0")/../utils/changed-files.sh"
 
-CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT HEAD~1 HEAD 2>/dev/null || echo "")
+CHANGED_FILES=$(get_recent_changed_files)
+PREVIOUS_FAILED_FILES=$(load_artifact_files "/tmp/failing-changed-files-for-lint.txt")
+ALL_FILES=$(merge_files "$CHANGED_FILES" "$PREVIOUS_FAILED_FILES")
 
-if [[ -f "/tmp/failing-changed-files-for-lint.txt" ]]; then
-    PREVIOUS_FAILED_FILES=$(cat /tmp/failing-changed-files-for-lint.txt 2>/dev/null || echo "")
-else
-    PREVIOUS_FAILED_FILES=""
-fi
-
-if [[ -n "$CHANGED_FILES" && -n "$PREVIOUS_FAILED_FILES" ]]; then
-    ALL_FILES=$(echo -e "$CHANGED_FILES\n$PREVIOUS_FAILED_FILES" | sort -u)
-elif [[ -n "$CHANGED_FILES" ]]; then
-    ALL_FILES="$CHANGED_FILES"
-elif [[ -n "$PREVIOUS_FAILED_FILES" ]]; then
-    ALL_FILES="$PREVIOUS_FAILED_FILES"
-else
-    ALL_FILES=""
-fi
-
-if [[ -z "$ALL_FILES" ]]; then
+if has_no_files "$ALL_FILES"; then
     exit 0
 fi
 
