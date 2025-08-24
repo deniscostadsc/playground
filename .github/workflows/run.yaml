@@ -12,29 +12,51 @@ jobs:
     steps:
       - name: Clear up some space on runner
         run: |
-          dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n | tail -n 100
+          # Show disk usage before cleanup
           df -h
-          sudo sudo apt update
-          sudo apt-get remove -y '^aspnetcore-.*'
-          sudo apt-get remove -y '^azure-.*'
-          sudo apt-get remove -y '^clang-.*'
-          sudo apt-get remove -y '^cpp-.*'
-          sudo apt-get remove -y '^dotnet-.*'
-          sudo apt-get remove -y '^gfortran-.*'
-          sudo apt-get remove -y '^google-.*'
-          sudo apt-get remove -y '^libclang.*'
-          sudo apt-get remove -y '^llvm-.*'
-          sudo apt-get remove -y '^microsoft-.*'
-          sudo apt-get remove -y '^mongodb-.*'
-          sudo apt-get remove -y '^mono-.*'
-          sudo apt-get remove -y '^mysql-.*'
-          sudo apt-get remove -y '^php.*'
-          sudo apt-get remove -y '^postgresql-.*'
-          sudo apt-get remove -y '^temurin-.*'
-          sudo apt-get remove -y firefox powershell
+          # Get list of largest installed packages
+          dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n | tail -n 50
+          # Update package list once
+          sudo apt update
+          # Remove large packages individually
+          sudo apt-get remove -y aspnetcore-runtime
+          sudo apt-get remove -y dotnet-runtime
+          sudo apt-get remove -y dotnet-sdk
+          sudo apt-get remove -y mono-complete
+          sudo apt-get remove -y clang
+          sudo apt-get remove -y llvm
+          sudo apt-get remove -y gfortran
+          sudo apt-get remove -y firefox
+          sudo apt-get remove -y powershell
+          # Remove package families individually
+          sudo apt-get remove -y aspnetcore-*
+          sudo apt-get remove -y azure-*
+          sudo apt-get remove -y clang-*
+          sudo apt-get remove -y cpp-*
+          sudo apt-get remove -y dotnet-*
+          sudo apt-get remove -y gfortran-*
+          sudo apt-get remove -y google-*
+          sudo apt-get remove -y libclang*
+          sudo apt-get remove -y llvm-*
+          sudo apt-get remove -y microsoft-*
+          sudo apt-get remove -y mongodb-*
+          sudo apt-get remove -y mono-*
+          sudo apt-get remove -y mysql-*
+          sudo apt-get remove -y php*
+          sudo apt-get remove -y postgresql-*
+          sudo apt-get remove -y temurin-*
+          # Clean up
           sudo apt-get autoremove -y
           sudo apt-get clean
-          rm -rf /usr/share/dotnet/
+          # Remove large directories
+          sudo rm -rf /usr/share/dotnet/ || true
+          sudo rm -rf /opt/hostedtoolcache/ || true
+          sudo rm -rf /usr/local/share/boost/ || true
+          sudo rm -rf /usr/local/share/cmake/ || true
+          sudo rm -rf /var/cache/apt/archives/* || true
+          sudo rm -rf /tmp/* || true
+          sudo rm -rf /var/tmp/* || true
+          # Show disk usage after cleanup
           df -h
       - name: Checkout code
         uses: actions/checkout@v4
