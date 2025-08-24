@@ -74,29 +74,34 @@ Below, you can see an example of a problem folder structure:
 $ tree solutions/beecrowd/
 solutions/beecrowd/
 ├── 1000
-│   ├── 1000.c
-│   ├── 1000.clj
-│   ├── 1000.cpp
-│   ├── 1000.cs
-│   ├── 1000.dart
-│   ├── 1000.go
-│   ├── 1000.hs
-│   ├── 1000.java
-│   ├── 1000.js
-│   ├── 1000.kt
-│   ├── 1000.lua
-│   ├── 1000.ml
-│   ├── 1000.pas
-│   ├── 1000.php
-│   ├── 1000.py
-│   ├── 1000.r
-│   ├── 1000.rb
-│   ├── 1000.rs
-│   ├── 1000.scala
-│   ├── imgs
-│   │   └── UOJ_1000.png
-│   ├── out.txt
-│   ├── problem.md
-│   └── tags.txt
+│   ├── 1000.c          # C
+│   ├── 1000.clj        # Clojure
+│   ├── 1000.cpp        # C++
+│   ├── 1000.cs         # C#
+│   ├── 1000.dart       # Dart
+│   ├── 1000.exs        # Elixir
+│   ├── 1000.go         # Go
+│   ├── 1000.hs         # Haskell
+│   ├── 1000.java       # Java
+│   ├── 1000.jl         # Julia
+│   ├── 1000.js         # JavaScript
+│   ├── 1000.kt         # Kotlin
+│   ├── 1000.lua        # Lua
+│   ├── 1000.ml         # OCaml
+│   ├── 1000.pas        # Pascal
+│   ├── 1000.php        # PHP
+│   ├── 1000.py         # Python
+│   ├── 1000.r          # R
+│   ├── 1000.rb         # Ruby
+│   ├── 1000.rs         # Rust
+│   ├── 1000.scala      # Scala
+│   ├── 1000.sh         # Shell/Bash
+│   ├── 1000.sql        # SQL
+│   ├── 1000.ts         # TypeScript
+│   ├── imgs
+│   │   └── UOJ_1000.png
+│   ├── out.txt
+│   ├── problem.md
+│   └── tags.txt
 ...
 ```
