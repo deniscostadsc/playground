@@ -43,7 +43,7 @@ jobs:
       - name: Download previous failed files
         uses: dawidd6/action-download-artifact@v11
         with:
-          workflow: build.yaml
+          workflow: run.yaml
           search_artifacts: true
           name: failing-changed-files-for-build
           path: /tmp
