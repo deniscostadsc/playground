@@ -82,6 +82,7 @@ SUPPORTED_LINTS = \
 	$(JAVA) \
 	$(JS) \
 	$(LUA) \
+	$(PHP) \
 	$(PY) \
 	$(SH) \
 	$(SQL) \
