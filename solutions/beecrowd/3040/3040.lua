@@ -1,4 +1,4 @@
-function isTreeValid (height, diameter, branches)
+local function isTreeValid (height, diameter, branches)
     return height >= 200 and height <= 300 and diameter >= 50 and branches >= 150
 end
 

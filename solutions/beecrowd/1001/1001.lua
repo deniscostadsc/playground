@@ -1,4 +1,4 @@
-x = tonumber(io.read(), 10)
-y = tonumber(io.read(), 10)
+local x = tonumber(io.read("*n"))
+local y = tonumber(io.read("*n"))
 
-print('X = ' .. x + y)
+print("X = " .. x + y)

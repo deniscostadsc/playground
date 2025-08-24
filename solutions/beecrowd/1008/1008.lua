@@ -1,6 +1,6 @@
-a = tonumber(io.read("*n"))
-b = tonumber(io.read("*n"))
-c = tonumber(io.read("*n"))
+local a = tonumber(io.read("*n"))
+local b = tonumber(io.read("*n"))
+local c = tonumber(io.read("*n"))
 
-print(string.format('NUMBER = %d', a))
-print(string.format('SALARY = U$ %.2f', b * c))
+print("NUMBER = " .. a)
+print("SALARY = U$ " .. string.format("%.2f", b * c))
