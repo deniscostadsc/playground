@@ -1,8 +1,8 @@
 $ rm -f test_output.txt /tmp/failing-changed-files-for-build.txt
 $ export GITHUB_OUTPUT=test_output.txt
 $ echo "solutions/beecrowd/1000/1000.cpp" >/tmp/failing-changed-files-for-build.txt
-$ ./scripts/github-actions/determine-test-scope.sh HEAD HEAD
+$ ./scripts/github-actions/determine-run-scope.sh HEAD HEAD
 $ cat test_output.txt
 folder=solutions/beecrowd/1000
 languages=cpp
-$ rm -f test_output.txt changed_files.txt problem_folders.txt language_extensions.txt
+$ rm -f test_output.txt failing-changed-files-for-build.txt problem_folders.txt language_extensions.txt

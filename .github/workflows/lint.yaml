@@ -29,7 +29,7 @@ jobs:
           if [[ "${{ github.event_name }}" == "schedule" ]]; then
             echo "lints=" >> $GITHUB_OUTPUT
           else
-            ./scripts/lint/determine-lint-scope.sh ${{ github.event.before }} ${{ github.event.after }} || echo "lints=" >> $GITHUB_OUTPUT
+            ./scripts/github-actions/determine-lint-scope.sh ${{ github.event.before }} ${{ github.event.after }} || echo "lints=" >> $GITHUB_OUTPUT
           fi
       - name: Upload current files to check
         uses: actions/upload-artifact@v4

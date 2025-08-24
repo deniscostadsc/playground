@@ -4,7 +4,7 @@ $ echo "# Problem" >test_solutions/beecrowd/1001/problem.md
 $ echo "Some content" >test_solutions/beecrowd/1001/WRONG
 $ echo -e "test_solutions/beecrowd/1001/1001.cpp\nscripts/test.sh" >/tmp/failing-changed-files-for-lint.txt
 $ export GITHUB_OUTPUT=test_output.txt
-$ ./scripts/lint/determine-lint-scope.sh HEAD HEAD
+$ ./scripts/github-actions/determine-lint-scope.sh HEAD HEAD
 $ cat test_output.txt
 lints=cpp sh
 $ ./scripts/makefile/check-wrongs.sh; EXIT_CODE=$?; echo "Exit code: $EXIT_CODE"

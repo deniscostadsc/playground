@@ -1,7 +1,7 @@
 $ rm -f test_output.txt /tmp/failing-changed-files-for-lint.txt
 $ export GITHUB_OUTPUT=test_output.txt
 $ echo -e "README.md\nLICENSE\n.gitignore" >/tmp/failing-changed-files-for-lint.txt
-$ ./scripts/lint/determine-lint-scope.sh HEAD HEAD || echo "lints=" >test_output.txt
+$ ./scripts/github-actions/determine-lint-scope.sh HEAD HEAD || echo "lints=" >test_output.txt
 $ cat test_output.txt
 lints=
 $ rm -f test_output.txt failing-changed-files-for-lint.txt
