@@ -1,6 +1,6 @@
 # Playground - A place to play programming.
 
-[![BUILD](https://github.com/deniscostadsc/playground/actions/workflows/build.yaml/badge.svg)](https://github.com/deniscostadsc/playground/actions/workflows/build.yaml)
+[![RUN](https://github.com/deniscostadsc/playground/actions/workflows/run.yaml/badge.svg)](https://github.com/deniscostadsc/playground/actions/workflows/run.yaml)
 [![LINT](https://github.com/deniscostadsc/playground/actions/workflows/lint.yaml/badge.svg)](https://github.com/deniscostadsc/playground/actions/workflows/lint.yaml)
 
 In this repository, you'll see my solutions for programming/security
