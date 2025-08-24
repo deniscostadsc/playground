@@ -28,7 +28,7 @@ for folder in ${FOLDERS}; do
     fi
 
     #shellcheck disable=SC2086
-    concated_solutions=$(cat ${solutions})
-    line_count=$(wc -l <<<"${concated_solutions}" | sed 's/ //g')
+    concatenated_solutions=$(cat ${solutions})
+    line_count=$(wc -l <<<"${concatenated_solutions}" | sed 's/ //g')
     echo "${line_count} ${folder}"
 done | sort -n
