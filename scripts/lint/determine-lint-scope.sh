@@ -2,6 +2,7 @@
 
 set -euo pipefail
 source "$(dirname "$0")/../utils/changed-files.sh"
+source "$(dirname "$0")/../utils/environments.sh"
 
 validate_commit_args "$@"
 
@@ -19,11 +20,11 @@ else
 fi
 
 if [[ -s failing-changed-files-for-lint.txt ]]; then
-    SUPPORTED_LINTS=$(find .docker/lint -name "*.Dockerfile" 2>/dev/null | sed 's|.*/||' | sed 's|-lint\.Dockerfile$||' | tr '\n' ' ' | sed 's/ $//')
+    SUPPORTED_LINTS=$(get_supported_lints)
+    LINT_EXTENSIONS=$(get_lint_extensions_from_files "$(cat failing-changed-files-for-lint.txt)" "$SUPPORTED_LINTS")
 
-    grep -E "\.($(echo "$SUPPORTED_LINTS" | tr ' ' '|'))$" failing-changed-files-for-lint.txt | sed 's/.*\.//' | sort -u >lint_extensions.txt
-
-    if [[ -s lint_extensions.txt ]]; then
+    if [[ -n "$LINT_EXTENSIONS" ]]; then
+        echo "$LINT_EXTENSIONS" | tr '\n' ' ' | sed 's/ $//' >lint_extensions.txt
         LINTS=$(tr '\n' ' ' <lint_extensions.txt | sed 's/ $//')
     else
         LINTS=""

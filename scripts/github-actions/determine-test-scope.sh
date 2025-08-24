@@ -2,6 +2,7 @@
 
 set -euo pipefail
 source "$(dirname "$0")/../utils/changed-files.sh"
+source "$(dirname "$0")/../utils/environments.sh"
 
 validate_commit_args "$@"
 
@@ -14,7 +15,7 @@ ALL_FILES=$(merge_files "$CHANGED_FILES" "$PREVIOUS_FAILED_FILES")
 
 if has_no_files "$ALL_FILES"; then
     FOLDER="solutions/"
-    LANGUAGES=""
+    ENVIRONMENTS=""
 else
     echo "$ALL_FILES" >changed_files.txt 2>/dev/null
 
@@ -32,20 +33,21 @@ else
             fi
         fi
 
-        SUPPORTED_EXTENSIONS=$(find .docker -name "*.Dockerfile" 2>/dev/null | sed 's|.*/||' | sed 's|\.Dockerfile$||' | tr '\n' '|' | sed 's/|$//')
+        SUPPORTED_EXTENSIONS=$(get_supported_languages | tr ' ' '|' | sed 's/|$//')
 
-        grep "^solutions/" changed_files.txt | grep -E "\.($SUPPORTED_EXTENSIONS)$" | sed 's/.*\.//' | sort -u >language_extensions.txt
+        LANGUAGE_EXTENSIONS=$(get_language_extensions_from_files "$(grep "^solutions/" changed_files.txt)" "$(get_supported_languages)")
+        echo "$LANGUAGE_EXTENSIONS" >language_extensions.txt
 
         if [[ -s language_extensions.txt ]]; then
-            LANGUAGES=$(tr '\n' ' ' <language_extensions.txt | sed 's/ $//')
+            ENVIRONMENTS=$(tr '\n' ' ' <language_extensions.txt | sed 's/ $//')
         else
-            LANGUAGES=""
+            ENVIRONMENTS=""
         fi
     else
         FOLDER="solutions/"
-        LANGUAGES=""
+        ENVIRONMENTS=""
     fi
 fi
 
 echo "folder=$FOLDER" >>"$GITHUB_OUTPUT"
-echo "languages=$LANGUAGES" >>"$GITHUB_OUTPUT"
+echo "languages=$ENVIRONMENTS" >>"$GITHUB_OUTPUT"

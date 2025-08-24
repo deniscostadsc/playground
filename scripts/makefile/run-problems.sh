@@ -3,11 +3,11 @@
 set -euo pipefail
 
 FOLDERS=${1}
-LANGUAGES=${2}
+ENVIRONMENTS=${2}
 DOCKER_RUN_PREFIX=${3}
 
-for language in ${LANGUAGES}; do
-    if [[ "${language}" == "sql" ]]; then
+for environment in ${ENVIRONMENTS}; do
+    if [[ "${environment}" == "sql" ]]; then
         FOLDERS="${FOLDERS}" \
             USER="$(id -u):$(id -g)" \
             docker compose \
@@ -17,9 +17,9 @@ for language in ${LANGUAGES}; do
             --quiet-pull \
             --abort-on-container-exit \
             --exit-code-from database-client
-    elif [[ "${language}" == "c" ]]; then
-        ${DOCKER_RUN_PREFIX} --platform linux/amd64 -e FOLDERS="${FOLDERS}" "${language}"
+    elif [[ "${environment}" == "c" ]]; then
+        ${DOCKER_RUN_PREFIX} --platform linux/amd64 -e FOLDERS="${FOLDERS}" "${environment}"
     else
-        ${DOCKER_RUN_PREFIX} -e FOLDERS="${FOLDERS}" "${language}"
+        ${DOCKER_RUN_PREFIX} -e FOLDERS="${FOLDERS}" "${environment}"
     fi
 done
