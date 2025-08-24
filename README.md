@@ -2,6 +2,7 @@
 
 [![RUN](https://github.com/deniscostadsc/playground/actions/workflows/run.yaml/badge.svg)](https://github.com/deniscostadsc/playground/actions/workflows/run.yaml)
 [![LINT](https://github.com/deniscostadsc/playground/actions/workflows/lint.yaml/badge.svg)](https://github.com/deniscostadsc/playground/actions/workflows/lint.yaml)
+[![TEST](https://github.com/deniscostadsc/playground/actions/workflows/test.yaml/badge.svg)](https://github.com/deniscostadsc/playground/actions/workflows/test.yaml)
 
 In this repository, you'll see my solutions for programming/security
 challenges/contest sites. Here you can find my solutions for:
