@@ -1,0 +1,8 @@
+$ rm -f test_output.txt /tmp/failing-changed-files-for-build.txt
+$ export GITHUB_OUTPUT=test_output.txt
+$ echo -e "README.md\nMakefile" >/tmp/failing-changed-files-for-build.txt
+$ ./scripts/github-actions/determine-test-scope.sh HEAD HEAD
+$ cat test_output.txt
+folder=solutions/
+languages=
+$ rm -f test_output.txt changed_files.txt
