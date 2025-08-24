@@ -1,0 +1,7 @@
+$ rm -f test_output.txt /tmp/failing-changed-files-for-lint.txt
+$ export GITHUB_OUTPUT=test_output.txt
+$ echo "" >/tmp/failing-changed-files-for-lint.txt
+$ ./scripts/lint/determine-lint-scope.sh HEAD HEAD || echo "lints=" >test_output.txt
+$ cat test_output.txt
+lints=
+$ rm -f test_output.txt failing-changed-files-for-lint.txt

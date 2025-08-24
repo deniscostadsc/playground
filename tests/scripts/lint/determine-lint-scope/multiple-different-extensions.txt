@@ -1,0 +1,7 @@
+$ rm -f test_output.txt /tmp/failing-changed-files-for-lint.txt
+$ export GITHUB_OUTPUT=test_output.txt
+$ echo -e "solutions/beecrowd/1000/1000.py\nscripts/test.sh\nsolutions/beecrowd/1001/1001.cpp" >/tmp/failing-changed-files-for-lint.txt
+$ ./scripts/lint/determine-lint-scope.sh HEAD HEAD
+$ cat test_output.txt
+lints=cpp py sh
+$ rm -f test_output.txt failing-changed-files-for-lint.txt lint_extensions.txt
