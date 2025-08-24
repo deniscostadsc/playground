@@ -1,7 +1,8 @@
 <?php
+
 $s = 0.0;
 
-while($line = fgets(STDIN)){
+while ($line = fgets(STDIN)) {
     $arr = explode(" ", $line);
     $b = $arr[1];
     $c = $arr[2];
@@ -9,4 +10,3 @@ while($line = fgets(STDIN)){
 }
 
 echo "VALOR A PAGAR: R$ " . number_format($s, 2, '.', '') . "\n";
-?>
