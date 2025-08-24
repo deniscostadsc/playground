@@ -32,6 +32,7 @@ make lint [LINTS='language extensions']  # check lint for all solutions if no LI
 make lint-fix [LINTS='language extensions']  # format all code if no LINTS is passed
 make new-problem FOLDER=path/to/create LANGUAGE='language extension'  # create solution template
 make run [FOLDER=path/to/run] [LANGUAGES='language extensions']  # run solutions
+make test  # run the test suite using clitest
 make wrong  # show all solutions that are not complete yet
 ```
 
