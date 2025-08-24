@@ -2,6 +2,9 @@
 name: Lint
 on:
   push:
+    paths-ignore:
+      - '**.md'
+      - '**.mdx'
   schedule:
     - cron: '0 0 1 * *'  # Run on the 1st of every month at midnight UTC
 jobs:
