@@ -1,8 +1,7 @@
 import java.util.Scanner;
-import java.lang.Math;
 
 public class Main {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         double r1, x1, y1, r2, x2, y2;

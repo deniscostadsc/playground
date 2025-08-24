@@ -10,13 +10,11 @@
     <module name="RedundantImport"/>
     <module name="UnusedImports"/>
     <module name="ArrayTypeStyle"/>
-    <module name="FinalParameters"/>
     <module name="HiddenField">
       <property name="ignoreSetter" value="true"/>
       <property name="ignoreConstructorParameter" value="true"/>
     </module>
     <module name="MethodParamPad"/>
-    <module name="MultipleVariableDeclarations"/>
     <module name="NoWhitespaceAfter"/>
     <module name="NoWhitespaceBefore"/>
     <module name="OperatorWrap"/>
@@ -24,7 +22,5 @@
     <module name="TypecastParenPad"/>
     <module name="WhitespaceAfter"/>
     <module name="WhitespaceAround"/>
-    <module name="MagicNumber"/>
-    <module name="HideUtilityClassConstructor"/>
   </module>
 </module>

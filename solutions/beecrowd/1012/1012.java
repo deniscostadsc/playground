@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String args[]) {
-        Scanner input = new Scanner (System.in);
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
         float a, b, c;
         double pi = 3.14159;
