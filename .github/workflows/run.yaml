@@ -64,7 +64,7 @@ jobs:
           name: failing-changed-files-for-build
           path: failing-changed-files-for-build.txt
           retention-days: 7
-      - name: Run tests
+      - name: Run solutions
         run: |
           if [[ -n "${{ steps.test-scope.outputs.languages }}" ]]; then
             make run FOLDER=${{ steps.test-scope.outputs.folder }} LANGUAGES=${{ steps.test-scope.outputs.languages }}
