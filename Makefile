@@ -81,6 +81,7 @@ SUPPORTED_LINTS = \
 	$(GO) \
 	$(JAVA) \
 	$(JS) \
+	$(LUA) \
 	$(PY) \
 	$(SH) \
 	$(SQL) \
