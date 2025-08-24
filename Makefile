@@ -79,6 +79,7 @@ SUPPORTED_LINTS = \
 	$(CPP) \
 	$(DART) \
 	$(GO) \
+	$(JAVA) \
 	$(JS) \
 	$(PY) \
 	$(SH) \
