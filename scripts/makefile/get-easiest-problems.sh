@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
+
+# shellcheck disable=SC1091
 source "$(dirname "$0")/../utils/environments.sh"
 
 FOLDERS=$(find solutions/beecrowd -name 'problem.md' | sed 's/problem.md//g' | sort)

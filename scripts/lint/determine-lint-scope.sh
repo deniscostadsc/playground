@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
+
+# shellcheck disable=SC1091
 source "$(dirname "$0")/../utils/changed-files.sh"
+# shellcheck disable=SC1091
 source "$(dirname "$0")/../utils/environments.sh"
 
 validate_commit_args "$@"

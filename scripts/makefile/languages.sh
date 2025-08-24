@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
+
+# shellcheck disable=SC1091
 source "$(dirname "$0")/../utils/environments.sh"
 
 pushd "$(git rev-parse --show-toplevel)" >/dev/null
