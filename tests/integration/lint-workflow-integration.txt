@@ -1,0 +1,15 @@
+$ rm -f test_output.txt /tmp/failing-changed-files-for-lint.txt failing-changed-files-for-lint.txt lint_extensions.txt
+$ mkdir -p test_solutions/beecrowd/1000
+$ echo "# Problem" >test_solutions/beecrowd/1000/problem.md
+$ touch test_solutions/beecrowd/1000/WRONG
+$ echo "test_solutions/beecrowd/1000/1000.py" >/tmp/failing-changed-files-for-lint.txt
+$ export GITHUB_OUTPUT=test_output.txt
+$ ./scripts/lint/determine-lint-scope.sh HEAD HEAD
+$ cat test_output.txt
+lints=py
+$ ./scripts/makefile/check-wrongs.sh >/dev/null; EXIT_CODE=$?; echo "Exit code: $EXIT_CODE"
+Exit code: 1
+$ cat failing-changed-files-for-lint.txt
+test_solutions/beecrowd/1000/1000.py
+$ rm -rf test_solutions
+$ rm -f test_output.txt /tmp/failing-changed-files-for-lint.txt failing-changed-files-for-lint.txt lint_extensions.txt

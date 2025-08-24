@@ -1,0 +1,10 @@
+$ rm -f test_output.txt /tmp/failing-changed-files-for-lint.txt failing-changed-files-for-lint.txt lint_extensions.txt
+$ export GITHUB_OUTPUT=test_output.txt
+$ ./scripts/lint/determine-lint-scope.sh HEAD HEAD || echo "lints=" >test_output.txt
+$ cat test_output.txt
+lints=
+$ ./scripts/makefile/check-wrongs.sh; EXIT_CODE=$?; echo "Exit code: $EXIT_CODE"
+Exit code: 0
+$ cat failing-changed-files-for-lint.txt
+
+$ rm -f test_output.txt /tmp/failing-changed-files-for-lint.txt failing-changed-files-for-lint.txt lint_extensions.txt

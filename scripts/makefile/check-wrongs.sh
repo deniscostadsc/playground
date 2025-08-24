@@ -3,7 +3,7 @@
 set -euo pipefail
 source "$(dirname "$0")/../utils/changed-files.sh"
 
-CHANGED_FILES=$(get_recent_changed_files)
+CHANGED_FILES=$(get_changed_files)
 PREVIOUS_FAILED_FILES=$(load_artifact_files "/tmp/failing-changed-files-for-lint.txt")
 ALL_FILES=$(merge_files "$CHANGED_FILES" "$PREVIOUS_FAILED_FILES")
 

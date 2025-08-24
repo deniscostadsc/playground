@@ -9,14 +9,10 @@ validate_commit_args() {
 }
 
 get_changed_files() {
-    local before_commit="$1"
-    local after_commit="$2"
+    local before_commit="${1:-HEAD~1}"
+    local after_commit="${2:-HEAD}"
 
     git diff --name-only --diff-filter=ACMRT "$before_commit" "$after_commit" 2>/dev/null || echo ""
-}
-
-get_recent_changed_files() {
-    git diff --name-only --diff-filter=ACMRT HEAD~1 HEAD 2>/dev/null || echo ""
 }
 
 load_artifact_files() {
