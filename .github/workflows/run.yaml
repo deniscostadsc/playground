@@ -1,5 +1,8 @@
 name: Compile and Run
-on: [push]
+on:
+  push:
+  schedule:
+    - cron: '0 0 1 * *'  # Run on the 1st of every month at midnight UTC
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -45,7 +48,12 @@ jobs:
       - name: Determine test scope
         id: test-scope
         run: |
-          ./scripts/github-actions/determine-test-scope.sh ${{ github.event.before }} ${{ github.event.after }} || echo "folder=solutions/" >> $GITHUB_OUTPUT
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then
+            echo "folder=solutions/" >> $GITHUB_OUTPUT
+            echo "languages=" >> $GITHUB_OUTPUT
+          else
+            ./scripts/github-actions/determine-test-scope.sh ${{ github.event.before }} ${{ github.event.after }} || echo "folder=solutions/" >> $GITHUB_OUTPUT
+          fi
       - name: Upload current files to check
         uses: actions/upload-artifact@v4
         with:
