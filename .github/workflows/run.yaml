@@ -1,4 +1,4 @@
-name: Compile and Run
+name: Run
 on:
   push:
     paths-ignore:
