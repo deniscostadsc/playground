@@ -19,11 +19,12 @@ ALL_FILES=$(merge_files "$CHANGED_FILES" "$PREVIOUS_FAILED_FILES")
 if has_no_files "$ALL_FILES"; then
     FOLDER="solutions/"
     ENVIRONMENTS=""
+    echo "" >failing-changed-files-for-build.txt
 else
-    echo "$ALL_FILES" >changed_files.txt 2>/dev/null
+    echo "$ALL_FILES" >failing-changed-files-for-build.txt
 
-    if grep -q "^solutions/" changed_files.txt && ! grep -v "^solutions/" changed_files.txt; then
-        grep "^solutions/" changed_files.txt | sed 's|/[^/]*$||' | sort -u >problem_folders.txt
+    if grep -q "^solutions/" failing-changed-files-for-build.txt && ! grep -v "^solutions/" failing-changed-files-for-build.txt; then
+        grep "^solutions/" failing-changed-files-for-build.txt | sed 's|/[^/]*$||' | sort -u >problem_folders.txt
 
         if [[ "$(wc -l <problem_folders.txt)" -eq 1 ]]; then
             FOLDER=$(cat problem_folders.txt)
@@ -36,7 +37,7 @@ else
             fi
         fi
 
-        LANGUAGE_EXTENSIONS=$(get_language_extensions_from_files "$(grep "^solutions/" changed_files.txt)" "$(get_supported_languages)")
+        LANGUAGE_EXTENSIONS=$(get_language_extensions_from_files "$(grep "^solutions/" failing-changed-files-for-build.txt)" "$(get_supported_languages)")
         echo "$LANGUAGE_EXTENSIONS" >language_extensions.txt
 
         if [[ -s language_extensions.txt ]]; then

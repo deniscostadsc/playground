@@ -54,6 +54,7 @@ jobs:
           if [[ "${{ github.event_name }}" == "schedule" ]]; then
             echo "folder=solutions/" >> $GITHUB_OUTPUT
             echo "languages=" >> $GITHUB_OUTPUT
+            echo "" >failing-changed-files-for-build.txt
           else
             ./scripts/github-actions/determine-test-scope.sh ${{ github.event.before }} ${{ github.event.after }} || echo "folder=solutions/" >> $GITHUB_OUTPUT
           fi
