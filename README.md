@@ -23,7 +23,7 @@ challenges/contest sites. Here you can find my solutions for:
 
 The following tasks are available in the Makefile:
 
-```shell
+```
 make check-tags  # verify if all tag files have content describing the type of the problem
 make check-wrongs  # verify if WRONG files have content explaining which solution is failing and why
 make clean  # remove files created by the run task
