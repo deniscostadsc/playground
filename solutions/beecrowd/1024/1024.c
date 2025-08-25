@@ -19,14 +19,12 @@ int main() {
             line_length--;
         }
 
-
         for (int32_t j = line_length - 1; j >= 0; j--) {
             if ((line[j] >= 65 && line[j] <= 90)  // between A and Z
                 || (line[j] >= 97 && line[j] <= 122)) {  // between a and z
                 line[j] = line[j] + 3;
             }
             if (j > line_length / 2) {
-
             } else {
                 line[j] = line[j] - 1;
             }
