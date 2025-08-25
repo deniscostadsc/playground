@@ -8,24 +8,24 @@
       (in? 97 122 (int char))))
 
 (defn encrypt [string]
-  (loop [index (dec (count string))]
-    (let [current-char (.charAt string index)
-          encrypted-char (if (letter? current-char)
-                           (char (+ (int current-char) 3))
-                           current-char)
-          encrypted-char (if (< index (/ (count string) 2))
-                           (char (- (int encrypted-char) 1))
-                           encrypted-char)]
-      (printf "%c" encrypted-char))
-    (if (> index 0)
-      (recur (dec index))
-      (printf "%n"))))
+  (let [shifted (apply str (map (fn [character]
+                                  (if (letter? character)
+                                    (char (+ (int character) 3))
+                                    character))
+                                string))
+        reversed (apply str (reverse shifted))
+        half-point (quot (count reversed) 2)
+        result (apply str (map-indexed (fn [i character]
+                                         (if (>= i half-point)
+                                           (char (- (int character) 1))
+                                           character))
+                                       reversed))]
+    result))
 
 (defn main []
-  (loop [n (Integer/parseInt (read-line))]
-    (let [line (read-line)]
-      (encrypt line))
-    (when (> n 1)
-      (recur (dec n)))))
+  (let [n (Integer/parseInt (read-line))]
+    (dotimes [_ n]
+      (let [line (read-line)]
+        (println (encrypt line))))))
 
 (main)
