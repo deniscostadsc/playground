@@ -1,9 +1,13 @@
+---
 name: Test
 on:
   push:
     paths-ignore:
+      - .clang-format
+      - .editorconfig
+      - .flake8
+      - .gitignore
       - '**.md'
-      - '**.mdx'
 jobs:
   test:
     runs-on: ubuntu-latest
