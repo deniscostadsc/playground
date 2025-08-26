@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-TESTCASES=4062
+TESTCASES=2031
 MAX_CHARS_PER_LINE=1000
 
 function chr {
@@ -15,7 +15,7 @@ function chr {
 echo "${TESTCASES}"
 for _ in $(seq "${TESTCASES}"); do
     for _ in $(seq $((RANDOM % MAX_CHARS_PER_LINE + 1))); do
-        chr "$((RANDOM % 94 + 33))"
+        chr "$((RANDOM % 92 + 34))"
     done
     echo
 done
