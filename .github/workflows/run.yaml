@@ -93,7 +93,7 @@ jobs:
       - name: Run solutions
         run: |
           if [[ -n "${{ steps.test-scope.outputs.languages }}" ]]; then
-            make run FOLDER=${{ steps.test-scope.outputs.folder }} LANGUAGES=${{ steps.test-scope.outputs.languages }}
+            make run FOLDER=${{ steps.test-scope.outputs.folder }} LANGUAGES="${{ steps.test-scope.outputs.languages }}""
           else
             make run FOLDER=${{ steps.test-scope.outputs.folder }}
           fi
