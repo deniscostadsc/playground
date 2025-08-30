@@ -3,7 +3,6 @@
 #include <cstdint>
 #include <iomanip>
 #include <iostream>
-#include <map>
 #include <vector>
 
 struct person {
