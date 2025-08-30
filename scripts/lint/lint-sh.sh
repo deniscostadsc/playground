@@ -6,7 +6,7 @@ SH_SCRIPTS=$(find . -name '*.sh')
 EXIT_STATUS=0
 
 for script in ${SH_SCRIPTS}; do
-    [[ ${script} == './.docker/wait-for-it.sh' ]] && continue
+    [[ ${script} == './scripts/docker/wait-for-it.sh' ]] && continue
     grep '^set -euo pipefail' "${script}" >/dev/null 2>&1 && continue
 
     EXIT_STATUS=1

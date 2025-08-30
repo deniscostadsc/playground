@@ -25,7 +25,7 @@ get_language_extensions_from_files() {
 
     echo "$files" |
         grep -E "\.($(echo "$supported_environments" |
-        tr ' ' '|'))$" |
+            tr ' ' '|'))$" |
         sed 's/.*\.//' |
         sort -u
 }
@@ -35,7 +35,8 @@ get_lint_extensions_from_files() {
     local supported_lints="$2"
 
     echo "$files" |
-        grep -E "\.($(echo "$supported_lints" | tr ' ' '|'))$" |
+        grep -E "\.($(echo "$supported_lints" |
+            tr ' ' '|'))$" |
         sed 's/.*\.//' |
         sort -u
 }
