@@ -1,1 +1,1 @@
-gtraph, disjoint set, path compression, minimum spanning tree
+graph, disjoint set, path compression, minimum spanning tree
