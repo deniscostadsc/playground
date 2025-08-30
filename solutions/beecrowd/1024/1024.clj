@@ -8,19 +8,17 @@
       (in? 97 122 (int char))))
 
 (defn encrypt [string]
-  (let [shifted (apply str (map (fn [character]
-                                  (if (letter? character)
-                                    (char (+ (int character) 3))
-                                    character))
-                                string))
-        reversed (apply str (reverse shifted))
-        half-point (quot (count reversed) 2)
-        result (apply str (map-indexed (fn [i character]
-                                         (if (>= i half-point)
-                                           (char (- (int character) 1))
-                                           character))
-                                       reversed))]
-    result))
+  (let [reversed (apply str (reverse string))
+        half-point (quot (count reversed) 2)]
+    (apply str (map-indexed (fn [i character]
+                              (let [char1 (if (letter? character)
+                                           (char (+ (int character) 3))
+                                           character)
+                                    char2 (if (>= i half-point)
+                                           (char (- (int char1) 1))
+                                           char1)]
+                                char2))
+                            reversed))))
 
 (defn main []
   (let [n (Integer/parseInt (read-line))]
