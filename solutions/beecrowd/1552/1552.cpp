@@ -112,8 +112,12 @@ int main() {
         std::cout << std::fixed << std::setprecision(2);
         std::cout << (total_web * 100) / 10000 << std::endl;
 
-        for (auto* a : arcs) delete a;
-        for (auto* p : people) delete p;
+        for (auto *a : arcs) {
+            delete a;
+        }
+        for (auto *p : people) {
+            delete p;
+        }
         arcs.clear();
         people.clear();
     }
