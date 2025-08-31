@@ -9,4 +9,4 @@ for line in sys.stdin:
     if p == 0:
         print(0)
     else:
-        print(p-1)
+        print(p - 1)
