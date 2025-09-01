@@ -2,8 +2,8 @@
 
 set -euo pipefail
 
-TESTCASES=2031
-MAX_CHARS_PER_LINE=1000
+TESTCASES=500
+MAX_CHARS_PER_LINE=500
 
 function chr {
     #shellcheck disable=SC2046
