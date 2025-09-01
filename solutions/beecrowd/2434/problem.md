@@ -2,8 +2,6 @@ https://judge.beecrowd.com/en/problems/view/2434
 
 # Saldo do Vovô
 
-
-
 Vovô João tem uma banca de jornais; ele tem muitos clientes, e diariamente
 recebe muito dinheiro, mas também faz muitos pagamentos para manter o seu
 estoque de jornais e revistas. Todo dia ele vai ao banco realizar um depósito ou
