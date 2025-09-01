@@ -1,0 +1,8 @@
+    name    | salary 
+------------+--------
+ Arlino     | 1620.0
+ Amanda     | 1110.0
+ Tiago      |  915.0
+ Wellington |  496.5
+(4 rows)
+
