@@ -1,5 +1,5 @@
-#include <cstring>
 #include <iostream>
+#include <string>
 
 int main() {
     std::string word;
