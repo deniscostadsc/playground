@@ -6,7 +6,7 @@ set -euo pipefail
 source "$(dirname "$0")/../utils/environments.sh"
 
 SUPPORTED_ENVIRONMENTS=$(get_supported_languages | tr ' ' '|' | sed 's/|$//')
-FOLDERS=$(find . -name 'problem.md' | sed 's/problem.md//g' | sort)
+FOLDERS=$(find solutions/beecrowd/ -name 'problem.md' | sed 's/problem.md//g' | sort)
 
 pushd "$(git rev-parse --show-toplevel)" >/dev/null
 
