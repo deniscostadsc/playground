@@ -9,8 +9,8 @@
 	check-tags \
 	check-wrongs \
 	clean \
+	count-solutions \
 	get-easiest-problems \
-	languages \
 	lint \
 	lint-fix \
 	new-problem \
@@ -173,11 +173,11 @@ clean:
 	@find solutions -type d -name "\?" -exec rm -rf {} +
 	@rm -rf \? || true
 
+count-solutions:
+	@./scripts/makefile/count-solutions.sh
+
 get-easiest-problems:
 	@./scripts/makefile/get-easiest-problems.sh
-
-languages:
-	@./scripts/makefile/languages.sh
 
 lint: __error_if_languages_def __error_if_language_def __run-lint-build
 	@for language_lint in $(SUPPORTED_LINTS); do \
