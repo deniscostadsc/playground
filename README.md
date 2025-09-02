@@ -95,7 +95,6 @@ solutions/beecrowd/
 │   ├── 1000.rb         # Ruby
 │   ├── 1000.rs         # Rust
 │   ├── 1000.scala      # Scala
-│   ├── 1000.sh         # Shell/Bash
 │   ├── 1000.sql        # SQL
 │   ├── 1000.ts         # TypeScript
 │   ├── imgs
