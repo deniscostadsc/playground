@@ -5,6 +5,7 @@ set -euo pipefail
 # shellcheck disable=SC1091
 source "$(dirname "$0")/../utils/environments.sh"
 
+SUPPORTED_ENVIRONMENTS=$(get_supported_languages | tr ' ' '|' | sed 's/|$//')
 FOLDERS=$(find solutions/beecrowd -name 'problem.md' | sed 's/problem.md//g' | sort)
 
 for folder in ${FOLDERS}; do
@@ -12,17 +13,24 @@ for folder in ${FOLDERS}; do
     [[ -f "${folder}WRONG" ]] && continue
 
     supported_environments=$(get_supported_languages)
-    supported_environments_count=$(echo "$supported_environments" | wc -w)
+    supported_environments_count=$(echo "${supported_environments}" | wc -w)
     supported_programming_environments_count=$((supported_environments_count - 1)) # - 1 to remove sql
 
     find_cmd="find \"${folder}\""
-    for ext in $supported_environments; do
+    for ext in ${supported_environments}; do
         find_cmd="${find_cmd} -name '*.${ext}' -o"
     done
     find_cmd="${find_cmd% -o}"
 
-    solutions=$(eval "$find_cmd")
+    solutions=$(eval "${find_cmd}")
     solutions_count=$(wc -w <<<"${solutions}")
+
+    missing_languages=""
+    for ext in $(echo "${SUPPORTED_ENVIRONMENTS}" | tr '|' ' '); do
+        if [[ -z "$(find "${folder}" -name "*.${ext}" 2>/dev/null)" ]]; then
+            missing_languages="${missing_languages}${ext} "
+        fi
+    done
 
     if [[ ${supported_programming_environments_count} -eq ${solutions_count} ]]; then
         # exclude problems with solution in all environments
@@ -32,5 +40,9 @@ for folder in ${FOLDERS}; do
     #shellcheck disable=SC2086
     concatenated_solutions=$(cat ${solutions})
     line_count=$(wc -l <<<"${concatenated_solutions}" | sed 's/ //g')
-    echo "${line_count} ${folder}"
+    if [[ -n "${missing_languages}" ]]; then
+        echo "${line_count} ${folder} (missing: ${missing_languages% })"
+    else
+        echo "${line_count} ${folder}"
+    fi
 done | sort -n
