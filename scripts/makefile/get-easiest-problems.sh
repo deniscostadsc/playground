@@ -24,13 +24,7 @@ for folder in ${FOLDERS}; do
 
     solutions=$(eval "${find_cmd}")
     solutions_count=$(wc -w <<<"${solutions}")
-
-    missing_languages=""
-    for ext in $(echo "${SUPPORTED_ENVIRONMENTS}" | tr '|' ' '); do
-        if [[ -z "$(find "${folder}" -name "*.${ext}" 2>/dev/null)" ]]; then
-            missing_languages="${missing_languages}${ext} "
-        fi
-    done
+    missing_languages=$(get_missing_solutions_languages "${folder}")
 
     if [[ ${supported_programming_environments_count} -eq ${solutions_count} ]]; then
         # exclude problems with solution in all environments

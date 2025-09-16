@@ -21,13 +21,7 @@ for folder in ${FOLDERS}; do
 
     solutions=$(eval "${find_cmd}")
     solutions_count=$(echo "${solutions}" | wc -w | sed 's/ //g')
-
-    missing_languages=""
-    for ext in $(echo "${SUPPORTED_ENVIRONMENTS}" | tr '|' ' '); do
-        if [[ -z "$(find "${folder}" -name "*.${ext}" 2>/dev/null)" ]]; then
-            missing_languages="${missing_languages}${ext} "
-        fi
-    done
+    missing_languages=$(get_missing_solutions_languages "${folder}")
 
     if [[ -n "${missing_languages}" ]]; then
         echo "${solutions_count} ${folder} (missing: ${missing_languages% })"
