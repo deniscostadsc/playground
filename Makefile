@@ -6,6 +6,7 @@
 	__run-build \
 	__run-lint-build \
 	__run-test-build \
+	add-missing \
 	check-tags \
 	check-wrongs \
 	clean \
@@ -88,6 +89,9 @@ __run-lint-build:
 
 __run-test-build:
 	@$(DOCKER_BUILD) .docker/test/test.Dockerfile -t test .
+
+add-missing: __error_if_folder_ndef
+	@scripts/makefile/add-missing.sh $(FOLDER)
 
 check-tags:
 	@scripts/makefile/check-tags.sh

@@ -40,3 +40,14 @@ get_lint_extensions_from_files() {
         sed 's/.*\.//' |
         sort -u
 }
+
+get_missing_solutions_languages() {
+    folder=$1
+    missing_languages=""
+    for ext in $(get_supported_languages); do
+        if [[ -z "$(find "${folder}" -name "*.${ext}" 2>/dev/null)" ]]; then
+            missing_languages="${missing_languages}${ext} "
+        fi
+    done
+    echo "${missing_languages}"
+}
