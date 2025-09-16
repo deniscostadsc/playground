@@ -20,73 +20,13 @@
 
 SHELL = /bin/bash -euo pipefail
 
-C = c
-CLJ = clj
-CPP = cpp
-CS = cs
-DART = dart
-EXS = exs
-GO = go
-HS = hs
-JAVA = java
-JL = jl
-JS = js
-KT = kt
-LUA = lua
-ML = ml
-PAS = pas
-PHP = php
-PY = py
-R = r
-RB = rb
-RS = rs
-SCALA = scala
-SH = sh
-SQL = sql
-TS = ts
-
-SUPPORTED_LANGUAGES = \
-	$(C) \
-	$(CLJ) \
-	$(CPP) \
-	$(CS) \
-	$(DART) \
-	$(EXS) \
-	$(GO) \
-	$(HS) \
-	$(JAVA) \
-	$(JL) \
-	$(JS) \
-	$(LUA) \
-	$(ML) \
-	$(PAS) \
-	$(PHP) \
-	$(PY) \
-	$(R) \
-	$(RB) \
-	$(RS) \
-	$(SCALA) \
-	$(SQL) \
-	$(TS)
+SUPPORTED_LANGUAGES = $(shell find .docker -maxdepth 1 -name "*.Dockerfile" 2>/dev/null | sed 's|.*/||' | sed 's/\.Dockerfile//' | sort)
 
 ifdef LANGUAGES
 SUPPORTED_LANGUAGES := $(LANGUAGES)
 endif
 
-SUPPORTED_LINTS = \
-	$(C) \
-	$(CLJ) \
-	$(CPP) \
-	$(DART) \
-	$(GO) \
-	$(JAVA) \
-	$(JS) \
-	$(LUA) \
-	$(PHP) \
-	$(PY) \
-	$(SH) \
-	$(SQL) \
-	$(TS)
+SUPPORTED_LINTS = $(shell find .docker/lint -name "*.Dockerfile" 2>/dev/null | sed 's|.*/||' | sed 's/\-lint.Dockerfile//' | sort)
 
 ifdef LINTS
 SUPPORTED_LINTS := $(LINTS)
