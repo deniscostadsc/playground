@@ -7,9 +7,9 @@ if [[ "${LINT_FIX:=0}" -eq 1 ]]; then
 else
     output=$(find . -name '*.lua' -exec luacheck --std lua54 {} \; 2>&1)
 
-    echo "$output"
+    echo "${output}"
 
-    if echo "$output" | grep -q -E "Total: [1-9][0-9]* warnings|Total: [1-9][0-9]* errors"; then
+    if echo "${output}" | grep -q -E "Total: [1-9][0-9]* warnings|Total: [1-9][0-9]* errors"; then
         exit 1
     fi
 

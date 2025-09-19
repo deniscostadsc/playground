@@ -7,9 +7,9 @@ source "$(dirname "$0")/../utils/changed-files.sh"
 
 CHANGED_FILES=$(get_changed_files)
 PREVIOUS_FAILED_FILES=$(load_artifact_files "/tmp/failing-changed-files-for-lint.txt")
-ALL_FILES=$(merge_files "$CHANGED_FILES" "$PREVIOUS_FAILED_FILES")
+ALL_FILES=$(merge_files "${CHANGED_FILES}" "${PREVIOUS_FAILED_FILES}")
 
-if has_no_files "$ALL_FILES"; then
+if has_no_files "${ALL_FILES}"; then
     exit 0
 fi
 

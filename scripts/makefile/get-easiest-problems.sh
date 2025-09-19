@@ -5,7 +5,6 @@ set -euo pipefail
 # shellcheck disable=SC1091
 source "$(dirname "$0")/../utils/environments.sh"
 
-SUPPORTED_ENVIRONMENTS=$(get_supported_languages | tr ' ' '|' | sed 's/|$//')
 FOLDERS=$(find solutions/beecrowd -name 'problem.md' | sed 's/problem.md//g' | sort)
 
 for folder in ${FOLDERS}; do
