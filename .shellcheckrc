@@ -1,3 +1,4 @@
+disable=SC2312
 enable=avoid-nullary-conditions
 enable=deprecate-which
 enable=quote-safe-variables
