@@ -1,1 +1,1 @@
- data structures and libraries, queue, stack, priority queue
+data structures and libraries, queue, stack, priority queue

@@ -1,1 +1,1 @@
-begginer, strings
+beginner, strings
