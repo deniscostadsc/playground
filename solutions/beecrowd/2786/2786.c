@@ -6,7 +6,10 @@ int main() {
 
     while (scanf("%d", &l) != EOF) {
         scanf("%d", &c);
-        printf("%d\n%d\n", (l * c) + ((l - 1) * (c - 1)), ((l - 1) * 2) + ((c - 1) * 2));
+        printf(
+            "%d\n%d\n",
+            (l * c) + ((l - 1) * (c - 1)),
+            ((l - 1) * 2) + ((c - 1) * 2));
     }
 
     return 0;
