@@ -39,8 +39,3 @@ merge_files() {
         echo ""
     fi
 }
-
-has_no_files() {
-    local files="$1"
-    [[ -z "${files}" ]]
-}

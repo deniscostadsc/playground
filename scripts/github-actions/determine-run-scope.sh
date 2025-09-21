@@ -16,7 +16,7 @@ CHANGED_FILES=$(get_changed_files "${BEFORE_COMMIT}" "${AFTER_COMMIT}")
 PREVIOUS_FAILED_FILES=$(load_artifact_files "/tmp/failing-changed-files-for-build.txt")
 ALL_FILES=$(merge_files "${CHANGED_FILES}" "${PREVIOUS_FAILED_FILES}")
 
-if has_no_files "${ALL_FILES}"; then
+if [[ -z "${ALL_FILES}" ]]; then
     FOLDER="solutions/"
     ENVIRONMENTS=""
     echo "" >failing-changed-files-for-build.txt
