@@ -16,9 +16,6 @@ CHANGED_FILES=$(get_changed_files "${BEFORE_COMMIT}" "${AFTER_COMMIT}")
 PREVIOUS_FAILED_FILES=$(load_artifact_files "/tmp/failing-changed-files-for-lint.txt")
 ALL_FILES=$(merge_files "${CHANGED_FILES}" "${PREVIOUS_FAILED_FILES}")
 
-echo "PREVIOUS_FAILED_FILES"
-cat /tmp/failing-changed-files-for-lint.txt
-
 if [[ -z "${ALL_FILES}" ]]; then
     echo "" >failing-changed-files-for-lint.txt
 else
