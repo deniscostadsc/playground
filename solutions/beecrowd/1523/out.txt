@@ -1,6 +1,3 @@
-Sim
-Nao
-Sim
 Nao
 Sim
 Sim
