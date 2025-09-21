@@ -17,10 +17,9 @@ for line in sys.stdin:
         heapq.heappush(leaving_time, (s, car_index))
 
     while arriving_time and leaving_time:
-        next_arriving_time = heapq.nsmallest(1, arriving_time)[0]
-        next_leaving_time = heapq.nsmallest(1, leaving_time)[0]
-        # print('next_arriving_time', next_arriving_time)
-        # print('next_leaving_time', next_leaving_time)
+        next_arriving_time = arriving_time[0]
+        next_leaving_time = leaving_time[0]
+
         if next_arriving_time[0] < next_leaving_time[0]:
             parking_lot.append(next_arriving_time[1])
             heapq.heappop(arriving_time)
@@ -30,15 +29,9 @@ for line in sys.stdin:
                 heapq.heappop(leaving_time)
             else:
                 valid_parking_planing = False
-                # print('arriving_time', arriving_time)
-                # print('leaving_time', leaving_time)
-                # print('parking_lot', parking_lot)
                 break
 
         if len(parking_lot) > k:
-            # print('arriving_time', arriving_time)
-            # print('leaving_time', leaving_time)
-            # print('parking_lot', parking_lot)
             valid_parking_planing = False
             break
 
