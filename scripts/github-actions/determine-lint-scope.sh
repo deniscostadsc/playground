@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
+set -vx
 
 # shellcheck disable=SC1091
 source "$(dirname "$0")/../utils/changed-files.sh"
@@ -16,7 +17,10 @@ CHANGED_FILES=$(get_changed_files "${BEFORE_COMMIT}" "${AFTER_COMMIT}")
 PREVIOUS_FAILED_FILES=$(load_artifact_files "/tmp/failing-changed-files-for-lint.txt")
 ALL_FILES=$(merge_files "${CHANGED_FILES}" "${PREVIOUS_FAILED_FILES}")
 
-if has_no_files "${ALL_FILES}"; then
+echo "\$PREVIOUS_FAILED_FILES ${PREVIOUS_FAILED_FILES}"
+echo "\$ALL_FILES ${ALL_FILES}"
+
+if [[ -z "${ALL_FILES}" ]]; then
     echo "" >failing-changed-files-for-lint.txt
 else
     echo "${ALL_FILES}" >failing-changed-files-for-lint.txt
