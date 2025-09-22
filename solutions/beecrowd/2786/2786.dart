@@ -4,7 +4,8 @@ void main() {
   int l, c;
   var l_str, c_str;
 
-  while ((l_str = stdin.readLineSync()) != null && (c_str = stdin.readLineSync()) != null) {
+  while ((l_str = stdin.readLineSync()) != null &&
+      (c_str = stdin.readLineSync()) != null) {
     l = int.parse(l_str);
     c = int.parse(c_str);
 
