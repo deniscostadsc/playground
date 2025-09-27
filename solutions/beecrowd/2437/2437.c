@@ -1,6 +1,6 @@
 #include <stdint.h>
 #include <stdio.h>
-#include<stdlib.h>
+#include <stdlib.h>
 
 int main() {
     int16_t x_m, y_m, x_r, y_r;
