@@ -1,0 +1,15 @@
+CENARIO {1}
+1 - Rudolph
+2 - Cupid
+3 - Vixen
+4 - Comet
+5 - Blitzen
+CENARIO {2}
+1 - Rudolph
+CENARIO {3}
+1 - CupidCupidCupidCupidCupidCupidCupidCupidCupidCupidVixenVixenVixenVixenVixenVixenVixenVixenVixenVixen
+2 - Vixen
+CENARIO {4}
+1 - Lacraia
+2 - Vixen
+3 - EguinhaPocoto
