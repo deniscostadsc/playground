@@ -1,4 +1,4 @@
-FROM golang:1.8.1
+FROM golang:1.20.0
 
 RUN mkdir /code
 WORKDIR /code
