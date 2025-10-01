@@ -43,9 +43,9 @@ flake8==4.0.1 \
     # via
     #   -r .docker/lint/py-requirements.txt
     #   blue
-isort==6.0.1 \
-    --hash=sha256:1cb5df28dfbc742e490c5e41bad6da41b805b0a8be7bc93cd0fb2a8a890ac450 \
-    --hash=sha256:2dc5d7f65c9678d94c88dfc29161a320eec67328bc97aad576874cb4be1e9615
+isort==6.1.0 \
+    --hash=sha256:58d8927ecce74e5087aef019f778d4081a3b6c98f15a80ba35782ca8a2097784 \
+    --hash=sha256:9b8f96a14cfee0677e78e941ff62f03769a06d412aabb9e2a90487b3b7e8d481
     # via -r .docker/lint/py-requirements.txt
 mccabe==0.6.1 \
     --hash=sha256:ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42 \
