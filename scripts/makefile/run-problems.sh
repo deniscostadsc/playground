@@ -23,8 +23,10 @@ for environment in ${ENVIRONMENTS}; do
             --abort-on-container-exit \
             --exit-code-from database-client
     elif [[ "${environment}" == "c" ]]; then
+        # shellcheck disable=SC2086
         ${DOCKER_RUN_PREFIX} --platform linux/amd64 -e FOLDERS="${FOLDERS}" ${env_file} "${environment}"
     else
+        # shellcheck disable=SC2086
         ${DOCKER_RUN_PREFIX} -e FOLDERS="${FOLDERS}" ${env_file} "${environment}"
     fi
 done
