@@ -4,4 +4,4 @@ RUN mkdir /code
 WORKDIR /code
 RUN mkdir -p /.cache && chmod 777 /.cache
 
-CMD /code/scripts/docker/run-go.sh
+CMD /code/scripts/docker/run.sh

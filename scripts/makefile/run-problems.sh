@@ -7,6 +7,11 @@ ENVIRONMENTS=${2}
 DOCKER_RUN_PREFIX=${3}
 
 for environment in ${ENVIRONMENTS}; do
+    if [[ -f .docker/${environment}.env ]]; then
+        env_file="--env-file .docker/${environment}.env"
+    else
+        env_file=
+    fi
     if [[ "${environment}" == "sql" ]]; then
         FOLDERS="${FOLDERS}" \
             USER="$(id -u):$(id -g)" \
@@ -18,8 +23,8 @@ for environment in ${ENVIRONMENTS}; do
             --abort-on-container-exit \
             --exit-code-from database-client
     elif [[ "${environment}" == "c" ]]; then
-        ${DOCKER_RUN_PREFIX} --platform linux/amd64 -e FOLDERS="${FOLDERS}" "${environment}"
+        ${DOCKER_RUN_PREFIX} --platform linux/amd64 -e FOLDERS="${FOLDERS}" ${env_file} "${environment}"
     else
-        ${DOCKER_RUN_PREFIX} -e FOLDERS="${FOLDERS}" "${environment}"
+        ${DOCKER_RUN_PREFIX} -e FOLDERS="${FOLDERS}" ${env_file} "${environment}"
     fi
 done
