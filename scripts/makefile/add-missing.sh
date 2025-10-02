@@ -7,7 +7,7 @@ source "$(dirname "$0")/../utils/environments.sh"
 
 FOLDER=${1}
 
-# make sure we have one, and only one trailing slash
+# make sure we have one, and only one, trailing slash
 FOLDER="$(sed 's/\/*$//g' <<<"${FOLDER}")"
 FOLDER="${FOLDER}/"
 
@@ -19,5 +19,9 @@ fi
 missing_solutions_languages=$(get_missing_solutions_languages "${FOLDER}")
 
 for extension in ${missing_solutions_languages}; do
-    touch "${FOLDER}$(basename "${FOLDER}").${extension}"
+    if [[ -f templates/template.${extension} ]] && [[ ! -f "${FOLDER}$(basename "${FOLDER}").${extension}" ]]; then
+        cp "templates/template.${extension}" "${FOLDER}$(basename "${FOLDER}").${extension}"
+    else
+        touch "${FOLDER}$(basename "${FOLDER}").${extension}"
+    fi
 done
