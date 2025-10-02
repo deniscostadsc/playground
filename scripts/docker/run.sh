@@ -2,21 +2,24 @@
 
 set -euo pipefail
 
+# set default value for optional environment variables
 : "${BINARY_FILE:=}"
 : "${CLEAN_CMD:=}"
 : "${COMPILE_CMD:=}"
-: "${ENVIRONMENT:=}"
-: "${EXTENSION:=}"
-: "${FOLDERS:=}"
-: "${RUN_CMD:=}"
 
 echo
+# disable not assigned warning because we want this to fail when $ENVIRONMENT is not declared
+# shellcheck disable=SC2154
 echo "${ENVIRONMENT}"
 echo
 
+# disable not assigned warning because we want this to fail when $FOLDER is not declared
+# shellcheck disable=SC2154
 for folder in ${FOLDERS}; do
     [[ -f "${folder}WRONG" ]] && continue
 
+    # disable not assigned warning because we want this to fail when $EXTENSION is not declared
+    # shellcheck disable=SC2154
     if [[ "$(find "${folder}" -name "*.${EXTENSION}" | wc -l)" -eq 1 ]]; then
         echo "${folder}"
         cd "${folder}" || exit 1

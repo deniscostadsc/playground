@@ -23,9 +23,11 @@ for environment in ${ENVIRONMENTS}; do
             --abort-on-container-exit \
             --exit-code-from database-client
     elif [[ "${environment}" == "c" ]]; then
+        # disable quote warning because we want $env_file to split
         # shellcheck disable=SC2086
         ${DOCKER_RUN_PREFIX} --platform linux/amd64 -e FOLDERS="${FOLDERS}" ${env_file} "${environment}"
     else
+        # disable quote warning because we want $env_file to split
         # shellcheck disable=SC2086
         ${DOCKER_RUN_PREFIX} -e FOLDERS="${FOLDERS}" ${env_file} "${environment}"
     fi
