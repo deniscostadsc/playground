@@ -6,6 +6,11 @@ set -euo pipefail
 source "$(dirname "$0")/../utils/environments.sh"
 
 FOLDER=${1}
+
+# make sure we have one, and only one trailing slash
+FOLDER="$(sed 's/\/*$//g' <<<"${FOLDER}")"
+FOLDER="${FOLDER}/"
+
 if [[ ! -f "${FOLDER}/problem.md" ]]; then
     echo "This folder is not a solution folder"
     exit 1
