@@ -32,4 +32,4 @@ RUN apt remove --purge -y \
 RUN mkdir /code
 WORKDIR /code
 
-CMD /code/scripts/docker/run-lua.sh
+CMD /code/scripts/docker/run.sh
