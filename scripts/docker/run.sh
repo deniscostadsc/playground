@@ -22,7 +22,7 @@ for folder in ${FOLDERS}; do
         cd "${folder}" || exit 1
 
         if [[ -n "${COMPILE_CMD}" ]]; then
-            eval "${COMPILE_CMD} *.${EXTENSION}"
+            eval "${COMPILE_CMD}"
         fi
 
         if [[ -f in.txt ]]; then
