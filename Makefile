@@ -134,14 +134,7 @@ lint-fix: __error_if_languages_def __error_if_language_def __run-lint-build
 	done
 
 new-problem: __error_if_folder_ndef __error_if_language_ndef __error_if_languages_def
-	@mkdir -p $(FOLDER)
-	@touch $(FOLDER)/{out.txt,problem.md,tags.txt,$(shell basename $(FOLDER)).$(LANGUAGE)}
-
-ifeq ($(strip $(LANGUAGE)),sql)
-	@touch $(FOLDER)/{schema.sql,drop-table.sql}
-else
-	@touch $(FOLDER)/in.txt
-endif
+	@scripts/makefile/new-problem.sh $(FOLDER) $(LANGUAGE)
 
 run: __error_if_language_def clean __run-build
 	@scripts/makefile/run-problems.sh "$(FOLDERS)" "$(SUPPORTED_LANGUAGES)" "$(DOCKER_RUN)"
