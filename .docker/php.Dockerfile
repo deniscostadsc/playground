@@ -5,4 +5,4 @@ WORKDIR /code
 
 RUN apk add bash
 
-CMD /code/scripts/docker/run-php.sh
+CMD /code/scripts/docker/run.sh
