@@ -1,6 +1,9 @@
-FROM mcr.microsoft.com/devcontainers/typescript-node:1.0.3-20
+FROM node:20
 
 RUN mkdir /code
 WORKDIR /code
 
-CMD /code/scripts/docker/run-ts.sh
+RUN npm install -g typescript@5.1.6
+RUN npm install -g @types/node@18.16.19
+
+CMD /code/scripts/docker/run.sh
