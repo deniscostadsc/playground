@@ -9,6 +9,6 @@ fun main(args: Array<String>) {
         val x_r = sc.next().toInt();
         val y_r = sc.next().toInt();
 
-        println("%d".format(Math.abs(x_r - x_m) + Math.abs(y_r - y_m)))
+        println(kotlin.math.abs(x_r - x_m) + kotlin.math.abs(y_r - y_m))
     }
 }
