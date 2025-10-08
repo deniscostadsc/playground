@@ -20,4 +20,4 @@ RUN fpc -iV
 RUN mkdir /code
 WORKDIR /code
 
-CMD /code/scripts/docker/run-pas.sh
+CMD /code/scripts/docker/run.sh
