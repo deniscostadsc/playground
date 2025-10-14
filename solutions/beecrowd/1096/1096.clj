@@ -1,5 +1,4 @@
-(ns main
-  (:require [clojure.string :as str]))
+(ns main)
 
 (defn main []
   (loop [i 1]
