@@ -8,4 +8,4 @@ RUN curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E4
 RUN apt-get update
 RUN apt-get install -y --force-yes scala
 
-CMD /code/scripts/docker/run-scala.sh
+CMD /code/scripts/docker/run.sh
