@@ -6,6 +6,7 @@ set -euo pipefail
 : "${BINARY_FILE:=}"
 : "${CLEAN_CMD:=}"
 : "${COMPILE_CMD:=}"
+: "${COPY_CMD:=}"
 
 echo
 # disable not assigned warning because we want this to fail when $ENVIRONMENT is not declared
@@ -23,6 +24,10 @@ for folder in ${FOLDERS}; do
     if [[ "$(find "${folder}" -name "*.${EXTENSION}" | wc -l)" -eq 1 ]]; then
         echo "${folder}"
         cd "${folder}" || exit 1
+
+        if [[ -n "${COPY_CMD}" ]]; then
+            eval "${COPY_CMD}"
+        fi
 
         if [[ -n "${COMPILE_CMD}" ]]; then
             eval "${COMPILE_CMD}"
