@@ -13,4 +13,4 @@ RUN opam switch create ${OCAML_VERSION}
 RUN mkdir code
 WORKDIR /code
 
-CMD /code/scripts/docker/run-ml.sh
+CMD /code/scripts/docker/run.sh
