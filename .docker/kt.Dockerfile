@@ -8,4 +8,4 @@ RUN unzip kotlin-compiler-1.2.10.zip
 RUN mkdir /code
 WORKDIR /code
 
-CMD /code/scripts/docker/run-kt.sh
+CMD /code/scripts/docker/run.sh
