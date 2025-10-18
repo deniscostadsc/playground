@@ -3,5 +3,5 @@ import sys
 input = sys.stdin.readline
 output = sys.stdout.write
 
-while line := input():
+while line := input().strip():
     pass
