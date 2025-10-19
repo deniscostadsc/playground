@@ -9,4 +9,8 @@ process.stdin.on('data', (chunk: string) => {
 
 process.stdin.on('end', () => {
   const lines = input.trim().split('\n')
+
+  lines.forEach(line => {
+    console.log(line)
+  })
 })
