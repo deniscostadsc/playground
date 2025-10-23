@@ -1,8 +1,6 @@
 .PHONY: \
+	__error_if_environments_ndef \
 	__error_if_folder_ndef \
-	__error_if_language_def \
-	__error_if_language_ndef \
-	__error_if_languages_def \
 	__run-build \
 	__run-lint-build \
 	__run-test-build \
@@ -21,16 +19,13 @@
 
 SHELL = /bin/bash -euo pipefail
 
-SUPPORTED_LANGUAGES = $(shell find .docker -maxdepth 1 -name "*.Dockerfile" 2>/dev/null | sed 's|.*/||' | sed 's/\.Dockerfile//' | sort)
-
-ifdef LANGUAGES
-SUPPORTED_LANGUAGES := $(LANGUAGES)
+ifdef ENVIRONMENTS
+LINT_ENVIRONMENTS := $(ENVIRONMENTS)
 endif
 
-SUPPORTED_LINTS = $(shell find .docker/lint -name "*.Dockerfile" 2>/dev/null | sed 's|.*/||' | sed 's/\-lint.Dockerfile//' | sort)
-
-ifdef LINTS
-SUPPORTED_LINTS := $(LINTS)
+ifndef ENVIRONMENTS
+ENVIRONMENTS = $(shell find .docker -maxdepth 1 -name "*.Dockerfile" 2>/dev/null | sed 's|.*/||' | sed 's/\.Dockerfile//' | sort)
+LINT_ENVIRONMENTS = $(shell find .docker/lint -name "*.Dockerfile" 2>/dev/null | sed 's|.*/||' | sed 's/\-lint.Dockerfile//' | sort)
 endif
 
 ifdef FOLDERS
@@ -50,41 +45,27 @@ else
 	FOLDERS := $(shell find . -name 'problem.md' | sed 's/problem.md//g' | sort)
 endif
 
-ifndef CHANGED_FILES
-	CHANGED_FILES := $(shell find . -name 'problem.md' | sort)
-endif
-
 DOCKER_RUN := docker run --rm -v $$(pwd):/code -u "$$(id -u):$$(id -g)"
 DOCKER_BUILD := docker build -q -f
+
+__error_if_environments_ndef:
+ifndef ENVIRONMENTS
+	$(error This task requires ENVIRONMENTS variable)
+endif
 
 __error_if_folder_ndef:
 ifndef FOLDER
 	$(error This task requires FOLDER variable)
 endif
 
-__error_if_language_def:
-ifdef LANGUAGE
-	$(error This task does not support LANGUAGE variable)
-endif
-
-__error_if_language_ndef:
-ifndef LANGUAGE
-	$(error This task requires LANGUAGE variable)
-endif
-
-__error_if_languages_def:
-ifdef LANGUAGES
-	$(error This task does not support LANGUAGES variable)
-endif
-
 __run-build:
-	@for language in $(SUPPORTED_LANGUAGES); do \
-		$(DOCKER_BUILD) .docker/$$language.Dockerfile -t $$language .; \
+	@for environment in $(ENVIRONMENTS); do \
+		$(DOCKER_BUILD) .docker/$$environment.Dockerfile -t $$environment .; \
 	done
 
 __run-lint-build:
-	@for language_lint in $(SUPPORTED_LINTS); do \
-		$(DOCKER_BUILD) .docker/lint/$${language_lint}-lint.Dockerfile -t $${language_lint}-lint .; \
+	@for lint_environment in $(LINT_ENVIRONMENTS); do \
+		$(DOCKER_BUILD) .docker/lint/$${lint_environment}-lint.Dockerfile -t $${lint_environment}-lint .; \
 	done
 
 __run-test-build:
@@ -123,21 +104,21 @@ count-solutions:
 get-easiest-problems:
 	@./scripts/makefile/get-easiest-problems.sh
 
-lint: __error_if_languages_def __error_if_language_def __run-lint-build
-	@for language_lint in $(SUPPORTED_LINTS); do \
-		$(DOCKER_RUN) $${language_lint}-lint; \
+lint: __run-lint-build
+	@for lint_environment in $(LINT_ENVIRONMENTS); do \
+		$(DOCKER_RUN) $${lint_environment}-lint; \
 	done
 
-lint-fix: __error_if_languages_def __error_if_language_def __run-lint-build
-	@for language_lint in $(SUPPORTED_LINTS); do \
-		$(DOCKER_RUN) -e LINT_FIX=1 $${language_lint}-lint;\
+lint-fix: __run-lint-build
+	@for lint_environment in $(LINT_ENVIRONMENTS); do \
+		$(DOCKER_RUN) -e LINT_FIX=1 $${lint_environment}-lint;\
 	done
 
-new-problem: __error_if_folder_ndef __error_if_language_ndef __error_if_languages_def
-	@scripts/makefile/new-problem.sh $(FOLDER) $(LANGUAGE)
+new-problem: __error_if_folder_ndef __error_if_environments_ndef
+	@scripts/makefile/new-problem.sh $(FOLDER) "$(ENVIRONMENTS)"
 
-run: __error_if_language_def clean __run-build
-	@scripts/makefile/run-problems.sh "$(FOLDERS)" "$(SUPPORTED_LANGUAGES)" "$(DOCKER_RUN)"
+run: clean __run-build
+	@scripts/makefile/run-problems.sh "$(FOLDERS)" "$(ENVIRONMENTS)" "$(DOCKER_RUN)"
 
 test: __run-test-build
 	@$(DOCKER_RUN) test

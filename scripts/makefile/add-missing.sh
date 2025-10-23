@@ -16,6 +16,11 @@ if [[ ! -f "${FOLDER}/problem.md" ]]; then
     exit 1
 fi
 
+if [[ -f "${FOLDER}/schema.sql" ]]; then
+    echo "This folder has a sql problem"
+    exit 1
+fi
+
 missing_solutions_languages=$(get_missing_solutions_languages "${FOLDER}")
 
 for extension in ${missing_solutions_languages}; do
