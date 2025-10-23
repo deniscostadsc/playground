@@ -20,4 +20,5 @@ main.cmo
 Main.java
 main.kt
 result-*.txt
+.tool-versions
 !.clojure/\?
