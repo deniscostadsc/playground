@@ -21,7 +21,7 @@ for folder in ${FOLDERS}; do
 
     # disable not assigned warning because we want this to fail when $EXTENSION is not declared
     # shellcheck disable=SC2154
-    if [[ "$(find "${folder}" -name "*.${EXTENSION}" | wc -l)" -eq 1 ]]; then
+    if [[ "$(find "${folder}" -name "*.${EXTENSION}" | wc -l)" -ge 1 ]]; then
         echo "${folder}"
         cd "${folder}" || exit 1
 
