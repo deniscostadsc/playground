@@ -42,7 +42,7 @@ jobs:
         id: run-linters
         run: |
           if [[ -n "${{ steps.lint-scope.outputs.lints }}" ]]; then
-            make lint LINTS="${{ steps.lint-scope.outputs.lints }}"
+            make lint ENVIRONMENTS="${{ steps.lint-scope.outputs.lints }}"
           else
             make lint
           fi
