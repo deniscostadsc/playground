@@ -56,7 +56,7 @@ int main() {
 
     // to use getchar with EOF, we need to declara the variable as int
     while ((c = getchar()) != EOF) {
-        char character = static_cast<char>(c);
+        char character = static_cast< char >(c);
 
         if (keyboard.find(character) != keyboard.end()) {
             std::cout << keyboard[character];
