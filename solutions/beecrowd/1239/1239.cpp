@@ -28,10 +28,12 @@ void bloggo(char c) {
 }
 
 int main() {
-    char c;
+    int c;
 
+    // to use getchar with EOF, we need to declara the variable as int
     while ((c = getchar()) != EOF) {
-        bloggo(c);
+        char character = static_cast<char>(c);
+        bloggo(character);
     }
 
     return 0;
