@@ -4,7 +4,7 @@
 #include <map>
 
 int main() {
-    char c;
+    int c;
     std::map< char, char > keyboard;
 
     keyboard['1'] = '`';
@@ -54,14 +54,16 @@ int main() {
     keyboard['.'] = ',';
     keyboard['/'] = '.';
 
+    // to use getchar with EOF, we need to declara the variable as int
     while ((c = getchar()) != EOF) {
-        if (keyboard.find(c) != keyboard.end()) {
-            std::cout << keyboard[c];
+        char character = static_cast<char>(c);
+
+        if (keyboard.find(character) != keyboard.end()) {
+            std::cout << keyboard[character];
         } else {
-            std::cout << c;
+            std::cout << character;
         }
     }
 
     return 0;
-    // infinite loop is the main issue of the this solution
 }
