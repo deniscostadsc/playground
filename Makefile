@@ -72,7 +72,7 @@ __run-test-build:
 	@$(DOCKER_BUILD) .docker/test/test.Dockerfile -t test .
 
 add-missing: __error_if_folder_ndef
-	@scripts/makefile/add-missing.sh $(FOLDER)
+	@scripts/makefile/add-missing.sh $(FOLDER) "$(ENVIRONMENTS)"
 
 check-tags:
 	@scripts/makefile/check-tags.sh

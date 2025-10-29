@@ -6,6 +6,7 @@ set -euo pipefail
 source "$(dirname "$0")/../utils/environments.sh"
 
 FOLDER=${1}
+ENVIRONMENTS=${2}
 
 # make sure we have one, and only one, trailing slash
 FOLDER="$(sed 's/\/*$//g' <<<"${FOLDER}")"
@@ -24,6 +25,10 @@ fi
 missing_solutions_languages=$(get_missing_solutions_languages "${FOLDER}")
 
 for extension in ${missing_solutions_languages}; do
+    if [[ ! " ${ENVIRONMENTS} " == *" ${extension} "* ]]; then
+        continue
+    fi
+
     if [[ -f templates/template.${extension} ]] && [[ ! -f "${FOLDER}$(basename "${FOLDER}").${extension}" ]]; then
         cp "templates/template.${extension}" "${FOLDER}$(basename "${FOLDER}").${extension}"
     else
