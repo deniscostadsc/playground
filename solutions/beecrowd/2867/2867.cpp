@@ -11,7 +11,8 @@ int main() {
     std::cin >> c;
     for (int64_t i = 0; i < c; i++) {
         std::cin >> n >> m;
-        std::cout << static_cast<int>(std::floor(m * std::log10(n))) + 1 << '\n';
+        std::cout << static_cast< int >(std::floor(m * std::log10(n))) + 1
+                  << '\n';
     }
 
     return 0;
