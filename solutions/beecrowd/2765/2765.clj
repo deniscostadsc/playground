@@ -1,12 +1,14 @@
-(ns main
-  (:require [clojure.string :as str]))
+(ns main)
+
+(defn process-sentence [sentence]
+  (let [comma-position (.indexOf sentence (int \,))]
+    (println (.substring sentence 0 comma-position))
+    (println (.substring sentence (inc comma-position)))))
 
 (defn main []
-  (loop [line (read-line)]
-    (when line
-      (let [splitted-line (str/split line #",")]
-        (println (first splitted-line))
-        (println (str/join "," (rest splitted-line))))
+  (loop [sentence (read-line)]
+    (when sentence
+      (process-sentence sentence)
       (recur (read-line)))))
 
 (main)
