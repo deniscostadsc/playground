@@ -13,7 +13,6 @@ function get_hash {
     (
         cd "$(git rev-parse --show-toplevel)" || exit 0
         git rev-parse HEAD
-        git status --porcelain
     ) | sha256sum | cut -d' ' -f1
 }
 
