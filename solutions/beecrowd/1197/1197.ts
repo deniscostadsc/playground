@@ -11,7 +11,7 @@ process.stdin.on('end', () => {
   const lines = input.trim().split('\n')
 
   lines.forEach(line => {
-    const [v, t] = line.trim().split(' ').map(Number);
-    console.log(v * t * 2 + 0); // + 0 to avoid -0 weird behavior
+    const [v, t] = line.trim().split(' ').map(Number)
+    console.log(v * t * 2 + 0) // + 0 to avoid -0 weird behavior
   })
 })
