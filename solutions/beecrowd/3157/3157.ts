@@ -1,1 +1,1 @@
-console.log("Nao se refuta ciencia com opiniao")
+console.log('Nao se refuta ciencia com opiniao')
