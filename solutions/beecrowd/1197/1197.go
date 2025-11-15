@@ -13,4 +13,3 @@ func main() {
 		fmt.Println(v * t * 2)
 	}
 }
-
