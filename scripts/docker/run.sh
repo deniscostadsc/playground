@@ -17,7 +17,11 @@ echo
 # disable not assigned warning because we want this to fail when $FOLDER is not declared
 # shellcheck disable=SC2154
 for folder in ${FOLDERS}; do
-    [[ -f "${folder}WRONG" ]] && continue
+    if [[ -f "${folder}WRONG" ]]; then
+        if [[ ! -s "${folder}WRONG" ]] || grep -q "^${EXTENSION}[[:space:]]" "${folder}WRONG"; then
+            continue
+        fi
+    fi
 
     # disable not assigned warning because we want this to fail when $EXTENSION is not declared
     # shellcheck disable=SC2154
