@@ -14,7 +14,7 @@
 set -euo pipefail
 
 echo
-echo "CLOJURE"
+echo "Clojure"
 echo
 
 cp -R .clojure/\? .
