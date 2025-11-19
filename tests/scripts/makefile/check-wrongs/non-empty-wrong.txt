@@ -1,9 +1,13 @@
 $ rm -f /tmp/failing-changed-files-for-lint.txt
 $ mkdir -p test_solutions/beecrowd/1005
 $ echo "# Problem" >test_solutions/beecrowd/1005/problem.md
-$ echo "Some content" >test_solutions/beecrowd/1005/WRONG
+$ echo "c - WA" >test_solutions/beecrowd/1005/WRONG
 $ echo "test_solutions/beecrowd/1005/1005.cpp" >/tmp/failing-changed-files-for-lint.txt
 $ ./scripts/makefile/check-wrongs.sh; EXIT_CODE=$?; echo "Exit code: $EXIT_CODE"
 Exit code: 0
+$ echo "non-extension - " >test_solutions/beecrowd/1005/WRONG
+$ ./scripts/makefile/check-wrongs.sh; EXIT_CODE=$?; echo "Exit code: $EXIT_CODE"
+Missing content for test_solutions/beecrowd/1005/WRONG
+Exit code: 1
 $ rm -rf test_solutions
 $ rm -f /tmp/failing-changed-files-for-lint.txt

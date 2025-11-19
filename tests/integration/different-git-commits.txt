@@ -1,7 +1,7 @@
 $ rm -f test_output.txt /tmp/failing-changed-files-for-lint.txt failing-changed-files-for-lint.txt lint_extensions.txt
 $ mkdir -p test_solutions/beecrowd/1001
 $ echo "# Problem" >test_solutions/beecrowd/1001/problem.md
-$ echo "Some content" >test_solutions/beecrowd/1001/WRONG
+$ echo "c - WA" >test_solutions/beecrowd/1001/WRONG
 $ echo -e "test_solutions/beecrowd/1001/1001.cpp\nscripts/test.sh" >/tmp/failing-changed-files-for-lint.txt
 $ export GITHUB_OUTPUT=test_output.txt
 $ ./scripts/github-actions/determine-lint-scope.sh HEAD HEAD
