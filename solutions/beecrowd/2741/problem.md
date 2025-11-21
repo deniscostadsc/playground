@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/2741
+https://judge.beecrowd.com/en/problems/view/2741
 
 # Students Grades
 

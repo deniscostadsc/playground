@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/2312
+https://judge.beecrowd.com/en/problems/view/2312
 
 # Medal Table
 

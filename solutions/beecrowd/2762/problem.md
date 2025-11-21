@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/2762
+https://judge.beecrowd.com/en/problems/view/2762
 
 # Input and Output 6
 

@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/2604
+https://judge.beecrowd.com/en/problems/view/2604
 
 # Under 10 or Greater Than 100
 

@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/2694
+https://judge.beecrowd.com/en/problems/view/2694
 
 # Problem with the Calculator
 

@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/1379
+https://judge.beecrowd.com/en/problems/view/1379
 
 # Mean Median Problem
 

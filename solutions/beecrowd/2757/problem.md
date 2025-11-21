@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/2757
+https://judge.beecrowd.com/en/problems/view/2757
 
 # Input and Output of Integers
 

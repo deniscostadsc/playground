@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/1557
+https://judge.beecrowd.com/en/problems/view/1557
 
 # Square Matrix III
 

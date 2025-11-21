@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/1410
+https://judge.beecrowd.com/en/problems/view/1410
 
 # He is Offside!
 

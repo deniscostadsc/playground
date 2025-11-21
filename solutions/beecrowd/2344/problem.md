@@ -1,4 +1,6 @@
-https://www.beecrowd.com.br/judge/en/problems/view/2344
+https://judge.beecrowd.com/en/problems/view/2344
+
+# Notas da Prova
 
 Rosy é uma talentosa professora do Ensino Médio que já ganhou muitos prêmios
 pela qualidade de sua aula. Seu reconhecimento foi tamanho que foi convidada a

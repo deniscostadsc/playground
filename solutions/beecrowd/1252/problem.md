@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/1252
+https://judge.beecrowd.com/en/problems/view/1252
 
 # Sort! Sort!! And Sort!!!
 

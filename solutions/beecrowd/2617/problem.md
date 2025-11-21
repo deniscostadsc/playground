@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/2617
+https://judge.beecrowd.com/en/problems/view/2617
 
 # Provider Ajax SA
 

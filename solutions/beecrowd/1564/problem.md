@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/1564
+https://judge.beecrowd.com/en/problems/view/1564
 
 # Brazil World Cup
 

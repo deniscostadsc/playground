@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/1288
+https://judge.beecrowd.com/en/problems/view/1288
 
 # Destruction Cannon
 

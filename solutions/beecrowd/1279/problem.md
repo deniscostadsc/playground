@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/1279
+https://judge.beecrowd.com/en/problems/view/1279
 
 # Leap Year or Not Leap Year and …
 

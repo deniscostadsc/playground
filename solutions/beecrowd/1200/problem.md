@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/1200
+https://judge.beecrowd.com/en/problems/view/1200
 
 # BST Operations I
 

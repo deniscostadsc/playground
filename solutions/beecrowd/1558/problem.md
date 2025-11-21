@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/1558
+https://judge.beecrowd.com/en/problems/view/1558
 
 # Sum of Two Squares
 
@@ -13,7 +13,7 @@ cannot be represented in the same way.
 
 The input consists of several lines, each line contains an integer with
 absolute value less than or equal to 10000.
-                                                                                    
+
 ## Output
 
 For each line, print "YES" if the number can be represented by a sum of two

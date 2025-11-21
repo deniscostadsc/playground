@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/1924
+https://judge.beecrowd.com/en/problems/view/1924
 
 # Vitória and Her Indecision
 

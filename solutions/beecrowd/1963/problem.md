@@ -1,4 +1,4 @@
-https://www.beecrowd.com.br/judge/en/problems/view/1963
+https://judge.beecrowd.com/en/problems/view/1963
 
 # The Motion Picture
 
