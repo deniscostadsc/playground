@@ -10,8 +10,7 @@ N_STEP=3
 for c in $(seq 1 "${C_STEP}" "${MAX_C}"); do
     for n in $(seq 1 "${N_STEP}" "${MAX_N}"); do
         if [[ $((RANDOM % 9)) -eq 0 ]]; then
-            echo "${c}"
-            echo "${n}"
+            echo "${c} ${n}"
         fi
     done
 done
