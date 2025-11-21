@@ -3,7 +3,7 @@
 
 (defn main []
   (loop [line (read-line)]
-    (when line
+    (when (seq line)
       (let [n (->> (str/split line #" ")
                    (map #(Integer/parseInt %))
                    sort)]
