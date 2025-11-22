@@ -9,5 +9,6 @@ int main() {
     while (std::cin >> n) {
         std::cout << quote.substr(0, n) << std::endl;
     }
+
     return 0;
 }
