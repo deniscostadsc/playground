@@ -8,6 +8,7 @@ on:
       - .flake8
       - .gitignore
       - '**.md'
+      - utils/
 jobs:
   test:
     runs-on: ubuntu-latest
