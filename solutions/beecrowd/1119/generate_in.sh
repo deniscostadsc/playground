@@ -11,4 +11,11 @@ for n in $(seq 1 19); do
         done
     done
 done
+for n in $(seq 2 5); do
+    for k in $(seq 6 20); do
+        for m in $(seq 6 20); do
+            echo "${n} ${k} ${m}"
+        done
+    done
+done
 echo "0 0 0"
