@@ -48,13 +48,20 @@ competitions from scratch, you can use the same structure I have used.
 You'll need to copy the following folders and files:
 
 - `.clang-format`
+- `.clj-kondo/`
+- `.clojure/`
 - `.docker/`
 - `.flake8`
 - `.github`
+- `.gitignore`
 - `.isort.cfg`
-- `Makefile`
+- `.shellcheckrc`
 - `editor-config`
+- `Makefile`
 - `scripts/`
+- `tests/`
+- `tsconfig.json`
+- `utils/pascal/fpc-2.6.2.x86_64-linux.tar`
 
 The scripts/CI assume a few things:
 
