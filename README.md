@@ -24,7 +24,7 @@ challenges/contest sites. Here you can find my solutions for:
 The following tasks are available in the Makefile:
 
 ```
-make add-missing  # add missing language solutions
+make add-missing FOLDER=path/to/add-missing [ENVIRONMENTS='language extensions']  # add missing language solutions
 make check-tags  # verify if all tag files have content describing the type of the problem
 make check-wrongs  # verify if WRONG files have content explaining which solution is failing and why
 make clean  # remove files created by the run task
@@ -32,7 +32,7 @@ make count-solutions  # show numbers of solutions in different languages per pro
 make get-easiest-problems  # list all complete problems sorted by the sum of number of lines
 make lint [ENVIRONMENTS='language extensions']  # check lint for all solutions if no ENVIRONMENTS is passed
 make lint-fix [ENVIRONMENTS='language extensions']  # format all code if no ENVIRONMENTS is passed
-make new-problem FOLDER=path/to/create ENVIRONMENTS='language extensions'  # create solution template
+make new-problem FOLDER=path/to/new-problem ENVIRONMENTS='language extensions'  # create solution scaffold
 make run [FOLDER=path/to/run] [ENVIRONMENTS='language extensions']  # run solutions
 make test  # run the test suite using clitest
 make wrong  # show all solutions that are not complete yet
