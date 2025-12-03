@@ -7,11 +7,11 @@ on:
       - .editorconfig
       - .flake8
       - .gitignore
-      - '**.md'
+      - '*.md'
+      - benchmarks/
+      - misc/
       - templates/
       - tests/
-      - utils/
-      - '!utils/pascal/fpc-2.6.2.x86_64-linux.tar'
   schedule:
     - cron: '0 0 1 * *'  # Run on the 1st day of every month at midnight UTC
 jobs:

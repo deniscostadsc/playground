@@ -7,8 +7,9 @@ on:
       - .editorconfig
       - .flake8
       - .gitignore
-      - '**.md'
-      - utils/
+      - '*.md'
+      - benchmarks/
+      - misc/
 jobs:
   test:
     runs-on: ubuntu-latest

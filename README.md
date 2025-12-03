@@ -61,7 +61,6 @@ You'll need to copy the following folders and files:
 - `scripts/`
 - `tests/`
 - `tsconfig.json`
-- `utils/pascal/fpc-2.6.2.x86_64-linux.tar`
 
 The scripts/CI assume a few things:
 
