@@ -9,8 +9,7 @@ on:
       - Makefile
       - scripts/
       - solutions/
-    paths-ignore:
-      - '*.md'
+      - '!solutions/**/*.md'
   schedule:
     - cron: '0 0 1 * *'  # Run on the 1st day of every month at midnight UTC
 jobs:
