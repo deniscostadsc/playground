@@ -2,16 +2,15 @@
 name: Run
 on:
   push:
+    paths:
+      - .clojure/
+      - .docker/
+      - .github/
+      - Makefile
+      - scripts/
+      - solutions/
     paths-ignore:
-      - .clang-format
-      - .editorconfig
-      - .flake8
-      - .gitignore
       - '*.md'
-      - benchmarks/
-      - misc/
-      - templates/
-      - tests/
   schedule:
     - cron: '0 0 1 * *'  # Run on the 1st day of every month at midnight UTC
 jobs:

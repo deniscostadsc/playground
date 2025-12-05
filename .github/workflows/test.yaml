@@ -2,20 +2,11 @@
 name: Test
 on:
   push:
-    paths-ignore:
-      - .clang-format
-      - .clojure
-      - .editorconfig
-      - .flake8
-      - .gitignore
-      - .isort.cfg
-      - .shellcheckrc
-      - '*.md'
-      - benchmarks/
-      - misc/
-      - solutions/
-      - templates/
-      - tsconfig.json
+    paths:
+      - .github/
+      - Makefile
+      - scripts/
+      - tests/
 jobs:
   test:
     runs-on: ubuntu-latest

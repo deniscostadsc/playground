@@ -3,10 +3,12 @@ name: Lint
 on:
   push:
     paths-ignore:
+      - .docker/
+      - '!.docker/lint/'
       - .editorconfig
       - .gitignore
-      - '*.txt'
       - '*.md'
+      - '*.txt'
       - misc/
   schedule:
     - cron: '0 0 1 * *'  # Run on the 1st day of every month at midnight UTC
