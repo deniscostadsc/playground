@@ -5,8 +5,8 @@ on:
     paths:
       - '.clojure/**'
       - '.docker/**'
-      - '!.docker/lint/**'
-      - '!.docker/test/**'
+      - '!.docker/lint/*'
+      - '!.docker/test/*'
       - '.github/**'
       - 'Makefile'
       - 'scripts/**'
