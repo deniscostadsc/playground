@@ -6,11 +6,13 @@ on:
       - '.clojure/**'
       - '.docker/**'
       - '!.docker/lint/**'
+      - '!.docker/test/**'
       - '.github/**'
       - 'Makefile'
       - 'scripts/**'
       - 'solutions/**'
-      - '!solutions/**/*.md'
+      - '!solutions/**/problem.md'
+      - '!solutions/**/tags.txt'
   schedule:
     - cron: '0 0 1 * *'  # Run on the 1st day of every month at midnight UTC
 jobs:
