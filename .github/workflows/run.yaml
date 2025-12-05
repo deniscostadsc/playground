@@ -3,12 +3,12 @@ name: Run
 on:
   push:
     paths:
-      - .clojure/
-      - .docker/
-      - .github/
-      - Makefile
-      - scripts/
-      - solutions/
+      - '.clojure/**'
+      - '.docker/**'
+      - '.github/**'
+      - 'Makefile'
+      - 'scripts/**'
+      - 'solutions/**'
       - '!solutions/**/*.md'
   schedule:
     - cron: '0 0 1 * *'  # Run on the 1st day of every month at midnight UTC
