@@ -1,4 +1,4 @@
-http://www.beecrowd.com.br/judge/en/problems/view/1110
+https://judge.beecrowd.com/en/problems/view/1110
 
 # Throwing Cards Away
 

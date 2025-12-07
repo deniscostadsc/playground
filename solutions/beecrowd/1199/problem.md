@@ -1,4 +1,4 @@
-http://www.beecrowd.com.br/judge/en/problems/view/1199
+https://judge.beecrowd.com/en/problems/view/1199
 
 # Simple Base Conversion
 

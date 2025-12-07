@@ -1,4 +1,4 @@
-http://www.beecrowd.com.br/judge/problems/view/1047
+https://judge.beecrowd.com/en/problems/view/1047
 
 # Game Time with Minutes
 

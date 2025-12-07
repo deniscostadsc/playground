@@ -1,4 +1,4 @@
-http://www.beecrowd.com.br/judge/en/problems/view/1383
+https://judge.beecrowd.com/en/problems/view/1383
 
 # Sudoku
 

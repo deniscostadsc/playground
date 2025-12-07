@@ -1,4 +1,4 @@
-http://www.beecrowd.com.br/judge/problems/view/1114
+https://judge.beecrowd.com/en/problems/view/1114
 
 # Fixed Password
 

@@ -1,4 +1,4 @@
-http://www.beecrowd.com.br/judge/problems/view/1197
+https://judge.beecrowd.com/en/problems/view/1197
 
 # Back to High School Physics
 

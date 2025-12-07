@@ -1,4 +1,4 @@
-http://www.beecrowd.com.br/judge/en/problems/view/1456
+https://judge.beecrowd.com/en/problems/view/1456
 
 # Brainfuck
 

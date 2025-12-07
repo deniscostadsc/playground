@@ -1,4 +1,4 @@
-http://www.beecrowd.com.br/judge/problems/view/1072
+https://judge.beecrowd.com/en/problems/view/1072
 
 Read an integer $N$. This N will be the number of integer numbers $X$ that
 will be read. Print how many these numbers $X$ are in the interval [10,20] and

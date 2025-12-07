@@ -1,4 +1,4 @@
-http://www.beecrowd.com.br/judge/problems/view/1190
+https://judge.beecrowd.com/en/problems/view/1190
 
 # Right Area
 

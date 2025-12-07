@@ -1,4 +1,4 @@
-http://www.beecrowd.com.br/judge/en/problems/view/1222
+https://judge.beecrowd.com/en/problems/view/1222
 
 # Short Story Competition
 

@@ -1,4 +1,4 @@
-http://www.beecrowd.com.br/judge/problems/view/1029
+https://judge.beecrowd.com/en/problems/view/1029
 
 # Fibonacci, How Many Calls?
 

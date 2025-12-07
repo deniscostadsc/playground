@@ -1,4 +1,4 @@
-http://www.beecrowd.com.br/judge/en/problems/view/1192
+https://judge.beecrowd.com/en/problems/view/1192
 
 # Paula's Mathematic Game
 

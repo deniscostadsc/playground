@@ -1,4 +1,4 @@
-http://www.beecrowd.com.br/judge/en/problems/view/1240
+https://judge.beecrowd.com/en/problems/view/1240
 
 # Fit or Dont Fit I
 

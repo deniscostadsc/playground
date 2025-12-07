@@ -1,4 +1,4 @@
-http://www.beecrowd.com.br/judge/problems/view/1101
+https://judge.beecrowd.com/en/problems/view/1101
 
 Read a undetermined number of pairs values M and N (stop
 when any of these values is less or equal to zero). For

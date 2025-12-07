@@ -1,4 +1,4 @@
-http://www.beecrowd.com.br/judge/en/problems/view/1457
+https://judge.beecrowd.com/en/problems/view/1457
 
 # Oracle of Alexandria
 

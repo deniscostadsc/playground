@@ -1,4 +1,4 @@
-http://www.beecrowd.com.br/judge/en/problems/view/1534
+https://judge.beecrowd.com/en/problems/view/1534
 
 # Array 123
 

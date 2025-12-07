@@ -1,4 +1,4 @@
-http://www.beecrowd.com.br/judge/problems/view/1184
+https://judge.beecrowd.com/en/problems/view/1184
 
 # Below the Main Diagonal
 
