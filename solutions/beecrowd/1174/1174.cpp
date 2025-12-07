@@ -1,5 +1,6 @@
 #include <cstdint>
 #include <cstdio>
+#include <iomanip>
 #include <iostream>
 
 int main() {
@@ -10,6 +11,7 @@ int main() {
         std::cin >> i;
 
         if (i <= 10) {
+            std::cout << std::fixed << std::setprecision(1);
             std::cout << "A[" << n << "] = " << i << std::endl;
         }
     }
