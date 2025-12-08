@@ -7,7 +7,8 @@ output = sys.stdout.write
 
 def fibonacci(number):
     return (
-        pow((1 + math.sqrt(5)) / 2, n) - pow((1 - math.sqrt(5)) / 2, n)
+        pow((1 + math.sqrt(5)) / 2, number)
+        - pow((1 - math.sqrt(5)) / 2, number)
     ) / math.sqrt(5.0)
 
 
