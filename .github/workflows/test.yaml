@@ -3,7 +3,7 @@ name: Test
 on:
   push:
     paths:
-      - '.github/**'
+      - '.github/workflows/test.yaml'
       - 'Makefile'
       - 'scripts/**'
       - 'tests/**'
