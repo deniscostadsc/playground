@@ -2,20 +2,23 @@
 #include <iostream>
 
 int main() {
-    std::int16_t n, t, i, index, lowest = 21;
+    std::int16_t n, t, i, index, lowest;
 
-    std::cin >> n;
+    while (std::cin >> n) {
+        lowest = 21;
+        index = -1;
 
-    for (i = 1; i <= n; i++) {
-        std::cin >> t;
+        for (i = 1; i <= n; i++) {
+            std::cin >> t;
 
-        if (t < lowest) {
-            lowest = t;
-            index = i;
+            if (t < lowest) {
+                lowest = t;
+                index = i;
+            }
         }
-    }
 
-    std::cout << index << std::endl;
+        std::cout << index << std::endl;
+    }
 
     return 0;
 }
