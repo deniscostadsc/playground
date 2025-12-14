@@ -17,7 +17,6 @@ function random_number {
     echo $((RANDOM % (max - min + 1) + min))
 }
 
-
 echo "${TEST_CASES}"
 
 for _ in $(seq "${TEST_CASES}"); do
