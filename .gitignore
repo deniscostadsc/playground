@@ -1,6 +1,7 @@
 .cache
 .calva/
 .DS_Store
+.tool-versions
 .vscode
 *.exe
 *.hi
@@ -20,5 +21,4 @@ main.cmo
 Main.java
 main.kt
 result-*.txt
-.tool-versions
 !.clojure/\?
