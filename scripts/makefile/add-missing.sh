@@ -23,8 +23,11 @@ for folder in ${FOLDERS}; do
         continue
     fi
 
-    missing_solutions_languages=$(get_missing_solutions_languages "${folder}")
+    if [[ " ${ENVIRONMENTS} " == *" sh "* ]] && [[ ! -f "${folder}generate_in.sh" ]]; then
+        cp "templates/template.sh" "${folder}generate_in.sh"
+    fi
 
+    missing_solutions_languages=$(get_missing_solutions_languages "${folder}")
     for extension in ${missing_solutions_languages}; do
         if [[ ! " ${ENVIRONMENTS} " == *" ${extension} "* ]]; then
             continue
