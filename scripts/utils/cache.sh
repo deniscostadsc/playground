@@ -9,10 +9,15 @@ function get_hash_path {
     echo -n "${path}" | sha256sum | cut -d' ' -f1
 }
 
-function get_hash {
+function get_commit_hash {
+    cd "$(git rev-parse --show-toplevel)" || exit 0
+    git rev-parse HEAD
+}
+
+function get_tree_hash {
     (
         cd "$(git rev-parse --show-toplevel)" || exit 0
-        git rev-parse HEAD
+        tree
     ) | sha256sum | cut -d' ' -f1
 }
 

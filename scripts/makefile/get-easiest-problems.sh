@@ -7,7 +7,7 @@ source "$(dirname "$0")/../utils/environments.sh"
 # shellcheck disable=SC1091
 source "$(dirname "${0}")/../utils/cache.sh"
 
-hash=$(get_hash)
+hash=$(get_commit_hash)
 if is_cache_valid "${0}" "${hash}"; then
     load_cache "${0}" "${hash}"
     exit 0
