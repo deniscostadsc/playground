@@ -98,7 +98,7 @@ clean:
 	@find solutions -type d -name "\?" -exec rm -rf {} +
 	@rm -rf \? || true
 
-count-solutions:
+count-solutions: clean
 	@./scripts/makefile/count-solutions.sh
 
 get-easiest-problems:
