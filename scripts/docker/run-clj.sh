@@ -17,7 +17,7 @@ echo
 echo "Clojure"
 echo
 
-cp -R .clojure/\? .
+cp -R .cache/\? .
 
 for folder in ${FOLDERS}; do
     [[ -f "${folder}WRONG" ]] && continue

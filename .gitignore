@@ -1,6 +1,8 @@
-.cache
+.cache/*
 .calva/
+.clj-kondo/*
 .DS_Store
+.lsp/*
 .tool-versions
 .vscode
 *.exe
@@ -21,4 +23,5 @@ main.cmo
 Main.java
 main.kt
 result-*.txt
-!.clojure/\?
+!.cache/\?/
+!.clj-kondo/config.edn
