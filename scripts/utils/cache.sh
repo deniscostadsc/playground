@@ -17,7 +17,7 @@ function get_commit_hash {
 function get_tree_hash {
     (
         cd "$(git rev-parse --show-toplevel)" || exit 0
-        tree
+        tree ./solutions/
     ) | sha256sum | cut -d' ' -f1
 }
 
