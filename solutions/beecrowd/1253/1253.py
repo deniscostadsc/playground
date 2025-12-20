@@ -1,10 +1,11 @@
 import sys
+import string
 
 input = sys.stdin.readline
 output = sys.stdout.write
 
 n = int(input())
-a = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
+a = string.ascii_uppercase * 2
 
 for _ in range(n):
     s = input().strip()
