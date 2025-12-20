@@ -10,6 +10,7 @@ on:
       - '.github/workflows/run.yaml'
       - 'Makefile'
       - 'scripts/**'
+      - '!scripts/lint/*'
       - 'solutions/**'
       - '!solutions/**/problem.md'
       - '!solutions/**/tags.txt'
