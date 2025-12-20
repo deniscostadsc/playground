@@ -22,4 +22,3 @@ shift, this value is between 0 and 25, inclusive.
 Given an encoded text and a number of shifted letters, decode it to the
 original sentence, acording to the explanation above and the following
 example.
-
