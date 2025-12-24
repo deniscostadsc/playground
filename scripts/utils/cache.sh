@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
-
+# shellcheck disable=SC1091
+source './scripts/utils/environments.sh'
 CACHE_DIR=".cache/scripts"
 
 function get_hash_path {
@@ -15,9 +16,10 @@ function get_commit_hash {
 }
 
 function get_tree_hash {
+    supported_environments_pattern=$(get_supported_languages | tr ' ' '|' | sed 's/|$//')
     (
         cd "$(git rev-parse --show-toplevel)" || exit 0
-        tree ./solutions/
+        tree ./solutions/ | grep -E "\.(${supported_environments_pattern})$"
     ) | sha256sum | cut -d' ' -f1
 }
 
