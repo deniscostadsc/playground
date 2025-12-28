@@ -19,7 +19,7 @@ function get_tree_hash {
     supported_environments_pattern=$(get_supported_languages | tr ' ' '|' | sed 's/|$//')
     (
         cd "$(git rev-parse --show-toplevel)" || exit 0
-        tree ./solutions/ | grep -E "\.(${supported_environments_pattern})$"
+        find ./solutions/ -type f -print | grep -E "\.(${supported_environments_pattern})$"
     ) | sha256sum | cut -d' ' -f1
 }
 
