@@ -1,4 +1,4 @@
-https://urionlinejudge.com.br/judge/en/problems/view/1536
+https://judge.beecrowd.com/en/problems/view/1536
 
 # Libertadores
 
