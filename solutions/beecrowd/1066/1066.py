@@ -17,7 +17,7 @@ for _ in range(5):
     else:
         o += 1
 
-output(f'{e} valor(es) par(es)\n');
-output(f'{o} valor(es) impar(es)\n');
-output(f'{p} valor(es) positivo(s)\n');
-output(f'{n} valor(es) negativo(s)\n');
+output(f'{e} valor(es) par(es)\n')
+output(f'{o} valor(es) impar(es)\n')
+output(f'{p} valor(es) positivo(s)\n')
+output(f'{n} valor(es) negativo(s)\n')
