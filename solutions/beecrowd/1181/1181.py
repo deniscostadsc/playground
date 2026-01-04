@@ -8,7 +8,7 @@ o = input().strip()
 s = 0.0
 
 for i in range(12):
-    for j in range(12):
+    for _ in range(12):
         n = float(input())
         if i == c:
             s += n
