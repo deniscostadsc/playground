@@ -10,6 +10,8 @@ case. The following figure illustrates the case when is entered the number 2
 to the array line, showing all elements that must be considered in the
 operation.
 
+<center><img src="imgs/UOJ_1181.png"></center>
+
 ## Input
 
 The first line of the input contains a simple integer $L (0 \leq L \leq 11)$
