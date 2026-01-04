@@ -12,6 +12,7 @@ on:
       - 'scripts/**'
       - '!scripts/lint/*'
       - 'solutions/**'
+      - '!solutions/**/imgs/*'
       - '!solutions/**/problem.md'
       - '!solutions/**/tags.txt'
   schedule:

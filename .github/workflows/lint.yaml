@@ -10,6 +10,7 @@ on:
       - '*.md'
       - '*.txt'
       - 'misc/**'
+      - 'solutions/**/imgs/*'
   schedule:
     - cron: '0 0 1 * *'  # Run on the 1st day of every month at midnight UTC
 jobs:
