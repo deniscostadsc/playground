@@ -19,6 +19,8 @@
 
 SHELL = /bin/bash -euo pipefail
 
+UNCOMMITTED ?= false
+
 ifdef ENVIRONMENTS
 LINT_ENVIRONMENTS := $(ENVIRONMENTS)
 endif
@@ -102,7 +104,17 @@ count-solutions: clean
 	@./scripts/makefile/count-solutions.sh
 
 get-easiest-problems:
+ifeq ($(UNCOMMITTED), true)
+	@git status |\
+		grep 'solutions/beecrowd/' |\
+		sed 's/^.*solutions\/beecrowd\/[0-9]\{4\}.//' |\
+		sed 's/\.[a-z]*$$//' |\
+		sort |\
+		uniq > .cache/scripts/WIP.cache
+	@./scripts/makefile/get-easiest-problems.sh | grep -f .cache/scripts/WIP.cache
+else
 	@./scripts/makefile/get-easiest-problems.sh
+endif
 
 lint: __run-lint-build
 	@for lint_environment in $(LINT_ENVIRONMENTS); do \
