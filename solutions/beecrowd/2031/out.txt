@@ -1,2 +1,9 @@
+Aniquilacao mutua
+Jogador 1 venceu
+Jogador 1 venceu
+Jogador 2 venceu
 Sem ganhador
 Jogador 1 venceu
+Jogador 2 venceu
+Jogador 2 venceu
+Ambos venceram
