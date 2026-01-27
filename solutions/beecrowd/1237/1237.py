@@ -3,14 +3,6 @@ import sys
 input = sys.stdin.readline
 output = sys.stdout.write
 
-
-def print_table(table):
-    for row in table:
-        for item in row:
-            output(f'{item} ')
-        output('\n')
-
-
 while first_line := input().strip():
     second_line = input().strip()
     lcs = 0
