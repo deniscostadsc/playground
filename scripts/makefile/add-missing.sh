@@ -33,12 +33,12 @@ for folder in ${FOLDERS}; do
             continue
         fi
 
-        if [[ -f ${folder}WRONG ]]; then
+        if [[ "${extension}" == "sh" ]]; then
+            cp "templates/template.sh" "${folder}generate_in.sh"
             continue
         fi
 
-        if [[ "${extension}" == "sh" ]]; then
-            cp "templates/template.sh" "${folder}generate_in.sh"
+        if [[ -f ${folder}WRONG ]]; then
             continue
         fi
 
