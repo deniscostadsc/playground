@@ -33,6 +33,10 @@ for folder in ${FOLDERS}; do
             continue
         fi
 
+        if [[ -f ${folder}/WRONG ]]; then
+            continue
+        fi
+
         if [[ -f templates/template.${extension} ]] && [[ ! -f "${folder}$(basename "${folder}").${extension}" ]]; then
             cp "templates/template.${extension}" "${folder}$(basename "${folder}").${extension}"
         else
