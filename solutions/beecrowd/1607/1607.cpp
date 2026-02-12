@@ -9,7 +9,7 @@ int main() {
     std::map< char, std::int16_t > letter_index;
     std::string alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-    for (i = 0; i <= 26; i++) {
+    for (i = 0; i < 26; i++) {
         letter_index[alphabet[i]] = i;
     }
 
