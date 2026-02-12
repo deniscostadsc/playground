@@ -6,7 +6,8 @@ int main() {
         multiple_of_5;
 
     while (std::cin >> n) {
-        multiple_of_2 = 0, multiple_of_3 = 0, multiple_of_4 = 0, multiple_of_5 = 0;
+        multiple_of_2 = 0, multiple_of_3 = 0, multiple_of_4 = 0,
+        multiple_of_5 = 0;
 
         while (n--) {
             std::cin >> l;
