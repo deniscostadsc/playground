@@ -3,7 +3,7 @@
 #include <string.h>
 
 int main() {
-    int16_t d[31], e[31], n, p, t, i;
+    int32_t d[31], e[31], n, p, t, i;
     char l;
 
     while (scanf("%d", &n) != EOF) {
