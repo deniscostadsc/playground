@@ -61,7 +61,7 @@ ifndef FOLDER
 endif
 
 __run-build:
-	for environment in $(ENVIRONMENTS); do \
+	@for environment in $(ENVIRONMENTS); do \
 		$(DOCKER_BUILD) .docker/$$environment.Dockerfile -t $$environment .; \
 	done
 
