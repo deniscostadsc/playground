@@ -1,0 +1,51 @@
+$ get_supported_languages | tr ' ' '\n' | sort
+c
+clj
+cpp
+cs
+dart
+exs
+go
+hs
+java
+jl
+js
+kt
+lua
+ml
+pas
+php
+py
+r
+rb
+rs
+scala
+swift
+ts
+$ touch .docker/myrandomlang.Dockerfile
+$ get_supported_languages | tr ' ' '\n' | sort
+c
+clj
+cpp
+cs
+dart
+exs
+go
+hs
+java
+jl
+js
+kt
+lua
+ml
+myrandomlang
+pas
+php
+py
+r
+rb
+rs
+scala
+swift
+ts
+$ rm .docker/myrandomlang.Dockerfile

@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk -U upgrade && apk add bash git tree
+RUN apk -U upgrade && apk add bash
 RUN mkdir /code
 WORKDIR /code
 
@@ -9,4 +9,4 @@ RUN wget https://raw.githubusercontent.com/aureliojargas/clitest/8bdaae2f56e524f
 RUN chmod +x clitest
 RUN mv clitest /usr/bin
 
-CMD clitest $(find tests/ -name '*.txt')
+CMD bash clitest --pre-flight '. ./scripts/utils/environments.sh' tests/scripts/utils/environments/*

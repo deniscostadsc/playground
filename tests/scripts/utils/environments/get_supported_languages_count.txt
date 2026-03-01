@@ -1,0 +1,6 @@
+$ get_supported_languages_count
+23
+$ touch .docker/myrandomlang.Dockerfile
+$ get_supported_languages_count
+24
+$ rm .docker/myrandomlang.Dockerfile

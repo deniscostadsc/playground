@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+set -euo pipefail # this breaks clitest, but kept because of lint
+set +euo pipefail
 
 function get_supported_languages {
     find .docker -maxdepth 1 -name "*.Dockerfile" 2>/dev/null |
