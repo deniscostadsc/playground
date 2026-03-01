@@ -19,12 +19,6 @@
 	test \
 	wrong
 
-__check_pre_commit:
-	@if [[ ! -f ./.git/hooks/post-commit ]]; then \
-		echo "You don't have git hooks installed: make install-git-hook"; \
-		exit 1; \
-	fi
-
 SHELL = /bin/bash -euo pipefail
 
 WIP ?= false
@@ -57,6 +51,12 @@ endif
 
 DOCKER_RUN := docker run --rm -v $$(pwd):/code -u "$$(id -u):$$(id -g)"
 DOCKER_BUILD := docker build -q -f
+
+__check_pre_commit:
+	@if [[ ! -f ./.git/hooks/post-commit ]] || ! diff -q .git/hooks/post-commit scripts/git-hooks/post-commit.sh >/dev/null 2>&1; then \
+		echo "Git hook is missing or outdated. Run: make install-git-hook"; \
+		exit 1; \
+	fi
 
 __error_if_environments_ndef:
 ifndef ENVIRONMENTS
