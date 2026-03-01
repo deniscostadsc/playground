@@ -5,9 +5,9 @@ set -euo pipefail
 source './scripts/utils/environments.sh'
 CACHE_DIR=".cache/scripts"
 
-function get_hash_path {
+function get_filename_from_path {
     local path="$1"
-    echo -n "${path}" | sha256sum | cut -d' ' -f1
+    basename "${path}"
 }
 
 function get_commit_hash {
@@ -24,30 +24,30 @@ function get_tree_hash {
 }
 
 function is_cache_valid {
-    local caller_hash=""
-    caller_hash="$(get_hash_path "${1}")"
+    local caller_name=""
+    caller_name="$(get_filename_from_path "${1}")"
     local hash="${2}"
-    [[ -f "${CACHE_DIR}/${caller_hash}-${hash}" ]]
+    [[ -f "${CACHE_DIR}/${caller_name}-${hash}" ]]
 }
 
 function save_cache {
-    local caller_hash=""
-    caller_hash="$(get_hash_path "${1}")"
-    clean_cache "${caller_hash}"
+    local caller_name=""
+    caller_name="$(get_filename_from_path "${1}")"
+    clean_cache "${caller_name}"
 
     local hash="${2}"
     local content="${3}"
-    echo "${content}" >"${CACHE_DIR}/${caller_hash}-${hash}"
+    echo "${content}" >"${CACHE_DIR}/${caller_name}-${hash}"
 }
 
 function load_cache {
-    local caller_hash=""
-    caller_hash="$(get_hash_path "${1}")"
+    local caller_name=""
+    caller_name="$(get_filename_from_path "${1}")"
     local hash="$2"
-    cat "${CACHE_DIR}/${caller_hash}-${hash}"
+    cat "${CACHE_DIR}/${caller_name}-${hash}"
 }
 
 function clean_cache {
-    local caller_hash="${1}"
-    find "${CACHE_DIR}" -type f -name "${caller_hash}-*" ! -name '.gitkeep' -exec rm -f {} +
+    local caller_name="${1}"
+    find "${CACHE_DIR}" -type f -name "${caller_name}-*" ! -name '.gitkeep' -exec rm -f {} +
 }
