@@ -1,4 +1,5 @@
 .PHONY: \
+	__check_pre_commit \
 	__error_if_environments_ndef \
 	__error_if_folder_ndef \
 	__run-build \
@@ -10,12 +11,19 @@
 	clean \
 	count-solutions \
 	get-easiest-problems \
+	install-git-hook \
 	lint \
 	lint-fix \
 	new-problem \
 	run \
 	test \
 	wrong
+
+__check_pre_commit:
+	@if [[ ! -f ./.git/hooks/post-commit ]]; then \
+		echo "You don't have git hooks installed: make install-git-hook"; \
+		exit 1; \
+	fi
 
 SHELL = /bin/bash -euo pipefail
 
@@ -103,7 +111,7 @@ clean:
 count-solutions: clean
 	@./scripts/makefile/count-solutions.sh
 
-get-easiest-problems:
+get-easiest-problems: __check_pre_commit
 ifeq ($(WIP), true)
 	@git status |\
 		grep 'solutions/beecrowd/' |\
@@ -115,6 +123,9 @@ ifeq ($(WIP), true)
 else
 	@./scripts/makefile/get-easiest-problems.sh
 endif
+
+install-git-hook:
+	@cp ./scripts/git-hooks/post-commit.sh ./.git/hooks/post-commit
 
 lint: __run-lint-build
 	@for lint_environment in $(LINT_ENVIRONMENTS); do \
