@@ -17,7 +17,7 @@ output=$(
     FOLDERS=$(find solutions/beecrowd -name 'problem.md' | sed 's/problem.md//g' | sort)
 
     supported_environments=$(get_supported_languages)
-    supported_environments_count=$(echo "${supported_environments}" | wc -w)
+    supported_environments_count=$(get_supported_languages_count)
     supported_programming_environments_count=$((supported_environments_count - 1)) # - 1 to remove sql
 
     for folder in ${FOLDERS}; do

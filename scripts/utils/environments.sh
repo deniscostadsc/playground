@@ -11,7 +11,12 @@ get_supported_languages() {
         sed 's/ $//'
 }
 
-get_supported_lints() {
+function get_supported_languages_count {
+    supported_environments=$(get_supported_languages)
+    echo "${supported_environments}" | wc -w
+}
+
+function get_supported_lints {
     find .docker/lint -name "*.Dockerfile" 2>/dev/null |
         sed 's|.*/||' |
         sed 's|-lint\.Dockerfile$||' |
