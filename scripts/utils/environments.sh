@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-get_supported_languages() {
+function get_supported_languages {
     find .docker -maxdepth 1 -name "*.Dockerfile" 2>/dev/null |
         sed 's|.*/||' |
         sed 's|\.Dockerfile$||' |
@@ -24,7 +24,7 @@ function get_supported_lints {
         sed 's/ $//'
 }
 
-get_language_extensions_from_files() {
+function get_language_extensions_from_files {
     local files="$1"
     local supported_environments="$2"
 
@@ -35,7 +35,7 @@ get_language_extensions_from_files() {
         sort -u
 }
 
-get_lint_extensions_from_files() {
+function get_lint_extensions_from_files {
     local files="$1"
     local supported_lints="$2"
 
@@ -46,7 +46,7 @@ get_lint_extensions_from_files() {
         sort -u
 }
 
-get_missing_solutions_languages() {
+function get_missing_solutions_languages {
     folder=$1
     missing_languages=""
     for ext in $(get_supported_languages); do
