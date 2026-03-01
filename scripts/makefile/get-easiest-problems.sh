@@ -16,7 +16,6 @@ fi
 output=$(
     FOLDERS=$(find solutions/beecrowd -name 'problem.md' | sed 's/problem.md//g' | sort)
 
-    supported_environments=$(get_supported_languages)
     supported_environments_count=$(get_supported_languages_count)
     supported_programming_environments_count=$((supported_environments_count - 1)) # - 1 to remove sql
 
@@ -24,14 +23,8 @@ output=$(
         [[ -f "${folder}schema.sql" ]] && continue
         [[ -f "${folder}WRONG" ]] && continue
 
-        find_cmd="find \"${folder}\""
-        for ext in ${supported_environments}; do
-            find_cmd="${find_cmd} -name '*.${ext}' -o"
-        done
-        find_cmd="${find_cmd% -o}"
-
-        solutions=$(eval "${find_cmd}")
-        solutions_count=$(wc -w <<<"${solutions}")
+        solutions="$(get_solutions_in_all_supported_languages "${folder}")"
+        solutions_count=$(get_supported_languages_count)
         missing_languages=$(get_missing_solutions_languages "${folder}")
 
         if [[ ${supported_programming_environments_count} -eq ${solutions_count} ]]; then

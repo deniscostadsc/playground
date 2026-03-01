@@ -16,6 +16,18 @@ function get_supported_languages_count {
     echo "${supported_environments}" | wc -w
 }
 
+function get_solutions_in_all_supported_languages {
+    folder=${1:-.} # current folder is the default
+    find_cmd="find \"${folder}\""
+    supported_environments=$(get_supported_languages)
+    for ext in ${supported_environments}; do
+        find_cmd="${find_cmd} -name '*.${ext}' -o"
+    done
+    find_cmd="${find_cmd% -o}"
+
+    eval "${find_cmd}"
+}
+
 function get_supported_lints {
     find .docker/lint -name "*.Dockerfile" 2>/dev/null |
         sed 's|.*/||' |

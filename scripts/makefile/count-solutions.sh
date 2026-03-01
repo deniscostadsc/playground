@@ -14,21 +14,13 @@ if is_cache_valid "${0}" "${hash}"; then
 fi
 
 output=$(
-    supported_environments=$(get_supported_languages | tr ' ' '|' | sed 's/|$//')
     FOLDERS=$(find solutions/beecrowd/ -name 'problem.md' | sed 's/problem.md//g' | sort)
 
     pushd "$(git rev-parse --show-toplevel)" >/dev/null
 
     for folder in ${FOLDERS}; do
         [[ -f "${folder}schema.sql" ]] && continue
-
-        find_cmd="find \"${folder}\""
-        for ext in $(echo "${supported_environments}" | tr '|' ' '); do
-            find_cmd="${find_cmd} -name '*.${ext}' -o"
-        done
-        find_cmd="${find_cmd% -o}"
-
-        solutions=$(eval "${find_cmd}")
+        solutions="$(get_solutions_in_all_supported_languages "${folder}")"
         solutions_count=$(echo "${solutions}" | wc -w | sed 's/ //g')
         missing_languages=$(get_missing_solutions_languages "${folder}")
 

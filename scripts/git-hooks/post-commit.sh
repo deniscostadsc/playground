@@ -9,7 +9,6 @@ source "scripts/utils/environments.sh"
 # shellcheck disable=SC1091
 source "scripts/utils/cache.sh"
 
-supported_environments=$(get_supported_languages)
 supported_environments_count=$(get_supported_languages_count)
 supported_programming_environments_count=$((supported_environments_count - 1)) # - 1 to remove sql
 hash=$(get_commit_hash)
@@ -31,13 +30,7 @@ for folder in ${folders}; do
     [[ -f "${folder}WRONG" ]] && continue
 
     if grep "${folder}" .cache/scripts/get-easiest-problems.sh-*; then
-        find_cmd="find \"${folder}\""
-        for ext in ${supported_environments}; do
-            find_cmd="${find_cmd} -name '*.${ext}' -o"
-        done
-        find_cmd="${find_cmd% -o}"
-
-        solutions=$(eval "${find_cmd}")
+        solutions="$(get_solutions_in_all_supported_languages "${folder}")"
         solutions_count=$(wc -w <<<"${solutions}")
         if [[ ${supported_programming_environments_count} -eq ${solutions_count} ]]; then
             # exclude problems with solution in all environments
@@ -53,5 +46,5 @@ for folder in ${folders}; do
 done
 
 rm .cache/scripts/get-easiest-problems.sh-*
-sort -nr <.cache/scripts/OLD-get-easiest-problems.sh >".cache/scripts/get-easiest-problems.sh-${hash}"
+sort -n <.cache/scripts/OLD-get-easiest-problems.sh >".cache/scripts/get-easiest-problems.sh-${hash}"
 rm .cache/scripts/OLD-get-easiest-problems.sh
