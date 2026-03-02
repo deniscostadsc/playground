@@ -2,10 +2,12 @@
 
 set -euo pipefail
 
+DOCKER_PATH="${DOCKER_PATH:-.docker}"
+
 if [[ "${LINT_FIX:=0}" -eq 1 ]]; then
     true
 else
-    output=$(find . -name '*.java' -exec checkstyle -c .docker/lint/java-lint.xml {} \; 2>&1)
+    output=$(find . -name '*.java' -exec checkstyle -c "${DOCKER_PATH}/lint/java-lint.xml" {} \; 2>&1)
 
     echo "${output}"
 

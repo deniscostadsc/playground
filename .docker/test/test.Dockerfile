@@ -1,5 +1,8 @@
 FROM alpine:latest
 
+ARG docker_path
+ENV DOCKER_PATH $docker_path
+
 RUN apk -U upgrade && apk add bash
 RUN mkdir /code
 WORKDIR /code

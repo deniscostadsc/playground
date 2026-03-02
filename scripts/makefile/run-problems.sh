@@ -5,18 +5,20 @@ set -euo pipefail
 FOLDERS=${1}
 ENVIRONMENTS=${2}
 DOCKER_RUN_PREFIX=${3}
+DOCKER_PATH="${DOCKER_PATH:-.docker}"
 
 for environment in ${ENVIRONMENTS}; do
-    if [[ -f .docker/${environment}.env ]]; then
-        env_file="--env-file .docker/${environment}.env"
+    if [[ -f ${DOCKER_PATH}/${environment}.env ]]; then
+        env_file="--env-file ${DOCKER_PATH}/${environment}.env"
     else
         env_file=
     fi
     if [[ "${environment}" == "sql" ]]; then
         FOLDERS="${FOLDERS}" \
+        DOCKER_PATH="${DOCKER_PATH}" \
             USER="$(id -u):$(id -g)" \
             docker compose \
-            -f .docker/sql-docker-compose.yml \
+            -f "${DOCKER_PATH}/sql-docker-compose.yml" \
             up \
             --build \
             --quiet-pull \

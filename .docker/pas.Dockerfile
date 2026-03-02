@@ -1,5 +1,7 @@
 FROM --platform=linux/amd64 ubuntu:16.04
 
+ARG docker_path
+ENV DOCKER_PATH $docker_path
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y \
@@ -7,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     libc6-dev \
     && rm -rf /var/lib/apt/lists/*
 
-COPY .docker/pas.fpc-2.6.2.x86_64-linux.tar /tmp/
+COPY ${DOCKER_PATH}/pas.fpc-2.6.2.x86_64-linux.tar /tmp/
 RUN cd /tmp && \
     tar -xf pas.fpc-2.6.2.x86_64-linux.tar && \
     cd fpc-2.6.2.x86_64-linux && \

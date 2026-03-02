@@ -1,6 +1,10 @@
+$ mkdir -p ${DOCKER_PATH}
+$ touch ${DOCKER_PATH}/cpp.Dockerfile
+$ touch ${DOCKER_PATH}/lua.Dockerfile
+$ touch ${DOCKER_PATH}/py.Dockerfile
 $ get_supported_languages_count
-23
-$ touch .docker/myrandomlang.Dockerfile
+3
+$ touch ${DOCKER_PATH}/myrandomlang.Dockerfile
 $ get_supported_languages_count
-24
-$ rm .docker/myrandomlang.Dockerfile
+4
+$ rm ${DOCKER_PATH}/myrandomlang.Dockerfile

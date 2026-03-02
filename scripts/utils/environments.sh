@@ -3,8 +3,10 @@
 set -euo pipefail # this breaks clitest, but kept because of lint
 set +euo pipefail
 
+DOCKER_PATH=${DOCKER_PATH:-.docker}
+
 function get_supported_languages {
-    find .docker -maxdepth 1 -name "*.Dockerfile" 2>/dev/null |
+    find "${DOCKER_PATH}" -maxdepth 1 -name "*.Dockerfile" 2>/dev/null |
         sed 's|.*/||' |
         sed 's|\.Dockerfile$||' |
         grep -v '^sql' |
@@ -30,7 +32,7 @@ function get_solutions_in_all_supported_languages {
 }
 
 function get_supported_lints {
-    find .docker/lint -name "*.Dockerfile" 2>/dev/null |
+    find "${DOCKER_PATH}/lint" -name "*.Dockerfile" 2>/dev/null |
         sed 's|.*/||' |
         sed 's|-lint\.Dockerfile$||' |
         tr '\n' ' ' |

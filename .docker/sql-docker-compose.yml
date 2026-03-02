@@ -4,8 +4,9 @@ services:
   database-client:
     build:
       context: ../
-      dockerfile: .docker/sql.Dockerfile
+      dockerfile: $DOCKER_PATH/sql.Dockerfile
     environment:
+      DOCKER_PATH: $DOCKER_PATH
       FOLDERS: $FOLDERS
       POSTGRES_DB: beecrowd
       POSTGRES_USER: beecrowd

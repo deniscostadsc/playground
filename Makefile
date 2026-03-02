@@ -70,16 +70,16 @@ endif
 
 __run-build:
 	@for environment in $(ENVIRONMENTS); do \
-		$(DOCKER_BUILD) .docker/$$environment.Dockerfile -t $$environment .; \
+		$(DOCKER_BUILD) .docker/$$environment.Dockerfile --build-arg docker_path='.docker' -t $$environment .; \
 	done
 
 __run-lint-build:
 	@for lint_environment in $(LINT_ENVIRONMENTS); do \
-		$(DOCKER_BUILD) .docker/lint/$${lint_environment}-lint.Dockerfile -t $${lint_environment}-lint .; \
+		$(DOCKER_BUILD) .docker/lint/$${lint_environment}-lint.Dockerfile  --build-arg docker_path='.docker' -t $${lint_environment}-lint .; \
 	done
 
 __run-test-build:
-	@$(DOCKER_BUILD) .docker/test/test.Dockerfile -t test .
+	@$(DOCKER_BUILD) .docker/test/test.Dockerfile --build-arg docker_path='/tmp/.docker' -t test .
 
 add-missing: __error_if_folder_ndef
 	@scripts/makefile/add-missing.sh "$(FOLDERS)" "$(ENVIRONMENTS)"

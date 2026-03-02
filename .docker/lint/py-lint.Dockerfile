@@ -1,12 +1,15 @@
 FROM python:3.11.4
 
+ARG docker_path
+ENV DOCKER_PATH $docker_path
+
 RUN python -m ensurepip --upgrade
 RUN pip install pip-tools
 
 RUN mkdir /code
 WORKDIR /code
 
-COPY .docker/lint/py-requirements.lock /code/
+COPY ${DOCKER_PATH}/lint/py-requirements.lock /code/
 RUN pip install -r py-requirements.lock
 
 CMD echo "py"; ./scripts/lint/update-python-requirements-ci.sh 2> /dev/null && \
