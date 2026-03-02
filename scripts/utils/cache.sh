@@ -3,7 +3,7 @@
 set -euo pipefail
 # shellcheck disable=SC1091
 source './scripts/utils/environments.sh'
-CACHE_DIR=".cache/scripts"
+CACHE_DIR="${CACHE_DIR:-.cache/scripts}"
 
 function get_filename_from_path {
     local path="$1"
