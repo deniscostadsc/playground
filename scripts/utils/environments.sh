@@ -5,13 +5,23 @@ set +euo pipefail
 
 DOCKER_PATH=${DOCKER_PATH:-.docker}
 
-function get_supported_languages {
-    find "${DOCKER_PATH}" -maxdepth 1 -name "*.Dockerfile" 2>/dev/null |
+function __get_supported_environments {
+    folder="${1}"
+    find "${folder}" -maxdepth 1 -name "*.Dockerfile" 2>/dev/null |
         sed 's|.*/||' |
         sed 's|\.Dockerfile$||' |
+        sed 's|-lint$||' | # This is necessary because lint Dockerfiles (e.g. cpp-lint.Dockerfile)
         grep -v '^sql' |
         tr '\n' ' ' |
         sed 's/ $//'
+}
+
+function get_supported_languages {
+    __get_supported_environments "${DOCKER_PATH}"
+}
+
+function get_supported_lints {
+    __get_supported_environments "${DOCKER_PATH}/lint"
 }
 
 function get_supported_languages_count {
@@ -29,14 +39,6 @@ function get_solutions_in_all_supported_languages {
     find_cmd="${find_cmd% -o}"
 
     eval "${find_cmd}"
-}
-
-function get_supported_lints {
-    find "${DOCKER_PATH}/lint" -name "*.Dockerfile" 2>/dev/null |
-        sed 's|.*/||' |
-        sed 's|-lint\.Dockerfile$||' |
-        tr '\n' ' ' |
-        sed 's/ $//'
 }
 
 function __get_extensions_from_files {
