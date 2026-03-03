@@ -12,4 +12,4 @@ cpp
 lua
 myrandomlang
 py
-$ rm ${DOCKER_PATH}/*.Dockerfile
+$ rm ${DOCKER_PATH}/lint/*.Dockerfile

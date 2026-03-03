@@ -1,0 +1,12 @@
+$ mkdir -p ${DOCKER_PATH}/lint/
+$ touch ${DOCKER_PATH}/lint/cpp-lint.Dockerfile
+$ touch ${DOCKER_PATH}/lint/lua-lint.Dockerfile
+$ touch ${DOCKER_PATH}/lint/py-lint.Dockerfile
+$ echo -e "solutions/beecrowd/1000/1000.py\nsolutions/beecrowd/1001/1001.py" >/tmp/files.txt
+$ get_lint_extensions_from_files "$(cat /tmp/files.txt)"
+py
+$ echo -e "solutions/beecrowd/1000/1000.cpp\nsolutions/beecrowd/1001/problem.md" >>/tmp/files.txt
+$ get_lint_extensions_from_files "$(cat /tmp/files.txt)"
+cpp
+py
+$ rm ${DOCKER_PATH}/lint/*.Dockerfile

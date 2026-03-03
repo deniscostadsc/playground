@@ -7,4 +7,4 @@ $ get_supported_languages_count
 $ touch ${DOCKER_PATH}/myrandomlang.Dockerfile
 $ get_supported_languages_count
 4
-$ rm ${DOCKER_PATH}/myrandomlang.Dockerfile
+$ rm ${DOCKER_PATH}/*.Dockerfile

@@ -1,0 +1,16 @@
+$ mkdir -p ${DOCKER_PATH}
+$ touch ${DOCKER_PATH}/cpp.Dockerfile
+$ touch ${DOCKER_PATH}/lua.Dockerfile
+$ touch ${DOCKER_PATH}/py.Dockerfile
+$ mkdir /tmp/solutions/
+$ touch /tmp/solutions/1000.py
+$ get_missing_solutions_languages /tmp/solutions/ | tr ' ' '\n' | sort
+
+cpp
+lua
+$ touch /tmp/solutions/1000.cpp
+$ get_missing_solutions_languages /tmp/solutions/ | tr ' ' '\n' | sort
+
+lua
+$ rm ${DOCKER_PATH}/*.Dockerfile
+$ rm /tmp/solutions/*

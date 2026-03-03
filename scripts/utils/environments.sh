@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -euo pipefail # this breaks clitest, but kept because of lint
+set -euo pipefail # this breaks clitest, but I kept it because of lint
 set +euo pipefail
 
 DOCKER_PATH=${DOCKER_PATH:-.docker}
@@ -39,9 +39,9 @@ function get_supported_lints {
         sed 's/ $//'
 }
 
-function get_language_extensions_from_files {
-    local files="$1"
-    local supported_environments="$2"
+function __get_extensions_from_files {
+    local files="${1}"
+    supported_environments="${2}"
 
     echo "${files}" |
         grep -E "\.($(echo "${supported_environments}" |
@@ -50,19 +50,20 @@ function get_language_extensions_from_files {
         sort -u
 }
 
-function get_lint_extensions_from_files {
-    local files="$1"
-    local supported_lints="$2"
+function get_language_extensions_from_files {
+    local files="${1}"
+    supported_languages=$(get_supported_languages)
+    __get_extensions_from_files "${files}" "${supported_languages}"
+}
 
-    echo "${files}" |
-        grep -E "\.($(echo "${supported_lints}" |
-            tr ' ' '|'))$" |
-        sed 's/.*\.//' |
-        sort -u
+function get_lint_extensions_from_files {
+    local files="${1}"
+    supported_lints=$(get_supported_lints)
+    __get_extensions_from_files "${files}" "${supported_lints}"
 }
 
 function get_missing_solutions_languages {
-    folder=$1
+    folder="${1}"
     missing_languages=""
     for ext in $(get_supported_languages); do
         if [[ -z "$(find "${folder}" -name "*.${ext}" 2>/dev/null)" ]]; then

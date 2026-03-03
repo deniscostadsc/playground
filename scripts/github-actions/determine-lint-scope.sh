@@ -23,8 +23,7 @@ else
 fi
 
 if [[ -s failing-changed-files-for-lint.txt ]]; then
-    SUPPORTED_LINTS=$(get_supported_lints)
-    LINT_EXTENSIONS=$(get_lint_extensions_from_files "$(cat failing-changed-files-for-lint.txt)" "${SUPPORTED_LINTS}")
+    LINT_EXTENSIONS=$(get_lint_extensions_from_files "$(cat failing-changed-files-for-lint.txt)")
 
     if [[ -n "${LINT_EXTENSIONS}" ]]; then
         echo "${LINT_EXTENSIONS}" | tr '\n' ' ' | sed 's/ $//' >lint_extensions.txt

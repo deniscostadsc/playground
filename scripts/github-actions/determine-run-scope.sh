@@ -37,7 +37,7 @@ else
             fi
         fi
 
-        LANGUAGE_EXTENSIONS=$(get_language_extensions_from_files "$(grep "^solutions/" failing-changed-files-for-build.txt)" "$(get_supported_languages)")
+        LANGUAGE_EXTENSIONS=$(get_language_extensions_from_files "$(grep "^solutions/" failing-changed-files-for-build.txt)")
         echo "${LANGUAGE_EXTENSIONS}" >language_extensions.txt
 
         if [[ -s language_extensions.txt ]]; then

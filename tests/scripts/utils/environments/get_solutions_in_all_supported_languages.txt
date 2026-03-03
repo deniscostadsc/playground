@@ -21,4 +21,4 @@ $ get_solutions_in_all_supported_languages /tmp/solutions/ | sort
 /tmp/solutions/1001.lua
 /tmp/solutions/1001.py
 $ rm ${DOCKER_PATH}/*.Dockerfile
-$ rm /tmp/solutions/1001.*
+$ rm /tmp/solutions/*
