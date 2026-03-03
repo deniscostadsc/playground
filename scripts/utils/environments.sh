@@ -54,13 +54,13 @@ function __get_extensions_from_files {
 
 function get_language_extensions_from_files {
     local files="${1}"
-    supported_languages=$(get_supported_languages)
+    supported_languages="$(get_supported_languages)"
     __get_extensions_from_files "${files}" "${supported_languages}"
 }
 
 function get_lint_extensions_from_files {
     local files="${1}"
-    supported_lints=$(get_supported_lints)
+    supported_lints="$(get_supported_lints)"
     __get_extensions_from_files "${files}" "${supported_lints}"
 }
 
