@@ -1,0 +1,15 @@
+$ mkdir -p ${DOCKER_PATH}/lint/
+$ touch ${DOCKER_PATH}/lint/cpp-lint.Dockerfile
+$ touch ${DOCKER_PATH}/lint/lua-lint.Dockerfile
+$ touch ${DOCKER_PATH}/lint/py-lint.Dockerfile
+$ get_supported_lints | tr ' ' '\n' | sort
+cpp
+lua
+py
+$ touch ${DOCKER_PATH}/lint/myrandomlang-lint.Dockerfile
+$ get_supported_lints | tr ' ' '\n' | sort
+cpp
+lua
+myrandomlang
+py
+$ rm ${DOCKER_PATH}/*.Dockerfile
