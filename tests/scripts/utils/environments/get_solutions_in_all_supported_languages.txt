@@ -7,16 +7,16 @@ $ touch /tmp/solutions/1001.cpp
 $ get_solutions_in_all_supported_languages /tmp/solutions/
 /tmp/solutions/1001.cpp
 $ touch /tmp/solutions/1001.py
-$ get_solutions_in_all_supported_languages /tmp/solutions/
+$ get_solutions_in_all_supported_languages /tmp/solutions/ | sort
 /tmp/solutions/1001.cpp
 /tmp/solutions/1001.py
 $ touch /tmp/solutions/1001.lua
-$ get_solutions_in_all_supported_languages /tmp/solutions/
+$ get_solutions_in_all_supported_languages /tmp/solutions/ | sort
 /tmp/solutions/1001.cpp
 /tmp/solutions/1001.lua
 /tmp/solutions/1001.py
 $ touch /tmp/solutions/1001.nonsupported
-$ get_solutions_in_all_supported_languages /tmp/solutions/
+$ get_solutions_in_all_supported_languages /tmp/solutions/ | sort
 /tmp/solutions/1001.cpp
 /tmp/solutions/1001.lua
 /tmp/solutions/1001.py
