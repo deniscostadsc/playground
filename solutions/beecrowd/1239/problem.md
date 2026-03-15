@@ -3,16 +3,15 @@ https://judge.beecrowd.com/en/problems/view/1239
 # Bloggo Shortcuts
 
 You are helping to develop a weblog-management system called bloggo. Although
-bloggo pushes all content to the front end of a website in HTML, not all
-content authors enjoy using HTML tags in their text. To make their lives
-easier, bloggo offers a simple syntax called shortcuts to achieve some HTML
-textual effects. Your job is to take a document written with shortcuts and
-translate it into proper HTML.
+bloggo pushes all content to the front end of a website in HTML, not all content
+authors enjoy using HTML tags in their text. To make their lives easier, bloggo
+offers a simple syntax called shortcuts to achieve some HTML textual effects.
+Your job is to take a document written with shortcuts and translate it into
+proper HTML.
 
 One shortcut is used to make italicized text. HTML does this with the <i> and
-</i> tags, but in bloggo, an author can simply enclose a piece of text using
-two instances of the underscore character, '_'. Thus, where a content author
-writes
+</i> tags, but in bloggo, an author can simply enclose a piece of text using two
+instances of the underscore character, '\_'. Thus, where a content author writes
 
     You _should_ see the baby elephant at the zoo!
 
@@ -20,9 +19,9 @@ bloggo will publish the following instead.
 
     You <i>should</i> see the baby elephant at the zoo!
 
-Another shortcut serves to render text in boldface, which HTML accomplishes
-with <b> and </b> tags. Bloggo lets content authors do the same with paired
-instances of the asterisk character, '*'. When a content author writes the text
+Another shortcut serves to render text in boldface, which HTML accomplishes with
+<b> and </b> tags. Bloggo lets content authors do the same with paired instances
+of the asterisk character, '\*'. When a content author writes the text
 
     Move it from *Receiving* to *Accounts Payable*.
 
@@ -35,12 +34,12 @@ it will end up on the website as
 The input contains several test cases. Each test case is composed by one line
 that contais a string text, containing zero or more usages of the italic and
 boldface shortcuts. Each text is between 1 and 50 characters long, inclusive.
-The only characters allowed in text are the alphabetic characters 'a' to 'z'
-and 'A' to 'Z', the underscore '_', the asterisk '*', the space character, and
-the punctuation symbols ',', ';', '.', '!', '?', '-', '(', and ')'. The
-underscore '_' occurs in text an even number of times. The asterisk '*' occurs
-in text an even number of times. No substring of text enclosed by a balanced
-pair of underscores or by a balanced pair of asterisks may contain any further
+The only characters allowed in text are the alphabetic characters 'a' to 'z' and
+'A' to 'Z', the underscore '\_', the asterisk '\*', the space character, and the
+punctuation symbols ',', ';', '.', '!', '?', '-', '(', and ')'. The underscore
+'\_' occurs in text an even number of times. The asterisk '\*' occurs in text an
+even number of times. No substring of text enclosed by a balanced pair of
+underscores or by a balanced pair of asterisks may contain any further
 underscores or asterisks.
 
 The end of input is determined by EOF.
