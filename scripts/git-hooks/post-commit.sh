@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-#
-# TODO: cache update for count-solutions.sh is not working
-#
-
 set -euo pipefail
 
 cd "$(git rev-parse --show-toplevel)"
@@ -43,7 +39,7 @@ for file in .cache/scripts/count-solutions.sh-*; do
     fi
 done
 
-if [[ ! -e ${file}${tree_hash} ]]; then
+if [[ -e ${file}${tree_hash} ]]; then
     # cache is up to date
     should_update_count_solutions_cache_file=0
 fi
@@ -67,7 +63,7 @@ for folder in ${folders}; do
     folder="$(sed 's/\/*$//g' <<<"${folder}")"
     folder="${folder}/"
     solutions="$(get_solutions_in_all_supported_languages "${folder}")"
-    solutions_count=$(wc -w <<<"${solutions}")
+    solutions_count=$(echo "${solutions}" | wc -w | sed 's/ //g')
     missing_languages=$(get_missing_solutions_languages "${folder}")
 
     if [[ ${should_update_easiest_problems_cache_file} -eq 1 ]] && grep "${folder}" .cache/scripts/get-easiest-problems.sh-*; then
@@ -90,6 +86,6 @@ fi
 
 if [[ ${should_update_count_solutions_cache_file} -eq 1 ]]; then
     rm .cache/scripts/count-solutions.sh-*
-    sort -n <.cache/scripts/OLD-count-solutions.sh >".cache/scripts/count-solutions.sh-${tree_hash}"
+    sort -rn <.cache/scripts/OLD-count-solutions.sh >".cache/scripts/count-solutions.sh-${tree_hash}"
     rm .cache/scripts/OLD-count-solutions.sh
 fi
