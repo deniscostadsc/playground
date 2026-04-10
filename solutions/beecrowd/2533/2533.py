@@ -1,11 +1,11 @@
 import sys
 
-for n in sys.stdin:
-    n = int(n)
+for m in sys.stdin:
+    m = int(m)
     sum_n_c = 0
     sum_c = 0
 
-    for _ in range(n):
+    for _ in range(m):
         n, c = map(int, input().split())
         sum_n_c += n * c
         sum_c += c
