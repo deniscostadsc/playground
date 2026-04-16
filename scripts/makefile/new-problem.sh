@@ -8,8 +8,12 @@ source "$(dirname "$0")/../utils/environments.sh"
 FOLDER=${1}
 ENVIRONMENTS=${2}
 
-# Trim spaces and validate
 ENVIRONMENTS=$(echo "${ENVIRONMENTS}" | xargs)
+
+if [[ -d "${FOLDER}" ]]; then
+    echo "Folder already exists: ${FOLDER}" >&2
+    exit 0
+fi
 
 if [[ "${ENVIRONMENTS}" == *"sql"* ]] && [[ "${ENVIRONMENTS}" != "sql" ]]; then
     echo "Error: SQL cannot be mixed with other languages." >&2
