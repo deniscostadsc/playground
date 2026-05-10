@@ -19,9 +19,10 @@ In the first line of each case we have an integer $N$
 sheep. The next line contains N integers separated by space indicating the
 sequence of sheep.
 
-The sheep identifiers will be between 0 and 109, inclusive.
+The sheep identifiers will be between $0$ and $10^9$, inclusive.
 
 \* For around 90% of the cases;
+
 ** For the other cases.
 
 ## Output
