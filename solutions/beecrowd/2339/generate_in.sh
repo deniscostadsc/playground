@@ -2,9 +2,9 @@
 
 set -euo pipefail
 
-for i in $(seq 1 23 100); do
-    for j in $(seq 2 17 100); do
-        for z in $(seq 1 24 100); do
+for i in $(seq 1 10); do
+    for j in $(seq 2 10); do
+        for z in $(seq 1 10); do
             echo "${i} ${j} ${z}"
         done
     done
