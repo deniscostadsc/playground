@@ -23,6 +23,18 @@ function get_folders_of_commited_files {
     done) | sort | uniq
 }
 
+# Check if all files in this change are new, if they are, invalidate the cache.
+if git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
+    if ! git diff --name-status HEAD~1 HEAD | grep -q "^[^A]"; then
+        rm -f .cache/scripts/*-*
+        exit 0
+    fi
+else
+    # First commit ever - all files are new
+    rm -f .cache/scripts/*-*
+    exit 0
+fi
+
 should_update_easiest_problems_cache_file=0
 for file in .cache/scripts/get-easiest-problems.sh-*; do
     if [[ -e ${file} ]]; then
