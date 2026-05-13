@@ -7,6 +7,6 @@ while line := input().strip():
     n = int(line)
 
     if n <= 3:
-        print('vai ganhar o biscoito')
+        output('vai ganhar o biscoito\n')
     else:
-        print('vai ficar sem o biscoito')
+        output('vai ficar sem o biscoito\n')
