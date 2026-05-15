@@ -73,7 +73,7 @@ for folder in ${folders}; do
         if grep "${folder}" .cache/scripts/OLD-get-easiest-problems.sh >/dev/null 2>&1; then
             sed -i '' -e "s#.*${folder}.*#${line_count} ${folder} (missing: ${missing_languages% })#" .cache/scripts/OLD-get-easiest-problems.sh
         else
-            echo "${line_count} ${folder} (missing: ${missing_languages% })" >> .cache/scripts/OLD-get-easiest-problems.sh
+            echo "${line_count} ${folder} (missing: ${missing_languages% })" >>.cache/scripts/OLD-get-easiest-problems.sh
         fi
     fi
 
@@ -81,7 +81,7 @@ for folder in ${folders}; do
         if grep "${folder}" .cache/scripts/OLD-count-solutions.sh >/dev/null 2>&1; then
             sed -i '' -e "s#.*${folder}.*#${solutions_count} ${folder} (missing: ${missing_languages% })#" .cache/scripts/OLD-count-solutions.sh
         else
-            echo "${solutions_count} ${folder} (missing: ${missing_languages% })" >> .cache/scripts/OLD-count-solutions.sh
+            echo "${solutions_count} ${folder} (missing: ${missing_languages% })" >>.cache/scripts/OLD-count-solutions.sh
         fi
     fi
 done
