@@ -23,18 +23,6 @@ function get_folders_of_commited_files {
     done) | sort | uniq
 }
 
-# Check if all files in this change are new, if they are, invalidate the cache.
-if git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
-    if ! git diff --name-status HEAD~1 HEAD | grep -q "^[^A]"; then
-        rm -f .cache/scripts/*-*
-        exit 0
-    fi
-else
-    # First commit ever - all files are new
-    rm -f .cache/scripts/*-*
-    exit 0
-fi
-
 should_update_easiest_problems_cache_file=0
 for file in .cache/scripts/get-easiest-problems.sh-*; do
     if [[ -e ${file} ]]; then
@@ -78,15 +66,23 @@ for folder in ${folders}; do
     solutions_count=$(echo "${solutions}" | wc -w | sed 's/ //g')
     missing_languages=$(get_missing_solutions_languages "${folder}")
 
-    if [[ ${should_update_easiest_problems_cache_file} -eq 1 ]] && grep "${folder}" .cache/scripts/get-easiest-problems.sh-*; then
+    if [[ ${should_update_easiest_problems_cache_file} -eq 1 ]]; then
         #shellcheck disable=SC2086
         concatenated_solutions=$(cat ${solutions})
         line_count=$(wc -l <<<"${concatenated_solutions}" | sed 's/ //g')
-        sed -i '' -e "s#.*${folder}.*#${line_count} ${folder} (missing: ${missing_languages% })#" .cache/scripts/OLD-get-easiest-problems.sh
+        if grep "${folder}" .cache/scripts/OLD-get-easiest-problems.sh >/dev/null 2>&1; then
+            sed -i '' -e "s#.*${folder}.*#${line_count} ${folder} (missing: ${missing_languages% })#" .cache/scripts/OLD-get-easiest-problems.sh
+        else
+            echo "${line_count} ${folder} (missing: ${missing_languages% })" >> .cache/scripts/OLD-get-easiest-problems.sh
+        fi
     fi
 
-    if [[ ${should_update_count_solutions_cache_file} -eq 1 ]] && grep "${folder}" .cache/scripts/count-solutions.sh-*; then
-        sed -i '' -e "s#.*${folder}.*#${solutions_count} ${folder} (missing: ${missing_languages% })#" .cache/scripts/OLD-count-solutions.sh
+    if [[ ${should_update_count_solutions_cache_file} -eq 1 ]]; then
+        if grep "${folder}" .cache/scripts/OLD-count-solutions.sh >/dev/null 2>&1; then
+            sed -i '' -e "s#.*${folder}.*#${solutions_count} ${folder} (missing: ${missing_languages% })#" .cache/scripts/OLD-count-solutions.sh
+        else
+            echo "${solutions_count} ${folder} (missing: ${missing_languages% })" >> .cache/scripts/OLD-count-solutions.sh
+        fi
     fi
 done
 
