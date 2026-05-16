@@ -46,7 +46,7 @@ ifdef FOLDER
 		FOLDERS := $(shell find $(FOLDER) -name 'README.md' | sed 's/README.md//g' | sort)
 	endif
 else
-	FOLDERS := $(shell find . -name 'README.md' | sed 's/README.md//g' | sort)
+	FOLDERS := $(shell find ./solutions/ -name 'README.md' | sed 's/README.md//g' | sort)
 endif
 
 DOCKER_RUN := docker run --rm -v $$(pwd):/code -u "$$(id -u):$$(id -g)"
