@@ -1,6 +1,6 @@
 $ rm -f test_output.txt /tmp/failing-changed-files-for-lint.txt failing-changed-files-for-lint.txt lint_extensions.txt
 $ mkdir -p test_solutions/beecrowd/1000
-$ echo "# Problem" >test_solutions/beecrowd/1000/problem.md
+$ echo "# Problem" >test_solutions/beecrowd/1000/README.md
 $ touch test_solutions/beecrowd/1000/WRONG
 $ echo "test_solutions/beecrowd/1000/1000.py" >/tmp/failing-changed-files-for-lint.txt
 $ export GITHUB_OUTPUT=test_output.txt

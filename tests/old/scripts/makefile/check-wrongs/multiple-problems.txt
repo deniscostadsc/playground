@@ -1,8 +1,8 @@
 $ rm -f /tmp/failing-changed-files-for-lint.txt
 $ mkdir -p test_solutions/beecrowd/1006
 $ mkdir -p test_solutions/beecrowd/1007
-$ echo "# Problem" >test_solutions/beecrowd/1006/problem.md
-$ echo "# Problem" >test_solutions/beecrowd/1007/problem.md
+$ echo "# Problem" >test_solutions/beecrowd/1006/README.md
+$ echo "# Problem" >test_solutions/beecrowd/1007/README.md
 $ touch test_solutions/beecrowd/1006/WRONG
 $ echo "Some content" >test_solutions/beecrowd/1007/WRONG
 $ echo -e "test_solutions/beecrowd/1006/1006.cpp\ntest_solutions/beecrowd/1007/1007.cpp" >/tmp/failing-changed-files-for-lint.txt

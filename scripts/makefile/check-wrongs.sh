@@ -21,7 +21,7 @@ FOLDERS="$(echo "${ALL_FILES}" | xargs -n1 dirname 2>/dev/null | sort | uniq)"
 EXIT_STATUS=0
 
 for folder in ${FOLDERS}; do
-    [[ -f "${folder}/problem.md" ]] || continue
+    [[ -f "${folder}/README.md" ]] || continue
     [[ -f "${folder}/WRONG" ]] || continue
 
     has_extension_in_wrong=0

@@ -16,7 +16,7 @@ tree_hash=$(get_tree_hash)
 function get_folders_of_commited_files {
     (for file in $(git diff --name-only HEAD HEAD~1); do
         folder=$(dirname "${file}")
-        [[ ! -f "${folder}/problem.md" ]] && continue
+        [[ ! -f "${folder}/README.md" ]] && continue
         [[ -f "${folder}/schema.sql" ]] && continue
         [[ -f "${folder}/WRONG" ]] && continue
         echo "${folder}"

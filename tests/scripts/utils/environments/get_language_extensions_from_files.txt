@@ -5,7 +5,7 @@ $ touch ${DOCKER_PATH}/py.Dockerfile
 $ echo -e "solutions/beecrowd/1000/1000.py\nsolutions/beecrowd/1001/1001.py" >/tmp/files.txt
 $ get_language_extensions_from_files "$(cat /tmp/files.txt)"
 py
-$ echo -e "solutions/beecrowd/1000/1000.cpp\nsolutions/beecrowd/1001/problem.md" >>/tmp/files.txt
+$ echo -e "solutions/beecrowd/1000/1000.cpp\nsolutions/beecrowd/1001/README.md" >>/tmp/files.txt
 $ get_language_extensions_from_files "$(cat /tmp/files.txt)"
 cpp
 py

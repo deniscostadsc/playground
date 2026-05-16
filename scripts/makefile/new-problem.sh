@@ -27,7 +27,7 @@ FOLDER="$(sed 's/\/*$//g' <<<"${FOLDER}")"
 FOLDER="${FOLDER}/"
 
 mkdir -p "${FOLDER}"
-touch "${FOLDER}"/{out.txt,problem.md,tags.txt}
+touch "${FOLDER}"/{out.txt,README.md,tags.txt}
 
 for environment in ${ENVIRONMENTS}; do
     if [[ ${environment} == 'sql' ]]; then

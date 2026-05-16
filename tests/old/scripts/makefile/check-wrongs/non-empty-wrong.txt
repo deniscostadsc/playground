@@ -1,6 +1,6 @@
 $ rm -f /tmp/failing-changed-files-for-lint.txt
 $ mkdir -p test_solutions/beecrowd/1005
-$ echo "# Problem" >test_solutions/beecrowd/1005/problem.md
+$ echo "# Problem" >test_solutions/beecrowd/1005/README.md
 $ echo "c - WA" >test_solutions/beecrowd/1005/WRONG
 $ echo "test_solutions/beecrowd/1005/1005.cpp" >/tmp/failing-changed-files-for-lint.txt
 $ ./scripts/makefile/check-wrongs.sh; EXIT_CODE=$?; echo "Exit code: $EXIT_CODE"

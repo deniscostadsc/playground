@@ -14,7 +14,7 @@ if is_cache_valid "${0}" "${hash}"; then
 fi
 
 output=$(
-    FOLDERS=$(find solutions/beecrowd -name 'problem.md' | sed 's/problem.md//g' | sort)
+    FOLDERS=$(find solutions/beecrowd -name 'README.md' | sed 's/README.md//g' | sort)
 
     supported_environments_count=$(get_supported_languages_count)
     supported_programming_environments_count=$((supported_environments_count - 1)) # - 1 to remove sql

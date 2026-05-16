@@ -13,7 +13,7 @@ on:
       - '!scripts/lint/*'
       - 'solutions/**'
       - '!solutions/**/imgs/*'
-      - '!solutions/**/problem.md'
+      - '!solutions/**/README.md'
       - '!solutions/**/tags.txt'
   schedule:
     - cron: '0 0 1 * *'  # Run on the 1st day of every month at midnight UTC

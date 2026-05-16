@@ -65,8 +65,8 @@ You'll need to copy the following folders and files:
 The scripts/CI assume a few things:
 
 - You use a folder for each problem;
-- Each problem folder has a `problem.md` file. CI scripts use this file to
-  search for problems;
+- Each problem folder has a `README.md` file. CI scripts use this file to search
+  for problems;
 - Problem folders may have an `in.txt` file. That file holds the input test for
   that problem. Some problems don't have input;
 - Each problem folder has an `out.txt` file. That file holds expected output to
@@ -107,7 +107,7 @@ solutions/beecrowd/
 │   ├── imgs
 │   │   └── UOJ_1000.png
 │   ├── out.txt
-│   ├── problem.md
+│   ├── README.md
 │   └── tags.txt
 ...
 ```

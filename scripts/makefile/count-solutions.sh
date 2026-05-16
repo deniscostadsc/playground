@@ -14,7 +14,7 @@ if is_cache_valid "${0}" "${hash}"; then
 fi
 
 output=$(
-    FOLDERS=$(find solutions/beecrowd/ -name 'problem.md' | sed 's/problem.md//g' | sort)
+    FOLDERS=$(find solutions/beecrowd/ -name 'README.md' | sed 's/README.md//g' | sort)
 
     pushd "$(git rev-parse --show-toplevel)" >/dev/null
 

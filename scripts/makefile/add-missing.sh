@@ -13,7 +13,7 @@ for folder in ${FOLDERS}; do
     folder="$(sed 's/\/*$//g' <<<"${folder}")"
     folder="${folder}/"
 
-    if [[ ! -f "${folder}/problem.md" ]]; then
+    if [[ ! -f "${folder}/README.md" ]]; then
         echo "This folder is not a solution folder"
         exit 1
     fi

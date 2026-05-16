@@ -43,10 +43,10 @@ endif
 
 ifdef FOLDER
 	ifeq ("$(FOLDER_EXISTS)","1")
-		FOLDERS := $(shell find $(FOLDER) -name 'problem.md' | sed 's/problem.md//g' | sort)
+		FOLDERS := $(shell find $(FOLDER) -name 'README.md' | sed 's/README.md//g' | sort)
 	endif
 else
-	FOLDERS := $(shell find . -name 'problem.md' | sed 's/problem.md//g' | sort)
+	FOLDERS := $(shell find . -name 'README.md' | sed 's/README.md//g' | sort)
 endif
 
 DOCKER_RUN := docker run --rm -v $$(pwd):/code -u "$$(id -u):$$(id -g)"
