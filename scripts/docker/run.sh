@@ -18,7 +18,7 @@ echo
 # shellcheck disable=SC2154
 for folder in ${FOLDERS}; do
     if [[ -f "${folder}WRONG" ]]; then
-        if [[ ! -s "${folder}WRONG" ]] || grep -q "^${EXTENSION}[[:space:]]" "${folder}WRONG"; then
+        if grep -q "^${EXTENSION}[[:space:]]" "${folder}WRONG"; then
             continue
         fi
     fi

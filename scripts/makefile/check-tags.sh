@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-FOLDERS=$(find . -name 'README.md' | sed 's/README.md//g' | sort)
+FOLDERS=$(find ./solutions/ -name 'README.md' | sed 's/README.md//g' | sort)
 EXIT_STATUS=0
 
 for folder_tag in ${FOLDERS}; do
