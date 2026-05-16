@@ -33,6 +33,8 @@ for environment in ${ENVIRONMENTS}; do
     if [[ ${environment} == 'sql' ]]; then
         touch "${FOLDER}"{schema.sql,drop-table.sql}
         touch "${FOLDER}$(basename "${FOLDER}").sql"
+    elif [[ ${environment} == 'sh' ]]; then
+        cp "templates/template.${environment}" "${FOLDER}generate_in.${environment}"
     else
         if [[ -f templates/template.${environment} ]]; then
             cp "templates/template.${environment}" "${FOLDER}$(basename "${FOLDER}").${environment}"
