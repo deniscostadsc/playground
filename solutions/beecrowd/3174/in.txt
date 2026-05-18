@@ -1,0 +1,14 @@
+7
+Aradhel bonecos 10
+Aerin arquitetos 15
+Anna musicos 10
+Elbereth musicos 10
+Freda desenhistas 15
+Arwen bonecos 10
+Logolas bonecos 10
+5
+alf arquitetos 1
+elf arquitetos 1
+ilf arquitetos 1
+olf arquitetos 1
+jairo arquitetos 1
