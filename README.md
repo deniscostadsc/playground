@@ -30,6 +30,8 @@ make check-wrongs  # verify if WRONG files have content explaining which solutio
 make clean  # remove files created by the run task
 make count-solutions  # show numbers of solutions in different languages per problem folder
 make get-easiest-problems  # list all complete problems sorted by the sum of number of lines
+make get-easiest-problems WIP=true  # same as above, but limited to uncommitted beecrowd problems
+make install-git-hook  # install the post-commit hook used to keep get-easiest-problems cache up to date
 make lint [ENVIRONMENTS='language extensions']  # check lint for all solutions if no ENVIRONMENTS is passed
 make lint-fix [ENVIRONMENTS='language extensions']  # format all code if no ENVIRONMENTS is passed
 make new-problem FOLDER=path/to/new-problem ENVIRONMENTS='language extensions'  # create solution scaffold
