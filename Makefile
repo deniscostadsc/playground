@@ -119,7 +119,7 @@ ifeq ($(WIP), true)
 		sed 's|.*/||' |\
 		sort -u > .cache/scripts/WIP.cache || true
 	@if [[ -s .cache/scripts/WIP.cache ]]; then \
-		./scripts/makefile/get-easiest-problems.sh | grep -Fwf .cache/scripts/WIP.cache || true; \
+		./scripts/makefile/get-easiest-problems.sh | grep -f .cache/scripts/WIP.cache; \
 	fi
 else
 	@./scripts/makefile/get-easiest-problems.sh
