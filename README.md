@@ -19,7 +19,20 @@ challenges/contest sites. Here you can find my solutions for:
 - [SPOJ](https://www.spoj.com/)
 - [UVA](https://onlinejudge.org/)
 
-## Project structure
+## Quick start
+
+```bash
+make install-git-hook
+make run FOLDER=solutions/beecrowd/1000 ENVIRONMENTS='py'
+make lint ENVIRONMENTS='py'
+make test
+```
+
+`ENVIRONMENTS` is a space-separated list of file extensions matching the
+Docker images in [.docker/](./.docker/) (for example: `py`, `cpp`, `clj`).
+When omitted, tasks that support it run for all supported languages.
+
+## Makefile tasks
 
 The following tasks are available in the Makefile:
 
@@ -29,7 +42,7 @@ make check-tags  # verify if all tag files have content describing the type of t
 make check-wrongs  # verify if WRONG files have content explaining which solution is failing and why
 make clean  # remove files created by the run task
 make count-solutions  # show numbers of solutions in different languages per problem folder
-make get-easiest-problems  # list all complete problems sorted by the sum of number of lines
+make get-easiest-problems  # list all complete beecrowd problems sorted by the sum of number of lines (requires install-git-hook)
 make get-easiest-problems WIP=true  # same as above, but limited to uncommitted beecrowd problems
 make install-git-hook  # install the post-commit hook used to keep get-easiest-problems cache up to date
 make lint [ENVIRONMENTS='language extensions']  # check lint for all solutions if no ENVIRONMENTS is passed
@@ -41,9 +54,11 @@ make wrong  # show all solutions that are not complete yet
 ```
 
 Some of these tasks run scripts on the [scripts folder](./scripts/) and Docker
-containers from the [.docker folder](./.docker/). Needless to say, these tasks
-require [Docker](https://www.docker.com/) and
-[Docker-compose](https://docs.docker.com/compose/).
+containers from the [.docker folder](./.docker/). These tasks require
+[Docker](https://www.docker.com/); [Docker Compose](https://docs.docker.com/compose/)
+is only needed when running SQL solutions.
+
+## Project structure
 
 If you are starting your repo to store your solutions for programming
 competitions from scratch, you can use the same structure I have used.
@@ -53,12 +68,12 @@ You'll need to copy the following folders and files:
 - `.clj-kondo/`
 - `.clojure/`
 - `.docker/`
+- `.editorconfig`
 - `.flake8`
 - `.github`
 - `.gitignore`
 - `.isort.cfg`
 - `.shellcheckrc`
-- `editor-config`
 - `Makefile`
 - `scripts/`
 - `tests/`
