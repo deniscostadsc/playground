@@ -113,13 +113,14 @@ count-solutions: clean
 
 get-easiest-problems: __check_pre_commit
 ifeq ($(WIP), true)
-	@git status |\
+	@git status --porcelain |\
 		grep 'solutions/beecrowd/' |\
-		sed 's/^.*solutions\/beecrowd\/[0-9]\{4\}.//' |\
-		sed 's/\.[a-z]*$$//' |\
-		sort |\
-		uniq > .cache/scripts/WIP.cache
-	@./scripts/makefile/get-easiest-problems.sh | grep -f .cache/scripts/WIP.cache
+		grep -oE 'solutions/beecrowd/[0-9]{4}' |\
+		sed 's|.*/||' |\
+		sort -u > .cache/scripts/WIP.cache || true
+	@if [[ -s .cache/scripts/WIP.cache ]]; then \
+		./scripts/makefile/get-easiest-problems.sh | grep -Fwf .cache/scripts/WIP.cache || true; \
+	fi
 else
 	@./scripts/makefile/get-easiest-problems.sh
 endif
