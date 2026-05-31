@@ -1,0 +1,5 @@
+$ mkdir -p ${DOCKER_PATH}
+$ touch ${DOCKER_PATH}/py.Dockerfile
+$ get_tree_hash | grep -E '^[0-9a-f]{64}$' >/dev/null && echo ok
+ok
+$ rm ${DOCKER_PATH}/*.Dockerfile

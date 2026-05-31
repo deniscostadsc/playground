@@ -1,0 +1,5 @@
+$ mkdir -p /tmp/cache-test
+$ CACHE_DIR=/tmp/cache-test save_cache "scripts/test.sh" "abc" "hello"
+$ CACHE_DIR=/tmp/cache-test load_cache "scripts/test.sh" "abc"
+hello
+$ rm -rf /tmp/cache-test

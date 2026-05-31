@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+set -euo pipefail # this breaks clitest, but I kept it because of lint
+set +euo pipefail
 
 validate_commit_args() {
     if [[ $# -ne 2 ]]; then

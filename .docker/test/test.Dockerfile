@@ -8,6 +8,7 @@ ENV DOCKER_PATH $docker_path
 RUN apk -U upgrade && \
     apk add --no-cache \
       bash \
+      git \
       # kcov dependencies
       curl-dev \
       libdw \
@@ -34,4 +35,8 @@ CMD kcov \
     --bash-parse-files-in-dir=/code/scripts/ \
     --dump-summary \
     /tmp/coverage \
-    clitest --pre-flight '. ./scripts/utils/environments.sh' tests/scripts/utils/environments/*
+    clitest \
+        --pre-flight 'export HOME=/tmp/clitest-home; mkdir -p "$HOME"; git config --global --add safe.directory /code; . ./scripts/utils/environments.sh; . ./scripts/utils/changed-files.sh; . ./scripts/utils/cache.sh' \
+        tests/scripts/utils/environments/* \
+        tests/scripts/utils/changed-files/* \
+        tests/scripts/utils/cache/*

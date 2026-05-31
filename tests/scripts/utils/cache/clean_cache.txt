@@ -1,0 +1,7 @@
+$ mkdir -p /tmp/cache-test
+$ CACHE_DIR=/tmp/cache-test echo one >/tmp/cache-test/test.sh-h1
+$ CACHE_DIR=/tmp/cache-test echo two >/tmp/cache-test/test.sh-h2
+$ CACHE_DIR=/tmp/cache-test clean_cache test.sh
+$ ls /tmp/cache-test | grep '^test.sh-' | wc -l
+0
+$ rm -rf /tmp/cache-test

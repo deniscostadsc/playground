@@ -9,5 +9,8 @@ $ echo -e "solutions/beecrowd/1000/1000.cpp\nsolutions/beecrowd/1001/README.md" 
 $ get_language_extensions_from_files "$(cat /tmp/files.txt)"
 cpp
 py
+$ echo "solutions/beecrowd/1001/README.md" >/tmp/files.txt
+$ get_language_extensions_from_files "$(cat /tmp/files.txt)" | wc -l
+0
 $ rm ${DOCKER_PATH}/*.Dockerfile
 $ rm /tmp/files.txt

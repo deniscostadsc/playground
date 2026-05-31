@@ -12,5 +12,8 @@ $ touch /tmp/solutions/1000.cpp
 $ get_missing_solutions_languages /tmp/solutions/ | tr ' ' '\n' | sort
 
 lua
+$ touch /tmp/solutions/1000.lua
+$ get_missing_solutions_languages /tmp/solutions/ | tr ' ' '\n' | grep . | wc -l
+0
 $ rm ${DOCKER_PATH}/*.Dockerfile
 $ rm /tmp/solutions/*

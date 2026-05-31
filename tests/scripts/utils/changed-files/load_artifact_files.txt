@@ -1,0 +1,7 @@
+$ echo -e "a.txt\nb.txt" >/tmp/artifact.txt
+$ load_artifact_files /tmp/artifact.txt
+a.txt
+b.txt
+$ load_artifact_files /tmp/missing-artifact.txt | grep . | wc -l
+0
+$ rm /tmp/artifact.txt

@@ -1,0 +1,6 @@
+$ (validate_commit_args a); echo $?
+1
+$ (validate_commit_args a b); echo $?
+0
+$ (validate_commit_args a b c); echo $?
+1

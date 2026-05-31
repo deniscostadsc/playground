@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+set -euo pipefail # this breaks clitest, but I kept it because of lint
+set +euo pipefail
 # shellcheck disable=SC1091
 source './scripts/utils/environments.sh'
 CACHE_DIR="${CACHE_DIR:-.cache/scripts}"

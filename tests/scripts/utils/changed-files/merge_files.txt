@@ -1,0 +1,13 @@
+$ merge_files "a.txt" "b.txt" | sort
+a.txt
+b.txt
+$ merge_files "$(printf 'a.txt\nb.txt')" "c.txt" | sort
+a.txt
+b.txt
+c.txt
+$ merge_files "a.txt" ""
+a.txt
+$ merge_files "" "b.txt"
+b.txt
+$ merge_files "" "" | grep . | wc -l
+0

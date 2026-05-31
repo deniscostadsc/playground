@@ -1,0 +1,4 @@
+$ get_filename_from_path scripts/makefile/get-easiest-problems.sh
+get-easiest-problems.sh
+$ get_filename_from_path /tmp/foo/bar.txt
+bar.txt

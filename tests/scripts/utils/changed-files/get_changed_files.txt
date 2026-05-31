@@ -1,0 +1,9 @@
+$ get_changed_files HEAD HEAD | grep . | wc -l
+0
+$ rm -rf /tmp/git-test
+$ mkdir -p /tmp/git-test && cd /tmp/git-test && git init -q && git config user.email t@t.com && git config user.name t && echo a > f.txt && git add f.txt && git commit -qm a && echo b >> f.txt && git commit -am b -q
+$ cd /tmp/git-test && get_changed_files HEAD~1 HEAD
+f.txt
+$ get_changed_files not-a-commit not-a-commit | grep . | wc -l
+0
+$ rm -rf /tmp/git-test

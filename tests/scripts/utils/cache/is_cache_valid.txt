@@ -1,0 +1,7 @@
+$ mkdir -p /tmp/cache-test
+$ CACHE_DIR=/tmp/cache-test save_cache "scripts/test.sh" "abc" "data"
+$ CACHE_DIR=/tmp/cache-test is_cache_valid "scripts/test.sh" "abc"; echo $?
+0
+$ CACHE_DIR=/tmp/cache-test is_cache_valid "scripts/test.sh" "wrong"; echo $?
+1
+$ rm -rf /tmp/cache-test
