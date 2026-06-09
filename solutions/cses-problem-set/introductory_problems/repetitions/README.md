@@ -22,8 +22,12 @@ $$1 \le n \le 10^6$$
 
 ### Input:
 
+```
 ATTCGGGA
+```
 
 ### Output:
 
+```
 3
+```
