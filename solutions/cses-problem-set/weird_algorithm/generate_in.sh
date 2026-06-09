@@ -19,5 +19,5 @@ n=1
 while [[ ${n} -le 1000000 ]]; do
     echo "${n}"
     jump=$(random_number 1 1000)
-    n=$(( n + jump ))
+    n=$((n + jump))
 done
