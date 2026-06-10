@@ -1,1 +1,1 @@
-beginner, string, detect longest repetition
+introductory problems, string, detect longest repetition

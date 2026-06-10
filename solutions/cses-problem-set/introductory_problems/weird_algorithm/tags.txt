@@ -1,1 +1,1 @@
-beginner, Collatz conjecture
+introductory problems, Collatz conjecture
