@@ -1,13 +1,14 @@
-#include <cstdint>
-#include <iostream>
+#include <bits/stdc++.h>
+
+using namespace std;
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
-    std::cin.tie(0);
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
 
     int16_t n;
 
-    while (std::cin >> n) {
+    while (cin >> n) {
     }
 
     return 0;

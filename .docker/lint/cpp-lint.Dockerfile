@@ -17,7 +17,7 @@ CMD echo "cpp"; if [ "${LINT_FIX:=0}" -eq 1 ]; then \
             --quiet \
             --recursive \
             --extensions=cpp \
-            --filter="-legal/copyright,-runtime/arrays" . && \
+            --filter="-legal/copyright,-runtime/arrays,-build/include_what_you_use,-build/namespaces" . && \
         scripts/lint/run-clang-format.py \
             --clang-format-executable=clang-format \
             --extensions=cpp \
