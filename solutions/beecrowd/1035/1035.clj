@@ -11,12 +11,12 @@
 
 (defn main []
   (loop [line (read-line)]
-   (when line
-     (let [[a b c d] (->> (str/split line #" ")
-                          (map #(Integer/parseInt %)))]
-       (if (accepted-values? a b c d)
-         (printf "Valores aceitos%n")
-         (printf "Valores nao aceitos%n"))
-       (recur (read-line))))))
+    (when line
+      (let [[a b c d] (->> (str/split line #" ")
+                           (map #(Integer/parseInt %)))]
+        (if (accepted-values? a b c d)
+          (println "Valores aceitos")
+          (println "Valores nao aceitos"))
+        (recur (read-line))))))
 
 (main)

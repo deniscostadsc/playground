@@ -26,7 +26,7 @@
           (let [[r1 r2] (bhaskara a b delta')]
             (printf "R1 = %.5f%n" r1)
             (printf "R2 = %.5f%n" r2))
-          (printf "Impossivel calcular%n"))
+          (println "Impossivel calcular"))
         (recur (read-line))))))
 
 (main)
